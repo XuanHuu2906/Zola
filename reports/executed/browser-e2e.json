@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:e2e"
+  ],
+  "started": "2026-11-05T02:47:55.582Z",
+  "finished": "2026-11-05T02:49:24.404Z",
+  "exitCode": 1,
+  "signal": null
+}

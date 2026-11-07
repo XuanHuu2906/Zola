@@ -1,0 +1,29 @@
+### toasts
+access=Allowed
+toast_count=4
+aumid_count=4
+  aumid=B9ECED6F.ASUSPCAssistant_qmba6cd70vzyy!App
+  aumid=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe!App
+  aumid=Windows.ActionCenter.SmartOptOut
+  aumid=Windows.Defender.SecurityCenter
+
+### appusermodelid registry
+HKCU:\Software\Classes\AppUserModelId -> zalo_matches=0
+HKLM:\Software\Classes\AppUserModelId -> zalo_matches=0
+
+### start-menu shortcut arguments (names only, no target user data)
+lnk=Zalo.lnk args=
+
+### named pipes
+pipe_total=421
+zalo_pipe_count=2
+  pipe=PipeZCallRecv
+  pipe=PipeZCallSend
+
+### TCP listeners owned by Zalo-family processes
+zalo_listen_sockets=0
+
+### scheme registration
+scheme_key_exists=True
+open_command="C:\Users\huung\AppData\Local\Programs\Zalo\Zalo.exe" "--" "%1"
+DelegateExecute=NONE

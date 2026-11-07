@@ -1,0 +1,104 @@
+
+### #sidebarNav
+  @409527 #sidebarNav  (parts=1)
+      width:408px;width:var(--nav-width)
+  @409574 #sidebarNav.compact-mode  (parts=1)
+      width:100%
+  @409610 #sidebarNav.compact-mode.show-chat  (parts=1)
+      width:64px;box-sizing:border-box
+
+### .nav-content
+  @410911 .nav-content  (parts=1)
+      position:fixed;top:24px;left:64px;z-index:6;box-sizing:border-box;background:var(--layer-background);width:calc(100% - 64px);height:calc(100% - 24px)
+
+### .titlebar
+  @413961 .titlebar  (parts=1)
+      -webkit-user-select:none;height:24px;min-height:24px;background:var(--title-bar);font-size:.75rem;font-weight:500;line-height:1.5;z-index:2;width:calc(100% - 80px);left:64px;padding-left:16px;color:var(--text-primary)
+  @414189 .titlebar.locked  (parts=1)
+      z-index:999999;left:0;width:calc(100% - 16px)
+  @414252 .titlebar.locked .title-name.macos  (parts=1)
+      padding-left:64px;box-sizing:border-box
+
+### .setting 
+  @109761 .setting.compact .setting-menu  (parts=11)
+      flex:1
+  @1071784 .setting  (parts=1)
+      font-size:.875rem;font-weight:400;line-height:1.5;color:var(--text-primary);overflow:hidden
+  @1071885 .setting.login-mode  (parts=1)
+      min-height:400px;height:455px
+  @1071935 .setting.compact  (parts=1)
+      background-color:var(--layer-background-subtle)
+
+### .setting.flx
+  (none)
+
+### .setting-menu
+  @1072220 .setting-menu  (parts=1)
+      width:228px;flex:none;border-right:1px solid var(--divider-bold);background-color:var(--layer-background)
+
+### .setting-content
+  @1073904 .setting-content  (parts=1)
+      height:515px
+  @1073934 .setting-content.device  (parts=1)
+      padding-left:14px;padding-top:8px
+
+### .chat-box-input__tools
+  @118583 .chat-box-input__tools  (parts=16)
+      box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+  @1608295 .chat-box-input__tools  (parts=1)
+      height:40px;background-color:var(--layer-background);contain:style size
+
+### .chat-box-input__right
+  (none)
+
+### .chat-box-input__left
+  (none)
+
+### .chat-input-wrapper
+  (none)
+
+### .chat-input-content
+  (none)
+
+### .chat-input-scrollable
+  (none)
+
+### .zmenu
+  (none)
+
+### .zmenu-content
+  (none)
+
+### .zl-modal__dialog__header
+  @1950871 .zl-modal__dialog__header  (parts=1)
+      padding:0 8px 0 16px;display:flex;position:relative;height:48px;min-height:48px;justify-content:left;border-bottom:1px solid var(--divider);align-items:center
+  @1951112 .zl-modal__dialog__header.no-padding  (parts=1)
+      padding:0
+  @1951159 .zl-modal__dialog__header.confirm-modal  (parts=1)
+      padding:0 20px 14px;height:43px
+
+### .zl-modal__dialog-body
+  @1622550 .zl-modal__dialog-body.mmax.no-padding:has(.image-caption-layout)  (parts=4)
+      height:unset;max-height:unset
+  @1811564 .zl-modal__dialog-body::-webkit-scrollbar  (parts=22)
+      width:4px;background:transparent
+  @1812625 .zl-modal__dialog-body::-webkit-scrollbar-thumb  (parts=22)
+      border-radius:2px;background:var(--background-inactiveness-subtle)
+  @1989917 .zl-modal__dialog-body  (parts=1)
+      padding:14px 16px 0;display:-webkit-flex;display:flex;flex-flow:column nowrap;position:relative;overflow-y:auto;overflow-x:hidden
+
+### .zl-modal__footer
+  @1990349 .zl-modal__footer  (parts=1)
+      z-index:1
+  @1990377 .zl-modal__footer.footer-sep  (parts=1)
+      border-top:1px solid var(--divider)
+
+### .zl-dlg
+  @2203424 .zl-dlg  (parts=1)
+      position:absolute;top:0;right:0;bottom:0;left:0;z-index:13
+
+### .zl-fl-dlg
+  @2258710 .zl-fl-dlg  (parts=1)
+      top:0;left:0;z-index:13;will-change:transform
+  @2258767 .zl-fl-dlg  (parts=2)
+      position:absolute

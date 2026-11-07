@@ -1,0 +1,79 @@
+alias_variable tokens=396   dark_alias_variable tokens=396
+
+light mixin vs TOKEN_MAP differences: 79
+  --surface-background-overlay: mixin=N5 but NOT in TOKEN_MAP
+  --surface-background-overlay: mixin=N5 but NOT in TOKEN_MAP
+  --layer-background-disabled: TOKEN_MAP=N10 mixin=N20
+  --layer-background-inverse-subtle: TOKEN_MAP=N200 mixin=DN15
+  --layer-background-pinned: TOKEN_MAP=WA15 mixin=NA10
+  --layer-background-navbar-hover: TOKEN_MAP=B70 mixin=BA15
+  --layer-background-navbar-selected: TOKEN_MAP=B80 mixin=BA25
+  --layer-error-background: TOKEN_MAP=R15 mixin=R10
+  --layer-success-background: TOKEN_MAP=G15 mixin=G10
+  --layer-warning-background: TOKEN_MAP=Y15 mixin=Y10
+  --layer-information-background: TOKEN_MAP=B15 mixin=B10
+  --layer-neutral-information-background: TOKEN_MAP=N15 mixin=N10
+  --icon-disabled: TOKEN_MAP=N60 mixin=N50
+  --border: TOKEN_MAP=BA20 mixin=BA15
+  --border-subtle: TOKEN_MAP=BA15 mixin=BA10
+  --border-highlight: mixin=B40 but NOT in TOKEN_MAP
+  --border-support-errors: mixin=R30 but NOT in TOKEN_MAP
+  --border-support-warning: mixin=Y30 but NOT in TOKEN_MAP
+  --border-support-success: mixin=G30 but NOT in TOKEN_MAP
+  --border-support-information: mixin=B30 but NOT in TOKEN_MAP
+  --border-support-neutral: mixin=N30 but NOT in TOKEN_MAP
+  --divider-bold: TOKEN_MAP=BA30 mixin=BA15
+  --divider-on-color: TOKEN_MAP=WA50 mixin=WA80
+  --background-hovertips: TOKEN_MAP=WA100 mixin=B70
+  --input-field-bg-filled: TOKEN_MAP=N15 mixin=N10
+  --input-field-bg-outline-pressed: TOKEN_MAP=N0 mixin=B50
+  --white-quote: TOKEN_MAP=N20 mixin=N15
+  --media-message-hover: mixin=BA20 but NOT in TOKEN_MAP
+  --media-message-selected: mixin=B60 but NOT in TOKEN_MAP
+  --button-primary-on-color-normal: mixin=N0 but NOT in TOKEN_MAP
+
+dark mixin vs TOKEN_MAP differences: 220
+  --title-bar: light=N20 dark=DN0
+  --title-ptv: light=NG85 dark=NG25
+  --tab-txt: light=N80 dark=DN100
+  --surface-background: light=N20 dark=DN0
+  --surface-background-subtle: light=N15 dark=DN10
+  --surface-background-overlay: dark=DN5 NOT in TOKEN_MAP
+  --surface-alt: light=N0 dark=DN20
+  --surface-background-overlay: dark=DN5 NOT in TOKEN_MAP
+  --layer-background: light=N0 dark=DN20
+  --layer-background-subtle: light=N15 dark=DN15
+  --layer-background-hover: light=N10 dark=BA5
+  --layer-background-disabled: light=N10 dark=DN15
+  --layer-background-selected: light=B15 dark=STB25
+  --layer-background-inverse: light=N0 dark=N300
+  --layer-background-inverse-subtle: light=N200 dark=DN40
+  --layer-background-CSC: light=N15 dark=DN10
+  --layer-background-leftmenu: light=B60 dark=DN15
+  --layer-background-leftmenu-hover: light=B70 dark=DN10
+  --layer-background-leftmenu-selected: light=B80 dark=DN0
+  --layer-background-navbar-normal: light=B60 dark=DN0
+  --layer-background-navbar-hover: light=B70 dark=BA10
+  --layer-background-navbar-selected: light=B80 dark=BA5
+  --layer-background-navbar-sublevel-normal: light=N0 dark=DN20
+  --layer-background-navbar-sublevel-hover: light=N15 dark=BA5
+  --layer-background-navbar-sublevel-selected: light=B15 dark=NA50
+  --layer-alert-background: light=R60 dark=R50
+  --layer-success-background: light=G15 dark=G20
+  --layer-warning-background: light=Y15 dark=Y20
+  --layer-information-background: light=B15 dark=B20
+  --layer-neutral-information-background: light=N15 dark=DN10
+  --layer-background-ptv: light=NG95 dark=NG15
+  --layer-background-ptv-thumbslider: light=NG90 dark=NG20
+  --layer-background-ptv-controlbar: light=NG85 dark=NG25
+  --media-message-hover: dark=WA20 NOT in TOKEN_MAP
+  --media-message-selected: dark=NA40 NOT in TOKEN_MAP
+  --text-primary: light=N300 dark=DN200
+  --text-secondary: light=N80 dark=DN90
+  --text-placeholder: light=N70 dark=DN70
+  --text-disabled: light=N60 dark=DN70
+  --text-on-disabled-color: light=N40 dark=DN50
+
+light-only tokens (0): 
+dark-only tokens (0): 
+TOKEN_MAP tokens absent from dark mixin (28): --border-selected --border-inverse --background-focus-ui --blue-quote-selected-alpha --white-quote-selected-alpha --button-tertiary-primary-normal --button-tertiary-primary-disabled --button-tertiary-danger-normal --button-tertiary-danger-disabled --button-tertiary-neutral-normal --button-tertiary-neutral-disabled --button-tertiary-on-color-normal --button-tertiary-on-color-disabled --button-ghost-primary-normal --button-ghost-primary-disabled --button-ghost-neutral-normal --button-ghost-neutral-disabled --button-ghost-danger-normal --button-ghost-danger-disabled --button-ghost-on-color-normal --button-ghost-on-color-pressed --button-ghost-on-color-disabled --button-ghost-on-color-focus-bg --button-ghost-on-color-focus-text --button-ghost-on-color-focus-container-outline --shadow-overlay --shadow-overflow --shadow-bubble

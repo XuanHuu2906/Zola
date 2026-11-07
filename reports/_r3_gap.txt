@@ -1,0 +1,42 @@
+
+## header-btn  rules=4 bg=0 shadow=0 radius=0
+   vars: --text-primary(1) --icon-secondary(1)
+
+## header-title  rules=8 bg=0 shadow=0 radius=0
+   vars: --text-primary(1)
+
+## main-tab / #main-tab  rules=5 bg=1 shadow=0 radius=0
+   vars: --layer-background-navbar-normal(1)
+
+## nav-button_*  rules=7 bg=0 shadow=0 radius=0
+   vars: --text-information(2)
+
+## nav-content  rules=5 bg=1 shadow=0 radius=0
+   vars: --nav-width(2) --layer-background(1) --border(1)
+
+## conversation-list__*  rules=25 bg=4 shadow=0 radius=3
+   vars: --text-secondary(3) --text-information(2) --text-on-color(2) --B70(2) --text-primary(1) --border-focused(1) --layer-background(1)
+
+## conv-item (full)  rules=44 bg=12 shadow=0 radius=1
+   vars: --layer-background-selected(4) --text-information(2) --text-primary(2) --icon-secondary(1) --layer-background(1) --text-secondary(1) --layer-background-hover(1) --layer-background-subtle(1) --BA50(1) --B10(1) --border-focused(1) --background-activeness(1) --WA100(1) --layer-background-pinned(1)
+
+## chat-box-input__content  rules=17 bg=2 shadow=0 radius=0
+   vars: --text-information(2) --border-focused(1) --background-activeness(1) --WA100(1) --layer-background(1) --text-secondary(1)
+
+## chat-input-container__*  rules=12 bg=0 shadow=0 radius=0
+   vars: 
+
+## zl-modal__footer  rules=26 bg=5 shadow=0 radius=1
+   vars: --layer-background(3) --space-md(1) --divider(1) --medium(1) --layer-background-subtle(1)
+
+## setting-menu__item  rules=4 bg=2 shadow=0 radius=1
+   vars: --text-primary(1) --layer-background-hover(1) --layer-background-selected(1) --text-disabled(1)
+
+=== El definition inside VLvn (10707732..11138122) ===
+  El= @11018312
+    "El=l.a.memo((function(e){const{_dragEnd:t,_dragOver:n,compactLv:a,onBackConvList:i,chatController:r,conversation:s,superCompact:c,user:A,showMember:h,emitter:m,friendInfo:f,groupInfo:_}=e,{isGroup:E}=s,[v,I]=Vs(e.focusDetector,r,s,f),T=Object(Yr.l)(g.ConvInfoDataManager,s.userId),y=!!p.ModuleContainer.resolve(g.ConvInfoDataManager).getLeaveType(T),S=Object(o.useRef)(null),{windowId:R}=Object(at.a)();return l.a.createElement(\"header\",{id:\"header\",className:\"flx\",style:u.default.topBanner&&u.defau"
+  const El @11018306
+    "const El=l.a.memo((function(e){const{_dragEnd:t,_dragOver:n,compactLv:a,onBackConvList:i,chatController:r,conversation:s,superCompact:c,user:A,showMember:h,emitter:m,friendInfo:f,groupInfo:_}=e,{isGroup:E}=s,[v,I]=Vs(e.focusDetector,r,s,f),T=Object(Yr.l)(g.ConvInfoDataManager,s.userId),y=!!p.ModuleContainer.resolve(g.ConvInfoDataManager).getLeaveType(T),S=Object(o.useRef)(null),{windowId:R}=Object(at.a)();return l.a.createElement(\"header\",{id:\"header\",className:\"flx\",style:u.default.topBanner&&u"
+
+=== El call sites ===
+  @11130781: "nerId:\"messageViewContainer\",positionX:Ye.positionX,positionY:Ye.positionY}):null,l.a.createElement(H,{windowId:x}),l.a.createElement(El,{onBackConvList:Dt,_dragEnd:zd,_dragOver:Hd,chatController:le,compactLv:Ne,superCompact:Me,dispatch:t.dispatch,user:t.user,conversation:t.conversation,showMember:Lt,emitter:re,groupInfo:t.groupInfo,friendInfo:t.friendInfo,focusDetector:t.focusDetector}),l.a.createElement(\"article\",Object(i.a)({ref:Ce.a"

@@ -1,0 +1,67 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:23568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:33584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests\e2e\demo.spec.ts:5:5 › chat selection, diacritic search, independent filters and unread state (2.8s)
+  ✓  2 tests\e2e\demo.spec.ts:21:5 › drafts survive selection; Enter sends text safely and Shift+Enter adds newline (2.5s)
+  ✓  3 tests\e2e\demo.spec.ts:39:5 › file metadata, emoji and reactions stay in demo memory (2.0s)
+  ✘  4 tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape (8.4s)
+(node:31504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 tests\e2e\demo.spec.ts:70:5 › OS reduced motion and demo call notice; no external traffic (2.8s)
+  ✓  6 tests\e2e\demo.spec.ts:81:7 › layout and visual evidence 1920x1080 (7.0s)
+  ✓  7 tests\e2e\demo.spec.ts:81:7 › layout and visual evidence 1600x900 (6.6s)
+  ✓  8 tests\e2e\demo.spec.ts:81:7 › layout and visual evidence 1366x768 (12.0s)
+
+
+  1) tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeFocused[2m([22m[2m)[22m failed
+
+    Locator:  getByRole('button', { name: 'Đóng cài đặt' })
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeFocused" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: 'Đóng cài đặt' })[22m
+    [2m    8 × locator resolved to <button class="icon-button" aria-label="Đóng cài đặt">…</button>[22m
+    [2m      - unexpected value "inactive"[22m
+
+
+      58 |   await page.getByRole('button', { name: 'Hoàn tất' }).focus();
+      59 |   await page.keyboard.press('Tab');
+    > 60 |   await expect(page.getByRole('button', { name: 'Đóng cài đặt' })).toBeFocused();
+         |                                                                    ^
+      61 |   await page.keyboard.press('Escape');
+      62 |   await expect(dialog).not.toBeVisible(); await expect(opener).toBeFocused();
+      63 |   await page.reload();
+        at D:\Zalo\tests\e2e\demo.spec.ts:60:68
+
+    Error Context: test-results\demo-settings-persist-only-00af7-s-and-restores-it-on-Escape\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\demo-settings-persist-only-00af7-s-and-restores-it-on-Escape\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\demo-settings-persist-only-00af7-s-and-restores-it-on-Escape\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape 
+  7 passed (1.4m)

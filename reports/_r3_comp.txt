@@ -1,0 +1,66 @@
+=== DataAttributes.Component enum ===
+  anchor "Component.BUBBLE_MESSAGE" -> 2 shown: 115476,16070028
+  anchor "DataAttributes" -> 6 shown: 112900,113811,114658,115461,392973,393013
+  /Component:{/ candidates = 1
+
+  --- candidate @1721786 ---
+  "Component:{AI_STICKER:\"ai-sticker\",BUBBLE_MESSAGE:\"bubble-message\",MESSAGE_CONTENT_VIEW:\"message-content-view\",MESSAGE_TEXT_CONTENT:\"message-text-content\",PHOTO:\"photo\",PHOTO_STICKER:\"photo-sticker\",STICKER:\"sticker\",TEXT_CONTAINER:\"text-container\",RTF_CONTAINER:\"rtf-container\",RTF_BLOCK:\"rtf-block\"},Element:{EMAIL:\"email\",LINK:\"link\",PHONE_NUMBER:\"phone-number\",RTF_IMAGE:\"rtf-image\",RTF_TEXT:\"rtf-text\"}},Sl=4,Rl=[0,1,2,3,4,5,6,7,8,9,10],Ol=Rl.map((e=>Sl*e)),Cl={START_PROCESS:0,EXIT_PROCESS:1,CLICK_ICON_SCR_IN_CHATBOX:2,CLICK_ICON_SCR_LEFT_SIDEBAR:3,USE_SHORTCUT:4},Nl=152420,wl=152421,Ml={ELEMENT_NODE:1,ATTRIBUTE_NODE:2,TEXT_NODE:3,CDATA_SECTION_NODE:4,PROCESSING_INSTRUCTION_NODE:7,COMMENT_NODE:8,DOCUMENT_NODE:9,DOCUMENT_TYPE_NODE:10,DOCUMENT_FRAGMENT_NODE:11},Dl={PARTIAL_QUOTE:\"partial-quote\"},Ll=6,Pl={WEB:30,WINDOWS:24,MAC:23}},\"1ppg\":function(e,t,n){!function(e){\"use strict\";e.defineLocale(\"fil\",{months:\"Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre\".split(\"_\"),monthsShort:\"Ene_Peb_Mar_Abr_May_Hun_Hul_Ago_Set_Okt_Nob_Dis\".split(\"_\"),weekdays:\"Linggo_Lunes_Martes_Miyerkules_Huwebes_Biyernes_Sabado\".split(\"_\"),weekdaysShort:\"Lin_Lun_Mar_Miy_Huw_Biy_Sab\".split(\"_\"),weekdaysMin:\"Li_Lu_Ma_Mi_Hu_Bi_Sab\".split(\"_\"),longDateFormat:{LT:\"HH:mm\",LTS:\"HH:mm:ss\",L:\"MM/D/YYYY\",LL:\"MMMM D, YYYY\",LLL:\"MMMM D, YYYY HH:mm\",LLLL:\"dddd, MMMM DD, YYYY HH"
+
+=== DI / module container ===
+  ModuleContainer    occ= 2160 first=17606
+  resolve(           occ= 2591 first=17622
+  registerModule     occ=    7 first=1311897
+  ModuleRegistry     occ=    0 first=-1
+  injectModule       occ=    0 first=-1
+  ctx: "return this.blocked}}var _=a(\"jDHv\"),E=a(\"jjJf\"),v=a(\"ntzK\");const I=[m.a.getAll];class b extends p.a{constructor(e=1){super(),this.concurrency=void 0,this.microQueue=void 0,this.macroQueue=void 0,this.running=void 0,this.maxQueueSize=500,this.taskMap=new Map,this.microRatio=.8,this.PCloudMetrics=_.ModuleContainer.resolve(E.g),this.concurrency=e,this.microQueue=[],this.macroQueue=[],this.running=0}withConcur(e=1){this.concurrency=e}add(e,t=\"macro\",n=3){var a;return this.microQueue.length+this.macroQueue.length>=this.maxQueueSize?(v.b.log(v.a.TaskQueueFull,[String(this.microQueue.length+this.macroQueue.length),(null==e||null===(a=e.executeFn)||void 0===a?void 0:a.name)||\"\"]),Promise.reject(new Error(\"Queue is full\"))):new Promise(((a,i)=>{const r=new AbortController;e.setAbortSignal(r.signa"
+
+=== react version ===
+  "react-dom"          occ=1 first=19933302
+  "18."                occ=4 first=1354600
+  "16.14"              occ=4 first=12343910
+  "version:\"1"        occ=4 first=10536756
+  version-literal ctx: "version:\"V1\"},{validator:X});const Z=new class{constructor(){this.value=1}next()"
+
+=== createElement alias census (top) ===
+  r.a.createElement        5305
+  s.a.createElement        3257
+  i.a.createElement        3078
+  l.a.createElement        2722
+  o.a.createElement        2167
+  A.a.createElement        695
+  c.a.createElement        247
+  u.a.createElement        79
+
+=== class vs function component signals ===
+  createClass(                   1
+  extends                     1215
+  React.Component                0
+  React.PureComponent            0
+  componentDidMount            251
+  componentWillUnmount         219
+  shouldComponentUpdate        228
+  render(){                    362
+  render:function                8
+  this.state                  5790
+  this.props                 12603
+  useState(                    544
+  useEffect(                   463
+  useMemo(                     327
+  useCallback(                 317
+  useRef(                      374
+  React.forwardRef               0
+  forwardRef(                  174
+  memo(                        177
+  PropTypes                     20
+  propTypes=                   164
+
+=== data-component / data-id literal values (top 40) ===
+  data-component attr count = 8
+    m.DataAttributes.Component.MESSAGE_CONTENT_VIEW 3
+    m.DataAttributes.Component.BUBBLE_MESSAGE      1
+    v.DataAttributes.Component.MESSAGE_TEXT_CONTENT 1
+    v.DataAttributes.Component.TEXT_CONTAINER      1
+    v.DataAttributes.Component.RTF_BLOCK           1
+    v.DataAttributes.Component.RTF_CONTAINER       1
+
+wrote _r3_comp.txt

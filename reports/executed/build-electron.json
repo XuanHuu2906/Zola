@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "build:electron"
+  ],
+  "started": "2026-11-05T02:47:38.956Z",
+  "finished": "2026-11-05T02:47:40.138Z",
+  "exitCode": 0,
+  "signal": null
+}

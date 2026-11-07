@@ -1,0 +1,44 @@
+
+> zalo-apple-glass-ui@0.2.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.2.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.2.0 lint
+> eslint src/renderer src/shared electron tests/core.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.2.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts
+
+✔ TS search retains Vietnamese name and preview matching (5.4176ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.8576ms)
+✔ sending is immutable, bounded and local to the selected chat (39.1267ms)
+✔ attachments retain names and sizes only, with bounded display metadata (1.4388ms)
+✔ demo seeds are independent across sessions (0.5623ms)
+✔ preferences tolerate corrupt storage and clamp values (0.7621ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.4597ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (1.207ms)
+✔ IPC trust and network policy distinguish development from production (0.6181ms)
+✔ HTML-escapes user-generated message content (0.9497ms)
+✔ removes diacritics in Vietnamese search terms (0.4023ms)
+✔ search matches normalized names (0.4228ms)
+✔ unread filter selects only unread (0.2399ms)
+✔ group and work filters use categories independently (0.291ms)
+✔ pinned chats are sorted before unpinned (0.1666ms)
+✔ file metadata is textual and size-limited (0.3875ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.7743
+(node:26972) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/core.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

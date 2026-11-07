@@ -1,0 +1,22 @@
+
+===== main-dist/preload-sqlite.js (2675898 chars) =====
+PAT "Object.assign($zsub" -> []
+PAT "$zsub." -> [1579577,1579656,1580039,1580119,1580703,1580782,1581713,1581796]
+PAT "globalThis.$zsub" -> [1566092]
+
+$zuri count in file = 0
+
+ZSUB_LITERAL :: "$zsub={}"
+
+===== pc-dist/lazy/default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js (40206 chars) =====
+PAT "Object.assign($zsub" -> []
+PAT "$zsub." -> []
+PAT "globalThis.$zsub" -> [37920]
+
+ZURI#1 @39086 :: "et R in t){var a;const p=t[R];switch(ye.listeners[p.apiKey]=null!==(a=ye.listeners[p.apiKey])&&void 0!==a?a:[],p.type){case S.SUBSCRIBE:Ae(e,E,Object(_.a)({name:R},p));break;case S.UNSUBSCRIBE:Ne(e,E,Object(_.a)({name:R},p));break;case S.SUBSCRIBE_V2:Be(),se(e,E,Object(_.a)({name:R},p))}}}Ke(\"$zwindow\",$zwindow,Z),Ke(\"$zuri\",$zuri,X),Ke(\"$zapp\",$zapp,R),Ke(\"$zresource\",$zresource,o),Ke(\"$zdownload\",$zdownload,I),Ke(\"$zdb\",$zdb,r),Ke(\"$zsessionManager\",$zsessionManager,Te),Ke(\"$zupdater\",$zupdater,q),Ke(\"$zsharedWorker\",$zsharedWorker,b),Ke(\"$zlogger\",$zlogger,d),Ke(\"$zlogin\",$zlogin,H),Ke(\"$zMetric\",$zMetric,M),Ke(\"$zmulti\",$zmulti,v),Ke(\"$zscreencap\",$zscreencap,W),Ke(\"$"
+
+ZURI#2 @39093 :: " t){var a;const p=t[R];switch(ye.listeners[p.apiKey]=null!==(a=ye.listeners[p.apiKey])&&void 0!==a?a:[],p.type){case S.SUBSCRIBE:Ae(e,E,Object(_.a)({name:R},p));break;case S.UNSUBSCRIBE:Ne(e,E,Object(_.a)({name:R},p));break;case S.SUBSCRIBE_V2:Be(),se(e,E,Object(_.a)({name:R},p))}}}Ke(\"$zwindow\",$zwindow,Z),Ke(\"$zuri\",$zuri,X),Ke(\"$zapp\",$zapp,R),Ke(\"$zresource\",$zresource,o),Ke(\"$zdownload\",$zdownload,I),Ke(\"$zdb\",$zdb,r),Ke(\"$zsessionManager\",$zsessionManager,Te),Ke(\"$zupdater\",$zupdater,q),Ke(\"$zsharedWorker\",$zsharedWorker,b),Ke(\"$zlogger\",$zlogger,d),Ke(\"$zlogin\",$zlogin,H),Ke(\"$zMetric\",$zMetric,M),Ke(\"$zmulti\",$zmulti,v),Ke(\"$zscreencap\",$zscreencap,W),Ke(\"$zcall\","
+
+$zuri count in file = 2
+
+ZSUB_LITERAL :: "$zsub={}"

@@ -1,0 +1,244 @@
+{
+  "root": "C:/Users/huung/AppData/Local/Temp/rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "js_files": 116,
+  "note": "lexical counts, not call sites",
+  "rows": [
+    {
+      "key": "createServer",
+      "total": 25,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 5
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 5
+        },
+        {
+          "file": "pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js",
+          "count": 3
+        },
+        {
+          "file": "pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js",
+          "count": 3
+        },
+        {
+          "file": "pc-dist/search-worker.f32c58b63b6f4273a8a4.js",
+          "count": 3
+        },
+        {
+          "file": "pc-dist/shared-worker.f32c58b63b6f4273a8a4.js",
+          "count": 3
+        },
+        {
+          "file": "pc-dist/sync-v2-sub-worker.f32c58b63b6f4273a8a4.js",
+          "count": 3
+        }
+      ],
+      "file_count": 7
+    },
+    {
+      "key": "http.createServer",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "https.createServer",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "express(",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "app.listen(",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "server.listen(",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "WebSocketServer",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "socket.io",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "net.connect",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "net.createConnection",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    },
+    {
+      "key": "PipeZCallRecv",
+      "total": 2,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 1
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 1
+        }
+      ],
+      "file_count": 2
+    },
+    {
+      "key": "PipeZCallSend",
+      "total": 2,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 1
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 1
+        }
+      ],
+      "file_count": 2
+    },
+    {
+      "key": "\\\\\\\\.\\\\pipe\\\\",
+      "total": 4,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 2
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 2
+        }
+      ],
+      "file_count": 2
+    },
+    {
+      "key": "serve-static",
+      "total": 3,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 1
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 1
+        },
+        {
+          "file": "main-dist/migration.js",
+          "count": 1
+        }
+      ],
+      "file_count": 3
+    },
+    {
+      "key": "connect(",
+      "total": 380,
+      "hits": [
+        {
+          "file": "main-dist/compact-app-preload.js",
+          "count": 9
+        },
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 10
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 3
+        },
+        {
+          "file": "main-dist/preload-noti.js",
+          "count": 9
+        },
+        {
+          "file": "main-dist/preload-render.js",
+          "count": 9
+        },
+        {
+          "file": "main-dist/preload-shared-worker.js",
+          "count": 9
+        },
+        {
+          "file": "main-dist/preload-sqlite.js",
+          "count": 8
+        },
+        {
+          "file": "main-dist/sentry.js",
+          "count": 7
+        }
+      ],
+      "file_count": 18
+    },
+    {
+      "key": "listen(",
+      "total": 36,
+      "hits": [
+        {
+          "file": "main-dist/compact-app.js",
+          "count": 9
+        },
+        {
+          "file": "main-dist/main.js",
+          "count": 11
+        },
+        {
+          "file": "main-dist/preload-sqlite.js",
+          "count": 2
+        },
+        {
+          "file": "main-dist/utility-process-sqlite.js",
+          "count": 2
+        },
+        {
+          "file": "pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js",
+          "count": 1
+        },
+        {
+          "file": "pc-dist/lazy/45.d08ecfbc09f8cf9b2fa4.js",
+          "count": 2
+        },
+        {
+          "file": "pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js",
+          "count": 2
+        },
+        {
+          "file": "pc-dist/lazy/vendors-login-main-startup-shared-worker-znotification.dd8f2d7fd560caec2a39.js",
+          "count": 1
+        }
+      ],
+      "file_count": 10
+    },
+    {
+      "key": "ws.Server",
+      "total": 0,
+      "hits": [],
+      "file_count": 0
+    }
+  ]
+}

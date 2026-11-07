@@ -1,0 +1,83 @@
+=== CSS families (rules, selector-parts) ===
+  .chat-header          rules=   0 vars=  0  
+  .header-chat          rules=   0 vars=  0  
+  .conv-header          rules=   0 vars=  0  
+  .chat-top             rules=   0 vars=  0  
+  .topbar               rules=   0 vars=  0  
+  .top-bar              rules=  21 vars=  7  --border-focused --text-information --background-activeness --WA100 --BA100 --input-field-bg-outline --border-subtle
+  .header-title         rules=   8 vars=  1  --text-primary
+  .header-info          rules=   1 vars=  0  
+  .chat-title           rules=   0 vars=  0  
+  .conv-title           rules=   1 vars=  0  
+  .chatNav              rules=   0 vars=  0  
+  .chat-content         rules=   2 vars=  0  
+  .message-box          rules=   0 vars=  0  
+  .message-list         rules=   0 vars=  0  
+  .chat-list            rules=   0 vars=  0  
+  .chat-container       rules=   0 vars=  0  
+  .chat-pane            rules=   0 vars=  0  
+  .chatArea             rules=   0 vars=  0  
+  .chat-area            rules=   0 vars=  0  
+
+=== top class prefixes containing header/top/thread (by css rule count) ===
+  .zl-modal__dialog__header--sticky               489
+  .topic-banner__thumb-default                    90
+  .top-bar                                        78
+  .todo-header-container                          70
+  .top-section                                    69
+  .header-btn                                     42
+  .header-btn-mini                                42
+  .topic-board-details                            29
+  .chat-info__header__nav                         26
+  .stats-header                                   26
+  .zcloud-conversation-header                     25
+  .setting-menu__header--sub                      16
+  .header                                         15
+  .header-info__description                       14
+  .input-preview-area-header__loading-count       14
+  .top-section__content                           13
+  .top-section__content-description               13
+  .top-section__image                             13
+  .titlebar-menu-btn-header                       13
+  .header-title-container                         12
+  .search-header-c                                12
+  .stack-navigation__header                       12
+  .zcloud-main-view-header                        12
+  .zcloud-offload-setting__frequencyContainer-header 12
+  .topic-board-details-wrapper                    12
+  .search-header                                  11
+  .setting-menu__header-left                      11
+  .setting-menu__header                           10
+  .mg-header-container                            10
+  .header-title                                   8
+  .topic-emoji                                    7
+  .tdp-header                                     7
+  .pv-cmt-header                                  6
+  .file-sidebar__option__icon--google-drive-header 5
+  .debugger-mini-profile-monitor__source-header   5
+  .topic-board-details-wrapper__overlay           5
+  .header-title-v2                                5
+  .sticker-sorter__header__title                  4
+  .recent-header                                  4
+  .oa-msg-header                                  4
+
+=== JS literal -> module for header candidates ===
+  header-title                   occ=   4 first@10981789 "className:\"header-title" module=VLvn@10707732 len=430389
+     "t(\"div\",{className:\"flx flx-al-c lock-icon\"},l.a.createElement(Bi.a,{title:l.a.createElement(h.a,{textKey:\"STR_HEADER_E2EE_TOOLTIP\"})},l.a.createElement(ct.a,{className:\"e2ee-solid-lock-2\",comp:\"span\",style:{marginRight:\"4px\",fontSize:\"var(--f16)\",marginLeft:\"-2px\"}}))),l.a.createElement(\"div-b18\",{className:\"header-title flx flx-al-c flex-1\"},Object(Ca.b)(T)||l.a.createElement(h.a,{textKey:g?\"STR_GROUP_CHAT\":c.default.isOAType(a)?\"STR_OA\":\"STR_GROUP_SINGLE\"}))),v&&T?l.a.createElement(un.a,{icon:\"icon-outline-edit\",onClick:function(){const t=g?s:i;gn.ModalManagerV2.openModal({windowId:e.window"
+  conv-header                    NOT FOUND
+  chat-header                    NOT FOUND
+  header-info                    occ=  11 first@10886965 "\"header-info\"" module=VLvn@10707732 len=430389
+     "eZBAController.getInstance().isShowBALabel(e.conversation),l.a.createElement(\"div\",{className:\"group-board-page\",style:{background:\"var(--layer-background)\"}},l.a.createElement(Li,{autoHide:!0,noHScroll:!0},l.a.createElement(\"div\",null,l.a.createElement(\"div\",null,l.a.createElement(\"div\",{className:\"header-info\"},l.a.createElement(\"div\",{className:\"header-info__ava\",onClick:()=>{e.conversation.userId&&(gn.ModalManagerV2.openModal({windowId:e.windowId,name:d.ModalIdentitiesDefine.FRIEND_PROFILE,params:e.conversation.userId}),R.default.logAction(1460106))}},l.a.createElement(fa.d,{keys:\"avt-list"
+  chatNav                        NOT FOUND
+  chat-content                   occ=   3 first@140690 "\"chat-content\"" module=+ISi@85954 len=576375
+     "C,displayName:s,firstMsg:l,isAdmin:this.props.admins&&\"admin\"===this.props.admins[g],isGroup:c,isOwner:this.props.admins&&\"creator\"===this.props.admins[g],onClickAvatar:()=>{this.showUserInfo(l.fromUid,c?m.FRIEND_REQUEST_SRC_GROUP_CHAT:m.FRIEND_REQUEST_SRC_CHAT)}}):null,o.a.createElement(\"div\",{key:\"chat-content\",className:Object(u.a)(\"chat-content flx flx-col flx-cell\",\"chat-content-audit\"),style:{marginLeft:\"50px\"}},a),\" \")}}function Rt(e){const{avatarUrl:t,displayName:n,firstMsg:a,isAdmin:i,isOwner:r,onClickAvatar:s}=e;return o.a.createElement(g.d,{key:`avatar_${a.msgId}`,onClick:s,onContex"
+  message-box-message-wrapper    occ=   4 first@2813466 "\"message-box-message-wrapper\"" module=5VFe@2806780 len=8761
+     "ionLabel,s.actionName].join(\":\");c.current!==e&&(c.current=e,d.a.QoS.logCfgMappingError(h))}),[h,t,null==s?void 0:s.actionLabel,null==s?void 0:s.actionName,null==s?void 0:s.reasonCode]),!s)return null;return A.a.createElement(\"div\",{className:\"lockSendMessageBox\"},A.a.createElement(\"div\",{className:\"message-box-message-wrapper\"},A.a.createElement(I.a,{icon:\"Info_24_Line\",className:\"icon\"}),A.a.createElement(\"div\",{className:\"message\"},A.a.createElement(\"span\",null,s.content),s.actionLabel&&A.a.createElement(\"span\",{className:\"lockSendMessageBox--hightlight clickable\",onClick:()=>{const e=perfo"
+  message-list                   NOT FOUND
+  chat-container                 NOT FOUND
+
+=== parent shell of message list ===
+  [chat-content] "n)&&\"0\"!==l.fromUid;return o.a.createElement(\"div\",{className:w,ref:e=>{this.ref=e}},M?o.a.createElement(Rt,{avatarUrl:C,displayName:s,firstMsg:l,isAdmin:this.props.admins&&\"admin\"===this.props.admins[g],isGroup:c,isOwner:this.props.admins&&\"creator\"===this.props.admins[g],onClickAvatar:()=>{this.showUserInfo(l.fromUid,c?m.FRIEND_REQUEST_SRC_GROUP_CHAT:m.FRIEND_REQUEST_SRC_CHAT)}}):null,o.a.createElement(\"div\",{key:\"chat-content\",className:Object(u.a)(\"chat-content flx flx-col flx-cell\",\"chat-content-audit\"),style:{marginLeft:\"50px\"}},a),\" \")}}function Rt(e){const{avatarUrl:t,displayName:n,firstMsg:a,isAdmin:i,is"
+  [wrap-message] "a.createElement(\"div\",{className:\"message-action\"},Hn,Mn)),!xt&&o.a.createElement(gt,{isSentFromMe:mn},o.a.createElement(mt,Object(F.a)({},e,{ref:Q,message:Bt,messageQuickActionConfig:an,replyMessage:Ln,forwardMessage:Pn,showMessageContextMenu:na})),Kn,zn))),_t||!jn||mn?wn:null,Gn()),o.a.createElement(Lt,null,o.a.createElement(\"div\",{ref:w,key:\"msg_\"+Mt,id:Dt,className:Object(u.a)(\"chat-message chat-message-v2\",$t&&\"wrap-message\",\"rotate-container\",Ot,Ct&&\"failed\",mn&&\"me\",\"\",ln&&\"-send-time\",Jt&&\"-reaction\"),\"data-component\":m.DataAttributes.Component.BUBBLE_MESSAGE,onMouseOver:function(){ta(!1),fe.current=setTi"
+
+wrote _r3_header.txt

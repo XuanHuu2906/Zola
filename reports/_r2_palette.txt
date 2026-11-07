@@ -1,0 +1,12 @@
+
+### palette @13735 selector=":root .dark" vars=725
+  N0=#081b3a N300=#fff B55=#0068ff BA55=hsla(0,0%,100%,0.55) BLA55=rgba(0,104,255,0.55) WA100=#000
+
+### palette @36012 selector=":root" vars=307
+  N0=#fff N300=#081b3a B55=#0068ff BA55=rgba(0,0,0,0.55) BLA55=rgba(0,104,255,0.55) WA100=#fff
+
+:root .dark@13735: 725 vars
+  scale vars: 95
+
+:root@36012: 307 vars
+  scale vars: 95

@@ -1,0 +1,26 @@
+TmDO module @8024704
+TmDO module body = 56459 B
+
+TmDO exports: ["THEME->a","THEME_SETTING_OPT->s","defaultThemeSetting->i","THEME_LISTENER_EVENTS->o","convBgStorageKey->r","themeConfStorageKey->l","themeLogActionStorageKey->c","DARK_MODE_MEDIA_QUERY->d","DISPLAY_MEDIA_QUERY->u","PATH_TO_THEME_SETTING->A","THEME_LOG_SUBTYPE->h","TRACK_EVENT_ALIAS->m","SWITCH_THEME_ACTION_BY->g","COLORS_MAP->_","COLORS_ALIAS->p","COLORS_TOKEN->E","TOKEN_MAP->f","MAIN_COLOR_TOKEN->I","CORE_TOKEN_COLORS->v"]
+
+  TOKEN_MAP @rel-1
+  MAIN_COLOR_TOKEN @rel-1
+  COLORS_ALIAS @rel-1
+  COLORS_MAP @rel-1
+  CORE_TOKEN_COLORS @rel-1
+  DISPLAY_MEDIA_QUERY @rel-1
+  THEME @rel-1
+
+=== TOKEN_MAP-ish structure around "light:" ===
+"lue-icon-bold\",\"--accent-yellow-bg-subtle\",\"--accent-yellow-bg\",\"--accent-yellow-bg-bold\",\"--accent-yellow-border-subtle\",\"--accent-yellow-border\",\"--accent-yellow-border-bold\",\"--accent-yellow-text-subtle\",\"--accent-yellow-text\",\"--accent-yellow-text-bold\",\"--accent-yellow-icon-subtle\",\"--accent-yellow-icon\",\"--accent-yellow-icon-bold\",\"--shadow-overlay\",\"--shadow-overflow\",\"--shadow-bubble\"],f={light:[{token_name:\"--link\",alias:\"B\",step:\"55\",color:\"#{colorOrgv2('B', '55')}\"},{token_name:\"--success\",alias:\"G\",step:\"60\",color:\"#{colorOrgv2('G', '60')}\"},{token_name:\"--icon-hover-bg\",alias:\"N\",step:\"20\",color:\"#{colorOrgv2('N', '20')}\"},{token_name:\"--input-white\",alias:\"WA\",step:\"100\",color:\"#{colorOrgv2('WA', '100')}\"},{token_name:\"--input-placeholder-wh\",alias:\"N\",step:\"80\",color:\"#{colorOrgv2('N', '80')}\"},{token_name:\"--input-icon-wh\",alias:\"N\",step:\"100\",color:\"#{colorOrgv2('N', '100')}\"},{token_name:\"--input-grey\",alias:\"N\",step:\"20\",color:\"#{colorOrgv2('N', '20')}\"},{token_name:\"--input-placeholder-gr\",alias:\"N\",step:\"100\",color:\"#{colorOrgv2('N', '100')}\"},{token_name:\"--input-icon-gr\",alias:\"N\",step:\"100\",color:\"#{colorOrgv2('N', '100')}\"},{token_name:\"--self-bubble-chat-shadow\",alias:\"BA\",step:\"20\",color:\"#{colorOrgv2('BA', '20')}\"},{token_name:\"--text-quote\",alias:\"N\","
+
+=== token records (alias+step+token_name) found in TmDO: 0 ===
+  aliases: {}
+  unique token_name count = 0
+  sample token_names: []
+
+=== MAIN_COLOR_TOKEN definition ===
+"eturn E})),n.d(t,\"TOKEN_MAP\",(function(){return f})),n.d(t,\"MAIN_COLOR_TOKEN\",(function(){return I})),n.d(t,\"CORE_TOKEN_COLORS\",(function(){return v}));const a={DARK:\"dark\",LIGHT:\"light\",CUSTOM:\"custom\"},s={LIGHT:0,DARK:1,SYSTEM:2,CUSTOM:3},i={theme:a.LIGHT,theme_setting:s.LIGHT,has_used_dark_mode:!1},o={SETTING_UPDATED:\"app_theme_setting_updated\",OPEN_THEME_SETTING:\"app_theme_open_setting_panel\",PROMOTION_POPUP_TEMP_HIDE:\"promotion_popup_temporarily_hide\"},r=\"za_theme_conv_bg\",l=\"za_theme\",c=\"za_theme_log_act\",d=\"(prefers-color-scheme: dark)\",u=\"(displa"
+
+all token_name literals in TmDO = 376, unique = 376
+

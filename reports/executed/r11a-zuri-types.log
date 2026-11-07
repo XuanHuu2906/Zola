@@ -1,0 +1,30 @@
+=== A. globalThis.$zsub and registrar sites in the wiring chunk ===
+   "globalThis.$zsub"   = 1
+      @37920 :: "Key:_}=t,S=ye.listeners[_];Ie(e,$zsub)[t.name]=e=>{const _=S.indexOf(e);-1!=_&&S.splice(_,1),S.length<=0&&(E[t.name](),delete ye.provider[t.apiKey])}}globalThis.$zsub={};const Oe={};function Ue(e,E,t){let S=Oe[E];void 0===S&&(S={}),S=Object(_.a)(Object(_.a)({},S),t),Oe[E]=S;const{args:a,ports:R}=S;if(void 0!==a&&void 0!==R){const t=ye.listeners[e];for(const e of t){const[E,...t]=a;E.ports=R,e(E,.."
+   "Ke(\"$zuri\""       = 1
+      @39082 :: ");break;case S.UNSUBSCRIBE:Ne(e,E,Object(_.a)({name:R},p));break;case S.SUBSCRIBE_V2:Be(),se(e,E,Object(_.a)({name:R},p))}}}Ke(\"$zwindow\",$zwindow,Z),Ke(\"$zuri\",$zuri,X),Ke(\"$zapp\",$zapp,R),Ke(\"$zresource\",$zresource,o),Ke(\"$zdownload\",$zdownload,I),Ke(\"$zdb\",$zdb,r),Ke(\"$zsessionManager\",$zsessionManager,Te),Ke(\"$zupdater\",$zupdater,q),Ke(\"$zsharedWorker\",$zsharedWorker,b),Ke(\"$zlogger\",$zlogger,"
+   "Ke(\"$zsub\""       = 0
+
+=== B. descriptor types present in the wiring chunk ===
+   SUBSCRIBE_V2   = 4
+   SUBSCRIBE      = 206
+   UNSUBSCRIBE    = 100
+   REQUEST        = 137
+   RAW_SEND       = 15
+   NOTIFY         = 66
+   PROVIDE        = 15
+   STOP_PROVIDE   = 7
+
+=== C. $zuri table in preload-render.js ===
+   channel enum @760472
+   :: "UBSCRIBE},removeListenRemoteConfigChange:{apiKey:x.REMOTE_CONFIG_CHANGE,type:m.a.UNSUBSCRIBE}};let U=function(e){return e.Z_URI_REQUEST=\"z-uri-request\",e.Z_URI_OPEN_CONV=\"z-uri-open-conv\",e.CHECK_ON_START_UP=\"check-startup-open-conv-request\",e.CHECK_ARG_LINK=\"check-arg-link\",e}({});const F={onNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.SUBSCRIBE},removeListenNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.UNSUBSCRIBE},onRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.SUBSCRIBE},removeListenRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.UNSUBSCRIBE},checkOpenConvReq:{apiKey:U.CHECK_ON_START_UP,type:m.a.REQUEST},checkArgvLink:{apiKey:U.CHECK_ARG_LINK,type:m.a.RAW_SEND}};var j=n(\"GfBU\"),M=n(\"4Hrq\");let $=function(e){return e.START_SCREENCAP=\"screen-capture\",e.START_SCREEN_CAPTURE=\"start-screen-capture\",e.GET_CLIPBOARD=\"get-clipboard\",e.RESTART_SCREENCAP=\"restart-cap\",e.REWRITE_CLIPBOARD=\"rewrite-clipboard\",e.CHANGE_SCREENCAP_STATUS=\"change-screencap-status\",e.SCREENSHOT_SHORTCUT_RESULT=\"screenshot-shortcu"
+   onCheckStartupOpenConvRequest @-1
+
+=== D. every $zuri member call across pc-dist + pc-dist/lazy ===
+   files scanned = 71
+   $zuri.checkArgvLink                    x4  compact-app-pc.f32c58b63b6f4273a8a4.js@15501983 search-worker.f32c58b63b6f4273a8a4.js@15731739 sync-v2-sub-worker.f32c58b63b6f4273a8a4.js@15756795 …
+   $zuri.checkOpenConvReq                 x4  compact-app-pc.f32c58b63b6f4273a8a4.js@15499634 search-worker.f32c58b63b6f4273a8a4.js@15729390 sync-v2-sub-worker.f32c58b63b6f4273a8a4.js@15754446 …
+   $zuri.onNewRequest                     x1  default-login-startup-main-startup.ec73261654e4ce9540ac.js@18928
+   $zuri.onRequestOpenConv                x1  default-login-startup-main-startup.ec73261654e4ce9540ac.js@18956
+   $zuri.removeListenNewRequest           x1  default-login-startup-main-startup.ec73261654e4ce9540ac.js@18994
+   $zuri.removeListenRequestOpenConv      x1  default-login-startup-main-startup.ec73261654e4ce9540ac.js@19032

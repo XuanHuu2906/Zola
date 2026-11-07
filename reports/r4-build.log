@@ -1,0 +1,10 @@
+> tsc --noEmit && vite build
+[36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 2151 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.83 kB │ gzip:   0.45 kB
+dist/assets/index-DopfAMui.css   37.19 kB │ gzip:   9.06 kB
+dist/assets/index-CVQPZii6.js   344.55 kB │ gzip: 109.93 kB
+[32m✓ built in 452ms[39m

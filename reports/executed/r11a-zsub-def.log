@@ -1,0 +1,42 @@
+## pc-dist/render.f32c58b63b6f4273a8a4.js (6256 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/lazy/default-login-startup-main-startup.ec73261654e4ce9540ac.js (68778 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js (17220737 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/lazy/default-login-render-shared-worker.09de2d8e0cc06d14906d.js (11722 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/lazy/default-login-render.dc51d7e4150dfd0aae85.js (713 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+
+## pc-dist/lazy/vendors-login-render-shared-worker.eadda6f305bf492b3efc.js (29929 chars)
+   \$zsub\s*=\s* -> []
+   window\.\$zsub -> []
+   [\w$.]*\$zsub\s*=\s*\{ -> []
+   \$zsub\s*= -> []
+

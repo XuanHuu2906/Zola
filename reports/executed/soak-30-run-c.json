@@ -1,0 +1,539 @@
+{
+  "date": "2026-11-06T10:31:35.489Z",
+  "executablePath": "D:\\Zalo\\release\\win-unpacked\\Glass Messenger Demo.exe",
+  "profileRoot": "D:\\Zalo\\reports\\soak-profile",
+  "batches": 30,
+  "samples": [
+    {
+      "stage": "baseline",
+      "elapsedMs": 305,
+      "live": {
+        "domNodes": 347,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 2,
+        "JSEventListeners": 235,
+        "Nodes": 493,
+        "JSHeapUsedSize": 3647360
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 119168,
+            "peakWorkingSetSize": 119168,
+            "privateBytes": 89096
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 202856,
+            "peakWorkingSetSize": 202856,
+            "privateBytes": 183628
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46068,
+            "peakWorkingSetSize": 46068,
+            "privateBytes": 11928
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 102708,
+            "peakWorkingSetSize": 102708,
+            "privateBytes": 44316
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-5",
+      "elapsedMs": 30368,
+      "live": {
+        "domNodes": 392,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 220,
+        "Nodes": 526,
+        "JSHeapUsedSize": 5166208
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 116592,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 84768
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 264468,
+            "peakWorkingSetSize": 292156,
+            "privateBytes": 252692
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46424,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12308
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 141868,
+            "peakWorkingSetSize": 155436,
+            "privateBytes": 77212
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-10",
+      "elapsedMs": 60427,
+      "live": {
+        "domNodes": 587,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 1198,
+        "Nodes": 942,
+        "JSHeapUsedSize": 6779592
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 113860,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 81900
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 282340,
+            "peakWorkingSetSize": 293672,
+            "privateBytes": 259944
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46312,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12120
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 149504,
+            "peakWorkingSetSize": 155436,
+            "privateBytes": 84128
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-15",
+      "elapsedMs": 90487,
+      "live": {
+        "domNodes": 577,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 1158,
+        "Nodes": 928,
+        "JSHeapUsedSize": 6786076
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 114012,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 82140
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 276564,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 254108
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46304,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12112
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 140308,
+            "peakWorkingSetSize": 155436,
+            "privateBytes": 74452
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-20",
+      "elapsedMs": 120516,
+      "live": {
+        "domNodes": 692,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 1459,
+        "Nodes": 1064,
+        "JSHeapUsedSize": 8402904
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 114328,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 82172
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 273712,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 251096
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46304,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12112
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 155412,
+            "peakWorkingSetSize": 157988,
+            "privateBytes": 89328
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-25",
+      "elapsedMs": 150566,
+      "live": {
+        "domNodes": 887,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 726,
+        "Nodes": 1204,
+        "JSHeapUsedSize": 9640756
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 114348,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 82252
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 271728,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 249032
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46292,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12012
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 167584,
+            "peakWorkingSetSize": 170832,
+            "privateBytes": 101708
+          }
+        }
+      ]
+    },
+    {
+      "stage": "batch-30",
+      "elapsedMs": 180633,
+      "live": {
+        "domNodes": 877,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 1415,
+        "Nodes": 1193,
+        "JSHeapUsedSize": 15804252
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 114560,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 82516
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 274792,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 252024
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46292,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12012
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 170796,
+            "peakWorkingSetSize": 177004,
+            "privateBytes": 104992
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-reload",
+      "elapsedMs": 181549,
+      "live": {
+        "domNodes": 347,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 223,
+        "Nodes": 452,
+        "JSHeapUsedSize": 5448536
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 118324,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 86408
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 291612,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 269588
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46316,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12036
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 171912,
+            "peakWorkingSetSize": 177996,
+            "privateBytes": 105100
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-reload-gc",
+      "elapsedMs": 181568,
+      "live": {
+        "domNodes": 347,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 223,
+        "Nodes": 452,
+        "JSHeapUsedSize": 4128360
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 116612,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 84712
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 291612,
+            "peakWorkingSetSize": 295352,
+            "privateBytes": 269588
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46316,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12036
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 128396,
+            "peakWorkingSetSize": 177996,
+            "privateBytes": 60636
+          }
+        }
+      ]
+    },
+    {
+      "stage": "after-reload-2",
+      "elapsedMs": 183677,
+      "live": {
+        "domNodes": 347,
+        "frames": 0
+      },
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 223,
+        "Nodes": 450,
+        "JSHeapUsedSize": 3249492
+      },
+      "processes": [
+        {
+          "type": "Browser",
+          "memory": {
+            "workingSetSize": 117756,
+            "peakWorkingSetSize": 121296,
+            "privateBytes": 85732
+          }
+        },
+        {
+          "type": "GPU",
+          "memory": {
+            "workingSetSize": 301104,
+            "peakWorkingSetSize": 305604,
+            "privateBytes": 278608
+          }
+        },
+        {
+          "type": "Utility",
+          "memory": {
+            "workingSetSize": 46316,
+            "peakWorkingSetSize": 46452,
+            "privateBytes": 12036
+          }
+        },
+        {
+          "type": "Tab",
+          "memory": {
+            "workingSetSize": 124952,
+            "peakWorkingSetSize": 177996,
+            "privateBytes": 57348
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "sent": 150,
+  "naturalReclaim": [
+    {
+      "elapsedMs": 6,
+      "liveNodes": 347,
+      "renderer": {
+        "Documents": 3,
+        "JSEventListeners": 1646,
+        "Nodes": 1652,
+        "JSHeapUsedSize": 18309120
+      }
+    },
+    {
+      "elapsedMs": 274,
+      "liveNodes": 347,
+      "renderer": {
+        "Documents": 3,
+        "JSEventListeners": 1646,
+        "Nodes": 1652,
+        "JSHeapUsedSize": 18437036
+      }
+    },
+    {
+      "elapsedMs": 538,
+      "liveNodes": 347,
+      "renderer": {
+        "Documents": 3,
+        "JSEventListeners": 1646,
+        "Nodes": 1652,
+        "JSHeapUsedSize": 18438732
+      }
+    },
+    {
+      "elapsedMs": 803,
+      "liveNodes": 347,
+      "renderer": {
+        "Documents": 1,
+        "JSEventListeners": 223,
+        "Nodes": 452,
+        "JSHeapUsedSize": 5446480
+      }
+    }
+  ],
+  "reclaimedMs": 803,
+  "reclaimTarget": {
+    "Nodes": 567,
+    "JSEventListeners": 353
+  },
+  "elapsedMs": 183887,
+  "status": "PASS"
+}

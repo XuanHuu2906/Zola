@@ -1,0 +1,152 @@
+
+### .threadChat base
+  @255133 .threadChat.nocall   (parts=1)
+      width:calc(100% - 140px)
+  @255177 .threadChat.group   (parts=1)
+      width:calc(100% - 210px)
+  @255220 .threadChat.group-preview   (parts=1)
+      width:100%
+
+### #header exact
+  (none)
+
+### .chat-input-container base
+  @1616696 .chat-input-container   (parts=1)
+      box-sizing:border-box;width:100%;padding:10px 12px;display:flex;justify-content:flex-end;flex-direction:row;flex-wrap:wrap;gap:4px
+  @1616849 .chat-input-container.--rtf-mode   (parts=1)
+      display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden
+  @1617088 .chat-input-container.--rtf-mode.--rtf-mini-mode   (parts=1)
+      min-height:177.75px;max-height:177.75px;height:177.75px
+  @1617193 .chat-input-container.--rtf-mode.--rtf-expand-mode   (parts=1)
+      height:100%
+  @1617989 .chat-input-container.--simple-normal-mode   (parts=1)
+      flex-direction:row;flex-wrap:nowrap;height:auto!important;max-height:fit-content!important;min-height:fit-content!important
+  @1618428 .chat-input-container.--switching-rtf-to-normal-mode   (parts=1)
+      display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden
+
+### .chat-input-wrapper base
+  (none)
+
+### .chat-input-content base
+  (none)
+
+### .chat-box-input__content base
+  @61926 .chat-box-input__content   (parts=485)
+      display:-webkit-flex;flex-flow:row nowrap
+  @81623 .chat-box-input__content   (parts=96)
+      flex-flow:column nowrap
+  @118583 .chat-box-input__content   (parts=16)
+      box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+  @121511 .chat-box-input__content   (parts=485)
+      display:flex
+  @1610047 .chat-box-input__content   (parts=1)
+      background-color:var(--layer-background)
+
+### .zmenu-body base
+  @301247 .zmenu-body.content-only   (parts=3)
+      position:absolute;background:var(--layer-background);padding:8px;z-index:9999;box-shadow:var(--shadow-overlay)
+  @301407 .zmenu-body.content-only   (parts=2)
+      opacity:0;border-radius:8px;border:1px solid var(--border)
+  @1859180 .zmenu-body   (parts=1)
+      max-width:270px;min-width:140px;margin:-4px -2px
+  @1859241 .zmenu-body.has-submenu   (parts=1)
+      min-width:184px
+  @1859281 .zmenu-body.content-only   (parts=1)
+      opacity:0;padding:4px 6px
+  @1859497 .zmenu-body.expand   (parts=2)
+      max-width:none;min-width:inherit;width:inherit
+
+### .popover-v3 base
+  @301247 .popover-v3   (parts=3)
+      position:absolute;background:var(--layer-background);padding:8px;z-index:9999;box-shadow:var(--shadow-overlay)
+  @301407 .popover-v3   (parts=2)
+      opacity:0;border-radius:8px;border:1px solid var(--border)
+  @1556425 .popover-v3.z-date-picker-v4-popover.reminder-compose-form__date-popover   (parts=2)
+      margin:var(--space-xs) 0
+  @1794161 .popover-v3.ai-translation-language-pair-select__menu   (parts=2)
+      box-sizing:border-box;min-width:181px;margin:var(--space-xxs) 0;border-radius:6px
+
+### .conv-item base
+  @685776 .conv-item   (parts=1)
+      height:calc(100% - 8px);contain:size style;background-color:var(--layer-background);transition:background-color 80ms;cursor:pointer;margin:4px 8px;border-radius:6px;padding:0 8px
+  @685966 .conv-item.chat-message.first-selected   (parts=3)
+      background-color:var(--layer-background-selected);border-right:none
+  @686131 .conv-item.chat-message.first-selected:hover   (parts=3)
+      background-color:var(--layer-background-selected)
+  @686296 .conv-item.new-just-read   (parts=1)
+      background:var(--text-secondary);outline:none
+  @686367 .conv-item.new-just-read.active   (parts=2)
+      background-color:var(--layer-background-selected)
+  @686492 .conv-item:hover   (parts=1)
+      background:var(--layer-background-hover)
+  @687841 .conv-item.active   (parts=1)
+      outline:1.4px dotted var(--BA50);outline-offset:-1px
+  @687912 .conv-item.noti.unread-noti   (parts=2)
+      background:var(--B10)
+
+### .conv base
+  @691244 .conv   (parts=1)
+      height:50px;padding:12px 16px 12px 14px;contain:size style;background:var(--layer-background);display:flex;cursor:pointer
+  @691372 .conv.pinned   (parts=1)
+      background:var(--layer-background-subtle)
+  @691427 .conv.pinned:hover   (parts=1)
+      background-color:var(--layer-background-hover)
+  @691493 .conv.chat-message.first-selected   (parts=3)
+      background-color:var(--B10);border-right:none
+  @691621 .conv.chat-message.first-selected:hover   (parts=3)
+      background-color:var(--B10)
+  @691749 .conv:hover   (parts=1)
+      background:var(--layer-background-hover)
+  @692522 .conv.active   (parts=1)
+      outline:1.4px dotted var(--NG80);background:var(--layer-background-subtle);outline-offset:-1px
+
+### .conv-message base
+  @109641 .conv-message   (parts=7)
+      flex:1 1 auto
+  @114054 .conv-message   (parts=57)
+      text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-wrap:break-word
+  @692876 .conv-message   (parts=1)
+      font-size:.875rem;font-weight:400;line-height:1.5;line-height:18px;position:relative;color:var(--text-secondary);left:0
+  @693010 .conv-message.unread   (parts=1)
+      color:var(--text-primary);right:30px
+  @693068 .conv-message.mute   (parts=1)
+      right:26px
+  @693098 .conv-message.mute-unread   (parts=1)
+      right:47px
+
+### .setting-menu__item base
+  @1072595 .setting-menu__item   (parts=1)
+      height:40px;padding:0 8px;color:var(--text-primary);cursor:pointer;font-size:.875rem;font-weight:400;line-height:1.5;display:flex;justify-content:space-between;align-items:center;margin:4px 8px;border-radius:6px
+  @1072827 .setting-menu__item:hover   (parts=1)
+      background-color:var(--layer-background-hover)
+  @1072900 .setting-menu__item.chat-message.first-selected   (parts=3)
+      background-color:var(--layer-background-selected)
+  @1073074 .setting-menu__item.disabled   (parts=1)
+      cursor:not-allowed!important;pointer-events:none;color:var(--text-disabled);font-size:.875rem;font-weight:400;line-height:1.5
+
+### .setting-content base
+  @1073904 .setting-content   (parts=1)
+      height:515px
+  @1073934 .setting-content.device   (parts=1)
+      padding-left:14px;padding-top:8px
+
+### .nav__tabs base
+  (none)
+
+### .nav-button base
+  @294642 .nav-button_add_group   (parts=1)
+      font-size:1.5rem;font-weight:400;line-height:1.5;top:-4px
+  @295927 .nav-button_add_friend   (parts=1)
+      top:-6px
+
+### #main-tab exact
+  @118583 #main-tab   (parts=16)
+      box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+  @269917 #main-tab   (parts=1)
+      width:64px;flex:none;box-sizing:border-box;background:var(--layer-background-navbar-normal);position:relative;margin-top:-24px
+  @270054 #main-tab.WEB   (parts=1)
+      margin-top:0
+
+
+=== selectors that mention #header (any position) ===
+  (none)

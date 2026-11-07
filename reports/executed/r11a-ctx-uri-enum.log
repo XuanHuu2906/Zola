@@ -1,0 +1,8 @@
+## main-dist/main.js "CHECK_ON_START_UP=\"" total=1
+  @1025453 BEFORE="emoteConfig(t.config)}};let Ae=function(e){return e.Z_URI_REQUEST=\"z-uri-request\",e.Z_URI_OPEN_CONV=\"z-uri-open-conv\",e."
+    onst{sharedWorkerManager:r}=n("poPE");r.onUpdateTaskParams(e,t)},updateRemoteConfig:(e,t)=>{const{sharedWorkerManager:r}=n("poPE");r.updateRemoteConfig(t.config)}};let Ae=function(e){return e.Z_URI_REQUEST="z-uri-request",e.Z_URI_OPEN_CONV="z-uri-open-conv",e.CHECK_ON_START_UP="check-startup-open-conv-request",e.CHECK_ARG_LINK="check-arg-link",e}({});const Ie={onNewRequest:{apiKey:Ae.Z_URI_REQUEST,type:f.a.SUBSCRIBE},removeListenNewRequest:{apiKey:Ae.Z_URI_REQUEST,type:f.a.UNSUBSCRIBE},onRequestOpenConv:{apiKey:Ae.Z_URI_OPEN_CONV,typ
+
+## main-dist/compact-app.js "CHECK_ON_START_UP=\"" total=1
+  @1063068 BEFORE="emoteConfig(t.config)}};let Ce=function(e){return e.Z_URI_REQUEST=\"z-uri-request\",e.Z_URI_OPEN_CONV=\"z-uri-open-conv\",e."
+    onst{sharedWorkerManager:r}=n("poPE");r.onUpdateTaskParams(e,t)},updateRemoteConfig:(e,t)=>{const{sharedWorkerManager:r}=n("poPE");r.updateRemoteConfig(t.config)}};let Ce=function(e){return e.Z_URI_REQUEST="z-uri-request",e.Z_URI_OPEN_CONV="z-uri-open-conv",e.CHECK_ON_START_UP="check-startup-open-conv-request",e.CHECK_ARG_LINK="check-arg-link",e}({});const Ie={onNewRequest:{apiKey:Ce.Z_URI_REQUEST,type:f.a.SUBSCRIBE},removeListenNewRequest:{apiKey:Ce.Z_URI_REQUEST,type:f.a.UNSUBSCRIBE},onRequestOpenConv:{apiKey:Ce.Z_URI_OPEN_CONV,typ
+

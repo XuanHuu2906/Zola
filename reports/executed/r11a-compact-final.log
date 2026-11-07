@@ -1,0 +1,68 @@
+=== A. main.js compact-app-pc sites ===
+
+@264268 :: "t.forEach((t=>{t=o.join(e,t),s.removeSync(t)}))}e.exports={emptyDirSync:l,emptydirSync:l,emptyDir:c,emptydir:c}},\"2Wib\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"LAUNCH_COMPACT_APP_ARG\",(function(){return r})),n.d(t,\"INSPECT_ARG\",(function(){return i})),n.d(t,\"COMPACT_APP_BUNDLE_NAME\",(function(){return o})),n.d(t,\"COMPACT_APP_VERSION_ARG\",(function(){return a}));const r=\"--launch-compact-app\",i=\"--inspect=9230\",o=\"compact-app-pc\",a=\"--app-version\"},\"2X0m\":function(e,t,n){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0}),t.default=function(e){const t=new WeakMap;return n=>{let r=t.get(n);return null==r&&(r=e(n),t.set(n,r)),r}}},\"2Y26\":function(e,t,n){\"use str"
+
+@1444699 :: "rProcess.MainCompactApp:r.ZLoggerProcess.Main;break;case\"web\":e=r.ZLoggerProcess.Web;break;case\"login\":e=r.ZLoggerProcess.Login;break;case\"photo\":e=r.ZLoggerProcess.Photo;break;case\"render\":e=r.ZLoggerProcess.Render;break;case\"shared-worker\":e=r.ZLoggerProcess.SharedWorker;break;case\"compact-app\":e=i.argv.some((e=>e.startsWith(\"--launch-compact-app\")))?r.ZLoggerProcess.MainCompactApp:r.ZLoggerProcess.Main;break;case\"compact-app-pc\":e=r.ZLoggerProcess.CompactApp;break;case\"preload-shared-worker\":e=r.ZLoggerProcess.PreloadSharedWorker;break;case\"preload-sqlite\":e=r.ZLoggerProcess.PreloadSQLite;break;case\"utility-process-sqlite\":e=r.ZLoggerProcess.UProcessSQLite;break;case\"u"
+
+
+=== B. compact-app-preload $zwindow sites ===
+
+@898133 :: "Error(\"tasks param isn't valid!\");for(const t of e)if(\"function\"!=typeof t)throw new TypeError(`expected task to be a \\`function\\`, received \\`${typeof t}\\``)}const w=Object(s.promisify)(r.stat),A=Object(s.promisify)(r.readFile),S=[\"jpg\",\"jpeg\",\"png\",\"gif\"],I=async(e,t,n)=>{const{filePaths:r}=await $zwindow.showOpenDialog({title:e||\"\",filters:[{name:\"Images\",extensions:n.extensions||S}],defaultPath:t||\"\",properties:[\"multiSelections\",\"openFile\"]});if(!r||0===r.length)throw new Error(\"can't get photoPaths!\");const i=r.map((e=>async()=>{try{const t=await w(e),r=((e,t)=>{const n=o.a.extname(e.nam"
+
+@900605 :: "\"error\",r.onError),{start:()=>{let e=i;r.cipher&&(e=e.pipe(r.cipher)),r.progress&&(e=e.pipe(r.progress)),e.pipe(t)},destroy:()=>{i.destroy()}}}async function W(){return he()}async function K(e){const{title:t,buttonLabel:n}=e;H.exportDesFolder||(H.exportDesFolder=await he());const{filePaths:r}=await $zwindow.showOpenDialog({title:t,buttonLabel:n,defaultPath:H.exportDesFolder,properties:[\"openDirectory\"]});return r&&0!=r.length?(H.exportDesFolder=r[0],r[0]):\"\"}async function Y(e){const t=await F(e);return H.uid=e,H.exportDBFolderPath=N.join(t,\"database\",N.sep),H.exportDBFolderPath}function J(e){"
+
+@902413 :: ")}function te(){return new Promise((e=>{const t=le(N.join(H.exportDesFolder,`${V}_${de()}${Q.V2}`));R.rename(H.exportZipTempPath,t,(n=>{n?(ee(),e({error:!0})):e({error:!1,filePath:t})}))}))}function ne(){return ue(H.exportDBFolderPath)}async function re(e){const{title:t,uid:n}=e,{filePaths:r}=await $zwindow.showOpenDialog({title:t,defaultPath:\"\",properties:[\"openFile\"],filters:[{name:\"All Files\",extensions:[\"zip\"]}]});return r&&0!=r.length?(H.backupZipFilePath=r[0],H.uid=n,H.backupZipFilePath):\"\"}async function ie(e,t,n={onInitPath:e=>{},onProgress:e=>{},onDecipherErr:e=>{},onExtractErr:e=>{},"
+
+--- other exposed-ish globals referenced in the preload ---
+   "window.$app="             = 1
+   "window.$zconfig="         = 1
+   "window.$zlogger="         = 1
+   "window.$znode="           = 1
+   "window.$zelectron="       = 1
+   "window.$zfileRes="        = 1
+   "window.$zFileManager="    = 1
+   "window.$zupdater"         = 0
+   "$zupdater"                = 0
+   "$zscreencap"              = 0
+   "$zcall"                   = 0
+   "$zlogin"                  = 0
+   "$zdb"                     = 0
+
+
+=== C. compact-mode gating and launch ===
+
+-- main-dist/main.js
+   "LAUNCH_COMPACT_APP_ARG"     = 4
+   "isCompactApp"               = 4
+   "launchCompactApp"           = 7
+   "compactApp"                 = 0
+   "COMPACT_APP_VERSION_ARG"    = 5
+   "compact-app"                = 13
+
+-- main-dist/compact-app.js
+   "LAUNCH_COMPACT_APP_ARG"     = 5
+   "isCompactApp"               = 4
+   "launchCompactApp"           = 6
+   "compactApp"                 = 0
+   "COMPACT_APP_VERSION_ARG"    = 7
+   "compact-app"                = 23
+
+-- main-dist/second-instance.js
+   "LAUNCH_COMPACT_APP_ARG"     = 0
+   "isCompactApp"               = 0
+   "launchCompactApp"           = 0
+   "compactApp"                 = 0
+   "COMPACT_APP_VERSION_ARG"    = 0
+   "compact-app"                = 0
+
+main.js @264011 :: ";r=r.map((t=>o.join(e,t))),function e(){const n=r.pop();if(!n)return t();s.remove(n,(n=>{if(n)return t(n);e()}))}()}))}));function l(e){let t;try{t=i.readdirSync(e)}catch(n){return a.mkdirsSync(e)}t.forEach((t=>{t=o.join(e,t),s.removeSync(t)}))}e.exports={emptyDirSync:l,emptydirSync:l,emptyDir:c,emptydir:c}},\"2Wib\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"LAUNCH_COMPACT_APP_ARG\",(function(){return r})),n.d(t,\"INSPECT_ARG\",(function(){return i})),n.d(t,\"COMPACT_APP_BUNDLE_NAME\",(function(){return o})),n.d(t,\"COMPACT_APP_VERSION_ARG\",(function(){return a}));const r=\"--launch-compact-app\",i=\"--inspect=9230\",o=\"compact-app-pc\",a=\"--app-version\"},\"2X0m\":f"
+
+main.js @903836 :: "is._logger=void 0,this.version=\"\",this._logger=a.ModuleContainer.resolve(s.ZLoggerFactory).createZLogger([\"compact-app-service\"]),this.isCompactApp()?this.initiator=o.COMPACT_APP:this.initiator=o.MAIN_APP}launchCompactApp(e,t,n){const o=Object(u.a)();Object(c.b)(o,{state:e,config:t,systemConfig:n});const a=this.removeOldArgs(process.argv.slice(1)).concat([i.LAUNCH_COMPACT_APP_ARG,`${i.COMPACT_APP_VERSION_ARG}=${o}`]);this._logger.zsymb(0,\"62sOkc\",`Relaunching compact app with args... ${a.join(\" \")}`),r.appQuitFlow.relaunch({args:a})}isCompactApp(){return process.argv.some((e=>e.startsWith(i.LAUNCH_COMPACT_APP_ARG)))}isMainApp(){return!this.isCompactApp"
+
+main.js @904074 :: "bject(u.a)();Object(c.b)(o,{state:e,config:t,systemConfig:n});const a=this.removeOldArgs(process.argv.slice(1)).concat([i.LAUNCH_COMPACT_APP_ARG,`${i.COMPACT_APP_VERSION_ARG}=${o}`]);this._logger.zsymb(0,\"62sOkc\",`Relaunching compact app with args... ${a.join(\" \")}`),r.appQuitFlow.relaunch({args:a})}isCompactApp(){return process.argv.some((e=>e.startsWith(i.LAUNCH_COMPACT_APP_ARG)))}isMainApp(){return!this.isCompactApp()}isRelaunchedFromCompactApp(){return this.isMainApp()&&process.argv.some((e=>e.startsWith(i.COMPACT_APP_VERSION_ARG)))}getVersions(){if(!this.isRelaunchedFromCompactApp()||!this.isCompactApp())return\"\";const{appVersion:e}=Object(l.b)();"
+
+main.js @904643 :: "elaunchedFromCompactApp()||!this.isCompactApp())return\"\";const{appVersion:e}=Object(l.b)();return e}getRelaunchState(e){if(!this.isRelaunchedFromCompactApp())return{};const t=Object(d.a)();return e?t[e]||{}:t}removeOldArgs(e){return this._logger.zsymb(0,\"e7wNTb\",\"Removing old args...\",e),e.filter((e=>!e.startsWith(i.COMPACT_APP_VERSION_ARG)&&!e.startsWith(i.LAUNCH_COMPACT_APP_ARG)))}}const h=new p;t.default=h},Dmvi:function(e,t,n){!function(e){\"use strict\";e.defineLocale(\"en-au\",{months:\"January_February_March_April_May_June_July_August_September_October_November_December\".split(\"_\"),monthsShort:\"Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec\".split(\""
+
+
+=== D. compact-app.html ===
+<!doctype html><html lang="en"><head><title>Zalo Compact Application</title><link id="favico" rel="icon" type="image/png" href="/favicon-96x96.v1.png"/><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"/><meta name="robots" content="noindex"/><meta charset="utf-8"/><link href="compact-app-pc.f32c58b63b6f4273a8a4.css" rel="stylesheet"></head><body><div id="app" style="display: none"></div><noscript>You must enable script to view compact application!</noscript><script>const __ZaBUNDLENAME__ = 'compact-app-pc';</script><script src="compact-app-pc.f32c58b63b6f4273a8a4.js"></script></body></html>

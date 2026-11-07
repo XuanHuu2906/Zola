@@ -1,0 +1,110 @@
+bundle code units = 20927993
+structural candidates = 4713
+verified bodies = 4713/4713 (parse fails 0) in 5.1s
+
+=== known module keys ===
+  TmDO: @9440451 len=56458
+  euSg: @14376441 len=5986
+  B5Cg: @3990966 len=482
+  iwo6: @15768419 len=5695
+  xPHB: @19505897 len=905
+  HuPi: @6112786 len=1838
+  CYG6: @4245911 len=86784
+  RFxn: @8774196 len=99056
+  iKSP: @15249706 len=340247
+  KCaC: @6931066 len=2554
+  W0O7: @11402172 len=3344
+  nahq: @16847888 len=5434
+  j6F3: MISSING
+  Fuol: @5458193 len=16054
+  I9t9: @6147660 len=37858
+  GQ8g: @5553773 len=11891
+  y1FZ: @19641108 len=9042
+  FCc4: @5144073 len=3933
+
+=== surface class literal -> innermost verified module (AST) ===
+
+## conv list row ("className:"conv-item") occ=10
+   modules: Zb+t@12278564
+   @12393315 -> Zb+t@12278564 len=587835
+   @12393748 -> Zb+t@12278564 len=587835
+   @12393895 -> Zb+t@12278564 len=587835
+   @12462963 -> Zb+t@12278564 len=587835
+   @12463388 -> Zb+t@12278564 len=587835
+
+## conv preview text ("conv-message truncate") occ=4
+   modules: Zb+t@12278564
+   @12389658 -> Zb+t@12278564 len=587835
+   @12515604 -> Zb+t@12278564 len=587835
+   @12519736 -> Zb+t@12278564 len=587835
+   @12531685 -> Zb+t@12278564 len=587835
+
+## conv title name ("conv-item-title__name") occ=2
+   modules: Zb+t@12278564
+   @12393141 -> Zb+t@12278564 len=587835
+   @12462974 -> Zb+t@12278564 len=587835
+
+## message wrapper ("className:"chat-message") occ=10
+   modules: /GXy@965564
+   @987109 -> /GXy@965564 len=159468
+   @988374 -> /GXy@965564 len=159468
+   @989390 -> /GXy@965564 len=159468
+   @989753 -> /GXy@965564 len=159468
+   @990191 -> /GXy@965564 len=159468
+
+## composer bar ("className:"chat-box-bar"") occ=1
+   modules: Fuol@5458193
+   @5463373 -> Fuol@5458193 len=16054
+
+## composer toolbar btn ("chat-box-input__tools__btn") occ=6
+   modules: Fbxx@5409238 | GQ8g@5553773 | VLvn@10707732
+   @5409873 -> Fbxx@5409238 len=882
+   @5563240 -> GQ8g@5553773 len=11891
+   @5564382 -> GQ8g@5553773 len=11891
+   @5565042 -> GQ8g@5553773 len=11891
+   @5565441 -> GQ8g@5553773 len=11891
+
+## bubble container ("content-message-container") occ=2
+   modules: 2pdp@1841295 | medu@16709760
+   @1847070 -> 2pdp@1841295 len=19820
+   @16713628 -> medu@16709760 len=22202
+
+## titlebar buttons ("titlebar__btns") occ=3
+   modules: y1FZ@19641108
+   @19646838 -> y1FZ@19641108 len=9042
+   @19648693 -> y1FZ@19641108 len=9042
+   @19649158 -> y1FZ@19641108 len=9042
+
+## menu item ("className:"zmenu-item") occ=10
+   modules: +ISi@85954 | 6dTG@2996893 | FCc4@5144073 | GQ8g@5553773 | I9t9@6147660 | MEZx@7331013
+   @174229 -> +ISi@85954 len=576375
+   @193053 -> +ISi@85954 len=576375
+   @3010324 -> 6dTG@2996893 len=34090
+   @3011900 -> 6dTG@2996893 len=34090
+   @5147277 -> FCc4@5144073 len=3933
+
+## modal footer ("zl-modal__footer") occ=10
+   modules: +ISi@85954 | /ymA@1255215
+   @243446 -> +ISi@85954 len=576375
+   @243643 -> +ISi@85954 len=576375
+   @1257198 -> /ymA@1255215 len=56717
+   @1257305 -> /ymA@1255215 len=56717
+   @1257330 -> /ymA@1255215 len=56717
+
+## date chip ("className:"chat-date") occ=2
+   modules: +ISi@85954
+   @225036 -> +ISi@85954 len=576375
+   @399580 -> +ISi@85954 len=576375
+
+## left chat box bar (""left-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150276 -> I9t9@6147660 len=37858
+
+## right chat box bar (""right-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150605 -> I9t9@6147660 len=37858
+
+## leftpanel ("className:"leftpanel") occ=0
+   modules: 
+
+wrote _r3_modules7.json + _r3_modules7_intervals.json

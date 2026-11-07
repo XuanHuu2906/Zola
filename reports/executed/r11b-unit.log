@@ -1,0 +1,9 @@
+✔ a signal aborted before connect yields cancelled and opens no socket (0.1921ms)
+ℹ tests 89
+ℹ suites 0
+ℹ pass 89
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 236.9319

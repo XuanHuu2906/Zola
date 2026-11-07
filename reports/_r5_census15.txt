@@ -1,0 +1,44 @@
+=== index.html script srcs ===
+  libs/libsignal-protocol.static.js
+  lazy/vendors-login-render-shared-worker-znotification.aae872b4641c395ab90c.js
+  lazy/vendors-login-render-shared-worker.eadda6f305bf492b3efc.js
+  lazy/default-login-render-shared-worker-znotification.bc10d4fc9e423c407115.js
+  lazy/default-login-render-shared-worker.09de2d8e0cc06d14906d.js
+  lazy/default-login-render.dc51d7e4150dfd0aae85.js
+  render.f32c58b63b6f4273a8a4.js
+  inline webpack chunk hints:
+    SRC = preview-thumb-worker.f32c58b63b6f4273a8a4.js
+    SRC = search-worker.f32c58b63b6f4273a8a4.css
+    SRC = webpack.output.entry.service-worker
+    SRC = cpu-heavy-worker.f32c58b63b6f4273a8a4.js
+    SRC = webpack.output.entry.soc-worker
+    SRC = zd-worker.f32c58b63b6f4273a8a4.js
+    SRC = pdf-worker.f32c58b63b6f4273a8a4.js
+    SRC = mainless-worker.f32c58b63b6f4273a8a4.js
+    SRC = dal-worker.f32c58b63b6f4273a8a4.js
+    SRC = opfs-worker.f32c58b63b6f4273a8a4.js
+    SRC = trust-worker.f32c58b63b6f4273a8a4.js
+
+=== theme module export map (n.d(t,"x",()=>y)) ===
+  module key guess: eVLP
+  exports: ["a->a","a->i"]
+
+=== scrubber invocation check ===
+  re-assembled link selector: link[href^="zadark"]
+  occurrences of assembled selector literal: 0
+  scrubber body start @14347678
+  after scrubber: "etAttribute(\"content\",t)},E=()=>window.matchMedia(r.DISPLAY_MEDIA_QUERY).matches||window.navigator.standalone||document.referrer.includes(\"android-app://\"),v=e=>{if(!e)return null;const t=I();return t.unshift({time:Date.now(),setting:e}),localStorage.setItem(\"za_theme_custom\",JSON.stringify(t)),e},I=()=>{try{const e=localStorage.getItem(\"za_theme_custom\");return JSON.parse(e)||[]}catch(e){return[]}}},euoI:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return i}));var a=n(\"jDHv\");const i=Object(a.define)(\"database-encryption\")},evR8:function(e,t,n){\"use strict\";var a=n(\"VTBJ\"),i=n(\"LCmz\"),r=n(\"wd/R\"),s=n.n(r),o=n(\"CrY6\"),l=n(\"66v8\"),c=n(\"NDmK\"),d=n(\"UiPd\"),u=n(\"igA5\");class A{constructor(){this.storage=void 0,this.ignoreStorage=void 0,this.successStorage=void 0,this.sls=void 0,this.stor"
+
+=== CUSTOM theme hot path: which module renders the App and applies theme on mount ===
+  za_theme_custom sites: 2
+  THEME_SETTING_OPT sites: 6
+  isMaskSidebar sites: 6
+
+=== properties emitted by the CUSTOM generator ===
+  tokens: --f --layer-background-gradient-on-color --layer-background-hover --layer-background-navbar-hover --layer-background-navbar-normal --layer-background-navbar-selected --layer-background-pinned --layer-background-selected --text-mention --text-primary --title-bar
+
+=== sink scope occurrences ===
+  [compact-app-pc.f32c58b63b6f4273a8a4.js] ":root .custom" = 2 ; "app-custom-theme" = 2
+  [sync-v2-sub-worker.f32c58b63b6f4273a8a4.js] ":root .custom" = 2 ; "app-custom-theme" = 2
+  [search-worker.f32c58b63b6f4273a8a4.js] ":root .custom" = 2 ; "app-custom-theme" = 2
+

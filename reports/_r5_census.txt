@@ -1,0 +1,84 @@
+=== R5 CENSUS ===
+root = C:/Users/huung/AppData/Local/Temp/rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6
+
+main-dist files:
+   0.js 1446
+   10.js 5429
+   9.js 336
+  DIR  assets
+   compact-app-preload.js 2248899
+   compact-app.js 4180222
+   main.js 4342755
+   mainless-worker.js 1074730
+   migration.js 1112675
+   preload-noti.js 1990530
+   preload-render.js 1990534
+   preload-shared-worker.js 2220254
+   preload-sqlite.js 2830607
+   second-instance.js 1516
+   sentry.js 319338
+   stast.json 1305
+   utility-process-media.js 1191831
+   utility-process-sqlite.js 1324776
+
+=== API CENSUS (literal substring counts) ===
+file	bytes	insertCSS	executeJavaScript	addStyleSheet	loadExtension	getAllExtensions	setBackgroundMaterial	vibrancy	Vibrancy	acrylic	transparent:!0	titleBarStyle	appendSwitch	commandLine	setWindowOpenHandler	will-attach-webview	exposeInMainWorld	contextBridge	trustPathFromBlob	nativeWindowOpen	backgroundColor
+main-dist/main.js	4342755	0	0	0	2	2	0	0	0	0	1	5	3	3	3	0	1	2	2	1	6
+main-dist/preload-render.js	1990534	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	41	42	3	0	0
+main-dist/compact-app.js	4180222	0	0	0	2	2	0	0	0	0	1	5	0	1	3	0	2	4	2	1	6
+main-dist/compact-app-preload.js	2248899	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	10	3	0	0
+main-dist/preload-noti.js	1990530	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	41	42	3	0	0
+main-dist/bootstrap.js	MISSING
+
+=== CSP (pc-dist/index.html) ===
+csp has meta: true index.html bytes: 6219
+csp offset: 55
+upgrade-insecure-requests; default-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.zaloapp.com https://*.zdn.vn https://*.zadn.vn https://*.google.com https://www.google-analytics.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://*.zadn.vn https://*.zdn.vn blob:;manifest-src 'self' 'unsafe-inline' https://*.zalo.me;font-src * data:; img-src * data: blob: zfile: file:; media-src * blob: zfile: file:; connect-src 'self' https://*.dlfl.me https://*.dlfl.vn https://*.flchat.vn https://*.pchat.vn https://*.dlfl.info https://*.dlmd.me https://*.mdchat.me https://*.zavi.me https://*.doubleclick.net https://*.google-analytics.com wss://*.zavi.me wss://*.chat.zalo.me https://*.zalo.me https://*.zdn.vn https://*.zadn.vn https://*.z-cdn.me https://*.zaloapp.com https://*.zing.vn https://*.google.com https://www.microsoft.com https://www.apple.com https://*.baomoi.com https://*.zingtv.vn https://*.zingmp3.vn zingmp3.vn blob:; child-src 'self' https://*.zapps.vn https://*.baomoi.com https://*.zingmp3.com https://*.zingmp3.vn https://zingmp3.vn https://www.facebook.com https://*.zalo.me https://*.zalo.ai https://kilm.ai https://*.kilm.ai https://*.google.com https://*.youtube.com https://*.googleapis.com https://*.zing.vn https://*.zdn.vn https://*.zadn.vn https://*.zaloapp.com https://*.soundcloud.com https://*.live.com blob:
+
+compact-app.html has CSP meta: false bytes: 1307
+
+=== commandLine.appendSwitch call sites (main.js) ===
+  @3565591 :: "5cM\"),{appQuitFlow:Ln}=n(\"DfAL\");let Pn=null;On.commandLine.appendSwitch(\"ignore-connections-limit\",\"files-wpa.zaloapp.com\"),On.commandLine.appendSwitch(\"disable-pinch\"),process&&process.env,On.comman"
+  @3565671 :: "-connections-limit\",\"files-wpa.zaloapp.com\"),On.commandLine.appendSwitch(\"disable-pinch\"),process&&process.env,On.commandLine.appendSwitch(\"enable-features\",\"JXL\");let Mn=null;On.on(\"second-instance\","
+  @3565737 :: "Switch(\"disable-pinch\"),process&&process.env,On.commandLine.appendSwitch(\"enable-features\",\"JXL\");let Mn=null;On.on(\"second-instance\",((e,t,n)=>{if(!Pn)return;let r=Pn.getMainWindow();if(r){if(\"win32\""
+
+=== process.argv reads (main.js) ===
+  @694443 :: "nch()&&(m.zsymb(3,\"6v6DsR\",[\"restarting app...\",\"8Xu9Z5\"]),r.app.relaunch({args:process.argv.slice(1).concat([\"--relaunch-silently\"]),execPath:e}),a.quitAndInstall(!0,!0))})).catch"
+  @694828 :: ".then((()=>{m.zsymb(3,\"rkF1lk\",[\"restarting app...\",\"8Xu9Z5\"]),E.relaunch({args:process.argv.slice(1).concat([\"--relaunch-silently\"]),execPath:e})})).catch((e=>{m.zsymb(21,\"KClvQ1\""
+  @695474 :: "et remember once\",\"1UyHQO\"],e),this.quitAndInstall()}))}forceUpdateWin(e){let t=process.argv.slice(1);e==y.Hidden&&(t=t.concat([\"--relaunch-silently\"]));let n=o.join(o.dirname(r.ap"
+  @835916 :: "return a}));var r=n(\"DA/T\"),i=n(\"f4Op\"),o=n(\"oPp/\");const a=()=>{const e={};if(!process.argv||0===process.argv.length)return{};const{appVersion:t}=Object(i.b)();if(t){const n=Objec"
+  @835934 :: "n(\"DA/T\"),i=n(\"f4Op\"),o=n(\"oPp/\");const a=()=>{const e={};if(!process.argv||0===process.argv.length)return{};const{appVersion:t}=Object(i.b)();if(t){const n=Object(r.a)(t);if(!n)re"
+  @903803 :: ")();Object(c.b)(o,{state:e,config:t,systemConfig:n});const a=this.removeOldArgs(process.argv.slice(1)).concat([i.LAUNCH_COMPACT_APP_ARG,`${i.COMPACT_APP_VERSION_ARG}=${o}`]);this._"
+  @904037 :: "args... ${a.join(\" \")}`),r.appQuitFlow.relaunch({args:a})}isCompactApp(){return process.argv.some((e=>e.startsWith(i.LAUNCH_COMPACT_APP_ARG)))}isMainApp(){return!this.isCompactApp("
+  @904193 :: "eturn!this.isCompactApp()}isRelaunchedFromCompactApp(){return this.isMainApp()&&process.argv.some((e=>e.startsWith(i.COMPACT_APP_VERSION_ARG)))}getVersions(){if(!this.isRelaunchedF"
+  @975492 :: ";let e=i.join(i.dirname(o.app.getPath(\"exe\")),\"..\",\"Zalo.exe\");S.relaunch({args:process.argv.slice(1).concat([\"--relaunch\"]),execPath:e})}else{if(!S.beginRelaunch())return;h.zsymb("
+  @1663324 :: ";let e=i.join(i.dirname(o.app.getPath(\"exe\")),\"..\",\"Zalo.exe\");f.relaunch({args:process.argv.slice(1).concat([\"--relaunch\"]),execPath:e})}else{if(!f.beginRelaunch())return;h.zsymb("
+  @2297486 :: "teFile),writeJsonSync:i.writeFileSync}},bAum:function(e,t,n){\"use strict\";var r=process.argv,i=r.indexOf(\"--\"),o=function(e){e=\"--\"+e;var t=r.indexOf(e);return-1!==t&&(-1===i||t<i)"
+  @2470111 :: ".replace(/-([a-z])/g,(function(e){return e[1].toUpperCase()}))}function a(){if(!process.argv||0===process.argv.length)throw new Error(\"No arguments found\");const e=i(process.argv.s"
+  @2470129 :: "/g,(function(e){return e[1].toUpperCase()}))}function a(){if(!process.argv||0===process.argv.length)throw new Error(\"No arguments found\");const e=i(process.argv.slice(2),[\"appVersi"
+  @2470197 :: "s.argv||0===process.argv.length)throw new Error(\"No arguments found\");const e=i(process.argv.slice(2),[\"appVersion\"]);if(\"number\"!=typeof e.appVersion||isNaN(e.appVersion)||(e.appV"
+  @2710723 :: "<60}; ${e}-${he.get(\"force_quit.quit_at\")}`),e-he.get(\"force_quit.quit_at\")<60&&process.argv.push(\"--relaunch-silently\")}function Hn(e){b.zsymb(4,\"V-7Zgk\",[\"instance arguments\",\"uO"
+  @2714883 :: "JSON.stringify(e);Ce.webContents.send(\"main-process-uncaught-error\",t)}}))}),1),process.argv[1]&&Hn(process.argv);let e=ee();\"$ABOUT$\"==e&&(e=\"\"),e||(e=l.getVersion()),b.zsymb(4,\"Q"
+  @2714903 :: ".webContents.send(\"main-process-uncaught-error\",t)}}))}),1),process.argv[1]&&Hn(process.argv);let e=ee();\"$ABOUT$\"==e&&(e=\"\"),e||(e=l.getVersion()),b.zsymb(4,\"QZp0f1\",[\"pid\",\"Q6XWS"
+  @3569167 :: "EpJ\",[\"readyToLoadApp {}\",\"PDKebY\"],o)};r.zsymb(4,\"m1Ty5h\",[\"recv {}\",\"dM0aqQ\"],process.argv.join(\",\"));let s=null;if(process.argv&&process.argv.length>1)for(let d=1;d<process.argv"
+  @3569205 :: "};r.zsymb(4,\"m1Ty5h\",[\"recv {}\",\"dM0aqQ\"],process.argv.join(\",\"));let s=null;if(process.argv&&process.argv.length>1)for(let d=1;d<process.argv.length;d++){let e=process.argv[d];if("
+  @3569219 :: "1Ty5h\",[\"recv {}\",\"dM0aqQ\"],process.argv.join(\",\"));let s=null;if(process.argv&&process.argv.length>1)for(let d=1;d<process.argv.length;d++){let e=process.argv[d];if(r.zsymb(4,\"sdZ"
+  @3569255 :: "argv.join(\",\"));let s=null;if(process.argv&&process.argv.length>1)for(let d=1;d<process.argv.length;d++){let e=process.argv[d];if(r.zsymb(4,\"sdZ0Ff\",[\"doWithCmd check {}\",\"rbv-Vx\"]"
+  @3569286 :: "rocess.argv&&process.argv.length>1)for(let d=1;d<process.argv.length;d++){let e=process.argv[d];if(r.zsymb(4,\"sdZ0Ff\",[\"doWithCmd check {}\",\"rbv-Vx\"],e),e&&\"string\"==typeof e&&e.st"
+
+=== setBackgroundColor / app_theme near window creation ===
+  @324996 :: "ck(t,n))})).on(\"crashed\",((n,r)=>{g.close(t),u()!==l||r||e.close()})))}_setupWindowEvent(e,t){if(f(e),e){var n;const r=d.get(\"app_theme\"),i=(null==r||null===(n=r.color)||void 0===n?void 0:n.backgroundPrimary)||null;i&&e.setBackgroundColor(i),e.once(\"ready-to-show\",(()=>{this._setLastestOpenedWinId(e"
+  @327857 :: "cessId(),k.webContents.getProcessId()),this._setupDefaultWindowListener(k),this._setupNewWindowEvent(k);const n=d.get(\"app_theme\"),r=(null==n||null===(t=n.color)||void 0===t?void 0:t.backgroundPrimary)||null;return r&&k.setBackgroundColor(r),k}loadURL(e){if(!k)throw new Error(\"Need init the renderer"
+  @2725171 :: "Qe=null,Ze=null)},expandWindowOnAuthenticated:dn,updateBgColorByAppConfig:function(e){var t;if(!Ce)return;const n=e||he.get(\"app_theme\"),r=(null==n||null===(t=n.color)||void 0===t?void 0:t.backgroundPrimary)||null;r&&Ce.setBackgroundColor(r)},loginResize:cn,checkRelaunchSilent:function(){return Ye},"
+
+=== electron-devtools-installer identity ===
+  @2853941 :: "\"2.11.12\",\"cross-env\":\"^2.0.0-beta\",\"debug\":\"4.1.1\",\"devtron\":\"1.4.0\",\"electron\":\"22.3.9\",\"electron-builder\":\"20.44.4\",\"electron-devtools-installer\":\"3.1.1\",\"electron-download\":\"4.1.1\",\"electron-notarize\":\"0.2.1\",\"electron-publish\":\"19.53.3"
+  @3415320 :: ",o=arguments.length>1&&void 0!==arguments[1]&&arguments[1];if(\"browser\"!==process.type)return Promise.reject(new Error(\"electron-devtools-installer can only be used from the main process\"));if(Array.isArray(t))return t.reduce((function(t,n)"
+
+=== exposeInMainWorld names (41) ===
+__SENTRY_IPC__ MetriczGlobal $zenv $zcommon $znode $zwindow $zresource $zlogger $zupdater $zapp $zdownload $zdb $zsessionManager $zmulti $zcall $zsharedWorker $zelectron $zelectronNative $zuri $zscreencap $zlogin $zperf $zconfig $zMetric $zFileManager $zpc $zFeatures $zcloud $zMsgChannel $zscript $zInAppPayment $capp $zbackup $zpreload $zsqlitebw $zsafeStorage $zMigrateDrive $zTFModels $znetwork $zprotocol $znoti
+
+  trustPathFromBlob @798527 :: "extBridge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$"
+  trustPathFromBlob @866003 :: "n(\"path is not trust\"))).catch(n)}))}function ln(e){if(\"undefined\"==typeof Blob)return!1;(e instanceof Blob||\"[object Blob]\"===toString.call(e))&&$zFileManager.trustPathFromBlob(e.path)}const pn=n(\"mw/K\"),dn=n(\"jK02\").promisify;async function un(e,t){if(!(await $zFileManager.isTr"
+  trustPathFromBlob @1163966 :: "trust_path_from_blob\",i=\"request_flush_zlog\",o=\"set_readonly_file\",s=\"verify_zalo_pc_hardlink_support\",c={isTrustPath:{apiKey:\"is_trust_path\",type:r.a.REQUEST},trustPathFromBlob:{apiKey:a,type:r.a.REQUEST},requestFlushZLog:{apiKey:i,type:r.a.NOTIFY},setReadonlyFile:{apiKey:o,type"
+

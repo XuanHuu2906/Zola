@@ -1,0 +1,33 @@
+
+## main-dist/preload-render.js (1852663 chars)
+   dynamic literal registrations = 1
+      $zenv                              x1
+   registerEntryPoint bodies = 0
+   concat exposures = 0
+
+## main-dist/compact-app-preload.js (2111027 chars)
+   dynamic literal registrations = 2
+      $inaccessibleDrive                 x1
+      $migration                         x1
+   registerEntryPoint bodies = 3
+      -> $inaccessibleDrive
+      -> (non-literal)
+      -> $migration
+   concat exposures = 0
+
+## main-dist/preload-noti.js (1852659 chars)
+   dynamic literal registrations = 1
+      $zenv                              x1
+   registerEntryPoint bodies = 0
+   concat exposures = 0
+
+## main-dist/preload-shared-worker.js (2082383 chars)
+   dynamic literal registrations = 1
+      $zenv                              x1
+   registerEntryPoint bodies = 0
+   concat exposures = 0
+
+## main-dist/preload-sqlite.js (2675898 chars)
+   dynamic literal registrations = 0
+   registerEntryPoint bodies = 0
+   concat exposures = 0

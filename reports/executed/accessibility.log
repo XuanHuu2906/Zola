@@ -1,0 +1,19 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test accessibility.spec.ts
+
+[2m[WebServer] [22m(node:19636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:27152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:5236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests\e2e\accessibility.spec.ts:6:7 › accessibility: dark chat and settings (6.6s)
+  ✓  2 tests\e2e\accessibility.spec.ts:6:7 › accessibility: light chat and settings (6.2s)
+
+  2 passed (27.5s)

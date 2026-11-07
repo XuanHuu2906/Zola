@@ -1,0 +1,51 @@
+﻿{
+    "generated_at":  "2026-11-06T14:17:44.3843710Z",
+    "note":  "Read-only identity capture for R11A. Root Zalo.exe is a Squirrel stub launcher; the real Electron binary is the versioned one.",
+    "artifacts":  [
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo.exe",
+                          "bytes":  790568,
+                          "sha256":  "7295232C89F9A041E35253AFA80787989EAE9A91895F1847EBD92C78BB4195A2"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+                          "bytes":  136638504,
+                          "sha256":  "75DC85559079EC2037D511A312B704B44CA3293E74DA1900CCFE84E6299CAC3E"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\resources\\app.asar",
+                          "bytes":  177728582,
+                          "sha256":  "D83256230E5D1D4483C2411F71936C3DC1562FB8A885FD8752CAB17D229201E6"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\main-dist\\main.js",
+                          "bytes":  4342755,
+                          "sha256":  "A0150EBCA02992CCCAAA1D8606D86251FC93F52E0A361B9B559B378697A2F6A9"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\main-dist\\compact-app.js",
+                          "bytes":  4180222,
+                          "sha256":  "F43C00F9FCE65E5920424C6AED277346E7AA4FD90E2A9CA8AD13443634FBF913"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\main-dist\\preload-render.js",
+                          "bytes":  1990534,
+                          "sha256":  "24C5ECB873C7667630ECDA923C966574E32BAEAC8A51DC78243C7508F2F61602"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\main-dist\\utility-process-media.js",
+                          "bytes":  1191831,
+                          "sha256":  "0D2B503CD4DAE490ABBEFC7B19A5653AE098C84339DF4B75EB4C60CB7A9A0139"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\pc-dist\\compact-app-pc.f32c58b63b6f4273a8a4.js",
+                          "bytes":  20927993,
+                          "sha256":  "6EC041177948EA3254F6B72D485CD72F48A4F7634116DEE698C327178FAAF415"
+                      },
+                      {
+                          "path":  "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\\pc-dist\\index.html",
+                          "bytes":  6267,
+                          "sha256":  "18BA422F7EBABC41F6DABD571E6E72DEFD78E99945CAFAE89C624EAFA5357369"
+                      }
+                  ]
+}

@@ -1,0 +1,6 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test accessibility.spec.ts
+
+Error: Process from config.webServer was not able to start. Exit code: 2
+

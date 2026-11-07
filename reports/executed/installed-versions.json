@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "ls",
+    "--depth=0"
+  ],
+  "started": "2026-11-05T11:16:13.745Z",
+  "finished": "2026-11-05T11:16:17.470Z",
+  "exitCode": 0,
+  "signal": null
+}

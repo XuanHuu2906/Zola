@@ -1,0 +1,58 @@
+=== INFRASTRUCTURE PRELOAD NAMESPACES ===
+
+## $zwindow (y) — module "QR/l" not found
+
+## $zresource (A) — module "opJ/" not found
+
+## $zlogger (b -> n("V6UP"))  body 690 bytes
+   keys (1): request
+
+## $zupdater (S -> n("bzos"))  body 26 bytes
+   keys (0): (not a return-literal)
+
+## $zapp (T -> n("lsb7"))  body 364 bytes
+   keys (0): (not a return-literal)
+
+## $zdownload (R -> n("CzCL"))  body 85 bytes
+   keys (0): (not a return-literal)
+
+## $zdb (O -> n("UXua"))  body 401 bytes
+   keys (0): (not a return-literal)
+
+## $zsessionManager (et) — declaration not found
+
+## $zmulti (D -> n("oyvS"))  body 27 bytes
+   keys (0): (not a return-literal)
+
+## $zcall (k) — module "5wAm" not found
+
+## $zsharedWorker (L -> n("of3L"))  body 6636 bytes
+   keys (0): (not a return-literal)
+
+## $zuri (F -> n("gPyz"))  body 696 bytes
+   keys (0): (not a return-literal)
+
+## $zscreencap (Q) — module "g+8e" not found
+
+## $zlogin (G -> n("FMKJ"))  body 27 bytes
+   keys (0): (not a return-literal)
+
+## $zperf (z) — inline object literal at @1386886
+   keys: map, n, __rrweb_original__
+
+## $zconfig (K -> n("OreS"))  body 244 bytes
+   keys (0): (not a return-literal)
+
+## $zFileManager (v -> n("HIry"))  body 2632 bytes
+   keys (0): (not a return-literal)
+
+## $zMsgChannel (ee -> n("QduZ"))  body 36 bytes
+   keys (0): (not a return-literal)
+
+## $zscript (te -> n("Pjj5"))  body 318 bytes
+   keys (0): (not a return-literal)
+
+## $zsqlitebw (tt) — module "+NII" not found
+
+## $zsafeStorage (nt -> n("HVQM"))  body 175 bytes
+   keys (0): (not a return-literal)

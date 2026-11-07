@@ -1,0 +1,11 @@
+
+> zalo-apple-glass-ui@0.3.0 test:soak
+> node tools/soak-desktop.cjs
+
+Progress: 5/30 batches; 25 local messages
+Progress: 10/30 batches; 50 local messages
+Progress: 15/30 batches; 75 local messages
+Progress: 20/30 batches; 100 local messages
+Progress: 25/30 batches; 125 local messages
+Progress: 30/30 batches; 150 local messages
+PASS: 150 local sends, 30 settings cycles, reload reset, live DOM back to baseline, natural reclaim 803ms, clean close

@@ -1,0 +1,42 @@
+
+===== main-dist/main.js (4169474 chars) =====
+   "on(\"second-instance\"" = 1
+   "on('second-instance'" = 0
+   "process.argv[1]&&" = 1
+   "requestSingleInstanceLock" = 0
+   "setAsDefaultProtocolClient" = 2
+   "open-url" = 3
+   "zalo://" = 6
+   "check-arg-link" = 2
+   "z-uri-open-conv" = 4
+   "z-uri-request" = 6
+   "check-startup-open-conv-request" = 1
+
+===== main-dist/compact-app.js (4007002 chars) =====
+   "on(\"second-instance\"" = 0
+   "on('second-instance'" = 0
+   "process.argv[1]&&" = 1
+   "requestSingleInstanceLock" = 0
+   "setAsDefaultProtocolClient" = 2
+   "open-url" = 2
+   "zalo://" = 5
+   "check-arg-link" = 2
+   "z-uri-open-conv" = 4
+   "z-uri-request" = 6
+   "check-startup-open-conv-request" = 1
+
+===== HTML -> startup chunks =====
+
+## pc-dist/index.html
+                  libs/libsignal-protocol.static.js
+           ZNOTIF lazy/vendors-login-render-shared-worker-znotification.aae872b4641c395ab90c.js
+                  lazy/vendors-login-render-shared-worker.eadda6f305bf492b3efc.js
+           ZNOTIF lazy/default-login-render-shared-worker-znotification.bc10d4fc9e423c407115.js
+                  lazy/default-login-render-shared-worker.09de2d8e0cc06d14906d.js
+                  lazy/default-login-render.dc51d7e4150dfd0aae85.js
+                  render.f32c58b63b6f4273a8a4.js
+   inline <script> count = 3
+
+## pc-dist/compact-app.html
+                  compact-app-pc.f32c58b63b6f4273a8a4.js
+   inline <script> count = 1

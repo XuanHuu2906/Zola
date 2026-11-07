@@ -1,0 +1,59 @@
+=== (a) labelled-node census per module ===
+  y1FZ   body=FunctionExpression span=19641113..19650151 nodes=  2206 labelled=   1  R(8518)
+  AXH7   body=FunctionExpression span=3807714..3814209 nodes=  1701 labelled=   1  O(6123)
+  JFrT   body=FunctionExpression span=6508386..6598625 nodes= 27455 labelled= 132  _(812) e(101) ie(115) oe(170) le(922) ce(370) a(24) t(11)
+  +ISi   body=FunctionExpression span=85961..662330 nodes=150476 labelled= 226  Ee(471) Oe(166) Le(170) Pe(129) ke(110) je(255) st(65) ot(39)
+  Zb+t   body=FunctionExpression span=12278571..12866400 nodes=153282 labelled= 292  o(26) v(212) L(743) e(25) P(2860) t(144) B(969) z(327)
+  /GXy   body=FunctionExpression span=965571..1125033 nodes= 43364 labelled=  31  _(1715) S(910) N(1337) B(2163) W(676) te(59) ne(2352) we(16719)
+  GQ8g   body=FunctionExpression span=5553778..5565665 nodes=  3160 labelled=   4  f(2153) v(2194) N(6549) u(241)
+  MEZx   body=FunctionExpression span=7331018..7342904 nodes=  3547 labelled=   4  v(121) I(4084) K(242) T(6943)
+  O7EA   body=FunctionExpression span=7989315..8126731 nodes= 33497 labelled= 140  U(2136) te(1914) u(275) pe(799) ge(374) fe(62) Ce(397) Ne(316)
+  8ky5   body=FunctionExpression span=3367777..3372131 nodes=  1421 labelled=   3  T(700) S(40) M(98)
+  eIjl   body=FunctionExpression span=14308181..14309078 nodes=   344 labelled=   1  l(178)
+  /ymA   body=FunctionExpression span=1255222..1311933 nodes= 16235 labelled=  57  C(2938) M(1119) x(1578) F(901) Y(8) Q(1110) e(24) X(85)
+  VLvn   body=FunctionExpression span=10707737..11138122 nodes=115114 labelled= 226  f(813) w(1760) V(1425) n(42) c(93) u(405) H(354) $(135)
+  Dtbk   body=FunctionExpression span=4584819..4625596 nodes= 11359 labelled=  55  p(141) b(1814) T(688) D(67) L(121) P(994) F(22) U(55)
+  pg6P   body=FunctionExpression span=17403063..17415557 nodes=  3028 labelled=   2  h(440) O(11695)
+
+=== (b) selector-position reality for bubble + wrapper ===
+  .content-message-container    rules= 23 selector-parts= 166 leftmost=  0
+  .message-box-message-wrapper  rules= 14 selector-parts=  23 leftmost=  0
+  .chat-message-v2              rules=  7 selector-parts=   8 leftmost=  8
+  .msg-item                     rules=  2 selector-parts=   2 leftmost=  1
+
+=== (c) per-surface rule + token census (real selector families) ===
+
+## titlebar  rules=68 distinctVars=18 backdrop=0 shadow=0 radius=2 semiBg=0 opaqueBg=10
+   --text-information(5) --text-primary(4) --icon-on-color(4) --layer-background-subtle(2) --R60(2) --nav-width(2) --cta-link(2) --cta-link-pressed(2) --title-bar(1) --button-secondary-neutral-hover(1) --text-secondary(1) --BA30(1) --R20(1) --text-errors(1)
+
+## nav (buttons)  rules=13 distinctVars=4 backdrop=0 shadow=0 radius=0 semiBg=0 opaqueBg=1
+   --text-information(2) --nav-width(2) --layer-background(1) --border(1)
+
+## conversation list  rules=126 distinctVars=27 backdrop=0 shadow=1 radius=3 semiBg=0 opaqueBg=16
+   --text-primary(10) --text-information(7) --layer-background-selected(4) --text-secondary(3) --text-placeholder(3) --layer-background(2) --icon-secondary(2) --B10(2) --R60(2) --cta-link(2) --cta-link-pressed(2) --icon-primary(1) --text-errors(1) --input-field-bg-filled(1)
+
+## chat header  rules=16 distinctVars=7 backdrop=0 shadow=1 radius=2 semiBg=0 opaqueBg=2
+   --BA20(3) --text-on-color(1) --background-inactiveness-subtle(1) --layer-background-subtle(1) --text-secondary(1) --text-information(1) --text-primary(1)
+
+## message row  rules=212 distinctVars=34 backdrop=0 shadow=7 radius=5 semiBg=0 opaqueBg=59
+   --text-information(14) --B10(14) --layer-background-selected(12) --text-on-color(11) --background-activeness(9) --N300(6) --WA100(5) --border-focused(5) --text-primary(4) --G20(4) --text-search-highlight(4) --WA50(3) --BA30(2) --layer-background-navbar-sublevel-selected(2)
+
+## bubble  rules=23 distinctVars=6 backdrop=0 shadow=0 radius=1 semiBg=0 opaqueBg=1
+   --text-primary(2) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --text-secondary(1)
+
+## date divider  rules=20 distinctVars=4 backdrop=2 shadow=0 radius=3 semiBg=0 opaqueBg=1
+   --text-on-color(1) --timestamp(1) --BA20(1) --border-focused(1)
+
+## composer  rules=146 distinctVars=23 backdrop=0 shadow=2 radius=15 semiBg=0 opaqueBg=20
+   --text-information(11) --text-secondary(7) --layer-background(6) --border-focused(3) --icon-secondary(3) --BA50(3) --cta-link(2) --cta-link-pressed(2) --surface-background-subtle(2) --text-primary(2) --layer-background-subtle(2) --button-tertiary-neutral-hover(1) --background-activeness(1) --WA100(1)
+
+## context menu  rules=67 distinctVars=20 backdrop=0 shadow=2 radius=4 semiBg=0 opaqueBg=12
+   --layer-background(3) --text-information(3) --layer-background-selected(3) --space-xxs(2) --layer-background-hover(2) --shadow-overlay(1) --border(1) --border-focused(1) --background-activeness(1) --WA100(1) --space-xs(1) --space-sm(1) --text-primary(1) --text-secondary(1)
+
+## modal  rules=116 distinctVars=19 backdrop=0 shadow=0 radius=7 semiBg=0 opaqueBg=18
+   --layer-background(7) --text-information(4) --border-focused(2) --cta-link(2) --cta-link-pressed(2) --border(2) --divider(2) --background-activeness(1) --WA100(1) --space-md(1) --background-inactiveness-subtle(1) --curtain(1) --curtain-bold(1) --icon-secondary(1)
+
+## settings  rules=117 distinctVars=21 backdrop=0 shadow=0 radius=11 semiBg=0 opaqueBg=15
+   --layer-background(7) --text-secondary(5) --text-primary(4) --text-information(3) --border(3) --border-focused(2) --layer-background-hover(2) --text-disabled(2) --background-activeness(1) --WA100(1) --layer-background-subtle(1) --divider-bold(1) --layer-background-selected(1) --accent-blue-bg(1)
+
+wrote _r3_diag.txt / .json

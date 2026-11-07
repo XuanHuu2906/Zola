@@ -1,0 +1,302 @@
+=== NAMESPACE -> DESCRIPTOR MAP ===
+$zsessionManager     -> map et     UNRESOLVED
+$zcloud              -> map re     UNRESOLVED
+$zMsgChannel         -> map ee     UNRESOLVED
+$zscript             -> map te     UNRESOLVED
+$zbackup             -> map Ze     UNRESOLVED
+$zInAppPayment       -> map oe     UNRESOLVED
+$capp                -> map ce     UNRESOLVED
+$zsqlitebw           -> map tt     UNRESOLVED
+$zsafeStorage        -> map nt     UNRESOLVED
+$zMigrateDrive       -> map ct     UNRESOLVED
+$znetwork            -> map ut     UNRESOLVED
+$zprotocol           -> map ht     UNRESOLVED
+$znoti               -> map _t     UNRESOLVED
+
+=== METHOD CONTRACT (namespace.method -> channel, mode) ===
+-- $zsessionManager (et)
+   (descriptor map not found by regex; see raw)
+-- $zcloud (re)
+   (descriptor map not found by regex; see raw)
+-- $zMsgChannel (ee)
+   (descriptor map not found by regex; see raw)
+-- $zscript (te)
+   (descriptor map not found by regex; see raw)
+-- $zbackup (Ze)
+   (descriptor map not found by regex; see raw)
+-- $zInAppPayment (oe)
+   (descriptor map not found by regex; see raw)
+-- $capp (ce)
+   (descriptor map not found by regex; see raw)
+-- $zsqlitebw (tt)
+   (descriptor map not found by regex; see raw)
+-- $zsafeStorage (nt)
+   (descriptor map not found by regex; see raw)
+-- $zMigrateDrive (ct)
+   (descriptor map not found by regex; see raw)
+-- $znetwork (ut)
+   (descriptor map not found by regex; see raw)
+-- $zprotocol (ht)
+   (descriptor map not found by regex; see raw)
+-- $znoti (_t)
+   (descriptor map not found by regex; see raw)
+
+=== MODE DISTRIBUTION ===
+
+=== ALL CHANNEL STRINGS (unique, sorted) ===
+unique channels: 255
+CHECK_NETWORK_TIMEOUT_ERR
+ChatApp-receive-userId
+GET_CURRENT_DRIVE_PATH_FROM_FILE
+GET_ESTIMATED_COPY_TIME
+OPEN_UPDATE_PAGE
+WRITE_CURRENT_DRIVE_PATH_TO_FILE
+ZAM_RESET_DB
+_electron_get-relaunch-state
+_electron_launch-compact-app
+_noti_close
+_noti_create
+_noti_is-supported
+_noti_on-click
+_noti_on-close
+_noti_on-show
+abort-creating-backup
+about
+active-deactive:active
+active-deactive:clear-timer
+active-deactive:create-timer
+active-deactive:deactive
+active-deactive:get-idle-time
+active-deactive:setup
+app-after-restart-silently
+app-before-quit
+app-before-restart-silently
+app-started
+app-visibility-change
+append-file
+backup-app-state
+badge-count
+before-close
+before-quit
+binary-reload-safe
+binary-updated
+block
+bu-ask-restart
+call-init
+call-local-request
+call-request
+call-response-listDevice
+call-send-signal
+call-send-to-native
+call-server-request
+call-update
+call_active_native_app
+can-store-big-file
+cancel
+cancel-quit
+cert-config
+change-bu-interval
+change-screencap-status
+check-arg-link
+check-fullscreen
+check-maximize
+check-startup-open-conv-request
+check-updater-busy
+clean-up-log
+clipboard-change
+clone-and-match-checksum
+close-in-app-payment
+close-media-viewer
+close-window
+create-backup
+denoise-file
+destroy-backup
+disable-creating-backup
+do-quit
+download-config-change
+download-quota-hit
+download-thumb-temp
+enable-creating-backup
+enable-net-handler
+end-idle
+event-in-app-payment
+event-os-changed
+exec
+exec_raw
+fallback-update
+file-walker-stream-ack
+file-walker-stream-build-index
+file-walker-stream-cancel
+file-walker-stream-chunk
+file-walker-stream-end
+file-walker-stream-error
+file-walker-stream-start
+flash-frame
+focus-window
+forward_screencap
+forward_screencap_text
+get-app-visibility
+get-auth-domain
+get-auth-domain-ready
+get-auth-domain-reply
+get-child-url
+get-clipboard
+get-cpu-infos
+get-imei
+get-photo-viewer-url
+get-process-info
+get-recent-file
+get-resource-dir
+gett-heap
+hide-shared-worker
+hide-window
+hide-window-complete
+invalid-file-exts-change
+kiki-csp-blocked
+kiki-oauth-completed
+kiki-oauth-failed
+kiki-open-oauth-window
+kiki-remove-csp-blocked
+kiki-remove-oauth-completed
+kiki-remove-oauth-failed
+kiki-start-csp-monitor
+kiki-stop-csp-monitor
+language-change
+language-detector_detect
+language-detector_dominant-language
+language-detector_info
+language-detector_is-supported
+linear
+login
+login-after-install
+login-step
+login-success
+main-window-expand
+manual-binary-reload-safe
+match-checksum
+minimize
+net-collect-net-error-info
+net-on-monitor-data
+net-start-monitor
+net-stop-monitor
+net-update-net-error-config
+new-download-channel
+new-session
+noise-file
+noti-click
+noti-create
+noti-ready
+ocr_is-supported
+ocr_prewarm
+ocr_recognize
+open-in-app-payment
+open-photo-viewer-devtool
+os-confirm-restart
+os-force-restart
+pc-shutting-down
+preferences
+proxy-get
+proxy-set
+quit
+receive-arguments
+receive-relaunch-mode
+receive-update-info
+register-idle-check-interval
+reject-current-backup
+remote_events
+remove-event-in-app-payment
+remove-file
+renderer-ready
+request_relaunch
+resources-reload-safe
+resources-updated
+response-metrics
+restart-and-restore-backup
+restart-cap
+restart-without-restoring-backup
+restore-app-state
+rewrite-clipboard
+save-record
+screen-capture
+screen-capture-response-accept
+screen-capture-response-no-permission
+screen-capture-response-send2me
+screen-capture-shortcut
+screenshot-shortcut-result
+send-metrics
+set-content-protection
+set-login-size
+set-main-window-resizable
+shared-worker-abort
+shared-worker-dispose
+shared-worker-handle
+shared-worker-ping
+shared-worker-progress
+shared-worker-remote-config-change
+shared-worker-resp
+shared-worker-run
+shared-worker-start
+shared-worker-update-params
+show
+show-from-tray
+show-inactive
+show-open-dialog
+show-open-dialog-sync
+show-save-dialog
+show-save-dialog-sync
+show-shared-worker
+show-toast-from-main
+signal-db-corruption
+signal-db-fail
+signal_USER_NOT_LOGGED_IN
+start-idle
+start-monitor-app-memory-usage
+start-screen-capture
+stop-sharing
+switch_tab
+tf-models:ss:config:get
+tf-models:ss:config:set
+tf-models:ss:item-2-sticker:get
+tf-models:ss:item-2-sticker:set
+tf-models:ss:kwd-2-stickers:get
+tf-models:ss:kwd-2-stickers:set
+tf-models:ss:resource:init
+tf-models:ss:sticker-2-score:get
+tf-models:ss:sticker-2-score:set
+toggle-fullscreen
+toggle-maximize
+trigger-auto-download
+update-is-avail
+updater-uncaught-error
+video-thumb-generate
+visibility-change
+warning_install_rosetta
+write-blob-to-file
+write-heap
+write-latest-back-up-log
+z-check-for-update
+z-hide-app-before-quit
+z-manual-binary-updated
+z-manual-check-download-update
+z-manual-check-download-update-only
+z-manual-update-checked
+z-manual-update-checked-only
+z-manual-update-checked-only-err
+z-manual-update-downloading
+z-manual-update-err
+z-manual-update-installing
+z-simulate-crash-main
+z-uri-open-conv
+z-uri-request
+zfile-popup
+zmain_register_process
+znet-error-code
+zping
+zproto-config-sync-to-main
+zproto-decrypt-with-keychain
+zproto-encrypt-with-keychain
+zwalker-collect-dir-stats
+zwalker-del-unmarked-files
+zwalker-delete-empty-folders
+zwalker-stat-unmarked-files
+zwalker-update-file-stats

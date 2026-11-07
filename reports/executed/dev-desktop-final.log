@@ -1,0 +1,9 @@
+
+> zalo-apple-glass-ui@0.2.0 dev:desktop
+> npm run build:electron && node tools/dev-desktop.cjs --smoke
+
+
+> zalo-apple-glass-ui@0.2.0 build:electron
+> tsc -p tsconfig.electron.json
+
+  ➜  Local:   http://127.0.0.1:5173/

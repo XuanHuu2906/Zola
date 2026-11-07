@@ -1,0 +1,85 @@
+
+## .conv  rules=19
+   @691244 .conv
+        height:50px;padding:12px 16px 12px 14px;contain:size style;background:var(--layer-background);display:flex;cursor:pointer
+   @691372 .conv.pinned
+        background:var(--layer-background-subtle)
+   @691427 .conv.pinned:hover
+        background-color:var(--layer-background-hover)
+   @691493 .conv.chat-message.first-selected,.conv.chat-message.last-selected,.conv.selected
+        background-color:var(--B10);border-right:none
+   @691621 .conv.chat-message.first-selected:hover,.conv.chat-message.last-selected:hover,.conv.selected:hover
+        background-color:var(--B10)
+   @691749 .conv:hover
+        background:var(--layer-background-hover)
+
+## .tab-main rules=24
+   @144601 .animated.fadeIn,.animated.fadeInImageShow,.animated.fadeInShort,.tab-main .animated.tab-unread
+        -webkit-animation-duration:.2s;animation-duration:.2s
+   @149059 .fadeIn,.fadeInImageShow,.fadeInShort,.fadeInSlow,.tab-main .tab-unread
+        -webkit-animation-name:fadeIn;animation-name:fadeIn
+   @908336 .main__center.fadeIn,.main__center.fadeInImageShow,.main__center.fadeInShort,.tab-main .main__center.tab-unread
+        animation-duration:.5s
+   @1001455 .share-msg__nav__tab>.tab-main>.tab-item
+        margin-bottom:7px
+   @1813852 .scrollbar-v2-hor::-webkit-scrollbar,.tab-main::-webkit-scrollbar
+        height:4px;background:transparent
+   @1813952 .scrollbar-v2-hor::-webkit-scrollbar-thumb,.tab-main::-webkit-scrollbar-thumb
+        border-radius:2px;background:var(--background-inactiveness-subtle)
+
+## .listView rules=0
+
+## .conv-list-empty-wrapper rules=15
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:-webkit-flex;flex-flow:row nowrap
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#searchResultLis
+        justify-content:center
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        align-items:center
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:flex
+
+## .conv-item-padding rules=25
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:-webkit-flex;flex-flow:row nowrap
+   @80883 #container,#ztoolbar.chat-input-v2,.cal-date-time .cal-nav,.chat-box-member__info.v2,.checkbox-input,.chips,.conv-item-padding,.entry-content-v2,.filter-preview-v2,.group-poll-vote-content-item,.group
+        position:relative
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        align-items:center
+   @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-grou
+        cursor:pointer
+
+## .conv-item-title rules=12
+   @109641 .conv-item-title__name,.conv-message,.conv-title-name,.flx-cell,.item-message,.item-title-name,.zl-scroll
+        flex:1 1 auto
+   @114054 #group-creator .create-group__item__name,.cb-info-file-item__error-msg,.cb-info-file-item__file-size,.cb-info-file-item__send-date,.cb-info-file-item__suggest-preview-file,.cb-info-file-item__suggest-
+        text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-wrap:break-word
+   @389707 #group-creator .nigh-chat-friend .night-chat-online-friend .gr-item:hover .create-group__item__name,.chat-input-link-preview .nigh-chat-friend .night-chat-online-friend .gr-item:hover .preview-desc,.c
+        color:var(--text-information)
+   @687779 .conv-item:hover .conv-item-title__more
+        justify-self:flex-end
+
+## .conv-item-st rules=0
+
+## .conv-avatar rules=0
+
+=== ids declared in conv-list module Zb+t (12278571..12866400) ===
+  contact-search  contact-search-input  sidebarNav  main-tab  todo-tab  kiki-sidebar-menu  conv-skeleton  conv-title-action  conversationList  conversationListId  chatStar  filter-tags-sb  todo-advan-filter  todo-filter  react-v-list  todo-list-more  recent-search-list  changeGNameOverlay  hintGroupName  groupNameBtn  searchResultList  backup-sync-ic-progress  dataId:div_Main_TabSetting  dataId:div_Main_TabMsg  dataId:div_Main_TabStar  dataId:div_Main_TabTool  dataId:div_Main_Tab_zCloud  dataId:div_Main_TabScreenshot
+
+=== scroll/list container components near conv-item render ===
+  "id:\"convListWrap\"" occ=0
+  "List.AutoSizer" occ=0
+  "AutoSizer" occ=0
+  "onRowsRendered" occ=13
+    @12428978: "recomputeRowHeights()}_recomputeTotalRowsHeight(e){let t=0,n=e.items.length;for(let a=0;a<n;a++)t+=this._recomputeRowHeight(e.items[a]);this._totalRowsHeight=t}_recomputeScrollbarWidth(){this._isFireFoxBrowser&&this._totalRowsHeight>this._clientHeight?this._scrollbarWidth=16:this._scrollbarWidth=0}_onRowsRendered({startIndex:e,stopIndex:t}){Lr.a.getInstance().setScope(e,t)}render(){const e=this.props.items.length;return r.a.createElement(h.a,null,r.a.createElement(Mr.a,{onResize:this._handleResize},(t=>{const n=this.props,{onScroll:a}=n,i=Object(gt.a)(n,Pr);return r.a.createElement(Dr.Scrollbars,{ref:this._scrollbarRef,autoHide:A.default.enable_auto_hide_scrollbar_conv_list,className:\"virtua"
+    @12429885: "timatedRowSize:s.CONVERSATION_ITEM_HEIGHT,overscanRowCount:5,tabIndex:-2,style:Object(u.a)(Object(u.a)({},Ur),{},{height:this._totalRowsHeight,width:t.width}),rowCount:e,height:t.height,width:t.width,rowHeight:this._getItemHeight,rowRenderer:this._renderRow,cellRangeRenderer:this._cellRangeRenderer,onRowsRendered:this._onRowsRendered})))})))}}Br.propTypes={items:Se.a.array.isRequired,renderItem:Se.a.func.isRequired,initialLength:Se.a.number.isRequired};var jr=Br,Gr=a(\"lDyA\"),Vr=a(\"fg6f\"),Hr=a(\"WzIS\");const zr=\"sync-db-banner-v3\";function Kr(e){return e.icon?r.a.createElement(\"div\",{className:\"sync-db-banner-v3-icon\"},r.a.createElement(\"img\",{src:e.icon})):null}function Wr(e){return r.a.creat"
+  "rowRenderer" occ=42
+    @817602: "ist\"},i.a.createElement(G.a,{onResize:w},(({width:e,height:t})=>(D.current=e,i.a.createElement(Ae.Scrollbars,{autoHide:!0,style:{height:t,width:e},renderThumbVertical:E,renderTrackVertical:v,className:\"contact-tab-v2__scrollbar-custom\",onScroll:I},i.a.createElement(G.d,{width:e,height:t,rowHeight:B,rowRenderer:({index:e,style:t,parent:n})=>j({index:e,style:t,parent:n}),rowCount:x.length,ref:f,style:_,className:\"contact-tab-v2__list-custom\",overscanRowCount:m})))))),i.a.createElement(ue.a,{popoverProps:{identity:{windowId:\"1\",name:S.PopoverIdentitiesDefine.CONTEXTMENU_CONTACT_LIST}},user:{userId:r},dispatch:V.zdispatch,controller:F,deleteConv:F.deleteConversation,showEditAlias:Q,presets:n===c"
+    @824330: "Element(G.a,{onResize:y},(({width:e,height:t})=>i.a.createElement(Ae.Scrollbars,{autoHide:!0,style:{height:t,width:e},renderThumbVertical:g,renderTrackVertical:f,className:\"contact-tab-v2__scrollbar-custom\",ref:e=>A.current=e,onScroll:_},i.a.createElement(G.d,{width:e,height:t,rowHeight:E.rowHeight,rowRenderer:({index:e,key:t,style:n,parent:a})=>i.a.createElement(G.b,{cache:E,key:t,parent:a,rowIndex:e,columnIndex:0},L({index:e,style:n})),rowCount:D.length,ref:m,style:p}))))))};var _t=e=>{const{compactLv:t,onBackConvList:n}=e;return i.a.createElement(\"div\",{className:\"contact-pages page-container\"},i.a.createElement(j,{compactLv:t,textKey:\"STR_CONTACT_TAB_INVITATION_FRIEND_MANAGE\",icon:ot.a.i"
+  "react-virtualized" occ=0
+  "VariableSizeList" occ=0
+
+=== section headers / label anchors (conv label) ===
+  "conv-label-title" occ=0
+  "sb-label" occ=0
+  "conv-list-label" occ=0

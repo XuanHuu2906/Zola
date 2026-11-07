@@ -1,0 +1,21 @@
+
+## main-dist/main.js (4169474)
+     3  "function Hn(e){"  @1534473 @2710764 @3726377
+     2  "checkStartupOpenConvReq"  @1025981 @2724854
+     1  ".on(\"check-arg-link\""  @2703712
+     1  ".on(\"second-instance\""  @3565789
+     1  "process.argv[1]&&Hn"  @2714883
+     1  "[\"actually load main App\",\"d98nxB\"]"  @2686119
+     3  "isDriveBlockedAndStartCompactApp"  @1503630 @1504105 @3566533
+     3  "launchCompactApp("  @903681 @1503927 @2062663
+
+## main-dist/compact-app.js (4007002)
+     3  "function Hn(e){"  @1468295 @2689649 @3569242
+     2  "checkStartupOpenConvReq"  @1063596 @2703739
+     1  "compact-app-preload.js"  @737900
+     1  "fromPartition(\"compact-app\")"  @737943
+     1  "Object(f.getHtml)(\"compact-app.html\")"  @713012
+     1  "process.argv[1]&&Hn"  @2693768
+     1  "[\"actually load main App\",\"d98nxB\"]"  @2665004
+     2  "launchCompactApp("  @941546 @2020730
+     0  "\".on('second-instance'\""  

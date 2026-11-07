@@ -1,0 +1,7 @@
+# npx eslint <package.json lint glob> — empty output means no findings
+# Re-run 2026-11-06 after the R11 report edits.
+# NOTE: the glob comes from package.json "lint". Tools under tools/*.cjs are NOT in that
+# glob and are not linted by this gate; adding them by hand produces noise (no-undef for
+# CommonJS globals), which is not a project regression.
+LINT_EXIT=0
+STDOUT_BYTES=0

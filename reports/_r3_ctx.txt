@@ -1,0 +1,115 @@
+=== render context around primary surface hit ===
+
+## titlebar
+   "Name||\" titlebar rel flx\"},r.a.createElement(\"div\",{className:\"titlebar__resize\"}),e,r.a.createElement(\"div\",{className:\"draggable w100 title-drag\",style:{position:\"absolute\",left:0},onDoubleClick:this.maximize.bind(this)}),r.a.createElement(\"div\",{className:\"titlebar__btns\"+(this.state.isMaximized?\" is-maximized\":\"\"),style:t},r.a.createElement(\"i\",{className:\"fa fa-Minus_24_Line btn titlebar__menu__btnPreviewPhoto\",onClick:this.minimize.bind(this),style:{height:\"24px\"}}),this.props.hideMaximize?null:this.state.isMaximized?r.a.c"
+
+## nav add-friend btn
+   "howNewFriend?\"up\":\"down\")}))):r.a.createElement(\"div\",{className:\"data-list__label\",key:t.data.key},t.data.text||t.data.html):t.data.addFriendButton?r.a.createElement(\"div\",{key:t.data.key,onClick:this._showFindFriend,className:\"contact-list__add flx flx-al-c nav-button_add_friend clickable h100 flx flx-al-c  \"+(n?\" find-friend-active\":\"\")},r.a.createElement(\"i\",{className:\"fa fa-icon-add-friend contact-list__add__icon \"}),r.a.createElement(_.a,{className:\"contact_add_friend_item\",textKey:\"STR_ADD_FRIEND_BY_PHONENUMBER\"})):!0===t.data."
+
+## conv-item
+   "rsation(i),n.preventDefault(),n.stopPropagation(),R.default.logAction(178001),i.userId===s.FAKE_CONVERSATION_ID.FRIEND_CENTER&&R.default.logAction(16601)))})(n,!0)},K=Object(i.useCallback)((e=>{let t=Object(Ji.b)(e);v(t)}),[]),W=Object(i.useMemo)((()=>{let e=\"conv-item conv-rel\";a&&(e+=\" selected\"),!!T&&(e+=\" pinned\");return{className:e,onContextMenu:B,onMouseEnter:()=>{U()},onMouseLeave:()=>{k.current&&(clearTimeout(k.current),k.current=null)},onClick:z,onDoubleClick:H}}),[a,t,z]);Object(i.useEffect)((()=>{if(!A.default.not"
+
+## contact-search
+   "(!0),c.current<=0&&(c.current=window.setTimeout((()=>{c.current=-1,n(!1),o(m.a.isShowUnreadHiddenChat())}),1500)),o(m.a.isShowUnreadHiddenChat())):e===S.GeneralActions.UPDATE_HIDDEN_CHAT&&o(m.a.isShowUnreadHiddenChat())}),[]);return r.a.createElement(p.c,{id:\"contact-search\",className:D,size:p.a.SMALL,gridTemplateColumns:A?\"auto 68px\":\"auto 32px 32px\"},r.a.createElement(\"div\",{className:\"group-search\"},r.a.createElement(\"div\",null,r.a.createElement(g.c,{position:g.b.BOTTOM,vDelta:40,hDelta:-1,aDelta:20,reddotPos:{top:-31,left:35"
+
+## threadChat__title
+   "className:\"flx flx-col\"},r.a.createElement(\"div\",{className:\"threadChat group-preview flx flx-col flx-center\"},r.a.createElement(\"div\",{className:\"threadChat__avatar\"},r.a.createElement(l.d,{target:this.state,size:\"xxxl\"})),r.a.createElement(\"div\",{className:\"threadChat__title truncate\",style:{marginLeft:0,marginRight:0,textAlign:\"center\",width:\"100%\"}},r.a.createElement(\"span\",{className:\"title header-title\",style:{background:\"none\"},title:this.state.name},this.state.name),r.a.createElement(\"span\",{className:\"subtitle\",style:{margi"
+
+## threadChat__avatar
+   "firm:{textKey:\"STR_JOIN_GROUP\",click:()=>{this._join(),m.default.logAction(2391001)}}}},r.a.createElement(\"div\",{className:\"flx flx-col\"},r.a.createElement(\"div\",{className:\"threadChat group-preview flx flx-col flx-center\"},r.a.createElement(\"div\",{className:\"threadChat__avatar\"},r.a.createElement(l.d,{target:this.state,size:\"xxxl\"})),r.a.createElement(\"div\",{className:\"threadChat__title truncate\",style:{marginLeft:0,marginRight:0,textAlign:\"center\",width:\"100%\"}},r.a.createElement(\"span\",{className:\"title header-title\",style:{backg"
+
+## chat-message row
+   "bject(F.a)({},e,{ref:Q,message:Bt,messageQuickActionConfig:an,replyMessage:Ln,forwardMessage:Pn,showMessageContextMenu:na})),Kn,zn))),_t||!jn||mn?wn:null,Gn()),o.a.createElement(Lt,null,o.a.createElement(\"div\",{ref:w,key:\"msg_\"+Mt,id:Dt,className:Object(u.a)(\"chat-message chat-message-v2\",$t&&\"wrap-message\",\"rotate-container\",Ot,Ct&&\"failed\",mn&&\"me\",\"\",ln&&\"-send-time\",Jt&&\"-reaction\"),\"data-component\":m.DataAttributes.Component.BUBBLE_MESSAGE,onMouseOver:function(){ta(!1),fe.current=setTimeout((()=>{!function(t){var n;if((nul"
+
+## content-message-container
+   "me:\"content-message-dot-separator\"},\"â¢\")),i.a.createElement(\"div\",{className:\"content-container\"},i.a.createElement(\"div\",{className:\"content-title-container\"},i.a.createElement(h.a,{className:\"content-title\",textKey:u})),i.a.createElement(\"div\",{className:\"content-message-container\"},_,b,v,L,T))};C.propTypes={topic:s.a.object.isRequired,size:s.a.oneOf([p.i.LARGE,p.i.SMALL]).isRequired,langIndex:s.a.number,conversationId:s.a.string};var N=C,w=n(\"v/qp\"),M=n(\"yh7P\"),D=n(\"c51z\");const L=function(e){const{conversationId:t,number:n,hasRedDot:"
+
+## chat-date
+   "_3_2\",style:{fontWeight:\"var(--medium)\"}}),'\" ',o.a.createElement(Xt.a,{textKey:\"STR_INTRO_GROUP_3_3\"})))):null,A.default.enable_hi_group_member&&this.props.shouldShowGuide&&this.props.shouldShowGuggy?o.a.createElement(\"div\",{key:\"start-chat-group\",className:\"chat-date\"},o.a.createElement(\"span\",null,\"Gá»­i tin nháº¯n Äá» báº¯t Äáº§u trÃ² chuyá»n\")):null,A.default.enable_hi_group_member&&this.props.shouldShowGuide&&this.props.shouldShowGuggy?o.a.createElement($n,{key:\"group-onboading-guggy\",sendGuggy:this.props.sendGugg"
+
+## chat-input-container
+   ".onFocus&&\"function\"==typeof e.onFocus&&e.onFocus(t)}),[e.onFocus]),[q,X]=Object(s.useState)(!1),J=e=>{X(e>1)};Object(s.useEffect)((()=>{B&&X(!1)}),[B]);const Z=e=>{e&&(e.preventDefault(),e.stopPropagation())};return o.a.createElement(\"div\",{id:p.b,className:\"chat-input-container\",onClick:e=>{null==k||k.current._callFocus(void 0,!1)},onPasteCapture:t=>Mn.onChatInputPaste(t,{convId:e.convId,isRtfInput:B})},o.a.createElement(\"div\",{className:Object(l.a)(\"chat-input-container__left-layout\"),style:{minWidth:q?\"100%\":\"calc(100% - 74px)\"}},"
+
+## chat-box-input
+   "ersation(nt)||Ge||ot||!(!ve||!ve.content)||!!Ie.previewProfile;const qt=(null==ve?void 0:ve.content)&&(null==ve?void 0:ve.convId)===ee,Xt=!!Ie.previewProfile;return o.a.createElement(\"div\",{id:\"chatInput\",ref:J,style:(e.isMultiSel,null),className:Object(l.a)(\"chat-box-input\",\"chat-box-input--to-focus\",\"WIN32\".toLowerCase())},o.a.createElement(\"div\",{className:\"chat-box-input__heading\"},qt?o.a.createElement(Xe,{dispatch:e.dispatch,state:ve,convId:ee,closeLinkPreview:()=>{var e;null===(e=N.ModuleContainer.resolve(Oe.b))||void 0==="
+
+## chat-box-input__tools__btn
+   "t t=this.state[e]?O[e]:R[e];return this._callbackActionFactory(e,t)}buildActionButton(e){let{id:t,icon:n,label:i}=e,r=Object(a.a)(e,T),o=i;return\"formatClear\"===t&&this.state.isSelectingText&&(o=\"STR_FORMAT_CLEAR_SELECTED\"),s.a.createElement(\"div\",{className:\"chat-box-input__tools__btn\",key:`rich-text-${t}`,onMouseDown:this.mapFunction(t)},s.a.createElement(c.a,{id:t,tagName:\"div\",textKey:o,className:`fa fa-${n} text-center format-icon ${this.state[t]?\"selected\":\"\"}`,\"data-id\":r[\"data-id\"]}))}buildPopoverButton(e){var t,n;const a=(null===(t"
+
+## zmenu-item
+   "ll,de=null,ue=null,Ae=null,he=null,me=null,pe=null,ge=null,fe=null;d&&d.msgType==m.MSG_FILE&&d.isErrorInfo||!T&&A.default.enableMultiSelect&&h.default.canSelectMessage(d)&&(ne={html:o.a.createElement(\"div\",{className:\"rel\"},o.a.createElement(\"div\",{className:\"zmenu-item\",onClick:this._onChooseMsg.bind(this,d),\"data-id\":\"div_CX_Select\"},c>0&&o.a.createElement(_e.a,{className:\"Multicheck_24_Line f20 menu-icon left\"}),o.a.createElement(Xt.a,{textKey:\"STR_SELECT\"})),o.a.createElement(Jt.c,{position:Jt.b.BOTTOM,aTop:-7,aFontSize:"
+
+## zmenu-body
+   "SEPARATE)return null;if(e.type===_.SEPARATE){if(t>=r.length-1||!0===S)return null;S=!0}else S=!1;return this.renderItem(e,t,R,T,this.state.activeSubMenuIndex===t)}));let C=this.renderDockTop(),N=this.renderDockBot(),w=s.a.createElement(\"div\",{className:(o?\"\":\"zmenu-body\")+(l?\" content-only\":\"\")+(h?\" expand\":\"\")+\" \"+b,ref:e=>this.contentOnlyDom=e},o?null:C,O,o?null:N);return l?w:(w=o?y?s.a.createElement(\"div\",{className:Object(p.a)(\"zmenu-body\",h&&\"expand\",this.hasSubmenu&&\"has-submenu\",y&&\"--virtualize\",b)},C,s.a.createEleme"
+
+## zl-modal
+   "nction\"==typeof e?e():e}(a)||document.body)}),[a,i]),r.useEffect((()=>{if(l&&!i)return Object(o.b)(t,l),()=>{Object(o.b)(t,null)}}),[t,l,i]),i?r.isValidElement(n)?r.cloneElement(n,{ref:d}):n:l?s.createPortal(n,l):l})),c=n(\"doQp\"),d=n.n(c),u=n(\"bNWW\");const A=\"zl-modal\",h={Block:`${A}__dialog`,Header:`${A}__dialog__header`,Body:`${A}__dialog-body`,Footer:`${A}__footer ${A}__footer__button-action`},m=\"zl-dlg\",p={Block:m,Paper:`${m}-paper`,Title:`${m}-title`,TitleTypo:`${m}-title__typo`,Content:`${m}-content`,Actions:`${m}-ac"
+
+## zl-modal__dialog-body
+   "ading:s.loading,\"data-id\":_.confirmBtn})))):null},N=n(\"1pet\"),w=n(\"zRkS\");var M=e=>{const{className:t,noPadding:n,freeHeight:a,fullscreen:i,expand:r,typeZlPopup:s,children:o,onClickBody:l=(()=>{}),onScrollBody:c=(()=>{})}=e;return A.a.createElement(\"div\",{id:\"zl-modal__dialog-body\",className:\"zl-modal__dialog-body \"+(n?\" no-padding \":\"\")+(a?\" free-height \":\"\")+(t||\"\")+(r?\" mmax\":\"\"),onClick:l,onScroll:c,style:i?{padding:\"0px\"}:{}},(()=>{let e=null;switch(s){case N.TYPE_POPUP.INFO:return o;case N.TYPE_POPUP.WARNING:e=A.a.createElement(\""
+
+## setting-section-content__item
+   "{t(Sa(e)),a(n)}))}),[t,n,a]);return i=Na()(i,300),{updateValue:i}};var Ma=e=>{const{className:t,titleTextKey:n,key:a,stateValue:i,onToggle:r,disabled:l=!1}=e,c=()=>{l||r(!i)};return s.a.createElement(\"div\",{className:Object(o.a)(\"flx\",\"flx-al-c\",\"flx-sp-btw\",\"setting-section-content__item\",t),onClick:c,style:l?{cursor:\"default\"}:void 0},s.a.createElement(E.a,{textKey:n,style:l?{color:\"var(--text-secondary)\",cursor:\"default\"}:void 0}),s.a.createElement(M.a,{key:a,size:\"m\",onChange:c,checked:i,disabled:l}))};var Da=e=>{const{windowId:t}=e,[n,a]="
+
+## sidebar-icon
+   "hor\",className:t.className},r.a.createElement(\"div\",{onClick:n.onClick},r.a.createElement(Y,{key:d.SidebarTab.ZCLOUD_TAB,name:d.SidebarTab.ZCLOUD_TAB,isActive:va.CloudConfigv2.getInstance().isFreev2()?o:n.isActive,onClick:()=>{},icon:{active:\"zCloud_24_Filled sidebar-icon\",normal:\"zCloud_24_Line sidebar-icon\"},titleKey:\"STR_LEFT_SIDEBAR_ZALO_CLOUD\",dataId:\"div_Main_Tab_zCloud\",unreadMark:!!n.showReddot}),r.a.createElement(on.b,{identity:c,content:r.a.createElement(_a,{onClickCTA:()=>{const e=Object(Dt.b)().getPopoverCTALink();"
+
+=== state-layer signals (whole bundle, occurrence counts) ===
+  createStore(             3
+  configureStore(          0
+  useSelector              0
+  useDispatch              0
+  createSlice              1
+  redux                    9
+  zustand                  0
+  createContext            60
+  useContext(              101
+  useReducer               24
+  useState(                544
+  mobx                     0
+  Provider                 92
+  store.dispatch           2
+  observe(                 126
+  proxy(                   0
+  useSyncExternalStore     4
+  React.createElement      0
+  _jsx(                    0
+  jsxRuntime               0
+
+=== app shell anchors ===
+  "#root"                    occ=   0 firstAt=-1
+  "rootId"                   occ=   9 firstAt=3547519
+  "id=\"root\""              occ=   0 firstAt=-1
+  "getElementById(\"root\")" occ=   0 firstAt=-1
+  "titleBar"                 occ=   1 firstAt=19647922
+  "titlebar-os"              occ=   0 firstAt=-1
+  "convList"                 occ=   9 firstAt=8611863
+  "chatArea"                 occ=   0 firstAt=-1
+
+=== every rule containing backdrop-filter (selector + tail of body) ===
+  @1321541  .seasonal-item-preview
+        backdrop-filter: blur(2px)
+  @1499879  .preview-ts .block-date>.chat-date>span
+        backdrop-filter: blur(10px)
+  @1500365  .preview-ts.active-scroll .block-date>.chat-date>span
+        backdrop-filter: blur(10px)
+  @1662701  .mvr-thumbplaceholder
+        backdrop-filter: blur(22px)
+  @1688822  .analytic-conv-resources-container
+        backdrop-filter: blur(30px)
+  @1691338  .health-center-analytic-modal
+        backdrop-filter: blur(4px)
+  @1692767  .health-center-tab
+        backdrop-filter: blur(4px)
+
+=== theme-hook signals in js ===
+  "app-custom-theme"           occ=   2 firstAt=14380781
+  "CUSTOM"                     occ=  80 firstAt=1682873
+  "custom-theme"               occ=   2 firstAt=14380785
+  "setBackgroundColor"         occ=   0 firstAt=-1
+  "updateThemeConfig"          occ=   1 firstAt=15771059
+  "classList.add"              occ=  33 firstAt=401503
+  "classList.remove"           occ=  32 firstAt=401583
+  "documentElement"            occ=  58 firstAt=3747706
+
+wrote _r3_ctx.txt

@@ -1,0 +1,130 @@
+
+===== main-dist/compact-app-preload.js (2111027 chars) =====
+
+#1 @14088 :: "SCOPE,e)},sendEvent:function(e){return i.ipcRenderer.send(r.EVENT,e)},sendEnvelope:function(e){return i.ipcRenderer.send(r.ENVELOPE,e)}};if(window.__SENTRY_IPC__=a,i.contextBridge)try{i.contextBridge.exposeInMainWorld(\"__SENTRY_IPC__\",a)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";const r=n(\"oyvS\"),i=n(\"jle/\"),a=i.homedir(),o=i.tmpdir(),{env:s}=process,c=(e,t)=>{if(\"string\"!=typeof e)throw new TypeError(\"Expecte"
+
+#2 @778491 :: "k},o=[i.ZDWorker,i.Embed,i.Unknown]},POOw:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return a}));var r=n(\"DmP7\"),i=n(\"NLsH\");function a(e,t){const n=Object(r.a)(t);window[e]=n,i.contextBridge.exposeInMainWorld(e,n)}},PObO:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return i}));var r=n(\"jDHv\");const i=Object(r.define)(\"db-cipher-key-manager\")},PQ6H:function(e,t,n){\"use strict\";e.exports={10029:\"maccente"
+
+#3 @1245489 :: ");return e.resolve(t).getExtraArguments()}}),window.$zfileRes={createDetachCleaner:Object(S.a)().createDetachCleaner},window.$zlogger=Object(f.a)(I.a),window.$zconfig=Object(f.a)(C.a),v.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),v.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),v.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(u.a)(Object(u.a)({},window.$zFileManager),{},{trustPath"
+
+#4 @1245555 :: "ateDetachCleaner:Object(S.a)().createDetachCleaner},window.$zlogger=Object(f.a)(I.a),window.$zconfig=Object(f.a)(C.a),v.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),v.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),v.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(u.a)(Object(u.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),v.contextBridge.exposeInMainWorld(\"$app\",window"
+
+#5 @1245613 :: ".$zlogger=Object(f.a)(I.a),window.$zconfig=Object(f.a)(C.a),v.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),v.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),v.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(u.a)(Object(u.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),v.contextBridge.exposeInMainWorld(\"$app\",window.$app),v.contextBridge.exposeInMainWorld(\"$zfileRes\",windo"
+
+#6 @1245744 :: "textBridge.exposeInMainWorld(\"$znode\",window.$znode),v.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(u.a)(Object(u.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),v.contextBridge.exposeInMainWorld(\"$app\",window.$app),v.contextBridge.exposeInMainWorld(\"$zfileRes\",window.$zfileRes),v.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),v.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zco"
+
+#7 @1245798 :: ".contextBridge.exposeInMainWorld(\"$zFileManager\",Object(u.a)(Object(u.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),v.contextBridge.exposeInMainWorld(\"$app\",window.$app),v.contextBridge.exposeInMainWorld(\"$zfileRes\",window.$zfileRes),v.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),v.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig);n(\"EmOc\"),n(\"ezdo\"),n(\"KdAX\"),n(\"mzek\"),n(\"aBYf\""
+
+#8 @1245862 :: "ect(u.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),v.contextBridge.exposeInMainWorld(\"$app\",window.$app),v.contextBridge.exposeInMainWorld(\"$zfileRes\",window.$zfileRes),v.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),v.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig);n(\"EmOc\"),n(\"ezdo\"),n(\"KdAX\"),n(\"mzek\"),n(\"aBYf\"),n(\"zm+Q\"),n(\"WSI5\"),n(\"v/rv\"),n(\"nAZb\"),n(\"c0KM\"),n(\"zheM\"),n("
+
+#9 @1245924 :: "})),v.contextBridge.exposeInMainWorld(\"$app\",window.$app),v.contextBridge.exposeInMainWorld(\"$zfileRes\",window.$zfileRes),v.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),v.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig);n(\"EmOc\"),n(\"ezdo\"),n(\"KdAX\"),n(\"mzek\"),n(\"aBYf\"),n(\"zm+Q\"),n(\"WSI5\"),n(\"v/rv\"),n(\"nAZb\"),n(\"c0KM\"),n(\"zheM\"),n(\"CXIs\"),n(\"cZjg\");var T=n(\"YrRS\");Object(T.b)();var O=n(\"gXs1\""
+
+total = 9
+
+--- namespace assembly patterns ---
+   "$zsub"                    = 0
+   "$zsub="                   = 0
+   "globalThis.$zsub"         = 0
+   "window.$zsub"             = 0
+   "exposeInMainWorld(name"   = 0
+   "exposeInMainWorld(n,"     = 0
+   "exposeInMainWorld(e,"     = 1
+   "exposeInMainWorld(t,"     = 0
+   "exposeInMainWorld(o,"     = 0
+
+===== main-dist/preload-render.js (1852663 chars) =====
+
+#1 @13020 :: "SCOPE,e)},sendEvent:function(e){return a.ipcRenderer.send(r.EVENT,e)},sendEnvelope:function(e){return a.ipcRenderer.send(r.ENVELOPE,e)}};if(window.__SENTRY_IPC__=i,a.contextBridge)try{a.contextBridge.exposeInMainWorld(\"__SENTRY_IPC__\",i)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";const r=n(\"oyvS\"),a=n(\"jle/\"),i=a.homedir(),o=a.tmpdir(),{env:s}=process,c=(e,t)=>{if(\"string\"!=typeof e)throw new TypeError(\"Expecte"
+
+#2 @796941 :: "a)(nt.a),window.$zMigrateDrive=Object(h.a)(ct),window.$zTFModels={ss:Object(h.a)(pt)},window.$znetwork=Object(h.a)(ut),window.$zprotocol=Object(h.a)(ht),window.$znoti=Object(h.a)(_t),qe.contextBridge.exposeInMainWorld(\"MetriczGlobal\",window.MetriczGlobal),qe.contextBridge.exposeInMainWorld(\"$zenv\",{isPreloaded:!0,isRenderer:!0}),qe.contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInM"
+
+#3 @797014 :: "ct(h.a)(pt)},window.$znetwork=Object(h.a)(ut),window.$zprotocol=Object(h.a)(ht),window.$znoti=Object(h.a)(_t),qe.contextBridge.exposeInMainWorld(\"MetriczGlobal\",window.MetriczGlobal),qe.contextBridge.exposeInMainWorld(\"$zenv\",{isPreloaded:!0,isRenderer:!0}),qe.contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwi"
+
+#4 @797089 :: "(ht),window.$znoti=Object(h.a)(_t),qe.contextBridge.exposeInMainWorld(\"MetriczGlobal\",window.MetriczGlobal),qe.contextBridge.exposeInMainWorld(\"$zenv\",{isPreloaded:!0,isRenderer:!0}),qe.contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",wind"
+
+#5 @797152 :: "nWorld(\"MetriczGlobal\",window.MetriczGlobal),qe.contextBridge.exposeInMainWorld(\"$zenv\",{isPreloaded:!0,isRenderer:!0}),qe.contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",wi"
+
+#6 @797211 :: "ge.exposeInMainWorld(\"$zenv\",{isPreloaded:!0,isRenderer:!0}),qe.contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdate"
+
+#7 @797274 :: ".contextBridge.exposeInMainWorld(\"$zcommon\",window.$zcommon),qe.contextBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\""
+
+#8 @797341 :: "textBridge.exposeInMainWorld(\"$znode\",window.$znode),qe.contextBridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",wind"
+
+#9 @797404 :: "Bridge.exposeInMainWorld(\"$zwindow\",window.$zwindow),qe.contextBridge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window"
+
+#10 @797469 :: "idge.exposeInMainWorld(\"$zresource\",window.$zresource),qe.contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",wind"
+
+#11 @797526 :: ".contextBridge.exposeInMainWorld(\"$zlogger\",window.$zlogger),qe.contextBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\""
+
+#12 @797593 :: "textBridge.exposeInMainWorld(\"$zupdater\",window.$zupdater),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall"
+
+#13 @797648 :: "er),qe.contextBridge.exposeInMainWorld(\"$zapp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$z"
+
+#14 @797727 :: "xposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$zsharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelec"
+
+#15 @797788 :: "idge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$zsharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\""
+
+#16 @797847 :: ".exposeInMainWorld(\"$zsessionManager\",window.$zsessionManager),qe.contextBridge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$zsharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge"
+
+#17 @797922 :: "idge.exposeInMainWorld(\"$zmulti\",window.$zmulti),qe.contextBridge.exposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$zsharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld"
+
+#18 @797989 :: "xposeInMainWorld(\"$zcall\",window.$zcall),qe.contextBridge.exposeInMainWorld(\"$zsharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWor"
+
+#19 @798068 :: "sharedWorker\",window.$zsharedWorker),qe.contextBridge.exposeInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window"
+
+#20 @798125 :: "oseInMainWorld(\"$zelectron\",window.$zelectron),qe.contextBridge.exposeInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",wi"
+
+#21 @798194 :: "eInMainWorld(\"$zelectronNative\",window.$zelectronNative),qe.contextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig),qe.contextBridge.exposeInMainWorld(\"$zMetric\",window.$"
+
+#22 @798255 :: "ontextBridge.exposeInMainWorld(\"$zuri\",window.$zuri),qe.contextBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig),qe.contextBridge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",O"
+
+#23 @798314 :: "textBridge.exposeInMainWorld(\"$zscreencap\",window.$zscreencap),qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig),qe.contextBridge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPa"
+
+#24 @798377 :: "qe.contextBridge.exposeInMainWorld(\"$zlogin\",window.$zlogin),qe.contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig),qe.contextBridge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\","
+
+#25 @798440 :: ".contextBridge.exposeInMainWorld(\"$zperf\",window.$zperf),qe.contextBridge.exposeInMainWorld(\"$zconfig\",window.$zconfig),qe.contextBridge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$zFeatures\",wi"
+
+#26 @798572 :: "idge.exposeInMainWorld(\"$zMetric\",window.$zMetric),qe.contextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$zFeatures\",window.$zFeatures),qe.contextBridge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",wind"
+
+#27 @798627 :: "ontextBridge.exposeInMainWorld(\"$zFileManager\",Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$zFeatures\",window.$zFeatures),qe.contextBridge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$z"
+
+#28 @798694 :: ".a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$zFeatures\",window.$zFeatures),qe.contextBridge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAp"
+
+#29 @798755 :: "qe.contextBridge.exposeInMainWorld(\"$zpc\",window.$zpc),qe.contextBridge.exposeInMainWorld(\"$zFeatures\",window.$zFeatures),qe.contextBridge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMai"
+
+#30 @798826 :: ".exposeInMainWorld(\"$zFeatures\",window.$zFeatures),qe.contextBridge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zback"
+
+#31 @798889 :: "idge.exposeInMainWorld(\"$zcloud\",window.$zcloud),qe.contextBridge.exposeInMainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zprel"
+
+#32 @798964 :: "ainWorld(\"$zMsgChannel\",window.$zMsgChannel),qe.contextBridge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw)"
+
+#33 @799021 :: "idge.exposeInMainWorld(\"$zscript\",window.$zscript),qe.contextBridge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",windo"
+
+#34 @799084 :: "idge.exposeInMainWorld(\"$zInAppPayment\",window.$zInAppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateD"
+
+#35 @799135 :: "AppPayment),qe.contextBridge.exposeInMainWorld(\"$capp\",window.$capp),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.expos"
+
+#36 @799202 :: "),qe.contextBridge.exposeInMainWorld(\"$zbackup\",window.$zbackup),qe.contextBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.expos"
+
+#37 @799275 :: "xtBridge.exposeInMainWorld(\"$zpreload\",Xe),qe.contextBridge.exposeInMainWorld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.exposeInMainWorld(\"$znetwork\",window.$znetwork),qe.contextBridge.exposeInMainW"
+
+#38 @799350 :: "ld(\"$zsqlitebw\",window.$zsqlitebw),qe.contextBridge.exposeInMainWorld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.exposeInMainWorld(\"$znetwork\",window.$znetwork),qe.contextBridge.exposeInMainWorld(\"$zprotocol\",window.$zprotocol),qe.contextBridge.exposeInMainWorld(\"$z"
+
+#39 @799417 :: "ld(\"$zsafeStorage\",window.$zsafeStorage),qe.contextBridge.exposeInMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.exposeInMainWorld(\"$znetwork\",window.$znetwork),qe.contextBridge.exposeInMainWorld(\"$zprotocol\",window.$zprotocol),qe.contextBridge.exposeInMainWorld(\"$znoti\",window.$znoti)},TCI8:function(e,t,n){const r=n(\"/hxO\");e.expo"
+
+#40 @799482 :: "nMainWorld(\"$zMigrateDrive\",window.$zMigrateDrive),qe.contextBridge.exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.exposeInMainWorld(\"$znetwork\",window.$znetwork),qe.contextBridge.exposeInMainWorld(\"$zprotocol\",window.$zprotocol),qe.contextBridge.exposeInMainWorld(\"$znoti\",window.$znoti)},TCI8:function(e,t,n){const r=n(\"/hxO\");e.exports=(e,t)=>new r(e,t).patch},TF3C:function(e,t,n){const r=n(\"/hxO"
+
+#41 @799549 :: ".exposeInMainWorld(\"$zTFModels\",window.$zTFModels),qe.contextBridge.exposeInMainWorld(\"$znetwork\",window.$znetwork),qe.contextBridge.exposeInMainWorld(\"$zprotocol\",window.$zprotocol),qe.contextBridge.exposeInMainWorld(\"$znoti\",window.$znoti)},TCI8:function(e,t,n){const r=n(\"/hxO\");e.exports=(e,t)=>new r(e,t).patch},TF3C:function(e,t,n){const r=n(\"/hxO\"),a=n(\"RSpE\");e.exports=(e,t,n)=>{let i=null,o=null,s=null;try{s=n"
+
+total = 41
+
+--- namespace assembly patterns ---
+   "$zsub"                    = 0
+   "$zsub="                   = 0
+   "globalThis.$zsub"         = 0
+   "window.$zsub"             = 0
+   "exposeInMainWorld(name"   = 0
+   "exposeInMainWorld(n,"     = 0
+   "exposeInMainWorld(e,"     = 0
+   "exposeInMainWorld(t,"     = 0
+   "exposeInMainWorld(o,"     = 0

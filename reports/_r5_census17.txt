@@ -1,0 +1,11 @@
+=== consumers of module euSg (which owns sink=g / guard=p) ===
+  literal "euSg" occurrences: 1
+  @12846757 :: "Name:\"tabs-container w100 h100 flx flx-col rel\"},s?null:l.a.createElement(\"div\",{className:\"tabs-main flx flx-al-c\"},c),l.a.createElement(\"div\",{className:\"flx-1 flx\"},r))}var rt=a(\"B5Cg\"),lt=a(\"nUVR\"),ct=a(\"uA0A\"),dt=a(\"euSg\"),ut=a(\"Mo0a\"),At=a(\"O8ue\"),ht=a(\"fP8I\");var mt=e=>{const{tokens:t,token:n}=e,[a,s]=Object(r.useState)([]);function i(){let e=[];t&&(e=t),n&&(e=Object.keys(n).map((e=>({name:e,value:n[e]})))),e.length>15&&e.sort(((e,t)=>e.name.localeCompare(t.name))),s(e)}Object(r.useEffect)((()=>{i()}),[t,n])"
+
+=== namespace aliases for euSg and their member calls ===
+  alias = dt
+
+=== inline Object(...)("euSg").member calls ===
+
+=== scrubber export .g( call sites with arguments ===
+

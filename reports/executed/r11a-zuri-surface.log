@@ -1,0 +1,34 @@
+PRELOAD main-dist\preload-noti.js
+   $zuri: expose=1 window=1 globalThis=0
+   $zapp: expose=1 window=1 globalThis=0
+   $zwindow: expose=1 window=1 globalThis=0
+   $zdownload: expose=1 window=1 globalThis=0
+   $zMetric: expose=1 window=1 globalThis=0
+   $zlogin: expose=1 window=1 globalThis=0
+   $zscreencap: expose=1 window=1 globalThis=0
+   $zperf: expose=1 window=1 globalThis=0
+PRELOAD main-dist\preload-render.js
+   $zuri: expose=1 window=1 globalThis=0
+   $zapp: expose=1 window=1 globalThis=0
+   $zwindow: expose=1 window=1 globalThis=0
+   $zdownload: expose=1 window=1 globalThis=0
+   $zMetric: expose=1 window=1 globalThis=0
+   $zlogin: expose=1 window=1 globalThis=0
+   $zscreencap: expose=1 window=1 globalThis=0
+   $zperf: expose=1 window=1 globalThis=0
+PRELOAD main-dist\preload-shared-worker.js
+   $zuri: expose=1 window=1 globalThis=0
+   $zapp: expose=1 window=1 globalThis=0
+   $zwindow: expose=1 window=1 globalThis=0
+   $zdownload: expose=1 window=1 globalThis=0
+   $zMetric: expose=1 window=1 globalThis=0
+   $zlogin: expose=1 window=1 globalThis=0
+   $zscreencap: expose=1 window=1 globalThis=0
+   $zperf: expose=1 window=1 globalThis=0
+PRELOAD main-dist\preload-sqlite.js
+   $zsub: expose=0 window=0 globalThis=1
+
+$zsub MEMBERS USED = ["$zFeatures","$zMetric","$zMsgChannel","$zapp","$zcall","$zdb","$zdownload","$zlogger","$zlogin","$zmulti","$zresource","$zscreencap","$zsessionManager","$zsharedWorker","$zupdater","$zuri","$zwindow"]
+
+LEDGER ($zsub.$zuri definition sites):
+   none

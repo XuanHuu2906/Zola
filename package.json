@@ -1,0 +1,61 @@
+{
+  "name": "zalo-apple-glass-ui",
+  "private": true,
+  "version": "0.3.0",
+  "description": "Desktop UI demo with an optional, unsupported personal zca-js client for a secondary Zalo account.",
+  "main": "dist-electron/main.js",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:desktop": "npm run build:electron && node tools/dev-desktop.cjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "build:desktop": "npm run check && npm run build && npm run build:electron && electron-builder --win portable --x64 && node tools/hash-release.cjs && node tools/mark-delivery.cjs && node tools/verify-asar.cjs",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
+    "lint": "eslint src/renderer src/shared src/adapters src/services src/transport src/composition src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts tests/e2e vite.config.mts playwright.config.ts",
+    "test": "node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts",
+    "test:legacy": "node --test --test-isolation=none legacy/tests/logic.test.cjs",
+    "test:e2e": "playwright test",
+    "capture:legacy": "node tools/capture-legacy.cjs",
+    "test:desktop": "node tools/smoke-desktop.cjs",
+    "test:desktop:extra": "node tools/qa-desktop-extra.cjs",
+    "test:soak": "node tools/soak-desktop.cjs",
+    "verify:asar": "node tools/verify-asar.cjs",
+    "build:icon": "node tools/make-icon.cjs",
+    "check": "npm run typecheck && npm run lint && npm test"
+  },
+  "dependencies": {
+    "lucide-react": "1.14.0",
+    "motion": "12.23.24",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "zca-js": "2.2.0",
+    "zustand": "5.0.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@eslint/js": "9.39.4",
+    "@playwright/test": "1.58.2",
+    "@tailwindcss/vite": "4.2.2",
+    "@types/node": "24.10.1",
+    "@types/pngjs": "6.0.5",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0",
+    "eslint": "9.39.4",
+    "pngjs": "7.0.0",
+    "tailwindcss": "4.2.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5"
+  },
+  "overrides": {
+    "minimatch@>=7.0.0 <11.0.1": "11.0.4"
+  },
+  "license": "UNLICENSED"
+}

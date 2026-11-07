@@ -1,0 +1,6 @@
+artifact       : D:\Zalo\release\Glass-Messenger-Demo-0.3.0-x64.exe
+manifest bytes : 112248617  on disk: 112248617  match: True
+manifest sha   : 85f92db5fcf258a85acc72844c2141cbc48ce377266e611a62f40fbf365f8ec3
+on-disk sha    : 85f92db5fcf258a85acc72844c2141cbc48ce377266e611a62f40fbf365f8ec3  match: True
+deliveryVersion: 0.3.0
+STATUS: PASS

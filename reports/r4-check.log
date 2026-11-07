@@ -1,0 +1,44 @@
+> npm run typecheck && npm run lint && npm test
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+> eslint src/renderer src/shared electron tests/core.test.ts tests/design-system.test.ts tests/e2e vite.config.mts playwright.config.ts
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts
+✔ TS search retains Vietnamese name and preview matching (1.5826ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.1879ms)
+✔ sending is immutable, bounded and local to the selected chat (14.6218ms)
+✔ attachments retain names and sizes only, with bounded display metadata (0.4807ms)
+✔ demo seeds are independent across sessions (0.1879ms)
+✔ preferences tolerate corrupt storage and clamp values (0.4071ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.172ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (0.3809ms)
+✔ IPC trust and network policy distinguish development from production (0.2097ms)
+✔ every variant map resolves both states to distinct, complete class strings (0.2071ms)
+✔ class maps carry no empty-string gaps except the intentional idle no-ops (0.1482ms)
+✔ direction mapping never treats the sender as a layout class (0.1706ms)
+✔ avatar variants always emit exactly one size token and one art fallback (0.108ms)
+✔ wallpaper is a typed tone map keyed on chat kind, not on a CSS variable (0.1483ms)
+✔ glass token ladder declares one fill, blur and shadow per tier (0.1829ms)
+✔ border family exists in both themes and is not borrowed from Zalo (0.1004ms)
+✔ components read glass values only through tokens (0.3643ms)
+✔ degradation covers every blurred tier in one switch (0.08ms)
+✔ glass is never nested in a containing block or transform layer (0.0594ms)
+✔ every glass surface takes its radius from the ladder, including the compact shell (0.1328ms)
+✔ the date pill keeps the shipped glass idiom: translucent fill plus its own blur (0.0509ms)
+✔ HTML-escapes user-generated message content (0.0831ms)
+✔ removes diacritics in Vietnamese search terms (0.0562ms)
+✔ search matches normalized names (0.0934ms)
+✔ unread filter selects only unread (0.0561ms)
+✔ group and work filters use categories independently (0.0652ms)
+✔ pinned chats are sorted before unpinned (0.0487ms)
+✔ file metadata is textual and size-limited (0.1108ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.9115
+(node:15456) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/core.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

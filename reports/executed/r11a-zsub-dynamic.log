@@ -1,0 +1,53 @@
+
+===== pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars) =====
+   total $zsub = 140; pure reads = 137; non-reads = 3
+
+   NONREAD @14210035 next=")"
+   :: "{var n,a,i;t&&t.windowId===E.f&&(null===(i=onclose)||void 0===i||i());null===(n=$zsub)||void 0===n||null===(a=n.$zwindow)||void 0===a||a.removeListenHideWindowC"
+
+   NONREAD @14212467 next=")"
+   :: "n})}));return()=>{e()}}),[]),Object(i.useEffect)((()=>{var e,t;return null===(e=$zsub)||void 0===e||null===(t=e.$zwindow)||void 0===t||t.onHideWindowComplete($)"
+
+   NONREAD @14212688 next=")"
+   :: "rById(E.f),ce.a.endSession(),S.ModuleContainer.resolve(O.b).dispose(),null===(e=$zsub)||void 0===e||null===(t=e.$zwindow)||void 0===t||t.removeListenHideWindowC"
+
+   --- guard shapes ---
+      "typeof $zsub"       = 0
+      "window.$zsub"       = 0
+      "$zsub&&"            = 0
+      "$zsub&&"            = 0
+      "$zsub?"             = 0
+      "$zsub||"            = 0
+      "if($zsub"           = 0
+      "if ($zsub"          = 0
+
+===== main-dist/compact-app-preload.js (2111027 chars) =====
+   --- dynamic name building ---
+      "\"$z\"+"      = 0
+      "'$z'+"        = 0
+      "`$z"          = 0
+      "\"$z\""       = 0
+      "\"$zs\""      = 0
+      "\"$zsu\""     = 0
+      "\"sb\""       = 0
+      "'sub'"        = 0
+      "\"sub\""      = 0
+      "sub"          = 170
+      "zsub"         = 0
+
+   --- POOw consumers (n("POOw")) ---
+
+   @72391 :: "ns||e.spans),Object.assign(Object.assign({},n),{sdk:Object.assign(Object.assign({},e.sdk),t.sdk)})}},\"0Prh\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"InaccessibleDriveModule\",(function(){return d}));var r=n(\"5e6q\"),i=n(\"oPp/\"),a=n(\"jDHv\"),o=n(\"Mgpg\");var s=n(\"POOw\"),c=n(\"i6mH\");const l={writeCurrentDrivePathToFile:{apiKey:function(e){return e.WRITE_CURRENT_DRIVE_PATH_TO_FILE=\"write-current-drive-path-to-file\",e}({}).WRITE_CURRENT_DRIVE"
+
+   @1162401 :: "p(((t,i)=>function(e,t){const i=s[t];return\"object\"==typeof i&&null!==i?r._`${p()}(${n}, ${e}[${t}])`:r._`${n} === ${i}`}(e,i))))}e.pass(f)}};t.default=o},etMz:function(e,t,n){\"use strict\";n.r(t),n.d(t,\"UserDataMigrationModule\",(function(){return u}));var r=n(\"POOw\"),i=n(\"5e6q\"),a=n(\"i6mH\");let o=function(e){return e.GET_NUM_FILES=\"get-num-files\",e.START_MIGRATE_USER_DATA=\"start-migrate-user-data\",e.ABORT_MIGRATE_USER_DATA=\"abort-migrat"
+
+   --- DmP7 (descriptor factory) surface ---
+"DmP7:function(e,t,n){\"use strict\";n.d(t,\"b\",(function(){return u})),n.d(t,\"a\",(function(){return f}));var r=n(\"Uzj0\"),i=n(\"NLsH\"),a=n(\"i6mH\"),o=n(\"CNL1\"),s=n(\"qMt4\");function c(e){return function(...t){return i.ipcRenderer.invoke(e.apiKey,...t)}}const l=new r.c.Container,d=()=>l.promise,u=()=>{l.resolve()};window.addEventListener(\"load\",(()=>{u()}));let p=0;function f(e){return Object.keys(e).reduce(((t,n)=>{switch(e[n].type){case a.a.NOTIFY:case a.a.REQUEST:t[n]=c(e[n]);break;case a.a.REQUEST_SYNC:t[n]=(r=e[n],function(...e){return i.ipcRenderer.sendSync(r.apiKey,...e)});break;case a.a.SUBSCRIBE:t[n]=function(e){return function(t){return i.ipcRenderer.on(e.apiKey,t)}}(e[n]);break;case a.a.UNSUBSCRIBE:t[n]=function(e){return function(t){return i.ipcRenderer.removeAllListeners(e.apiKey)}}(e[n]);break;case a.a.PROVIDE:t[n]=function(e){return function(t){return i.ipcRenderer.handle(e.apiKey"
+
+===== main-dist/compact-app.js =====
+   "compact-app.html"   = 1
+   "\"index.html\""     = 2
+   "'index.html'"       = 0
+   "getHtml("           = 0
+
+   @713031 :: "ts);const t=Object(_.a)().get(E,{});return t.enableDevTools||this._window.setMenu(null),t.enableDevTools&&this._window.webContents.openDevTools(),this.configureWindow(this._window),this._window}getWindow(){return this._window}load(){this.logger.zsymb(0,\"4jh1Mi\",\"CompactAppWindowLoader.load\");const e=Object(f.getHtml)(\"compact-app.html\");if(!this._window)throw this.logger.zsymb(18,\"5BF6y1\",\"Window not created\"),new Error(\"Window not created\");return this._window.loadURL(e).catch((e=>{this.logger.zsymb(21,\"BlcaPr\",[\""

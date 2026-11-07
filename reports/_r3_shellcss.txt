@@ -1,0 +1,221 @@
+total rules = 15934
+
+## #sidebarNav  rules=4 bg=1 shadow=0 radius=0 bf=0
+   vars: --nav-width(1) --layer-background-navbar-normal(1)
+   @409527 #sidebarNav
+        width:408px;width:var(--nav-width)
+   @409574 #sidebarNav.compact-mode
+        width:100%
+   @409610 #sidebarNav.compact-mode.show-chat
+        width:64px;box-sizing:border-box
+   @2300000 .custom.mask-sidebar #sidebarNav
+        background:var(--layer-background-navbar-normal)
+
+## #main-tab  rules=5 bg=1 shadow=0 radius=0 bf=0
+   vars: --layer-background-navbar-normal(1)
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view_
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @269917 #main-tab
+        width:64px;flex:none;box-sizing:border-box;background:var(--layer-background-navbar-normal);position:relative;margin-top:-24px
+   @270054 #main-tab.WEB
+        margin-top:0
+   @419350 .title-bar-feature #main-tab
+        padding-top:70px
+   @1668493 .use-system-banner:has(.system-banner__container) #main-tab:not(.WEB)
+        margin-top:0;position:relative;height:100vh;top:calc(100% - 100vh)
+
+## .nav__tabs  rules=1 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+   @284375 .nav__tabs .show-red
+        right:16px
+
+## .sidebar-icon  rules=1 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+   @1641345 .sidebar-icon
+        font-size:30px!important;opacity:.875
+
+## #setting  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+## .setting  rules=5 bg=2 shadow=0 radius=0 bf=0
+   vars: --text-primary(1) --layer-background-subtle(1) --layer-background(1)
+   @109761 #group-creator .create-group__input-v3,.cloud-container__left-section.full,.cloud-status,.flx-1,.group-poll-message-v3>.poll-detail>.vote-options>.option-wrapper>.detail__option,.setting.compact .sett
+        flex:1
+   @1071784 .setting
+        font-size:.875rem;font-weight:400;line-height:1.5;color:var(--text-primary);overflow:hidden
+   @1071885 .setting.login-mode
+        min-height:400px;height:455px
+   @1071935 .setting.compact
+        background-color:var(--layer-background-subtle)
+
+## #chatInput  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+## .chat-input-container  rules=40 bg=4 shadow=0 radius=1 bf=0
+   vars: --BA50(1) --background-inactiveness-subtle(1)
+   @1616696 .chat-input-container
+        box-sizing:border-box;width:100%;padding:10px 12px;display:flex;justify-content:flex-end;flex-direction:row;flex-wrap:wrap;gap:4px
+   @1616849 .chat-input-container.--rtf-mode
+        display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden
+   @1616951 .chat-input-container.--rtf-mode .rtf-buttons-group
+        display:flex
+   @1617016 .chat-input-container.--rtf-mode .rtf-buttons-group.--visible
+        opacity:1
+   @1617088 .chat-input-container.--rtf-mode.--rtf-mini-mode
+        min-height:177.75px;max-height:177.75px;height:177.75px
+   @1617193 .chat-input-container.--rtf-mode.--rtf-expand-mode
+        height:100%
+   @1617256 .chat-input-container.--rtf-mode .rtf-placeholder
+        font-size:.9375rem;font-weight:400;line-height:1.5;padding:0 0 0 2px;margin:0
+   @1617384 .chat-input-container.--rtf-mode .chat-input-scrollable
+        overflow-y:auto;overflow-x:hidden;display:block;max-height:100%;height:100%
+   @1617516 .chat-input-container.--rtf-mode .chat-input-wrapper .rich-text-input
+        height:auto
+   @1617598 .chat-input-container.--rtf-mode .chat-input-wrapper .rich-text-input .input-v4
+        height:auto;padding:0;overflow:hidden
+   @1617716 .chat-input-container.--rtf-mode .chat-input-container__left-layout
+        overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column;flex:1;max-width:100%;min-width:100%
+   @1617890 .chat-input-container.--rtf-mode .chat-input-container__right-layout
+        justify-content:space-between
+
+## .chat-input-scrollable  rules=4 bg=2 shadow=0 radius=1 bf=0
+   vars: --BA50(1) --background-inactiveness-subtle(1)
+   @1617384 .chat-input-container.--rtf-mode .chat-input-scrollable
+        overflow-y:auto;overflow-x:hidden;display:block;max-height:100%;height:100%
+   @1620411 .chat-input-container .chat-input-scrollable
+        scrollbar-color:var(--BA50) transparent;scrollbar-width:thin;overflow-y:auto;overflow-x:hidden;display:block;width:100%;max-height:123.75px
+   @1811564 .avatar-uploader__container::-webkit-scrollbar,.chat-box-input__img-preview::-webkit-scrollbar,.chat-input-container .chat-input-scrollable::-webkit-scrollbar,.dd-scroll::-webkit-scrollbar,.friend-pro
+        width:4px;background:transparent
+   @1812625 .avatar-uploader__container::-webkit-scrollbar-thumb,.chat-box-input__img-preview::-webkit-scrollbar-thumb,.chat-input-container .chat-input-scrollable::-webkit-scrollbar-thumb,.dd-scroll::-webkit-scr
+        border-radius:2px;background:var(--background-inactiveness-subtle)
+
+## .chat-input-content  rules=1 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+   @1620357 .chat-input-container .chat-input-content
+        height:auto
+
+## .chat-input-wrapper  rules=5 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+   @1617516 .chat-input-container.--rtf-mode .chat-input-wrapper .rich-text-input
+        height:auto
+   @1617598 .chat-input-container.--rtf-mode .chat-input-wrapper .rich-text-input .input-v4
+        height:auto;padding:0;overflow:hidden
+   @1618865 .chat-input-container.--switching-rtf-to-normal-mode .chat-input-wrapper .rich-text-input
+        height:auto
+   @1618967 .chat-input-container.--switching-rtf-to-normal-mode .chat-input-wrapper .rich-text-input .input-v4
+        height:auto;padding:0;overflow:hidden
+   @1620303 .chat-input-container .chat-input-wrapper
+        height:100%
+
+## .chat-box-input__content  rules=13 bg=2 shadow=0 radius=0 bf=0
+   vars: --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --layer-background(1)
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:-webkit-flex;flex-flow:row nowrap
+   @81623 .au-bottom-tab-component,.au-image-list__error,.au-submit-cta,.bubble-contact-card-container>.bubble-contact-card>.content>.qr-code,.bubble-contact-card-container>.bubble-contact-card>.content>.user-i
+        flex-flow:column nowrap
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view_
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble
+        padding-left:7px
+   @581434 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item>.tab-bar-item__content,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item>.tab-bar-item__conten
+        padding-left:0;padding-right:0
+   @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block,#filter-tags-sb
+        border-color:var(--border-focused);color:var(--text-information)
+   @835764 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block:hover,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block:hover,#fi
+        background:var(--background-activeness);color:var(--WA100)
+   @1610047 .chat-box-input__content
+        background-color:var(--layer-background)
+   @1615423 .chat-box-input-container.--rtf-mode .chat-box-input__content
+        display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;flex:1
+   @1951986 #calendar-v3 div.zl-modal__dialog__header--sticky>.cal-weekday-v3,#filter-tags-sb div.filter-tag-item.zl-modal__dialog__header--sticky>.edit-button,#group-creator div.zl-modal__dialog__header--sticky>
+        padding-left:20px
+
+## #header  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+## .threadChat  rules=3 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+   @255133 .threadChat.nocall
+        width:calc(100% - 140px)
+   @255177 .threadChat.group
+        width:calc(100% - 210px)
+   @255220 .threadChat.group-preview
+        width:100%
+
+## .conv-item  rules=44 bg=12 shadow=0 radius=1 bf=0
+   vars: --layer-background-selected(4) --text-information(2) --text-primary(2) --icon-secondary(1) --layer-background(1) --text-secondary(1) --layer-background-hover(1) --layer-background-subtle(1) --BA50(1) --B10(1) --border-focused(1) --background-activeness(1)
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:-webkit-flex;flex-flow:row nowrap
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#searchResultLis
+        justify-content:center
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        align-items:center
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creat
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble
+        padding-left:7px
+   @581434 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item>.tab-bar-item__content,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item>.tab-bar-item__conten
+        padding-left:0;padding-right:0
+   @685012 .conv-action__menu,.conv-action__popup,.conv-item:hover .conv-action__popup
+        width:20px;height:20px;font-size:1.125rem;line-height:0;color:var(--icon-secondary);visibility:hidden;opacity:0
+
+## .conv-message  rules=25 bg=0 shadow=0 radius=0 bf=0
+   vars: --text-primary(5) --R60(2) --text-information(1) --text-secondary(1)
+   @109641 .conv-item-title__name,.conv-message,.conv-title-name,.flx-cell,.item-message,.item-title-name,.zl-scroll
+        flex:1 1 auto
+   @114054 #group-creator .create-group__item__name,.cb-info-file-item__error-msg,.cb-info-file-item__file-size,.cb-info-file-item__send-date,.cb-info-file-item__suggest-preview-file,.cb-info-file-item__suggest-
+        text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-wrap:break-word
+   @389707 #group-creator .nigh-chat-friend .night-chat-online-friend .gr-item:hover .create-group__item__name,.chat-input-link-preview .nigh-chat-friend .night-chat-online-friend .gr-item:hover .preview-desc,.c
+        color:var(--text-information)
+   @691963 .conv:hover .conv-message:not(.isBox)
+        right:29px
+
+## .data-list__label  rules=4 bg=0 shadow=0 radius=0 bf=0
+   vars: --border(1) --text-information(1)
+   @468480 #contactList .data-list__label
+        position:relative
+   @468529 #contactList .data-list__label:before
+        position:absolute;content:"";width:95%;top:0;left:0;border-top:1px solid var(--border)
+   @632707 .data-list__label
+        padding:5px 16px
+   @2054016 .conv-label-title:hover,.conv-label-title:hover .data-list__label,.conv-label-title:hover .sb-label
+        color:var(--text-information)
+
+## .contact-list__add  rules=3 bg=1 shadow=0 radius=0 bf=0
+   vars: --border(1) --layer-background-hover(1)
+   @470357 .contact-list__add
+        padding:2px 11px
+   @470393 .contact-list__add.find-friend-active
+        outline:1.4px dotted var(--border);outline-offset:-1px
+   @470574 .contact-list__add:hover
+        background:var(--layer-background-hover)
+
+## #contact-search  rules=13 bg=2 shadow=0 radius=0 bf=0
+   vars: --layer-background(1) --icon-primary(1) --text-errors(1) --text-secondary(1) --text-information(1)
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view_
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @270081 #contact-search
+        height:64px;min-height:64px;position:relative;background-color:var(--layer-background);transition:visibility 0s,opacity .5s linear;overflow:visible;padding:0 16px
+   @270260 #contact-search .group-search
+        position:relative;display:flex;height:32px
+   @270333 #contact-search .group-search__icon
+        position:absolute;top:0;font-size:.875rem;width:.875rem;height:.875rem;line-height:0;color:var(--icon-primary);bottom:0;margin:auto 12px
+
+## .conversation-list__container  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+## .conv-list  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+## #convList  rules=0 bg=0 shadow=0 radius=0 bf=0
+   vars: —
+
+=== conv-item parent discovery ===
+  conv-item first @12415122
+date(e)}),[i]),!e.previewItem)return null;const{convId:c,previewItem:d,isUnread:u,shouldUseDraft:A}=e,{dName:h,icon:m,draft:p,urgencyLevel:g,isMissCall:f}=d,_=A?void 0:h;let E=c===s.CONV_FILTER.STRANGER?J.default.str("STR_CONV_NINLIST"):A?p.draftText:d.message;return i&&(E=J.default.str(E)),r.a.createElement(Ir,{windowId:a,ctxWindow:n,hasUnread:u,senderName:_,previewMsg:E,previewIcon:A?p.draftIcon:m,previewIconHighlight:u&&Boolean(!A&&f)})}));var Tr=a("czzM");const yr=l.ModuleContainer.resolve(Ae.ZLoggerFactory).createZLogger("zcommon",["log"]),Sr=a("R+Bz").default,Rr=Object(Ti.e)(((e,t)=>Object(bi.g)(t.id)(e)))((function(e){const{conversation:t,previewMsg:n,isSelected:a,fileStatus:o,unreadReactData:l,cacheReaction:c,isActive:h,isFocused:m,convlistController:p}=e,g=Si.ConvList.isInMediaBox(t)||t.userId===s.CONV_FILTER.MEDIA||Si.ConvList.forcePopupOA(t),[E,v]=Object(i.useState)(0),I=Object(b.l)(Mn.MuteDataManager,t.userId),T=Object(b.l)(Mn.PinDataManager,t.userId),y=Object(b.l)(d.LabelDataManager,t.label),O=Object(Ri.f)(t.userId,g),C=y||Zi.a.getLabelObjByConversaionId(t.userId),w=null==n?void 0:n.draft,M=t.userId===s.CONV_FILTER.STRANGER,D=(M?J.default.str("STR_CONV_STRANGER"):e.displayName)||(t.isGroup?J.default.str("STR_GROUP_CHAT"):J.default.str("STR_GROUP_SINGLE")),L=Object(i.useMemo)((()=>"-1000"===t.userId?"div_TabMsg_ThrdChFrdReq":T?"div_TabMsg_ThrdChFileXFER":fi.c),[T]),P=Object(i.useMemo)((()=>!(O.sum>0)&&O.recover),[O]),k=Object(i.useRef)(null),U=(Object(i.useRef)(!1),(e=200)=>{k.current||t.userId==s.CONV_FILTER.MEDIA||t.userId==s.CONV_FILTER.STRANGER||!(null!=n&&n.msgId||t.lastSmsLocalId)||a||(k.current=setTimeout((()=>{var e;k.current=null,h.current&&(a||null===(e=Ii.default.messageCache)||void 0===e||e.loadCacheMessages(t))}),e))}),B=e=>{p.showMenu(fi.b,e,t),e.preventDefault(),e.stopPropagation()},j=(e,n)=>{e.preventDefault(),e.stopPropagation(),N.default.isEnableMultiWindow()&&p.openInNewWindow(t,n)},H=e=>{A.default.double_click_open_child&&j(e,$i.a.BY_DOUBLE_CLICK)},z=n=>{((n,a=!1)=>{const i=Mt.GlobalResolver.ConvInfoDataManager.getConvByIdSync(e.id)||t;i&&(Object(x.e)()||a||1&n.buttons&&0==n.button)&&(e.isSelected?!0===F.n.isFriendCenterExist()?e.dispatch({type:S.SideBarActions.RESET_FRIEND_CENTER}):e.dispatch({type:S.ConversationListActions.SELECT_CONV_MINOR,payload:i}):(p.selectConversation(i),n.preventDefault(),n.stopPropagation(),R.default.logAction(178001),i.userId===s.FAKE_CONVERSATION_ID.FRIEND_CENTER&&R.default.logAction(16601)))})(n,!0)},K=Object(i.useCallback)((e=>{let t=Object(Ji.b)(e);v(t)}),[]),W=Object(i.useMemo)((()=>{let e="conv-item conv-rel";a&&(e+=" selected"),!!T&&(e+=" pinned");return{className:e,onContextMenu:B,onMouseEnter:()=>{U()},onMouseLeave:()=>{k.current&&(clearTimeout(k.current),k.current=null)},onClick:z,onDoubleClick:H}}),[a,t,z]);Object(i.useEffect)((()=>{if(!A.default.noti_center_config.disable&&t){J

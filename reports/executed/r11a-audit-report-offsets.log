@@ -1,0 +1,250 @@
+﻿
+########## reports\R11V3_RUNTIME_BOUNDARY.md — 38 distinct offset(s) ##########
+
+@18350  (lines 429)
+     main: "ect.getOwnPropertyDescriptor(t,n):r;if(\"object\"==typeof Reflect&"
+     compact: ":[n(\"2YgE\")],implicit:[n(\"peYA\"),n(\"0/QM\"),n(\"ydHo\"),n(\"Pe6h\")]}"
+   * compact-pc: "const n=e.executeFn;if(I.includes(n)){(this.taskMap.get(n)||[])."
+     preload: "EAogAkEDIANCIIgQCiACQQIgA0IoiBAKIAJBASADQjCIEAogAkEAIANCOIgQCgvx"
+     compact-preload: "SXIEQBAACyAALQAACyYAIAAgAWoiAEGACElBgAkoAgAgAEEBaklyBEAQAAsgACAC"
+     wiring: "S=\"response-metrics\",e}({});const M={sendMessage:{apiKey:F.SEND_"
+   * lazy-ec7326: "n=(t,r)=>{const i=k.default.getFriendsSync();L.a.doActionWithUri"
+
+@18423  (lines 429)
+     main: "n\"==typeof Reflect.decorate)a=Reflect.decorate(e,t,n,r);else for"
+     compact: ":function(e,t,n){\"use strict\";var r,i=this&&this.__extends||(r=f"
+   * compact-pc: "({abortController:e})=>e.abort())),this.taskMap.set(n,[])}}async"
+     preload: "QgQBSIEQRBqIQMgBEEMEAUgAUEMEA1zIQUgBEEIEAUgAUEIEA1zIQYgBEEEEAUgA"
+     compact-preload: "AAgAWoiAEGACElBgAkoAgAgAEEIaklyBEAQAAsgAEEHcQRAEAELIAAgAjcDAAsuA"
+     wiring: "ype:S.NOTIFY},onMessage:{apiKey:F.RESPONSE_METRICS,type:S.SUBSCR"
+   * lazy-ec7326: "s=(t,{term:r,data:i})=>{switch(r){case\"id\":L.a.autoOpenConversat"
+
+@18922  (lines 430)
+     main: "=n.call(e),a=[];try{for(;(void 0===t||t-- >0)&&!(r=o.next()).don"
+     compact: "ject\"==typeof Reflect&&\"function\"==typeof Reflect.decorate)a=Ref"
+     compact-pc: "olve:n,reject:a,retries:i}=e;this.running++;try{n(await t.exec()"
+     preload: "DnZB/AdxQdAbakEAEAVzIAZB/wFxQQJ0QdALakEAEAUgA0EIEAVzIAVBBnZB/Adx"
+     compact-preload: "IABBmAFqIgkgBkEPcUEDdCIAakEAEAkiA0I8hiAAIAdqQQAQCSIFQgSIhIUhBCAF"
+     wiring: "get-clipboard\",e.RESTART_SCREENCAP=\"restart-cap\",e.REWRITE_CLIPB"
+   * lazy-ec7326: "$zsub.$zuri.onNewRequest(n),$zsub.$zuri.onRequestOpenConv(s),()="
+
+@18950  (lines 430)
+     main: "id 0===t||t-- >0)&&!(r=o.next()).done;)a.push(r.value)}catch(s){"
+     compact: "tion\"==typeof Reflect.decorate)a=Reflect.decorate(e,t,n,r);else "
+     compact-pc: ";this.running++;try{n(await t.exec())}catch(d){var o,l,c;if(Obje"
+     preload: "QQJ0QdALakEAEAUgA0EIEAVzIAVBBnZB/AdxQdATakEAEAVzIAFBDnZB/AdxQdAb"
+     compact-preload: "EAkiA0I8hiAAIAdqQQAQCSIFQgSIhIUhBCAFp0EPcUEDdEGACGpBABAJQjCGIANC"
+     wiring: "EENCAP=\"restart-cap\",e.REWRITE_CLIPBOARD=\"rewrite-clipboard\",e.C"
+   * lazy-ec7326: "$zsub.$zuri.onRequestOpenConv(s),()=>{$zsub.$zuri.removeListenNe"
+
+@72851  (lines 657)
+     main: "Number.isInteger(Number(e))&&Number(e)>=0&&Number(e)<24}isValidM"
+     compact: "ore(s)&&(l=s.valueOf()),r.isAfter(c)&&(u=c.valueOf());const d=u-"
+     compact-pc: "on(t,n,a){\"use strict\";a.d(n,\"a\",(function(){return l})),a.d(n,\""
+     preload: "er(\"unhandledrejection\",o))}},\"14cR\":function(e,t){e.exports=req"
+     compact-preload: "$inaccessibleDrive\",l),this.logger.zsymb(0,\"Dc2Wvu\",\"Preload api"
+
+@311443  (lines 560)
+   * main: "function(e,t,n){const r=n(\"Qs2e\"),i=n(\"NLsH\").app,o=n(\"oyvS\"),a="
+     compact: "(this.code=n.code),n&&n.stack&&(this.stack=n.stack)}}},\"43XQ\":fu"
+     compact-pc: "ssName:\"event-message__icon\"});let e=n.updateInfo;if(!e)break;le"
+   * preload: "{return l},resume:function(){if(!p.paused)return;p.paused=!1;for"
+     compact-preload: "n:a[0]?r.throw||((i=r.return)&&i.call(r),0):r.next)&&!(i=i.call("
+
+@904015  (lines 524)
+   * main: "isCompactApp(){return process.argv.some((e=>e.startsWith(i.LAUNC"
+     compact: "URLParse(t,{url:this._url,stateOverride:\"fragment\"})}toJSON(){re"
+     compact-pc: "n sqlstate sqlwarning ssl start starting starts status std stdde"
+   * preload: ");this._to._drain=n},_.prototype.destroy=function(){this._destro"
+   * compact-preload: ")),c.on(\"end\",(()=>{s(c.bytesRead)})),c.on(\"error\",(e=>{o(e)})),"
+
+@941546  (lines 532)
+     main: "Path=function(e,t){return u(e,0,e.length,t)},t.encodePax=functio"
+   * compact: "launchCompactApp(e,t,n){const o=Object(d.a)();Object(c.b)(o,{sta"
+   * compact-pc: "this.dateInput){let{currentDate:e}=this.state;if(e){let{date:t}="
+     preload: "stIndex=0,m.test(e)},int32:{type:\"number\",validate:function(e){r"
+     compact-preload: "execQuery.bind(r),close:r.close.bind(r),runQuery:r.runQuery.bind"
+
+@1077098  (lines 187)
+   * main: "webSecurity:!0,devTools:!1},useContentSize:!0,width:800,minWidth"
+     compact: "th\");await Lt.promises.writeFile(t,e)}(t.buffer,t.outputPath),ma"
+     compact-pc: "iMsgId:a.cliMsgId,fromUid:a.fromUid,type:\"link\",ttl:a.ttl}]),oe."
+     preload: "(t)return;e=(\"\"+e).toLowerCase(),t=!0}}(e);if(\"string\"!=typeof t"
+   * compact-preload: "{prefixes:e,parent:t}={}){this._names={},this._prefixes=e,this._"
+
+@1164302  (lines 657)
+     main: "_dbcs\",table:function(){return n(\"5WRQ\")}},cseuckr:\"cp949\",csksc"
+     compact: "_de febrièr_de març_d'abril_de mai_de junh_de julhet_d'agost_de "
+     compact-pc: "mandId:91029}},h._2),[l.FilePhotoCopyGroup]:Object(i.a)({saveDir"
+   * preload: "a.initMetric(\"CLS\",0);let n,s=0,c=[];const l=e=>{e.forEach((e=>{"
+     compact-preload: "$migration\",s),this.logger.zsymb(0,\"pjTw8I\",\"Preload api for use"
+
+@1194719  (lines 187)
+   * main: "allowRunningInsecureContent:!1,webgl:!0,devTools:!1,partition:\"p"
+     compact: "useFactory}},\"H/Jn\":function(e,t,n){\"use strict\";n.r(t),n.d(t,\"M"
+     compact-pc: "Type,[de.LinkGroup]:this._handleLinkType,[de.LinkCopyOneOne]:thi"
+   * preload: "{},r=n.size;let i=void 0===r?0:r;var o=n.timeout;let s=void 0==="
+     compact-preload: "isGlob=!0,Q=!0,!0===w)continue;break}if(!0!==L&&T===s){if(B=z.is"
+
+@1304243  (lines 547)
+     main: "Id:99112}}),a.f.Point({name:\"render\",condition:e=>e.processName="
+     compact: " registered:\",t),!1):(this._debug(\"warn\",\"consume MISS - invalid"
+     compact-pc: "migrate-compact-app-container\"},A.a.createElement(Ke,null),A.a.c"
+     preload: "=O.isRateLimited,t.parseRetryAfterHeader=O.parseRetryAfterHeader"
+     compact-preload: "(t,\"__esModule\",{value:!0});const r=n(\"sJ5P\"),i=n(\"+70+\");t.addB"
+
+@1308061  (lines 546)
+     main: "ame:\"render\",condition:e=>e.processName===l.b.Render,qos:{cmdId:"
+     compact: "ta=e.data,this.is_domain_swapped=e.is_domain_swapped,this.secure"
+     compact-pc: "inaccessible-drive-app-container\"},A.a.createElement(It,null),A."
+   * preload: "e){if(\"!\"===e[0])return!0;for(var t=0,n=-2,r=-2,i=-2,o=-2,s=-2;t"
+     compact-preload: "&&0!==c.length&&e.startTime-i.startTime<1e3&&e.startTime-r.start"
+
+@1309090  (lines 534)
+     main: "ssedTime(e);return!!(t&&t<=a.b.time(\"1h\"))},points:[a.f.Point({n"
+     compact: "every((e=>\"number\"==typeof e)))&&r.includes(n)}hasDisabledCacheR"
+     compact-pc: "InaccessibleDrive)?A.a.createElement(St,null):n.includes(dt.a.Us"
+     preload: "+}return!1};e.exports=function(e,t){if(\"string\"!=typeof e||\"\"==="
+     compact-preload: "wnProperties)),h(r),l.allErrors||t.else().var(p,!0),t.endIf()),e"
+
+@1503927  (lines 508)
+     main: "launchCompactApp({InaccessibleDrive:{}},{window:{width:458,heigh"
+     compact: " n={};if(null==e)return n;var r=!1;t=kt(t,(function(t){return t="
+     compact-pc: "Conversation(e){for(let t in this.downloadMapForZCloud){`${t}`.i"
+     preload: "led)try{if(\"undefined\"==typeof __SENTRY_DEBUG__||__SENTRY_DEBUG_"
+     compact-preload: "rn Array.isArray(e)?o(...e):e},t.stripSentryFramesAndReverse=s},"
+
+@2020730  (lines 532)
+     main: ":mm\",LLLL:\"dddd، D MMMM YYYY HH:mm\"},meridiemParse:/صبح|شام/,isP"
+     compact: "launchCompactApp(e,t,n),o=e=>r.default.getRelaunchState(e)},VtPO"
+     compact-pc: "derVolume,onClick:e=>this._unmuteVideo(e),onWheel:e=>this._scrol"
+   * compact-preload: "120410,120410],\"mapped\",[101]],[[120411,120411],\"mapped\",[102]],"
+
+@2218293  (lines 171)
+     main: " d=!1,u=!d,p=n(\"oyvS\"),h=n(\"bzos\"),f=n(\"NLsH\"),{zsecureSecrets:m"
+     compact: "guments)},u.onerror.__SENTRY_INSTRUMENTED__=!0;break;case\"unhand"
+     compact-pc: "0===n?void 0:n.call(t),Kt.d.key(\"video_file_v2\").boolean){return"
+
+@2696852  (lines 156)
+   * main: "webSecurity:!oe(),allowRunningInsecureContent:oe(),devTools:!0,p"
+     compact: "UpdateRetryCount:Gt,code:\"NETWORK_ERR\"}):Ae.webContents.send(\"z-"
+     compact-pc: "Finite(t)?Math.max(0,Math.floor(t)):0)};var t})).filter((e=>e.co"
+
+@2703712  (lines 393)
+   * main: ".on(\"check-arg-link\",(()=>{b.zsymb(4,\"8UmKcW\",[\"check arg link\","
+   * compact: "!1):G.relaunch({args:[]})},checkStartupOpenConvReq:function(){Je"
+   * compact-pc: "text:\"Reset conv cache time\",onclick:()=>{var e;null===(e=n(\"pN1"
+
+@2703739  (lines 392)
+   * main: "b.zsymb(4,\"8UmKcW\",[\"check arg link\",\"xXrK2t\"],Ae),Ae&&Ae.starts"
+   * compact: "checkStartupOpenConvReq:function(){Je&&(Ae.webContents.send(\"z-u"
+     compact-pc: "\",onclick:()=>{var e;null===(e=n(\"pN1M\"))||void 0===e||e.default"
+
+@2710764  (lines 367,458)
+   * main: "function Hn(e){b.zsymb(4,\"V-7Zgk\",[\"instance arguments\",\"uOe5mf\""
+     compact: "isterValue=(e,t)=>{r.container.register(e.token,{useValue:t}),th"
+     compact-pc: "d 0!==n?n:null;if(!s)return null;const o=gt(i.suggest),l=gt(i.au"
+
+@2711202  (lines 452)
+     main: "z-uri-open-conv\",{term:t[1],data:e}):(Qe=e,Ze=t[1])}}const r=[f."
+     compact: "s.resolveAll=e=>r.container.resolveAll(e.token),this.resolveIfEx"
+     compact-pc: "Id(\"manual\"))&&void 0!==e?e:\"\"},It=()=>{var e,t;return null!==(e"
+
+@2714883  (lines 354)
+   * main: "process.argv[1]&&Hn(process.argv);let e=ee();\"$ABOUT$\"==e&&(e=\"\""
+     compact: "SIVE\",e[e.NOT_REPLY_CAUSE_TIMEOUT=7]=\"NOT_REPLY_CAUSE_TIMEOUT\",e"
+     compact-pc: " 0:t.getAutoRetryableErrorSimulation())&&void 0!==e?e:null}));A."
+
+@2715144  (lines 480)
+     main: "start up\\n`)}catch(t){}an(),function(){const e=()=>{G.requestQui"
+     compact: "r=n.createZLogger(\"u-process\",[e])}logQos(e,t=[]){if(Object(a.is"
+     compact-pc: "r e,t;return null!==(e=null===(t=Ye.e.getDebugTools())||void 0=="
+
+@2724854  (lines 392)
+   * main: "checkStartupOpenConvReq:function(){Qe&&(Ce.webContents.send(\"z-u"
+     compact: "_tr_stored_block=J,t._tr_flush_block=function(e,t,n,r){var a,s,c"
+   * compact-pc: ">z(vt())})),A.a.createElement(Tt,{label:\"srcLang\"},A.a.createEle"
+
+@2726412  (lines 188)
+   * main: "isDev:f}=n(\"ZQzv\"),m=!1,_=352,E=82,g=5;let y,v,R,b,T,w=!1;const "
+     compact: "e instanceof Function||\"[object Function]\"===Object.prototype.to"
+   * compact-pc: ",A.a.createElement(Nt,{threadId:Y,threadType:q,onChangeThreadId:"
+
+@3110359  (lines 187)
+   * main: "webSecurity:!0,devTools:!1},useContentSize:!0,width:1250,minWidt"
+   * compact: "name:\"rMsgType\",type:i.i.integer,nullable:!0},currentIcon:{name:"
+     compact-pc: "is.buildPartialQuoteRtfHighlight();return o.a.createElement(M.a."
+
+@3565789  (lines 333)
+     main: ".on(\"second-instance\",((e,t,n)=>{if(!Pn)return;let r=Pn.getMainW"
+     compact: "{4}/,!1]],wn=[[\"HH:mm:ss.SSSS\",/\\d\\d:\\d\\d:\\d\\d\\.\\d+/],[\"HH:mm:ss"
+     compact-pc: "._lastMsgId),y.zsymb(21,\"iba2Vy\",[\"[PollingMsg] lastseen receive"
+
+@3566533  (lines 505)
+     main: "isDriveBlockedAndStartCompactApp())return}n(\"xsmo\").promoteSnowf"
+   * compact: "if(null==i)return void(e._isValid=!1);if(c[3]){for(t=0,n=wn.leng"
+     compact-pc: "allmsgs.length,t.join(\",\"),!0)}}clearMarkerResumeBack(){this._ti"
+
+@4154303  (lines 188)
+   * main: "allowRunningInsecureContent:!1,webgl:!0,devTools:!0,partition:\"p"
+     compact-pc: "ed\")}resetId(e){this.queueIds.resetId(e)}addCounter(e,t){this.qu"
+
+@13086649  (lines 410)
+     compact-pc: "getUserId(o[a]));e&&A(e,a)()}else{let e=document.createElement(\""
+
+@13088998  (lines 410)
+     compact-pc: ")}e.exports=function(e,n,a,h,m){var p=o(n);if(p.curve){if(\"ecdsa"
+
+@15499634  (lines 407)
+     compact-pc: "$zuri.checkOpenConvReq().then((()=>{this._isAlreadyCheckOpenConv"
+
+@15501983  (lines 407)
+   * compact-pc: "$zuri.checkArgvLink(),T.b.register(0,this._focus),en.Conversatio"
+
+@15729390  (lines 408)
+   * compact-pc: "E.ACTION_INCREASE,checkedPos:\"left\"}],T=(v.LABEL,{totalRecord:0,"
+
+@15731739  (lines 408)
+     compact-pc: "YPE_FORWARD_PHOTO]=\"PHOTO\",e[e.STICKER=a.MSGTYPE_FORWARD_STICKER"
+
+@15754446  (lines 409)
+     compact-pc: "m=+e.sendDttm,this.msgType=e.msgType,this.src=e.src}_formatGroup"
+
+@15756795  (lines 409)
+   * compact-pc: "}};n.a=A},jDHv:function(t,n,a){\"use strict\";a.r(n),a.d(n,\"define"
+
+########## reports\R11V3_INTEGRATION_OPTIONS.md — 6 distinct offset(s) ##########
+
+@18934  (lines 93)
+     main: "=[];try{for(;(void 0===t||t-- >0)&&!(r=o.next()).done;)a.push(r."
+     compact: "f Reflect&&\"function\"==typeof Reflect.decorate)a=Reflect.decorat"
+     compact-pc: "t:a,retries:i}=e;this.running++;try{n(await t.exec())}catch(d){v"
+     preload: "akEAEAVzIAZB/wFxQQJ0QdALakEAEAUgA0EIEAVzIAVBBnZB/AdxQdATakEAEAVz"
+     compact-preload: "BkEPcUEDdCIAakEAEAkiA0I8hiAAIAdqQQAQCSIFQgSIhIUhBCAFp0EPcUEDdEGA"
+     wiring: "d\",e.RESTART_SCREENCAP=\"restart-cap\",e.REWRITE_CLIPBOARD=\"rewrit"
+     lazy-ec7326: "onNewRequest(n),$zsub.$zuri.onRequestOpenConv(s),()=>{$zsub.$zur"
+
+@2218293  (lines 40)
+     main: " d=!1,u=!d,p=n(\"oyvS\"),h=n(\"bzos\"),f=n(\"NLsH\"),{zsecureSecrets:m"
+     compact: "guments)},u.onerror.__SENTRY_INSTRUMENTED__=!0;break;case\"unhand"
+     compact-pc: "0===n?void 0:n.call(t),Kt.d.key(\"video_file_v2\").boolean){return"
+
+@2227030  (lines 40)
+   * main: "isDev:I,getClientVersion:o,getAboutVersion:function(){return\"$AB"
+     compact: "i,/^Gwe/i,/^Sad/i],p=[/^Su/i,/^Lu/i,/^Me([^r]|$)/i,/^Mer/i,/^Ya/"
+     compact-pc: "GE_UPDATED,r),l.CloudService.getInstance().removeListener(o.CLOU"
+
+@2710764  (lines 90)
+   * main: "function Hn(e){b.zsymb(4,\"V-7Zgk\",[\"instance arguments\",\"uOe5mf\""
+     compact: "isterValue=(e,t)=>{r.container.register(e.token,{useValue:t}),th"
+     compact-pc: "d 0!==n?n:null;if(!s)return null;const o=gt(i.suggest),l=gt(i.au"
+
+@2714883  (lines 98)
+   * main: "process.argv[1]&&Hn(process.argv);let e=ee();\"$ABOUT$\"==e&&(e=\"\""
+     compact: "SIVE\",e[e.NOT_REPLY_CAUSE_TIMEOUT=7]=\"NOT_REPLY_CAUSE_TIMEOUT\",e"
+     compact-pc: " 0:t.getAutoRetryableErrorSimulation())&&void 0!==e?e:null}));A."
+
+@3565789  (lines 88)
+     main: ".on(\"second-instance\",((e,t,n)=>{if(!Pn)return;let r=Pn.getMainW"
+     compact: "{4}/,!1]],wn=[[\"HH:mm:ss.SSSS\",/\\d\\d:\\d\\d:\\d\\d\\.\\d+/],[\"HH:mm:ss"
+     compact-pc: "._lastMsgId),y.zsymb(21,\"iba2Vy\",[\"[PollingMsg] lastseen receive"

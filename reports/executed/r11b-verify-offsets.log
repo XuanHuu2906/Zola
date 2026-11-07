@@ -1,0 +1,36 @@
+=== key-derivation mechanism (identifier names only) ===
+PASS  preload-shared-worker.js @1090797 count=1  :: FTS key derivation function shape
+PASS  preload-shared-worker.js @1092094 count=1  :: SQLCipher PRAGMA key application site
+PASS  preload-shared-worker.js @1092152 count=1  :: cipher_compatibility pin on win32
+PASS  preload-shared-worker.js @1203563 count=1  :: auth singleton getUserScopeKey
+PASS  preload-shared-worker.js @1567622 count=1  :: partition cipherKey assignment
+PASS  utility-process-sqlite.js @887773 count=1  :: auth singleton getUserScopeKey (utility)
+PASS  utility-process-sqlite.js @1150748 count=2  :: partition cipherKey assignment (utility)
+PASS  utility-process-sqlite.js @1152449 count=2  :: getPartition entry (utility)
+PASS  utility-process-sqlite.js @1207044 count=1  :: partition-key IPC channel
+
+=== renderer/preload surface ===
+PASS  preload-render.js @797593 count=1  :: renderer DB namespace exposure
+PASS  preload-render.js @1543227 count=1  :: renderer asks main for partition keys
+PASS  preload-shared-worker.js @1105478 count=1  :: shared-worker sqlite namespace
+
+=== hosting surface (must be 0) ===
+PASS  main.js count=0 (expect 0)  :: BrowserView
+PASS  main.js count=0 (expect 0)  :: WebContentsView
+PASS  main.js count=0 (expect 0)  :: attachBrowserView
+PASS  main.js count=0 (expect 0)  :: <webview
+PASS  main.js count=0 (expect 0)  :: webviewTag
+PASS  main.js count=0 (expect 0)  :: protocol.handle
+PASS  main.js count=0 (expect 0)  :: registerStreamProtocol
+PASS  main.js count=0 (expect 0)  :: interceptHttpProtocol
+PASS  main.js count=0 (expect 0)  :: MessagePortMain
+PASS  main.js count=0 (expect 0)  :: contextIsolation:!1
+PASS  main.js count=0 (expect 0)  :: nodeIntegration:!0
+PASS  main.js count=0 (expect 0)  :: webSecurity:!1
+
+=== internal renderer that cannot be surfaced ===
+PASS  main.js @4154749 count=1  :: SQLite window show() hard-blocked
+PASS  main.js @4154216 count=1  :: internal SQLite window definition
+PASS  main.js @2726777 count=1  :: noti preload window
+
+=== result: PASS=27 FAIL=0 ===

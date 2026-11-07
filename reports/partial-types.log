@@ -1,0 +1,184 @@
+[96mplaywright.config.ts[0m:[93m1[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '@playwright/test' or its corresponding type declarations.
+
+[7m1[0m import { defineConfig } from '@playwright/test';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/renderer/App.tsx[0m:[93m2[0m:[93m48[0m - [91merror[0m[90m TS2307: [0mCannot find module 'motion/react' or its corresponding type declarations.
+
+[7m2[0m import { MotionConfig, useReducedMotion } from 'motion/react';
+[7m [0m [91m                                               ~~~~~~~~~~~~~~[0m
+[96msrc/renderer/components/ChatPane/index.tsx[0m:[93m2[0m:[93m42[0m - [91merror[0m[90m TS2307: [0mCannot find module 'motion/react' or its corresponding type declarations.
+
+[7m2[0m import { motion, useReducedMotion } from 'motion/react';
+[7m [0m [91m                                         ~~~~~~~~~~~~~~[0m
+[96msrc/renderer/components/ChatPane/index.tsx[0m:[93m10[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m10[0m   const chat = chats.find(c => c.id === activeId)!;
+[7m  [0m [91m                          ~[0m
+[96msrc/renderer/components/ChatPane/index.tsx[0m:[93m52[0m:[93m26[0m - [91merror[0m[90m TS7006: [0mParameter 'message' implicitly has an 'any' type.
+
+[7m52[0m       {chat.messages.map(message => <motion.div key={message.id} initial={prefs.motion && !osReduced ? { opacity: 0, y: 6 } : false}
+[7m  [0m [91m                         ~~~~~~~[0m
+[96msrc/renderer/components/FeaturePage.tsx[0m:[93m8[0m:[93m51[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m8[0m   const rows = view === 'contacts' ? chats.filter(c => !c.isGroup && c.id !== 'zalo') : view === 'groups' ? chats.filter(c => c.isGroup) : [];
+[7m [0m [91m                                                  ~[0m
+[96msrc/renderer/components/FeaturePage.tsx[0m:[93m8[0m:[93m122[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m8[0m   const rows = view === 'contacts' ? chats.filter(c => !c.isGroup && c.id !== 'zalo') : view === 'groups' ? chats.filter(c => c.isGroup) : [];
+[7m [0m [91m                                                                                                                         ~[0m
+[96msrc/renderer/components/FeaturePage.tsx[0m:[93m12[0m:[93m60[0m - [91merror[0m[90m TS7006: [0mParameter 'chat' implicitly has an 'any' type.
+
+[7m12[0m     {rows.length ? <div className="feature-grid">{rows.map(chat => <button className="feature-card" key={chat.id} onClick={() => selectChat(chat.id)}><Avatar chat={chat} size="large" /><span><strong>{chat.name}</strong><small>{chat.isGroup ? 'Nhóm demo' : 'Liên hệ demo'}</small></span><ChevronRight size={18} /></button>)}</div>
+[7m  [0m [91m                                                           ~~~~[0m
+[96msrc/renderer/components/NavigationRail/index.tsx[0m:[93m13[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m13[0m   const view = useDemoStore(s => s.view);
+[7m  [0m [91m                            ~[0m
+[96msrc/renderer/components/NavigationRail/index.tsx[0m:[93m14[0m:[93m32[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m14[0m   const setView = useDemoStore(s => s.setView);
+[7m  [0m [91m                               ~[0m
+[96msrc/renderer/components/NavigationRail/index.tsx[0m:[93m15[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m15[0m   const notify = useDemoStore(s => s.notify);
+[7m  [0m [91m                              ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module 'zustand' or its corresponding type declarations.
+
+[7m1[0m import { create } from 'zustand';
+[7m [0m [91m                       ~~~~~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m20[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'set' implicitly has an 'any' type.
+
+[7m20[0m export const useDemoStore = create<DemoState>((set, get) => ({
+[7m  [0m [91m                                               ~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m20[0m:[93m53[0m - [91merror[0m[90m TS7006: [0mParameter 'get' implicitly has an 'any' type.
+
+[7m20[0m export const useDemoStore = create<DemoState>((set, get) => ({
+[7m  [0m [91m                                                    ~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m23[0m:[93m12[0m - [91merror[0m[90m TS7006: [0mParameter 'view' implicitly has an 'any' type.
+
+[7m23[0m   setView: view => set({ view }), setQuery: query => set({ query }), setFilter: filter => set({ filter }),
+[7m  [0m [91m           ~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m23[0m:[93m45[0m - [91merror[0m[90m TS7006: [0mParameter 'query' implicitly has an 'any' type.
+
+[7m23[0m   setView: view => set({ view }), setQuery: query => set({ query }), setFilter: filter => set({ filter }),
+[7m  [0m [91m                                            ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m23[0m:[93m81[0m - [91merror[0m[90m TS7006: [0mParameter 'filter' implicitly has an 'any' type.
+
+[7m23[0m   setView: view => set({ view }), setQuery: query => set({ query }), setFilter: filter => set({ filter }),
+[7m  [0m [91m                                                                                ~~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m24[0m:[93m15[0m - [91merror[0m[90m TS7006: [0mParameter 'id' implicitly has an 'any' type.
+
+[7m24[0m   selectChat: id => set(state => ({ activeId: id, view: 'chats',
+[7m  [0m [91m              ~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m24[0m:[93m25[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m24[0m   selectChat: id => set(state => ({ activeId: id, view: 'chats',
+[7m  [0m [91m                        ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m25[0m:[93m28[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m25[0m     chats: state.chats.map(c => c.id === id ? { ...c, unread: 0 } : c) })),
+[7m  [0m [91m                           ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m26[0m:[93m14[0m - [91merror[0m[90m TS7006: [0mParameter 'id' implicitly has an 'any' type.
+
+[7m26[0m   setDraft: (id, draft) => set(state => ({ drafts: { ...state.drafts, [id]: draft.slice(0, 2000) } })),
+[7m  [0m [91m             ~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m26[0m:[93m18[0m - [91merror[0m[90m TS7006: [0mParameter 'draft' implicitly has an 'any' type.
+
+[7m26[0m   setDraft: (id, draft) => set(state => ({ drafts: { ...state.drafts, [id]: draft.slice(0, 2000) } })),
+[7m  [0m [91m                 ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m26[0m:[93m32[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m26[0m   setDraft: (id, draft) => set(state => ({ drafts: { ...state.drafts, [id]: draft.slice(0, 2000) } })),
+[7m  [0m [91m                               ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m27[0m:[93m19[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m27[0m   send: () => set(state => {
+[7m  [0m [91m                  ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m33[0m:[93m11[0m - [91merror[0m[90m TS7006: [0mParameter 'files' implicitly has an 'any' type.
+
+[7m33[0m   attach: files => set(state => ({ chats: demoAdapter.attach(state.chats, state.activeId, files),
+[7m  [0m [91m          ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m33[0m:[93m24[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m33[0m   attach: files => set(state => ({ chats: demoAdapter.attach(state.chats, state.activeId, files),
+[7m  [0m [91m                       ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m35[0m:[93m24[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m35[0m   togglePin: () => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? { ...c, pinned: !c.pinned } : c) })),
+[7m  [0m [91m                       ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m35[0m:[93m59[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m35[0m   togglePin: () => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? { ...c, pinned: !c.pinned } : c) })),
+[7m  [0m [91m                                                          ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m36[0m:[93m25[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m36[0m   markUnread: () => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? { ...c, unread: 1 } : c) })),
+[7m  [0m [91m                        ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m36[0m:[93m60[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m36[0m   markUnread: () => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? { ...c, unread: 1 } : c) })),
+[7m  [0m [91m                                                           ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m37[0m:[93m10[0m - [91merror[0m[90m TS7006: [0mParameter 'id' implicitly has an 'any' type.
+
+[7m37[0m   react: id => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? {
+[7m  [0m [91m         ~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m37[0m:[93m20[0m - [91merror[0m[90m TS7006: [0mParameter 'state' implicitly has an 'any' type.
+
+[7m37[0m   react: id => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? {
+[7m  [0m [91m                   ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m37[0m:[93m55[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m37[0m   react: id => set(state => ({ chats: state.chats.map(c => c.id === state.activeId ? {
+[7m  [0m [91m                                                      ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m38[0m:[93m36[0m - [91merror[0m[90m TS7006: [0mParameter 'm' implicitly has an 'any' type.
+
+[7m38[0m     ...c, messages: c.messages.map(m => m.id === id ? { ...m, reaction: m.reaction ? undefined : '❤️ 1' } : m),
+[7m  [0m [91m                                   ~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m40[0m:[93m13[0m - [91merror[0m[90m TS7006: [0mParameter 'patch' implicitly has an 'any' type.
+
+[7m40[0m   setPrefs: patch => {
+[7m  [0m [91m            ~~~~~[0m
+[96msrc/renderer/store/useDemoStore.ts[0m:[93m45[0m:[93m11[0m - [91merror[0m[90m TS7006: [0mParameter 'toast' implicitly has an 'any' type.
+
+[7m45[0m   notify: toast => set({ toast }),
+[7m  [0m [91m          ~~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m1[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '@playwright/test' or its corresponding type declarations.
+
+[7m1[0m import { test, expect } from '@playwright/test';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m4[0m:[93m26[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m4[0m test.beforeEach(async ({ page }) => { await page.goto('/'); });
+[7m [0m [91m                         ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m5[0m:[93m89[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m5[0m test('chat selection, diacritic search, independent filters and unread state', async ({ page }) => {
+[7m [0m [91m                                                                                        ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m21[0m:[93m97[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m21[0m test('drafts survive selection; Enter sends text safely and Shift+Enter adds newline', async ({ page }) => {
+[7m  [0m [91m                                                                                                ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m39[0m:[93m73[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m39[0m test('file metadata, emoji and reactions stay in demo memory', async ({ page }) => {
+[7m  [0m [91m                                                                        ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m50[0m:[93m97[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m50[0m test('settings persist only preferences; modal traps focus and restores it on Escape', async ({ page }) => {
+[7m  [0m [91m                                                                                                ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m70[0m:[93m78[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m70[0m test('OS reduced motion and demo call notice; no external traffic', async ({ page }) => {
+[7m  [0m [91m                                                                             ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m73[0m:[93m22[0m - [91merror[0m[90m TS7006: [0mParameter 'request' implicitly has an 'any' type.
+
+[7m73[0m   page.on('request', request => { if (!request.url().startsWith('http://127.0.0.1:4173/')) external.push(request.url()); });
+[7m  [0m [91m                     ~~~~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m81[0m:[93m66[0m - [91merror[0m[90m TS7031: [0mBinding element 'page' implicitly has an 'any' type.
+
+[7m81[0m   test(`layout and visual evidence ${width}x${height}`, async ({ page }) => {
+[7m  [0m [91m                                                                 ~~~~[0m
+[96mtests/e2e/demo.spec.ts[0m:[93m83[0m:[93m26[0m - [91merror[0m[90m TS7006: [0mParameter 'error' implicitly has an 'any' type.
+
+[7m83[0m     page.on('pageerror', error => errors.push(error.message));
+[7m  [0m [91m                         ~~~~~[0m

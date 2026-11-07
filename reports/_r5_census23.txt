@@ -1,0 +1,21 @@
+TmDO body = 56459 B
+
+=== TOKEN_MAP records parsed: 353 ===
+  TOKEN_MAP.light = 353, TOKEN_MAP.dark = 0
+  unique token names total = 353
+
+=== MAIN_COLOR_TOKEN raw (I=[...]) ===
+"I=[\"N\",\"NG\",\"DN\",\"B\",\"R\"],v={light:{textPrimary:\"#081B3A\",bgPrimary:\"#FFFFFF\"},dark:{textPrimary:\"#081B3A\",bgPrimary:\"#22262B\"}}}"
+
+MAIN_COLOR_TOKEN entries (5): ["N","NG","DN","B","R"]
+
+=== generator A() emittable (TOKEN_MAP.light) ===
+  candidates = 353 ; emittable = 198
+  unique tokens = 198
+  sample: ["--link","--icon-hover-bg","--input-placeholder-wh","--input-icon-wh","--input-grey","--input-placeholder-gr","--input-icon-gr","--text-quote","--bg-divide-bb-blue","--grey-dot","--red-dot","--item-wa-hover","--item-wa-select","--title-bar","--title-ptv","--tab-txt","--tip-bg","--surface-background","--surface-background-subtle","--surface-alt","--layer-background","--layer-background-subtle","--layer-background-hover","--layer-background-disabled","--layer-background-selected"]
+
+=== ceiling ===
+  TOKEN_MAP total unique = 353
+  generator-A emittable unique = 198
+  plus hardcoded extras emitted outside the loop (--text-primary, --title-bar, --layer-background-navbar-normal/hover/selected, --layer-background-gradient-on-color, --layer-background-selected/hover/pinned, --text-mention, --f*)
+

@@ -1,0 +1,27 @@
+# R11B — Zalo "Xuất dữ liệu" archive format (identifier/algorithm only)
+# No key material, no user id, no message content recorded.
+artifact=preload-render.js bytes=1990534
+
+PASS record_writer_identity   offset=3838182
+PASS record_write_msg         offset=3821288
+PASS record_write_conv        offset=3822301
+PASS record_json_stringify    offset=3821256
+PASS temp_file_utf8           offset=836465
+PASS temp_ext_v4              offset=836412
+PASS archive_entry            offset=836790
+PASS cipher_key_sha256        offset=835063
+PASS cipher_aes256cbc         offset=442774
+PASS iv_template_prefix       offset=835453
+PASS tar_pack                 offset=835566
+PASS cipher_pipe              offset=835660
+PASS temp_folder_removed      offset=837182
+PASS rename_export_zip        offset=837516
+PASS export_file_name         offset=4011839
+PASS export_name_zip          offset=3838068
+PASS db_import_ext_v4         offset=3823959
+PASS encrypt_content_gate     offset=3838477
+PASS isEncryptedDB_v0         offset=3838442
+PASS decryptV2_passthrough    offset=3838244
+PASS archive_takes_uin        offset=3831351
+
+checks_pass=21 checks_fail=0

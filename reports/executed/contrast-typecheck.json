@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "typecheck"
+  ],
+  "started": "2026-11-05T11:11:55.187Z",
+  "finished": "2026-11-05T11:12:02.508Z",
+  "exitCode": 2,
+  "signal": null
+}

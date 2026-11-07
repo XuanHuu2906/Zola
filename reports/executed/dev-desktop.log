@@ -1,0 +1,17 @@
+
+> zalo-apple-glass-ui@0.2.0 dev:desktop
+> npm run build:electron && node tools/dev-desktop.cjs --smoke
+
+
+> zalo-apple-glass-ui@0.2.0 build:electron
+> tsc -p tsconfig.electron.json
+
+  ➜  Local:   http://127.0.0.1:5173/
+6:14:48 PM [vite] (client) [optimizer] scanning dependencies...
+file watcher error: EBUSY: resource busy or locked, watch 'D:\Zalo\.glass-demo-data\Network\Cookies'
+file watcher error: EBUSY: resource busy or locked, watch 'D:\Zalo\.glass-demo-data\Network\Cookies-journal'
+6:15:25 PM [vite] (client) page reload playwright-report/index.html
+6:15:25 PM [vite] (client) page reload playwright-report/trace/index.html
+6:15:25 PM [vite] (client) page reload playwright-report/trace/uiMode.html
+6:15:25 PM [vite] (client) page reload playwright-report/trace/snapshot.html
+6:15:26 PM [vite] (client) [optimizer] bundling dependencies...

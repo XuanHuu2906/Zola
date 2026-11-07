@@ -1,0 +1,105 @@
+verified modules = 4713
+
+=== real CSS selectors per surface (top 6 by rule count) ===
+
+## titlebar  distinct=10
+   .titlebar__btns(11) .titlebar__menu(6) .titlebar-menu-btn-header(3) .titlebar(3) .titlebar__menu__update(3) .titlebar-os(2)
+
+## leftmenu / navbar  distinct=4
+   .nav-button_add_friend(41) .nav-button_add_group(28) .nav-content(5) .nav-loading(1)
+
+## conversation list  distinct=23
+   .conv-item(71) .conv-message(17) #contact-search(12) .conv-list-empty-wrapper(10) .conv-item-padding(9) #contact-search-input(7)
+
+## chat header  distinct=10
+   .threadChat__title(3) .threadChat__mutual-group(3) .threadChat__mutual-group--no-size(3) .threadChat__avatar(2) .threadChat__btn-is-friend(2) .threadChat__emoticon(1)
+
+## message row  distinct=21
+   .chat-message(229) .chat-message-picture__photo(45) .chat-message-picture__photooverlay(12) .chat-message-picture__photooverlay__caption(9) .chat-message-v2(8) .chat-message-picture__gif__thumb(6)
+
+## bubble  distinct=0
+   
+
+## date divider  distinct=1
+   .chat-date(9)
+
+## composer  distinct=27
+   .chat-input-container(45) .chat-box-input(25) .chat-box-input__tools__btn(19) .chat-box-input__img-preview__thumb(9) .chat-box-input__img-preview(8) .chat-box-input-container(7)
+
+## context menu  distinct=3
+   .zmenu-item(52) .zmenu-body(12) .zmenu-separator(2)
+
+## modal  distinct=42
+   .zl-modal(14) .zl-modal__dialog(11) .zl-modal__dialog-body(9) .zl-modal__dialog__close(3) .zl-modal__dialog__header(3) .zl-modal__footer__button-action--bottom(3)
+
+## setting  distinct=60
+   .setting-section-content__item(21) .setting-section-content__item__input(9) .setting-menu__header--sub(8) .setting-section-label(8) .setting-menu__item(6) .setting(5)
+
+## sidebar/leftpanel  distinct=2
+   .sidebar-export-import(5) .sidebar-icon(1)
+
+=== CSS selector -> JS className literal -> module -> named unit ===
+
+## titlebar
+   .titlebar__btns              css= 11  js@19646837 pattern="\"titlebar__btns\""  module=y1FZ@19641108 len=9042  unit=?
+   .titlebar__menu              css=  6  js@19646260 pattern="\"titlebar__menu "  module=y1FZ@19641108 len=9042  unit=?
+   .titlebar-menu-btn-header    css=  3  js@19646330 pattern=" titlebar-menu-btn-header\""  module=y1FZ@19641108 len=9042  unit=?
+   .titlebar                    css=  3  js@19646585 pattern=" titlebar "  module=y1FZ@19641108 len=9042  unit=?
+
+## leftmenu / navbar
+   .nav-button_add_friend       css= 41  js@12500752 pattern=" nav-button_add_friend "  module=Zb+t@12278564 len=587835  unit=?
+   .nav-button_add_group        css= 28  JS literal NOT FOUND
+   .nav-content                 css=  5  JS literal NOT FOUND
+   .nav-loading                 css=  1  js@4613746 pattern=" nav-loading "  module=Dtbk@4584814 len=40781  unit=?
+
+## conversation list
+   .conv-item                   css= 71  js@12415122 pattern="\"conv-item "  module=Zb+t@12278564 len=587835  unit=?
+   .conv-message                css= 17  js@12389657 pattern="\"conv-message "  module=Zb+t@12278564 len=587835  unit=?
+   #contact-search              css= 12  js@12281665 pattern="\"contact-search\""  module=Zb+t@12278564 len=587835  unit=?
+   .conv-list-empty-wrapper     css= 10  js@12452196 pattern="\"conv-list-empty-wrapper\""  module=Zb+t@12278564 len=587835  unit=?
+
+## chat header
+   .threadChat__title           css=  3  js@3813388 pattern="\"threadChat__title "  module=AXH7@3807709 len=6499  unit=?
+   .threadChat__mutual-group    css=  3  js@10984276 pattern="\"threadChat__mutual-group "  module=VLvn@10707732 len=430389  unit=?
+   .threadChat__mutual-group--no-size css=  3  js@10984320 pattern=" threadChat__mutual-group--no-size\""  module=VLvn@10707732 len=430389  unit=?
+   .threadChat__avatar          css=  2  js@3813275 pattern="\"threadChat__avatar\""  module=AXH7@3807709 len=6499  unit=?
+
+## message row
+   .chat-message                css=229  js@115311 pattern="\"chat-message "  module=+ISi@85954 len=576375  unit=?
+   .chat-message-picture__photo css= 45  js@985435 pattern=" chat-message-picture__photo "  module=/GXy@965564 len=159468  unit=?
+   .chat-message-picture__photooverlay css= 12  js@1023944 pattern="\"chat-message-picture__photooverlay\""  module=/GXy@965564 len=159468  unit=?
+   .chat-message-picture__photooverlay__caption css=  9  JS literal NOT FOUND
+
+## bubble: no CSS selectors
+
+## date divider
+   .chat-date                   css=  9  js@225046 pattern="\"chat-date\""  module=+ISi@85954 len=576375  unit=?
+
+## composer
+   .chat-input-container        css= 45  js@6543073 pattern="\"chat-input-container\""  module=JFrT@6508381 len=90243  unit=?
+   .chat-box-input              css= 25  js@6590721 pattern="\"chat-box-input\""  module=JFrT@6508381 len=90243  unit=?
+   .chat-box-input__tools__btn  css= 19  js@5563239 pattern="\"chat-box-input__tools__btn\""  module=GQ8g@5553773 len=11891  unit=?
+   .chat-box-input__img-preview__thumb css=  9  JS literal NOT FOUND
+
+## context menu
+   .zmenu-item                  css= 52  js@174239 pattern="\"zmenu-item\""  module=+ISi@85954 len=576375  unit=?
+   .zmenu-body                  css= 12  js@7341341 pattern="\"zmenu-body\""  module=MEZx@7331013 len=11890  unit=?
+   .zmenu-separator             css=  2  js@7332665 pattern="\"zmenu-separator\""  module=MEZx@7331013 len=11890  unit=?
+
+## modal
+   .zl-modal                    css= 14  js@3368481 pattern="\"zl-modal\""  module=8ky5@3367770 len=4360  unit=?
+   .zl-modal__dialog            css= 11  js@14308765 pattern="\"zl-modal__dialog\""  module=eIjl@14308176 len=901  unit=?
+   .zl-modal__dialog-body       css=  9  js@1259670 pattern="\"zl-modal__dialog-body\""  module=/ymA@1255215 len=56717  unit=?
+   .zl-modal__dialog__close     css=  3  JS literal NOT FOUND
+
+## setting
+   .setting-section-content__item css= 21  js@8083647 pattern="\"setting-section-content__item\""  module=O7EA@7989310 len=137420  unit=?
+   .setting-section-content__item__input css=  9  js@17411357 pattern="\"setting-section-content__item__input\""  module=pg6P@17403058 len=12498  unit=?
+   .setting-menu__header--sub   css=  8  js@7991699 pattern="\"setting-menu__header--sub\""  module=O7EA@7989310 len=137420  unit=?
+   .setting-section-label       css=  8  js@7992423 pattern="\"setting-section-label\""  module=O7EA@7989310 len=137420  unit=?
+
+## sidebar/leftpanel
+   .sidebar-export-import       css=  5  js@12587906 pattern=" sidebar-export-import "  module=Zb+t@12278564 len=587835  unit=?
+   .sidebar-icon                css=  1  js@12360050 pattern=" sidebar-icon\""  module=Zb+t@12278564 len=587835  unit=?
+
+wrote _r3_modules9.json

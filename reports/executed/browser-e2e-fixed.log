@@ -1,0 +1,25 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:34372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:4328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:29064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests\e2e\demo.spec.ts:5:5 › chat selection, diacritic search, independent filters and unread state (2.1s)
+  ✓  2 tests\e2e\demo.spec.ts:21:5 › drafts survive selection; Enter sends text safely and Shift+Enter adds newline (2.7s)
+  ✓  3 tests\e2e\demo.spec.ts:39:5 › file metadata, emoji and reactions stay in demo memory (1.3s)
+  ✓  4 tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape (2.1s)
+  ✓  5 tests\e2e\demo.spec.ts:72:5 › OS reduced motion and demo call notice; no external traffic (1.3s)
+  ✓  6 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1920x1080 (5.8s)
+  ✓  7 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1600x900 (4.6s)
+  ✓  8 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1366x768 (4.4s)
+
+  8 passed (58.2s)

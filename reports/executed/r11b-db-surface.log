@@ -1,0 +1,56 @@
+### _production level
+top_files=10
+  Qos.db                       bytes=598016     sqlite=True head=53514c69746520666f726d6174203300
+  Qos.db-shm                   bytes=32768      sqlite=False head=18e22d00000000009410000001000010
+  Qos.db-wal                   bytes=2921112    sqlite=False head=377f0682002de2180000100000000011
+  SecureLocalstorage.db        bytes=57344      sqlite=True head=53514c69746520666f726d6174203300
+  SecureLocalstorage.db-shm    bytes=65536      sqlite=False head=18e22d00000000004f8b000001000010
+  SecureLocalstorage.db-wal    bytes=33384392   sqlite=False head=377f0682002de218000010000000001a
+  Storage.db                   bytes=741376     sqlite=True head=53514c69746520666f726d6174203300
+  Storage.db-shm               bytes=32768      sqlite=False head=18e22d00000000001700000001000010
+  Storage.db-wal               bytes=1886992    sqlite=False head=377f0682002de2180000100000000000
+  Trust.db                     bytes=28672      sqlite=True head=53514c69746520666f726d6174203300
+
+### account-scoped subfolders (folder name redacted)
+subfolder_count=3
+  folder#1 name=REDACTED files=22
+     E2ee.db                        bytes=32768       sqlite=False head=0382d816da3829c3c765a78f76342b07
+     Media.db                       bytes=99610624    sqlite=False head=95f11308251c9ebafd3887054d24a9ae
+     Media.db-shm                   bytes=32768       sqlite=False head=18e22d00000000005c00000001000010
+     Media.db-wal                   bytes=2088872     sqlite=False head=377f0682002de2180000100000000003
+     Meta.db                        bytes=634880      sqlite=False head=9523402e3c0c7241d9137e8de7eed961
+     Meta.db-shm                    bytes=32768       sqlite=False head=18e22d00000000000b00000001000010
+     Meta.db-wal                    bytes=1277232     sqlite=False head=377f0682002de2180000100000000000
+     MsgInfo.db                     bytes=3063808     sqlite=False head=8aeb871d1d1e50b7bad544b219698cbb
+     MsgInfo.db-shm                 bytes=32768       sqlite=False head=18e22d00000000006700000001000010
+     MsgInfo.db-wal                 bytes=2088872     sqlite=False head=377f0682002de2180000100000000003
+     Preferences.db                 bytes=20480       sqlite=False head=0c4ace79cc8df40475527bf55aba8a98
+     Preferences.db-shm             bytes=32768       sqlite=False head=18e22d00000000000000000001000000
+     Preferences.db-wal             bytes=0           sqlite=False head=0000
+     Reaction.db                    bytes=1138688     sqlite=False head=076d98e9cd13a45b272bbd7331639ec9
+     Reaction.db-shm                bytes=32768       sqlite=False head=18e22d00000000002e00000001000010
+     Reaction.db-wal                bytes=2163032     sqlite=False head=377f0682002de2180000100000000001
+     Res.db                         bytes=1585152     sqlite=False head=22affc2068f6735c822a1ed999789013
+     Res.db-shm                     bytes=32768       sqlite=False head=18e22d00000000006900000001000010
+     Res.db-wal                     bytes=2109472     sqlite=False head=377f0682002de2180000100000000001
+     Sync.db                        bytes=20480       sqlite=False head=72593f338d0d4f922ecc41bc169d466d
+     Sync.db-shm                    bytes=32768       sqlite=False head=18e22d00000000000000000001000000
+     Sync.db-wal                    bytes=0           sqlite=False head=0000
+  folder#2 name=REDACTED files=3
+     DBState.db                     bytes=40960       sqlite=True head=53514c69746520666f726d6174203300
+     DBState.db-shm                 bytes=32768       sqlite=False head=18e22d00000000000000000001000000
+     DBState.db-wal                 bytes=0           sqlite=False head=0000
+  folder#3 name=REDACTED files=2
+     Changes.db                     bytes=12288       sqlite=True head=53514c69746520666f726d6174203300
+     Subjects.db                    bytes=28672       sqlite=True head=53514c69746520666f726d6174203300
+
+### FTS database (sibling of Database\, name redacted)
+fts_files=3
+  ext=.db    bytes=39204864    sqlite=False head=e337c534360b2fef15540ae947adc012
+  ext=.db-shm bytes=32768       sqlite=False head=18e22d00000000008300000001000004
+  ext=.db-wal bytes=3729864     sqlite=False head=377f0682002de21800000400000000b0
+
+### Database subfolders that would hold bulk export/migrate output
+  Encrypt under _production exists=True under Database exists=False
+  Migrate under _production exists=True under Database exists=False
+  Backup under _production exists=False under Database exists=False

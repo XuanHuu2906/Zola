@@ -1,0 +1,5 @@
+
+> zalo-apple-glass-ui@0.3.0 test:desktop
+> node tools/smoke-desktop.cjs release/win-unpacked/Glass Messenger Demo.exe unpacked
+
+PASS: two launches, demo send, window controls, renderer isolation, screenshots

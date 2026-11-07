@@ -1,0 +1,13 @@
+scanning 116 js files for chunk id aa2b4a7eeda68a9f5e59
+
+## pc-dist\lazy\default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js :: x1
+   @40179 :: "Ke(\"$zMigrateDrive\",$zMigrateDrive,oe),Ke(\"$zMsgChannel\",$zMsgChannel,Ee),Ke(\"$zscript\",$zscript,w),Ke(\"$zbackup\",$zbackup,i),Ke(\"$zTFModels.ss\",$zTFModels.ss,_e),Ke(\"$znetwork\",$znetwork,re)}}]);\n//# sourceMappingURL=../sourcemaps/lazy/default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js.map"
+
+## pc-dist\login.f32c58b63b6f4273a8a4.js :: x1
+   @2323 :: "\"lazy/\"+({3:\"default-login-startup-main-startup-shared-worker-znotification\",9:\"default-login-startup-main-startup-shared-worker\",11:\"vendors-login-startup-main-startup-shared-worker\",14:\"default-login-startup-main-startup\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",29:\"login-startup\"}[e]||e)+\".\"+{3:\"aa2b4a7eeda68a9f5e59\",6:\"b6639ec57f99a61d6a60\",9:\"c46b8a9c38819ca02af3\",11:\"d1c542f83f73b2ff2734\",14:\"ec73261654e4ce9540ac\",17:\"8a9bbb19b4814c8ea0c9\",20:\"342fbd5f1e5405d437b4\",23:\"efd555a8eb5da0f644de"
+
+## pc-dist\render.f32c58b63b6f4273a8a4.js :: x1
+   @2982 :: "fault-login-startup-main-startup\",15:\"default-main-startup-shared-worker\",16:\"vendors-main-startup-shared-worker\",21:\"ai-translation-language-model\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",30:\"main-startup\",41:\"vendors-main-startup\"}[e]||e)+\".\"+{0:\"10688555776004759ed0\",1:\"aafd08147de6e983b76f\",3:\"aa2b4a7eeda68a9f5e59\",4:\"dd8f2d7fd560caec2a39\",6:\"b6639ec57f99a61d6a60\",7:\"dc4740d6fdf4cf760c31\",9:\"c46b8a9c38819ca02af3\",11:\"d1c542f83f73b2ff2734\",12:\"4dbae407df19f0eae8d2\",14:\"ec73261654e4ce9540ac\","
+
+--- chunk id map lookups ---
+   pc-dist\render.f32c58b63b6f4273a8a4.js :: chunkId=3 @2979

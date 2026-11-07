@@ -1,0 +1,94 @@
+
+## $zdb  (module a4Xj)
+   entries: 23
+   sendRequest                          shared-worker-req-events                   a
+   processRequest                       shared-worker-req-events                   a
+   removeListenNewRequest               shared-worker-req-events                   a
+   sendResponse                         shared-worker-resp-events                  a
+   processResponse                      shared-worker-resp-events                  a
+   removeListenNewResponse              shared-worker-resp-events                  a
+   onFailedLoadSqlite                   fail-load-sqlite3                          a
+   checkFailedLoadSqlite                fail-load-sqlite3                          a
+   updateAvailableSqliteState           status-load-sqlite3                        a
+   notifyOpenDBFailed                   db-open-fail                               a
+   authenticateDb                       db-authenticated                           a
+   onReceiveSession                     db-authenticated                           a
+   removeListenNewSession               db-authenticated                           a
+   notifyDbConnected                    db-client-connected                        a
+   requestCloseDbs                      db-start-close-dbs                         a
+   onRequestCloseDbs                    db-start-close-dbs                         a
+   removeListenRequestCloseDbs          db-start-close-dbs                         a
+   notifyFinishCloseDb                  db-finish-close-dbs                        a
+   abortSyncMsg                         sync-msg-abort                             a
+   getIDBDatabaseHealthStatus           z-db-corruption-detector                   a
+   canIUseSQLite                        sqlite-available                           a
+   showSQLite                           show-sqlite                                a
+   getNameOfTargetScriptForDALChannelFromHost get-name-of-target-script-for-dal-channel-from-host a
+
+## $zsessionManager  (module ntSb)
+   entries: 3
+   authenticate                         new-session                                a
+   onReceiveSession                     new-session                                a
+   removeListenReceiveSession           new-session                                a
+
+## $zconfig  (module RbSv)
+   entries: 7
+   checkAutoLaunchEnable                check-auto-launch                          a
+   toggleAutoLaunch                     toggle-auto-launch                         a
+   updateScreenshotShortcut             update-screenshot-shortcut                 a
+   updateThemeConfig                    update-theme-conf                          a
+   updateRemoteConfigs                  update-remote-configs                      a
+   getThemeConfig                       get-theme-conf                             a
+   getZaloInstalledTime                 get-zalo-installed-time                    a
+
+## $zMsgChannel  (module 3sbe)
+   entries: 12
+   onChannelEstablished                 channel-established                        a
+   removeListenChannelEstablished       channel-established                        a
+   onChannelDisconnected                channel-disconnected                       a
+   removeListenChannelDisconnected      channel-disconnected                       a
+   onChannelTerminated                  channel-terminated                         a
+   removeListenChannelTerminated        channel-terminated                         a
+   onReceiveTransferredPort             port-transferred                           a
+   removeListenReceiveTransferredPort   port-transferred                           a
+   onReceiveTransferredPortV2           port-transferred-v2                        a
+   removeListenReceiveTransferredPortV2 port-transferred-v2                        a
+   notifyPortDelivered                  port-delivered                             a
+   requestOpenChannelTo                 open-channel-to                            a
+
+## $zscript  (module Pjj5)
+   entries: 2
+   notifyScriptConnected                script-connected                           a
+   notifyScriptTerminated               script-terminated                          a
+
+## $zsqlitebw  (module +NII)
+   entries: 3
+   ping                                 SQLITE_BW/PING                             a
+   dispose                              SQLITE_BW/DISPOSE                          a
+   reload                               SQLITE_BW/RELOAD                           a
+
+## $zsafeStorage  (module HVQM)
+   no descriptor entries (175 bytes)
+
+## $zlogger  (module 7jJJ)
+   entries: 20
+   crossQosLog                          cross_OS_LOG_QOS                           a
+   crossQosConfig                       cross_OS_LOG_QOS_config                    a
+   notifyOsCloseMain                    signal_OS_CLOSE_MAIN                       a
+   notifyQosReady                       cross_OS_LOG_QOS_READY                     a
+   onQosLog                             cross_OS_LOG_QOS                           a
+   onActionLog999                       cross_ACTION_LOG_999_CHANNEL               a
+   removeListenActionLog999             cross_ACTION_LOG_999_CHANNEL               a
+   removeListenQosLog                   cross_OS_LOG_QOS                           a
+   notifyActionLogReady                 cross_OS_LOG_ACTION_READY                  a
+   onActionLog                          cross_OS_LOG_ACTION                        a
+   removeListenActionLog                cross_OS_LOG_ACTION                        a
+   onMainUncaughtError                  main-process-uncaught-error                a
+   removeListenMainUncaughtError        main-process-uncaught-error                a
+   sendLog                              log                                        a
+   sendLogGa                            log-ga                                     a
+   sendViewerkey                        receive-viewerkey                          a
+   onReceiveViewerkey                   receive-viewerkey                          a
+   removeListenViewerkey                receive-viewerkey                          a
+   loadShellQos                         load-shell-qos                             a
+   checkRecentCrash                     check-recently-crash                       a

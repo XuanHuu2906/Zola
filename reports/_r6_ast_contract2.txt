@@ -1,0 +1,391 @@
+file: C:\Users\huung\AppData\Local\Temp\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6\main-dist\preload-render.js
+namespaces: 37, with contract: 21
+
+=== NAMESPACE TABLE ===
+$zcommon               null   NO-DESCRIPTOR-MAP
+$znode                 null   NO-DESCRIPTOR-MAP
+$zwindow               y      28 methods
+$zresource             A      17 methods
+$zlogger               b      NO-DESCRIPTOR-MAP
+$zupdater              S      31 methods
+$zapp                  T      66 methods
+$zdownload             R      8 methods
+$zdb                   O      NO-DESCRIPTOR-MAP
+$zsessionManager       et     NO-DESCRIPTOR-MAP
+$zmulti                D      3 methods
+$zcall                 k      20 methods
+$zsharedWorker         L      26 methods
+$zelectron             null   NO-DESCRIPTOR-MAP
+$zelectronNative       null   NO-DESCRIPTOR-MAP
+$zuri                  F      6 methods
+$zscreencap            Q      26 methods
+$zlogin                G      10 methods
+$zperf                 z      3 methods
+$zconfig               K      NO-DESCRIPTOR-MAP
+$zFileManager          null   NO-DESCRIPTOR-MAP
+$zpc                   null   NO-DESCRIPTOR-MAP
+$zFeatures             null   NO-DESCRIPTOR-MAP
+$zMetric               X      2 methods
+$zcloud                re     9 methods
+$zMsgChannel           ee     NO-DESCRIPTOR-MAP
+$zscript               te     NO-DESCRIPTOR-MAP
+$zbackup               Ze     11 methods
+$zInAppPayment         oe     4 methods
+$capp                  ce     2 methods
+$zsqlitebw             tt     NO-DESCRIPTOR-MAP
+$zsafeStorage          nt     NO-DESCRIPTOR-MAP
+$zMigrateDrive         ct     5 methods
+$zTFModels             null   NO-DESCRIPTOR-MAP
+$znetwork              ut     6 methods
+$zprotocol             ht     3 methods
+$znoti                 _t     9 methods
+
+=== FULL CONTRACT ===
+
+## $zwindow
+   minimize                               minimize                                                   REQUEST
+   maximizeToggler                        toggle-maximize                                            REQUEST
+   setLoginSize                           set-login-size                                             REQUEST
+   expandMainWindow                       main-window-expand                                         REQUEST
+   isMaximized                            check-maximize                                             REQUEST
+   isFullScreen                           check-fullscreen                                           REQUEST
+   fullscreenToggler                      toggle-fullscreen                                          REQUEST
+   flashFrame                             flash-frame                                                REQUEST
+   focus                                  focus-window                                               REQUEST
+   closeWindow                            close-window                                               REQUEST
+   hide                                   hide-window                                                REQUEST
+   setContentProtection                   set-content-protection                                     REQUEST
+   showInactive                           show-inactive                                              REQUEST
+   show                                   show                                                       REQUEST
+   quit                                   quit                                                       REQUEST
+   showOpenDialog                         show-open-dialog                                           REQUEST
+   showSaveDialog                         show-save-dialog                                           REQUEST
+   showOpenDialogSync                     show-open-dialog-sync                                      REQUEST
+   showSaveDialogSync                     show-save-dialog-sync                                      REQUEST
+   onVisibilityChange                     visibility-change                                          SUBSCRIBE
+   removeListenVisibilityChange           visibility-change                                          UNSUBSCRIBE
+   onHideWindowComplete                   hide-window-complete                                       SUBSCRIBE
+   removeListenHideWindowComplete         hide-window-complete                                       UNSUBSCRIBE
+   openPhotoViewerDevtool                 open-photo-viewer-devtool                                  REQUEST
+   onUnloadZLog                           ?g.UNLOAD_ZLOG                                             SUBSCRIBE
+   removeListenUnloadZLog                 ?g.UNLOAD_ZLOG                                             UNSUBSCRIBE
+   onCloseMediaViewer                     close-media-viewer                                         SUBSCRIBE
+   removeListenCloseMediaViewer           close-media-viewer                                         UNSUBSCRIBE
+
+## $zresource
+   getPhotoviewerUrl                      get-photo-viewer-url                                       REQUEST
+   getChildUrl                            get-child-url                                              REQUEST
+   onClipboardChange                      clipboard-change                                           SUBSCRIBE
+   removeListenClipboardChange            clipboard-change                                           UNSUBSCRIBE
+   onRequestImei                          get-imei                                                   PROVIDE
+   removeListenRequestImei                get-imei                                                   STOP_PROVIDE
+   getResourceDir                         get-resource-dir                                           REQUEST
+   onCheckIdleUpdaterBusy                 check-updater-busy                                         PROVIDE
+   removeListenCheckIdleUpdateBusy        check-updater-busy                                         STOP_PROVIDE
+   getRecentFiles                         get-recent-file                                            REQUEST
+   authError                              get-auth-domain                                            NOTIFY
+   getAuthDomainReady                     get-auth-domain-ready                                      NOTIFY
+   getAuthDomainReply                     get-auth-domain-reply                                      PROVIDE
+   onBackupAppState                       backup-app-state                                           PROVIDE
+   removeListenBackupAppState             backup-app-state                                           STOP_PROVIDE
+   onRestoreAppState                      restore-app-state                                          PROVIDE
+   removeListenRestoreAppState            restore-app-state                                          STOP_PROVIDE
+
+## $zupdater
+   requestUpdate                          update-is-avail                                            REQUEST
+   requestCheckUpdate                     z-check-for-update                                         NOTIFY
+   onNewUpdate                            binary-updated                                             SUBSCRIBE
+   onNewManualUpdate                      z-manual-binary-updated                                    SUBSCRIBE
+   onFallbackUpdate                       fallback-update                                            SUBSCRIBE
+   removeListenNewUpdate                  binary-updated                                             UNSUBSCRIBE
+   removeListenNewManualUpdate            z-manual-binary-updated                                    UNSUBSCRIBE
+   removeListenFallbackUpdate             fallback-update                                            UNSUBSCRIBE
+   onResourceUpdate                       resources-updated                                          SUBSCRIBE
+   removeResourceUpdate                   update-is-avail                                            UNSUBSCRIBE
+   onManualUpdateInstalling               z-manual-update-installing                                 SUBSCRIBE
+   removeListenManualUpdateInstalling     z-manual-update-installing                                 UNSUBSCRIBE
+   onManualUpdateDownloading              z-manual-update-downloading                                SUBSCRIBE
+   removeListenManualUpdateDownloading    z-manual-update-downloading                                UNSUBSCRIBE
+   onManualUpdateChecked                  z-manual-update-checked                                    SUBSCRIBE
+   removeListenManualUpdateChecked        z-manual-update-checked                                    UNSUBSCRIBE
+   onManualUpdateCheckedOnly              z-manual-update-checked-only                               SUBSCRIBE
+   removeListenManualUpdateCheckedOnly    z-manual-update-checked-only                               UNSUBSCRIBE
+   onManualUpdateCheckOnlyErr             z-manual-update-checked-only-err                           SUBSCRIBE
+   removeListenManualUpdateCheckOnlyErr   z-manual-update-checked-only-err                           UNSUBSCRIBE
+   onManualUpdateErr                      z-manual-update-err                                        SUBSCRIBE
+   removeListenManualUpdateErr            z-manual-update-err                                        UNSUBSCRIBE
+   requestCheckDownloadUpdate             z-manual-check-download-update                             RAW_SEND
+   requestCheckDownloadUpdateOnly         z-manual-check-download-update-only                        NOTIFY
+   requestResourceReload                  resources-reload-safe                                      NOTIFY
+   requestBinaryReload                    binary-reload-safe                                         NOTIFY
+   requestManualBinaryReload              manual-binary-reload-safe                                  NOTIFY
+   openUpdatePage                         OPEN_UPDATE_PAGE                                           NOTIFY
+   onReceiveUpdateInfo                    receive-update-info                                        ONCE
+   onUncaughtError                        updater-uncaught-error                                     UNSUBSCRIBE
+   removeListenUncaughtError              updater-uncaught-error                                     UNSUBSCRIBE
+
+## $zapp
+   notifyRendererReady                    renderer-ready                                             NOTIFY
+   notifyAppStarted                       app-started                                                NOTIFY
+   onRequestShowAbout                     about                                                      SUBSCRIBE
+   onRequestShowPreference                preferences                                                SUBSCRIBE
+   removeListenShowAbout                  about                                                      UNSUBSCRIBE
+   removeListenShowPreference             preferences                                                UNSUBSCRIBE
+   beforeAppQuit                          app-before-quit                                            SUBSCRIBE
+   removeListenBeforeAppQuit              app-before-quit                                            UNSUBSCRIBE
+   beforeAppClose                         before-close                                               SUBSCRIBE
+   removeListenBeforeAppClose             before-close                                               UNSUBSCRIBE
+   checkNetworkTimeout                    CHECK_NETWORK_TIMEOUT_ERR                                  REQUEST
+   requestShowFromTray                    show-from-tray                                             SUBSCRIBE
+   removeListenRequestShowFromTray        show-from-tray                                             UNSUBSCRIBE
+   notifyClickNoti                        noti-click                                                 NOTIFY
+   onClickNoti                            noti-click                                                 SUBSCRIBE
+   removeListenClickNoti                  noti-click                                                 UNSUBSCRIBE
+   onRequestRestartAppForBackup           bu-ask-restart                                             SUBSCRIBE
+   removeListenBackupRestartReq           bu-ask-restart                                             UNSUBSCRIBE
+   notifyDbFail                           signal-db-fail                                             NOTIFY
+   notifyDbCorruption                     signal-db-corruption                                       NOTIFY
+   requestHideBeforeQuit                  z-hide-app-before-quit                                     RAW_SEND
+   onOsRequestRestart                     os-force-restart                                           SUBSCRIBE
+   removeListenOsRestart                  os-force-restart                                           UNSUBSCRIBE
+   requestQuitAppImmediately              do-quit                                                    REQUEST
+   cancelQuitApp                          cancel-quit                                                REQUEST
+   osConfirmRestart                       os-confirm-restart                                         REQUEST
+   restartByZAM                           ZAM_RESET_DB                                               REQUEST
+   onConfirmAppQuit                       before-quit                                                SUBSCRIBE
+   removeListenConfirmAppQuit             before-quit                                                UNSUBSCRIBE
+   onNetErr                               znet-error-code                                            SUBSCRIBE
+   removeListenNetErr                     znet-error-code                                            UNSUBSCRIBE
+   onRequestShowOpenFile                  zfile-popup                                                SUBSCRIBE
+   removeListenShowOpenFile               zfile-popup                                                UNSUBSCRIBE
+   onReceiveArgument                      receive-arguments                                          SUBSCRIBE
+   removeListenReceiveArguments           receive-arguments                                          UNSUBSCRIBE
+   onShowToastFromMain                    show-toast-from-main                                       SUBSCRIBE
+   removeListenToastFromMain              show-toast-from-main                                       UNSUBSCRIBE
+   registerProcess                        zmain_register_process                                     NOTIFY
+   onPing                                 zping                                                      PROVIDE
+   removeListenPing                       zping                                                      STOP_PROVIDE
+   requestCreateNoti                      noti-create                                                REQUEST
+   onRequestShowNoti                      noti-create                                                SUBSCRIBE
+   notifyNotiReady                        noti-ready                                                 REQUEST
+   notifyRelaunchMode                     receive-relaunch-mode                                      RAW_SEND
+   changeLanguage                         language-change                                            RAW_SEND
+   enableNetHandler                       enable-net-handler                                         REQUEST
+   updateCurrentUserId                    ChatApp-receive-userId                                     RAW_SEND
+   getProxyConfig                         proxy-get                                                  REQUEST
+   setProxyConfig                         proxy-set                                                  RAW_SEND
+   updateBadgeCount                       badge-count                                                REQUEST
+   updateCertConfig                       cert-config                                                NOTIFY
+   beforeAppRestartSilently               app-before-restart-silently                                SUBSCRIBE
+   removeListenBeforeAppRestartSilently   app-before-restart-silently                                UNSUBSCRIBE
+   afterAppRestartSilently                app-after-restart-silently                                 SUBSCRIBE
+   removeListenAfterAppRestartSilently    app-after-restart-silently                                 UNSUBSCRIBE
+   registerIdleCheckInterval              register-idle-check-interval                               NOTIFY
+   onStartIdle                            start-idle                                                 SUBSCRIBE
+   removeListenStartIdle                  start-idle                                                 UNSUBSCRIBE
+   onEndIdle                              end-idle                                                   SUBSCRIBE
+   removeListenEndIdle                    end-idle                                                   UNSUBSCRIBE
+   setMainWindowResizable                 set-main-window-resizable                                  NOTIFY
+   onListenSwitchTab                      switch_tab                                                 SUBSCRIBE
+   requestRelaunch                        request_relaunch                                           REQUEST
+   onAppVisibilityChanged                 app-visibility-change                                      SUBSCRIBE
+   removeListenAppVisibilityChanged       app-visibility-change                                      UNSUBSCRIBE
+   getAppVisibilityStatus                 get-app-visibility                                         REQUEST
+
+## $zdownload
+   sendDownloadRequest                    new-download-channel                                       REQUEST
+   onDownloadResp                         new-download-channel                                       SUBSCRIBE
+   removeListenDownloadResp               new-download-channel                                       UNSUBSCRIBE
+   updateDownloadConfig                   download-config-change                                     REQUEST
+   updateInvalidFileExts                  invalid-file-exts-change                                   REQUEST
+   downloadThumbTemp                      download-thumb-temp                                        REQUEST
+   onDownloadQuotaHit                     download-quota-hit                                         SUBSCRIBE
+   removeListenDownloadQuotaHit           download-quota-hit                                         UNSUBSCRIBE
+
+## $zmulti
+   onChildWindowClose                     ?B.CHILD_WINDOW_CLOSED                                     SUBSCRIBE
+   removeListenChildWindowClose           ?B.CHILD_WINDOW_CLOSED                                     UNSUBSCRIBE
+   closeAllChilds                         ?B.CLOSE_ALL_CHILDS                                        REQUEST
+
+## $zcall
+   onRequestCallFromServer                call-server-request                                        SUBSCRIBE
+   removeListenRequestCallFromServer      call-server-request                                        UNSUBSCRIBE
+   onRequestCallFromLocal                 call-local-request                                         SUBSCRIBE
+   removeListenRequestCallFromLocal       call-local-request                                         UNSUBSCRIBE
+   onCallUpdate                           call-update                                                SUBSCRIBE
+   removeListenCallUpdate                 call-update                                                UNSUBSCRIBE
+   onCallActiveNative                     call_active_native_app                                     SUBSCRIBE
+   removeListenCallActiveNative           call_active_native_app                                     UNSUBSCRIBE
+   onPcShuttingDown                       pc-shutting-down                                           SUBSCRIBE
+   removeListenPcShuttingDown             pc-shutting-down                                           UNSUBSCRIBE
+   onStopSharing                          stop-sharing                                               SUBSCRIBE
+   removeListenStopSharing                stop-sharing                                               UNSUBSCRIBE
+   onCallSignal                           call-send-signal                                           SUBSCRIBE
+   removeListenCallSignal                 call-send-signal                                           UNSUBSCRIBE
+   onCallRequest                          call-request                                               SUBSCRIBE
+   removeListenCallRequest                call-request                                               UNSUBSCRIBE
+   initCall                               call-init                                                  RAW_SEND
+   sendDataToNative                       call-send-to-native                                        RAW_SEND
+   onCallResponseDevices                  call-response-listDevice                                   ONCE
+   removeListenCallDevices                call-response-listDevice                                   UNSUBSCRIBE
+
+## $zsharedWorker
+   show                                   show-shared-worker                                         NOTIFY
+   hide                                   hide-shared-worker                                         NOTIFY
+   start                                  shared-worker-start                                        NOTIFY
+   register                               shared-worker-handle                                       NOTIFY
+   ping                                   shared-worker-ping                                         NOTIFY
+   dispose                                shared-worker-dispose                                      NOTIFY
+   updateProgress                         shared-worker-progress                                     NOTIFY
+   onReceiveUpdateProgress                shared-worker-progress                                     SUBSCRIBE
+   removeListenUpdateProgress             shared-worker-progress                                     UNSUBSCRIBE
+   responseResult                         shared-worker-resp                                         NOTIFY
+   onReceiveResult                        shared-worker-resp                                         SUBSCRIBE
+   removeListenResult                     shared-worker-resp                                         UNSUBSCRIBE
+   runTask                                shared-worker-run                                          NOTIFY
+   onRequestRunTask                       shared-worker-run                                          SUBSCRIBE
+   removeListenRunTask                    shared-worker-run                                          UNSUBSCRIBE
+   abortTask                              shared-worker-abort                                        NOTIFY
+   onRequestAbortTask                     shared-worker-abort                                        SUBSCRIBE
+   removeListenAbortTask                  shared-worker-abort                                        UNSUBSCRIBE
+   updateTaskParams                       shared-worker-update-params                                NOTIFY
+   onRequestUpdateTaskParams              shared-worker-update-params                                SUBSCRIBE
+   removeListenUpdateTaskParams           shared-worker-update-params                                UNSUBSCRIBE
+   onUnloadZLog                           ?x.UNLOAD_ZLOG                                             SUBSCRIBE
+   removeListenUnloadZLog                 ?x.UNLOAD_ZLOG                                             UNSUBSCRIBE
+   updateRemoteConfig                     shared-worker-remote-config-change                         NOTIFY
+   onRemoteConfigChange                   shared-worker-remote-config-change                         SUBSCRIBE
+   removeListenRemoteConfigChange         shared-worker-remote-config-change                         UNSUBSCRIBE
+
+## $zuri
+   onNewRequest                           z-uri-request                                              SUBSCRIBE
+   removeListenNewRequest                 z-uri-request                                              UNSUBSCRIBE
+   onRequestOpenConv                      z-uri-open-conv                                            SUBSCRIBE
+   removeListenRequestOpenConv            z-uri-open-conv                                            UNSUBSCRIBE
+   checkOpenConvReq                       check-startup-open-conv-request                            REQUEST
+   checkArgvLink                          check-arg-link                                             RAW_SEND
+
+## $zscreencap
+   start                                  screen-capture                                             REQUEST
+   getClipboard                           get-clipboard                                              REQUEST
+   restart                                restart-cap                                                REQUEST
+   rewriteClipboard                       rewrite-clipboard                                          REQUEST
+   onChangeStatus                         change-screencap-status                                    SUBSCRIBE
+   removeListenChangeStatus               change-screencap-status                                    UNSUBSCRIBE
+   onScreenshotShortcut                   screenshot-shortcut-result                                 SUBSCRIBE
+   removeScreenshotShortcut               screenshot-shortcut-result                                 UNSUBSCRIBE
+   onStartScreenCapture                   start-screen-capture                                       SUBSCRIBE
+   removeListenStartScreenCapture         start-screen-capture                                       UNSUBSCRIBE
+   onScreenCapture                        screen-capture-shortcut                                    SUBSCRIBE
+   removeListenScreenCapture              screen-capture-shortcut                                    UNSUBSCRIBE
+   onCaptureAccept                        screen-capture-response-accept                             SUBSCRIBE
+   removeListenCaptureAccept              screen-capture-response-accept                             UNSUBSCRIBE
+   onCaptureNoPermission                  screen-capture-response-no-permission                      SUBSCRIBE
+   removeListenCaptureNoPermission        screen-capture-response-no-permission                      UNSUBSCRIBE
+   onEventOs                              event-os-changed                                           SUBSCRIBE
+   removeListenEventOs                    event-os-changed                                           UNSUBSCRIBE
+   onSend2Me                              screen-capture-response-send2me                            SUBSCRIBE
+   removeListenSend2Me                    screen-capture-response-send2me                            UNSUBSCRIBE
+   onForwardScreencap                     forward_screencap                                          SUBSCRIBE
+   removeListenForwardScreencap           forward_screencap                                          UNSUBSCRIBE
+   onForwardScreencapText                 forward_screencap_text                                     SUBSCRIBE
+   removeListenForwardScreencapText       forward_screencap_text                                     UNSUBSCRIBE
+   onWarningInstallRosetta                warning_install_rosetta                                    SUBSCRIBE
+   removeListenWarningInstallRosetta      warning_install_rosetta                                    UNSUBSCRIBE
+
+## $zlogin
+   login                                  login                                                      RAW_SEND
+   updateLoginStep                        login-step                                                 RAW_SEND
+   loginAfterInstall                      login-after-install                                        RAW_SEND
+   onUserNotLogged                        signal_USER_NOT_LOGGED_IN                                  SUBSCRIBE
+   removeListenUserNotLogged              signal_USER_NOT_LOGGED_IN                                  UNSUBSCRIBE
+   notifyLoginSuccess                     login-success                                              REQUEST
+   onLoginSuccess                         login-success                                              SUBSCRIBE
+   removeListenLoginSuccess               login-success                                              UNSUBSCRIBE
+   onRequestShowAbout                     about                                                      SUBSCRIBE
+   removeListenShowAbout                  about                                                      UNSUBSCRIBE
+
+## $zperf
+   getCpuInfos                            get-cpu-infos                                              REQUEST
+   getProcessInfos                        get-process-info                                           REQUEST
+   crash                                  z-simulate-crash-main                                      REQUEST
+
+## $zMetric
+   sendMessage                            send-metrics                                               NOTIFY
+   onMessage                              response-metrics                                           SUBSCRIBE
+
+## $zcloud
+   getHeap                                gett-heap                                                  REQUEST
+   writeHeap                              write-heap                                                 NOTIFY
+   denoiseFile                            denoise-file                                               REQUEST
+   noiseFile                              noise-file                                                 REQUEST
+   removeFile                             remove-file                                                REQUEST
+   writeBufferToFile                      write-blob-to-file                                         REQUEST
+   matchChecksum                          match-checksum                                             REQUEST
+   cloneAndMatchChecksum                  clone-and-match-checksum                                   REQUEST
+   AppendLog                              append-file                                                REQUEST
+
+## $zbackup
+   createBackup                           create-backup                                              REQUEST
+   destroyBackup                          destroy-backup                                             REQUEST
+   abortCreatingBackup                    abort-creating-backup                                      REQUEST
+   enableCreatingBackup                   enable-creating-backup                                     NOTIFY
+   disableCreatingBackup                  disable-creating-backup                                    NOTIFY
+   restartAndRestoreBackup                restart-and-restore-backup                                 REQUEST
+   restartWithoutRestoringBackup          restart-without-restoring-backup                           REQUEST
+   rejectCurrentBackup                    reject-current-backup                                      NOTIFY
+   changeBuInterval                       change-bu-interval                                         NOTIFY
+   onWriteLatestBackUpLog                 write-latest-back-up-log                                   SUBSCRIBE
+   removeOnWriteLatestBackUpLog           write-latest-back-up-log                                   UNSUBSCRIBE
+
+## $zInAppPayment
+   openUrl                                open-in-app-payment                                        REQUEST
+   closeInAppPayment                      close-in-app-payment                                       REQUEST
+   onInAppWindowEvent                     event-in-app-payment                                       SUBSCRIBE
+   removeListenerInAppWindowEvent         remove-event-in-app-payment                                UNSUBSCRIBE
+
+## $capp
+   launchCompactApp                       _electron_launch-compact-app                               REQUEST
+   getRelaunchState                       _electron_get-relaunch-state                               REQUEST
+
+## $zMigrateDrive
+   getEstimatedCopyTime                   GET_ESTIMATED_COPY_TIME                                    REQUEST
+   writePathToRegistry                    ?st.WRITE_PATH_TO_REGISTRY                                 REQUEST
+   getPathFromRegistry                    ?st.GET_PATH_FROM_REGISTRY                                 REQUEST
+   writeCurrentDrivePathToFile            WRITE_CURRENT_DRIVE_PATH_TO_FILE                           REQUEST
+   getCurrentDrivePathFromFile            GET_CURRENT_DRIVE_PATH_FROM_FILE                           REQUEST
+
+## $znetwork
+   startMonitor                           net-start-monitor                                          NOTIFY
+   stopMonitor                            net-stop-monitor                                           NOTIFY
+   onMonitorData                          net-on-monitor-data                                        SUBSCRIBE
+   removeListenOnMonitorData              net-on-monitor-data                                        UNSUBSCRIBE
+   updateNetErrorConfig                   net-update-net-error-config                                NOTIFY
+   collectNetErrorInfo                    net-collect-net-error-info                                 NOTIFY
+
+## $zprotocol
+   encryptWithKeychain                    zproto-encrypt-with-keychain                               REQUEST
+   decryptWithKeychain                    zproto-decrypt-with-keychain                               REQUEST
+   syncConfigToMain                       zproto-config-sync-to-main                                 NOTIFY
+
+## $znoti
+   isSupported                            _noti_is-supported                                         REQUEST
+   createNotification                     _noti_create                                               REQUEST
+   closeNotification                      _noti_close                                                REQUEST
+   onNotificationClick                    _noti_on-click                                             SUBSCRIBE
+   removeListenNotificationClick          _noti_on-click                                             UNSUBSCRIBE
+   onNotificationShow                     _noti_on-show                                              SUBSCRIBE
+   removeListenNotificationShow           _noti_on-show                                              UNSUBSCRIBE
+   onNotificationClose                    _noti_on-close                                             SUBSCRIBE
+   removeListenNotificationClose          _noti_on-close                                             UNSUBSCRIBE
+
+resolved channels: 286, unresolved: 9
+=== MODES ===
+  REQUEST        78
+  SUBSCRIBE      76
+  UNSUBSCRIBE    76
+  NOTIFY         40
+  RAW_SEND       12
+  PROVIDE        6
+  STOP_PROVIDE   5
+  ONCE           2

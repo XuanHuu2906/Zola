@@ -1,0 +1,9 @@
+rules parsed=15839
+light merged vars=767  dark merged vars=725
+
+resolved light 371/376, dark 371/376
+missing light (5): --border-selected --border-inverse --background-focus-ui --blue-quote-selected-alpha --white-quote-selected-alpha
+missing dark (5): --border-selected --border-inverse --background-focus-ui --blue-quote-selected-alpha --white-quote-selected-alpha
+
+$dark_alias_name explicit overrides parsed: 0
+dark overrides differing from TOKEN_MAP: 0

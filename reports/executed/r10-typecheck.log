@@ -1,0 +1,4 @@
+
+> zalo-apple-glass-ui@0.3.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+

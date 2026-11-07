@@ -1,0 +1,52 @@
+=== SEND PIPELINE ===
+
+### "sms" @2117919
+c","qb","query","redis","rediss","reload","res","resource","rmi","rsync","rtmfp","rtmp","rtsp","rtsps","rtspu","secondlife","service","session","sftp","sgn","shttp","sieve","sip","sips","skype","smb","sms","smtp","snews","snmp","soap.beep","soap.beeps","soldat","spotify","ssh","steam","stun","stuns","submit","svn","tag","teamspeak","tel","teliaeid","telnet","tftp","things","thismessage","tip","tn3270","tool","turn","turns","tv","udp","unreal","urn","ut2004","v-event","vemmi","ventrilo","videotex","vnc","view-source","wais","webcal","wpid","ws","wss","wtai","wyciwyg","xcon","xcon-userid","xfire
+
+### "sms" @7813586
+kg","xlt","mmg","sdb","vcf","accdb","kml","ex4","jfif","ct","tip","xmp","ipt","dot","afl","cmx","webm","mobi","bdl","sav","vsdx","hex","amr","msi","skb","rpt","fdb","ts","aae","mkv","cpp","ies","vob","sms","wps","php","eml","tiff","vlx","dvx","ntd","spv","svg","xla","ass","psb","tpl","docm","btw","cs","mcx-5","gbr","jar","is2","dsn","crv3d","obj","rul","java","ppsx","av","c","ps","fbx","dwf","iso","plx","3ds","rte","et","m4r","xslt","mq4","pps","dwl","gz","json","pef","hwp","js","m","db","rdp","url","mht","lrtemplate","lrc","cfg","inf","sty","indd","dt9019","no_ext","jxl"])},N6Q3:function(e,t,
+
+=== SEND HTTP TABLE ENTRY (message/sms) ===
+
+### /api/message/sms @2925255
+50:{domainType:l,commandId:11150,path:"/api/message/seen"},12118:{domainType:l,commandId:12118,path:"/api/message/seenv2"},[o.a]:{domainType:l,commandId:o.a,path:o.b},12114:{domainType:l,commandId:12114,path:"/api/message/fetchImportant"},11144:{domainType:l,commandId:11144,path:"/api/message/typing"},11770:{domainType:l,commandId:11770,path:"/keepalive"},11151:{domainType:l,commandId:11151,path:"/api/message/sms"},11286:{domainType:l,commandId:11286,path:"/api/message/link"},11774:{domainType:l,commandId:11774,path:"/api/message/contact"},11154:{domainType:l,commandId:11154,path:"/api/message/sticker"},11771:{domainType:l,commandId:11771,path:"/api/message/quote"},11779:{domainType:l,comman
+
+### /api/message/sms @14492784
+&(t.paramsExt=JSON.stringify(d)),t=M.f(t,r)}static sendZText(e,t,n,a,i,r,o=null){let l,c,d={message:t,clientId:a,imei:L.a.getZaloClientID()};d=this.buildParams("sendZText",d,n,a,r),n?(d.visibility=D.a.getVisibility(e),e=s.default.getGroupIdFromConversationId(e),d.grid=e,c={domainType:f.a.GROUP,path:"/api/group/sendmsg",query:this._getCommonParams()},l=11163):(d.toid=e,c={domainType:f.a.CHAT,path:"/api/message/sms",query:this._getCommonParams()},l=11151);const u={retry:i};return this._postSendMsg(c,"params="+encodeURIComponent(s.default.encodeAES(JSON.stringify(d))),u,l,0,a,o)}static sendClearUnreadReaction(e,t){let n=null,a=0,i=[];e.forEach((e=>{let n={msgIds:[e.reactionId]};if(t){let t=s.de
+
+=== RECEIVE / WS DISPATCH ===
+
+### PUSH_MSG_1_1 @8647327
+ERROR:1011,SERVER_RESTART:1012,TRY_AGAIN_LATER:1013,RESERVED_1014:1014,TLS_HANDSHAKE_FAIL:1015,NOT_AUTHENTICATED:3e3,READ_MAX_CONNECTION:3001,NOT_FOUND_WORKER:3002,KICK_CONNECTION:3003},u={RESPONSE:1,INNER_PAYLOAD:2},A={AUTHEN:1,PING:2,PING_ACTIVE:4,PUSH_MSG_1_1:501,CLEAR_UNREADS_1_1:504,CLEAR_UNREADS_GROUP:524,PUSH_MSG_GROUP:521,PUSH_STATUS_1_1:502,PUSH_STATUS_GROUP:522,VERIFY_MSG:532,HAS_MSG:533,PUSH_MISS_MSG:534,GET_MSG:570,PRELOAD:571,GET_STATUS_MSG:575,GET_STATUS_MSG_GROUP:576,GET_LAST_DELIVER_SEEN:577,GET_LAST_SEEN_CHAT_CONTAINER:578,MAX_CONNECTION:3e3,SUBMIT_INTERACTIVE_FILE:536,PULL_LIST_INTERACTIVE_FILE:537,PUSH_LIST_INTERACTIVE_FILE:530,CTRL_TESTING:600,CTRL_ACTION:602,CTRL_PUSH_REACT:612,CTRL_PUSH_CLEAR_REACT:613,CTRL_PULL_REACT:610,CTRL_PULL_REACT_BIG_GR:611,CTRL_GET_LAST_SEEN_REACT:614,CTRL_PUSH_CTRL:601,CTRL_PULL_CTRL:603,CTRL_PULL_VOIP:604,CLOUD:{PUSH:620,NEED_VERIFY:621,DONE_MIGRATE:623},GET_IN_APP_PAYMENT_LINK:701,GET_M
+
+### PUSH_MSG_1_1 @14631655
+SWI"),G=a("iA9X");const V=["uidFrom","uidTo","uid","ownerId","destId","srcId","fromUid","threadId","globalMsgId","globalDelMsgId","msgId","refMessageId","actionId","lastActionIdOther","lastActionId","resetLastActionId","lastId","ids"],H=new Set([C.k.PUSH_MSG_1_1,C.k.PUSH_MSG_GROUP,C.k.PUSH_STATUS_GROUP,C.k.PUSH_STATUS_1_1,C.k.CLEAR_UNREADS_1_1,C.k.CLEAR_UNREADS_GROUP,C.k.GET_MSG,C.k.PUSH_MISS_MSG]),z=new Set([o.i.SignalCommands.MSG.RECEIVE_ONEONE,o.i.SignalCommands.MSG.RECEIVE_GROUP,o.i.SignalCommands.MSG.PUSH_MISS]),K=new Set([o.i.SignalCommands.INIT.INIT_SESSION,o.i.SignalCommands.INIT.ACK_INIT_SESSION,o.i.SignalCommands.INIT.NOTIFY_DELETE_KEY,o.i.SignalCommands.INIT.REQUEST_PREKEYS,o.i.SignalCommands.INIT.INIT_SESSION_GROUP,o.i.SignalCommands.INIT.DISABLE_E2EE,o.i.SignalCommands.INIT.ENABLE_E2EE,o.i.SignalCommands.INIT.ACK_PROCESS_INIT_GROUP_FAILED,o.i.SignalCommands.INIT.ACK_GROUP_SESSIONS_STALE,o.i.SignalCommands.INIT.DOWNGRADE_E2E
+
+### PUSH_MSG_GROUP @8647390
+14:1014,TLS_HANDSHAKE_FAIL:1015,NOT_AUTHENTICATED:3e3,READ_MAX_CONNECTION:3001,NOT_FOUND_WORKER:3002,KICK_CONNECTION:3003},u={RESPONSE:1,INNER_PAYLOAD:2},A={AUTHEN:1,PING:2,PING_ACTIVE:4,PUSH_MSG_1_1:501,CLEAR_UNREADS_1_1:504,CLEAR_UNREADS_GROUP:524,PUSH_MSG_GROUP:521,PUSH_STATUS_1_1:502,PUSH_STATUS_GROUP:522,VERIFY_MSG:532,HAS_MSG:533,PUSH_MISS_MSG:534,GET_MSG:570,PRELOAD:571,GET_STATUS_MSG:575,GET_STATUS_MSG_GROUP:576,GET_LAST_DELIVER_SEEN:577,GET_LAST_SEEN_CHAT_CONTAINER:578,MAX_CONNECTION:3e3,SUBMIT_INTERACTIVE_FILE:536,PULL_LIST_INTERACTIVE_FILE:537,PUSH_LIST_INTERACTIVE_FILE:530,CTRL_TESTING:600,CTRL_ACTION:602,CTRL_PUSH_REACT:612,CTRL_PUSH_CLEAR_REACT:613,CTRL_PULL_REACT:610,CTRL_PULL_REACT_BIG_GR:611,CTRL_GET_LAST_SEEN_REACT:614,CTRL_PUSH_CTRL:601,CTRL_PULL_CTRL:603,CTRL_PULL_VOIP:604,CLOUD:{PUSH:620,NEED_VERIFY:621,DONE_MIGRATE:623},GET_IN_APP_PAYMENT_LINK:701,GET_MEDIA_UPLOAD_URL:800,SYNC_MESSAGE:{REQUEST:590,ACK_DELETE_SYNC_S
+
+=== PING / KEEPALIVE STRUCTURE ===
+
+### KEEP_CONNECTION @1341307
+ l;try{l=r.decode(o)}catch(c){return this._submitSentry("unzip error on string",c),this._handleError(P.e.INVALID_DATA)}this._onRawData(l,a,i,n)}ping(e=!0){const t=Date.now();!this._pingTimer&&this._authenticated&&this.getSocketState()===WebSocket.OPEN&&(this._send({version:1,cmd:P.k.PING,subCmd:P.m.KEEP_CONNECTION,data:{eventId:t}}),e&&(this._pingTimer=setTimeout((()=>{this._isNotOpen()||this._handleError(P.e.PING_TIMEOUT),this._pingTimer=null}),5e3)),this._lastPing=t)}startPingWss(){this.getSocketState()===WebSocket.OPEN?this._config&&this._config.pingInterval&&(this._intervalPing&&this.stopIntervalPing(),this.setIntervalPing(this._config.pingInterval),this.ping()):this.logError("ping: call
+
+=== SYNC MESSAGE ===
+
+### SYNC_MESSAGE @1742171
+",!0)}},{text:"Close socket",onclick:()=>{c.close(1e3)}},{text:"Reconnect socket",onclick:()=>{c._retry("manual")}}),d}},"1zjz":function(e,t,n){"use strict";n.d(t,"a",(function(){return a}));const a="SYNC_MESSAGES"},2:function(e,t){},"2+Zs":function(e,t,n){"use strict";n.d(t,"a",(function(){return N})),n.d(t,"c",(function(){return M})),n.d(t,"b",(function(){return O}));var a=n("wx14"),i=n("Ff2n"),r=n("NDmK"),s=n("q1tI"),o=n.n(s),l=n("T1Xd"),c=n("KRIz"),d=n("lCMA"),u=n("5KA0"),A=n("jlVM"),h=n("1pet"),m=n("aAGg"),p=n("Gdez"),g=n("h0sc"),f=n("v/qp");const _=["open","defaultValue","onChange","contentProps","max","children"],E="thread-picker",v=E,I={windowId:"1",name:h.ModalIdentitiesDefine.ADD_ADMIN_COMPOSE},b=(d.a,d.a,function(e){let{open:t=!1,defaultValue:n=[],onChange:r,contentProps:s,max:l
+
+### SYNC_MESSAGE @4496000
+"NOT_FOUND_MESSAGE",e[e.DB_ERROR=50]="DB_ERROR",e[e.SYNC_CONVERSATION_ERROR=51]="SYNC_CONVERSATION_ERROR",e[e.CONVERSATION_INFO_ERROR=52]="CONVERSATION_INFO_ERROR",e[e.LOOP_ERROR=53]="LOOP_ERROR",e[e.SYNC_MESSAGE_ERROR=55]="SYNC_MESSAGE_ERROR",e[e.CANCEL_DELETE_CONVERSATION=56]="CANCEL_DELETE_CONVERSATION",e[e.UNKNOWN_ERROR=99]="UNKNOWN_ERROR",e}({}),i=function(e){return e.BeforeDeleteConversation="BeforeDeleteConversation",e.AfterDeleteConversation="AfterDeleteConversation",e.BeforeDeleteBatchMessages="BeforeDeleteBatchMessages",e.AfterDeleteBatchMessages="AfterDeleteBatchMessages",e.BeforeDeleteMessage="BeforeDeleteMessage",e.AfterDeleteMessage="AfterDeleteMessage",e.NotFoundMessage="NotFoundMessage",e}({});class r extends Event{constructor(e,t){super(e),this.payload=void 0,this.payload=
+
+=== NOTIFICATION (web Notification) ===
+
+new Notification(: 0
+
+Notification.requestPermission: 3
+
+showNotification: 0
+
+=== CONTACTS / FRIEND WRITE PATHS ===
+/api/friend/sendreq @2932004
+/api/friend/accept @2932131
+/api/social/friend/getfriends @2940195

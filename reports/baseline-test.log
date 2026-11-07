@@ -1,0 +1,33 @@
+
+> zalo-apple-glass-ui@0.1.0 test
+> node --test tests/*.test.cjs
+
+✖ tests\logic.test.cjs (9.4339ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 39.5259
+
+✖ failing tests:
+
+test at tests\logic.test.cjs:1:1
+✖ tests\logic.test.cjs (9.4339ms)
+  Error: spawn EPERM
+      at ChildProcess.spawn (node:internal/child_process:487:11)
+      at spawn (node:child_process:813:9)
+      at TestContext.<anonymous> (node:internal/test_runner/runner:529:19)
+      at FileTest.runInAsyncScope (node:async_hooks:227:14)
+      at FileTest.run (node:internal/test_runner/test:1402:25)
+      at FileTest.start (node:internal/test_runner/test:1262:17)
+      at runTestFile (node:internal/test_runner/runner:611:32)
+      at node:internal/test_runner/runner:1033:25
+      at node:internal/per_context/primordials:599:37
+      at new Promise (<anonymous>) {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'spawn'
+  }

@@ -1,0 +1,40 @@
+=== RENDERER NETWORK EGRESS PRIMITIVES ===
+new WebSocket           1
+XMLHttpRequest          46
+fetch(                  47
+window.fetch            3
+navigator.onLine        2
+EventSource             1
+sendBeacon              0
+RTCPeerConnection       6
+chrome.runtime          1
+
+=== IPC-ONLY EGRESS (does renderer reach network at all?) ===
+new WebSocket @1342012
+ate()===WebSocket.OPEN?this._config&&this._config.pingInterval&&(this._intervalPing&&this.stopIntervalPing(),this.setIntervalPing(this._config.pingInterval),this.ping()):this.logError("ping: calling ping when socket not ready, skip")}_isNotOpen(){return!this._socket||this.getSocketState()===WebSocket.CLOSED}_connectSocket(){this.logError(`connecting socket state: ${this.getSocketState()}, endpoint: ${this._config.url}`);const e=Date.now();this._connectingAt={time:e,point:d.a.now()},this._socket=new WebSocket(this._config.url+`&t=${e}`),this._socket.binaryType="arraybuffer",this._socket.addEventListener("error",this._onError),this._socket.addEventListener("open",this._onOpen),this._socket.addEventListener("message",this._onMessage),this._socket.addEventListener("close",this._onClose)}_pingEndpoint(){return new Promise((e=>{const t=this._config.url,n=t.split("?")[0].replace("wss","https");
+
+=== XHR SITES (first 12 contexts) ===
+
+@738595: ent.currentScript.src),r&&(p=r),p=0!==p.indexOf("blob:")?p.substr(0,p.replace(/[?#].*/,"").lastIndexOf("/")+1):"",c=e=>{var t=new XMLHttpRequest;return t.open("GET",e,!1),t.send(null),t.responseText},h&&(d=e=>{var t=new XMLHttpRequest;return t.open("GET",e,!1),t.responseType="arr
+
+@738685: .lastIndexOf("/")+1):"",c=e=>{var t=new XMLHttpRequest;return t.open("GET",e,!1),t.send(null),t.responseText},h&&(d=e=>{var t=new XMLHttpRequest;return t.open("GET",e,!1),t.responseType="arraybuffer",t.send(null),new Uint8Array(t.response)}));l.print;var _,E,v=l.printErr||void 0;
+
+@1472205: iginalSize:n.size,originalType:"image/jpeg",thumbGif:r?o:null,file:l,img:e})};{if(!c.default.validOpenUrl(e))return n();let t=new XMLHttpRequest;t.responseType="blob",t.open("GET",e),t.onreadystatechange=()=>{if(t.readyState==t.HEADERS_RECEIVED){let e=t.getResponseHeader("Content
+
+@2180070: ||void 0===n?void 0:n.status)!=(null===(a=e.status)||void 0===a?void 0:a.status)}componentDidMount(){!function(e,t,n){const a=new XMLHttpRequest;a.onreadystatechange=function(){4===a.readyState?t(this):this&&n(this)},a.open("HEAD",e),a.send()}(this.props.path,this.handleCheckVide
+
+@2182002: o.pause(),this.setState({pause:!0,isPlaying:!1,isControlShown:Dt,onPictureInPictureMode:!1}))}checkImageStatus(e,t,n){const a=new XMLHttpRequest;a.onreadystatechange=function(){404==a.status?n(this):this&&t(this)},a.open("HEAD",e),a.send()}handleCheckImageLive(){this.setState({im
+
+@3036745: h&&delete e.__sentry_instrumentation_handlers__)}catch(e){}return t.call(this,n,a,i)}})))}))}();break;case"xhr":!function(){if(!("XMLHttpRequest"in u))return;const t=XMLHttpRequest.prototype;Object(s.e)(t,"open",(function(t){return function(...n){const a=n[1],r=this[A]={method:Ob
+
+@3036781: _handlers__)}catch(e){}return t.call(this,n,a,i)}})))}))}();break;case"xhr":!function(){if(!("XMLHttpRequest"in u))return;const t=XMLHttpRequest.prototype;Object(s.e)(t,"open",(function(t){return function(...n){const a=n[1],r=this[A]={method:Object(i.l)(n[0])?n[0].toUpperCase():n
+
+@3464510: stForCheckingExist(e),this.checkingReqNum++}this.isExecutingQueue=!1}}_request(e){return new Promise(((t,n)=>{let a,i;const r=new XMLHttpRequest;let o=e.replace("http://","https://");o=s.default.removeE2eeProtocol(o),r.open("HEAD",o),r.responseType="arraybuffer",r.timeout=1e4,ae|
+
+@3558966: o log to send",e)})):(this.foregroundLogs=this.foregroundLogs.filter((e=>this._isValidItem(e))),r())}_sendFile(e,t,n){const a=new XMLHttpRequest;a.open("POST",this.config.apiUrl,!0),a.onload=()=>{this.Logger.zsymb(15,"AvDUuZ",["timeonapp: log uploaded","6vxHO-"],a.responseText),n
+
+@3658801: 4,signal:n,maxTTFB:i=2e4,method:r="GET",onFirstByte:s})=>new Promise(((o,l)=>{if(null!=n&&n.aborted)return l(new a.a);const c=new XMLHttpRequest,d=()=>c.abort();c.withCredentials=!1,c.timeout=t,c.onload=()=>200===c.status?c.responseURL.endsWith("/default")?l(new a.b):o(null):l(ne
+
+@4566001: m,e.needTmpFile,e.resolve,e.reject)}}__saveImageData(e,t,n=null,a=!0,i,r){let s=1;this.downloadingImage=!0;let o=()=>{const l=new XMLHttpRequest;l.open("GET",e),l.responseType="arraybuffer",l.onload=()=>{if(l.responseURL&&-1!==l.responseURL.indexOf(".zdn.vn/default"))return this.
+
+@5468929: e=>l.ModuleContainer.resolve(c.ZLoggerFactory).createZLogger(["app-launcher"],[e]),u=async(e,t)=>new Promise(((n,a)=>{const i=new XMLHttpRequest;i.open("POST",t,!0),i.withCredentials=!0,i.onload=()=>{if(200===i.status){if(0===(JSON.parse(i.responseText)||{}).error_code)return voi

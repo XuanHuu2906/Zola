@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext", "moduleResolution": "Bundler", "jsx": "react-jsx",
+    "strict": true, "noEmit": true, "skipLibCheck": true,
+    "allowImportingTsExtensions": true, "esModuleInterop": true,
+    "noUnusedLocals": true, "noUnusedParameters": true,
+    "types": ["vite/client", "node"]
+  },
+  "include": ["src/adapters", "src/services", "src/transport", "src/composition", "src/renderer", "src/shared", "src/design-system", "src/components", "tests/core.test.ts", "tests/design-system.test.ts", "tests/adapters.test.ts", "tests/services.test.ts", "tests/transport.test.ts", "tests/composition.test.ts", "tests/ipc-contract.test.ts", "tests/protocol-boundary.test.ts", "tests/protocol-mapper.test.ts", "tests/live.test.ts", "tests/e2e", "playwright.config.ts", "vite.config.mts"]
+}

@@ -1,0 +1,22 @@
+
+===== main-dist/main.js (4169474 chars) =====
+PAT setMainWindow( -> 2 hits [2697339,3324498]
+PAT loadFile( -> 4 hits [1221878,1221894,1222065,1222213]
+PAT loadURL( -> 13 hits [169949,327881,327961,1043789,1077525,1079014,2686502,2690376,2727634,3111129,3111165,3111846,3683020]
+LOADFILE_ARGS = []
+HTML_LITERALS = ["child.html","index.html","login.html","npm run test:cover && open coverage/index.html","popup-viewer.html","shared-worker.html","sqlite.html","znotification.html"]
+
+  setMainWindow#1 @2697339 :: "#ffffff\",show:!1,webPreferences:{webSecurity:!oe(),allowRunningInsecureContent:oe(),devTools:!0,partition:\"persist:zalo\",webgl:!0,experimentalFeatures:!0,experimentalCanvasFeatures:!0,backgroundThrottling:!1,nodeIntegration:!1,contextIsolation:!0,sandbox:!1,preload:c.join(__dirname,\"preload-render.js\")}},o={width:me.DEFAULT_CHILD_WIDTH,height:me.DEFAULT_CHILD_HEIGHT,minWidth:me.DEFAULT_MIN_WIDTH,minHeight:me.DEFAULT_MIN_HEIGHT,childResourceURL:n};Ce=m.createWithMultiWindow(i,o,vn,oe(),t),y(Ce),v(Ce.webContents),et.setMainWindow(Ce)}catch(t){b.zsymb(22,\"VUVbKJ\",[\"[FEA-MULTI] Something went wrong {}\",\"yWcTjx\"],t)}}function bn(){const "
+
+  setMainWindow#2 @3324498 :: "slice(s.start,s.end)};if(this.trackRange&&(c.range=[s.start,s.end]),this.trackLoc&&(a.end={line:this.scanner.lineNumber,column:this.scanner.index-this.scanner.lineStart},c.loc=a),9===s.type){var l=s.pattern,d=s.flags;c.regex={pattern:l,flags:d}}this.buffer.push(c)}}return this.buffer.shift()},e}();t.Tokenizer=s}])},e.exports=r()},qkcG:function(e,t){const n=new class{constructor(){this.currentPage=null,this.mainWindow=null,this.mainAppHasBeenStarted=!1,this.infoSizeWindowMap=new Map,this.onSetMainWindowListeners=[]}setMainWindow(e){this.mainWindow=e;for(const t of this.onSetMainWindowListeners)t(e)}getMainWindow(){return this.mainWin"
+
+===== main-dist/compact-app.js (4007002 chars) =====
+PAT setMainWindow( -> 2 hits [2676224,3303266]
+PAT loadFile( -> 4 hits [1260245,1260261,1260432,1260580]
+PAT loadURL( -> 13 hits [294741,294821,713177,1081404,1115140,1116629,2665387,2669261,2706519,3086887,3086923,3087604,3522245]
+LOADFILE_ARGS = []
+HTML_LITERALS = ["child.html","compact-app.html","index.html","login.html","npm run test:cover && open coverage/index.html","popup-viewer.html","shared-worker.html","sqlite.html","znotification.html"]
+
+  setMainWindow#1 @2676224 :: "#ffffff\",show:!1,webPreferences:{webSecurity:!oe(),allowRunningInsecureContent:oe(),devTools:!0,partition:\"persist:zalo\",webgl:!0,experimentalFeatures:!0,experimentalCanvasFeatures:!0,backgroundThrottling:!1,nodeIntegration:!1,contextIsolation:!0,sandbox:!1,preload:c.join(__dirname,\"preload-render.js\")}},o={width:me.DEFAULT_CHILD_WIDTH,height:me.DEFAULT_CHILD_HEIGHT,minWidth:me.DEFAULT_MIN_WIDTH,minHeight:me.DEFAULT_MIN_HEIGHT,childResourceURL:n};Ae=m.createWithMultiWindow(i,o,vn,oe(),t),g(Ae),v(Ae.webContents),et.setMainWindow(Ae)}catch(t){T.zsymb(22,\"VUVbKJ\",[\"[FEA-MULTI] Something went wrong {}\",\"yWcTjx\"],t)}}function Tn(){const "
+
+  setMainWindow#2 @3303266 :: "slice(s.start,s.end)};if(this.trackRange&&(c.range=[s.start,s.end]),this.trackLoc&&(a.end={line:this.scanner.lineNumber,column:this.scanner.index-this.scanner.lineStart},c.loc=a),9===s.type){var l=s.pattern,u=s.flags;c.regex={pattern:l,flags:u}}this.buffer.push(c)}}return this.buffer.shift()},e}();t.Tokenizer=s}])},e.exports=r()},qkcG:function(e,t){const n=new class{constructor(){this.currentPage=null,this.mainWindow=null,this.mainAppHasBeenStarted=!1,this.infoSizeWindowMap=new Map,this.onSetMainWindowListeners=[]}setMainWindow(e){this.mainWindow=e;for(const t of this.onSetMainWindowListeners)t(e)}getMainWindow(){return this.mainWin"

@@ -1,0 +1,5 @@
+
+> zalo-apple-glass-ui@0.2.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+tests/e2e/contrast.ts(38,43): error TS2339: Property 'remove' does not exist on type 'Node'.

@@ -1,0 +1,102 @@
+bundle code units = 20927993
+structural module candidates = 3515
+
+=== known module keys (candidate + local body verification) ===
+  TmDO: @9440451 len=56458
+  euSg: @14376441 len=897
+  B5Cg: @3990966 len=482
+  iwo6: @15768419 len=5695
+  xPHB: @19505897 len=905
+  HuPi: @6112786 len=1838
+  CYG6: @4245911 len=86784
+  RFxn: @8774196 len=99056
+  iKSP: @15249706 len=7437
+  KCaC: @6931066 len=2554
+  W0O7: @11402172 len=1525
+  nahq: @16847888 len=2098
+  j6F3: MISSING
+  Fuol: @5458193 len=16051
+  I9t9: @6147660 len=10138
+  GQ8g: @5553773 len=3875
+  y1FZ: @19641108 len=7278
+  FCc4: @5144073 len=3754
+known keys with a locally verified body: 17/18
+
+=== surface class literal -> enclosing module ===
+
+## conv list row ("className:"conv-item") occ=8
+   modules: Zao8@12273577(?)
+   @12393315 -> Zao8 @12273577 UNVERIFIED
+   @12393748 -> Zao8 @12273577 UNVERIFIED
+   @12393895 -> Zao8 @12273577 UNVERIFIED
+   @12462963 -> Zao8 @12273577 UNVERIFIED
+
+## conv preview text ("conv-message truncate") occ=4
+   modules: Zao8@12273577(?)
+   @12389658 -> Zao8 @12273577 UNVERIFIED
+   @12515604 -> Zao8 @12273577 UNVERIFIED
+   @12519736 -> Zao8 @12273577 UNVERIFIED
+   @12531685 -> Zao8 @12273577 UNVERIFIED
+
+## conv title name ("conv-item-title__name") occ=2
+   modules: Zao8@12273577(?)
+   @12393141 -> Zao8 @12273577 UNVERIFIED
+   @12462974 -> Zao8 @12273577 UNVERIFIED
+
+## message wrapper ("className:"chat-message") occ=8
+   modules: ?
+   @987109 -> ? @? UNVERIFIED
+   @988374 -> ? @? UNVERIFIED
+   @989390 -> ? @? UNVERIFIED
+   @989753 -> ? @? UNVERIFIED
+
+## composer bar ("className:"chat-box-bar"") occ=1
+   modules: Fuol@5458193
+   @5463373 -> Fuol @5458193 VERIFIED
+
+## composer toolbar btn ("chat-box-input__tools__btn") occ=6
+   modules: Fbxx@5409238 | GQ8g@5553773(?) | VLvn@10707732(?)
+   @5409873 -> Fbxx @5409238 VERIFIED
+   @5563240 -> GQ8g @5553773 UNVERIFIED
+   @5564382 -> GQ8g @5553773 UNVERIFIED
+   @5565042 -> GQ8g @5553773 UNVERIFIED
+
+## bubble container ("content-message-container") occ=2
+   modules: 23@1777397(?) | medu@16709760(?)
+   @1847070 -> 23 @1777397 UNVERIFIED
+   @16713628 -> medu @16709760 UNVERIFIED
+
+## titlebar buttons ("titlebar__btns") occ=3
+   modules: y1FZ@19641108 | y1FZ@19641108(?)
+   @19646838 -> y1FZ @19641108 VERIFIED
+   @19648693 -> y1FZ @19641108 UNVERIFIED
+   @19649158 -> y1FZ @19641108 UNVERIFIED
+
+## menu item ("className:"zmenu-item") occ=8
+   modules: ? | meridiem@2964364(?) | FCc4@5144073 | GQ8g@5553773 | I9t9@6147660(?)
+   @174229 -> ? @? UNVERIFIED
+   @193053 -> ? @? UNVERIFIED
+   @3010324 -> meridiem @2964364 UNVERIFIED
+   @3011900 -> meridiem @2964364 UNVERIFIED
+
+## modal footer ("zl-modal__footer") occ=8
+   modules: ?
+   @243446 -> ? @? UNVERIFIED
+   @243643 -> ? @? UNVERIFIED
+   @1257198 -> ? @? UNVERIFIED
+   @1257305 -> ? @? UNVERIFIED
+
+## date chip ("className:"chat-date") occ=2
+   modules: ?
+   @225036 -> ? @? UNVERIFIED
+   @399580 -> ? @? UNVERIFIED
+
+## left chat box bar (""left-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150276 -> I9t9 @6147660 VERIFIED
+
+## right chat box bar (""right-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150605 -> I9t9 @6147660 VERIFIED
+
+wrote _r3_modules5.json

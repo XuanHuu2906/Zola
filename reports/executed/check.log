@@ -1,0 +1,44 @@
+
+> zalo-apple-glass-ui@0.2.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.2.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.2.0 lint
+> eslint src/renderer src/shared electron tests/core.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.2.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts
+
+✔ TS search retains Vietnamese name and preview matching (7.4068ms)
+(node:30664) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/core.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ TS filters retain independent group/work/unread categories and pinned order (1.1263ms)
+✔ sending is immutable, bounded and local to the selected chat (56.6444ms)
+✔ attachments retain names and sizes only, with bounded display metadata (1.5779ms)
+✔ demo seeds are independent across sessions (0.7582ms)
+✔ preferences tolerate corrupt storage and clamp values (1.1867ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.9387ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (1.4289ms)
+✔ IPC trust and network policy distinguish development from production (0.7006ms)
+✔ HTML-escapes user-generated message content (0.7504ms)
+✔ removes diacritics in Vietnamese search terms (0.5019ms)
+✔ search matches normalized names (0.6126ms)
+✔ unread filter selects only unread (0.3657ms)
+✔ group and work filters use categories independently (0.3651ms)
+✔ pinned chats are sorted before unpinned (0.2075ms)
+✔ file metadata is textual and size-limited (0.5108ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 278.944

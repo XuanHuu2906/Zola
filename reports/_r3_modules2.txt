@@ -1,0 +1,77 @@
+bundle code units = 20927993
+candidate depth histogram: d-6=62 d-5=9 d-4=168 d-3=267 d-2=223 d-1=630 d0=688 d1=504 d2=191 d3=126 d4=7 d5=149 d6=2 d7=40 d8=423 d9=4 d10=22 d11=11 d12=335 d13=259 d14=1
+module-map candidates at depth 2: 191
+first 8 keys: init@6305118 tlYr@18620741 tmLI@18626256 tnIz@18629731 tpL1@18630710 tpPD@18632035 ttnr@18632226 twqL@18634715
+
+=== known keys at this depth ===
+  TmDO: MISSING
+  euSg: MISSING
+  B5Cg: MISSING
+  iwo6: MISSING
+  xPHB: MISSING
+  HuPi: MISSING
+  CYG6: MISSING
+  RFxn: MISSING
+  iKSP: MISSING
+  KCaC: MISSING
+  W0O7: MISSING
+  nahq: MISSING
+  j6F3: MISSING
+
+=== surface class literal -> module (depth-verified) ===
+
+## conv list row ("className:"conv-item") occ=8 modules=init@6305118
+   @12393315 -> init @6305118 OUTSIDE
+   @12393748 -> init @6305118 OUTSIDE
+   @12393895 -> init @6305118 OUTSIDE
+
+## conv preview text ("conv-message truncate") occ=4 modules=init@6305118
+   @12389658 -> init @6305118 OUTSIDE
+   @12515604 -> init @6305118 OUTSIDE
+   @12519736 -> init @6305118 OUTSIDE
+
+## conv title name ("conv-item-title__name") occ=2 modules=init@6305118
+   @12393141 -> init @6305118 OUTSIDE
+   @12462974 -> init @6305118 OUTSIDE
+
+## message wrapper ("className:"chat-message") occ=8 modules=?
+   @987109 -> ? @?
+   @988374 -> ? @?
+   @989390 -> ? @?
+
+## composer bar ("className:"chat-box-bar"") occ=1 modules=?
+   @5463373 -> ? @?
+
+## composer toolbar btn ("chat-box-input__tools__btn") occ=6 modules=?, init@6305118
+   @5409873 -> ? @?
+   @5563240 -> ? @?
+   @5564382 -> ? @?
+
+## bubble container ("content-message-container") occ=2 modules=?, init@6305118
+   @1847070 -> ? @?
+   @16713628 -> init @6305118 OUTSIDE
+
+## titlebar buttons ("titlebar__btns") occ=3 modules=wcvy@19108860
+   @19646838 -> wcvy @19108860 OUTSIDE
+   @19648693 -> wcvy @19108860 OUTSIDE
+   @19649158 -> wcvy @19108860 OUTSIDE
+
+## menu item ("className:"zmenu-item") occ=8 modules=?
+   @174229 -> ? @?
+   @193053 -> ? @?
+   @3010324 -> ? @?
+
+## modal footer ("zl-modal__footer") occ=8 modules=?
+   @243446 -> ? @?
+   @243643 -> ? @?
+   @1257198 -> ? @?
+
+## date chip ("className:"chat-date") occ=2 modules=?
+   @225036 -> ? @?
+   @399580 -> ? @?
+
+## left chat box bar (""left-chat-box-bar"") occ=1 modules=?
+   @6150276 -> ? @?
+
+## right chat box bar (""right-chat-box-bar"") occ=1 modules=?
+   @6150605 -> ? @?

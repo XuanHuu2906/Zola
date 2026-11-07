@@ -1,0 +1,87 @@
+=== main.js citations ===
+PASS  checkStartupOpenConvReq drain  :: @2724854
+PASS  check-arg-link handler  :: @2703712
+PASS  Hn shape (FIRST hit may be lodash — see exact-offset block)  :: @1534473
+PASS  process.argv[1]&&Hn  :: @2714883
+PASS  second-instance  :: @3565789
+PASS  main window preload  :: @2697077
+PASS  actually load main App  :: @2686119
+
+=== compact-app.js citations ===
+PASS  conversation drain (Je/Ze)  :: @2703739
+PASS  Hn function  :: @1468295
+PASS  process.argv[1]&&Hn  :: @2693768
+PASS  compact preload  :: @737872
+PASS  compact partition  :: @737925
+PASS  CompactAppWindowLoader.load  :: @713012
+PASS  actually load main App  :: @2665004
+
+=== absence claims (must all be 0) ===
+PASS  compact second-instance == 0  :: count=0
+PASS  preload-render $zsub == 0  :: count=0
+PASS  compact-preload $zuri == 0  :: count=0
+PASS  compact-preload $zsub == 0  :: count=0
+PASS  compact-preload z-uri-open-conv == 0  :: count=0
+PASS  compact bundle aa2b4a7e == 0  :: count=0
+PASS  compact bundle $zsub.$zuri == 0  :: count=0
+PASS  compact bundle z-uri-open-conv == 0  :: count=0
+PASS  compact bundle onRequestOpenConv == 0  :: count=0
+PASS  onCheckStartupOpenConvRequest (all files) == 0  :: count=0
+
+=== compact bundle presence (must be > 0) ===
+PASS  bare $zuri.checkOpenConvReq > 0  :: count=1
+PASS  bare $zuri.checkArgvLink > 0  :: count=1
+PASS  $zsub reads > 0  :: count=137
+
+=== compact trigger ===
+PASS  isDriveBlockedAndStartCompactApp called in main startup  :: @1503630
+PASS  launchCompactApp(InaccessibleDrive)  :: @1503927
+
+=== exact offsets cited in the reports ===
+PASS  main.js @3565789  :: ".on(\"second-instance\""
+PASS  main.js @2714883  :: "process.argv[1]&&Hn(process.argv)"
+PASS  main.js @2724854  :: "checkStartupOpenConvReq:function(){Qe&&(Ce.webContents.send(\"z-uri-open-conv\""
+PASS  main.js @2703712  :: ".on(\"check-arg-link\""
+PASS  main.js @2711169  :: "Fe===be"
+PASS  main.js @2710764  :: "function Hn(e){"
+PASS  main.js @1503927  :: "launchCompactApp({InaccessibleDrive:{}}"
+PASS  main.js @3566533  :: "isDriveBlockedAndStartCompactApp()"
+PASS  main.js @904015  :: "isCompactApp(){return process.argv.some("
+PASS  main.js @2715144  :: "start up"
+PASS  compact-app.js @2703739  :: "checkStartupOpenConvReq:function(){Je&&(Ae.webContents.send(\"z-uri-open-conv\""
+PASS  compact-app.js @2689649  :: "function Hn(e){"
+PASS  compact-app.js @2693768  :: "process.argv[1]&&Hn(process.argv)"
+PASS  compact-app-pc.f32c58b63b6f4 @1309090  :: "InaccessibleDrive"
+PASS  compact-app-pc.f32c58b63b6f4 @1304243  :: "migrate-compact-app-container"
+PASS  compact-app-pc.f32c58b63b6f4 @1308061  :: "inaccessible-drive-app-container"
+PASS  compact-app-pc.f32c58b63b6f4 @1309773  :: "super(\"compact-app\""
+PASS  compact-app-pc.f32c58b63b6f4 @1309830  :: "getElementById(\"app\")"
+PASS  compact-app-pc.f32c58b63b6f4 @15499634  :: "$zuri.checkOpenConvReq"
+PASS  compact-app-pc.f32c58b63b6f4 @15501983  :: "$zuri.checkArgvLink"
+PASS  default-login-startup-main-s @37920  :: "globalThis.$zsub"
+PASS  default-login-startup-main-s @39082  :: "Ke(\"$zuri\""
+PASS  default-login-startup-main-s @38742  :: "function Ke(e,E,t){"
+PASS  search-worker.f32c58b63b6f42 @15729390  :: "$zuri.checkOpenConvReq"
+PASS  search-worker.f32c58b63b6f42 @15731739  :: "$zuri.checkArgvLink"
+PASS  sync-v2-sub-worker.f32c58b63 @15754446  :: "$zuri.checkOpenConvReq"
+PASS  sync-v2-sub-worker.f32c58b63 @15756795  :: "$zuri.checkArgvLink"
+PASS  default-login-main-startup-s @13086649  :: "$zuri.checkOpenConvReq"
+PASS  default-login-main-startup-s @13088998  :: "$zuri.checkArgvLink"
+PASS  default-login-startup-main-s @18350  :: "n=(t,r)=>{const i=k.default.getFriendsSync()"
+PASS  default-login-startup-main-s @18423  :: "s=(t,{term:r,data:i})=>"
+PASS  default-login-startup-main-s @18922  :: "$zsub.$zuri.onNewRequest(n)"
+PASS  default-login-startup-main-s @18466  :: "L.a.autoOpenConversationById(i,e)"
+PASS  default-login-startup-main-s @18950  :: "$zsub.$zuri.onRequestOpenConv(s)"
+PASS  compact-app-preload.js @72851  :: "$inaccessibleDrive"
+PASS  compact-app-preload.js @1164302  :: "$migration"
+PASS  main.js @311443  :: "function(e,t,n){const r=n(\"Qs2e\")"
+PASS  compact-app.js @941546  :: "launchCompactApp(e,t,n){const o=Object(d.a)()"
+PASS  compact-app.js @2020730  :: "launchCompactApp(e,t,n),o=e=>r.default.getRelaunchState(e)"
+PASS  main.js @1077098  :: "webSecurity:!0,devTools:!1},useContentSize:!0,width:800"
+PASS  main.js @3110359  :: "webSecurity:!0,devTools:!1},useContentSize:!0,width:1250"
+PASS  main.js @1194719  :: "allowRunningInsecureContent:!1,webgl:!0,devTools:!1,partition:"
+PASS  main.js @2218293  :: " d=!1,u=!d,p=n(\"oyvS\")"
+PASS  main.js @2696852  :: "webSecurity:!oe(),allowRunningInsecureContent:oe(),devTools:!0"
+PASS  main.js @2711202  :: "z-uri-open-conv\",{term:t[1],data:e}):(Qe=e,Ze=t[1])"
+PASS  main.js @2726412  :: "isDev:f}=n(\"ZQzv\"),m=!1,_=352"
+PASS  main.js @4154303  :: "allowRunningInsecureContent:!1,webgl:!0,devTools:!0,partition:"

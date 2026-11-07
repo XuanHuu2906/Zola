@@ -1,0 +1,101 @@
+
+## .conv-item  (conversation list row)  rules=84  vars=19  literals=3
+  sel: .bottom-flex,.conv-item-setting
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #container,#ztoolbar.chat-input-v2,.cal-date-time .cal-nav,.chat-box-member__info.v2,.checkbox-input,.chips,.c
+  vars: --text-information --layer-background-selected --text-primary --icon-secondary --B10 --cta-link --cta-link-pressed --layer-background --text-secondary --layer-background-hover --layer-background-subtle --BA50 --icon-errors --border --border-focused --background-activeness --WA100 --input-field-ptv-bg --layer-background-pinned
+  lits: color=inherit!important | box-shadow=0 0 0 1px #4b4b4b | background-color=unset
+
+## .chat-message  (message wrapper)  rules=371  vars=49  literals=5
+  sel: .card--group-photo__row__item img.file-m.card--group-photo__row__item__photo,.chat-input-link-preview .file-m.
+       .card--group-photo__row__item img.file-s.card--group-photo__row__item__photo,.chat-input-link-preview .file-s.
+       #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-titl
+  vars: --text-information --B10 --layer-background-selected --text-on-color --text-secondary --background-activeness --text-primary --WA100 --border-highlight --icon-secondary --N300 --media-message-selected --border --BA20 --G20 --text-search-highlight --shadow-overlay --border-focused --WA50 --BA30 --layer-background-subtle --layer-background --layer-background-navbar-sublevel-selected --button-tertiary-neutral-focus-text --medium --blue-message --NG10 --cta-link --cta-link-pressed --input-field-bg-outline-pressed --G40 --icon-primary --B30 --layer-background-navbar-selected
+  lits: box-shadow=none | box-shadow=unset | background-color=unset | background-color=unset!important | border=none
+
+## .chat-box-bar  (composer bar)  rules=3  vars=2  literals=0
+  sel: .chat-box-bar
+       .chat-box-bar .right-chat-box-bar
+       .chat-box-input-container.--rtf-mode .chat-box-bar
+  vars: --divider-bold --layer-background
+  lits: 
+
+## .chat-input-v2  (composer input)  rules=15  vars=7  literals=1
+  sel: #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #container,#ztoolbar.chat-input-v2,.cal-date-time .cal-nav,.chat-box-member__info.v2,.checkbox-input,.chips,.c
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+  vars: --layer-background --border --border-focused --text-information --background-activeness --WA100 --input-field-ptv-bg
+  lits: box-shadow=0 0 0 1px #4b4b4b
+
+## .titlebar__title  (custom titlebar)  rules=5  vars=0  literals=0
+  sel: .titlebar__title>div
+       .titlebar__title.mac>div
+       .image-show__title>.titlebar__title
+  vars: 
+  lits: 
+
+## .titlebar__btns  (titlebar buttons)  rules=20  vars=9  literals=0
+  sel: #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+  vars: --icon-on-color --R60 --text-primary --button-secondary-neutral-hover --border-focused --text-information --background-activeness --WA100 --NG80
+  lits: 
+
+## .zmenu-item  (menus)  rules=51  vars=16  literals=1
+  sel: #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+  vars: --text-information --layer-background-selected --layer-background-hover --layer-background --border-focused --background-activeness --WA100 --space-xxs --space-sm --text-primary --text-secondary --icon-primary --layer-alert-background --text-errors --text-disabled --icon-information
+  lits: background=none
+
+## .zl-modal__dialog  (dialog surface)  rules=54  vars=10  literals=2
+  sel: #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-titl
+       #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#cal
+       #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-i
+  vars: --text-information --layer-background --cta-link --cta-link-pressed --border --space-md --background-inactiveness-subtle --divider --icon-secondary --icon-on-color
+  lits: background=none | border=none
+
+## .content-message-container  (bubble container)  rules=23  vars=6  literals=0
+  sel: #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+       #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group
+  vars: --text-primary --border-focused --text-information --background-activeness --WA100 --text-secondary
+  lits: 
+
+## .chat-date  (date chip)  rules=20  vars=4  literals=1
+  sel: .avatar,.card--link-img,.card--link-img.default,.chat-date>span,.chat-info-general__options,.chat-list-text-se
+       .chat-date
+       .chat-date>span
+  vars: --text-on-color --timestamp --BA20 --border-focused
+  lits: backdrop-filter=blur(10px)
+
+## .conv-item-title__name  (conv title text)  rules=8  vars=2  literals=1
+  sel: .conv-item-title__name,.conv-message,.conv-title-name,.flx-cell,.item-message,.item-title-name,.zl-scroll
+       #group-creator .create-group__item__name,.cb-info-file-item__error-msg,.cb-info-file-item__file-size,.cb-info-
+       #group-creator .nigh-chat-friend .night-chat-online-friend .gr-item:hover .create-group__item__name,.chat-inpu
+  vars: --text-information --text-primary
+  lits: color=inherit!important
+
+## .conv-message  (conv preview text)  rules=25  vars=4  literals=1
+  sel: .conv-item-title__name,.conv-message,.conv-title-name,.flx-cell,.item-message,.item-title-name,.zl-scroll
+       #group-creator .create-group__item__name,.cb-info-file-item__error-msg,.cb-info-file-item__file-size,.cb-info-
+       #group-creator .nigh-chat-friend .night-chat-online-friend .gr-item:hover .create-group__item__name,.chat-inpu
+  vars: --text-primary --R60 --text-information --text-secondary
+  lits: color=inherit!important
+
+=== tokens shared across >=4 probed surfaces (design spine) ===
+--text-information(9) --text-primary(7) --border-focused(7) --layer-background(6) --background-activeness(6) --WA100(6) --text-secondary(5) --border(4)
+
+=== glass-relevant primitives per probed surface ===
+  .conv-item: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .chat-message: backdrop-filter=0 semi-transparent=3 opaque-bg=0
+  .chat-box-bar: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .chat-input-v2: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .titlebar__title: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .titlebar__btns: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .zmenu-item: backdrop-filter=0 semi-transparent=1 opaque-bg=0
+  .zl-modal__dialog: backdrop-filter=0 semi-transparent=1 opaque-bg=0
+  .content-message-container: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .chat-date: backdrop-filter=2 semi-transparent=0 opaque-bg=0
+  .conv-item-title__name: backdrop-filter=0 semi-transparent=0 opaque-bg=0
+  .conv-message: backdrop-filter=0 semi-transparent=0 opaque-bg=0

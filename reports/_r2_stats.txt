@@ -1,0 +1,70 @@
+=== TOKEN_MAP (376) by group ===
+ 139  Control / button
+ 120  Accent scale
+  49  Background / layer
+  18  Border / divider
+  16  Icon
+  15  Text
+  12  Conversation / message
+   3  Other
+   2  Navigation / leftmenu / navbar
+   2  Shadow
+
+=== divergence vs TOKEN_MAP ===
+light mixin entries=396 unique=395 differing=78
+dark  mixin entries=396 unique=395 differing=219
+  css-only (declared in shipped SCSS, absent from TOKEN_MAP), light: --surface-background-overlay --border-highlight --border-support-errors --border-support-warning --border-support-success --border-support-information --border-support-neutral --media-message-hover --media-message-selected --button-primary-on-color-normal --button-primary-on-color-hover --button-primary-on-color-pressed --button-primary-on-color-disabled --button-primary-on-color-text --button-primary-on-color-text-disabled --button-primary-on-color-focus-bg --button-primary-on-color-focus-text --accent-grey-bg-subtle --accent-grey-bg --accent-grey-bg-bold --accent-grey-border-subtle --accent-grey-border --accent-grey-border-bold --accent-grey-text-subtle --accent-grey-text --accent-grey-text-bold --accent-grey-icon-subtle --accent-grey-icon --accent-grey-icon-bold --progress-track --progress-track-on-background --progress-indicator --progress-indicator-on-background --timestamp --floating-menu --partial-quote-floating --toast --reaction-background --background-control-alpha --background-control-alpha-hover --bg-message-info --jump-to-message --text-search-highlight --layer-accent-message --emoji-status-bubble-color --vtt-normal-button-bg --vtt-hover-button-bg
+  step-differs, light: 31
+  step-differs, dark : 172
+
+=== dark mixin alias histogram ===
+DN=78 B=77 R=51 BA=31 G=18 Y=18 N=16 STB=16 WA=15 SKB=13 OR=12 TL=12 PK=12 P=12 NG=9 NA=4 BLA=2
+
+=== dashboard retint reach ===
+The "Magic" tab only iterates TOKEN_MAP.light entries whose alias is in MAIN_COLOR_TOKEN [N,NG,DN,B,R].
+  reachable tokens: 214/376 (56.9%)
+  B=83 N=72 R=50 NG=8 DN=1
+  NOT retintable via Magic: 162 — aliases: G WA BA Y literal OR TL SKB PK P STB
+
+=== literal tokens (alias:null) = 23 ===
+  --button-tertiary-primary-normal = transparent
+  --button-tertiary-primary-disabled = transparent
+  --button-tertiary-danger-normal = transparent
+  --button-tertiary-danger-disabled = transparent
+  --button-tertiary-neutral-normal = transparent
+  --button-tertiary-neutral-disabled = transparent
+  --button-tertiary-on-color-normal = transparent
+  --button-tertiary-on-color-disabled = transparent
+  --button-ghost-primary-normal = transparent
+  --button-ghost-primary-disabled = transparent
+  --button-ghost-neutral-normal = transparent
+  --button-ghost-neutral-disabled = transparent
+  --button-ghost-danger-normal = transparent
+  --button-ghost-danger-disabled = transparent
+  --button-ghost-on-color-normal = transparent
+  --button-ghost-on-color-pressed = transparent
+  --button-ghost-on-color-disabled = transparent
+  --button-ghost-on-color-focus-bg = transparent
+  --button-ghost-on-color-focus-text = transparent
+  --button-ghost-on-color-focus-container-outline = transparent
+  --shadow-overlay = 0px 0px 1px 0px rgba(21, 39, 71, 0.30), 0px 8px 12px 0px rgba(21, 39, 71, 0.15)
+  --shadow-overflow = 0px 0px 1px 0px rgba(21, 39, 71, 0.12), 0px 0px 8px 0px rgba(21, 39, 71, 0.15)
+  --shadow-bubble = 0px 0px 1px 0px rgba(21, 39, 71, 0.25), 0px 1px 1px 0px rgba(21, 39, 71, 0.25)
+
+=== glass primitives in shipped CSS ===
+       7  backdrop-filter
+      26  filter:blur(
+     318  box-shadow
+    1394  border-radius
+     200  rgba(
+      92  hsla(
+     130  linear-gradient(
+       5  radial-gradient(
+       4  conic-gradient(
+
+=== external reachability checks in shipped renderer JS ===
+  <link href injection: 2
+  <style> injection: 9
+  document.head.appendChild: 9
+  dangerouslySetInnerHTML: 15
+  style.setProperty (body): 3

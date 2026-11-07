@@ -1,0 +1,119 @@
+
+## .card (exact single)  rules=0
+
+## .card.me / .card.you  rules=24
+   @646903 .card.chat-box-input__link-preview,.chat-box-input__link-preview.audio-expired
+        border-radius:0;border-top:1px solid var(--border-focused);background:var(--layer-background);box-shadow:none;margin-bottom:0
+   @722553 .card.me,.me.audio-expired
+        background-color:var(--blue-message)
+   @722617 .card.me.card--oa,.card.me.card--picture,.card.me.card--video,.me.card--oa.audio-expired,.me.card--picture.audio-expired,.me.card--video.audio-expired
+        padding-bottom:0
+   @722785 .card.me.card--picture.has-caption,.card.me.has-caption.card--oa,.card.me.has-caption.card--video,.me.card--picture.has-caption.audio-expired,.me.has-caption.card--oa.audio-expired,.me.has-caption.card--video.audio-expired
+        display:-webkit-flex;display:flex;flex-direction:column;align-items:flex-end
+   @723085 .card.me.card--oa>.card-send-time,.card.me.card--picture>.card-send-time,.card.me.card--video>.card-send-time,.me.card--oa.audio-expired>.card-send-time,.me.card--picture.audio-expired>.card-send-time,.me.card--video.audio-expired>.card-send-time
+        margin-bottom:12px;margin-left:10px
+   @724067 .card.first-msg,.first-msg.audio-expired
+        contain:layout style
+   @724129 .card.first-msg:before,.first-msg.audio-expired:before
+        position:absolute;top:0;left:-8px;content:"";width:9px;height:38px;background-size:cover;background-repeat:no-repeat;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAmCAYAAAAWa7HzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO9JREFUeNrc078LglAQB3D7QdIQ1FpTazS2BO219p8E/Q/tbfpftLe0NQptbQ7iZoOIlr+urxAhondvaujgQN/74N2Te5r2r0FEcxElSXIUUZZldxHleR6r9EQ/Qtgfi8iyrKFKuZZKuYGIwjCciMjzvJmIgiDYqJTbiSiKIlNEcRxfWYQ9HRPwZBGGbU2f4EqZLMJ6D6U
+   @724792 .card.first-msg.highlighted:before,.first-msg.highlighted.audio-expired:before
+        background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAmCAYAAAAWa7HzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNpiYBiuoPvWbx0mQor+/f2TSlARIyOTB0FFQFWKRJjEyMpEjOMpVwT0vhRBRc+uX/xGjE2MQNP+E7KOh6B1v3985yOs6Od3foKKWNjY5QgqAsabBhGKGDUJK2Jm1gNbi8f77P///zfEaxIwsTkArWPHqwhoShDclzisYgMqCsWbCv79/esNtEqQUFLJQglULFaZACkXvIkOaFUNRvSgmWIDpPxwJl+gAhagj6aBAhpfGs8H+kgXZ0YA5Xcg1YI3t7x/+vDrz6+fd4LcjTWioTQzEPMFN03T0HT08uXiF7JiZmVTY2RiEgY6
+   @725402 .card.first-msg.admin:before,.first-msg.admin.audio-expired:before
+        left:-9px;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAmCAYAAAAWa7HzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWFJREFUeNpiYBiuoPy4kw4TIUX//v5PJaiIkZHBgwhFjIoEFTEwMrAyEeN4yhUBvS/FxyaMX9Gr21++/fz7nbCzgab9J2QdDzszF37r/vz8x8fOzElI0V9+giYxszLJCbCJ4VfEyMSoIcopSyAwGRk0RTnl8CtiYmLUk+RSZmDB4312hv8MhjLcarhNAiY2B1UBE3YWJjY81v1nCNIWsgYzWXBYxQZUFKon7Ig7Ffz/999bW9hakIuFF29SybIQ94NzWLBYZSLDre6iym+CO9EBraqxEPdFEWNBM8UGSPkZi3lgT75ABS
+   @726122 .card.first-msg.show-sender:not(.has-caption)>.chat-context-menu.setting-sticker--color,.first-msg.show-sender.audio-expired:not(.has-caption)>.chat-context-menu.setting-sticker--color
+        top:27px
+
+## .msg-footer  rules=8
+   @720232 .chat-message.highlighted .audio-expired:not(.card--group-photo)>.msg-footer,.chat-message.highlighted .card:not(.card--group-photo)>.msg-footer
+        background:var(--G20)
+   @766436 .card.has-footer-image-msg>.msg-footer,.has-footer-image-msg.audio-expired>.msg-footer
+        padding-bottom:6px
+   @912166 .msg-footer
+        padding:0 12px;margin-top:8px;border-radius:0 0 8px 8px;background:var(--WA100);text-align:center;cursor:pointer;min-width:32px;border-top:1px solid var(--border);position:relative
+   @912359 .msg-footer.from-me
+        background-color:var(--NG10)
+   @912408 .msg-footer.fail-footer
+        min-width:120px
+   @912448 .msg-footer.no-margin-top,.msg-footer>.card-send-time
+        margin-top:0
+
+## .bubble-message-time-status  rules=45
+   @735551 .card--oa.audio-expired>.bubble-message-time-status,.card.card--oa>.bubble-message-time-status
+        margin-top:4px
+   @1195485 .bubble-message-time-status
+        display:flex;align-items:center;width:fit-content;min-width:max-content
+   @1195585 .bubble-message-time-status.--me
+        margin-left:auto
+   @1195635 .bubble-message-time-status>.bubble-message-status.--me,.bubble-message-time-status>.seen-msg-stt,.bubble-message-time-status>.seen-msg-stt__reserve
+        margin-left:4px
+
+## .message-reaction-container  rules=78
+   @645672 .image-show__reaction>.message-reaction-container.always-display
+        top:0
+   @645743 .image-show .image-show__reaction>.message-reaction-container.always-display
+        padding-top:0
+   @720399 .chat-message.highlighted .audio-expired:not(.card--group-photo).card--video.has-caption.card-has-react>.message-reaction-container,.chat-message.highlighted .card:not(.card--group-photo).card--video.has-caption.card-has-react>.message-reaction-container
+        background:inherit
+   @728379 .card--link.audio-expired>div.message-reaction-container:not(.has-reacts),.card.card--link>div.message-reaction-container:not(.has-reacts)
+        padding:0
+
+## .message-view__blur  rules=4
+   @113280 #zalo,.avatar-img,.avatar-img.avatar-number-m,.bg-center,.card--link-img,.card--link-img.default,.chat-box-input__img-preview__thumb,.ci-err>.ci-err__center>.ci-err__svg-v1,.ci-err>.ci-err__center>.ci-err__svg-v2,.ci-err>.ci-err__center>.ci-err__video-svg,.ci-
+        background-repeat:no-repeat;background-size:cover;background-position:50%
+   @784944 .message-view__blur
+        position:absolute;top:0;left:0;bottom:0;right:0;background-color:var(--NG10);z-index:-2;width:100%;height:100%;contain:strict
+   @785090 .message-view__blur__overlay
+        position:absolute;content:"";width:100%;height:100%;background:hsla(0,2%,90%,.43);z-index:-1;contain:strict
+   @785227 .message-view__blur__overlay_noavatar
+        position:absolute;content:"";width:100%;height:100%;background:var(--layer-background-CSC);z-index:-1
+
+## .message-info  rules=5
+   @931840 .message-info
+        color:var(--text-primary);padding:0 5px;font-size:.8125rem;font-weight:400;line-height:1.5;cursor:default;justify-content:center;line-height:1.5em;display:-webkit-flex;display:flex
+   @932497 .message-info .message-info_text
+        padding-right:4px
+   @933756 .message-info>div,.message-info_hand_cursor:hover
+        color:var(--text-secondary)
+   @933834 .message-info>div
+        word-wrap:break-word;max-width:90%;background:var(--bg-message-info);border-radius:24px;padding:5px 10px;z-index:2
+
+## .card--text  rules=15
+   @117901 .audio-expired,.card--file.audio-expired,.card--link.audio-expired,.card--location.audio-expired,.card--sound.audio-expired,.card--text.audio-expired,.card--undo.audio-expired,.card.card--file,.card.card--link,.card.card--location,.card.card--sound,.card.card-
+        -webkit-box-shadow:var(--shadow-bubble);-moz-box-shadow:var(--shadow-bubble);box-shadow:var(--shadow-bubble)
+   @143308 .card--text.audio-expired a.mention-name,.card.card--text a.mention-name,.text-message__container a.mention-name,.ws-pre-wrap
+        white-space:pre-wrap
+   @728528 .card--text.audio-expired,.card.card--text
+        user-select:text;min-width:40px;max-width:calc(100% - 38px)
+   @728631 .card--text.audio-expired:not(.me),.card.card--text:not(.me)
+        background-color:var(--white-message)
+   @728730 .card--text.has-status.audio-expired,.card.card--text.has-status
+        min-width:90px
+   @728810 .card--text.pin-react.audio-expired,.card.card--text.pin-react
+        min-width:60px
+
+## .chat-message-v2 .card  rules=2
+   @721295 .chat-message-v2.multi-select-mode-selected .audio-expired,.chat-message-v2.multi-select-mode-selected .card
+        background-color:var(--blue-message-selected)
+   @721907 .chat-message-v2 .card-send-time
+        margin-top:4px
+
+=== .card token usage (all rules whose selector is .card-ish) ===
+  
+
+=== js className emitting the bubble "card" wrapper ===
+  "\"card " occ=1
+    @1088030: "lse if(y.msgType===u.MSG_PHOTO_GROUP&&y.message&&y.message.length)for(let e=0;e<y.message.length;e++){let t=y.message[e];if(t&&t.reacts&&t.reacts.reactions&&(G=f.default.mapHasItem(t.reacts.reactions),G))break}this.props.isMultiSel&&y&&y.msgType!=u.MSG_PHOTO_GROUP&&y.msgType!=u.MSG_PHOTO&&(y.msgType,u.MSG_VIDEO);let V=\"card \"+(Object(Ee.a)().ENABLE_REACTION_V2?\"card-with-reaction-v2 \":\"\"),H=(\"0\"==y.fromUid?\" me \":\"\")+(j?\" pin-react \":\"\")+(G?\" card-has-react \":\"\")+(this.props.isLast||y.status==u.MSG_FAIL?\" last-msg\":\"\")+(this.props.shouldShowStatus?\" has-status \":\"\")+(this.props.senderName&&P&&\"0\"!=y.fromUid&&this.props.isFirst?\" sho"
+  "\"card\"" occ=7
+    @187149: "(f.className||\"\").includes(\"ci-th__thumb\")))()&&!e()&&this.state.message&&this.state.message.message&&this.state.message.message.title||(n=\"STR_COPY_PHOTO\",Dn||D||K||M||x||h.default.isPhotoStickerMessage(d)?n=null:Se=!0)}if(et===m.MSG_CONTACT&&\"recommened.link\"===d.message.action){const e=()=>{a&&(a.classList.contains(\"card\")||(a.className.includes(\"text-is-card-link\")?X={textKey:\"STR_COPY_LINK\",onclick:this._handleCopyLink,icon:c?\"Copy_24_Line\":\"\"}:(a=a.parentElement,e())))};e()}if(!J||J&&\"STR_COPY_TEXT\"!==n)if(n)if(S);else q=!0===Boolean(null===(bt=A.default.chat_list)||void 0===bt||null===(Tt=bt.message)||void 0===Tt||null===(yt="
+    @830196: ":[(null==a?void 0:a.total)||s.length]}),i.a.createElement(At,null))}),n>1)for(let t=0;t<s.length;t+=n)e.push({sectionType:\"received\",uiType:\"group-card\",content:i.a.createElement(Ct,{columnCount:n},s.slice(t,t+n).map((e=>i.a.createElement(Ot,{itemId:e,key:e}))))});else{const t=s.map((e=>({sectionType:\"received\",uiType:\"card\",content:i.a.createElement(Ot,{itemId:e,key:e})})));e.push(...t)}return null!=a&&a.hasMore&&s.length&&e.push({uiType:\"view-more\",sectionType:\"received\",content:i.a.createElement(wt,{onClick:c})}),e}),[n,s,a]);return i.a.createElement(\"div\",{className:\"group-invitation__content\"},null!=a&&a.loading?i.a.createEleme"
+    @5126629: "ShortLink:q}=Object(d.c)(V.description),X=Object(d.k)(z),J=t,Z=Object(d.e)(z,R.userId),$=Object(d.g)(V.action),ee=Object(d.f)(G),te=Object(d.l)(),[ne,ae]=Object(s.useState)(!0),{isCertificatedOA:ie}=b({oaUserId:$?V.params:\"\"}),re=Object(m.a)(\"name-card bubble-contact-card-container\",!te&&\"off--qr-code\"),se=Object(m.a)(\"card\",H&&\"me\",v&&\"prevent--event\",\"card--business\",\"bubble-contact-card\",$&&\"is--oa\",w),oe=Object(m.a)(\"content\",$&&\"is--oa\"),le=Object(m.a)(\"user-info-wrapper\",!Y&&!q&&\"none--extra__info\",!te&&\"off--qr-code\"),ce=Object(m.a)(\"user-info\",!te&&\"off--qr-code\"),de=Object(m.a)(\"qr-code\"),ue=Object(m.a)(\"footer\",$&&\"is--oa\""
+  "\"card--text" occ=2
+    @1094059: ".props.lastMsgIdFromFriend,y.msgId),getExtraButtonsLength:()=>ye.length}),thread:K,shouldShowStatus:this.props.shouldShowStatus,messageStatusIndicator:le,conversation:this.props.conversation},Re=null,Oe=null;var Ce;if(y)if(Object(Ze.f)(y)===u.MSG_E2EE_FAILED)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(ta.a,{isGroup:!(null===(Ce=this.props.conversation)||void 0===Ce||!Ce.isGroup),fromUid:null==y?void 0:y.fromUid}));else if(Object(Ze.f)(y)===u.MSG_E2EE_PENDING)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(na.a,null));else{if(null===y.mess"
+    @1094313: "ILED)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(ta.a,{isGroup:!(null===(Ce=this.props.conversation)||void 0===Ce||!Ce.isGroup),fromUid:null==y?void 0:y.fromUid}));else if(Object(Ze.f)(y)===u.MSG_E2EE_PENDING)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(na.a,null));else{if(null===y.message||void 0===y.message)return f.default.log(y),null;{var Ne;let t=null;y.isErrorInfo||(t=this._imageClickHandler);let n=y.message&&y.message.message?y.message.message:y.message;if((y.msgType===u.MSG_PHOTO||y.msgType===u.MSG_DOODLE||y.msgType===u.MSG_CON"
+  "card--text" occ=4
+    @1094060: "props.lastMsgIdFromFriend,y.msgId),getExtraButtonsLength:()=>ye.length}),thread:K,shouldShowStatus:this.props.shouldShowStatus,messageStatusIndicator:le,conversation:this.props.conversation},Re=null,Oe=null;var Ce;if(y)if(Object(Ze.f)(y)===u.MSG_E2EE_FAILED)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(ta.a,{isGroup:!(null===(Ce=this.props.conversation)||void 0===Ce||!Ce.isGroup),fromUid:null==y?void 0:y.fromUid}));else if(Object(Ze.f)(y)===u.MSG_E2EE_PENDING)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(na.a,null));else{if(null===y.messa"
+    @1094314: "LED)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(ta.a,{isGroup:!(null===(Ce=this.props.conversation)||void 0===Ce||!Ce.isGroup),fromUid:null==y?void 0:y.fromUid}));else if(Object(Ze.f)(y)===u.MSG_E2EE_PENDING)x=!1,Y=l.a.createElement(\"div\",{className:Object(C.a)(V,k,pe,\"card--text\")},l.a.createElement(na.a,null));else{if(null===y.message||void 0===y.message)return f.default.log(y),null;{var Ne;let t=null;y.isErrorInfo||(t=this._imageClickHandler);let n=y.message&&y.message.message?y.message.message:y.message;if((y.msgType===u.MSG_PHOTO||y.msgType===u.MSG_DOODLE||y.msgType===u.MSG_CONT"
+    @1098218: "onversation.userId,isLast:this.props.isLast,messageContainerWidth:this.props.containerWidth,isOA:t,emitter:this.props.emitter},Se));break}if(f.default.validUpdateMessage(y)){Y=l.a.createElement(R,{key:L,dispatch:this.props.dispatch,updateData:y.__updateData,content:this._renderHtmlMessage(y.content,null),className:V+\" card--text card--update-msg\"+k+pe});break}if(this.props.startGameMode){if(f.default.validRequestPlayGameMessage(this.props.conversation,y)){let e=y.message;Y=l.a.createElement(E,{key:L,requestGame:!0,startGameMode:()=>{this.props.startGameMode(!1,e)},className:V+k+pe});break}{let e=f.default.validGameMessage(this.props"
+
+=== is there a .card class in the message bundle (+ISi 85954..662330)? ===
+  "\"card"=9 "card "=5 "msg-footer"=0 "bubble-message-time-status"=1 "message-reaction-container"=0 "chat-message-v2"=1

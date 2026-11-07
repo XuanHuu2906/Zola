@@ -1,0 +1,377 @@
+=== chat shell id render sites ===
+
+## #chatView  occ=1
+  @11131111
+  "s.Component.TEXT_CONTAINER}\"]`))})()&&K.a.isProtected(V,x,{showToast:!0}))t=!0;else{const e=performance.now(),{isHandled:n,content:i,shortLinkCount:r}=Object(kd.a)(F);jd.zsymb(3,\"8ANMy_\",[\"Handled copy execution time: {} ms\",\"Op9_wf\"],performance.now()-e),n&&(a(\"9g0B\").copyTextToClipboard(i),t=!0,r&&R.default.logAction(2080204))}t&&e.preventDefault()}},tabIndex:1},Ye?l.a.createElement(M,{selfWindow:F,close:()=>{Qe(null)},options:Ye.options,containerId:\"messageViewContainer\",positionX:Ye.positionX,positionY:Ye.positionY}):null,l.a.createElement(H,{windowId:x}),l.a.createElement(El,{onBackConvList:Dt,_dragEnd:zd,_dragOver:Hd,chatController:le,compactLv:Ne,superCompact:Me,dispatch:t.dispatch,user:t.user,conversation:t.conversation,showMember:Lt,emitter:re,groupInfo:t.groupInfo,friendInfo:t.friendInfo,focusDetector:t.focusDetector}),l.a.createElement(\"article\",Object(i.a)({ref:Ce.articleRef,id:\"chatView\"},Bt,{onClick:le._readMessage,className:\"rel\"}),l.a.createElement(Od,{myId:t.user.userId,convId:V,avatarUrl:t.conversation.isGroup?null===(C=t.groupInfo)||void 0===C?void 0:C.avatar:null===(N=t.friendInfo)||void 0===N?void 0:N.avatar,isFriendConv:!!t.friendInfo&&0!=t.friendInfo.isFr}),fe.current?l.a.createElement(\"canvas\",{width:ge.current,id:\"effectcanvas\",height:fe.current,style:{display:\"none\",zIndex:\"9999\",position:\"fixed\"}}):null,Pt?l.a.createElement(\"div\",{id:\"effectdiv\",style:Pt}):null,!u.default.search_message.in_chat.enable_ux_enhance&&l.a.createElement(Hl,{windowId:x,chatController:le,searchToolRef:Ce.searchToolRef,isChildWindow:De,selfWindow:F,dispatch:t.dispatch,conversation:t.conversation}),Fe?l.a.createElement(f,{convId:V,leaveType:Fe}):l.a.createElement(m.a,{windowId:x,key:\"_chatboxlist_\",uploadFiles:le._uploadFile,uploadFilesNative:le._onUploadFileClick,resendHandler:le._resendMessage,sendMessage:le._sendMessage,sendSticker:le._sendSticker,replyMessage:le._replyMessage,recallMessage:le._recallMessage,deleteMessage:vt,onCallCallback:Mt,startGameMode:It,sha"
+
+## #chatViewContainer  occ=1
+  @11129706
+  "dMessage(d.MSG_TEXT,e,[],!1,!1));else{let t=y.a.getDragString(e);t!=e?le._handlerInsertTextMessage(t,!0):le._handlerInsertTextMessage(e,!0)}}));g.length&&gt(g,l),p.length&&gn.ModalManagerV2.openModal({windowId:x,name:d.ModalIdentitiesDefine.E2EE_LIMIT_FILE_SIZE,onAfterOpen:null,params:{mode:\"upload\",files:p}})}else i.files.length>u.default.maxNumberOfFile?le._notifySendTooManyFile():le._checkBroadcastMessageLimit(n,i.files)?le._notifySendTooManyFile(1):gt(i.files,l);le.updateMouseOverChatInputState(!1)}},onDragOver:Hd,onDragEnd:zd},jt=()=>{const e=le._getInputboxRef();e&&e._quitCommandMode()},Gt=l.a.createElement(l.a.Fragment,null,kt,l.a.createElement(Yl,{windowId:x,convId:V,conversation:t.conversation,emitter:re,chatController:le,groupInfo:t.groupInfo,friendInfo:t.friendInfo,isFormattingText:Nt()}),l.a.createElement(\"div\",{className:\"main__center flx flx-col flx-1 animated w0\",style:Re,id:\"chatViewContainer\",onKeyDown:e=>{if((e.ctrlKey||e.metaKey)&&\"c\"===e.key){let t=!1;if(le._chatBoxList&&je)R.default.logAction(152010240),le._chatBoxList.copyMultiMsg(),t=!0;else if((()=>{const e=F.getSelection?F.getSelection():null;if(!e||0===e.rangeCount)return!1;const t=e.getRangeAt(0);if(t.collapsed)return!1;const n=t.commonAncestorContainer,a=n&&n.nodeType===d.Node.ELEMENT_NODE?n:n&&n.parentElement;return!(!a||\"function\"!=typeof a.closest)&&Boolean(a.closest(`[data-component=\"${d.DataAttributes.Component.TEXT_CONTAINER}\"]`))})()&&K.a.isProtected(V,x,{showToast:!0}))t=!0;else{const e=performance.now(),{isHandled:n,content:i,shortLinkCount:r}=Object(kd.a)(F);jd.zsymb(3,\"8ANMy_\",[\"Handled copy execution time: {} ms\",\"Op9_wf\"],performance.now()-e),n&&(a(\"9g0B\").copyTextToClipboard(i),t=!0,r&&R.default.logAction(2080204))}t&&e.preventDefault()}},tabIndex:1},Ye?l.a.createElement(M,{selfWindow:F,close:()=>{Qe(null)},options:Ye.options,containerId:\"messageViewContainer\",positionX:Ye.positionX,positionY:Ye.positionY}):null,l.a.createElement(H,{windowId:x}),l.a.createElement(El,{onBackC"
+
+## #messageView  occ=2
+  @653837
+  "setEmitter(N,this.props.emitter);!function(e){if(e&&e.length>0)for(let t=0;t<e.length;t++)if(\"0\"==e[t].fromUid&&(e[t].status===m.MSG_SENT||e[t].status===m.MSG_SEEN||e[t].status===m.MSG_DELIVERED))return!0}(this.props.messages);let ze=Ge;const Ke=this.state.isProtectedContent?\"STR_BLOCK_SHARING_ACTION_BLOCKED\":this.state.simpleMulChip?\"STR_COPY_0\":null,We=this.state.isProtectedContent?\"STR_BLOCK_SHARING_ACTION_BLOCKED\":this.state.simpleMulChip?\"STR_FORWARD\":null,Ye=this.state.isProtectedContent?\"STR_BLOCK_SHARING_ACTION_BLOCKED\":this.state.simpleMulChip?\"STR_DOWNLOAD_FILE\":null;if(this.selectedMsg)for(let i in this.selectedMsg)if(this.selectedMsg.hasOwnProperty(i)){let e=this.selectedMsg[i];if(e&&e.isErrorInfo){ze=!1;break}}U.length&&!x.a.isUsingNewThreadBuilder()&&(G.push(o.a.createElement(Ls,{key:z,windowId:this.windowId,threads:U,currentKey:z})),U=[]);const Qe=o.a.createElement(\"div\",{id:\"messageView\",className:\"message-view \"+(this.props.isMultiSel?\" message-view-multiple-selection\":\" \"),ref:this._handleListContainerRef,onContextMenu:this._onContextMenu.bind(this),onDrop:this._closeOverLayMessageView.bind(this,!0),onDragLeave:this._closeOverLayMessageView.bind(this,!1),tabIndex:\"21\",onDragEnter:this._onDragEnterMessageView.bind(this)},o.a.createElement(eo.a,{ref:this._chatBoxBannerRef,windowId:this.windowId,convId:null===(p=this.props.conversation)||void 0===p?void 0:p.userId,chatBoxBannerState:this.props.chatBoxBannerState,confirm:this.props.confirm}),o.a.createElement(\"div\",{key:\"domv\",id:\"dragOverlayMessageView\",ref:e=>this._dragOverlay=e,className:\"drag-media-overlay\"},o.a.createElement(Xt.a,{textKey:\"STR_QUICK_SEND\",className:\"drag-title\",tagName:\"div\"}),o.a.createElement(Xt.a,{textKey:\"STR_DROP_FILE_HERE\",className:\"drag-desc\",tagName:\"div\"})),o.a.createElement(\"div\",{style:{width:\"100%\",height:\"100%\",position:\"relative\"}},o.a.createElement(H.a,null,o.a.createElement(Bl.b,{convId:N,isGroup:this.props.conversation.isGroup,isMuted:this.props.conversation.mute"
+  @10708217
+  "a},VKme:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return a}));const a=\"SYNC_2_UPDATE_CONVERSATION_PREVIEW\"},VLIp:function(e,t,n){\"use strict\";var a=n(\"/5dN\");n.d(t,\"ReminderBoardItem\",(function(){return a.a}));n(\"HP59\"),n(\"m8B2\"),n(\"XSft\")},VLUZ:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return a}));n(\"SUjh\"),n(\"JevH\");let a=function(e){return e[e.FAIL=0]=\"FAIL\",e[e.SUCCESS=1]=\"SUCCESS\",e}({})},VLvn:function(t,n,a){\"use strict\";var i=a(\"wx14\"),r=a(\"VTBJ\"),s=a(\"To31\"),o=a(\"q1tI\"),l=a.n(o),c=a(\"z0WU\"),d=a(\"1pet\"),u=a(\"NDmK\"),A=a(\"u0hE\"),h=a(\"lCMA\"),m=a(\"+ISi\"),p=a(\"jDHv\"),g=a(\"yzMR\");function f(e){const{convId:t,leaveType:n}=e;if(!t||!n)return null;const a=Object(o.useCallback)((()=>{p.ModuleContainer.resolve(g.ConversationOperation).deleteConversation(t,{isForceDelete:!0,isDisableSync:!0,source:\"client\",functionName:\"chat-box-list\"})}),[]);return l.a.createElement(\"div\",{id:\"messageView\",className:\"message-view\",style:{justifyContent:\"end\",paddingBottom:24}},l.a.createElement(\"div\",{className:\"message-info mt-16\"},l.a.createElement(\"div\",{className:\"message-info_content\"},l.a.createElement(\"div\",{className:\"message-info_text\"},l.a.createElement(h.a,{textKey:\"kick\"===n?\"STR_KICK_GROUP_MSG\":\"STR_DISBAND_GROUP_MSG\",tagName:\"span\",postText:\" \"}),l.a.createElement(h.a,{textKey:\"STR_DELETE_CONVERSATION\",tagName:\"span\",className:\"lockSendMessageBox--hightlight clickable\",onClick:a})))))}var _=a(\"vqHl\"),E=a(\"BZLJ\"),v=a(\"DPHK\"),I=a(\"UiPd\"),b=a(\"c51z\"),T=a(\"P6UB\"),y=a(\"9x5b\"),S=(a(\"QtIj\"),a(\"Ydol\")),R=a(\"Yi2m\"),O=a(\"PoHQ\"),C=a(\"17x9\"),N=a.n(C);class w extends l.a.Component{constructor(e){super(e),this._pageClick=this._pageClick.bind(this),this._handleScroll=this._handleScroll.bind(this),this.selfWindow=e.selfWindow||window}componentDidMount(){if(this.selfWindow.addEventListener(\"click\",this._pageClick,!1),this.props.containerId){const e=this.selfWindow.document.getElementById(this.props.containerId);e&&e.addEventListener(\"scroll\",this._handleScroll,!this.selfW"
+
+## #messageViewContainer  occ=1
+  @655016
+  "nd(this,!1),tabIndex:\"21\",onDragEnter:this._onDragEnterMessageView.bind(this)},o.a.createElement(eo.a,{ref:this._chatBoxBannerRef,windowId:this.windowId,convId:null===(p=this.props.conversation)||void 0===p?void 0:p.userId,chatBoxBannerState:this.props.chatBoxBannerState,confirm:this.props.confirm}),o.a.createElement(\"div\",{key:\"domv\",id:\"dragOverlayMessageView\",ref:e=>this._dragOverlay=e,className:\"drag-media-overlay\"},o.a.createElement(Xt.a,{textKey:\"STR_QUICK_SEND\",className:\"drag-title\",tagName:\"div\"}),o.a.createElement(Xt.a,{textKey:\"STR_DROP_FILE_HERE\",className:\"drag-desc\",tagName:\"div\"})),o.a.createElement(\"div\",{style:{width:\"100%\",height:\"100%\",position:\"relative\"}},o.a.createElement(H.a,null,o.a.createElement(Bl.b,{convId:N,isGroup:this.props.conversation.isGroup,isMuted:this.props.conversation.muted||Kt.default.isMuted(this.props.conversation.userId)})),o.a.createElement(ic,{id:\"messageViewContainer\",className:\" message-view__scroll \"+(this.props.isMultiSel&&!this.state.preventShowActionBox?\"message-view__scroll--shrink\":\"\"),key:\"message-view__scroll\",contentContainerClassName:\"transform-gpu\",autoHide:!0,noHScroll:!0,selfWindow:this._window,onWheel:this.onWheel,onClick:this._onChatBoxListClick.bind(this),onMouseMove:this._onChatBoxListMove.bind(this),onMouseLeave:this._onMouseLeave,ref:this.handleListScrollContainerRef,onScroll:this.handleScroll,onDrag:this.handleDrag,onDragEnd:this.handleDragEnd},De,o.a.createElement(\"div\",{id:Ds.c}),o.a.createElement(Wn,{id:\"messageViewScroll\",ref:this._handleScrollContainerRef,className:Object(u.a)(\"message-view__scroll__inner\",\"--audit-message-spacing\",this.isLessSpaceBottom()&&\"--less-space\",\"preview-ts \"),key:\"mv__inner_\"+this.props.conversation.userId},ce,de,he?o.a.createElement(qt,{key:\"top-loader-\"+this.props.conversation.userId,onHide:this.onHideLoadingTopIndicator,onShow:this.onShowLoadingTopIndicator,updateShowSpinner:this._updateShowSpinner,delay:(null===(g=this.props.messages)||void 0===g?void 0:g.length)<5"
+
+## #messageViewScroll  occ=1
+  @655609
+  "e:\"div\"})),o.a.createElement(\"div\",{style:{width:\"100%\",height:\"100%\",position:\"relative\"}},o.a.createElement(H.a,null,o.a.createElement(Bl.b,{convId:N,isGroup:this.props.conversation.isGroup,isMuted:this.props.conversation.muted||Kt.default.isMuted(this.props.conversation.userId)})),o.a.createElement(ic,{id:\"messageViewContainer\",className:\" message-view__scroll \"+(this.props.isMultiSel&&!this.state.preventShowActionBox?\"message-view__scroll--shrink\":\"\"),key:\"message-view__scroll\",contentContainerClassName:\"transform-gpu\",autoHide:!0,noHScroll:!0,selfWindow:this._window,onWheel:this.onWheel,onClick:this._onChatBoxListClick.bind(this),onMouseMove:this._onChatBoxListMove.bind(this),onMouseLeave:this._onMouseLeave,ref:this.handleListScrollContainerRef,onScroll:this.handleScroll,onDrag:this.handleDrag,onDragEnd:this.handleDragEnd},De,o.a.createElement(\"div\",{id:Ds.c}),o.a.createElement(Wn,{id:\"messageViewScroll\",ref:this._handleScrollContainerRef,className:Object(u.a)(\"message-view__scroll__inner\",\"--audit-message-spacing\",this.isLessSpaceBottom()&&\"--less-space\",\"preview-ts \"),key:\"mv__inner_\"+this.props.conversation.userId},ce,de,he?o.a.createElement(qt,{key:\"top-loader-\"+this.props.conversation.userId,onHide:this.onHideLoadingTopIndicator,onShow:this.onShowLoadingTopIndicator,updateShowSpinner:this._updateShowSpinner,delay:(null===(g=this.props.messages)||void 0===g?void 0:g.length)<5?A.default.cloud.loading_first_timer||5e3:void 0}):null,G,ye,me?o.a.createElement(qt,{key:\"bottom-loader-\"+this.props.conversation.userId,className:\"pb-0\",delay:A.default.cloud.loading_first_timer||5e3}):null)),He,o.a.createElement(pl,{ref:this.topNavFloatingContainerRef},this.unreadMsgConfigVersion>=1?o.a.createElement(bl,{ref:this.unreadMsgBtnRef,chatId:null===(f=this.props.conversation)||void 0===f?void 0:f.userId,getFirstUnreadMsgId:e=>{var t;return e===(null===(t=this.props.conversation)||void 0===t?void 0:t.userId)?this.state.firstUnreadMsgId:void 0},onClick:this.onUnreadMessagesF"
+
+=== CSS rules on chat shell ids ===
+
+## #chatView rules=0
+
+## #chatViewContainer rules=0
+
+## #messageView rules=2
+  @917620 #messageViewContainer
+       flex:1 1 auto;transition:.2s ease-out
+  @917680 #messageViewContainer .chat-item .avatar--overlay
+       z-index:1
+
+## #messageViewContainer rules=2
+  @917620 #messageViewContainer
+       flex:1 1 auto;transition:.2s ease-out
+  @917680 #messageViewContainer .chat-item .avatar--overlay
+       z-index:1
+
+## #messageViewScroll rules=0
+
+=== sibling structure inside chatViewContainer ===
+  "id:\"chatViewContainer\",onKeyDown:e=>{if((e.ctrlKey||e.metaKey)&&\"c\"===e.key){let t=!1;if(le._chatBoxList&&je)R.default.logAction(152010240),le._chatBoxList.copyMultiMsg(),t=!0;else if((()=>{const e=F.getSelection?F.getSelection():null;if(!e||0===e.rangeCount)return!1;const t=e.getRangeAt(0);if(t.collapsed)return!1;const n=t.commonAncestorContainer,a=n&&n.nodeType===d.Node.ELEMENT_NODE?n:n&&n.parentElement;return!(!a||\"function\"!=typeof a.closest)&&Boolean(a.closest(`[data-component=\"${d.DataAttributes.Component.TEXT_CONTAINER}\"]`))})()&&K.a.isProtected(V,x,{showToast:!0}))t=!0;else{const e=performance.now(),{isHandled:n,content:i,shortLinkCount:r}=Object(kd.a)(F);jd.zsymb(3,\"8ANMy_\",[\"Handled copy execution time: {} ms\",\"Op9_wf\"],performance.now()-e),n&&(a(\"9g0B\").copyTextToClipboard(i),t=!0,r&&R.default.logAction(2080204))}t&&e.preventDefault()}},tabIndex:1},Ye?l.a.createElement(M,{selfWindow:F,close:()=>{Qe(null)},options:Ye.options,containerId:\"messageViewContainer\",positionX:Ye.positionX,positionY:Ye.positionY}):null,l.a.createElement(H,{windowId:x}),l.a.createElement(El,{onBackConvList:Dt,_dragEnd:zd,_dragOver:Hd,chatController:le,compactLv:Ne,superCompact:Me,dispatch:t.dispatch,user:t.user,conversation:t.conversation,showMember:Lt,emitter:re,groupInfo:t.groupInfo,friendInfo:t.friendInfo,focusDetector:t.focusDetector}),l.a.createElement(\"article\",Object(i.a)({ref:Ce.articleRef,id:\"chatView\"},Bt,{onClick:le._readMessage,className:\"rel\"}),l.a.createElement(Od,{myId:t.user.userId,convId:V,avatarUrl:t.conversation.isGroup?null===(C=t.groupInfo)||void 0===C?void 0:C.avatar:null===(N=t.friendInfo)||void 0===N?void 0:N.avatar,isFriendConv:!!t.friendInfo&&0!=t.friendInfo.isFr}),fe.current?l.a.createElement(\"canvas\",{width:ge.current,id:\"effectcanvas\",height:fe.current,style:{display:\"none\",zIndex:\"9999\",position:\"fixed\"}}):null,Pt?l.a.createElement(\"div\",{id:\"effectdiv\",style:Pt}):null,!u.default.search_message.in_chat.enable_ux_enhance&&l.a.createElement(Hl,{windowId:x,chatController:le,searchToolRef:Ce.searchToolRef,isChildWindow:De,selfWindow:F,dispatch:t.dispatch,conversation:t.conversation}),Fe?l.a.createElement(f,{convId:V,leaveType:Fe}):l.a.createElement(m.a,{windowId:x,key:\"_chatboxlist_\",uploadFiles:le._uploadFile,uploadFilesNative:le._onUploadFileClick,resendHandler:le._resendMessage,sendMessage:le._sendMessage,sendSticker:le._sendSticker,replyMessage:le._replyMessage,recallMessage:le._recallMessage,deleteMessage:vt,onCallCallback:Mt,startGameMode:It,shareMessage:Et,ref:Ce.chatBoxListRef,focusChat:le._focus,showStickerSet:le._showStickerSet,conversation:Ae,loadMoreMessages:le._loadMoreMessages,loadMoreMessageBottom:le._loadMoreMessageBottom,loadLastMessages:le._getLastChatMessages,user:t.user,mutualGroup:Ve,dispatch:t.dispatch,emitter:re,messages:t.state.messages,showingLastMsg:t.showingLastMsg,sendRecommendPC:le.sendRecommendPC,handleSelection:yt,getSelectedText:Rt,confirm:t.confirm,status:t.status,showAddMembers:le.doShowAddMember,addInp"
+
+=== class literals inside chat shell region ===
+  group-error                                    4
+  main__center                                   1
+  flx                                            1
+  flx-col                                        1
+  flx-1                                          1
+  animated                                       1
+  w0                                             1
+  rel                                            1
+
+=== .message-view / .message-view__* css ===
+  rules=148
+  @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-butt
+       cursor:pointer
+  @113280 #zalo,.avatar-img,.avatar-img.avatar-number-m,.bg-center,.card--link-img,.card--link-img.default,.chat-box-input__img-preview__thumb,.ci-err>.ci-err__center>.ci-err__svg-
+       background-repeat:no-repeat;background-size:cover;background-position:50%
+  @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.messa
+       box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+  @259127 #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#calendar-v3>.cal-title .main-title .subtitle.ena-clickable:hove
+       color:var(--text-information)
+  @273494 #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-item:hover,#calendar-v3>.cal-title .main-title .item-chat-lab
+       transform:scaleX(3)
+  @277855 #addConversationLabel .conversation-list__label.autosuggest-item:hover,#calendar-v3>.cal-content .conversation-list__label.cal-item:hover,#calendar-v3>.cal-title .main-ti
+       color:var(--text-information)
+  @486836 #addConversationLabel [for=chat_info_file].autosuggest-item>span,#calendar-v3>.cal-content [for=chat_info_file].cal-item>span,#calendar-v3>.cal-title .main-title [for=cha
+       color:var(--text-information)
+  @497934 .message-view__banner:not(.hidden)~.btn-jump-up
+       --msg-banner-height:45px
+  @784007 .group-topic:before,.message-view__banner:before,.msgbannerbf
+       position:absolute;content:" ";border-bottom:1px solid var(--divider-bold);bottom:-1px;width:100%
+  @784624 .message-view
+       flex:1 0 auto;overflow:hidden;position:relative;display:flex;flex-direction:column
+  @784721 .message-view:focus
+       outline:none
+  @784754 .message-view:after
+       position:absolute;top:0;border-top:1px solid var(--divider-bold);content:"";width:100%;z-index:4
+  @784871 .message-view__fadeIn
+       position:absolute;width:100%;height:100%;z-index:3
+  @784944 .message-view__blur
+       position:absolute;top:0;left:0;bottom:0;right:0;background-color:var(--NG10);z-index:-2;width:100%;height:100%;contain:strict
+  @785090 .message-view__blur__overlay
+       position:absolute;content:"";width:100%;height:100%;background:hsla(0,2%,90%,.43);z-index:-1;contain:strict
+  @785227 .message-view__blur__overlay_noavatar
+       position:absolute;content:"";width:100%;height:100%;background:var(--layer-background-CSC);z-index:-1
+  @785367 .message-view__scroll
+       position:relative;flex:1 0 auto;contain:layout style size;bottom:0
+  @785456 .message-view__scroll--shrink
+       bottom:10px
+  @785498 .message-view__scroll__inner
+       min-height:100%;display:flex;padding-bottom:28px;flex-direction:column;justify-content:flex-end;contain:layout style
+  @785644 .message-view__scroll__inner.--audit-message-spacing
+       padding-bottom:24px
+  @785717 .message-view__scroll__inner.--less-space
+       padding-bottom:20px
+  @785779 .message-view__warning__title
+       font-size:.8125rem;font-weight:500;line-height:1.5
+  @785860 .message-view__warning__desc
+       font-size:.75rem;font-weight:400;line-height:1.5;color:var(--text-secondary);margin-right:8px
+  @785983 .message-view__warning__btn
+       margin-right:8px;min-width:fit-content!important
+  @786060 .message-view__banner
+       flex:none;position:relative;z-index:3;width:100%;right:0;display:flex;height:50px;text-align:center;background-color:var(--layer-background);color:var(--text-primary);align-items:center;justify-content:center
+  @786291 .message-view__banner:before
+       right:0
+  @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stran
+       border-color:var(--border-focused);color:var(--text-information)
+  @835764 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block:hover,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner
+       background:var(--background-activeness);color:var(--WA100)
+  @888074 .message-view__banner__btn
+       font-size:.875rem;font-weight:400;line-height:1.5;margin-left:10px;cursor:pointer;border:1px solid var(--border);padding:2px 5px;border-radius:2px
+  @888248 .message-view__banner__btn:hover
+       background:var(--WA100);color:var(--text-secondary)
+  @888333 .message-view__banner__btn-v2.invert
+       color:var(--text-on-color)!important;border-color:var(--text-on-color)!important
+  @888451 .message-view__banner__btn-v2.invert:hover
+       background:var(--WA50)!important
+  @888527 .message-view__banner--heightMutualGroup
+       height:42px;z-index:4;cursor:default
+  @888605 .message-view__banner__view-more
+       font-size:1.5rem;font-weight:400;line-height:1.5;width:37px;cursor:pointer
+  @888713 .message-view__banner__text
+       font-size:.8125rem;font-weight:400;line-height:1.5;text-align:center;margin-left:15px;margin-right:15px;min-width:200px;text-shadow:0 0 0 var(--BA80)
+  @888891 .recommend-pc .message-view__banner__text
+       font-size:.875rem;font-weight:400;line-height:1.5;margin-right:0
+  @888998 .message-view__banner__text__warning
+       white-space:nowrap;overflow:hidden;text-overflow:ellipsis
+  @889093 .message-view__banner__text__bell
+       position:relative;top:3px;left:-7px;font-size:.875rem;width:.875rem;height:.875rem;line-height:0
+  @889224 .message-view__banner.recommend-pc
+       color:var(--WA100);font-weight:var(--medium)
+  @889304 .message-view__banner.recommend-pc>.func-close
+       position:absolute;right:10px;cursor:pointer;font-size:.75rem;width:.75rem;height:.75rem;line-height:0
+  @889453 .message-view__banner.recommend-pc>.func-close:hover
+       color:var(--WA100)
+  @889525 .message-view__banner .recommend-pc__button
+       padding:3px 16px;margin-left:7px;margin-right:30px;border-radius:4px;background-color:var(--WA100);color:var(--text-information);cursor:pointer
+  @889713 .message-view__banner .recommend-pc__button:hover
+       background-color:var(--WA80)
+  @889792 .message-view__banner__src
+       display:inline-block
+  @889840 .message-view__banner__src:first-letter
+       text-transform:lowercase
+  @889905 .message-view__banner__group-btn
+       cursor:pointer
+  @889953 .message-view__banner--no-mutualGroup
+       background:var(--background-activeness);color:var(--WA100);cursor:default
+  @890065 .message-view__banner--no-mutualGroup>.message-view__banner__icon-accept
+       color:var(--WA100)
+  @890157 .message-view__banner--no-mutualGroup .message-view__banner__icon-accept
+       display:none
+  @890243 .message-view__banner--no-mutualGroup .message-view__banner__text-no-mutual-group
+       line-height:34px;margin-right:6px;font-size:.875rem;font-weight:400;line-height:1.5
+  @890409 .message-view__banner--no-mutualGroup .message-view__banner__group-btn:hover
+       cursor:pointer
+  @890501 .message-view__banner--no-mutualGroup .message-view__banner__group-btn:hover .message-view__banner--text-accept,.message-view__banner--no-mutualGroup .message-view__banne
+       color:var(--WA100);background:var(--background-activeness);border-radius:4px;border-color:var(--border-focused)
+  @890825 .message-view__banner--no-mutualGroup .message-view__banner--text-accept
+       font-size:.875rem;font-weight:400;line-height:1.5;line-height:23px;height:24px
+  @890977 .message-view__banner--no-mutualGroup .txt-add-friend-banner
+       border:1px solid;padding:1px 8px 2px;border-radius:4px;font-size:.875rem;font-weight:400;line-height:1.5;line-height:19px;width:max-content
+  @891178 .message-view__banner--no-mutualGroup .txt-info-stranger
+       font-size:.875rem;font-weight:400;line-height:1.5;word-break:break-word
+  @891307 .message-view__banner--mutualGroup,.message-view__banner--no-message-mutualGroup,.message-view__banner__request
+       color:var(--text-information);cursor:default
+  @891464 .message-view__banner--mutualGroup .message-view__banner__icon-accept,.message-view__banner--no-message-mutualGroup .message-view__banner__icon-accept,.message-view__bann
+       color:var(--text-information);top:8px;font-size:1.125rem;font-weight:400;line-height:1.5
+  @891770 .message-view__banner--mutualGroup .message-view__banner--text-accept,.message-view__banner--no-message-mutualGroup .message-view__banner--text-accept,.message-view__bann
+       border:none;padding:0;border-radius:0;margin-left:0;font-size:.875rem;font-weight:400;line-height:1.5
+  @892089 .message-view__banner--mutualGroup .txt-add-friend-banner,.message-view__banner--no-message-mutualGroup .txt-add-friend-banner,.message-view__banner__request .txt-add-fri
+       font-size:.875rem;font-weight:400;line-height:1.5;width:max-content
+  @892338 .message-view__banner--mutualGroup .fa-icn-addfriend.message-view__banner__icon-accept,.message-view__banner--no-message-mutualGroup .fa-icn-addfriend.message-view__banne
+       top:0
+  @892612 .message-view__banner--no-message-mutualGroup
+       background:var(--N80);color:var(--WA100);cursor:default
+  @892714 .message-view__banner--no-message-mutualGroup .message-view__banner__icon-accept
+       color:var(--WA100);font-size:1.125rem;font-weight:400;line-height:1.5
+  @892865 .message-view__banner--no-message-mutualGroup .fa-icn-addfriend.message-view__banner__icon-accept
+       top:0
+  @892969 .message-view__banner--no-message-mutualGroup .txt-add-friend-banner
+       font-size:.875rem;font-weight:400;line-height:1.5;width:max-content
+  @893106 .message-view__banner--no-message-mutualGroup:before
+       border-bottom:none
+  @893178 .message-view__banner__request .txt-add-friend-banner
+       width:max-content
+  @893250 .message-view__banner__request .message-view__banner__view-more
+       position:absolute;right:0;top:0;bottom:0;margin:auto;height:23px
+  @893379 .message-view__banner__request
+       cursor:default
+  @893425 .message-view__banner__request .message-view__banner__icon-accept
+       font-size:1.125rem;font-weight:400;line-height:1.5
+  @893542 .message-view__banner__request .fa-icn-addfriend.message-view__banner__icon-accept
+       color:var(--text-information);top:0
+  @893661 .message-view__banner__request .txt-add-friend-banner
+       font-size:.875rem;font-weight:400;line-height:1.5
+  @893765 .message-view__banner--text-accept
+       margin-bottom:4px;border:1px solid;padding:0 5px;border-radius:4px;line-height:29px;margin-left:5px;position:relative;top:4px
+  @893926 .message-view__banner__close
+       position:absolute;top:14px;font-size:1.125rem;width:1.125rem;height:1.125rem;line-height:0;right:15px;color:var(--icon-secondary);display:none
+  @894098 .message-view__banner__muted
+       padding-right:30px
+  @894146 .message-view__banner__muted:before
+       width:calc(100% + 30px);height:100%;bottom:0
+  @894227 .message-view__banner__muted:hover
+       background:var(--layer-background-hover)
+  @894303 .message-view__banner__muted:hover .message-view__banner__close
+       display:block
+  @894381 .message-view__normalBaner-stranger .message-view__banner--text-accept
+       background:var(--background-activeness);top:3px;color:var(--text-on-color);padding:0 9px
+  @894541 .message-view__normalBaner-stranger .message-view__banner__icon-accept,.message-view__normalBaner-stranger .message-view__banner__text-no-mutual-group
+       display:none
+  @894705 .message-view__normalBaner-stranger--add-friend .message-view__banner__icon-accept
+       display:block;font-size:1.1875rem;width:1.1875rem;height:1.1875rem;line-height:0
+  @894869 .message-view__normalBaner-stranger--add-friend .txt-info-stranger
+       display:none
+  @894949 .message-view__topic
+       flex:none;position:relative;z-index:4;width:100%;right:0;display:flex;height:50px;background-color:var(--layer-background);align-items:center
+  @895112 .message-view__topic:before
+       position:absolute;content:" ";border-bottom:1px solid var(--border);bottom:-1px;width:100%
+  @895231 .message-view__typing
+       font-size:.75rem;font-weight:400;line-height:1.5;color:var(--text-primary);position:absolute;bottom:0;left:0;background-color:var(--layer-background);line-height:normal;height:16px;padding:0 12px;transition:.3s ease;border-top-right-radius:5px
+  @895497 .message-view__sendtome
+       background-repeat:no-repeat;width:245px;height:112px;margin:10px auto;padding:14px
+  @895604 .message-view__sendtome__btn
+       margin:78px auto 0;width:140px
+  @895664 .message-view__sendtome__btn__inputfile
+       width:100%;height:100%;overflow:hidden;display:none
+  @895756 .message-view__sendtome__btn__label
+       background-color:var(--text-information);padding:3px 23px;color:var(--text-on-color);text-transform:uppercase;text-align:center;border-radius:5px;width:100%
+  @895949 .message-view__ecard_new_fr
+       background-color:var(--layer-background);max-width:360px;padding:0 10px 20px;border-radius:12px;margin:0 auto;box-shadow:var(--shadow-overlay);display:flex;align-items:center
+  @896152 .message-view__ecard_new_fr__bg_v2
+       width:380px;height:100px;border-top-left-radius:12px;border-top-right-radius:12px
+  @896269 .message-view__ecard_new_fr__des_v2
+       margin-top:5px;font-size:.875rem;font-weight:400;line-height:1.5;color:var(--text-secondary);text-align:center
+  @896416 .message-view__ecard_new_fr__bg
+       width:341px;height:61px
+  @896472 .message-view__ecard_new_fr__avatar
+       display:flex;align-items:center;margin-top:-49px
+  @896557 .message-view__ecard_new_fr__avatar__avt_item_2
+       margin-left:-18px
+  @896623 .message-view__ecard_new_fr__title
+       margin-top:14px;font-size:1rem;font-weight:500;line-height:1.5;text-align:center;color:var(--text-primary);width:100%
+  @896776 .message-view__ecard_new_fr__des
+       margin-top:5px;font-size:.875rem;font-weight:400;line-height:1.5;color:var(--text-secondary)
+  @896902 .message-view__ecard_new_fr__sticker
+       display:flex;align-items:center;margin-top:15px;width:341px;height:85px;overflow:hidden
+  @897027 .message-view__ecard_new_fr__sticker__btNav
+       display:flex;align-items:center;height:85px;cursor:pointer;color:var(--text-primary);font-size:1rem;font-weight:400;line-height:1.5
+  @897203 .message-view__ecard_new_fr__sticker__btNav.disable
+       color:var(--text-disabled)
+  @897282 .message-view__ecard
+       background-color:var(--layer-background);padding:0;width:328px;height:255px;margin:0 auto;font-size:.875rem;font-weight:400;line-height:1.5;border-radius:8px
+  @897461 .message-view__ecard.__type2
+       height:186px
+  @897503 .message-view__ecard__image
+       width:328px;border-top-left-radius:8px;border-top-right-radius:8px;display:flex;margin-bottom:6px
+  @897629 .message-view__ecard__image.__type1
+       height:213px
+  @897678 .message-view__ecard__image.__type2
+       height:100px
+  @897727 .message-view__ecard__btAction
+       width:328px;font-size:.875rem;font-weight:400;line-height:1.5;text-align:center;color:var(--text-information);cursor:pointer
+  @897883 .message-view__ecard__item
+       display:flex;align-items:center;color:var(--text-secondary);padding-right:0
+  @897986 .message-view__ecard__item__sign
+       border-radius:50%;width:35px;height:35px;color:var(--WA100);margin-right:14px;text-align:center;flex:none;line-height:40px
+  @898142 .message-view__guide
+       background-color:var(--layer-background);border-radius:8px;padding:14px;width:352px;margin:0 auto 40px;font-size:.875rem;font-weight:400;line-height:1.5
+  @898316 .message-view__guide.guggy
+       margin-top:60px;width:300px
+  @898371 .message-view__guide.guggy.join-group
+       margin-top:14px;padding-bottom:1px;padding-top:12px
+  @898461 .message-view__guide.guggy.join-group>.message-view__guide__item
+       margin-bottom:8px
+  @898544 .message-view__guide__guggy
+       padding:3px 5px;width:30%;height:100px;object-fit:contain;border-radius:6px
+  @898648 .message-view__guide__guggy:hover
+       background-color:var(--layer-background-hover)
+  @898729 .message-view__guide__guggytxt:hover
+       color:var(--text-information)
+  @898796 .message-view__guide__item
+       margin-bottom:14px;display:flex;align-items:center;color:var(--text-primary);padding-right:0
+  @898916 .message-view__guide__item__sign
+       border-radius:50%;width:35px;height:35px;color:var(--text-on-color);margin-right:14px;text-align:center;flex:none;line-height:40px
+  @899080 .message-view__guide__item__gname
+       max-width:100%;word-break:break-word
+  @899151 .message-view__groupName,.message-view__listMember
+       margin:7px auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center
+  @899288 .message-view__listMember
+       width:304px
+  @899326 .message-view--onboarding
+       width:360px;background-color:var(--layer-background);margin:0 auto;font-size:.875rem;font-weight:400;line-height:1.5;border-radius:8px
+  @899487 .message-view--onboarding__image
+       width:360px;height:216px;border-top-left-radius:8px;border-top-right-radius:8px
+  @899600 .message-view--onboarding__content
+       padding:10px 25px 16px
+  @899658 .message-view--onboarding__content__title
+       font-size:.875rem;font-weight:500;line-height:1.5;color:var(--text-primary);margin:10px 0
+  @899790 .message-view--onboarding__content__description
+       font-size:.875rem;font-weight:400;line-height:1.5
+  @899888 .message-view--onboarding__buttons__btn-action
+       cursor:pointer;padding:0 20px 16px;color:var(--text-information)
+  @900000 .message-view--ecardJoinGroup
+       width:350px;border-radius:6px;margin:0 auto;background:var(--layer-background)
+  @900109 .message-view--ecardJoinGroup__info
+       padding:21px 18px 16px
+  @900168 .message-view--ecardJoinGroup__info__title
+       padding-bottom:3px
+  @900230 .message-view--ecardJoinGroup__info__desc
+       font-size:.8125rem;font-weight:400;line-height:1.5;color:var(--text-secondary);padding-bottom:3px
+  @900370 .message-view--ecardJoinGroup__info__link
+       display:flex;padding-bottom:3px;color:var(--text-secondary)
+  @900472 .message-view--ecardJoinGroup__info__link>a
+       font-size:.875rem;font-weight:400;line-height:1.5;margin-left:5px
+  @900582 .message-view--ecardJoinGroup__info__link__btn
+       margin-left:5px;font-size:.75rem;font-weight:400;line-height:1.5;cursor:pointer;color:var(--text-secondary);border-radius:5px;padding:0;top:25px
+  @900774 .message-view--ecardJoinGroup__info__link__btn:hover
+       color:var(--text-information)
+  @900857 .message-view--ecardInvationGroup
+       width:350px;border-radius:6px;margin:0 auto;background:var(--layer-background);padding:20px;align-items:center
+  @901002 .message-view--ecardInvationGroup__title
+       padding-bottom:15px
+  @901063 .message-view--ecardInvationGroup__desc
+       font-size:.8125rem;font-weight:400;line-height:1.5;text-align:center;padding:0 30px;color:var(--text-secondary)
+  @901215 .message-view__scroller
+       position:static
+  @901255 .message-view__scroller__innerScroller
+       max-width:100%;min-height:100%;padding-bottom:19px;flex-direction:column;justify-content:flex-end;contain:layout style;display:flex;z-index:0
+  @901436 .message-view__scroller__scrollThumb
+       background-color:var(--BA30)
+  @902025 .banner-stranger_type_default>.message-view__banner__view-more
+       right:12px
+  @948406 .message-view-multiple-selection .event-message,.message-view-multiple-selection .group-poll-info,.message-view-multiple-selection .message-info,.message-view-multiple-se
+       pointer-events:none
+  @1246539 .message-view__banner.no-border-banner:before
+       border-bottom:none
+  @1500445 .message-view__scroll--shrink .preview-ts.active-scroll .block-date>.chat-date.island
+       position:sticky;top:20px
+  @1500556 .message-view__scroll--shrink #previewTimeAnchor
+       top:20px
+  @1563404 #addConversationLabel .loading-msg .autosuggest-item,#calendar-v3>.cal-content .loading-msg .cal-item,#calendar-v3>.cal-title .main-title .loading-msg .ena-clickable,#fil
+       color:var(--cta-link)
+  @1567229 #addConversationLabel .loading-msg .autosuggest-item:active,#addConversationLabel .loading-msg .autosuggest-item:hover,#calendar-v3>.cal-content .loading-msg .cal-item:ac
+       color:var(--cta-link-pressed)
+  @1577477 #addConversationLabel .zinstant-error__text.autosuggest-item,#calendar-v3>.cal-content .zinstant-error__text.cal-item,#calendar-v3>.cal-title .main-title .zinstant-error_
+       margin-top:4px;color:var(--cta-link)
+  @1580657 #addConversationLabel .zinstant-error__text.autosuggest-item:active,#addConversationLabel .zinstant-error__text.autosuggest-item:hover,#calendar-v3>.cal-content .zinstant
+       color:var(--cta-link-pressed)
+
+=== candidate live-chat-header class families by JS usage count ===
+  chat-info__header        cssRules=   7  jsOcc=   2
+     first@10965660: "reateElement(\"div\",{className:\"media-dock-content-highlight\",style:{width:\"340px\",height:\"100vh\",zIndex:20}}):null,g?l.a.createElement(\"div\",{style:this.props.isMediaDock?{height:\"47px\"}:{},className:\"chat-info__header \"+\"WIN32\".toLowerCase()},l.a.createElement(\"div-b18\",{className:\"chat-info__header__title\"},m,u)):null,l.a.createElement(\"div\",{id:\"sideBodyScrollBox\",className:\"flx-1\",style:this.state.screen==Qt.ChatBoxInfoScreen.MEDIA||this.state.screen=="
+  chat-info-general        cssRules=  65  jsOcc=  91
+     first@1234374: "t(o.c,{className:\"loading__defaultContainer\",type:o.b.FLUID,size:o.a.MEDIUM,totalColumn:3,style:{display:\"grid\"}},E));break}f=i.a.createElement(\"div\",{className:\"\"},i.a.createElement(\"div\",{className:\"chat-info-general__section__header\"},i.a.createElement(s.a,{textKey:\"STR_MENU_PHOTO_VIDEO\",className:\"chat-info-general__section__header--title\"})),i.a.createElement(o.c,{className:\"loading__defaultContainer\",type:o.b.FLUID,size:o.a.MEDIUM,totalColumn:4,style"
+  chat-info                cssRules= 107  jsOcc= 128
+     first@1234374: "t(o.c,{className:\"loading__defaultContainer\",type:o.b.FLUID,size:o.a.MEDIUM,totalColumn:3,style:{display:\"grid\"}},E));break}f=i.a.createElement(\"div\",{className:\"\"},i.a.createElement(\"div\",{className:\"chat-info-general__section__header\"},i.a.createElement(s.a,{textKey:\"STR_MENU_PHOTO_VIDEO\",className:\"chat-info-general__section__header--title\"})),i.a.createElement(o.c,{className:\"loading__defaultContainer\",type:o.b.FLUID,size:o.a.MEDIUM,totalColumn:4,style"
+  conv-name                cssRules=   1  jsOcc=   8
+  conv-title               cssRules=   8  jsOcc=   2
+     first@3346861: ")||0;a>l?c(n.children[0].clientWidth):a<22&&c(22)}}),[n,a]),r.a.useEffect((()=>{if(i&&i.current){var e,t;const n=i.current.getElementsByClassName(\"conv-item-title__more\")[0],a=document.getElementById(\"conv-title-action\");let r=a?a.clientWidth:24;(null==n||null===(e=n.children)||void 0===e||null===(t=e[0])||void 0===t?void 0:t.clientWidth)>r&&(r=n.children[0].clientWidth),o(Math.max(r-l,1))}}),[e,t,l]),{gridRef:i,col3Width:s,col4Width:l}}},\"8Zot\":function(e"
+  chat-title               cssRules=   0  jsOcc=   1
+     first@10985672: "eElement(so,Object(i.a)({},e,{windowId:e.windowId})):l.a.createElement(oo,Object(i.a)({},e,{windowId:e.windowId})))}function co(e){const{windowId:t}=Object(at.a)();return l.a.createElement(\"div\",{key:\"chat-title\",className:\"threadChat__title flx-1 flx flx-col w0\"},l.a.createElement(ro,Object(i.a)({},e,{windowId:t})),l.a.createElement(lo,Object(i.a)({},e,{windowId:t})))}var uo=a(\"OU7N\"),Ao=a(\"6ivO\");var ho,mo={visibility:{group_member_threshold:20,community"
+  header-title             cssRules=  25  jsOcc=   4
+     first@10981799: "_HEADER_E2EE_TOOLTIP\"})},l.a.createElement(ct.a,{className:\"e2ee-solid-lock-2\",comp:\"span\",style:{marginRight:\"4px\",fontSize:\"var(--f16)\",marginLeft:\"-2px\"}}))),l.a.createElement(\"div-b18\",{className:\"header-title flx flx-al-c flex-1\"},Object(Ca.b)(T)||l.a.createElement(h.a,{textKey:g?\"STR_GROUP_CHAT\":c.default.isOAType(a)?\"STR_OA\":\"STR_GROUP_SINGLE\"}))),v&&T?l.a.createElement(un.a,{icon:\"icon-outline-edit\",onClick:function(){const t=g?s:i;gn.ModalManagerV"
+  threadChat__title        cssRules=   3  jsOcc=   3
+     first@3813388: ":\"threadChat group-preview flx flx-col flx-center\"},r.a.createElement(\"div\",{className:\"threadChat__avatar\"},r.a.createElement(l.d,{target:this.state,size:\"xxxl\"})),r.a.createElement(\"div\",{className:\"threadChat__title truncate\",style:{marginLeft:0,marginRight:0,textAlign:\"center\",width:\"100%\"}},r.a.createElement(\"span\",{className:\"title header-title\",style:{background:\"none\"},title:this.state.name},this.state.name),r.a.createElement(\"span\",{className:\"sub"
+  title-chat               cssRules=   0  jsOcc=   0
+  chatName                 cssRules=   0  jsOcc=   0
+  convAvatar               cssRules=   0  jsOcc=   0
+
+wrote _r3_chatshell.txt

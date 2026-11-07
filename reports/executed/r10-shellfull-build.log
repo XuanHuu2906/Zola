@@ -1,0 +1,136 @@
+
+> zalo-apple-glass-ui@0.3.0 build:desktop
+> npm run check && npm run build && npm run build:electron && electron-builder --win portable --x64 && node tools/hash-release.cjs && node tools/mark-delivery.cjs && node tools/verify-asar.cjs
+
+
+> zalo-apple-glass-ui@0.3.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.3.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.3.0 lint
+> eslint src/renderer src/shared src/adapters src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.3.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts
+
+✔ auth: happy path signs in, failure path reports unsupported (6.789ms)
+✔ contacts: list filters, failure path returns invalid for unknown conversation (0.5259ms)
+✔ conversations: markRead clears unread and notifies subscribers (0.4044ms)
+✔ messaging: send appends, echoes clientMessageId, and rejects empty text (0.3923ms)
+✔ messaging: simulated network failure is retryable and does not append (0.2489ms)
+✔ messaging: aborted signal yields cancelled and does not append (0.2111ms)
+✔ media: upload reports progress per chunk; invalid size fails (0.4023ms)
+✔ groups: known group resolves, unknown fails, unsupported mutations are labelled (0.3261ms)
+✔ calling and sync are unavailable, not mocked (0.2964ms)
+✔ notifications: create returns a desktop notification; disabled port is unavailable (0.2829ms)
+✔ secureChannel: reflects conversation requirement without exposing crypto (0.185ms)
+✔ transport: connect requires a handle, status transitions, events unsubscribe (0.2818ms)
+✔ simulateIncoming: bumps unread, notifies conversation and incoming subscribers (0.3288ms)
+✔ simulateDisconnect: flips to offline and emits a retryable event; connect restores (0.2717ms)
+✔ mock client satisfies IZaloClient and never reports itself as authorized (0.9547ms)
+✔ TS search retains Vietnamese name and preview matching (1.253ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.4273ms)
+✔ sending is immutable, bounded and local to the selected chat (33.1489ms)
+✔ delivery settles one message without touching the rest of the dataset (0.6422ms)
+✔ incoming simulation targets another chat, rotates, and bumps only its unread (0.5888ms)
+✔ attachments retain names and sizes only, with bounded display metadata (0.7251ms)
+✔ transfer progress advances on a fixed step, clamps, and settles at 100 (0.328ms)
+✔ setTransfer only touches the addressed message and clamps its progress (1.0289ms)
+✔ a call rings, connects, counts only connected seconds, and ends once (0.5609ms)
+✔ call toggles are independent, and camera only exists in a video call (0.2192ms)
+✔ connection state gates sending and only reconnects from offline (0.7548ms)
+✔ recovery flushes pending sends but never rewrites failed ones (0.9721ms)
+✔ history pages keep every id positive and unique across the whole dataset (1.2313ms)
+✔ page size is clamped to 1..50 and pages never overshoot historyRemaining (0.3464ms)
+✔ demo seeds are independent across sessions (0.1495ms)
+✔ preferences tolerate corrupt storage and clamp values (0.2157ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.1415ms)
+✔ session parse accepts only a signed-in record and never invents one (0.2624ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (0.4443ms)
+✔ IPC trust and network policy distinguish development from production (0.1797ms)
+✔ layer boundaries hold against resolved import paths, not specifier text (6.2762ms)
+✔ every variant map resolves both states to distinct, complete class strings (0.2889ms)
+✔ class maps carry no empty-string gaps except the intentional idle no-ops (0.1115ms)
+✔ delivery is a three-state map that keeps its own ARIA labels (0.1921ms)
+✔ direction mapping never treats the sender as a layout class (0.0723ms)
+✔ avatar variants always emit exactly one size token and one art fallback (0.1459ms)
+✔ wallpaper is a typed tone map keyed on chat kind, not on a CSS variable (0.4222ms)
+✔ glass token ladder declares one fill, blur and shadow per tier (0.1931ms)
+✔ typography, spacing and motion live on the ladder, not in the stylesheet (0.8033ms)
+✔ type roles cover every size the stylesheet actually needs (0.3105ms)
+✔ border family exists in both themes and is not borrowed from Zalo (0.3975ms)
+✔ components read glass values only through tokens (0.7747ms)
+✔ action colours are tokens, and their override sets stay honest (0.3791ms)
+✔ degradation covers every blurred tier in one switch (0.1406ms)
+✔ glass is never nested in a containing block or transform layer (0.1038ms)
+✔ every glass surface takes its radius from the ladder, including the compact shell (0.2167ms)
+✔ the date pill keeps the shipped glass idiom: translucent fill plus its own blur (0.0885ms)
+✔ the glass primitives every screen shares are styled, not inert class names (0.1507ms)
+✔ secondary screens exist and declare no backend capability (0.6052ms)
+✔ overlay CSS stays inside the token system (0.3015ms)
+✔ HTML-escapes user-generated message content (0.2452ms)
+✔ removes diacritics in Vietnamese search terms (0.1198ms)
+✔ search matches normalized names (0.1615ms)
+✔ unread filter selects only unread (0.1361ms)
+✔ group and work filters use categories independently (0.1607ms)
+✔ pinned chats are sorted before unpinned (0.0915ms)
+✔ file metadata is textual and size-limited (0.1646ms)
+(node:37292) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/adapters.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ℹ tests 62
+ℹ suites 0
+ℹ pass 62
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 207.5336
+
+> zalo-apple-glass-ui@0.3.0 build
+> tsc --noEmit && vite build
+
+[36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 2164 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.83 kB │ gzip:   0.45 kB
+dist/assets/index-DjbqHRBe.css   49.88 kB │ gzip:  11.28 kB
+dist/assets/index-8pRu-avt.js   369.59 kB │ gzip: 116.37 kB
+
+[32m✓ built in 462ms[39m
+
+> zalo-apple-glass-ui@0.3.0 build:electron
+> tsc -p tsconfig.electron.json
+
+  • electron-builder  version=26.18.0 os=10.0.26200
+  • loaded configuration  file=D:\Zalo\electron-builder.yml
+  • author is missed in the package.json  appPackageFile=D:\Zalo\package.json
+  • executing @electron/rebuild  electronVersion=45.2.3 arch=x64 buildFromSource=false workspaceRoot=D:\Zalo projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=45.2.3 appOutDir=release\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=D:\Zalo\release\win-unpacked
+  • searching for node modules  pm=npm searchDir=D:\Zalo
+  • duplicate dependency references  dependencies=["react-dom@19.2.6","react-dom@19.2.6"]
+  • updating asar integrity executable resource  executablePath=release\win-unpacked\Glass Messenger Demo.exe
+  • no code signing certificate configured, signing is skipped  path=release\win-unpacked\Glass Messenger Demo.exe
+  • building        target=portable file=release\Glass-Messenger-Demo-0.3.0-x64.exe archs=x64
+  • no code signing certificate configured, signing is skipped  path=C:\Users\huung\AppData\Local\Temp\t-tAnOZ9\elevate-staging-1\resources\elevate.exe
+  • no code signing certificate configured, signing is skipped  path=release\Glass-Messenger-Demo-0.3.0-x64.exe
+┌─────────┬─────────────────────────────────────────────────────────┬───────────┬────────────────────────────────────────────────────────────────────┐
+│ (index) │ file                                                    │ bytes     │ sha256                                                             │
+├─────────┼─────────────────────────────────────────────────────────┼───────────┼────────────────────────────────────────────────────────────────────┤
+│ 0       │ 'D:\\Zalo\\release\\Glass-Messenger-Demo-0.3.0-x64.exe' │ 112248617 │ '85f92db5fcf258a85acc72844c2141cbc48ce377266e611a62f40fbf365f8ec3' │
+└─────────┴─────────────────────────────────────────────────────────┴───────────┴────────────────────────────────────────────────────────────────────┘
+Packaging evidence saved. Runtime smoke remains a separate required check.
+Delivery artifact: Glass-Messenger-Demo-0.3.0-x64.exe
+PASS: 11/11 bundled files byte-identical to the current tree

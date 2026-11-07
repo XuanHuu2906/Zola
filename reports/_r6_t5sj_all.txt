@@ -1,0 +1,50 @@
+=== EXPOSURE SITES IN T5SJ ===
+@56555   $zcommon               = Object(W.a)(),window.$znode=Object(Y.a)(),window.$zwindow=Object(h.a)(y),window.$zresource=Object(h.a)(A),window.$zlogge
+@56710   $zupdater              = Object(h.a)(S),window.$zapp=Object(h.a)(T),window.$zdownload=Object(h.a)(R),window.$zdb=Object(h.a)(O.a),window.$zsessio
+@56874   $zmulti                = Object(h.a)(D),window.$zcall=Object(h.a)(k),window.$zsharedWorker=Object(h.a)(L),window.$zelectron=Object(a.a)(Object(a.
+@57048   $zelectronNative       = Object(M.b)(),window.$zuri=Object(h.a)(F),window.$zscreencap=Object(h.a)(Q),window.$zlogin=Object(h.a)(G),window.$zperf=
+@57207   $zconfig               = Object(h.a)(K.a),window.$zFileManager=Object(a.a)(Object(a.a)({},Object(q.a)()),Object(h.a)(v.a)),window.$zpc=Object(J.a
+@57347   $zFeatures             = {zaloCall:Object(h.a)(le),fileRes:Object(he.a)(),kikiAssistant:Object(h.a)(fe),mainless:Object(h.a)(de),activeDeactive:O
+@58014   $zMetric               = Object(h.a)(X),window.$zcloud=Object(h.a)(re),window.$zMsgChannel=Object(h.a)(ee.a),window.$zscript=Object(h.a)(te.a),wi
+@58171   $zbackup               = Object(h.a)(Ze),window.$zInAppPayment=Object(h.a)(oe),window.$capp=Object(h.a)(ce),window.$zsqlitebw=Object(h.a)(tt.a),w
+@58345   $zMigrateDrive         = Object(h.a)(ct),window.$zTFModels={ss:Object(h.a)(pt)},window.$znetwork=Object(h.a)(ut),window.$zprotocol=Object(h.a)(ht
+@58489   $znoti                 = Object(h.a)(_t),qe.contextBridge.exposeInMainWorld("MetriczGlobal",window.MetriczGlobal),qe.contextBridge.exposeInMainWo
+@58869   $zresource             = window.$zresource),qe.contextBridge.exposeInMainWorld("$zlogger",window.$zlogger),qe.contextBridge.exposeInMainWorld("$z
+@59064   $zapp                  = window.$zapp),qe.contextBridge.exposeInMainWorld("$zdownload",window.$zdownload),qe.contextBridge.exposeInMainWorld("$zd
+@59243   $zsessionManager       = window.$zsessionManager),qe.contextBridge.exposeInMainWorld("$zmulti",window.$zmulti),qe.contextBridge.exposeInMainWorld
+@59442   $zsharedWorker         = window.$zsharedWorker),qe.contextBridge.exposeInMainWorld("$zelectron",window.$zelectron),qe.contextBridge.exposeInMainW
+@59663   $zuri                  = window.$zuri),qe.contextBridge.exposeInMainWorld("$zscreencap",window.$zscreencap),qe.contextBridge.exposeInMainWorld("$
+@59850   $zperf                 = window.$zperf),qe.contextBridge.exposeInMainWorld("$zconfig",window.$zconfig),qe.contextBridge.exposeInMainWorld("$zMetr
+@60035   $zFileManager          = Object(a.a)(Object(a.a)({},window.$zFileManager),{},{trustPathFromBlob:void 0})),qe.contextBridge.exposeInMainWorld("$zp
+@60421   $zscript               = window.$zscript),qe.contextBridge.exposeInMainWorld("$zInAppPayment",window.$zInAppPayment),qe.contextBridge.exposeInMai
+@60797   $zsafeStorage          = window.$zsafeStorage),qe.contextBridge.exposeInMainWorld("$zMigrateDrive",window.$zMigrateDrive),qe.contextBridge.expose
+@61012   $znetwork              = window.$znetwork),qe.contextBridge.exposeInMainWorld("$zprotocol",window.$zprotocol),qe.contextBridge.exposeInMainWorld(
+
+=== alias decls for n("mod") in T5SJ (with prefix context) ===
+@20      a     -> VTBJ   | ...{"use strict";var r,
+@76      o     -> gq9c   | ...r r,a=n("VTBJ"),i=(n("mNvP"),n("OeOo"),n("jmmm"),n("rCQs")),
+@88      s     -> cXBj   | ...J"),i=(n("mNvP"),n("OeOo"),n("jmmm"),n("rCQs")),o=n("gq9c"),
+@100     c     -> 85Jq   | ...vP"),n("OeOo"),n("jmmm"),n("rCQs")),o=n("gq9c"),s=n("cXBj"),
+@2600    e     -> jle/   | ...hangeListener=e=>{p.removeListener(e)},e.getArch=()=>{const 
+@2688    h     -> DmP7   | ...eturn e.arch()}}(d||(d={}));var u=d,f=(n("QxEN"),n("IzvT")),
+@2700    m     -> i6mH   | ...()}}(d||(d={}));var u=d,f=(n("QxEN"),n("IzvT")),h=n("DmP7"),
+@2712    _     -> fsQs   | ...}));var u=d,f=(n("QxEN"),n("IzvT")),h=n("DmP7"),m=n("i6mH"),
+@5308    v     -> k4W9   | ...wer:{apiKey:g.CLOSE_MEDIA_VIEWER,type:m.a.UNSUBSCRIBE}};var 
+@6979    b     -> 7jJJ   | ...ate:{apiKey:E.RESTORE_APP_STATE,type:m.a.STOP_PROVIDE}};var 
+@17365   O     -> a4Xj   | ...Hit:{apiKey:C.DOWNLOAD_QUOTA_HIT,type:m.a.UNSUBSCRIBE}};var 
+@22631   j     -> GfBU   | ...ckArgvLink:{apiKey:U.CHECK_ARG_LINK,type:m.a.RAW_SEND}};var 
+@22643   M     -> 4Hrq   | ...apiKey:U.CHECK_ARG_LINK,type:m.a.RAW_SEND}};var j=n("GfBU"),
+@26639   K     -> RbSv   | ...UEST},crash:{apiKey:V.SIMULATE_CRASH,type:m.a.REQUEST}};var 
+@26651   W     -> S4OH   | ...{apiKey:V.SIMULATE_CRASH,type:m.a.REQUEST}};var K=n("RbSv"),
+@26663   Y     -> 15f/   | ...MULATE_CRASH,type:m.a.REQUEST}};var K=n("RbSv"),W=n("S4OH"),
+@26675   q     -> U3kX   | ...,type:m.a.REQUEST}};var K=n("RbSv"),W=n("S4OH"),Y=n("15f/"),
+@26687   J     -> L+0V   | ...QUEST}};var K=n("RbSv"),W=n("S4OH"),Y=n("15f/"),q=n("U3kX"),
+@26922   ee    -> 3sbe   | ...Message:{apiKey:Z.RESPONSE_METRICS,type:m.a.SUBSCRIBE}};var 
+@26935   te    -> Pjj5   | ...ey:Z.RESPONSE_METRICS,type:m.a.SUBSCRIBE}};var ee=n("3sbe"),
+@27907   ae    -> 3xrW   | ...ST},AppendLog:{apiKey:ne.APPEND_FILE,type:m.a.REQUEST}};var 
+@30241   he    -> Hz92   | ...y:ue.REMOVE_LISTENER_CSP_BLOCKED,type:m.a.UNSUBSCRIBE}};var 
+@31420   Ee    -> EXGp   | ...{apiKey:ye.TRIGGER_AUTO_DOWNLOAD,type:m.a.UNSUBSCRIBE}};var 
+@39902   qe    -> NLsH   | ...e(De(Se,"[NativeJxl]: Failed to decode JXL to JPEG"))}};var 
+@41301   et    -> ntSb   | ...SCRIBE}},Xe={triggerWindowLoadedEvent(){Object(h.b)()}};var 
+@41314   tt    -> +NII   | ...triggerWindowLoadedEvent(){Object(h.b)()}};var et=n("ntSb"),
+@41327   nt    -> HVQM   | ...LoadedEvent(){Object(h.b)()}};var et=n("ntSb"),tt=n("+NII"),

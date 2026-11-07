@@ -1,0 +1,45 @@
+##### Q=
+@14448963: n.id=r,this._post(e,t,n,a,i,!0,s)}static _constructUrlParams(e){let t=[];for(let n in e)e.hasOwnProperty(n)&&t.push(n+"="+encodeURIComponent(e[n]));return t.join("&")}static setEndpoints(e,t,n,a,i){t&&(q=t),e&&(Y=e),i&&(Q=i),n&&(r.default.apiChatDomain=n.chat,r.default.apiStickerDomain=n.sticker,r.default.apiGifDomain=n.sticker,r.default.apiFriendDomain=n.friend,r.default.apiProfileDomain=n.profile,r.default.apiGroupDomain=n.group,r.default.apiLabelDomain=n.label,r.default.apiAliasDomain=n.alias,r.default.apiBoardDomain=n.board,n.group_poll&&(r
+
+@14632597: .i.SignalCommands.ACK.SUBDEVICE_UNSUPPORT,o.i.SignalCommands.ACK.DELIVER_SEEN_ONEONE,o.i.SignalCommands.ACK.DELIVER_SEEN_GROUP]),Y=new Set([...Array.from(z.values()),...Array.from(K.values()),...Array.from(W.values())]),Q=new Set([C.k.CLOUD.PUSH,C.k.CLOUD.NEED_VERIFY,C.k.CLOUD.DONE_MIGRATE]),q=new Set([...Array.from(H.values()),...Array.from(Y.values()),...Array.from(Q.values()),C.k.PUSH_LIST_INTERACTIVE_FILE,C.k.HAS_MSG,C.k.MAX_CONNECTION]);class X extends x.b{constructor(){super(N.c,"chat-handler"),this._lastMsgId="",this._lastMsgKey="",this.
+
+@14661261: t(s.a.Fragment,null,n?s.a.createElement(N.a,{icon:t.icon,className:`${K}__icon mr-8`}):null,s.a.createElement(_.a,{className:`${K}__title`,textKey:t.titleTextKey,textArguments:t.titleArguments})))}))):null)},Y=n("nYU2"),Q=n("hI9i"),q=n("97kL"),X=n("Ydol");const J="pi-group-profile-link";var Z=e=>{const{link:t,groupId:n,loading:a=!1}=e,{windowId:i}=s.a.useContext(A),r=()=>{l.default.copyTextToClipboard(t||""),Object(F.c)(i,C.default.str("STR_COPIED"))},o=(e,n="")=>{X.default.send(q.SideBarActions.SEND_INVITATION,{target:e,message:n,link:t})},d=(
+
+@14720253: t=[""];if(N&&h.r(f)){const n=l.current.getRequestInfo(f);if(n&&n.recommInfo){e="STR_PROFILE_TITLE_REQUEST_ADD_FRIEND";let a=h.o(n.recommInfo?n.recommInfo.source:-1);t=[C.default.str(a)]}}return{title:e,titleArgs:t}})()),Q=s.a.createElement("div",{className:"w100 flx flx-center flx-al-c text-center",style:{height:84,color:"var(--text-secondary)"}},s.a.createElement(_.a,{tag:"span",textKey:"STR_NO_PROFILE_SHARE_IMAGE",style:{lineHeight:"20px"}})),q=se.ModuleContainer.resolve(Tn.d).hasZBadge(m,Tn.b.POPUP_PROFILE,null==g?void 0:g.userRank)?s.a.crea
+
+
+##### Y=
+@14448954: ){return n.id=r,this._post(e,t,n,a,i,!0,s)}static _constructUrlParams(e){let t=[];for(let n in e)e.hasOwnProperty(n)&&t.push(n+"="+encodeURIComponent(e[n]));return t.join("&")}static setEndpoints(e,t,n,a,i){t&&(q=t),e&&(Y=e),i&&(Q=i),n&&(r.default.apiChatDomain=n.chat,r.default.apiStickerDomain=n.sticker,r.default.apiGifDomain=n.sticker,r.default.apiFriendDomain=n.friend,r.default.apiProfileDomain=n.profile,r.default.apiGroupDomain=n.group,r.default.apiLabelDomain=n.label,r.default.apiAliasDomain=n.alias,r.default.apiBoardDomain=n.board,n.group
+
+@14588526: top)&&(n=Math.max(n,s.top));return[t,n]},t.snapToGrid=function(e,t,n){var a=Math.round(t/e[0])*e[0],i=Math.round(n/e[1])*e[1];return[a,i]},t.canDragX=function(e){return"both"===e.props.axis||"x"===e.props.axis},t.canDragY=function(e){return"both"===e.props.axis||"y"===e.props.axis},t.getControlPosition=function(e,t,n){var a="number"==typeof t?(0,i.getTouch)(e,t):null;if("number"==typeof t&&!a)return null;var s=r(n),o=n.props.offsetParent||s.offsetParent||s.ownerDocument.body;return(0,i.offsetXYFromParent)(a||e,o,n.props.scale)},t.createCoreData
+
+@14632506: s.INIT.ACK_GROUP_SESSIONS_STALE,o.i.SignalCommands.INIT.DOWNGRADE_E2EE_GROUP]),W=new Set([o.i.SignalCommands.ACK.SUBDEVICE_UNSUPPORT,o.i.SignalCommands.ACK.DELIVER_SEEN_ONEONE,o.i.SignalCommands.ACK.DELIVER_SEEN_GROUP]),Y=new Set([...Array.from(z.values()),...Array.from(K.values()),...Array.from(W.values())]),Q=new Set([C.k.CLOUD.PUSH,C.k.CLOUD.NEED_VERIFY,C.k.CLOUD.DONE_MIGRATE]),q=new Set([...Array.from(H.values()),...Array.from(Y.values()),...Array.from(Q.values()),C.k.PUSH_LIST_INTERACTIVE_FILE,C.k.HAS_MSG,C.k.MAX_CONNECTION]);class X exten
+
+@14661249: createElement(s.a.Fragment,null,n?s.a.createElement(N.a,{icon:t.icon,className:`${K}__icon mr-8`}):null,s.a.createElement(_.a,{className:`${K}__title`,textKey:t.titleTextKey,textArguments:t.titleArguments})))}))):null)},Y=n("nYU2"),Q=n("hI9i"),q=n("97kL"),X=n("Ydol");const J="pi-group-profile-link";var Z=e=>{const{link:t,groupId:n,loading:a=!1}=e,{windowId:i}=s.a.useContext(A),r=()=>{l.default.copyTextToClipboard(t||""),Object(F.c)(i,C.default.str("STR_COPIED"))},o=(e,n="")=>{X.default.send(q.SideBarActions.SEND_INVITATION,{target:e,message:n,l
+
+
+##### q=
+@14447226: .getDomainByType(m.domainType)+m.path,m.query&&(h+="?"+m.query)):h=t,A=e?Object(i.a)(Object(i.a)({},a),{},{url:h,withCredentials:!0,method:"get"}):Object(i.a)(Object(i.a)({},a),{},{method:"post",url:h,data:n}),c&&(A.idReq=c),m&&(A.endpointInfo=m),A.zcommandId=r,0!==r&&d.default?(f.b.isChatDomain(h)&&(ue&&(clearInterval(ue),ue=null),s.default.log("call keep alive: reset timer"),this.checkKeepAliveData(),ue=setInterval(fe.processKeepAlive.bind(this),1e3*he.keepalive_duration)),pe(A,p,l).then((e=>{const n=e.requestStartTime,a=e.requestStartPoint;l
+
+@14448945: n,a,i,r,s){return n.id=r,this._post(e,t,n,a,i,!0,s)}static _constructUrlParams(e){let t=[];for(let n in e)e.hasOwnProperty(n)&&t.push(n+"="+encodeURIComponent(e[n]));return t.join("&")}static setEndpoints(e,t,n,a,i){t&&(q=t),e&&(Y=e),i&&(Q=i),n&&(r.default.apiChatDomain=n.chat,r.default.apiStickerDomain=n.sticker,r.default.apiGifDomain=n.sticker,r.default.apiFriendDomain=n.friend,r.default.apiProfileDomain=n.profile,r.default.apiGroupDomain=n.group,r.default.apiLabelDomain=n.label,r.default.apiAliasDomain=n.alias,r.default.apiBoardDomain=n.boar
+
+@14525634: urn this._get(t+"&params="+encodeURIComponent(s.default.encodeAES(JSON.stringify(e))),null,11290)}static getPhonebook(e,t){let n=f.b.getProfileDomain()+"/api/social/friend/phonebook?"+this._getCommonParams()+"&lastTimeReq="+e;return t>0&&(n+="&src="+t),this._get(n,null,11862)}static getPhonebookV2(e=0,t,n){let a={phonebook_version:e},i=f.b.getProfileDomain()+"/api/social/friend/phonebook/v2?"+this._getCommonParams()+"&params="+encodeURIComponent(s.default.encodeAES(JSON.stringify(a)));return n>0&&(i+="&src="+n),this._get(i,null,12428,0,ie,0,voi
+
+@14632670: SEEN_ONEONE,o.i.SignalCommands.ACK.DELIVER_SEEN_GROUP]),Y=new Set([...Array.from(z.values()),...Array.from(K.values()),...Array.from(W.values())]),Q=new Set([C.k.CLOUD.PUSH,C.k.CLOUD.NEED_VERIFY,C.k.CLOUD.DONE_MIGRATE]),q=new Set([...Array.from(H.values()),...Array.from(Y.values()),...Array.from(Q.values()),C.k.PUSH_LIST_INTERACTIVE_FILE,C.k.HAS_MSG,C.k.MAX_CONNECTION]);class X extends x.b{constructor(){super(N.c,"chat-handler"),this._lastMsgId="",this._lastMsgKey="",this._queueLastMsgIds=new Map,this._pendingGetMsg=new Map,this._getMsgQueue=[]
+
+
+##### initConfig
+(none)
+
+##### SET_CONFIG
+(none)
+
+##### ckey
+(none)
+
+##### socket_url
+(none)
+
+##### ws_
+(none)
+

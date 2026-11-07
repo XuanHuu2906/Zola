@@ -1,0 +1,70 @@
+file	bytes	insertCSS	executeJavaScript	addStyleSheet	adoptedStyleSheets	setBackgroundMaterial	vibrancy	Vibrancy	backgroundMaterial	nativeTheme	themeSource	titleBarOverlay	visualEffectState	transparent:!0	webContents.send	loadExtension	will-attach-webview	BrowserView	WebContentsView	--inspect	remote-debugging
+0.js	1446	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+10.js	5429	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+9.js	336	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+compact-app-preload.js	2111027	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+compact-app.js	4007002	0	0	0	0	0	0	0	0	0	0	0	0	1	115	2	0	0	0	2	0
+main.js	4169474	0	0	0	0	0	0	0	0	0	0	0	0	1	116	2	0	0	0	4	0
+mainless-worker.js	930456	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0
+migration.js	974893	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	1	0
+preload-noti.js	1852659	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+preload-render.js	1852663	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+preload-shared-worker.js	2082383	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+preload-sqlite.js	2675898	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+second-instance.js	1516	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sentry.js	319338	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+utility-process-media.js	1191584	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+utility-process-sqlite.js	1324527	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+
+=== pc-dist html ===
+child.html bytes=3359 cspMeta=true styleTags=1 scriptTags=1
+compact-app.html bytes=1307 cspMeta=false styleTags=0 scriptTags=2
+index.html bytes=6219 cspMeta=true styleTags=1 scriptTags=10
+login.html bytes=6605 cspMeta=false styleTags=0 scriptTags=12
+popup-viewer.html bytes=4074 cspMeta=true styleTags=0 scriptTags=1
+shared-worker.html bytes=2649 cspMeta=false styleTags=0 scriptTags=16
+sqlite.html bytes=316 cspMeta=false styleTags=0 scriptTags=2
+znotification.html bytes=2278 cspMeta=false styleTags=0 scriptTags=8
+
+=== native binaries (.node/.dll/.exe) ===
+  native\nativelibs\file-utilities\ia32\file-utilities.node 1757184
+  native\nativelibs\file-utilities\x64\file-utilities.node 2233856
+  native\nativelibs\file-utils\darwin-arm\file-utils.node 88537
+  native\nativelibs\file-utils\darwin\file-utils.node 46444
+  native\nativelibs\file-utils\ia32\file-utils.node 234496
+  native\nativelibs\file-utils\x64\file-utils.node 292864
+  native\nativelibs\mp4thumb\win32\ia32\mp4thumb.node 2694656
+  native\nativelibs\mp4thumb\win32\x64\mp4thumb.node 3584000
+  native\nativelibs\os-sys-info\win32_ia32\os_sys_info.node 116736
+  native\nativelibs\os-sys-info\win32_x64\os_sys_info.node 157184
+  native\nativelibs\sqlite3\binding\napi-v6-win32-ia32\libcrypto-1_1.dll 2086400
+  native\nativelibs\sqlite3\binding\napi-v6-win32-ia32\msvcr120.dll 967952
+  native\nativelibs\sqlite3\binding\napi-v6-win32-ia32\node_sqlite3.node 4695040
+  native\nativelibs\v8-profiles\profiler_electron1.8_win32_ia32.node 120320
+  native\nativelibs\win-utils\ia32\win-utils.node 207872
+  native\nativelibs\zcall\zcall_ia32.node 4675584
+  native\nativelibs\zfile\win32\addon.node 434688
+  native\nativelibs\zfile\win64\addon.node 583168
+  native\nativelibs\zimage\ia32\libglib-2.0-0.dll 1098752
+  native\nativelibs\zimage\ia32\libgobject-2.0-0.dll 212480
+  native\nativelibs\zimage\ia32\libvips-42.dll 3466240
+  native\nativelibs\zimage\ia32\libvips-cpp.dll 315392
+  native\nativelibs\zimage\ia32\zimage.node 106496
+  native\nativelibs\zjxl\build\win32_ia32\brotlicommon.dll 642048
+  native\nativelibs\zjxl\build\win32_ia32\brotlidec.dll 558592
+  native\nativelibs\zjxl\build\win32_ia32\brotlienc.dll 4539904
+  native\nativelibs\zjxl\build\win32_ia32\jpeg62.dll 682496
+  native\nativelibs\zjxl\build\win32_ia32\jxl.dll 6556672
+  native\nativelibs\zjxl\build\win32_ia32\jxl.node 967680
+  native\nativelibs\zjxl\build\win32_ia32\jxl_cms.dll 781824
+  native\nativelibs\zjxl\build\win32_ia32\jxl_dec.dll 3988992
+  native\nativelibs\zjxl\build\win32_ia32\jxl_threads.dll 538624
+  native\nativelibs\zjxl\build\win32_ia32\opencv_core4120.dll 9472000
+  native\nativelibs\zjxl\build\win32_ia32\opencv_imgproc4120.dll 16607232
+  native\nativelibs\zjxl\build\win32_ia32\turbojpeg.dll 1395200
+  native\nativelibs\zlang\win32-ia32\zlang.win32-ia32.node 325120
+  native\nativelibs\zlang\win32-x64\zlang.win32-x64.node 361984
+  native\nativelibs\zwalker\win32-ia32-msvc\zwalker.dll 1502208
+  native\nativelibs\zwalker\win32-ia32-msvc\zwalker.win32-ia32-msvc.node 1502208
+  native\nativelibs\zwalker\win32-x64-msvc\zwalker.dll 1775616
+  native\nativelibs\zwalker\win32-x64-msvc\zwalker.win32-x64-msvc.node 1775616

@@ -1,0 +1,31 @@
+exists(main-dist/compact-app-preload.js) = true
+chars = 2111027
+   "exposeInMainWorld"                  = 9
+   "$zuri"                              = 0
+   "$zsub"                              = 0
+   "$zapp"                              = 0
+   "$zwindow"                           = 3
+   "$zscreencap"                        = 0
+   "$zdownload"                         = 0
+   "$zcall"                             = 0
+   "$zlogin"                            = 0
+   "$zupdater"                          = 0
+   "$zdb"                               = 0
+   "$zMsgChannel"                       = 0
+   "$zFeatures"                         = 0
+   "ipcRenderer"                        = 19
+   "contextBridge"                      = 10
+   "z-uri-open-conv"                    = 0
+   "z-uri-request"                      = 0
+   "check-startup-open-conv-request"    = 0
+   "check-arg-link"                     = 0
+   "Z_URI_REQUEST"                      = 0
+   "Z_URI_OPEN_CONV"                    = 0
+   "CHECK_ON_START_UP"                  = 0
+   "CHECK_ARG_LINK"                     = 0
+   "SUBSCRIBE"                          = 22
+   "UNSUBSCRIBE"                        = 9
+   "RAW_SEND"                           = 3
+   "REQUEST"                            = 71
+
+EXPOSE_CTX :: "e},t.isRegExp=function(e){return r(e,\"RegExp\")},t.isString=function(e){return r(e,\"String\")},t.isSyntheticEvent=function(e){return i(e)&&\"nativeEvent\"in e&&\"preventDefault\"in e&&\"stopPropagation\"in e},t.isThenable=function(e){return Boolean(e&&e.then&&\"function\"==typeof e.then)}},\"+bpH\":function(e,t,n){const r=n(\"L7Lv\");e.exports=(e,t,n)=>r(e,t,n)>0},\"+kyM\":function(e,t,n){\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0});var r,i=n(\"NLsH\");if(function(e){e.PING=\"sentry-electron.ping\",e.EVENT=\"sentry-electron.event\",e.SCOPE=\"sentry-electron.scope\",e.ENVELOPE=\"sentry-electron.envelope\"}(r||(r={})),window.__SENTRY_IPC__);else{var a={sendScope:function(e){return i.ipcRenderer.send(r.SCOPE,e)},sendEvent:function(e){return i.ipcRenderer.send(r.EVENT,e)},sendEnvelope:function(e){return i.ipcRenderer.send(r.ENVELOPE,e)}};if(window.__SENTRY_IPC__=a,i.contextBridge)try{i.contextBridge.exposeInMainWorld(\"__SENTRY_IPC__\",a)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";const r=n(\"oyvS\"),i=n(\"jle/\"),a=i.homedir(),o=i.tmpdir(),{env:s}=process,c=(e,t)=>{if(\"string\"!=typeof e)throw new TypeError(\"Expected string, got \"+typeof e);return(t=Object.assign({suffix:\"nodejs\"},t)).suffix&&(e+=`-${t.suffix}`),\"darwin\"===process.platform?(e=>{const t=r.join(a,\"Library\");return{data:r.join(t,\"Application Support\",e),config:r.join(t,\"Preferences\",e),cache:r.join(t,\"Caches\",e),log:r.join(t,\"Logs\",e),temp:r.join(o,e)}})(e):\"win32\"===process.platform?(e=>{const t=s.APPDATA||r.join(a,\"AppData\",\"Roaming\"),n=s.LOCALAPPDATA||r.join(a,\"AppData\",\"Local\");return{data:r.join(n,e,\"Data\"),config:r.join(t,e,\"Config\"),cache:r.join(n,e,\"Cache\"),log:r.join(n,e,\"Log\"),temp:r.join(o,e)}})(e):(e=>{const t=r.basename(a);return{data:r.join(s.XDG_DATA_HOME||r.join(a,\".local\",\"share\"),e),config:r.join(s.XD"

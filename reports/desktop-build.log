@@ -1,0 +1,14 @@
+
+> zalo-apple-glass-ui@0.2.0 build:desktop
+> npm run check && npm run build && npm run build:electron && electron-builder --win portable --x64
+
+
+> zalo-apple-glass-ui@0.2.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.2.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+'tsc' is not recognized as an internal or external command,
+operable program or batch file.

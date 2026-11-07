@@ -1,0 +1,20 @@
+{
+  "command": [
+    "npm",
+    "install",
+    "--save-dev",
+    "--save-exact",
+    "electron-builder@26.18.0",
+    "vite@8.3.5",
+    "typescript-eslint@8.72.1",
+    "@axe-core/playwright@4.14.0",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    ".npm-cache"
+  ],
+  "started": "2026-11-05T02:54:22.689Z",
+  "finished": "2026-11-05T02:55:15.217Z",
+  "exitCode": 0,
+  "signal": null
+}

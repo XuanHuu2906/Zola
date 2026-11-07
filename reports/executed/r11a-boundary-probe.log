@@ -1,0 +1,427 @@
+﻿# R11A boundary probe - executed 2026-11-06T14:17:54.8153164Z
+# root=C:\Users\huung\AppData\Local\Temp\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6
+# node=v24.22.2
+
+===== symbol group: window =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:57.182Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "window",
+      "symbol": "BrowserWindow",
+      "matches": 6,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "window",
+      "symbol": "webPreferences",
+      "matches": 20,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "window",
+      "symbol": "preload-prop",
+      "matches": 13,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/preload-sqlite.js"
+      ]
+    },
+    {
+      "group": "window",
+      "symbol": "setWindowOpenHandler",
+      "matches": 6,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "window",
+      "symbol": "will-attach-webview",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "window",
+      "symbol": "web-contents-created",
+      "matches": 1,
+      "files": [
+        "main-dist/compact-app.js"
+      ]
+    }
+  ]
+}
+exit_code=0
+
+===== symbol group: security =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:57.524Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "security",
+      "symbol": "nodeIntegration",
+      "matches": 14,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "security",
+      "symbol": "contextIsolation",
+      "matches": 14,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "security",
+      "symbol": "sandbox",
+      "matches": 14,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "security",
+      "symbol": "enableRemoteModule",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "security",
+      "symbol": "webSecurity",
+      "matches": 19,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "security",
+      "symbol": "allowRunningInsecureContent",
+      "matches": 6,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    }
+  ]
+}
+exit_code=0
+
+===== symbol group: debug =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:57.860Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "debug",
+      "symbol": "appendSwitch",
+      "matches": 3,
+      "files": [
+        "main-dist/main.js"
+      ]
+    },
+    {
+      "group": "debug",
+      "symbol": "commandLine",
+      "matches": 4,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "debug",
+      "symbol": "remote-debugging-port",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "debug",
+      "symbol": "--inspect",
+      "matches": 9,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/migration.js",
+        "main-dist/mainless-worker.js"
+      ]
+    },
+    {
+      "group": "debug",
+      "symbol": "openDevTools",
+      "matches": 9,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "debug",
+      "symbol": "inspect-brk",
+      "matches": 0,
+      "files": []
+    }
+  ]
+}
+exit_code=0
+
+===== symbol group: ipc =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:58.243Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "ipc",
+      "symbol": "ipcMain.handle",
+      "matches": 2,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "ipc",
+      "symbol": "ipcMain.on",
+      "matches": 13,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "ipc",
+      "symbol": "ipcMain.once",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "ipc",
+      "symbol": "webContents.send",
+      "matches": 232,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/migration.js"
+      ]
+    },
+    {
+      "group": "ipc",
+      "symbol": "contextBridge.exposeInMainWorld",
+      "matches": 137,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/preload-render.js",
+        "main-dist/preload-noti.js",
+        "main-dist/preload-shared-worker.js",
+        "main-dist/preload-sqlite.js",
+        "main-dist/compact-app-preload.js"
+      ]
+    },
+    {
+      "group": "ipc",
+      "symbol": "executeJavaScript",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "ipc",
+      "symbol": "insertCSS",
+      "matches": 0,
+      "files": []
+    }
+  ]
+}
+exit_code=0
+
+===== symbol group: lifecycle =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:58.703Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "lifecycle",
+      "symbol": "app.whenReady",
+      "matches": 7,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "app.requestSingleInstanceLock",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "second-instance-event",
+      "matches": 1,
+      "files": [
+        "main-dist/main.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "setAsDefaultProtocolClient",
+      "matches": 4,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "open-url",
+      "matches": 3,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "zalo-protocol",
+      "matches": 11,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "launch-compact-app",
+      "matches": 22,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/migration.js",
+        "main-dist/utility-process-media.js",
+        "main-dist/utility-process-sqlite.js",
+        "main-dist/preload-render.js",
+        "main-dist/preload-noti.js",
+        "main-dist/preload-shared-worker.js",
+        "main-dist/preload-sqlite.js",
+        "main-dist/compact-app-preload.js"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "symbol": "before-quit",
+      "matches": 14,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/migration.js",
+        "main-dist/preload-render.js",
+        "main-dist/preload-noti.js",
+        "main-dist/preload-shared-worker.js"
+      ]
+    }
+  ]
+}
+exit_code=0
+
+===== symbol group: native =====
+{
+  "root": "C:\\Users\\huung\\AppData\\Local\\Temp\\rea-extracted-bbf240c9-76e3-421f-8c7f-5aafb7512bb6",
+  "generated_at": "2026-11-06T14:17:59.199Z",
+  "thresholds_note": "counts are lexical matches in minified bundles, NOT call sites",
+  "rows": [
+    {
+      "group": "native",
+      "symbol": "child_process.spawn",
+      "matches": 3,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "native",
+      "symbol": "child_process.execFile",
+      "matches": 2,
+      "files": [
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "native",
+      "symbol": "child_process.fork",
+      "matches": 4,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js",
+        "main-dist/mainless-worker.js"
+      ]
+    },
+    {
+      "group": "native",
+      "symbol": "ZaloCall",
+      "matches": 6,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "native",
+      "symbol": "ZaviMeet",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "native",
+      "symbol": "ZaloCap",
+      "matches": 4,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    },
+    {
+      "group": "native",
+      "symbol": "net.Socket",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "native",
+      "symbol": "named-pipe",
+      "matches": 0,
+      "files": []
+    },
+    {
+      "group": "native",
+      "symbol": "utilityProcess",
+      "matches": 2,
+      "files": [
+        "main-dist/main.js",
+        "main-dist/compact-app.js"
+      ]
+    }
+  ]
+}
+exit_code=0
+

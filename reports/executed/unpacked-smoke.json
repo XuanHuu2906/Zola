@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:desktop",
+    "--",
+    "release/win-unpacked/Glass Messenger Demo.exe",
+    "unpacked"
+  ],
+  "started": "2026-11-05T11:20:20.351Z",
+  "finished": "2026-11-05T11:20:39.841Z",
+  "exitCode": 0,
+  "signal": null
+}

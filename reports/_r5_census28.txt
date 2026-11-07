@@ -1,0 +1,8 @@
+js files scanned = 116
+readFile* with css-ish arg = 0
+
+".css" string literals = 2
+  [pc-dist\login.f32c58b63b6f4273a8a4.js] ".f32c58b63b6f4273a8a4.css"
+    "red-worker\",14:\"default-login-startup-main-startup\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",29:\"login-startup\"}[e]||e)+\".f32c58b63b6f4273a8a4.css\",o=u.p+n,i=document.getElementsByTagName(\"link\"),f=0;f<i.length;f++){var c=(l=i[f]).getAttrib"
+  [pc-dist\render.f32c58b63b6f4273a8a4.js] ".f32c58b63b6f4273a8a4.css"
+    "ranslation-language-model\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",30:\"main-startup\",41:\"vendors-main-startup\"}[e]||e)+\".f32c58b63b6f4273a8a4.css\",o=f.p+r,i=document.getElementsByTagName(\"link\"),d=0;d<i.length;d++){var u=(s=i[d]).getAttrib"

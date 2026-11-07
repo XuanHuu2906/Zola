@@ -1,0 +1,18 @@
+appId: local.glass.messaging.demo
+productName: Glass Messenger Demo
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+asar: true
+win:
+  icon: build/icon.ico
+  target:
+    - target: portable
+      arch: [x64]
+  artifactName: Glass-Messenger-Demo-${version}-${arch}.${ext}
+portable:
+  requestExecutionLevel: user

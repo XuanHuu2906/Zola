@@ -1,0 +1,88 @@
+{
+  "label": "before",
+  "at": "2026-11-06T16:58:03.509Z",
+  "scheme": {
+    "keyPath": "HKCU:\\Software\\Classes\\zalo",
+    "keyExists": true,
+    "openCommand": "\"C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo.exe\" \"--\" \"%1\"",
+    "delegateExecuteIsAbsent": true,
+    "registeredExeName": "Zalo.exe",
+    "registeredExeExists": true,
+    "registeredArgs": "\"--\" \"%1\""
+  },
+  "processes": {
+    "zaloCount": 9,
+    "stubCount": 0,
+    "rows": [
+      {
+        "pid": 3976,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 4668,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 6472,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 10836,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 11348,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 18220,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 18292,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 19968,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      },
+      {
+        "pid": 22316,
+        "name": "Zalo",
+        "path": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\Zalo.exe",
+        "mainWindowHandle": 0,
+        "responding": true
+      }
+    ]
+  },
+  "install": {
+    "asarPath": "C:\\Users\\huung\\AppData\\Local\\Programs\\Zalo\\Zalo-26.10.20\\resources\\app.asar",
+    "asarExists": true,
+    "asarSha256": "d83256230e5d1d4483c2411f71936c3dc1562fb8a885fd8752cab17d229201e6",
+    "asarBytes": 177728582
+  }
+}

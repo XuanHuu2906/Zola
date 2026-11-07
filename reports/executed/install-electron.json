@@ -1,0 +1,17 @@
+{
+  "command": [
+    "npm",
+    "install",
+    "--save-dev",
+    "--save-exact",
+    "electron@45.2.3",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    ".npm-cache"
+  ],
+  "started": "2026-11-05T02:46:24.581Z",
+  "finished": "2026-11-05T02:46:30.813Z",
+  "exitCode": 0,
+  "signal": null
+}

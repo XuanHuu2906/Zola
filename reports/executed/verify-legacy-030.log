@@ -1,0 +1,19 @@
+
+> zalo-apple-glass-ui@0.3.0 test:legacy
+> node --test --test-isolation=none legacy/tests/logic.test.cjs
+
+✔ HTML-escapes user-generated message content (2.1363ms)
+✔ removes diacritics in Vietnamese search terms (0.5476ms)
+✔ search matches normalized names (0.5642ms)
+✔ unread filter selects only unread (1.7854ms)
+✔ group and work filters use categories independently (0.4609ms)
+✔ pinned chats are sorted before unpinned (0.3258ms)
+✔ file metadata is textual and size-limited (0.4533ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 42.1962

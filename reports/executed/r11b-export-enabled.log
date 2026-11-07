@@ -1,0 +1,11 @@
+# R11B - export feature default state (identifier only)
+main-dist\preload-sqlite.js  default_enabled=1  server_override_site=0
+pc-dist\compact-app-pc.f32c58b63b6f4273a8a4.js  default_enabled=1  server_override_site=1
+pc-dist\lazy\default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js  default_enabled=1  server_override_site=1
+pc-dist\search-worker.f32c58b63b6f4273a8a4.js  default_enabled=1  server_override_site=1
+pc-dist\sync-v2-sub-worker.f32c58b63b6f4273a8a4.js  default_enabled=1  server_override_site=1
+
+files_with_default_enabled=yes
+default_enabled_occurrences=5
+server_override_occurrences=4
+note=default is enabled; a Zalo server feature flag can override at runtime

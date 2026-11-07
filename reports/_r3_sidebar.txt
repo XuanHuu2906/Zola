@@ -1,0 +1,74 @@
+
+## .nav-content rules=5
+   @410911 .nav-content
+        position:fixed;top:24px;left:64px;z-index:6;box-sizing:border-box;background:var(--layer-background);width:calc(100% - 64px);height:calc(100% - 24px)
+   @411074 .nav-content>.nav
+        width:calc(var(--nav-width) - 64px);border-right:1px solid var(--border)
+   @411165 .nav-content>.nav.nav-only
+        width:100%;border:none
+   @411215 .nav-content>.content
+        max-width:calc(100% - var(--nav-width) + 64px)
+   @411284 .nav-content>.content.hide-nav
+        max-width:100%
+
+## .conv-list-panel rules=0
+
+## .nav__content rules=1
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.mes
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+
+## .main__left rules=0
+
+## .main__center rules=3
+   @246748 .main__center
+        transition:width .25s;transition-timing-function:step-end
+   @908336 .main__center.fadeIn,.main__center.fadeInImageShow,.main__center.fadeInShort,.tab-main .main__center.tab-unread
+        animation-duration:.5s
+   @908471 .main__center.slideInLeft
+        animation:.8s ease-out
+
+## .main__right rules=0
+
+## #sidebarNav rules=4
+   @409527 #sidebarNav
+        width:408px;width:var(--nav-width)
+   @409574 #sidebarNav.compact-mode
+        width:100%
+   @409610 #sidebarNav.compact-mode.show-chat
+        width:64px;box-sizing:border-box
+   @2300000 .custom.mask-sidebar #sidebarNav
+        background:var(--layer-background-navbar-normal)
+
+## .conv-list-compact rules=1
+   @410218 .conv-list-compact
+        min-width:calc(100vw - 64px);transition:min-width .3s;background:var(--layer-background)
+
+## .sidebarNav rules=0
+
+=== who renders <nav id="sidebarNav"> (B) ===
+@12283006
+lassName:"fa fa-textbox-icon-clear btn clickable close-spinner",onClick:h.onClickClearSearch}):null),A?r.a.createElement(f.a,{textKey:"STR_CLOSE",size:"medium",type:"tertiary-neutral",className:"wi",onClick:h.onclickCloseSearchButton}):r.a.createElement(L,{sidebarController:_}))}const k=Object(i.memo)(P);var x=a("sh7v"),F=a("PoHQ");const U={zIndex:11};function B(e){return r.a.createElement("nav",{id:"sidebarNav",onDrop:x.c,onDragOver:x.c,onDragEnd:x.c,className:e.className},r.a.createElement("div",{id:"main-tab",style:function(){var e,t;const n=null===A.default||void 0===A.default||null===(e=A.default.leftMenu)||void 0===e?void 0:e.actionContent.sidebarBack,a=null===A.default||void 0===A.default||null===(t=A.default.leftMenu)||void 0===t?void 0:t.actionContent.sidebarStyle;if(n&&a)return Object(u.a)(Object(u.a)({},U),{},{background:['url("'+n+'")',a].join()});return U}(),className:"nav__
+
+B def @12282960
+
+=== find callers of sidebar B / wrapper with main__left ===
+
+## "main__left" occ=0
+
+## "id:\"app-page\"" occ=2
+@2927963
+]}),r.a.createElement(ee.a,null),r.a.createElement(X,Object(a.a)({},e,{state:d,conversation:A,selfWindow:u,compactLv:t,superCompact:!1})),e.GlobalContextMenu&&r.a.createElement(e.GlobalContextMenu.Component,null))},ie=n("i8i4"),re=n.n(ie),se=n("nahq");function oe(e){var t;const[n]=r.a.useState((()=>se.default.getWindow(e.windowKey)));let a=null==n||null===(t=n.document)||void 0===t?void 0:t.getElementById("app");return n?re.a.createPortal(r.a.createElement("div",{className:"flx flx-col default",id:"app-page"},e.children),a):null}var le=n("+V8v"),ce=n("ZBGy"),de=n("oVrz"),ue=n("Vp9m"),Ae=n("WWOu"),he=n("V0Mo"),me=n("Sj3C"),pe=n("HuPi"),ge=n("YGiT");function fe(e){const[t,n]=r.a.useState([]),{refreshAfterCloseCurrentChild:i,verifyAndRefreshAfterChildAlive:o}=e;return r.a.useEffect((()=>{s.default.initAfterMounted()}),[]),r.a.useEffect((()=>{const e=e=>{const{windowId:a}=e;A.default.stagingLog("[RENDERER] [MULTI-WINDOW] [cuong] holder receive message"+e,!0),n([...t,a]),o(a);const i=s.default.getConvIdFromWindowId(a);i&&G.ModuleContainer.resolve(j.PreviewDataManager).onChangeDraft(i,null),Object(ge.a)(s.default.getWindow(a))},a=e=>{const{windowId:a}=e,r=t.filter((e=>e!=a));n(r),Object(
+@5286400
+a.createElement(Ze.a,{ref:e=>this.mediaAction=e,shareMessage:this.mainChatboxController&&this.mainChatboxController._shareMessage,dispatch:this.props.dispatch,isGroup:!!y&&y.startsWith(Z.GROUPID_PREFIX),currentId:y,userId:this.props.user.userId,emitter:this.props.emitter,mediaActionKey:"main"}),R=this.state.confirm||this.props.popup.confirm,{popup:O}=this.props;let C=O.currentConfirm;return C&&C.windowId===ta.c||(C=null),l.a.createElement("div",{className:"flx flx-col default use-system-banner",id:"app-page"},l.a.createElement(Na.b,null),l.a.createElement(Na.a.Monitor,null),C,l.a.createElement(De.a,{currentId:r}),l.a.createElement(Dt.a,{key:"mini-noti",compactLv:this.state.compactLv,showChat:this.state.showChat}),this.GlobalContextMenu&&l.a.createElement(this.GlobalContextMenu.Component,null),Object.keys(this.props.popup.isShowPopupWarningCapPermission).map((e=>{const t=this.props.popup.isShowPopupWarningCapPermission[e]?_n.default.getWindow(e):null;return this.props.popup.isShowPopupWarningCapPermission[e]?l.a.createElement(F.a,{windowId:e,key:e,windowContainer:t,cancel:()=>this._togglePopupWarningCapPermission.call(this,e)}):null})),Object.keys(this.props.popup.isShowConfirmDel).
+
+## "className:\"main " occ=0
+
+## "\"main flx" occ=0
+
+=== conversation list scroll container ids ===
+  "listViewScroll" occ=0
+  "convListScroll" occ=0
+  "id:\"listView" occ=0
+  "id:\"conv" occ=4
+    @12380322: "\"flx-1\"},r.a.createElement(\"div\",{className:\"sk-name loadingDefault loadingMediaText\"}),r.a.createElement(\"div\",{className:\"sk-msg loadingDefault loadingMediaText\"}))));return e}),[t]);return r.a.createElement(\"div\",{className:\"w100 flx-1\",id:\"conv-skeleton\"},i)},ci=a(\"Anfm\"),di=a(\"Zai0\");class ui extends r.a.Component{constructor(e){super(e)}componentDidMount(){var e,t;null!=this&&null!==(e=this.props)&&void 0!==e&&null!==(t=e.data)&&void 0!==t&&t.id&&(F.n.isBannerTracked(this.props.data.id)||(R.default.logActionSeenVAS(s.EntryPointTrackingVAS.BANNER_CO"
+  "dataId:\"div_TabMsg_Thrd" occ=0

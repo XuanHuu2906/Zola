@@ -1,0 +1,15 @@
+=== chunk1 = default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js (17220737 B) — the main-window chunk loaded by render.js ===
+
+sink anchor @12089603
+module start @12084875
+module key = null
+
+
+=== scrubber tail (from body query to close) ===
+"document.getElementsByTagName(\"head\");null==c||null===(e=c[0])||void 0===e||null===(t=e.querySelectorAll(r))||void 0===t||t.forEach((e=>null==e?void 0:e.remove())),null==c||null===(n=c[0])||void 0===n||null===(a=n.querySelectorAll(l))||void 0===a||a.forEach((e=>null==e?void 0:e.remove())),null===(s=document.getElementsByTagName(\"body\"))||void 0===s||null===(i=s[0])||void 0===i||null===(o=i.querySelectorAll(l))||void 0===o||o.forEach((e=>null==e?void 0:e.remove()))},E=e=>{if(!f())return;const t=e===i.THEME.DARK?\"#121416\":\"#E5E7EB\";let n=document.querySelector('meta[name=\"theme-color\"]');n||(n=document.createElement(\"meta\"),n.setAttribute(\"name\",\"theme-color\"),document.head.appendChild(n)),n.setAttribute(\"content\",t)},f=()=>window.matchMedia(i.DISPLAY_MEDIA_QUERY).matches||window.navigator.standalone||document.referrer.includes(\"android-app://\"),I=e=>{if(!e)return null;const t=v();return t.unshift({time:Date.now(),setting:e}),localStorage.setItem(\"za_theme_custom\",JSON.stringify(t)),e},v"
+
+scrubber binding candidates: []
+
+=== "custom" class add/remove sites (context) ===
+  @12852018 :: "classList.add(rt.e.CUSTOM)):(document.body.classList.contains(rt.e.CUSTOM)&&document.body.classList.remove(rt.e.CUSTOM),"
+

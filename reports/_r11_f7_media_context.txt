@@ -1,0 +1,47 @@
+JS bundles scanned: 116
+
+--- DIRECT MEDIA PRIMITIVES ---
+{
+ "navigator.mediaDevices": 0,
+ "mediaDevices.getUserMedia": 0,
+ "enumerateDevices": 0,
+ "srcObject": 0,
+ "RTCRtpSender": 0,
+ "createDataChannel": 4,
+ "getLocalIP": 12
+}
+
+--- RTCPeerConnection SITES ---
+pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js  offsets [19955982,19956007,19956036,19956068,19956106,19956141]
+  @19955982: t)}else{{const{copyPhotoToClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>
+  @19956007: oClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""
+  @19956036: DWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDes
+  @19956068: (e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandi
+  @19956106: eerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candi
+  @19956141: ion||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candidate.candidate)return;let i=/([0-9]
+pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js  offsets [16350885,16350910,16350939,16350971,16351009,16351044]
+  @16350885: t)}else{{const{copyPhotoToClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>
+  @16350910: oClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""
+  @16350939: DWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDes
+  @16350971: (e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandi
+  @16351009: eerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candi
+  @16351044: ion||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candidate.candidate)return;let s=/([0-9]
+pc-dist/search-worker.f32c58b63b6f4273a8a4.js  offsets [20191764,20191789,20191818,20191850,20191888,20191923]
+  @20191764: t)}else{{const{copyPhotoToClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>
+  @20191789: oClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""
+  @20191818: DWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDes
+  @20191850: (e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandi
+  @20191888: eerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candi
+  @20191923: ion||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candidate.candidate)return;let i=/([0-9]
+pc-dist/sync-v2-sub-worker.f32c58b63b6f4273a8a4.js  offsets [20225784,20225809,20225838,20225870,20225908,20225943]
+  @20225784: t)}else{{const{copyPhotoToClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>
+  @20225809: oClipboardFromMessage:n}=a("hDWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""
+  @20225838: DWK");n(e,t)}}}static getLocalIP(e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDes
+  @20225870: (e){if(this.isWeb())try{if(window.RTCPeerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandi
+  @20225908: eerConnection=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candi
+  @20225943: ion||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,"undefined"==typeof RTCPeerConnection)return;let t=new RTCPeerConnection({iceServers:[]}),n=()=>{};t.createDataChannel(""),t.createOffer(t.setLocalDescription.bind(t),n),t.onicecandidate=a=>{if(!a||!a.candidate||!a.candidate.candidate)return;let i=/([0-9]
+
+--- VERDICT ---
+real capture call sites (getUserMedia/getDisplayMedia/mediaDevices invoked): 0
+RTCPeerConnection sites: 24
+RTCRtpSender sites: 0

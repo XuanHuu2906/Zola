@@ -1,0 +1,94 @@
+
+### .threadChat__*
+  @255573 .threadChat__title   (parts=1)
+      position:relative;margin-left:12px;margin-right:18px
+  @255645 .threadChat__title.nostatus   (parts=1)
+      top:calc(50% - 18px)
+  @255694 .threadChat__title.super-compact   (parts=1)
+      margin-left:0
+  @255741 .threadChat__emoticon   (parts=1)
+      font-size:1.125rem;font-weight:400;line-height:1.5
+  @255814 .threadChat__iframe   (parts=1)
+      position:absolute;top:0;left:0;width:62px;height:62px;border:none;pointer-events:none
+  @255920 .threadChat__btn-is-friend   (parts=1)
+      font-size:.625rem;font-weight:500;line-height:1.5;color:var(--text-on-color);min-width:48px;height:20px;line-height:20px;border-radius:4px;background-color:var(--background-inactiveness-subtle);padding:0 5px;margin-right:20px;position:relative;top:0
+  @256342 .threadChat__zbot-account-tag   (parts=1)
+      font-size:.8125rem;font-weight:400;line-height:18px;color:var(--text-secondary)
+  @256452 .threadChat__mutual-group   (parts=1)
+      font-size:.875rem;font-weight:400;line-height:1.5;position:relative;height:21px;cursor:pointer
+  @256573 .threadChat__mutual-group__icon-mutual   (parts=1)
+      margin-right:3px;position:relative;top:1px
+  @256788 .threadChat__mutual-group--no-size   (parts=1)
+      cursor:default;min-width:30px
+  @257000 .threadChat__mutual-include   (parts=1)
+      display:flex
+
+### .threadChat plain
+  (none)
+
+### utility .flx family
+  @61926 .flx   (parts=485)
+      display:-webkit-flex;flex-flow:row nowrap
+  @81623 .flx-col   (parts=96)
+      flex-flow:column nowrap
+  @84788 .flx-sp-btw   (parts=35)
+      justify-content:space-between
+  @95862 .flx-al-c   (parts=339)
+      align-items:center
+  @109641 .flx-cell   (parts=7)
+      flex:1 1 auto
+  @109761 .flx-1   (parts=11)
+      flex:1
+  @121511 .flx   (parts=485)
+      display:flex
+
+### .rel / .ovf-hidden
+  @61716 .ovf-hidden   (parts=1)
+      overflow:hidden
+  @80883 .rel   (parts=22)
+      position:relative
+
+### .conv-back-btn
+  @410029 .conv-back-btn   (parts=1)
+      margin-right:8px;margin-left:-2px
+
+
+=== all .threadChat__ rules (any depth), truncated ===
+  @255257 .threadChat__avatar>.avatar
+      position:relative
+  @255303 .threadChat__avatar>.avatar>.avatar-img:before
+      position:absolute;left:0;border-radius:100%;content:" ";box-shadow:inset 0 0 1px var(--BA20);-moz-box-shadow:inset 0 0 1px var(--BA20);-webkit-box-shadow:inset 0 0 1px var(--BA20);width:100%;height:10
+  @255573 .threadChat__title
+      position:relative;margin-left:12px;margin-right:18px
+  @255645 .threadChat__title.nostatus
+      top:calc(50% - 18px)
+  @255694 .threadChat__title.super-compact
+      margin-left:0
+  @255741 .threadChat__emoticon
+      font-size:1.125rem;font-weight:400;line-height:1.5
+  @255814 .threadChat__iframe
+      position:absolute;top:0;left:0;width:62px;height:62px;border:none;pointer-events:none
+  @255920 .threadChat__btn-is-friend
+      font-size:.625rem;font-weight:500;line-height:1.5;color:var(--text-on-color);min-width:48px;height:20px;line-height:20px;border-radius:4px;background-color:var(--background-inactiveness-subtle);paddin
+  @256197 .threadChat__btn-is-friend:before
+      position:absolute;content:"";height:100%;width:1px;background:var(--layer-background-subtle);right:-11px;top:0
+  @256342 .threadChat__zbot-account-tag
+      font-size:.8125rem;font-weight:400;line-height:18px;color:var(--text-secondary)
+  @256452 .threadChat__mutual-group
+      font-size:.875rem;font-weight:400;line-height:1.5;position:relative;height:21px;cursor:pointer
+  @256573 .threadChat__mutual-group__icon-mutual
+      margin-right:3px;position:relative;top:1px
+  @256655 .threadChat__mutual-group:hover,.threadChat__mutual-group:hover .threadChat__mutual-group__icon-mutual
+      color:var(--text-information)
+  @256788 .threadChat__mutual-group--no-size
+      cursor:default;min-width:30px
+  @256853 .threadChat__mutual-group--no-size:hover,.threadChat__mutual-group--no-size:hover .threadChat__mutual-group__icon-mutual
+      color:var(--text-primary)
+  @257000 .threadChat__mutual-include
+      display:flex
+
+
+=== background/backdrop declarations on any .threadChat* rule ===
+  @255303 .threadChat__avatar>.avatar>.avatar-img:before => box-shadow:inset 0 0 1px var(--BA20) | box-shadow:inset 0 0 1px var(--BA20) | box-shadow:inset 0 0 1px var(--BA20)
+  @255920 .threadChat__btn-is-friend => background-color:var(--background-inactiveness-subtle)
+  @256197 .threadChat__btn-is-friend:before => background:var(--layer-background-subtle)

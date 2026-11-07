@@ -1,0 +1,11 @@
+### HKCU\Software\Classes schemes matching zalo/vng
+  zalo
+### HKLM\Software\Classes schemes
+### verbs under HKCU zalo\shell
+  verb=open
+### shell\open\ddeexec present?
+  ddeexec=False
+### Zalo autostart entries
+### Zalo scheduled tasks
+### Zalo COM registrations
+### done

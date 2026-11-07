@@ -1,0 +1,92 @@
+=== native module inventory (native/) ===
+DIR nativelibs
+  DIR db-cross-v4
+    DIR dist
+    DIR prebuilt
+  DIR file-utilities
+    DIR ia32
+    index.js 9961
+    DIR x64
+  DIR file-utils
+    DIR darwin
+    DIR darwin-arm
+    DIR ia32
+    index.js 487
+    DIR x64
+  index.js 1676
+  DIR logger
+    abstract.js 2310
+    index.js 11375
+    logger.config.js 1134
+  DIR mp4thumb
+    index.js 3330
+    DIR win32
+  DIR os-sys-info
+    index.js 1474
+    DIR win32_ia32
+    DIR win32_x64
+  package.json 400
+  DIR sqlite3
+    DIR binding
+    index.js 40
+    sqlite3-binding.js 212
+    sqlite3.d.ts 4745
+    sqlite3.js 6514
+    trace.js 1384
+  DIR v8-profiles
+    index.js 2533
+    profiler_electron1.8_win32_ia32.node 120320
+  DIR win-utils
+    DIR ia32
+    index.js 278
+  DIR zcall
+    binding.js 353
+    index.js 6860
+    screen-object-canvas.js 4123
+    screen-object.js 7504
+    vcmac.js 12220
+    zcall_ia32.node 4675584
+  DIR zfile
+    index.js 2298
+    DIR win32
+    DIR win64
+  DIR zimage
+    DIR ia32
+    index.js 4175
+  DIR zjxl
+    DIR build
+    index.js 3725
+  DIR zlang
+    index.js 5957
+    DIR win32-ia32
+    DIR win32-x64
+  DIR zocr
+    zocr.min.js 23103
+  DIR zwalker
+    index.d.ts 4342
+    index.js 8098
+    DIR win32-ia32-msvc
+    DIR win32-x64-msvc
+
+=== function-surface census (main.js counts) ===
+  [login/session] zpw_sek=13 ZaloLoginWidget=0 login.html=2 refreshToken=4 RefreshToken=2
+  [messaging] zMsgChannel=0 MsgChannel=0 sendMessage=3 messageChannel=19
+  [file-send] zFileManager=0 uploadFile=0 new-download-file=16 zcloud=11 ZCloud=8
+  [calling] zcall=0 CallChannel=0 videoCall=0 webrtc=0 WebRTC=0
+  [sync/db] zdb=4 sqlite=57 SQLite=110 ZDB=0 syncMessage=0 conversationList=0
+  [updater] checkForUpdates=15 quitAndInstall=28 update-downloaded=6
+
+=== preload bridge groups ===
+  [login/session] zpw_sek=0 ZaloLoginWidget=0 login.html=0 refreshToken=0 RefreshToken=0
+  [messaging] zMsgChannel=3 MsgChannel=3 sendMessage=1 messageChannel=0
+  [file-send] zFileManager=14 uploadFile=0 new-download-file=0 zcloud=3 ZCloud=0
+  [calling] zcall=5 CallChannel=0 videoCall=0 webrtc=0 WebRTC=0
+  [sync/db] zdb=4 sqlite=18 SQLite=25 ZDB=0 syncMessage=0 conversationList=0
+  [updater] checkForUpdates=0 quitAndInstall=0 update-downloaded=0
+
+=== CSP monitor handler verbatim ===
+"setupCSPMonitor(e){this.stopCSPMonitor(),this.cspSender=e,e.session.webRequest.onHeadersReceived(((t,n)=>{if(\"subFrame\"===t.resourceType){const n=t.responseHeaders||{},r=(n[\"content-security-policy\"]||n[\"Content-Security-Policy\"]||[])[0]||\"\";r&&function(e){const t=e.split(\";\").map((e=>e.trim())).find((e=>e.toLowerCase().startsWith(\"frame-ancestors\")));if(!t)return!1;const n=t.replace(/^frame-ancestors\\s*/i,\"\").trim();return!n||\"'none'\"===n||\"*\"!==n&&!n.includes(\"file:\")}(r)&&(e.isDestroyed()||e.send(Xr.CSP_BLOCKED),this.stopCSPMonitor())}n({responseHeaders:t.responseHeaders})}))}stopCSPMonitor(){if(this.cspSender)try{this.cspSender.isDestroyed()||this.cspSender.session.webRequest.onHeadersReceived(null)}catch{}this.cspSender=void 0}},si={openOAuthWindow:async(e,t)=>{const n=await(async(e,t)=>ai.openOAuthWindow(e,t))(t,e);return n},startCSPMonitor:async e=>{var t;t=e.sender,ai.setupCSPMonitor(t)},stopCSPMonitor:async e=>{ai.stopCSPMonitor()}};var ci=n(\"NgjO\");const li={recognize:{apiKey:ci.b.RECOGNIZE,type:f.a.REQUEST},isSupported:{apiKey:ci.b.IS_SUPPORTED,type:f.a.REQUEST},prewarm:{apiKey:ci.b.PREWARM,type:f.a.REQUEST}};var di=n(\"6gxp\");const ui={recognize:async"
+
+=== headerController.addNewHeader (module yyar) ===
+"yyar\");r.addNewHeader(e.url,e.responseHeaders),t({responseHeaders:e.responseHeaders})}))}))}(),On.once(\"open-url\",((e,t)=>{\"string\"==typeof t&&t.startsWith(\"zalo://\")&&(Mn=t),e.preventDefault()}));var kn=n(\"5U9b\");class xn extends kn.a{async get(){throw new Error(\"Not implemented!\")}async set(e){throw new Error(\"Not implemented!\")}recordClickCount(e){throw new Error(\"Not implemented!\")}clearUnusedData(e){throw new Error(\"Method not implemented.\")}}o.ModuleContainer.registerSingleton(kn.b,xn);var Fn=n(\"wnmJ\"),Un=n(\"hwZC\");n(\"5wAm\");function Bn(e){return new Promise((t=>{ie.a.stat(e,(e=>{t(!e)}))}))}async function jn(e){if(!(await Bn(e)))return new Promise(((t,n)=>{ie.a.mkdir(e,{recursive:!0},(e=>{e?n(e):t()}))}))}const Hn=async e=>{const t=await Object(_t.getuserDataDir)(),n=p.a.join(t,\"tf-models\",\"stk_sug\",e);return await jn(n),n};let zn;var Yn;(Yn=zn||(zn={})).readJSONFileAsObject=async(e,t,n,r)=>{if(!(await Bn(e)))return void t(null);let i=null;try{i=await re.promises.readFile(e,\"utf8\")}catch(o){return void n(o)}try{t(JSON.parse(i))}catch(o){r(o)}},Yn.writeObjectAsJSONFile=async(e,t,n,r,i)=>{const o=p.a.dirname(e);await jn(o);let a=\"\";try{a=JSON.stringify(t)}catch(s){return void "
+

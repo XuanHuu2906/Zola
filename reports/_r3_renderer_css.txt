@@ -1,0 +1,350 @@
+
+## .titlebar  rules=10
+   @252364 #offline-page .titlebar
+        top:0;position:absolute;left:0;width:100%;box-sizing:border-box;-webkit-app-region:drag
+   @413961 .titlebar
+        -webkit-user-select:none;height:24px;min-height:24px;background:var(--title-bar);font-size:.75rem;font-weight:500;line-height:1.5;z-index:2;width:calc(100% - 80px);left:64px;padding-left:16px;color:var(--text-primary)
+   @414189 .titlebar.locked
+        z-index:999999;left:0;width:calc(100% - 16px)
+   @414252 .titlebar.locked .title-name.macos
+        padding-left:64px;box-sizing:border-box
+   @418527 .title-bar-feature .titlebar
+        height:24px;position:relative;justify-content:space-between;background:var(--layer-background-subtle)
+   @1754501 .screen-old-app__container .titlebar
+        width:calc(100% - 16px);left:0
+   @2030411 .db-migrate>.titlebar,.db-migrate__title-bar
+        height:24px;right:0;left:0;top:0;position:absolute
+   @2030507 .db-migrate>.titlebar
+        width:calc(100% - 16px)
+
+## .titlebar__btns  rules=20
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:-webkit-flex;flex-flow:row nowrap
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        align-items:center
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:flex
+   @141095 #container,.composer-container,.contact-pages.page-container .card-list-wrapper,.contact-pages.page-container .card-list-wrapper.grid,.contact-pages.page-container>.list-wrapper,.conv-item-padding,.h100,.icon__custom__contact__tab__v2>.icon
+        height:100%!important
+
+## #titleBar  rules=1
+   @2299248 .custom.mask-sidebar #titleBar
+        background:var(--layer-background-navbar-normal)
+
+## .nav-button_add_friend  rules=4
+   @195980 .chat-input-link-preview .nav-button_add_friend>i.preview-thumb-link:after,.fa-icon-add-friend:after,.group-topic.nav-button_add_friend>i.topic-banner__thumb-default:after,.link-preview-v2 .nav-button_add_friend>i.preview-thumb-link:after,.
+        content:"\eba2"
+   @295927 .nav-button_add_friend
+        top:-6px
+   @295959 .chat-input-link-preview .nav-button_add_friend>i.preview-thumb-link,.group-topic.nav-button_add_friend>i.topic-banner__thumb-default,.link-preview-v2 .nav-button_add_friend>i.preview-thumb-link,.nav-button_add_friend>i.b-item-thumb-image__
+        font-size:1.1875rem;width:1.1875rem;height:1.1875rem;line-height:0
+   @296915 .card--group-photo__row__item .nav-button_add_friend:hover>img.card--group-photo__row__item__photo,.chat-input-link-preview .nav-button_add_friend:hover>.preview-thumb-link,.chat-message-picture__photo.nav-button_add_friend:hover>img,.group
+        color:var(--text-information)
+
+## #contact-search-input  rules=6
+   @271283 #contact-search-input
+        height:32px;background-color:var(--input-field-bg-filled);color:var(--text-primary);border:unset;font-size:.875rem;font-weight:400;line-height:1.5;line-height:32px;border-radius:5px;width:100%;box-sizing:border-box;padding:0 30px
+   @271535 #contact-search-input:hover
+        background-color:var(--input-field-bg-filled-hover)
+   @271615 #contact-search-input:focus
+        outline:none;border:1px solid var(--input-field-bg-outline-pressed)
+   @271711 #contact-search-input::-webkit-input-placeholder
+        color:var(--text-placeholder)
+   @271790 #contact-search-input:-moz-placeholder,#contact-search-input::-moz-placeholder
+        color:var(--text-placeholder)
+   @271899 #contact-search-input:-ms-input-placeholder
+        color:var(--text-placeholder)
+
+## .conv-item-title__name  rules=8
+   @109641 .conv-item-title__name,.conv-message,.conv-title-name,.flx-cell,.item-message,.item-title-name,.zl-scroll
+        flex:1 1 auto
+   @114054 #group-creator .create-group__item__name,.cb-info-file-item__error-msg,.cb-info-file-item__file-size,.cb-info-file-item__send-date,.cb-info-file-item__suggest-preview-file,.cb-info-file-item__suggest-preview-folder,.chat-box-member__info__n
+        text-overflow:ellipsis;white-space:nowrap;overflow:hidden;word-wrap:break-word
+   @389707 #group-creator .nigh-chat-friend .night-chat-online-friend .gr-item:hover .create-group__item__name,.chat-input-link-preview .nigh-chat-friend .night-chat-online-friend .gr-item:hover .preview-desc,.chat-input-link-preview .nigh-chat-friend
+        color:var(--text-information)
+   @688130 .conv-item-title__name
+        max-width:calc(100% - 8px);text-overflow:ellipsis;display:block;flex:1;color:var(--text-primary);display:flex
+
+## .conv-list-empty-wrapper  rules=15
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:-webkit-flex;flex-flow:row nowrap
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#searchResultList .global-search-no-result__sub-text-wra
+        justify-content:center
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        align-items:center
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:flex
+
+## .threadChat__title  rules=3
+   @255573 .threadChat__title
+        position:relative;margin-left:12px;margin-right:18px
+   @255645 .threadChat__title.nostatus
+        top:calc(50% - 18px)
+   @255694 .threadChat__title.super-compact
+        margin-left:0
+
+## .threadChat__mutual-group  rules=5
+   @256452 .threadChat__mutual-group
+        font-size:.875rem;font-weight:400;line-height:1.5;position:relative;height:21px;cursor:pointer
+   @256573 .threadChat__mutual-group__icon-mutual
+        margin-right:3px;position:relative;top:1px
+   @256655 .threadChat__mutual-group:hover,.threadChat__mutual-group:hover .threadChat__mutual-group__icon-mutual
+        color:var(--text-information)
+   @256788 .threadChat__mutual-group--no-size
+        cursor:default;min-width:30px
+
+## .threadChat__avatar  rules=2
+   @255257 .threadChat__avatar>.avatar
+        position:relative
+   @255303 .threadChat__avatar>.avatar>.avatar-img:before
+        position:absolute;left:0;border-radius:100%;content:" ";box-shadow:inset 0 0 1px var(--BA20);-moz-box-shadow:inset 0 0 1px var(--BA20);-webkit-box-shadow:inset 0 0 1px var(--BA20);width:100%;height:100%;pointer-events:none
+
+## .chat-message   rules=113
+   @142513 .chat-message.first-selected.tdtab-item,.chat-message.last-selected.tdtab-item,.list-item--highlight.chat-message.first-selected,.list-item--highlight.chat-message.last-selected,.list-item--highlight.selected,.selected.tdtab-item
+        color:var(--text-information)
+   @649093 #rtfTool .chat-box-input__tools__btn .chat-message.first-selected,#rtfTool .chat-box-input__tools__btn .chat-message.last-selected,#rtfTool .chat-box-input__tools__btn .selected,#rtfTool .chat-box-input__tools__btn:hover .format-icon
+        color:var(--text-information)
+   @664410 .text-color-menu-container .chat-message.first-selected,.text-color-menu-container .chat-message.last-selected,.text-color-menu-container .selected
+        width:16px;height:16px;border:2px solid var(--border-highlight)
+   @700120 .chat-message
+        display:-webkit-flex;display:flex;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;justify-content:flex-start;align-items:flex-start;position:relative;color:var(--text-primary)
+   @700347 .chat-message.wrap-message:before
+        content:" ";width:100%;height:100%;position:absolute;padding:0 100px;right:-100px
+   @700561 .chat-message .extra-btn
+        font-size:.875rem;font-weight:400;line-height:1.5;position:relative;background-color:var(--BA30);color:var(--text-on-color);margin-bottom:4px;border-color:transparent;border-radius:6px;padding:8px 16px
+   @700788 .chat-message .extra-btn:hover
+        background:var(--background-activeness);color:var(--text-on-color)
+   @700886 .chat-message .extra-btn__text
+        text-transform:uppercase
+   @700942 .chat-message .extra-btn__icon
+        margin-right:6px;font-size:1rem;width:1rem;height:1rem;line-height:0
+   @701042 .chat-message .extra-btn:nth-child(2n)
+        margin-left:3px
+   @701097 .chat-message .marker-icon
+        align-self:center;border-radius:50%;border:1px solid var(--WA100);box-shadow:0 0 2px 0 var(--BA20);top:0;left:0;bottom:33px;right:0;margin:auto
+   @701268 .chat-message .marker-icon,.chat-message .marker-icon__avatar
+        position:absolute;width:30px;height:30px;background-size:contain
+   @701395 .chat-message .marker-icon__avatar
+        border-radius:50%
+   @701448 .chat-message .marker-icon:before
+        content:"";position:absolute;width:20px;height:20px;left:5px;top:11px;background:var(--WA100);-webkit-box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9px var(--N300);-moz-box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9px var(--N300);box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9px var(--N300);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rota
+
+## .chat-message.me  rules=38
+   @717217 .chat-message.me
+        justify-content:flex-end
+   @721212 .chat-message.me .fa-cloud
+        right:1px;left:unset
+   @1318632 .chat-message.me .photo-sticker__loading-container
+        justify-content:flex-end
+   @1340749 .chat-message.me .audio-message .bubble-message-time-status
+        right:0
+   @1340890 .chat-message.me .audio-message .card-send-time:not(.error) .card-send-status
+        padding-right:0
+   @1340984 .chat-message.me .audio-message .card-send-time.error .card-send-status
+        padding-right:8px
+   @1341074 .chat-message.me .audio-message .card-send-time.error
+        flex-direction:row-reverse
+   @1341155 .chat-message.me .audio-message .card-send-time.-has-status .card-send-time__sendTime,.chat-message.me .audio-message .card-send-time .card-send-status
+        flex:0 0 auto
+   @1342212 .chat-message.me .card--location .bubble-message-time-status
+        right:0
+   @1342355 .chat-message.me .card--location .card-send-time:not(.error) .card-send-status
+        padding-right:0
+
+## .chat-date  rules=20
+   @109395 .avatar,.card--link-img,.card--link-img.default,.chat-date>span,.chat-info-general__options,.chat-list-text-separator>span,.chat-onboard__icon,.flx-fix,.photo-sticker__command-container,.thumb-img-suggest,header
+        flex:0 0 auto
+   @695905 .chat-date
+        color:var(--text-on-color);contain:content;margin:0 60px 16px;display:grid;grid-template-columns:1fr auto 1fr;font-size:.8125rem;font-weight:400;line-height:1.5;justify-content:center;position:relative
+   @696118 .chat-date>span
+        background:var(--timestamp);border-radius:10px;padding:2px 10px 3px;z-index:2
+   @696212 .chat-date .line
+        content:"";width:100%;height:0;border-top:1px solid var(--BA20);z-index:0;margin-top:11px
+   @696319 .chat-date.has-text-sep
+        margin-right:4px;grid-template-columns:1fr auto 1fr 56px
+   @696400 .chat-date.has-text-sep .line
+        border-top:.5px solid var(--border-focused)
+
+## .block-date  rules=12
+   @1499670 .preview-ts .block-date>.chat-date
+        transition:.3s ease-out;position:relative;border-radius:10px
+   @1499766 .preview-ts .block-date>.chat-date>.content
+        width:108px;text-align:center
+   @1499840 .preview-ts .block-date>.chat-date>span
+        backdrop-filter:blur(10px)
+   @1499907 .preview-ts .block-date>.chat-date.--time
+        width:116px;border-radius:10px;margin:16px auto
+
+## .chat-box-input   rules=24
+   @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__avatar,#group-creator .create-group__
+        cursor:pointer
+   @259127 #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#calendar-v3>.cal-title .main-title .subtitle.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.subtitle.edit-button:hover,#group-
+        color:var(--text-information)
+   @273494 #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-item:hover,#calendar-v3>.cal-title .main-title .item-chat-label.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.item-chat-lab
+        transform:scaleX(3)
+   @277855 #addConversationLabel .conversation-list__label.autosuggest-item:hover,#calendar-v3>.cal-content .conversation-list__label.cal-item:hover,#calendar-v3>.cal-title .main-title .conversation-list__label.ena-clickable:hover,#filter-tags-sb .fil
+        color:var(--text-information)
+   @486836 #addConversationLabel [for=chat_info_file].autosuggest-item>span,#calendar-v3>.cal-content [for=chat_info_file].cal-item>span,#calendar-v3>.cal-title .main-title [for=chat_info_file].ena-clickable>span,#filter-tags-sb .filter-tag-item>[for=
+        color:var(--text-information)
+   @1563404 #addConversationLabel .loading-msg .autosuggest-item,#calendar-v3>.cal-content .loading-msg .cal-item,#calendar-v3>.cal-title .main-title .loading-msg .ena-clickable,#filter-tags-sb .loading-msg .filter-tag-item>.edit-button,#group-creator 
+        color:var(--cta-link)
+   @1567229 #addConversationLabel .loading-msg .autosuggest-item:active,#addConversationLabel .loading-msg .autosuggest-item:hover,#calendar-v3>.cal-content .loading-msg .cal-item:active,#calendar-v3>.cal-content .loading-msg .cal-item:hover,#calendar-
+        color:var(--cta-link-pressed)
+   @1577477 #addConversationLabel .zinstant-error__text.autosuggest-item,#calendar-v3>.cal-content .zinstant-error__text.cal-item,#calendar-v3>.cal-title .main-title .zinstant-error__text.ena-clickable,#filter-tags-sb .filter-tag-item>.zinstant-error__
+        margin-top:4px;color:var(--cta-link)
+
+## .chat-box-input-container  rules=7
+   @1615037 .chat-box-input-container
+        position:relative
+   @1615081 .chat-box-input-container.--rtf-mode
+        display:flex;flex-direction:column
+   @1615153 .chat-box-input-container.--rtf-mode .chat-box-bar
+        flex-shrink:0
+   @1615218 .chat-box-input-container.--rtf-mode .chat-box-input
+        display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;flex:1
+
+## .chat-box-input__tools__btn  rules=29
+   @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__avatar,#group-creator .create-group__
+        cursor:pointer
+   @259127 #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#calendar-v3>.cal-title .main-title .subtitle.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.subtitle.edit-button:hover,#group-
+        color:var(--text-information)
+   @273494 #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-item:hover,#calendar-v3>.cal-title .main-title .item-chat-label.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.item-chat-lab
+        transform:scaleX(3)
+
+## .zmenu-item  rules=51
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:-webkit-flex;flex-flow:row nowrap
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#searchResultList .global-search-no-result__sub-text-wra
+        justify-content:center
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        align-items:center
+   @109761 #group-creator .create-group__input-v3,.cloud-container__left-section.full,.cloud-status,.flx-1,.group-poll-message-v3>.poll-detail>.vote-options>.option-wrapper>.detail__option,.setting.compact .setting-menu,.tabs-container .tabs-main .tab
+        flex:1
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view__topic,.nav__content,.sticker-sorter__he
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.tab>.bubble-contact-card.tab-bar>.conten
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble-contact-card-container.tab>.bubble-cont
+        padding-left:7px
+
+## .zmenu-body  rules=18
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view__topic,.nav__content,.sticker-sorter__he
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @301247 .popover-v2,.popover-v3,.zmenu-body.content-only
+        position:absolute;background:var(--layer-background);padding:8px;z-index:9999;box-shadow:var(--shadow-overlay)
+   @301407 .popover-v3,.zmenu-body.content-only
+        opacity:0;border-radius:8px;border:1px solid var(--border)
+   @1556091 .reminder-repeat-select__menu .zmenu-sub>.zmenu-body.sub-menu
+        box-sizing:border-box;width:200px;max-width:none
+   @1556425 .popover-v3.z-date-picker-v4-popover.reminder-compose-form__date-popover,.z-date-picker-v4-popover.reminder-compose-form__date-popover.zmenu-body.content-only
+        margin:var(--space-xs) 0
+
+## .zl-modal   rules=20
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:-webkit-flex;flex-flow:row nowrap
+   @81623 .au-bottom-tab-component,.au-image-list__error,.au-submit-cta,.bubble-contact-card-container>.bubble-contact-card>.content>.qr-code,.bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper,.bubble-contact-card-contain
+        flex-flow:column nowrap
+   @95414 .file-banner-content,.file-layout,.file-layout__thumb-container,.flx-al-str,.modal,.tab-content,.zl-modal
+        align-items:stretch
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.tab>.bubble-contact-card.tab-bar>.conten
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble-contact-card-container.tab>.bubble-cont
+        padding-left:7px
+   @581434 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item>.tab-bar-item__content,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item>.tab-bar-item__content,#gifSelector>.bubble-contact-card-cont
+        padding-left:0;padding-right:0
+   @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block,#filter-tags-sb .filter-tag-item.message-view__banner>.
+        border-color:var(--border-focused);color:var(--text-information)
+
+## .zl-modal__dialog  rules=54
+   @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__avatar,#group-creator .create-group__
+        cursor:pointer
+   @259127 #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#calendar-v3>.cal-title .main-title .subtitle.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.subtitle.edit-button:hover,#group-
+        color:var(--text-information)
+   @273494 #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-item:hover,#calendar-v3>.cal-title .main-title .item-chat-label.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.item-chat-lab
+        transform:scaleX(3)
+   @277855 #addConversationLabel .conversation-list__label.autosuggest-item:hover,#calendar-v3>.cal-content .conversation-list__label.cal-item:hover,#calendar-v3>.cal-title .main-title .conversation-list__label.ena-clickable:hover,#filter-tags-sb .fil
+        color:var(--text-information)
+   @486836 #addConversationLabel [for=chat_info_file].autosuggest-item>span,#calendar-v3>.cal-content [for=chat_info_file].cal-item>span,#calendar-v3>.cal-title .main-title [for=chat_info_file].ena-clickable>span,#filter-tags-sb .filter-tag-item>[for=
+        color:var(--text-information)
+
+## .zl-modal__dialog-body  rules=16
+   @646668 .image-show-modal.zl-modal__dialog-body
+        overflow:hidden
+   @1362871 .thread-picker.zl-modal__dialog-body
+        padding:0
+   @1481251 .select-excel-send-format-modal .select-excel-send-format-modal__body.zl-modal__dialog-body
+        padding:8px 16px
+
+## .setting-menu__item  rules=4
+   @1072595 .setting-menu__item
+        height:40px;padding:0 8px;color:var(--text-primary);cursor:pointer;font-size:.875rem;font-weight:400;line-height:1.5;display:flex;justify-content:space-between;align-items:center;margin:4px 8px;border-radius:6px
+   @1072827 .setting-menu__item:hover
+        background-color:var(--layer-background-hover)
+   @1072900 .setting-menu__item.chat-message.first-selected,.setting-menu__item.chat-message.last-selected,.setting-menu__item.selected
+        background-color:var(--layer-background-selected)
+   @1073074 .setting-menu__item.disabled
+        cursor:not-allowed!important;pointer-events:none;color:var(--text-disabled);font-size:.875rem;font-weight:400;line-height:1.5
+
+## .setting-section-content__item  rules=28
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:-webkit-flex;flex-flow:row nowrap
+   @81623 .au-bottom-tab-component,.au-image-list__error,.au-submit-cta,.bubble-contact-card-container>.bubble-contact-card>.content>.qr-code,.bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper,.bubble-contact-card-contain
+        flex-flow:column nowrap
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#group-creator .cr
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.tab>.bubble-contact-card.tab-bar>.conten
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble-contact-card-container.tab>.bubble-cont
+        padding-left:7px
+
+=== chat-message background declarations (verbatim) ===
+   @700561 .chat-message .extra-btn
+        font-size:.875rem;font-weight:400;line-height:1.5;position:relative;background-color:var(--BA30);color:var(--text-on-color);margin-bottom:4px;border-color:transparent;border-radius:6px;padding:8px 16px
+   @700788 .chat-message .extra-btn:hover
+        background:var(--background-activeness);color:var(--text-on-color)
+   @701268 .chat-message .marker-icon,.chat-message .marker-icon__avatar
+        position:absolute;width:30px;height:30px;background-size:contain
+   @701448 .chat-message .marker-icon:before
+        content:"";position:absolute;width:20px;height:20px;left:5px;top:11px;background:var(--WA100);-webkit-box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9px var(--N300);-moz-box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9px var(--N300);box-shadow:6px 5px 9px -7px var(--N300),5px 6px 9px -9p
+   @717259 .chat-message.highlighted .audio-expired:not(.card--group-photo),.chat-message.highlighted .card:not(.card--group-photo)
+        background:var(--jump-to-message);animation-name:pulse;animation-duration:.7s;animation-iteration-count:1
+   @717486 .chat-message.highlighted .audio-expired:not(.card--group-photo).ani__me,.chat-message.highlighted .card:not(.card--group-photo).ani__me
+        background:var(--G20);-webkit-animation-name:aniHighlightMe;-webkit-animation-duration:2s;animation-name:aniHighlightMe;animation-duration:2s
+   @717968 }.chat-message.highlighted .audio-expired:not(.card--group-photo).ani__you,.chat-message.highlighted .card:not(.card--group-photo).ani__you
+        background:var(--G20);-webkit-animation-name:aniHighlight;-webkit-animation-duration:2s;animation-name:aniHighlight;animation-duration:2s
+   @718447 }.chat-message.highlighted .audio-expired:not(.card--group-photo).card--picture.has-caption,.chat-message.highlighted .card--oa.audio-expired:not(.card--group-photo).has-caption,.chat-message.highligh
+        background:var(--G20)
+   @718975 .chat-message.highlighted .audio-expired:not(.card--group-photo).card--picture.has-caption>.card-send-time,.chat-message.highlighted .audio-expired:not(.card--group-photo).card--picture.has-caption>.c
+        background:inherit
+   @720232 .chat-message.highlighted .audio-expired:not(.card--group-photo)>.msg-footer,.chat-message.highlighted .card:not(.card--group-photo)>.msg-footer
+        background:var(--G20)
+   @720399 .chat-message.highlighted .audio-expired:not(.card--group-photo).card--video.has-caption.card-has-react>.message-reaction-container,.chat-message.highlighted .card:not(.card--group-photo).card--video.
+        background:inherit
+   @720673 .chat-message.highlighted .text-match
+        background-color:var(--text-search-highlight)
+   @720757 .chat-message.highlighted .text-match[data-z-element-type=rtf-image]
+        background-color:var(--text-search-highlight)!important
+   (chat-message rules containing background = 13 shown)
+
+=== backdrop-filter / filter across whole sheet ===
+   bd: backdrop-filter:blur(2px)
+   bd: backdrop-filter:blur(10px)
+   bd: backdrop-filter:blur(10px)
+   bd: backdrop-filter:blur(22px)
+   bd: backdrop-filter:blur(30px)
+   bd: backdrop-filter:blur(4px)
+   bd: backdrop-filter:blur(4px)
+   .tiny-thumb.-blur-low:before => -webkit-filter:blur(8px);filter:blur(8px) brightness(1.1)
+   .tiny-thumb.-blur-medium:before => -webkit-filter:blur(16px);filter:blur(16px) brightness(1.1)
+   .tiny-thumb.-blur-high:before => -webkit-filter:blur(36px);filter:blur(36px) brightness(1.1)
+   .mvr-thumbplaceholder => width:100%;height:100%;background-color:var(--layer-background-ptv-controlbar);filter:blur(22px);backdrop-filter:blur(22px)
+   .health-center-modal-container .health-center-modal-effect => content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:#66a6ff;background:linear-gradient(var(--gradient-angle),#66a6ff,#fc466b);border-rad
+   .health-center-modal .health-center-modal-background => position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:50%;filter:blur(30px) grayscale(100%);opacity:.2;z-index:1
+   .health-center-analytic-button:after => content:"";position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:var(--layer-background);background:linear-gradient(var(--BA10),var(--l
+   .dark .tiny-thumb.-blur-low:before => -webkit-filter:blur(8px);filter:blur(8px) brightness(.5)
+   .dark .tiny-thumb.-blur-medium:before => -webkit-filter:blur(16px);filter:blur(16px) brightness(.5)
+   .dark .tiny-thumb.-blur-high:before => -webkit-filter:blur(36px);filter:blur(36px) brightness(.5)

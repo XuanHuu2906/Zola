@@ -1,0 +1,92 @@
+
+> zalo-apple-glass-ui@0.2.0 build:desktop
+> npm run check && npm run build && npm run build:electron && electron-builder --win portable --x64 && node tools/hash-release.cjs
+
+
+> zalo-apple-glass-ui@0.2.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.2.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.2.0 lint
+> eslint src/renderer src/shared electron tests/core.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.2.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts
+
+✔ TS search retains Vietnamese name and preview matching (4.5626ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.6604ms)
+✔ sending is immutable, bounded and local to the selected chat (37.5208ms)
+✔ attachments retain names and sizes only, with bounded display metadata (1.4698ms)
+✔ demo seeds are independent across sessions (0.5848ms)
+✔ preferences tolerate corrupt storage and clamp values (0.6681ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.4234ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (1.3478ms)
+✔ IPC trust and network policy distinguish development from production (0.639ms)
+✔ HTML-escapes user-generated message content (0.6977ms)
+✔ removes diacritics in Vietnamese search terms (0.3987ms)
+✔ search matches normalized names (0.3808ms)
+✔ unread filter selects only unread (0.2418ms)
+✔ group and work filters use categories independently (0.2325ms)
+✔ pinned chats are sorted before unpinned (0.1384ms)
+✔ file metadata is textual and size-limited (0.3787ms)
+(node:25932) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/core.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 199.4553
+
+> zalo-apple-glass-ui@0.2.0 build
+> tsc --noEmit && vite build
+
+[36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+transforming...
+✓ 2148 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.83 kB │ gzip:   0.45 kB
+dist/assets/index-C6kfNSNk.css   30.62 kB │ gzip:   7.81 kB
+dist/assets/index-Dlf8JGl1.js   343.43 kB │ gzip: 109.46 kB
+
+[32m✓ built in 803ms[39m
+
+> zalo-apple-glass-ui@0.2.0 build:electron
+> tsc -p tsconfig.electron.json
+
+  • electron-builder  version=26.18.0 os=10.0.26200
+  • loaded configuration  file=D:\Zalo\electron-builder.yml
+  • author is missed in the package.json  appPackageFile=D:\Zalo\package.json
+  • executing @electron/rebuild  electronVersion=45.2.3 arch=x64 buildFromSource=false workspaceRoot=D:\Zalo projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=45.2.3 appOutDir=release\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=D:\Zalo\release\win-unpacked
+  • searching for node modules  pm=npm searchDir=D:\Zalo
+  • duplicate dependency references  dependencies=["react-dom@19.2.6","react-dom@19.2.6"]
+  • updating asar integrity executable resource  executablePath=release\win-unpacked\Glass Messenger Demo.exe
+  • default Electron icon is used  reason=application icon is not set
+  • no code signing certificate configured, signing is skipped  path=release\win-unpacked\Glass Messenger Demo.exe
+  • building        target=portable file=release\Glass-Messenger-Demo-0.2.0-x64.exe archs=x64
+  • downloaded      label=7zip-win-x64.tar.gz progress=100%
+  • downloaded      label=nsis-3.0.4.1.7z progress=100%
+  • no code signing certificate configured, signing is skipped  path=C:\Users\huung\AppData\Local\Temp\t-16p5pF\elevate-staging-1\resources\elevate.exe
+  • downloaded      label=nsis-resources-3.4.1.7z progress=100%
+  • no code signing certificate configured, signing is skipped  path=release\Glass-Messenger-Demo-0.2.0-x64.exe
+┌─────────┬─────────────────────────────────────────────────────────┬───────────┬────────────────────────────────────────────────────────────────────┐
+│ (index) │ file                                                    │ bytes     │ sha256                                                             │
+├─────────┼─────────────────────────────────────────────────────────┼───────────┼────────────────────────────────────────────────────────────────────┤
+│ 0       │ 'D:\\Zalo\\release\\Glass-Messenger-Demo-0.2.0-x64.exe' │ 112118993 │ 'eb8539cb541c4f6c9df2a846fda09865ca10945d84c9c6466a8d6da009b45354' │
+└─────────┴─────────────────────────────────────────────────────────┴───────────┴────────────────────────────────────────────────────────────────────┘
+Packaging evidence saved. Runtime smoke remains a separate required check.

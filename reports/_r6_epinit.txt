@@ -1,0 +1,15 @@
+##### Q=Y=q=
+(none)
+##### chat_socket
+@1738792: n l}));var a=n("VTBJ"),i=n("NDmK"),r=n("igA5"),s=n("2b90");function o(e){"function"==typeof e&&e()}const l=(e,t)=>{const l=n("UkBb").default,c=n("8RMw").default,d=[];return d.push({text:"Swap to polling",onclick:()=>{(()=>{if(i.default.socket.enable_chat_socket){const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!1});l.applySetting(e)}else{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!0});l.applySetting(e)}})(),o(t)},checked:!i.default.socket.enable_chat_socket},{text:"Swap Ctrl to polling",onclick:()=>{(()=>{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_ctrl_socket:!i.default.socket.enable_ctrl_socket});l.applySetting
+
+@1738869: ction"==typeof e&&e()}const l=(e,t)=>{const l=n("UkBb").default,c=n("8RMw").default,d=[];return d.push({text:"Swap to polling",onclick:()=>{(()=>{if(i.default.socket.enable_chat_socket){const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!1});l.applySetting(e)}else{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!0});l.applySetting(e)}})(),o(t)},checked:!i.default.socket.enable_chat_socket},{text:"Swap Ctrl to polling",onclick:()=>{(()=>{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_ctrl_socket:!i.default.socket.enable_ctrl_socket});l.applySetting(e)})(),o(t)},checked:!i.default.socket.enable_ctrl_socket},{text:"Skip socke
+
+@1738973: text:"Swap to polling",onclick:()=>{(()=>{if(i.default.socket.enable_chat_socket){const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!1});l.applySetting(e)}else{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!0});l.applySetting(e)}})(),o(t)},checked:!i.default.socket.enable_chat_socket},{text:"Swap Ctrl to polling",onclick:()=>{(()=>{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_ctrl_socket:!i.default.socket.enable_ctrl_socket});l.applySetting(e)})(),o(t)},checked:!i.default.socket.enable_ctrl_socket},{text:"Skip socket message",onclick:()=>{i.default.socket.debug.skip_msg=!i.default.socket.debug.skip_msg,o(t)},checked:i
+
+@1739052: t){const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!1});l.applySetting(e)}else{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_chat_socket:!0});l.applySetting(e)}})(),o(t)},checked:!i.default.socket.enable_chat_socket},{text:"Swap Ctrl to polling",onclick:()=>{(()=>{const e=Object(a.a)(Object(a.a)({},i.default.socket),{},{enable_ctrl_socket:!i.default.socket.enable_ctrl_socket});l.applySetting(e)})(),o(t)},checked:!i.default.socket.enable_ctrl_socket},{text:"Skip socket message",onclick:()=>{i.default.socket.debug.skip_msg=!i.default.socket.debug.skip_msg,o(t)},checked:i.default.socket.debug.skip_msg},{text:"Show log tracking",onclick:()=>{i.defaul
+
+##### socket_endpoint
+(none)
+##### getServerInfo(){
+(none)

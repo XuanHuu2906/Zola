@@ -1,0 +1,455 @@
+semantic token union = 420 (light 418, dark 725 incl. scales)
+unassigned semantic = 39: --input-placeholder-wh --input-icon-wh --input-placeholder-gr --input-icon-gr --layer-alert-background --layer-error-background --layer-success-background --layer-warning-background --layer-information-background --layer-neutral-information-background --cta-link --cta-link-primary --cta-link-disabled --cta-link-hover --cta-link-pressed --cta-destruction --cta-destruction-pressed --cta-link-neutral --cta-link-neutral-disable --input-field-bg-filled --input-field-bg-filled-hover --input-field-bg-filled-pressed --input-field-bg-outline --input-field-bg-outline-hover --input-field-bg-outline-pressed --input-field-ptv-bg --input-field-ptv-outline --blue-message --blue-message-selected --white-message --white-message-selected --progress-track --progress-track-on-background --progress-indicator --progress-indicator-on-background --vtt-normal-button-bg --vtt-hover-button-bg --HL_photo-bg --HL_input
+
+
+## Background  n=40
+  --background-activeness                              L=#0068ff                      D=#66a6ff                      used= 66  magic
+  --background-activeness-disabled                     L=#add1ff                      D=#002b6b                      used=  1  magic
+  --background-control-alpha                           L=rgba(0,0,0,0.6)              D=rgba(0,0,0,0.6)              used= 11  literal
+  --background-control-alpha-hover                     L=rgba(0,0,0,0.7)              D=rgba(0,0,0,0.7)              used=  5  literal
+  --background-hovertips                               L=#0045ad                      D=#0045ad                      used=  0  alias-not-in-magic:WA
+  --background-inactiveness                            L=#fff                         D=#121416                      used=  0  magic
+  --background-inactiveness-disabled                   L=#dbdbdb                      D=#333                         used=  1  magic
+  --background-inactiveness-subtle                     L=#b5b5b5                      D=#595959                      used= 22  magic
+  --background-popover-tips                            L=#0045ad                      D=#00378a                      used= 23  magic
+  --bg-default                                         L=#fff                         D=#000                         used=  0  alias-not-in-magic:WA
+  --bg-divide-bb-blue                                  L=#8b96a7                      D=#afb5c1                      used=  0  magic
+  --bg-message-info                                    L=hsla(0,0%,100%,0.85)         D=hsla(0,0%,100%,0.05)         used= 10  literal
+  --curtain                                            L=rgba(0,0,0,0.55)             D=rgba(0,0,0,0.6)              used= 29  alias-not-in-magic:BA
+  --curtain-bold                                       L=rgba(0,0,0,0.7)              D=rgba(0,0,0,0.7)              used=  8  alias-not-in-magic:BA
+  --curtain-subtle                                     L=rgba(0,0,0,0.25)             D=rgba(0,0,0,0.3)              used= 12  alias-not-in-magic:BA
+  --input-grey                                         L=#e5e7eb                      D=#44546f                      used=  0  magic
+  --input-white                                        L=#fff                         D=#000                         used=  0  alias-not-in-magic:WA
+  --item-wa-hover                                      L=#e5e7eb                      D=#44546f                      used=  9  magic
+  --item-wa-select                                     L=#f0f7ff                      D=#001029                      used=  0  magic
+  --layer-background                                   L=#fff                         D=#22262b                      used=472  magic
+  --layer-background-CSC                               L=#ebecf0                      D=#16191d                      used=  5  magic
+  --layer-background-disabled                          L=#e5e7eb                      D=#1d2025                      used= 19  magic
+  --layer-background-hover                             L=#f1f2f4                      D=hsla(0,0%,100%,0.05)         used=142  magic
+  --layer-background-inverse                           L=#fff                         D=#fff                         used=  7  magic
+  --layer-background-inverse-subtle                    L=#1d2025                      D=#38404a                      used=  3  magic
+  --layer-background-pinned                            L=rgba(8,27,58,0.03)           D=rgba(0,0,0,0.15)             used=  1  alias-not-in-magic:WA
+  --layer-background-ptv                               L=#141414                      D=#141414                      used=  3  magic
+  --layer-background-ptv-controlbar                    L=#333                         D=#333                         used=  2  magic
+  --layer-background-ptv-thumbslider                   L=#212121                      D=#212121                      used=  4  magic
+  --layer-background-selected                          L=#e5f1ff                      D=#1f344d                      used= 30  magic
+  --layer-background-subtle                            L=#ebecf0                      D=#1d2025                      used=174  magic
+  --skeleton                                           L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.1)          used=  0  alias-not-in-magic:BA
+  --skeleton-subtle                                    L=rgba(0,0,0,0.1)              D=hsla(0,0%,100%,0.05)         used=  2  alias-not-in-magic:BA
+  --surface-alt                                        L=#fff                         D=#22262b                      used=  1  magic
+  --surface-background                                 L=#e5e7eb                      D=#121416                      used= 11  magic
+  --surface-background-overlay                         L=#f6f7f9                      D=#151719                      used= 10  literal
+  --surface-background-subtle                          L=#ebecf0                      D=#16191d                      used=133  magic
+  --tip-bg                                             L=#00378a                      D=#8fbfff                      used=  0  magic
+  --title-bar                                          L=#e5e7eb                      D=#121416                      used=  1  magic
+  --title-ptv                                          L=#333                         D=#333                         used=  3  magic
+
+## Surface  n=4
+  --layer-accent-message                               L=rgba(8,27,58,0.03)           D=rgba(8,27,58,0.3)            used=  1  literal
+  --layer-background-navbar-sublevel-hover             L=#ebecf0                      D=hsla(0,0%,100%,0.05)         used=  2  magic
+  --layer-background-navbar-sublevel-normal            L=#fff                         D=#22262b                      used=  0  magic
+  --layer-background-navbar-sublevel-selected          L=#e5f1ff                      D=rgba(8,27,58,0.5)            used=  2  magic
+
+## Text  n=20
+  --link                                               L=#0068ff                      D=#0068ff                      used=  0  magic
+  --self-bubble-chat-shadow                            L=rgba(0,0,0,0.2)              D=hsla(0,0%,100%,0.2)          used=  7  alias-not-in-magic:BA
+  --success                                            L=#37b361                      D=#6acd8b                      used=  0  alias-not-in-magic:G
+  --tab-txt                                            L=#5a6981                      D=#b6c1cf                      used=  1  magic
+  --text-disabled                                      L=#8b96a7                      D=#738296                      used= 67  magic
+  --text-errors                                        L=#c31818                      D=#e94949                      used=136  magic
+  --text-information                                   L=#005ae0                      D=#66a6ff                      used=473  magic
+  --text-mention                                       L=#0068ff                      D=#66a6ff                      used=  7  magic
+  --text-navbar-sublevel-normal                        L=#081b3a                      D=#dfe2e7                      used=  0  magic
+  --text-navbar-sublevel-selected                      L=#081b3a                      D=#dfe2e7                      used=  0  magic
+  --text-on-color                                      L=#fff                         D=#fff                         used=238  magic
+  --text-on-disabled-color                             L=#afb5c1                      D=#454e59                      used=  3  magic
+  --text-placeholder                                   L=#77859c                      D=#738296                      used= 34  magic
+  --text-primary                                       L=#081b3a                      D=#dfe2e7                      used=625  magic
+  --text-quote                                         L=#44546f                      D=#d4d7de                      used=  1  magic
+  --text-search-highlight                              L=#ffcd29                      D=#8a6a00                      used=  6  literal
+  --text-secondary                                     L=#5a6981                      D=#9facbc                      used=627  magic
+  --text-success                                       L=#37b361                      D=#6acd8b                      used=  4  alias-not-in-magic:G
+  --text-warning                                       L=#e0ac00                      D=#ffcd29                      used=  5  alias-not-in-magic:Y
+  --timestamp                                          L=rgba(0,0,0,0.2)              D=hsla(0,0%,100%,0.05)         used=  4  literal
+
+## Border  n=22
+  --border                                             L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.2)          used=395  excluded-by-filter
+  --border-bold                                        L=rgba(0,0,0,0.5)              D=hsla(0,0%,100%,0.5)          used=  0  excluded-by-filter
+  --border-disabled                                    L=rgba(0,0,0,0.1)              D=hsla(0,0%,100%,0.1)          used=  4  excluded-by-filter
+  --border-errors                                      L=#c31818                      D=#e94949                      used=  6  excluded-by-filter
+  --border-focused                                     L=#005ae0                      D=#66a6ff                      used=110  excluded-by-filter
+  --border-highlight                                   L=#66a6ff                      D=#426d9e                      used= 22  excluded-by-filter
+  --border-hover                                       L=rgba(0,0,0,0.25)             D=#16191d                      used=  0  excluded-by-filter
+  --border-information                                 L=#005ae0                      D=#66a6ff                      used=  0  excluded-by-filter
+  --border-on-color                                    L=#fff                         D=#fff                         used=  3  excluded-by-filter
+  --border-subtle                                      L=rgba(0,0,0,0.1)              D=hsla(0,0%,100%,0.15)         used= 88  excluded-by-filter
+  --border-success                                     L=#37b361                      D=#6acd8b                      used=  2  excluded-by-filter
+  --border-support-errors                              L=#f39b9b                      D=#7b0f0f                      used=  1  excluded-by-filter
+  --border-support-information                         L=#8fbfff                      D=#00378a                      used=  1  excluded-by-filter
+  --border-support-neutral                             L=#c6cad2                      D=#77859c                      used=  2  excluded-by-filter
+  --border-support-success                             L=#a7e2bb                      D=#1f7a3d                      used=  1  excluded-by-filter
+  --border-support-warning                             L=#ffe58f                      D=#8a6a00                      used=  1  excluded-by-filter
+  --border-vanish                                      L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.05)         used=  1  excluded-by-filter
+  --border-warning                                     L=#e0ac00                      D=#ffcd29                      used=  1  excluded-by-filter
+  --divider                                            L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.1)          used= 77  excluded-by-filter
+  --divider-bold                                       L=rgba(0,0,0,0.15)             D=rgba(0,0,0,0.3)              used= 23  excluded-by-filter
+  --divider-on-color                                   L=hsla(0,0%,100%,0.8)          D=rgba(0,0,0,0.5)              used=  1  excluded-by-filter
+  --divider-subtle                                     L=rgba(0,0,0,0.05)             D=hsla(0,0%,100%,0.05)         used=  9  excluded-by-filter
+
+## Navigation  n=10
+  --icon-navbar-disabled                               L=hsla(0,0%,100%,0.5)          D=#8c99ab                      used=  0  alias-not-in-magic:WA
+  --icon-navbar-normal                                 L=#fff                         D=#dfe2e7                      used=  1  magic
+  --icon-navbar-sublevel-normal                        L=#005ae0                      D=#66a6ff                      used=  0  magic
+  --icon-navbar-sublevel-selected                      L=#005ae0                      D=#66a6ff                      used=  0  magic
+  --layer-background-leftmenu                          L=#005ae0                      D=#1d2025                      used=  0  magic
+  --layer-background-leftmenu-hover                    L=#0045ad                      D=#16191d                      used=  0  magic
+  --layer-background-leftmenu-selected                 L=#00378a                      D=#121416                      used=  0  magic
+  --layer-background-navbar-hover                      L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.1)          used=  1  magic
+  --layer-background-navbar-normal                     L=#005ae0                      D=#121416                      used=  4  magic
+  --layer-background-navbar-selected                   L=rgba(0,0,0,0.25)             D=hsla(0,0%,100%,0.05)         used=  1  magic
+
+## Conversation  n=5
+  --emoji-status-bubble-color                          L=#e8e8e8                      D=#595959                      used=  0  literal
+  --grey-dot                                           L=#8b96a7                      D=#afb5c1                      used=  0  magic
+  --jump-to-message                                    L=#e5f8ff                      D=#002e3d                      used= 10  literal
+  --reaction-background                                L=#fff                         D=#1d2025                      used=  4  literal
+  --red-dot                                            L=#c31818                      D=#e94949                      used=  2  magic
+
+## Message  n=9
+  --blue-quote                                         L=#c7e0ff                      D=rgba(0,0,0,0.3)              used=  2  magic
+  --blue-quote-selected                                L=#add1ff                      D=rgba(0,0,0,0.35)             used=  2  magic
+  --floating-menu                                      L=hsla(0,0%,100%,0.8)          D=hsla(0,0%,100%,0.1)          used=  1  literal
+  --media-message-hover                                L=rgba(0,0,0,0.2)              D=rgba(0,0,0,0.2)              used=  7  literal
+  --media-message-selected                             L=#005ae0                      D=rgba(8,27,58,0.3)            used=  9  literal
+  --partial-quote-floating                             L=#fff                         D=#454e59                      used=  0  literal
+  --toast                                              L=rgba(0,0,0,0.9)              D=rgba(0,0,0,0.9)              used=  4  literal
+  --white-quote                                        L=#ebecf0                      D=#22262b                      used=  2  magic
+  --white-quote-selected                               L=#add1ff                      D=#16191d                      used=  2  magic
+
+## Icon  n=12
+  --icon-count-noti-disable-bg                         L=#8b96a7                      D=#596473                      used=  1  magic
+  --icon-count-noti-enable-bg                          L=#c31818                      D=#e94949                      used=  3  magic
+  --icon-disabled                                      L=#9aa2b2                      D=#738296                      used= 14  magic
+  --icon-errors                                        L=#c31818                      D=#e94949                      used= 22  magic
+  --icon-hover-bg                                      L=#e5e7eb                      D=#44546f                      used=  0  magic
+  --icon-information                                   L=#005ae0                      D=#66a6ff                      used= 11  magic
+  --icon-on-color                                      L=#fff                         D=#fff                         used= 54  magic
+  --icon-on-disabled-color                             L=#afb5c1                      D=#454e59                      used= 46  magic
+  --icon-primary                                       L=#081b3a                      D=#dfe2e7                      used= 39  magic
+  --icon-secondary                                     L=#5a6981                      D=#9facbc                      used=157  magic
+  --icon-success                                       L=#37b361                      D=#6acd8b                      used=  9  alias-not-in-magic:G
+  --icon-warning                                       L=#e0ac00                      D=#ffcd29                      used= 11  alias-not-in-magic:Y
+
+## Shadow  n=3
+  --shadow-bubble                                      L=0px 0px 1px 0px rgba(21,39,71,0.25),0px 1px 1px 0px rgba(21,39,71,0.25) D=0px 0px 1px 0px rgba(3,4,4,0.5),0px 1px 1px 0px rgba(3,4,4,0.5),0px 0px 0px 1px rgba(188,214,240,0.08) inset used=  9  literal
+  --shadow-overflow                                    L=0px 0px 1px 0px rgba(21,39,71,0.12),0px 0px 8px 0px rgba(21,39,71,0.15) D=0px 0px 1px 0px rgba(3,4,4,0.5),0px 0px 12px 0px rgba(3,4,4,0.56) used=  9  literal
+  --shadow-overlay                                     L=0px 0px 1px 0px rgba(21,39,71,0.3),0px 8px 12px 0px rgba(21,39,71,0.15) D=0px 0px 1px 0px rgba(3,4,4,0.5),0px 8px 12px 0px rgba(3,4,4,0.35),0px 0px 0px 1px rgba(188,214,240,0.08) inset used= 41  literal
+
+## Control / button  n=124
+  --button-danger-disabled                             L=#f6b6b6                      D=#5f0c0c                      used=  2  magic
+  --button-danger-focus-bg                             L=#7b0f0f                      D=#7b0f0f                      used=  2  magic
+  --button-danger-focus-text                           L=#fff                         D=#dfe2e7                      used=  2  magic
+  --button-danger-hover                                L=#9a1313                      D=#c31818                      used=  2  magic
+  --button-danger-normal                               L=#c31818                      D=#9a1313                      used=  2  magic
+  --button-danger-pressed                              L=#7b0f0f                      D=#7b0f0f                      used=  2  magic
+  --button-danger-text                                 L=#fff                         D=#dfe2e7                      used=  2  magic
+  --button-danger-text-disabled                        L=#fdf1f1                      D=#9a1313                      used=  2  magic
+  --button-danger-tonal-disabled                       L=#fbe4e4                      D=#360707                      used=  3  magic
+  --button-danger-tonal-focus-bg                       L=#f6b6b6                      D=#490909                      used=  2  magic
+  --button-danger-tonal-focus-text                     L=#c31818                      D=#ed6e6e                      used=  2  magic
+  --button-danger-tonal-hover                          L=#f9cdcd                      D=#7b0f0f                      used=  2  magic
+  --button-danger-tonal-normal                         L=#fbe4e4                      D=#5f0c0c                      used=  4  magic
+  --button-danger-tonal-pressed                        L=#f6b6b6                      D=#5f0c0c                      used=  3  magic
+  --button-danger-tonal-text                           L=#c31818                      D=#ed6e6e                      used=  5  magic
+  --button-danger-tonal-text-disabled                  L=#f39b9b                      D=#9a1313                      used=  3  magic
+  --button-ghost-danger-container-outline              L=#c31818                      D=#e94949                      used=  0  magic
+  --button-ghost-danger-container-outline-disabled     L=#f6b6b6                      D=#5f0c0c                      used=  0  magic
+  --button-ghost-danger-disabled                       L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-danger-focus-bg                       L=#f9cdcd                      D=#490909                      used=  1  magic
+  --button-ghost-danger-focus-container-outline        L=#c31818                      D=#e94949                      used=  0  magic
+  --button-ghost-danger-focus-text                     L=#c31818                      D=#e94949                      used=  1  magic
+  --button-ghost-danger-hover                          L=#fbe4e4                      D=#360707                      used=  1  magic
+  --button-ghost-danger-normal                         L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-danger-pressed                        L=#f9cdcd                      D=#490909                      used=  1  magic
+  --button-ghost-danger-text                           L=#c31818                      D=#e94949                      used=  1  magic
+  --button-ghost-danger-text-disabled                  L=#f6b6b6                      D=#5f0c0c                      used=  1  magic
+  --button-ghost-neutral-container-outline             L=rgba(0,0,0,0.2)              D=#b5b5b5                      used=  1  magic
+  --button-ghost-neutral-container-outline-disabled    L=rgba(0,0,0,0.2)              D=#454545                      used=  0  magic
+  --button-ghost-neutral-disabled                      L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-neutral-focus-bg                      L=#e5f1ff                      D=#00183d                      used=  1  magic
+  --button-ghost-neutral-focus-container-outline       L=#66a6ff                      D=#3384ff                      used=  0  magic
+  --button-ghost-neutral-focus-text                    L=#005ae0                      D=#3384ff                      used=  1  magic
+  --button-ghost-neutral-hover                         L=#e5e7eb                      D=#22262b                      used=  2  magic
+  --button-ghost-neutral-normal                        L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-neutral-pressed                       L=#d4d7de                      D=#282d33                      used=  2  magic
+  --button-ghost-neutral-text                          L=#081b3a                      D=#dfe2e7                      used=  2  magic
+  --button-ghost-neutral-text-disabled                 L=#8b96a7                      D=#596473                      used=  1  magic
+  --button-ghost-on-color-container-outline            L=#fff                         D=#fff                         used=  0  magic
+  --button-ghost-on-color-container-outline-disabled   L=hsla(0,0%,100%,0.5)          D=hsla(0,0%,100%,0.5)          used=  0  alias-not-in-magic:WA
+  --button-ghost-on-color-disabled                     L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-on-color-focus-bg                     L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-on-color-focus-container-outline      L=transparent                  D=transparent                  used=  0  literal
+  --button-ghost-on-color-focus-text                   L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-on-color-hover                        L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.15)         used=  1  alias-not-in-magic:BA
+  --button-ghost-on-color-normal                       L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-on-color-pressed                      L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-on-color-text                         L=#fff                         D=#fff                         used=  1  magic
+  --button-ghost-on-color-text-disabled                L=hsla(0,0%,100%,0.5)          D=hsla(0,0%,100%,0.5)          used=  1  alias-not-in-magic:WA
+  --button-ghost-primary-container-outline             L=#005ae0                      D=#3384ff                      used=  0  magic
+  --button-ghost-primary-container-outline-disabled    L=#add1ff                      D=#002b6b                      used=  0  magic
+  --button-ghost-primary-disabled                      L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-primary-focus-bg                      L=#c7e0ff                      D=#002152                      used=  1  magic
+  --button-ghost-primary-focus-container-outline       L=#005ae0                      D=#3384ff                      used=  0  magic
+  --button-ghost-primary-focus-text                    L=#005ae0                      D=#3384ff                      used=  1  magic
+  --button-ghost-primary-hover                         L=#e5f1ff                      D=#00183d                      used=  1  magic
+  --button-ghost-primary-normal                        L=transparent                  D=transparent                  used=  1  literal
+  --button-ghost-primary-pressed                       L=#c7e0ff                      D=#002152                      used=  1  magic
+  --button-ghost-primary-text                          L=#005ae0                      D=#3384ff                      used=  1  magic
+  --button-ghost-primary-text-disabled                 L=#add1ff                      D=#002b6b                      used=  1  magic
+  --button-primary-disabled                            L=#add1ff                      D=#00378a                      used=  2  magic
+  --button-primary-focus-bg                            L=#00378a                      D=#3384ff                      used=  1  magic
+  --button-primary-focus-text                          L=#fff                         D=#dfe2e7                      used=  1  magic
+  --button-primary-hover                               L=#0045ad                      D=#3384ff                      used=  1  magic
+  --button-primary-normal                              L=#0068ff                      D=#005ae0                      used= 16  magic
+  --button-primary-on-color-disabled                   L=rgba(8,27,58,0.3)            D=rgba(8,27,58,0.15)           used=  1  literal
+  --button-primary-on-color-focus-bg                   L=#c7e0ff                      D=#c7e0ff                      used=  1  literal
+  --button-primary-on-color-focus-text                 L=#0045ad                      D=#0045ad                      used=  1  literal
+  --button-primary-on-color-hover                      L=#e5f1ff                      D=#dbebff                      used=  1  literal
+  --button-primary-on-color-normal                     L=#fff                         D=#fff                         used=  1  literal
+  --button-primary-on-color-pressed                    L=#c7e0ff                      D=#c7e0ff                      used=  1  literal
+  --button-primary-on-color-text                       L=#0045ad                      D=#0045ad                      used=  1  literal
+  --button-primary-on-color-text-disabled              L=#3384ff                      D=#3384ff                      used=  1  literal
+  --button-primary-pressed                             L=#00378a                      D=#0045ad                      used=  1  magic
+  --button-primary-text                                L=#fff                         D=#dfe2e7                      used=  8  magic
+  --button-primary-text-disabled                       L=#f0f7ff                      D=#0068ff                      used=  1  magic
+  --button-primary-tonal-disabled                      L=#e5f1ff                      D=#002152                      used=  3  magic
+  --button-primary-tonal-focus-bg                      L=#add1ff                      D=#002152                      used=  3  magic
+  --button-primary-tonal-focus-text                    L=#0045ad                      D=#8fbfff                      used=  3  magic
+  --button-primary-tonal-hover                         L=#c7e0ff                      D=#002b6b                      used=  4  magic
+  --button-primary-tonal-normal                        L=#e5f1ff                      D=#00378a                      used=  8  magic
+  --button-primary-tonal-pressed                       L=#add1ff                      D=#002152                      used=  3  magic
+  --button-primary-tonal-text                          L=#0045ad                      D=#8fbfff                      used=  7  magic
+  --button-primary-tonal-text-disabled                 L=#8fbfff                      D=#005ae0                      used=  4  magic
+  --button-secondary-neutral-disabled                  L=#e5e7eb                      D=#2c323a                      used=  6  magic
+  --button-secondary-neutral-focus-bg                  L=#e5f1ff                      D=#002152                      used=  4  magic
+  --button-secondary-neutral-focus-text                L=#005ae0                      D=#66a6ff                      used=  4  magic
+  --button-secondary-neutral-hover                     L=#c6cad2                      D=#38404a                      used= 11  magic
+  --button-secondary-neutral-normal                    L=#e5e7eb                      D=#2c323a                      used= 11  magic
+  --button-secondary-neutral-pressed                   L=#afb5c1                      D=#1d2025                      used=  6  magic
+  --button-secondary-neutral-text                      L=#081b3a                      D=#dfe2e7                      used=  7  magic
+  --button-secondary-neutral-text-disabled             L=#8b96a7                      D=#596473                      used=  6  magic
+  --button-tertiary-danger-disabled                    L=transparent                  D=transparent                  used=  2  literal
+  --button-tertiary-danger-focus-bg                    L=#f9cdcd                      D=#490909                      used=  2  magic
+  --button-tertiary-danger-focus-text                  L=#c31818                      D=#ed6e6e                      used=  2  magic
+  --button-tertiary-danger-hover                       L=#fbe4e4                      D=#490909                      used=  2  magic
+  --button-tertiary-danger-normal                      L=transparent                  D=transparent                  used=  2  literal
+  --button-tertiary-danger-pressed                     L=#f9cdcd                      D=#5f0c0c                      used=  2  magic
+  --button-tertiary-danger-text                        L=#c31818                      D=#ed6e6e                      used=  2  magic
+  --button-tertiary-danger-text-disabled               L=#f6b6b6                      D=#9a1313                      used=  2  magic
+  --button-tertiary-neutral-disabled                   L=transparent                  D=transparent                  used=  2  literal
+  --button-tertiary-neutral-focus-bg                   L=#e5f1ff                      D=#002152                      used=  8  magic
+  --button-tertiary-neutral-focus-text                 L=#005ae0                      D=#66a6ff                      used= 10  magic
+  --button-tertiary-neutral-hover                      L=#e5e7eb                      D=#38404a                      used=  7  magic
+  --button-tertiary-neutral-normal                     L=transparent                  D=transparent                  used=  2  literal
+  --button-tertiary-neutral-pressed                    L=#d4d7de                      D=#1d2025                      used=  2  magic
+  --button-tertiary-neutral-text                       L=#081b3a                      D=#dfe2e7                      used=  3  magic
+  --button-tertiary-neutral-text-disabled              L=#8b96a7                      D=#596473                      used=  2  magic
+  --button-tertiary-on-color-disabled                  L=transparent                  D=transparent                  used=  1  literal
+  --button-tertiary-on-color-focus-bg                  L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.15)         used=  1  alias-not-in-magic:BA
+  --button-tertiary-on-color-focus-text                L=#005ae0                      D=#000                         used=  1  magic
+  --button-tertiary-on-color-hover                     L=rgba(0,0,0,0.15)             D=hsla(0,0%,100%,0.15)         used=  1  alias-not-in-magic:BA
+  --button-tertiary-on-color-normal                    L=transparent                  D=transparent                  used=  1  literal
+  --button-tertiary-on-color-pressed                   L=rgba(0,0,0,0.2)              D=hsla(0,0%,100%,0.2)          used=  1  alias-not-in-magic:BA
+  --button-tertiary-on-color-text                      L=#fff                         D=#fff                         used=  1  magic
+  --button-tertiary-on-color-text-disabled             L=hsla(0,0%,100%,0.5)          D=hsla(0,0%,100%,0.5)          used=  1  alias-not-in-magic:BA
+  --button-tertiary-primary-disabled                   L=transparent                  D=transparent                  used=  4  literal
+  --button-tertiary-primary-focus-bg                   L=#c7e0ff                      D=#002152                      used=  3  magic
+  --button-tertiary-primary-focus-text                 L=#005ae0                      D=#8fbfff                      used=  4  magic
+  --button-tertiary-primary-hover                      L=#e5f1ff                      D=#002152                      used=  5  magic
+  --button-tertiary-primary-normal                     L=transparent                  D=transparent                  used=  4  literal
+  --button-tertiary-primary-pressed                    L=#c7e0ff                      D=#00183d                      used=  3  magic
+  --button-tertiary-primary-text                       L=#005ae0                      D=#8fbfff                      used= 11  magic
+  --button-tertiary-primary-text-disabled              L=#add1ff                      D=#0045ad                      used=  7  magic
+
+## Accent  n=132
+  --accent-blue-bg                                     L=#0068ff                      D=#0068ff                      used= 19  magic
+  --accent-blue-bg-bold                                L=#00378a                      D=#8fbfff                      used=  0  magic
+  --accent-blue-bg-subtle                              L=#f0f7ff                      D=#00183d                      used=  1  magic
+  --accent-blue-border                                 L=#0068ff                      D=#66a6ff                      used=  1  excluded-by-filter
+  --accent-blue-border-bold                            L=#00378a                      D=#8fbfff                      used=  0  excluded-by-filter
+  --accent-blue-border-subtle                          L=#c7e0ff                      D=#002152                      used=  0  excluded-by-filter
+  --accent-blue-icon                                   L=#005ae0                      D=#66a6ff                      used=  0  magic
+  --accent-blue-icon-bold                              L=#002b6b                      D=#add1ff                      used=  0  magic
+  --accent-blue-icon-subtle                            L=#c7e0ff                      D=#001029                      used=  0  magic
+  --accent-blue-text                                   L=#005ae0                      D=#66a6ff                      used=  3  magic
+  --accent-blue-text-bold                              L=#002b6b                      D=#add1ff                      used=  0  magic
+  --accent-blue-text-subtle                            L=#c7e0ff                      D=#001029                      used=  0  magic
+  --accent-green-bg                                    L=#2b974f                      D=#4bc377                      used=  1  alias-not-in-magic:G
+  --accent-green-bg-bold                               L=#1f7a3d                      D=#a7e2bb                      used=  0  alias-not-in-magic:G
+  --accent-green-bg-subtle                             L=#d5f1de                      D=#0b381a                      used=  1  alias-not-in-magic:G
+  --accent-green-border                                L=#37b361                      D=#4bc377                      used=  0  excluded-by-filter
+  --accent-green-border-bold                           L=#1f7a3d                      D=#a7e2bb                      used=  0  excluded-by-filter
+  --accent-green-border-subtle                         L=#d5f1de                      D=#104c24                      used=  2  excluded-by-filter
+  --accent-green-icon                                  L=#37b361                      D=#88d7a3                      used=  0  alias-not-in-magic:G
+  --accent-green-icon-bold                             L=#176331                      D=#bee9cc                      used=  0  alias-not-in-magic:G
+  --accent-green-icon-subtle                           L=#f4fbf6                      D=#072712                      used=  0  alias-not-in-magic:G
+  --accent-green-text                                  L=#37b361                      D=#88d7a3                      used=  0  alias-not-in-magic:G
+  --accent-green-text-bold                             L=#176331                      D=#bee9cc                      used=  1  alias-not-in-magic:G
+  --accent-green-text-subtle                           L=#f4fbf6                      D=#072712                      used=  0  alias-not-in-magic:G
+  --accent-grey-bg                                     L=#c6cad2                      D=#454e59                      used= 10  literal
+  --accent-grey-bg-bold                                L=#5a6981                      D=#8c99ab                      used=  0  literal
+  --accent-grey-bg-subtle                              L=#ebecf0                      D=#16191d                      used=  5  literal
+  --accent-grey-border                                 L=#9aa2b2                      D=#454e59                      used=  0  excluded-by-filter
+  --accent-grey-border-bold                            L=#5a6981                      D=#8c99ab                      used=  0  excluded-by-filter
+  --accent-grey-border-subtle                          L=#e5e7eb                      D=#282d33                      used=  1  excluded-by-filter
+  --accent-grey-icon                                   L=#5a6981                      D=#38404a                      used=123  literal
+  --accent-grey-icon-bold                              L=#293a57                      D=#b6c1cf                      used=  0  literal
+  --accent-grey-icon-subtle                            L=#d4d7de                      D=#282d33                      used=  3  literal
+  --accent-grey-text                                   L=#5a6981                      D=#8c99ab                      used=  2  literal
+  --accent-grey-text-bold                              L=#293a57                      D=#b6c1cf                      used=  0  literal
+  --accent-grey-text-subtle                            L=#d4d7de                      D=#282d33                      used=  0  literal
+  --accent-orange-bg                                   L=#ff7e29                      D=#ff6905                      used=  0  alias-not-in-magic:OR
+  --accent-orange-bg-bold                              L=#8a3700                      D=#ffbc8f                      used=  0  alias-not-in-magic:OR
+  --accent-orange-bg-subtle                            L=#fff0e5                      D=#3d1800                      used=  1  alias-not-in-magic:OR
+  --accent-orange-border                               L=#ff7e29                      D=#ff6905                      used=  0  excluded-by-filter
+  --accent-orange-border-bold                          L=#8a3700                      D=#ffbc8f                      used=  0  excluded-by-filter
+  --accent-orange-border-subtle                        L=#ffddc7                      D=#522100                      used=  0  excluded-by-filter
+  --accent-orange-icon                                 L=#e05a00                      D=#ff9d5c                      used=  0  alias-not-in-magic:OR
+  --accent-orange-icon-bold                            L=#6b2b00                      D=#ffcead                      used=  0  alias-not-in-magic:OR
+  --accent-orange-icon-subtle                          L=#fff6f0                      D=#291000                      used=  0  alias-not-in-magic:OR
+  --accent-orange-text                                 L=#e05a00                      D=#ff9d5c                      used=  0  alias-not-in-magic:OR
+  --accent-orange-text-bold                            L=#6b2b00                      D=#ffcead                      used=  1  alias-not-in-magic:OR
+  --accent-orange-text-subtle                          L=#fff6f0                      D=#291000                      used=  0  alias-not-in-magic:OR
+  --accent-pink-bg                                     L=#da62ac                      D=#da62ac                      used=  0  alias-not-in-magic:PK
+  --accent-pink-bg-bold                                L=#943d73                      D=#f797d2                      used=  0  alias-not-in-magic:PK
+  --accent-pink-bg-subtle                              L=#ffe5f5                      D=#502540                      used=  0  alias-not-in-magic:PK
+  --accent-pink-border                                 L=#da62ac                      D=#da62ac                      used=  0  excluded-by-filter
+  --accent-pink-border-bold                            L=#943d73                      D=#f797d2                      used=  0  excluded-by-filter
+  --accent-pink-border-subtle                          L=#fdd0ec                      D=#693053                      used=  0  excluded-by-filter
+  --accent-pink-icon                                   L=#ae4787                      D=#ea85c3                      used=  0  alias-not-in-magic:PK
+  --accent-pink-icon-bold                              L=#7f3462                      D=#fab8e0                      used=  0  alias-not-in-magic:PK
+  --accent-pink-icon-subtle                            L=#fff0f9                      D=#341829                      used=  0  alias-not-in-magic:PK
+  --accent-pink-text                                   L=#ae4787                      D=#ea85c3                      used=  0  alias-not-in-magic:PK
+  --accent-pink-text-bold                              L=#7f3462                      D=#fab8e0                      used=  0  alias-not-in-magic:PK
+  --accent-pink-text-subtle                            L=#fff0f9                      D=#341829                      used=  0  alias-not-in-magic:PK
+  --accent-purple-bg                                   L=#6f3fcf                      D=#6f3fcf                      used=  0  alias-not-in-magic:P
+  --accent-purple-bg-bold                              L=#371c6e                      D=#b9a1e8                      used=  0  alias-not-in-magic:P
+  --accent-purple-bg-subtle                            L=#f0ebfa                      D=#180c31                      used=  0  alias-not-in-magic:P
+  --accent-purple-border                               L=#6f3fcf                      D=#6f3fcf                      used=  0  excluded-by-filter
+  --accent-purple-border-bold                          L=#371c6e                      D=#b9a1e8                      used=  0  excluded-by-filter
+  --accent-purple-border-subtle                        L=#e0d6f5                      D=#211041                      used=  0  excluded-by-filter
+  --accent-purple-icon                                 L=#47248f                      D=#a385e0                      used=  0  alias-not-in-magic:P
+  --accent-purple-icon-bold                            L=#2b1556                      D=#cbbaee                      used=  1  alias-not-in-magic:P
+  --accent-purple-icon-subtle                          L=#f6f3fc                      D=#120925                      used=  0  alias-not-in-magic:P
+  --accent-purple-text                                 L=#47248f                      D=#a385e0                      used=  0  alias-not-in-magic:P
+  --accent-purple-text-bold                            L=#2b1556                      D=#cbbaee                      used=  0  alias-not-in-magic:P
+  --accent-purple-text-subtle                          L=#f6f3fc                      D=#120925                      used=  0  alias-not-in-magic:P
+  --accent-red-bg                                      L=#d91b1b                      D=#d91b1b                      used=  0  magic
+  --accent-red-bg-bold                                 L=#7b0f0f                      D=#f39b9b                      used=  0  magic
+  --accent-red-bg-subtle                               L=#fbe4e4                      D=#360707                      used=  1  magic
+  --accent-red-border                                  L=#d91b1b                      D=#d91b1b                      used=  0  excluded-by-filter
+  --accent-red-border-bold                             L=#7b0f0f                      D=#f39b9b                      used=  0  excluded-by-filter
+  --accent-red-border-subtle                           L=#f9cdcd                      D=#490909                      used=  0  excluded-by-filter
+  --accent-red-icon                                    L=#c31818                      D=#ed6e6e                      used=  0  magic
+  --accent-red-icon-bold                               L=#5f0c0c                      D=#f6b6b6                      used=  0  magic
+  --accent-red-icon-subtle                             L=#fdf1f1                      D=#240505                      used=  0  magic
+  --accent-red-text                                    L=#c31818                      D=#ed6e6e                      used=  0  magic
+  --accent-red-text-bold                               L=#5f0c0c                      D=#f6b6b6                      used=  0  magic
+  --accent-red-text-subtle                             L=#fdf1f1                      D=#240505                      used=  0  magic
+  --accent-skyblue-bg                                  L=#0fc3ff                      D=#0fc3ff                      used=  4  alias-not-in-magic:SKB
+  --accent-skyblue-bg-bold                             L=#00678a                      D=#8ae2ff                      used=  0  alias-not-in-magic:SKB
+  --accent-skyblue-bg-subtle                           L=#e5f8ff                      D=#003d52                      used=  4  alias-not-in-magic:SKB
+  --accent-skyblue-border                              L=#0fc3ff                      D=#0fc3ff                      used=  0  excluded-by-filter
+  --accent-skyblue-border-bold                         L=#00678a                      D=#8ae2ff                      used=  0  excluded-by-filter
+  --accent-skyblue-border-subtle                       L=#c7f1ff                      D=#003d52                      used=  0  excluded-by-filter
+  --accent-skyblue-icon                                L=#0086b3                      D=#66d9ff                      used=  0  alias-not-in-magic:SKB
+  --accent-skyblue-icon-bold                           L=#00506b                      D=#a8e9ff                      used=  0  alias-not-in-magic:SKB
+  --accent-skyblue-icon-subtle                         L=#f0fbff                      D=#001f29                      used=  0  alias-not-in-magic:SKB
+  --accent-skyblue-text                                L=#0086b3                      D=#66d9ff                      used=  6  alias-not-in-magic:SKB
+  --accent-skyblue-text-bold                           L=#00506b                      D=#a8e9ff                      used=  0  alias-not-in-magic:SKB
+  --accent-skyblue-text-subtle                         L=#f0fbff                      D=#001f29                      used=  0  alias-not-in-magic:SKB
+  --accent-steal-bg                                    L=#2ac5bb                      D=#2ac5bb                      used=  0  alias-not-in-magic:TL
+  --accent-steal-bg-bold                               L=#197670                      D=#9aeae4                      used=  0  alias-not-in-magic:TL
+  --accent-steal-bg-subtle                             L=#eafbf9                      D=#0b3230                      used=  0  alias-not-in-magic:TL
+  --accent-steal-border                                L=#2ac5bb                      D=#2ac5bb                      used=  0  excluded-by-filter
+  --accent-steal-border-bold                           L=#197670                      D=#9aeae4                      used=  0  excluded-by-filter
+  --accent-steal-border-subtle                         L=#d1f5f3                      D=#0e4440                      used=  0  excluded-by-filter
+  --accent-steal-icon                                  L=#24a89f                      D=#78e2db                      used=  0  alias-not-in-magic:TL
+  --accent-steal-icon-bold                             L=#135854                      D=#b3efeb                      used=  0  alias-not-in-magic:TL
+  --accent-steal-icon-subtle                           L=#f2fcfb                      D=#072220                      used=  0  alias-not-in-magic:TL
+  --accent-steal-text                                  L=#24a89f                      D=#78e2db                      used=  0  alias-not-in-magic:TL
+  --accent-steal-text-bold                             L=#135854                      D=#b3efeb                      used=  0  alias-not-in-magic:TL
+  --accent-steal-text-subtle                           L=#f2fcfb                      D=#072220                      used=  0  alias-not-in-magic:TL
+  --accent-stealblue-bg                                L=#507fb4                      D=#507fb4                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-bg-bold                           L=#274362                      D=#b2c5dc                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-bg-subtle                         L=#e2e9f1                      D=#111e2c                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-border                            L=#507fb4                      D=#507fb4                      used=  0  excluded-by-filter
+  --accent-stealblue-border-bold                       L=#274362                      D=#b2c5dc                      used=  0  excluded-by-filter
+  --accent-stealblue-border-subtle                     L=#d9e2ed                      D=#17283b                      used=  0  excluded-by-filter
+  --accent-stealblue-icon                              L=#426d9e                      D=#8eabcd                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-icon-bold                         L=#1f344d                      D=#c7d5e5                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-icon-subtle                       L=#f1f4f8                      D=#0b141e                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-text                              L=#426d9e                      D=#8eabcd                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-text-bold                         L=#1f344d                      D=#c7d5e5                      used=  0  alias-not-in-magic:STB
+  --accent-stealblue-text-subtle                       L=#f1f4f8                      D=#0b141e                      used=  0  alias-not-in-magic:STB
+  --accent-yellow-bg                                   L=#ffcd29                      D=#fac000                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-bg-bold                              L=#8a6a00                      D=#ffe58f                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-bg-subtle                            L=#fff7e0                      D=#3d2f00                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-border                               L=#fac000                      D=#fac000                      used=  0  excluded-by-filter
+  --accent-yellow-border-bold                          L=#8a6a00                      D=#ffe58f                      used=  0  excluded-by-filter
+  --accent-yellow-border-subtle                        L=#fff2c7                      D=#523f00                      used=  0  excluded-by-filter
+  --accent-yellow-icon                                 L=#e0ac00                      D=#ffd95c                      used=  2  alias-not-in-magic:Y
+  --accent-yellow-icon-bold                            L=#6b5200                      D=#ffecad                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-icon-subtle                          L=#fffbf0                      D=#291f00                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-text                                 L=#e0ac00                      D=#ffd95c                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-text-bold                            L=#6b5200                      D=#ffecad                      used=  0  alias-not-in-magic:Y
+  --accent-yellow-text-subtle                          L=#fffbf0                      D=#291f00                      used=  0  alias-not-in-magic:Y
+
+## Layout / other  n=0
+
+=== reachability summary (semantic) ===
+  magic                        197
+  alias-not-in-magic           99
+  literal                      63
+  excluded-by-filter           61
+
+=== design spine: token -> component families ===
+  --text-primary                   total=625  other:530 input:28 button:16 settings:15 modal:12 message row:9
+  --text-secondary                 total=627  other:522 button:34 input:21 settings:14 composer:13 modal:11
+  --text-information               total=473  other:363 button:46 message row:28 composer:12 input:12 settings:5
+  --text-on-color                  total=238  other:190 button:28 message row:11 input:3 settings:3 composer:2
+  --layer-background               total=472  other:380 input:22 button:21 modal:17 settings:16 composer:9
+  --layer-background-subtle        total=174  other:150 input:7 modal:5 settings:4 message row:2 titlebar:2
+  --layer-background-hover         total=142  other:117 settings:10 button:4 modal:3 message row:2 input:2
+  --layer-background-selected      total= 30  other:14 message row:10 conv list row:3 context menu:2 settings:1
+  --border                         total=395  other:299 input:41 button:20 modal:14 settings:10 message row:5
+  --border-subtle                  total= 88  other:77 input:7 button:3 modal:1
+  --border-focused                 total=110  other:58 input:28 button:12 composer:4 message row:4 modal:3
+  --divider                        total= 77  other:68 settings:4 modal:3 composer:2
+  --icon-primary                   total= 39  other:31 composer:2 message row:2 button:1 input:1 settings:1
+  --icon-secondary                 total=157  other:134 message row:6 composer:5 button:4 input:4 settings:2
+  --background-activeness          total= 66  other:46 button:9 message row:8 composer:1 input:1 modal:1
+  --WA100                          total=136  other:113 button:11 message row:7 settings:3 composer:2
+  --surface-background-subtle      total=133  other:125 settings:3 modal:2 composer:2 input:1
+  --shadow-overlay                 total= 41  other:34 message row:2 modal:2 context menu:1 button:1 input:1
+  --shadow-overflow                total=  9  other:9
+  --shadow-bubble                  total=  9  other:9
+
+=== glass feasibility (per surface) ===
+  conversation row   rules= 49 backdrop=0 blur=0 shadow= 0 radius=  1 semiBg= 0 opaqueBg=8
+  chat header        rules= 16 backdrop=0 blur=0 shadow= 1 radius=  2 semiBg= 0 opaqueBg=2
+  message row        rules=374 backdrop=0 blur=0 shadow=14 radius= 28 semiBg= 0 opaqueBg=81
+  bubble             rules= 23 backdrop=0 blur=0 shadow= 0 radius=  1 semiBg= 0 opaqueBg=1
+  composer           rules=107 backdrop=0 blur=0 shadow= 2 radius= 15 semiBg= 0 opaqueBg=19
+  titlebar           rules= 68 backdrop=0 blur=0 shadow= 0 radius=  2 semiBg= 0 opaqueBg=10
+  context menu       rules= 51 backdrop=0 blur=0 shadow= 0 radius=  1 semiBg= 0 opaqueBg=10
+  modal              rules=116 backdrop=0 blur=0 shadow= 0 radius=  7 semiBg= 0 opaqueBg=18
+  settings           rules=160 backdrop=0 blur=0 shadow= 0 radius= 11 semiBg= 0 opaqueBg=21
+  leftpanel          rules=  0 backdrop=0 blur=0 shadow= 0 radius=  0 semiBg= 0 opaqueBg=0
+  rightpanel         rules=  0 backdrop=0 blur=0 shadow= 0 radius=  0 semiBg= 0 opaqueBg=0
+
+=== .custom scope in shipped CSS ===
+  standalone .custom class selector occurrences: 14
+  .custom{ rule: 0
+  .custom.mask-sidebar rules: 14
+  JS body.classList.add/remove(…CUSTOM): 2

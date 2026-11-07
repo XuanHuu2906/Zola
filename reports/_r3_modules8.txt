@@ -1,0 +1,119 @@
+verified modules = 4713
+
+=== surface -> module -> named enclosing unit (AST) ===
+
+## sidebar / leftpanel root ("leftpanel") occ=1
+   modules: bsOa@13277118
+   units  : -
+   @13285432 -> bsOa::? (unit span -; last decl L@13277536)
+
+## conv list row ("className:"conv-item") occ=12
+   modules: Zb+t@12278564
+   units  : -
+   @12393315 -> Zb+t::? (unit span -; last decl ui@12380371)
+   @12393748 -> Zb+t::? (unit span -; last decl ui@12380371)
+   @12393895 -> Zb+t::? (unit span -; last decl ui@12380371)
+   @12462963 -> Zb+t::? (unit span -; last decl Ss@12437500)
+   @12463388 -> Zb+t::? (unit span -; last decl Ss@12437500)
+   @12463576 -> Zb+t::? (unit span -; last decl Ss@12437500)
+
+## conv preview text ("conv-message truncate") occ=4
+   modules: Zb+t@12278564
+   units  : -
+   @12389658 -> Zb+t::? (unit span -; last decl ui@12380371)
+   @12515604 -> Zb+t::? (unit span -; last decl ko@12507820)
+   @12519736 -> Zb+t::? (unit span -; last decl ko@12507820)
+   @12531685 -> Zb+t::? (unit span -; last decl nl@12522203)
+
+## conv title name ("conv-item-title__name") occ=2
+   modules: Zb+t@12278564
+   units  : -
+   @12393141 -> Zb+t::? (unit span -; last decl ui@12380371)
+   @12462974 -> Zb+t::? (unit span -; last decl Ss@12437500)
+
+## chat header ("chat-header") occ=0
+   modules: 
+   units  : 
+
+## message wrapper ("className:"chat-message") occ=12
+   modules: /GXy@965564
+   units  : -
+   @987109 -> /GXy::? (unit span -; last decl we@976021)
+   @988374 -> /GXy::? (unit span -; last decl we@976021)
+   @989390 -> /GXy::? (unit span -; last decl we@976021)
+   @989753 -> /GXy::? (unit span -; last decl we@976021)
+   @990191 -> /GXy::? (unit span -; last decl we@976021)
+   @991213 -> /GXy::? (unit span -; last decl we@976021)
+
+## composer bar ("className:"chat-box-bar"") occ=1
+   modules: Fuol@5458193
+   units  : -
+   @5463373 -> Fuol::? (unit span -; last decl be@5461883)
+
+## composer toolbar btn ("chat-box-input__tools__btn") occ=6
+   modules: Fbxx@5409238 | GQ8g@5553773 | VLvn@10707732
+   units  : -
+   @5409873 -> Fbxx::? (unit span -; last decl l@5409332)
+   @5563240 -> GQ8g::? (unit span -; last decl N@5559056)
+   @5564382 -> GQ8g::? (unit span -; last decl N@5559056)
+   @5565042 -> GQ8g::? (unit span -; last decl N@5559056)
+   @5565441 -> GQ8g::? (unit span -; last decl N@5559056)
+   @11124272 -> VLvn::? (unit span -; last decl bd@11091791)
+
+## bubble container ("content-message-container") occ=2
+   modules: 2pdp@1841295 | medu@16709760
+   units  : -
+   @1847070 -> 2pdp::? (unit span -; last decl L@1846750)
+   @16713628 -> medu::? (unit span -; last decl T@16713308)
+
+## titlebar buttons ("titlebar__btns") occ=3
+   modules: y1FZ@19641108
+   units  : -
+   @19646838 -> y1FZ::? (unit span -; last decl R@19641466)
+   @19648693 -> y1FZ::? (unit span -; last decl R@19641466)
+   @19649158 -> y1FZ::? (unit span -; last decl R@19641466)
+
+## menu item ("className:"zmenu-item") occ=12
+   modules: +ISi@85954 | 6dTG@2996893 | FCc4@5144073 | GQ8g@5553773 | I9t9@6147660 | MEZx@7331013 | XOIG@11624889 | Zb+t@12278564
+   units  : -
+   @174229 -> +ISi::? (unit span -; last decl xn@152595)
+   @193053 -> +ISi::? (unit span -; last decl xn@152595)
+   @3010324 -> 6dTG::? (unit span -; last decl ae@2998707)
+   @3011900 -> 6dTG::? (unit span -; last decl ae@2998707)
+   @5147277 -> FCc4::? (unit span -; last decl I@5144366)
+   @5555406 -> GQ8g::? (unit span -; last decl f@5554006)
+
+## modal footer ("zl-modal__footer") occ=12
+   modules: +ISi@85954 | /ymA@1255215
+   units  : -
+   @243446 -> +ISi::? (unit span -; last decl Ta@233697)
+   @243643 -> +ISi::? (unit span -; last decl Ta@233697)
+   @1257198 -> /ymA::? (unit span -; last decl v@1257176)
+   @1257305 -> /ymA::? (unit span -; last decl v@1257176)
+   @1257330 -> /ymA::? (unit span -; last decl v@1257176)
+   @1257369 -> /ymA::? (unit span -; last decl v@1257176)
+
+## date chip ("className:"chat-date") occ=2
+   modules: +ISi@85954
+   units  : -
+   @225036 -> +ISi::? (unit span -; last decl ia@217062)
+   @399580 -> +ISi::? (unit span -; last decl mo@390018)
+
+## left chat box bar (""left-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   units  : -
+   @6150276 -> I9t9::? (unit span -; last decl u@6149786)
+
+## right chat box bar (""right-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   units  : -
+   @6150605 -> I9t9::? (unit span -; last decl u@6149786)
+
+=== unresolved module-key references ===
+  j6F3: refs=0 -> 
+  9Tg7: refs=3 -> 1311595, 3570635, 16851234
+    @1311595: "Setting up theme: \",t.theme),(e=>{const t=document.body;if(!t)return;const{DARK:a,LIGHT:i}=kt.THEME;e===a&&n(\"9Tg7\"),t.classList.toggle(a,e===a),t.classList.toggle(i,e===i)})(t.theme));const i=r.Modul"
+    @3570635: "t i=new FormData;i.append(\"file\",new Blob([e])),a.send(i)}}const _=new f;n.default=_},\"9SNB\":function(e,t){},\"9Tg7\":function(e,t,n){},\"9Tvc\":function(e,t,n){\"use strict\";Object.defineProperty(t,\"__esM"
+    @16851234: "adStyleByThemeConf(t){try{const e=await $zconfig.getThemeConfig();(null==e?void 0:e.theme)===v.THEME.DARK&&a(\"9Tg7\")}catch(e){}}createPopupWindow(e=\"Zalo\",t,n={},a,i,r){if(this._hasWindow(t))return $z"
+
+wrote _r3_modules8.json

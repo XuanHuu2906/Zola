@@ -1,0 +1,5 @@
+
+> zalo-apple-glass-ui@0.3.0 verify:asar
+> node tools/verify-asar.cjs
+
+PASS: 11/11 bundled files byte-identical to the current tree

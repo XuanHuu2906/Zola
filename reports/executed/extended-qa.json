@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:e2e",
+    "--",
+    "extended-qa.spec.ts"
+  ],
+  "started": "2026-11-05T11:38:10.730Z",
+  "finished": "2026-11-05T11:39:42.499Z",
+  "exitCode": 1,
+  "signal": null
+}

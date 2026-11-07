@@ -1,0 +1,40 @@
+=== A. html -> script map (pc-dist) ===
+   compact-app-pc.f32c58b63b6f4273a8a4.js               <- compact-app.html
+   lazy/default-login-render.dc51d7e4150dfd0aae85.js    <- index.html, login.html
+   render.f32c58b63b6f4273a8a4.js                       <- index.html
+
+=== B. $zuri.check* call sites ===
+
+   [compact-app-pc.f32c58b63b6f4273a8a4.js] $zuri.checkOpenConvReq @15499634
+   :: "ermission),$zsub.$zscreencap.onSend2Me(this._onCaptureResponseSend2Me),$zsub.$zscreencap.onForwardScreencap(this._handleForwardScreenCap),$zsub.$zscreencap.onForwardScreencapText(this._handleForwardScreenCapText),$zsub.$zscreencap.onEventOs(this._eventOSChanged),this._isAlreadyCheckOpenConvRequest||$zuri.checkOpenConvReq().then((()=>{this._isAlreadyCheckOpenConvRequest=!0})),this._prepareEmojiSprite(),C.default.subscribe(this.eventHandler),jn.b.addActionsListener([jn.a.send_sticker,jn.a.open_pop"
+
+   [compact-app-pc.f32c58b63b6f4273a8a4.js] $zuri.checkArgvLink @15501983
+   :: "ull===(e=Zt.default.messageCache)||void 0===e||e.bindDispatch(this.props.dispatch),b.default.registerFunc(I.CmdOrCtrl+I.K_N,(()=>{Ne.c.markStart(Ne.a.CREATE_GROUP,Ne.b.Group.CREATE_GR_HOTKEY),de.ModalManagerV2.openModal({windowId:fe.c,name:I.ModalIdentitiesDefine.CREATE_GROUP_COMPOSE,params:!0})})),$zuri.checkArgvLink(),T.b.register(0,this._focus),en.ConversationPrivacy.GetModule().shouldSuppressMarkRead(this.props.state.userId,{predicate:()=>!1})||this.chatController.readMessageOfCurrentConv(th"
+
+   [search-worker.f32c58b63b6f4273a8a4.js] $zuri.checkOpenConvReq @15729390
+   :: "ermission),$zsub.$zscreencap.onSend2Me(this._onCaptureResponseSend2Me),$zsub.$zscreencap.onForwardScreencap(this._handleForwardScreenCap),$zsub.$zscreencap.onForwardScreencapText(this._handleForwardScreenCapText),$zsub.$zscreencap.onEventOs(this._eventOSChanged),this._isAlreadyCheckOpenConvRequest||$zuri.checkOpenConvReq().then((()=>{this._isAlreadyCheckOpenConvRequest=!0})),this._prepareEmojiSprite(),O.default.subscribe(this.eventHandler),jn.b.addActionsListener([jn.a.send_sticker,jn.a.open_pop"
+
+   [search-worker.f32c58b63b6f4273a8a4.js] $zuri.checkArgvLink @15731739
+   :: "ull===(e=Zt.default.messageCache)||void 0===e||e.bindDispatch(this.props.dispatch),b.default.registerFunc(I.CmdOrCtrl+I.K_N,(()=>{Ne.c.markStart(Ne.a.CREATE_GROUP,Ne.b.Group.CREATE_GR_HOTKEY),de.ModalManagerV2.openModal({windowId:fe.c,name:I.ModalIdentitiesDefine.CREATE_GROUP_COMPOSE,params:!0})})),$zuri.checkArgvLink(),T.b.register(0,this._focus),en.ConversationPrivacy.GetModule().shouldSuppressMarkRead(this.props.state.userId,{predicate:()=>!1})||this.chatController.readMessageOfCurrentConv(th"
+
+   [sync-v2-sub-worker.f32c58b63b6f4273a8a4.js] $zuri.checkOpenConvReq @15754446
+   :: "ermission),$zsub.$zscreencap.onSend2Me(this._onCaptureResponseSend2Me),$zsub.$zscreencap.onForwardScreencap(this._handleForwardScreenCap),$zsub.$zscreencap.onForwardScreencapText(this._handleForwardScreenCapText),$zsub.$zscreencap.onEventOs(this._eventOSChanged),this._isAlreadyCheckOpenConvRequest||$zuri.checkOpenConvReq().then((()=>{this._isAlreadyCheckOpenConvRequest=!0})),this._prepareEmojiSprite(),C.default.subscribe(this.eventHandler),jn.b.addActionsListener([jn.a.send_sticker,jn.a.open_pop"
+
+   [sync-v2-sub-worker.f32c58b63b6f4273a8a4.js] $zuri.checkArgvLink @15756795
+   :: "ull===(e=Zt.default.messageCache)||void 0===e||e.bindDispatch(this.props.dispatch),b.default.registerFunc(I.CmdOrCtrl+I.K_N,(()=>{Ne.c.markStart(Ne.a.CREATE_GROUP,Ne.b.Group.CREATE_GR_HOTKEY),de.ModalManagerV2.openModal({windowId:fe.c,name:I.ModalIdentitiesDefine.CREATE_GROUP_COMPOSE,params:!0})})),$zuri.checkArgvLink(),T.b.register(0,this._focus),en.ConversationPrivacy.GetModule().shouldSuppressMarkRead(this.props.state.userId,{predicate:()=>!1})||this.chatController.readMessageOfCurrentConv(th"
+
+   [default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js] $zuri.checkOpenConvReq @13086649
+   :: "ermission),$zsub.$zscreencap.onSend2Me(this._onCaptureResponseSend2Me),$zsub.$zscreencap.onForwardScreencap(this._handleForwardScreenCap),$zsub.$zscreencap.onForwardScreencapText(this._handleForwardScreenCapText),$zsub.$zscreencap.onEventOs(this._eventOSChanged),this._isAlreadyCheckOpenConvRequest||$zuri.checkOpenConvReq().then((()=>{this._isAlreadyCheckOpenConvRequest=!0})),this._prepareEmojiSprite(),y.default.subscribe(this.eventHandler),Gn.b.addActionsListener([Gn.a.send_sticker,Gn.a.open_pop"
+
+   [default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js] $zuri.checkArgvLink @13088998
+   :: "ull===(e=Zt.default.messageCache)||void 0===e||e.bindDispatch(this.props.dispatch),T.default.registerFunc(v.CmdOrCtrl+v.K_N,(()=>{Ne.c.markStart(Ne.a.CREATE_GROUP,Ne.b.Group.CREATE_GR_HOTKEY),de.ModalManagerV2.openModal({windowId:pe.c,name:v.ModalIdentitiesDefine.CREATE_GROUP_COMPOSE,params:!0})})),$zuri.checkArgvLink(),R.b.register(0,this._focus),en.ConversationPrivacy.GetModule().shouldSuppressMarkRead(this.props.state.userId,{predicate:()=>!1})||this.chatController.readMessageOfCurrentConv(th"
+
+=== C. compact-app-pc.js worker/bootstrap references ===
+   "shared-worker.html"     = 0
+   "znotification.html"     = 0
+   "new SharedWorker"       = 0
+   "SharedWorker("          = 0
+   "search-worker"          = 1
+   "sync-v2-sub-worker"     = 3
+   "__ZaBUNDLENAME__"       = 64
+   "compact-app-pc"         = 3

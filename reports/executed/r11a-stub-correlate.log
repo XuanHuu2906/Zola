@@ -1,0 +1,16 @@
+STUB_LAUNCH_RECORDS=1327
+STUB_DISTINCT_VERSIONS=["25.4.2","25.5.3","25.6.1","25.7.1","25.7.2","25.8.1","25.8.2","25.8.3","25.10.3","25.11.12","25.11.20","25.12.11","26.1.10","26.1.20","26.2.10","26.3.10","26.3.20","26.4.10","26.5.10","26.5.20","26.6.11","26.6.20","26.7.10","26.8.10","26.8.20","26.9.10","26.10.11","26.10.20"]
+STARTUP_RECORDS=656 (second-instance/bare=276, main/fresh=380)
+TOLERANCE=1000ms paired_bare=262/276 paired_main=41/380
+TOLERANCE=3000ms paired_bare=274/276 paired_main=238/380
+TOLERANCE=10000ms paired_bare=276/276 paired_main=336/380
+EXAMPLES_OF_BARE_PAIRED_WITH_STUB:
+  2025-05-18T19:18:45.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-19T23:33:24.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-20T13:20:57.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-20T15:39:53.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-21T12:41:12.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-21T12:44:21.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-21T14:05:16.000Z second-instance stub_dirs_seen=["25.4.2"]
+  2025-05-22T20:57:21.000Z second-instance stub_dirs_seen=["25.4.2"]
+UNPAIRED_BARE_AT_10s=0

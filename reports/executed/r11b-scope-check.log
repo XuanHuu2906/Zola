@@ -1,0 +1,6 @@
+js_files_total=116
+js_files_outside_node_modules=116
+js_files_inside_node_modules=0
+node_module_packages=0
+root_entries=bootstrap.js,libs,main-dist,native,package.json,pc-dist
+node_modules_dirs=0

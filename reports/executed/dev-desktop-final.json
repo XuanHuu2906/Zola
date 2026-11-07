@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "dev:desktop",
+    "--",
+    "--smoke"
+  ],
+  "started": "2026-11-05T11:16:39.201Z",
+  "finished": "2026-11-05T11:16:48.104Z",
+  "exitCode": 0,
+  "signal": null
+}

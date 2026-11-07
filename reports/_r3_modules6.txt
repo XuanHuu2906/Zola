@@ -1,0 +1,110 @@
+bundle code units = 20927993
+structural candidates = 4713
+verified bodies = 4713/4713 in 0.5s
+
+=== known module keys ===
+  TmDO: @9440451 len=56458
+  euSg: @14376441 len=897
+  B5Cg: @3990966 len=482
+  iwo6: @15768419 len=5695
+  xPHB: @19505897 len=905
+  HuPi: @6112786 len=1838
+  CYG6: @4245911 len=86784
+  RFxn: @8774196 len=99056
+  iKSP: @15249706 len=7437
+  KCaC: @6931066 len=2554
+  W0O7: @11402172 len=1525
+  nahq: @16847888 len=2098
+  j6F3: MISSING
+  Fuol: @5458193 len=16051
+  I9t9: @6147660 len=10138
+  GQ8g: @5553773 len=3875
+  y1FZ: @19641108 len=7278
+  FCc4: @5144073 len=3754
+
+=== surface class literal -> innermost verified module ===
+
+## conv list row ("className:"conv-item") occ=10
+   modules: NONE
+   @12393315 -> NO VERIFIED MODULE
+   @12393748 -> NO VERIFIED MODULE
+   @12393895 -> NO VERIFIED MODULE
+   @12462963 -> NO VERIFIED MODULE
+   @12463388 -> NO VERIFIED MODULE
+
+## conv preview text ("conv-message truncate") occ=4
+   modules: NONE
+   @12389658 -> NO VERIFIED MODULE
+   @12515604 -> NO VERIFIED MODULE
+   @12519736 -> NO VERIFIED MODULE
+   @12531685 -> NO VERIFIED MODULE
+
+## conv title name ("conv-item-title__name") occ=2
+   modules: NONE
+   @12393141 -> NO VERIFIED MODULE
+   @12462974 -> NO VERIFIED MODULE
+
+## message wrapper ("className:"chat-message") occ=10
+   modules: NONE
+   @987109 -> NO VERIFIED MODULE
+   @988374 -> NO VERIFIED MODULE
+   @989390 -> NO VERIFIED MODULE
+   @989753 -> NO VERIFIED MODULE
+   @990191 -> NO VERIFIED MODULE
+
+## composer bar ("className:"chat-box-bar"") occ=1
+   modules: Fuol@5458193
+   @5463373 -> Fuol@5458193 len=16051
+
+## composer toolbar btn ("chat-box-input__tools__btn") occ=6
+   modules: Fbxx@5409238 | NONE
+   @5409873 -> Fbxx@5409238 len=882
+   @5563240 -> NO VERIFIED MODULE
+   @5564382 -> NO VERIFIED MODULE
+   @5565042 -> NO VERIFIED MODULE
+   @5565441 -> NO VERIFIED MODULE
+
+## bubble container ("content-message-container") occ=2
+   modules: NONE
+   @1847070 -> NO VERIFIED MODULE
+   @16713628 -> NO VERIFIED MODULE
+
+## titlebar buttons ("titlebar__btns") occ=3
+   modules: y1FZ@19641108 | NONE
+   @19646838 -> y1FZ@19641108 len=7278
+   @19648693 -> NO VERIFIED MODULE
+   @19649158 -> NO VERIFIED MODULE
+
+## menu item ("className:"zmenu-item") occ=10
+   modules: NONE | 6dTG@2996893 | FCc4@5144073 | GQ8g@5553773 | MEZx@7331013
+   @174229 -> NO VERIFIED MODULE
+   @193053 -> NO VERIFIED MODULE
+   @3010324 -> 6dTG@2996893 len=34035
+   @3011900 -> 6dTG@2996893 len=34035
+   @5147277 -> FCc4@5144073 len=3754
+
+## modal footer ("zl-modal__footer") occ=10
+   modules: NONE | /ymA@1255215
+   @243446 -> NO VERIFIED MODULE
+   @243643 -> NO VERIFIED MODULE
+   @1257198 -> /ymA@1255215 len=15493
+   @1257305 -> /ymA@1255215 len=15493
+   @1257330 -> /ymA@1255215 len=15493
+
+## date chip ("className:"chat-date") occ=2
+   modules: NONE
+   @225036 -> NO VERIFIED MODULE
+   @399580 -> NO VERIFIED MODULE
+
+## left chat box bar (""left-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150276 -> I9t9@6147660 len=10138
+
+## right chat box bar (""right-chat-box-bar"") occ=1
+   modules: I9t9@6147660
+   @6150605 -> I9t9@6147660 len=10138
+
+## leftpanel ("className:"leftpanel") occ=0
+   modules: 
+
+wrote _r3_modules6.json + _r3_modules6_intervals.json

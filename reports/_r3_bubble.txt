@@ -1,0 +1,159 @@
+
+## .content-message-container rules=23
+   vars: --text-primary(2) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --text-secondary(1)
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__na
+        display:-webkit-flex;flex-flow:row nowrap
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__item__link-icon,#group-creator .create-group__nav,#searchResultList .global-search-no-
+        justify-content:center
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__na
+        align-items:center
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__counter,#group-creator .create-group__item__link-icon,#group-creator .create-group__na
+        display:flex
+   @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item,#gifSelector>.bubble-contact-card-container.tab>.bubble-contact-
+        width:70px
+   @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item:first-child,#gifSelector>.bubble-contact-card-contai
+        padding-left:7px
+   @581434 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item>.tab-bar-item__content,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.edit-button>.tab-bar-item>.tab-bar-item__content,#gifSelector>.bubb
+        padding-left:0;padding-right:0
+   @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block,#filter-tags-sb .filter-tag-item.me
+        border-color:var(--border-focused);color:var(--text-information)
+   @835764 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block:hover,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block:hover,#filter-tags-sb .filter
+        background:var(--background-activeness);color:var(--WA100)
+   @1308119 .chat-group-topic__item .info-container>.content-container>.content-message-container,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container
+        position:relative;color:var(--text-primary)
+   @1308344 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-name,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content-message-
+        margin-right:4px
+   @1308586 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content
+        margin-right:4px;width:18px;height:18px
+   @1308869 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview>.thumb-preview,.chat-group-topic__item .info-container>.content-container>.content-message-container>.c
+        width:18px;height:18px;background-size:cover;background-position:50%;border-radius:4px
+   @1309815 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview>.thumb-preview__contain,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-me
+        background-size:contain
+   @1310130 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview>.thumb-preview-object-fit,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-
+        object-fit:cover
+   @1310442 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content-message-
+        color:var(--text-primary);margin-right:4px
+   @1310710 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type>i,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content-messag
+        font-size:.625rem;width:.625rem;height:.625rem;line-height:0;margin-top:2px
+   @1311015 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type>i:before,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content
+        height:10px;width:10px
+   @1311281 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-dot-separator,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content
+        font-size:.5rem;line-height:0;color:var(--text-secondary);margin-right:4px
+   @1311599 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-info,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content-message-
+        overflow:hidden
+   @1311840 .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-info>div,.chat-group-topic__item .pi-edit-profile_general>.content-container>.content-message-container>.content-mess
+        text-overflow:ellipsis;overflow:hidden;white-space:nowrap
+   @1951986 #calendar-v3 div.zl-modal__dialog__header--sticky>.cal-weekday-v3,#filter-tags-sb div.filter-tag-item.zl-modal__dialog__header--sticky>.edit-button,#group-creator div.zl-modal__dialog__header--sticky>.create-group__count
+        padding-left:20px
+   @2204223 #calendar-v3 .compose-dialog .zl-modal__dialog-body>div.cal-weekday-v3,#filter-tags-sb .compose-dialog .filter-tag-item.zl-modal__dialog-body>div.edit-button,#group-creator .compose-dialog .zl-modal__dialog-body>div.crea
+        overflow:hidden
+
+## .bubble-message rules=0
+   vars: —
+
+## .text-container rules=1
+   vars: --bg-message-info(1) --accent-blue-text(1)
+   @1772517 .unread-separator-container .text-container
+        align-self:stretch;background-color:var(--bg-message-info);border-radius:26px;color:var(--accent-blue-text);gap:10px;margin:auto 0;padding:1px 12px 3px
+
+## .rtf-container rules=0
+   vars: —
+
+## .chat-message-v2 rules=7
+   vars: --text-search-highlight(2) --blue-message-selected(1)
+   @721260 .chat-message-v2
+        position:relative
+   @721295 .chat-message-v2.multi-select-mode-selected .audio-expired,.chat-message-v2.multi-select-mode-selected .card
+        background-color:var(--blue-message-selected)
+   @721450 .chat-message-v2.animation
+        animation:chatMessageV2 .3s ease-in-out;animation-delay:0ms
+   @721632 }.chat-message-v2 .message-action
+        position:relative
+   @721684 .chat-message-v2 .message-action .text-match
+        background-color:var(--text-search-highlight)
+   @721775 .chat-message-v2 .message-action .text-match[data-z-element-type=rtf-image]
+        background-color:var(--text-search-highlight)!important
+   @721907 .chat-message-v2 .card-send-time
+        margin-top:4px
+
+## .message-view__banner rules=13
+   vars: --WA100(4) --text-information(2) --divider-bold(1) --layer-background(1) --text-primary(1) --border-focused(1) --background-activeness(1) --medium(1) --WA80(1)
+   @118583 #contact-search,#main-tab,.bs,.chat-box-input__content,.chat-box-input__tools,.chat-info-file__group__items,.chat-info-link__group__items,.head__page__contact__tab,.message-view__banner,.message-view__topic,.nav__content
+        box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box
+   @497934 .message-view__banner:not(.hidden)~.btn-jump-up
+        --msg-banner-height:45px
+   @784007 .group-topic:before,.message-view__banner:before,.msgbannerbf
+        position:absolute;content:" ";border-bottom:1px solid var(--divider-bold);bottom:-1px;width:100%
+   @786060 .message-view__banner
+        flex:none;position:relative;z-index:3;width:100%;right:0;display:flex;height:50px;text-align:center;background-color:var(--layer-background);color:var(--text-primary);align-items:center;justify-content:center
+   @786291 .message-view__banner:before
+        right:0
+   @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.cal-clear-time>.message-view__banner-stranger__btn-block,#filter-tags-sb .filter-tag-item.me
+        border-color:var(--border-focused);color:var(--text-information)
+
+## .chat-box-input rules=24
+   vars: --text-information(4) --cta-link(2) --cta-link-pressed(2) --layer-background(1) --divider-bold(1) --surface-background-subtle(1) --text-secondary(1) --icon-secondary(1)
+   @111167 #addConversationLabel .autosuggest-item,#calendar-v3>.cal-content .cal-item,#calendar-v3>.cal-title .main-title .ena-clickable,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-group__avatar,#group-cre
+        cursor:pointer
+   @259127 #addConversationLabel .subtitle.autosuggest-item:hover,#calendar-v3>.cal-content .subtitle.cal-item:hover,#calendar-v3>.cal-title .main-title .subtitle.ena-clickable:hover,#filter-tags-sb .filter-tag-item>.subtitle.edit-
+        color:var(--text-information)
+   @273494 #addConversationLabel .item-chat-label.autosuggest-item:hover,#calendar-v3>.cal-content .item-chat-label.cal-item:hover,#calendar-v3>.cal-title .main-title .item-chat-label.ena-clickable:hover,#filter-tags-sb .filter-tag
+        transform:scaleX(3)
+   @277855 #addConversationLabel .conversation-list__label.autosuggest-item:hover,#calendar-v3>.cal-content .conversation-list__label.cal-item:hover,#calendar-v3>.cal-title .main-title .conversation-list__label.ena-clickable:hover,
+        color:var(--text-information)
+   @486836 #addConversationLabel [for=chat_info_file].autosuggest-item>span,#calendar-v3>.cal-content [for=chat_info_file].cal-item>span,#calendar-v3>.cal-title .main-title [for=chat_info_file].ena-clickable>span,#filter-tags-sb .f
+        color:var(--text-information)
+   @1563404 #addConversationLabel .loading-msg .autosuggest-item,#calendar-v3>.cal-content .loading-msg .cal-item,#calendar-v3>.cal-title .main-title .loading-msg .ena-clickable,#filter-tags-sb .loading-msg .filter-tag-item>.edit-bu
+        color:var(--cta-link)
+   @1567229 #addConversationLabel .loading-msg .autosuggest-item:active,#addConversationLabel .loading-msg .autosuggest-item:hover,#calendar-v3>.cal-content .loading-msg .cal-item:active,#calendar-v3>.cal-content .loading-msg .cal-i
+        color:var(--cta-link-pressed)
+   @1577477 #addConversationLabel .zinstant-error__text.autosuggest-item,#calendar-v3>.cal-content .zinstant-error__text.cal-item,#calendar-v3>.cal-title .main-title .zinstant-error__text.ena-clickable,#filter-tags-sb .filter-tag-it
+        margin-top:4px;color:var(--cta-link)
+   @1580657 #addConversationLabel .zinstant-error__text.autosuggest-item:active,#addConversationLabel .zinstant-error__text.autosuggest-item:hover,#calendar-v3>.cal-content .zinstant-error__text.cal-item:active,#calendar-v3>.cal-con
+        color:var(--cta-link-pressed)
+   @1608178 .chat-box-input
+        flex:1;position:relative;background:var(--layer-background);border-top:1px solid var(--divider-bold)
+   @1613611 .chat-box-input .quote-banner
+        background-color:var(--surface-background-subtle);border:none;height:36px;padding:8px 8px 8px 12px;margin-bottom:0;border-radius:4px
+   @1613774 .chat-box-input .quote-banner--partial-quote
+        height:auto;min-height:36px
+
+=== data-component attribute JS sites ===
+  @112881: "st Yn=qt&&!(null==(Qn=Bt)||!Qn.ttl||Object(k.c)(Qn)||!ct.includes(Qn.msgType)&&!Object(k.v)(Qn));var Qn;let qn=null;return qn=Qt?o.a.createElement(\"div\",{className:Qe,style:En},o.a.createElement(\"div\",{className:Object(u.a)(\"message-action\",tn&&\"select-text\"),\"data-component\":m.DataAttributes.Component.MESSAGE_CONTENT_VIEW,onClickCapture:kn,onContextMenu:ea,onContextMenuCapture:xn},o.a.createElement(\"div\",{className:Object(u.a)(Un&&\"prevent-pointer-event\")"
+  @113792: ",ttl:Bt.ttl,isAdmin:wt},o.a.createElement(\"div\",{id:\"message-frame_\"+Mt,ref:M,className:Object(u.a)(Wn,Yn&&\"border-none\",tn&&\"select-text\",\"focused-item focused-item--has-border\",_n&&\"focused-item--highlight-border\"),style:{position:\"relative\",marginBottom:0},\"data-component\":m.DataAttributes.Component.MESSAGE_CONTENT_VIEW,\"data-qId\":Object(Ce.h)(Bt),onClickCapture:kn,onContextMenu:ea,onContextMenuCapture:xn},o.a.createElement(\"div\",{className:Object(u.a)("
+  @114639: "ect(u.a)(Qe,\"focused-background\",_n&&\"focused-background--focused\")},Bn(),o.a.createElement(lt,{hasDynamicBorder:Yn,variant:\"\",ttl:Bt.ttl,isAdmin:wt},o.a.createElement(\"div\",{id:\"message-frame_\"+Mt,className:Object(u.a)(Wn,Yn&&\"border-none\",tn&&\"select-text\"),\"data-component\":m.DataAttributes.Component.MESSAGE_CONTENT_VIEW,onClickCapture:kn,onContextMenu:ea,onContextMenuCapture:xn,style:{position:\"relative\",marginBottom:0}},o.a.createElement(\"div\",{classNa"
+  @115442: "))),_t||!jn||mn?wn:null,Gn()),o.a.createElement(Lt,null,o.a.createElement(\"div\",{ref:w,key:\"msg_\"+Mt,id:Dt,className:Object(u.a)(\"chat-message chat-message-v2\",$t&&\"wrap-message\",\"rotate-container\",Ot,Ct&&\"failed\",mn&&\"me\",\"\",ln&&\"-send-time\",Jt&&\"-reaction\"),\"data-component\":m.DataAttributes.Component.BUBBLE_MESSAGE,onMouseOver:function(){ta(!1),fe.current=setTimeout((()=>{!function(t){var n;if((null===(n=e.data)||void 0===n||!n._friendRequestData)&&!e.is"
+  @392946: "o.GroupPhoto){let n=e.closest(\".bubble-jump-target\");if(n||(n=i.offsetParent),t=n.offsetTop,_o.a.media_group_layout.enable){const n=e.closest(\"#album-container\");n&&(t+=n.offsetTop+i.offsetTop)}else t+=t}else t+=i.offsetParent.offsetTop;const r=e.getAttribute(\"data-component\");if(r===m.DataAttributes.Component.STICKER||r===m.DataAttributes.Component.AI_STICKER||r===m.DataAttributes.Component.PHOTO_STICKER||r===m.DataAttributes.Component.PHOTO){const n=Obje"
+  @3121853: ".msgId&&!this.props.omitContentElementId&&(E=v.MSG_TEXT_CONTENT_ID_PREFIX+t.msgId),this.isRtfMessageProps(this.props)&&(_=this._buildHtmlRichText(d,t.message.params,g)),_||(_=this._buildHtmText(d,g));return o.a.createElement(\"div\",{className:\"overflow-hidden\",\"data-component\":v.DataAttributes.Component.MESSAGE_TEXT_CONTENT,style:Object(i.a)({},this.props.style)},o.a.createElement(\"span-15\",{ref:e=>this._containerRef=e,id:E,\"data-component\":v.DataAttributes"
+  @3122020: "),_||(_=this._buildHtmText(d,g));return o.a.createElement(\"div\",{className:\"overflow-hidden\",\"data-component\":v.DataAttributes.Component.MESSAGE_TEXT_CONTENT,style:Object(i.a)({},this.props.style)},o.a.createElement(\"span-15\",{ref:e=>this._containerRef=e,id:E,\"data-component\":v.DataAttributes.Component.TEXT_CONTAINER,style:{lineHeight:\"22px\"},onDragStart:e=>{e.dataTransfer.clearData()},onClick:this.props.onClick,onDoubleClick:this.handleDbClickContent},_))"
+  @6279417: "();if(\"string\"==typeof t&&s&&\"Range\"===s.type&&s.rangeCount>0){const n=a.document.getElementById(t);if(n){const o=s.getRangeAt(0),l=o.commonAncestorContainer;if(n.contains(l)){if(l.nodeType===Node.ELEMENT_NODE&&\"rtf-container\"===(null==l?void 0:l.getAttribute(\"data-component\")))return()=>\"\";const{content:e}=Object(i.a)(a);return e||s.toString()}{const n=o.cloneContents();if(null!=n&&n.getElementById(t))return r(n),n=>{try{const e=n||window,a=e.getSelection"
+  @8338177: "e||window).getSelection(),o=null!=s&&s.rangeCount?s.getRangeAt(0):void 0;if(void 0===o||!0===o.collapsed)return{isHandled:!1,content:\"\"};let l=!1,c=\"\",d=0;const u=o.commonAncestorContainer;if(u&&u.nodeType===a.Node.ELEMENT_NODE&&(null==u?void 0:u.getAttribute(\"data-component\"))===a.DataAttributes.Component.TEXT_CONTAINER){const e=o.cloneContents(),t=Array.from(e.children),n=t.reduce(((e,n,r)=>{if(n.nodeType===a.Node.ELEMENT_NODE&&n.getAttribute(\"data-z-ele"
+  @8339007: "|void 0===t?void 0:t.getAttribute(\"data-z-element-type\"))===a.DataAttributes.Element.LINK&&0===o.startOffset&&o.endContainer.length===o.endOffset&&(c=Object(i.a)(u.parentElement),d=1,l=!0);if(u&&u.nodeType===a.Node.ELEMENT_NODE&&(null==u?void 0:u.getAttribute(\"data-component\"))===a.DataAttributes.Component.RTF_CONTAINER&&(null===(n=u.parentElement)||void 0===n||null===(r=n.parentElement)||void 0===r?void 0:r.getAttribute(\"data-component\"))===a.DataAttribut"
+  @8339172: "arentElement),d=1,l=!0);if(u&&u.nodeType===a.Node.ELEMENT_NODE&&(null==u?void 0:u.getAttribute(\"data-component\"))===a.DataAttributes.Component.RTF_CONTAINER&&(null===(n=u.parentElement)||void 0===n||null===(r=n.parentElement)||void 0===r?void 0:r.getAttribute(\"data-component\"))===a.DataAttributes.Component.TEXT_CONTAINER){let e=!0;c=\"\";const t=o.cloneContents(),n=Array.from(t.children);for(let i=0;i<n.length&&!1!==e;i++){const t=n[i];if(!t||!t.children)con"
+  @8339802: "){e=!1;break}t.getAttribute(\"data-z-element-type\")===a.DataAttributes.Element.RTF_IMAGE?c+=t.getAttribute(\"data-content\")||t.textContent:c+=t.textContent}}c+=\"\\n\"}e&&(l=!0,c=c.trim())}else if(u&&u.nodeType===a.Node.ELEMENT_NODE&&(null==u?void 0:u.getAttribute(\"data-component\"))===a.DataAttributes.Component.RTF_BLOCK){const e=o.cloneContents(),t=Array.from(e.children);if(t.some((e=>{var t;return null===(t=e.classList)||void 0===t?void 0:t.contains(\"emoji-ou"
+  total = 14
+
+=== conversation list container discovery ===
+
+## "conv-item conv-rel" occ=8
+  @12415123: "CT_CONV_MINOR,payload:i}):(p.selectConversation(i),n.preventDefault(),n.stopPropagation(),R.default.logAction(178001),i.userId===s.FAKE_CONVERSATION_ID.FRIEND_CENTER&&R.default.logAction(16601)))})(n,!0)},K=Object(i.useCallback)((e=>{let t=Object(Ji.b)(e);v(t)}),[]),W=Object(i.useMemo)((()=>{let e=\"conv-item conv-rel\";a&&(e+=\" selected\"),!!T&&(e+=\" pinned\");return{className:e,onContextMenu:B,onMouseEnter:()=>{U()},onMouseLeave:()=>{k.current&&(clearTimeout(k.current),k.current=null)},onClick:z,onDoubleClick:H}}),[a,t,z]);Object(i.useEffect)((()=>{if(!A.default.noti_center_config.disable&&t){Ji.a.subcribeUnread(t.userId,K);let e=Ji.a.getUnread(t.userId);e&&K(e)}return()=>{Ji.a.unsubcribeUnrea"
+  @12472616: "his.props.searchText&&this.props.searchText.length>0&&t.infoSearch,a=t.displayName?t.displayName:this._getdisplayName();t.userId==A.default.sendToMeId&&(a=ce.default.getDName(t.userId));let i=this.state.hightlightStale?a:this._formatDNameHighlight(a,t.infoSearch?t.infoSearch.orderKeywordV2:null),o=\"conv-item conv-rel \",l=\"\";const c=this.props.privacySettings;this.props.selectedNewFriend&&this.props.selectedNewFriend.forEach((e=>{e.userId===t.userId&&(l=\" selectedNewFriend \")}));let d=null;o+=this.props.isHighlighted?\" selected\":(this.props.isSelected&&n?\"active\":\"\")+l+(t.notiNewFriends?\" highlightContact \":\" \");let h=null;if(V.default.enableLogSearch())t.pointSearch>=0&&(h=(t.detail?t.detail"
+
+## "\"conv-list" occ=4
+  @11643975: "d:e.message.catId};this.getChatController()._showStickerSet(t,\"clk-sticker-msg-ctx-menu\")}}var dt=ct},XOVt:function(e,t,n){\"use strict\";n.d(t,\"a\",(function(){return r})),n.d(t,\"b\",(function(){return o})),n.d(t,\"c\",(function(){return l}));var a=n(\"q1tI\"),i=n.n(a);const r={UNKNOWN:\"unknown\",CONV_LIST:\"conv-list\",CONTACT_TAB:\"contact-tab\",CHATBOX_MEMBER:\"chatbox-member\",SEARCH:\"search\",FORWARD_MESSAGE:\"forward-message\"},s=i.a.createContext(r.UNKNOWN),o=({source:e,children:t})=>i.a.createElement(s.Provider,{value:e},t),l=()=>i.a.useContext(s)},XPVA:function(e,t,n){\"use strict\";var a=n(\"q1tI\"),i=n.n(a),r=(n(\"17x9\"),n(\"NDmK\")),s=(n(\"z0WU\"),n(\"DPHK\"),n(\"c51z\")),o=(n(\"lCMA\"),n(\"97kL\")),l=n(\"Ydol\"),c"
+  @12452196: ",className:\"label-guide__img\"}),r.a.createElement(_.a,{tagName:\"div\",textKey:\"STR_NO_MSG_TXT_3\",className:\"label-guide__txt\",style:{marginTop:\"15px\"}}),r.a.createElement(Vr.b,{isEmptyConversationList:!0})):r.a.createElement(\"div\",{className:\"flx flx-col flx-al-c\"},r.a.createElement(\"div\",{className:\"conv-list-empty-wrapper\"},r.a.createElement(\"div\",{className:\"image-wrapper\"},r.a.createElement(\"i\",{className:\"fa fa-empty-list\"}))),r.a.createElement(_.a,{tagName:\"div\",textKey:\"STR_MSG_LIST_EMPTY_NOTICE\",className:\"label-guide__title\",style:{marginTop:\"0\"}}),r.a.createElement(Vr.b,{isEmptyConversationList:!0}))}),[null==l?void 0:l.typeFilterSrc,null==l?void 0:l.labels]),f=Object(i.useMemo)((fu"
+
+## "conv-list " occ=0
+
+## "id:\"conv-list\"" occ=0
+
+## "conv-list__" occ=0
+
+## "list-conversation" occ=1
+  @13600814: "OAD=\"download_banner\",e}({}),r=function(e){return e.BANNER_DOWNLOAD=\"download_banner\",e.DATA_CONTENT=\"dataContent\",e.TRANSFER_MODAL=\"transfer_modal\",e}({});const s=\"TDSDataStateKey\",o=\"TDSUIStateKey\",l=\"last-time-close-banner-download-pc-suggestion\",c=\"last-time-close-first-login-transfer-modal\",d=\"list-conversation-before-first-login\",u=\"list-rolled-conversations\",A=\"transfer-messages-info\",h={text:\"\"},m={pc:[h],web:[h]},p={version:0,content:{[i.CONVERSATION]:{desc:Object(a.a)({},m)},[i.GLOBAL_SEARCH]:{desc:Object(a.a)({},m)},[i.SEARCH_IN_CONVERSATION]:{desc:Object(a.a)({},m)},[i.BUBBLE_CSC]:{desc:Object(a.a)({},m),suggestion:Object(a.a)({},m)},[i.MEDIA_LIST]:{desc:Object(a.a)({},m)},[i.TRA"
+
+## "ConversationList" occ=166
+  @576962: "ISCONNECT)j.default.createSuccess(G.default.str(\"STR_NET_SSL_DATE_ERROR_TITLE\"));else{let e=this.props.friendInfo.isBlocked;this.setState({isBlocked:!e,needRefresh:!this.state.needRefresh}),P.default.blockFriend(this.props.conversation.userId,e?m.UNSET_BLOCK:m.SET_BLOCK),this.props.dispatch({type:V.ConversationListActions.BLOCK_CONVERSATION,payload:{blocked:!e,userId:this.props.conversation.userId}})}}_showMessageQuickAction(e,t,n,a,i,r,s,o=\"\",l=null){this.messageQuickAction&&!this.props.isMultiSel&&this.messageQuickAction.showActionForMessage(e,t,n,a,i,r,s,o,l)}showMessageQuickActionV2(e,t,n){this.openMessageContextMenuCallback=n,this._showMessageQuickAction(e,t)}openMessageContextMenu(e){t"
+  @825151: ".t.FRIEND_REQUEST}))},Et=n(\"nKfL\"),vt=n(\"PoHQ\"),It=n(\"1CKO\");var bt=e=>{const{compactLv:t,queries:n}=e,{selfWindow:a}=Object(It.a)(),[r,s]=i.a.useState(null),{matchers:o,queriesMap:l}=i.a.useMemo((()=>{const e=new Map;let i=S.SIZE_WINDOW.WIDTH_NAV_RIGHT_SIDEBAR;t>S.COMPACT_LEVEL.COMPACT&&(i=vt.n.getConversationListWidth()||S.SIZE_WINDOW.MAX_WIDTH_LEFT_SIDEBAR);const r=n.map((t=>{const n=[];if(void 0!==t.min){const e=`(min-width: ${t.min+i}px)`;n.push(e)}if(void 0!==t.max){const e=`(max-width: ${t.max+i}px)`;n.push(e)}const r=n.join(\" and \"),s=a.matchMedia(r);return e.set(r,t),s}));return{matchers:r,queriesMap:e}}),[a,n,t]);return i.a.useEffect((()=>{const e=e=>{const t=l.get(e);var n;t&&(nul"
+
+## "\"conv-item-wrapper\"" occ=0

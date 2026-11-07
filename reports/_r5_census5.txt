@@ -1,0 +1,47 @@
+=== window-chrome / material options (main.js) ===
+  nativeTheme = 0
+  shouldUseDarkColors = 0
+  themeSource = 0
+  setBackgroundMaterial = 0
+  backgroundMaterial = 0
+  vibrancy = 0
+  visualEffectState = 0
+  titleBarOverlay = 0
+  trafficLightPosition = 0
+  roundedCorners = 0
+  hasShadow = 0
+  transparent:!0 = 1
+  thickFrame = 0
+  setOpacity = 14
+  rgba(0,0,0,0) = 0
+
+=== auto-update ===
+  autoUpdater @546992 :: "nction(){return a().Provider}}),t.UpdaterSignal=t.UPDATE_DOWNLOADED=t.DOWNLOAD_PROGRESS=void 0,Object.defineProperty(t,\"autoUpdater\",{enumerable:!0,get:()=>s||(s=\"win32\"===process.platform?new(n(\"aNko\").NsisUpdater):\"darwin\"===process.platform?new(n(\"s8mH\").MacUpdater):new(n(\"c7Y"
+  autoUpdater @691716 :: "est(e)||null!=t&&e in Object(t))}},\"9iYi\":function(e,t,n){const r=n(\"NLsH\"),i=n(\"NLsH\").session,o=n(\"oyvS\"),a=n(\"7ikU\").autoUpdater,s=new(n(\"Y6nd\")),c=n(\"qkcG\"),l=n(\"3dTn\"),{MAC_CLIENT_TYPE:d,WIN_CLIENT_TYPE:u,getClientType:p}=n(\"ZQzv\"),{ZLoggerFactory:h}=n(\"Mgpg\"),{ModuleContain"
+  autoUpdater @965211 :: "ntVersion:y,updateVersionAppToRegistryAfterUpdate:v}=n(\"ZQzv\");let R=null;const b=!1,T=n(\"qkcG\");R=g()===m&&b?n(\"NLsH\").autoUpdater:n(\"7ikU\").autoUpdater;const w=n(\"bBLl\"),{appQuitFlow:S}=n(\"DfAL\"),O=()=>`https://wpa.${w.getCurrentApiDomain()}/api/login/chkUpdate`,D=\"manual-updat"
+  autoUpdater @965233 :: "ionAppToRegistryAfterUpdate:v}=n(\"ZQzv\");let R=null;const b=!1,T=n(\"qkcG\");R=g()===m&&b?n(\"NLsH\").autoUpdater:n(\"7ikU\").autoUpdater;const w=n(\"bBLl\"),{appQuitFlow:S}=n(\"DfAL\"),O=()=>`https://wpa.${w.getCurrentApiDomain()}/api/login/chkUpdate`,D=\"manual-update-downloaded\",N=\"manua"
+  autoUpdater @1653522 :: "r:T,updateVersionAppToRegistryAfterUpdate:w,isDev:S}=n(\"ZQzv\");let O=null;const D=!1,N=n(\"qkcG\");R()===E&&D?O=n(\"NLsH\").autoUpdater:(O=n(\"7ikU\").autoUpdater,R()===g&&(O.autoInstallOnAppQuit=!1));const C=n(\"bBLl\"),A=()=>`https://wpa.${C.getCurrentApiDomain()}/api/login/chkUpdate`,"
+  autoUpdater @1653547 :: "istryAfterUpdate:w,isDev:S}=n(\"ZQzv\");let O=null;const D=!1,N=n(\"qkcG\");R()===E&&D?O=n(\"NLsH\").autoUpdater:(O=n(\"7ikU\").autoUpdater,R()===g&&(O.autoInstallOnAppQuit=!1));const C=n(\"bBLl\"),A=()=>`https://wpa.${C.getCurrentApiDomain()}/api/login/chkUpdate`,I=\"update-downloaded\",L=\""
+  checkForUpdates = 15
+  quitAndInstall = 28
+  ASAR integrity / signed = 0
+
+=== theme config channel ===
+  update-theme-conf = 1
+  get-theme-conf = 1
+  app_theme = 7
+  za_theme = 0
+
+=== developer / debugging surfaces (main.js) ===
+  --remote-debugging-port = 0
+  remote-debugging = 0
+  openDevTools = 4
+  devTools:!0 = 3
+  devTools:!1 = 5
+  --inspect = 4
+  ELECTRON_ENABLE_LOGGING = 0
+  setDevToolsWebContents = 0
+
+=== CSP monitor: note it is subFrame-only, read-only ===
+  setupCSPMonitor @1079568
+

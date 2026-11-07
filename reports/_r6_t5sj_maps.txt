@@ -1,0 +1,405 @@
+=== DESCRIPTOR MAPS IN T5SJ ===
+
+## map y  (28 entries, 1693 bytes) @3610
+   minimize                               minimize                                       a
+   maximizeToggler                        toggle-maximize                                a
+   setLoginSize                           set-login-size                                 a
+   expandMainWindow                       main-window-expand                             a
+   isMaximized                            check-maximize                                 a
+   isFullScreen                           check-fullscreen                               a
+   fullscreenToggler                      toggle-fullscreen                              a
+   flashFrame                             flash-frame                                    a
+   focus                                  focus-window                                   a
+   closeWindow                            close-window                                   a
+   hide                                   hide-window                                    a
+   setContentProtection                   set-content-protection                         a
+   showInactive                           show-inactive                                  a
+   show                                   show                                           a
+   quit                                   quit                                           a
+   showOpenDialog                         show-open-dialog                               a
+   showSaveDialog                         show-save-dialog                               a
+   showOpenDialogSync                     show-open-dialog-sync                          a
+   showSaveDialogSync                     show-save-dialog-sync                          a
+   onVisibilityChange                     visibility-change                              a
+   removeListenVisibilityChange           visibility-change                              a
+   onHideWindowComplete                   hide-window-complete                           a
+   removeListenHideWindowComplete         hide-window-complete                           a
+   openPhotoViewerDevtool                 open-photo-viewer-devtool                      a
+   onUnloadZLog                           ?g.UNLOAD_ZLOG                                 a
+   removeListenUnloadZLog                 ?g.UNLOAD_ZLOG                                 a
+   onCloseMediaViewer                     close-media-viewer                             a
+   removeListenCloseMediaViewer           close-media-viewer                             a
+
+## map A  (17 entries, 1140 bytes) @5834
+   getPhotoviewerUrl                      get-photo-viewer-url                           a
+   getChildUrl                            get-child-url                                  a
+   onClipboardChange                      clipboard-change                               a
+   removeListenClipboardChange            clipboard-change                               a
+   onRequestImei                          get-imei                                       a
+   removeListenRequestImei                get-imei                                       a
+   getResourceDir                         get-resource-dir                               a
+   onCheckIdleUpdaterBusy                 check-updater-busy                             a
+   removeListenCheckIdleUpdateBusy        check-updater-busy                             a
+   getRecentFiles                         get-recent-file                                a
+   authError                              get-auth-domain                                a
+   getAuthDomainReady                     get-auth-domain-ready                          a
+   getAuthDomainReply                     get-auth-domain-reply                          a
+   onBackupAppState                       backup-app-state                               a
+   removeListenBackupAppState             backup-app-state                               a
+   onRestoreAppState                      restore-app-state                              a
+   removeListenRestoreAppState            restore-app-state                              a
+
+## map S  (31 entries, 2338 bytes) @8007
+   requestUpdate                          update-is-avail                                a
+   requestCheckUpdate                     z-check-for-update                             a
+   onNewUpdate                            binary-updated                                 a
+   onNewManualUpdate                      z-manual-binary-updated                        a
+   onFallbackUpdate                       fallback-update                                a
+   removeListenNewUpdate                  binary-updated                                 a
+   removeListenNewManualUpdate            z-manual-binary-updated                        a
+   removeListenFallbackUpdate             fallback-update                                a
+   onResourceUpdate                       resources-updated                              a
+   removeResourceUpdate                   update-is-avail                                a
+   onManualUpdateInstalling               z-manual-update-installing                     a
+   removeListenManualUpdateInstalling     z-manual-update-installing                     a
+   onManualUpdateDownloading              z-manual-update-downloading                    a
+   removeListenManualUpdateDownloading    z-manual-update-downloading                    a
+   onManualUpdateChecked                  z-manual-update-checked                        a
+   removeListenManualUpdateChecked        z-manual-update-checked                        a
+   onManualUpdateCheckedOnly              z-manual-update-checked-only                   a
+   removeListenManualUpdateCheckedOnly    z-manual-update-checked-only                   a
+   onManualUpdateCheckOnlyErr             z-manual-update-checked-only-err               a
+   removeListenManualUpdateCheckOnlyErr   z-manual-update-checked-only-err               a
+   onManualUpdateErr                      z-manual-update-err                            a
+   removeListenManualUpdateErr            z-manual-update-err                            a
+   requestCheckDownloadUpdate             z-manual-check-download-update                 a
+   requestCheckDownloadUpdateOnly         z-manual-check-download-update-only            a
+   requestResourceReload                  resources-reload-safe                          a
+   requestBinaryReload                    binary-reload-safe                             a
+   requestManualBinaryReload              manual-binary-reload-safe                      a
+   openUpdatePage                         OPEN_UPDATE_PAGE                               a
+   onReceiveUpdateInfo                    receive-update-info                            a
+   onUncaughtError                        updater-uncaught-error                         a
+   removeListenUncaughtError              updater-uncaught-error                         a
+
+## map T  (66 entries, 4400 bytes) @12090
+   notifyRendererReady                    renderer-ready                                 a
+   notifyAppStarted                       app-started                                    a
+   onRequestShowAbout                     about                                          a
+   onRequestShowPreference                preferences                                    a
+   removeListenShowAbout                  about                                          a
+   removeListenShowPreference             preferences                                    a
+   beforeAppQuit                          app-before-quit                                a
+   removeListenBeforeAppQuit              app-before-quit                                a
+   beforeAppClose                         before-close                                   a
+   removeListenBeforeAppClose             before-close                                   a
+   checkNetworkTimeout                    CHECK_NETWORK_TIMEOUT_ERR                      a
+   requestShowFromTray                    show-from-tray                                 a
+   removeListenRequestShowFromTray        show-from-tray                                 a
+   notifyClickNoti                        noti-click                                     a
+   onClickNoti                            noti-click                                     a
+   removeListenClickNoti                  noti-click                                     a
+   onRequestRestartAppForBackup           bu-ask-restart                                 a
+   removeListenBackupRestartReq           bu-ask-restart                                 a
+   notifyDbFail                           signal-db-fail                                 a
+   notifyDbCorruption                     signal-db-corruption                           a
+   requestHideBeforeQuit                  z-hide-app-before-quit                         a
+   onOsRequestRestart                     os-force-restart                               a
+   removeListenOsRestart                  os-force-restart                               a
+   requestQuitAppImmediately              do-quit                                        a
+   cancelQuitApp                          cancel-quit                                    a
+   osConfirmRestart                       os-confirm-restart                             a
+   restartByZAM                           ZAM_RESET_DB                                   a
+   onConfirmAppQuit                       before-quit                                    a
+   removeListenConfirmAppQuit             before-quit                                    a
+   onNetErr                               znet-error-code                                a
+   removeListenNetErr                     znet-error-code                                a
+   onRequestShowOpenFile                  zfile-popup                                    a
+   removeListenShowOpenFile               zfile-popup                                    a
+   onReceiveArgument                      receive-arguments                              a
+   removeListenReceiveArguments           receive-arguments                              a
+   onShowToastFromMain                    show-toast-from-main                           a
+   removeListenToastFromMain              show-toast-from-main                           a
+   registerProcess                        zmain_register_process                         a
+   onPing                                 zping                                          a
+   removeListenPing                       zping                                          a
+   requestCreateNoti                      noti-create                                    a
+   onRequestShowNoti                      noti-create                                    a
+   notifyNotiReady                        noti-ready                                     a
+   notifyRelaunchMode                     receive-relaunch-mode                          a
+   changeLanguage                         language-change                                a
+   enableNetHandler                       enable-net-handler                             a
+   updateCurrentUserId                    ChatApp-receive-userId                         a
+   getProxyConfig                         proxy-get                                      a
+   setProxyConfig                         proxy-set                                      a
+   updateBadgeCount                       badge-count                                    a
+   updateCertConfig                       cert-config                                    a
+   beforeAppRestartSilently               app-before-restart-silently                    a
+   removeListenBeforeAppRestartSilently   app-before-restart-silently                    a
+   afterAppRestartSilently                app-after-restart-silently                     a
+   removeListenAfterAppRestartSilently    app-after-restart-silently                     a
+   registerIdleCheckInterval              register-idle-check-interval                   a
+   onStartIdle                            start-idle                                     a
+   removeListenStartIdle                  start-idle                                     a
+   onEndIdle                              end-idle                                       a
+   removeListenEndIdle                    end-idle                                       a
+   setMainWindowResizable                 set-main-window-resizable                      a
+   onListenSwitchTab                      switch_tab                                     a
+   requestRelaunch                        request_relaunch                               a
+   onAppVisibilityChanged                 app-visibility-change                          a
+   removeListenAppVisibilityChanged       app-visibility-change                          a
+   getAppVisibilityStatus                 get-app-visibility                             a
+
+## map R  (8 entries, 591 bytes) @16769
+   sendDownloadRequest                    new-download-channel                           a
+   onDownloadResp                         new-download-channel                           a
+   removeListenDownloadResp               new-download-channel                           a
+   updateDownloadConfig                   download-config-change                         a
+   updateInvalidFileExts                  invalid-file-exts-change                       a
+   downloadThumbTemp                      download-thumb-temp                            a
+   onDownloadQuotaHit                     download-quota-hit                             a
+   removeListenDownloadQuotaHit           download-quota-hit                             a
+
+## map k  (20 entries, 1383 bytes) @18303
+   onRequestCallFromServer                call-server-request                            a
+   removeListenRequestCallFromServer      call-server-request                            a
+   onRequestCallFromLocal                 call-local-request                             a
+   removeListenRequestCallFromLocal       call-local-request                             a
+   onCallUpdate                           call-update                                    a
+   removeListenCallUpdate                 call-update                                    a
+   onCallActiveNative                     call_active_native_app                         a
+   removeListenCallActiveNative           call_active_native_app                         a
+   onPcShuttingDown                       pc-shutting-down                               a
+   removeListenPcShuttingDown             pc-shutting-down                               a
+   onStopSharing                          stop-sharing                                   a
+   removeListenStopSharing                stop-sharing                                   a
+   onCallSignal                           call-send-signal                               a
+   removeListenCallSignal                 call-send-signal                               a
+   onCallRequest                          call-request                                   a
+   removeListenCallRequest                call-request                                   a
+   initCall                               call-init                                      a
+   sendDataToNative                       call-send-to-native                            a
+   onCallResponseDevices                  call-response-listDevice                       a
+   removeListenCallDevices                call-response-listDevice                       a
+
+## map L  (26 entries, 1719 bytes) @20322
+   show                                   show-shared-worker                             a
+   hide                                   hide-shared-worker                             a
+   start                                  shared-worker-start                            a
+   register                               shared-worker-handle                           a
+   ping                                   shared-worker-ping                             a
+   dispose                                shared-worker-dispose                          a
+   updateProgress                         shared-worker-progress                         a
+   onReceiveUpdateProgress                shared-worker-progress                         a
+   removeListenUpdateProgress             shared-worker-progress                         a
+   responseResult                         shared-worker-resp                             a
+   onReceiveResult                        shared-worker-resp                             a
+   removeListenResult                     shared-worker-resp                             a
+   runTask                                shared-worker-run                              a
+   onRequestRunTask                       shared-worker-run                              a
+   removeListenRunTask                    shared-worker-run                              a
+   abortTask                              shared-worker-abort                            a
+   onRequestAbortTask                     shared-worker-abort                            a
+   removeListenAbortTask                  shared-worker-abort                            a
+   updateTaskParams                       shared-worker-update-params                    a
+   onRequestUpdateTaskParams              shared-worker-update-params                    a
+   removeListenUpdateTaskParams           shared-worker-update-params                    a
+   onUnloadZLog                           ?x.UNLOAD_ZLOG                                 a
+   removeListenUnloadZLog                 ?x.UNLOAD_ZLOG                                 a
+   updateRemoteConfig                     shared-worker-remote-config-change             a
+   onRemoteConfigChange                   shared-worker-remote-config-change             a
+   removeListenRemoteConfigChange         shared-worker-remote-config-change             a
+
+## map F  (6 entries, 388 bytes) @22238
+   onNewRequest                           z-uri-request                                  a
+   removeListenNewRequest                 z-uri-request                                  a
+   onRequestOpenConv                      z-uri-open-conv                                a
+   removeListenRequestOpenConv            z-uri-open-conv                                a
+   checkOpenConvReq                       check-startup-open-conv-request                a
+   checkArgvLink                          check-arg-link                                 a
+
+## map Q  (26 entries, 1969 bytes) @23442
+   start                                  screen-capture                                 a
+   getClipboard                           get-clipboard                                  a
+   restart                                restart-cap                                    a
+   rewriteClipboard                       rewrite-clipboard                              a
+   onChangeStatus                         change-screencap-status                        a
+   removeListenChangeStatus               change-screencap-status                        a
+   onScreenshotShortcut                   screenshot-shortcut-result                     a
+   removeScreenshotShortcut               screenshot-shortcut-result                     a
+   onStartScreenCapture                   start-screen-capture                           a
+   removeListenStartScreenCapture         start-screen-capture                           a
+   onScreenCapture                        screen-capture-shortcut                        a
+   removeListenScreenCapture              screen-capture-shortcut                        a
+   onCaptureAccept                        screen-capture-response-accept                 a
+   removeListenCaptureAccept              screen-capture-response-accept                 a
+   onCaptureNoPermission                  screen-capture-response-no-permission          a
+   removeListenCaptureNoPermission        screen-capture-response-no-permission          a
+   onEventOs                              event-os-changed                               a
+   removeListenEventOs                    event-os-changed                               a
+   onSend2Me                              screen-capture-response-send2me                a
+   removeListenSend2Me                    screen-capture-response-send2me                a
+   onForwardScreencap                     forward_screencap                              a
+   removeListenForwardScreencap           forward_screencap                              a
+   onForwardScreencapText                 forward_screencap_text                         a
+   removeListenForwardScreencapText       forward_screencap_text                         a
+   onWarningInstallRosetta                warning_install_rosetta                        a
+   removeListenWarningInstallRosetta      warning_install_rosetta                        a
+
+## map G  (10 entries, 639 bytes) @25648
+   login                                  login                                          a
+   updateLoginStep                        login-step                                     a
+   loginAfterInstall                      login-after-install                            a
+   onUserNotLogged                        signal_USER_NOT_LOGGED_IN                      a
+   removeListenUserNotLogged              signal_USER_NOT_LOGGED_IN                      a
+   notifyLoginSuccess                     login-success                                  a
+   onLoginSuccess                         login-success                                  a
+   removeListenLoginSuccess               login-success                                  a
+   onRequestShowAbout                     about                                          a
+   removeListenShowAbout                  about                                          a
+
+## map z  (3 entries, 166 bytes) @26468
+   getCpuInfos                            get-cpu-infos                                  a
+   getProcessInfos                        get-process-info                               a
+   crash                                  z-simulate-crash-main                          a
+
+## map X  (2 entries, 110 bytes) @26807
+   sendMessage                            send-metrics                                   a
+   onMessage                              response-metrics                               a
+
+## map re  (9 entries, 503 bytes) @27399
+   getHeap                                gett-heap                                      a
+   writeHeap                              write-heap                                     a
+   denoiseFile                            denoise-file                                   a
+   noiseFile                              noise-file                                     a
+   removeFile                             remove-file                                    a
+   writeBufferToFile                      write-blob-to-file                             a
+   matchChecksum                          match-checksum                                 a
+   cloneAndMatchChecksum                  clone-and-match-checksum                       a
+   AppendLog                              append-file                                    a
+
+## map oe  (4 entries, 294 bytes) @28163
+   openUrl                                open-in-app-payment                            a
+   closeInAppPayment                      close-in-app-payment                           a
+   onInAppWindowEvent                     event-in-app-payment                           a
+   removeListenerInAppWindowEvent         remove-event-in-app-payment                    a
+
+## map ce  (2 entries, 131 bytes) @28604
+   launchCompactApp                       _electron_launch-compact-app                   a
+   getRelaunchState                       _electron_get-relaunch-state                   a
+
+## map de  (4 entries, 189 bytes) @28950
+   cancel                                 cancel                                         a
+   execRaw                                exec_raw                                       a
+   exec                                   exec                                           a
+   onRemoteEvents                         remote_events                                  a
+
+## map fe  (9 entries, 634 bytes) @29602
+   openOAuthWindow                        kiki-open-oauth-window                         a
+   onOAuthCompleted                       kiki-oauth-completed                           a
+   removeListenerOAuthCompleted           kiki-remove-oauth-completed                    a
+   onOAuthFailed                          kiki-oauth-failed                              a
+   removeListenerOAuthFailed              kiki-remove-oauth-failed                       a
+   startCSPMonitor                        kiki-start-csp-monitor                         a
+   stopCSPMonitor                         kiki-stop-csp-monitor                          a
+   onCSPBlocked                           kiki-csp-blocked                               a
+   removeListenerCSPBlocked               kiki-remove-csp-blocked                        a
+
+## map _e  (8 entries, 458 bytes) @30538
+   getIdleTime                            active-deactive:get-idle-time                  a
+   setup                                  active-deactive:setup                          a
+   createTimer                            active-deactive:create-timer                   a
+   clearTimer                             active-deactive:clear-timer                    a
+   onActiveFromBackground                 active-deactive:active                         a
+   onDeactiveFromBackground               active-deactive:deactive                       a
+   offActiveFromBackground                active-deactive:active                         a
+   offDeactiveFromBackground              active-deactive:deactive                       a
+
+## map ve  (2 entries, 170 bytes) @31245
+   onRequestTriggerAutoDownload           trigger-auto-download                          a
+   removeListenTriggerAutoDownload        trigger-auto-download                          a
+
+## map Ze  (11 entries, 804 bytes) @40445
+   createBackup                           create-backup                                  a
+   destroyBackup                          destroy-backup                                 a
+   abortCreatingBackup                    abort-creating-backup                          a
+   enableCreatingBackup                   enable-creating-backup                         a
+   disableCreatingBackup                  disable-creating-backup                        a
+   restartAndRestoreBackup                restart-and-restore-backup                     a
+   restartWithoutRestoringBackup          restart-without-restoring-backup               a
+   rejectCurrentBackup                    reject-current-backup                          a
+   changeBuInterval                       change-bu-interval                             a
+   onWriteLatestBackUpLog                 write-latest-back-up-log                       a
+   removeOnWriteLatestBackUpLog           write-latest-back-up-log                       a
+
+## map at  (5 entries, 340 bytes) @41637
+   collectDirectoryStats                  zwalker-collect-dir-stats                      a
+   updateFileStats                        zwalker-update-file-stats                      a
+   deleteUnmarkedFiles                    zwalker-del-unmarked-files                     a
+   statUnmarkedFiles                      zwalker-stat-unmarked-files                    a
+   deleteEmptyFolders                     zwalker-delete-empty-folders                   a
+
+## map ot  (10 entries, 519 bytes) @42271
+   startStream                            file-walker-stream-start                       a
+   ackStreamChunk                         file-walker-stream-ack                         a
+   cancelStream                           file-walker-stream-cancel                      a
+   buildInodeIndex                        file-walker-stream-build-index                 a
+   onStreamChunk                          file-walker-stream-chunk                       a
+   removeStreamChunk                      file-walker-stream-chunk                       a
+   onStreamEnd                            file-walker-stream-end                         a
+   removeStreamEnd                        file-walker-stream-end                         a
+   onStreamError                          file-walker-stream-error                       a
+   removeStreamError                      file-walker-stream-error                       a
+
+## map ct  (5 entries, 399 bytes) @43025
+   getEstimatedCopyTime                   GET_ESTIMATED_COPY_TIME                        a
+   writePathToRegistry                    ?st.WRITE_PATH_TO_REGISTRY                     a
+   getPathFromRegistry                    ?st.GET_PATH_FROM_REGISTRY                     a
+   writeCurrentDrivePathToFile            WRITE_CURRENT_DRIVE_PATH_TO_FILE               a
+   getCurrentDrivePathFromFile            GET_CURRENT_DRIVE_PATH_FROM_FILE               a
+
+## map pt  (9 entries, 560 bytes) @43936
+   initSSResource                         tf-models:ss:resource:init                     a
+   getSticker2Score                       tf-models:ss:sticker-2-score:get               a
+   setSticker2Score                       tf-models:ss:sticker-2-score:set               a
+   getKwd2Sticker                         tf-models:ss:kwd-2-stickers:get                a
+   setKwd2Sticker                         tf-models:ss:kwd-2-stickers:set                a
+   getSSConfig                            tf-models:ss:config:get                        a
+   setSSConfig                            tf-models:ss:config:set                        a
+   getItem2Sticker                        tf-models:ss:item-2-sticker:get                a
+   setItem2Sticker                        tf-models:ss:item-2-sticker:set                a
+
+## map ut  (6 entries, 413 bytes) @44779
+   startMonitor                           net-start-monitor                              a
+   stopMonitor                            net-stop-monitor                               a
+   onMonitorData                          net-on-monitor-data                            a
+   removeListenOnMonitorData              net-on-monitor-data                            a
+   updateNetErrorConfig                   net-update-net-error-config                    a
+   collectNetErrorInfo                    net-collect-net-error-info                     a
+
+## map ht  (3 entries, 208 bytes) @45396
+   encryptWithKeychain                    zproto-encrypt-with-keychain                   a
+   decryptWithKeychain                    zproto-decrypt-with-keychain                   a
+   syncConfigToMain                       zproto-config-sync-to-main                     a
+
+## map _t  (9 entries, 555 bytes) @45811
+   isSupported                            _noti_is-supported                             a
+   createNotification                     _noti_create                                   a
+   closeNotification                      _noti_close                                    a
+   onNotificationClick                    _noti_on-click                                 a
+   removeListenNotificationClick          _noti_on-click                                 a
+   onNotificationShow                     _noti_on-show                                  a
+   removeListenNotificationShow           _noti_on-show                                  a
+   onNotificationClose                    _noti_on-close                                 a
+   removeListenNotificationClose          _noti_on-close                                 a
+
+## map bt  (3 entries, 149 bytes) @55520
+   recognize                              ocr_recognize                                  a
+   isSupported                            ocr_is-supported                               a
+   prewarm                                ocr_prewarm                                    a
+
+## map It  (4 entries, 201 bytes) @56298
+   detect                                 language-detector_detect                       a
+   dominantLanguage                       language-detector_dominant-language            a
+   isSupported                            language-detector_is-supported                 a
+   info                                   language-detector_info                         a

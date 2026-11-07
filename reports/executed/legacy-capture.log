@@ -1,0 +1,4 @@
+
+> zalo-apple-glass-ui@0.2.0 capture:legacy
+> node tools/capture-legacy.cjs
+

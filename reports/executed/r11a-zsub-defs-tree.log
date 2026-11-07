@@ -1,0 +1,34 @@
+scanned files = 124
+
+=== $zsub definitions ===
+  main-dist\preload-sqlite.js                                                    globalThis.$zsub={}    x1  "globalThis.$zsub={}"
+  main-dist\preload-sqlite.js                                                    $zsub={} (any)         x1  "$zsub={}"
+  pc-dist\lazy\default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js globalThis.$zsub={}    x1  "globalThis.$zsub={}"
+  pc-dist\lazy\default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js $zsub={} (any)         x1  "$zsub={}"
+
+=== $zuri definitions ===
+  main-dist\preload-noti.js                                                      expose $zuri           x1
+  main-dist\preload-noti.js                                                      window.$zuri=          x1
+  main-dist\preload-render.js                                                    expose $zuri           x1
+  main-dist\preload-render.js                                                    window.$zuri=          x1
+  main-dist\preload-shared-worker.js                                             expose $zuri           x1
+  main-dist\preload-shared-worker.js                                             window.$zuri=          x1
+
+=== per-file $zsub / $zuri literal counts ===
+  main-dist\main.js                                                              $zsub=1     $zuri=0
+  main-dist\preload-noti.js                                                      $zsub=0     $zuri=3
+  main-dist\preload-render.js                                                    $zsub=0     $zuri=3
+  main-dist\preload-shared-worker.js                                             $zsub=0     $zuri=3
+  main-dist\preload-sqlite.js                                                    $zsub=13    $zuri=0
+  pc-dist\compact-app-pc.f32c58b63b6f4273a8a4.js                                 $zsub=140   $zuri=2
+  pc-dist\lazy\default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js $zsub=141   $zuri=2
+  pc-dist\lazy\default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js $zsub=4     $zuri=2
+  pc-dist\lazy\default-login-startup-main-startup-shared-worker.c46b8a9c38819ca02af3.js $zsub=9     $zuri=0
+  pc-dist\lazy\default-login-startup-main-startup.ec73261654e4ce9540ac.js        $zsub=14    $zuri=4
+  pc-dist\lazy\default-main-startup-shared-worker.1614f4b9d9466b9c0de1.js        $zsub=9     $zuri=0
+  pc-dist\lazy\login-startup.e0953d5b26849f074f43.js                             $zsub=3     $zuri=0
+  pc-dist\lazy\main-startup.e7df64fe0566d4b30368.js                              $zsub=19    $zuri=0
+  pc-dist\search-worker.f32c58b63b6f4273a8a4.js                                  $zsub=141   $zuri=2
+  pc-dist\shared-worker.f32c58b63b6f4273a8a4.js                                  $zsub=4     $zuri=0
+  pc-dist\sync-v2-sub-worker.f32c58b63b6f4273a8a4.js                             $zsub=141   $zuri=2
+  pc-dist\znotification.f32c58b63b6f4273a8a4.js                                  $zsub=1     $zuri=0

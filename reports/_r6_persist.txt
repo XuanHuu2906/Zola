@@ -1,0 +1,33 @@
+=== STORAGE PRIMITIVE CENSUS (renderer bundle) ===
+indexedDB                         26
+IDBDatabase                       3
+openDatabase                      0
+localStorage                      192
+sessionStorage                    21
+caches\.open                      1
+navigator\.storage                3
+SQLite                            126
+sqlite                            54
+wasm.*sqlite                      4
+FileSystem                        9
+showDirectoryPicker               2
+postMessage\(.*MessageChannel     3
+
+=== PRELOAD / IPC BRIDGE MARKERS ===
+contextBridge                     0
+exposeInMainWorld                 0
+ipcRenderer                       5
+ipcMain                           1
+BrowserWindow                     0
+webContents\.send                 0
+MessagePort                       3
+MessageChannel                    23
+
+=== $z* CLASS NS SITES ===
+@7348559  $cloudTest  ->  window.$cloudTest=R);const x=Object(c.define)("personal-cloud-debugger");class F{constructor(){this.serverInfoTimer=null}notifySuccessUpdate(e){d.default.show({
+@11364813  $qosAllCloudSubmit  ->  window.$qosAllCloudSubmit=p);var g=a("jjJf"),f=a("t9fU"),_=a("GVt/"),E=a("TTXJ"),v=a("xrma"),I=a("4prX");const b=127400;let T=function(e){return e[e.Over50MBTo1
+@15957669  $cloudSettings  ->  window.$cloudSettings=A)},kCOK:function(e,t,n){"use strict";n.d(t,"a",(function(){return o}));var a=n("1pet"),i=n("z0WU"),r=n("X4fA"),s=n("PoHQ");const o=e=>new
+@19737690  $cloudQueueUpload  ->  window.$cloudQueueUpload=N)},ybhW:function(e,t,n){"use strict";n.r(t),n.d(t,"predefinedToken",(function(){return i}));var a=n("oPp/");const i={[a.a.UserDataMigr
+
+=== DB NAMESPACE $zdb repr ===
+catch(e){this.Logger.zsymb(21,"1kifzf",["searchv3cb {}","ngozcf"],e)}}callback(t){try{let e=t.taskId;this.mapCallback[e]&&(delete this.mapTimeout[e],this.mapCallback[e](t.success,t.data))}catch(e){this.Logger.zsymb(21,"jsf5YQ",["searchv3cb {}","ngozcf"],e)}}_startListenerIPC(){this._isStartListenerIPC||(this._isStartListenerIPC=!0,this.Logger.zsymb(3,"VcZqXW",["_startListenerIPC","n9C86z"]),$zsub.$zdb.processResponse(((e,t)=>{this._processRespEvent(t)})),$zsub.$zdb.onFailedLoadSqlite((()=>{this._useIPC&&(this.Logger.zsymb(3,"QYTtze",["stop use :signal from ipc","YVmKqg"]),this._useIPC=!1)})),$zdb.checkFailedLoadSqlite().then((e=>{this._useIPC=!e})))}_isSearchWorkerLogBack(e){return"object"==typeof e&&null!==e&&("search-worker-queue"===e.process&&"string"==typeof e.desc&&("success"===e.status||"error"===e.status)&&"data"in e&&"error"in e&&"event"in e)}_handleOpenSqliteDbLogBackMessage(e){var t;const n=null==e||null===(t=e.data)||void 0===t?void 0:t.backMessage;if(!n)return;if(this.Logger.zsymb(18,"HMYANS","open SQLite DB search with status",n),"LOST_DB"!==n)return;W.a.getAllConfigs().recover_enable_feature_flag?(this.Logger.zsymb(18,"H1fvbj","Trigger recover search db"),this.RecoverSearchSystemController.onRecoverSearchSystem({isNeedCreateNewDb:!1})):(this.Logger.zsymb(18,"RiNay8","Recover disabled → mark pending"),this.RecoverSearchSystemController.setLostDbPending())}_handleIdxDBWorkerLogBackMessage(e){this._isSearchWorkerLogBack(e)&&("success"!==e.status?this.Logger.zsymb(18,"ZCSNnD","Search worker log:",e):this.Logger.zsymb(0,"3GDlUC","Search worker log:",e))}_handleQueu

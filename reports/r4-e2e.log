@@ -1,0 +1,17 @@
+> playwright test
+Running 14 tests using 1 worker
+  ✓   1 tests\e2e\accessibility.spec.ts:7:7 › accessibility: dark chat and settings (2.1s)
+  ✓   2 tests\e2e\accessibility.spec.ts:7:7 › accessibility: light chat and settings (2.4s)
+  ✓   3 tests\e2e\demo.spec.ts:5:5 › chat selection, diacritic search, independent filters and unread state (549ms)
+  ✓   4 tests\e2e\demo.spec.ts:21:5 › drafts survive selection; Enter sends text safely and Shift+Enter adds newline (530ms)
+  ✓   5 tests\e2e\demo.spec.ts:39:5 › file metadata, emoji and reactions stay in demo memory (359ms)
+  ✓   6 tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape (552ms)
+  ✓   7 tests\e2e\demo.spec.ts:72:5 › OS reduced motion and demo call notice; no external traffic (366ms)
+  ✓   8 tests\e2e\demo.spec.ts:82:5 › navigation, pinned ordering and in-chat search (858ms)
+  ✓   9 tests\e2e\demo.spec.ts:108:7 › layout and visual evidence 1920x1080 (1.3s)
+  ✓  10 tests\e2e\demo.spec.ts:108:7 › layout and visual evidence 1600x900 (1.1s)
+  ✓  11 tests\e2e\demo.spec.ts:108:7 › layout and visual evidence 1366x768 (960ms)
+  ✓  12 tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: dark (2.6s)
+  ✓  13 tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: light (3.2s)
+  ✓  14 tests\e2e\extended-qa.spec.ts:31:5 › Enter during browser IME composition does not send; committed Vietnamese text sends once (335ms)
+  14 passed (22.7s)

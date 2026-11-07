@@ -1,0 +1,8 @@
+asar_path_tail=Zalo-26.10.20/resources/app.asar
+asar_sha256=d83256230e5d1d4483c2411f71936c3dc1562fb8a885fd8752cab17d229201e6
+asar_bytes=177728582
+asar_unchanged_vs_preflight=true
+types_sha256=d934d702fa09032d678be37d9c96ee9fa3c2f44a4064f250b10cb849b9c85e6c
+types_bytes=9834 lines=322
+ports=11
+izalo_present=true

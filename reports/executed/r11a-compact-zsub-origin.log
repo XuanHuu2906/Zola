@@ -1,0 +1,56 @@
+## pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars)
+   "globalThis.$zsub"                     = 0
+   "self.$zsub"                           = 0
+   "window.$zsub"                         = 0
+   "this.$zsub"                           = 0
+   "[\"$zsub\"]"                          = 0
+   "'$zsub'"                              = 0
+   "\"$zsub\""                            = 0
+   "$zsub="                               = 0
+   "z-uri-open-conv"                      = 0
+   "z-uri-request"                        = 0
+   "check-startup-open-conv-request"      = 0
+   "check-arg-link"                       = 0
+   "Z_URI_REQUEST"                        = 0
+   "Z_URI_OPEN_CONV"                      = 0
+   "CHECK_ON_START_UP"                    = 0
+   "CHECK_ARG_LINK"                       = 0
+   "\"$zuri\""                            = 0
+   "$zuri"                                = 2
+   "\"$zapp\""                            = 0
+   "$zapp"                                = 54
+   "\"$zwindow\""                         = 0
+   "verifySub"                            = 0
+   "subBootstrap"                         = 0
+   "$zsubBootstrap"                       = 0
+
+--- every distinct $zsub.<member> in compact ---
+   $zupdater              49
+   $zapp                  20
+   $zwindow               18
+   $zscreencap            18
+   $zlogger               7
+   $zdb                   6
+   $zMsgChannel           6
+   $zcall                 4
+   $zFeatures             3
+   $zsessionManager       2
+   $zlogin                2
+   $zdownload             1
+   $zmulti                1
+
+--- first 3 raw $zsub contexts ---
+
+@14410 :: "eturn v}}I._currentSession=null},\"+3r3\":function(e,t,n){\"use strict\";n.d(t,\"b\",(function(){return a.a})),n.d(t,\"c\",(function(){return a.b})),n.d(t,\"a\",(function(){return l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Object(i.b)(e,3e3);t.ok||\"timeout\"!==t.error||s.default.logCoreError(\"before-close\",\"not fini"
+
+@1370870 :: "this.forceLoad=!0,this.forceUpdate()):clearInterval(this.retryInterval)}),15e3),this._webView&&(this._webView.addEventListener(\"did-fail-load\",this._onFrameError.bind(this)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convName&&(e+=` (${this.props.convName})`),n.document.title=e}}componentWillReceiveProps(e){this"
+
+@1371803 :: "omponentWillUnmount(){this.props.isAlive&&(this._webView&&(this._webView.removeEventListener(\"did-fail-load\",this._onFrameError.bind(this)),this._webView.removeEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",this._onKeyPress,!1)}_hide(e){O.ModuleContainer.resolve(N.a).close(this.props.windowId),thi"
+
+--- does the compact bundle define the bridge factory (ipcRenderer-style)? ---
+   "ipcRenderer" = 5
+   "contextBridge" = 0
+   "require(\"electron\")" = 0
+   "SUBSCRIBE_V2" = 0
+   "RAW_SEND" = 0
+   "STOP_PROVIDE" = 0

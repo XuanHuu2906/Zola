@@ -1,0 +1,22 @@
+=== (a) compact-app.js page targets ===
+   "\"index.html\"" = 2
+   "\"compact-app.html\"" = 1
+   "getHtml(" = 0
+
+=== (b) preload-render.js zsub mentions ===
+   "zsub" = 0
+   "ZSUB" = 0
+   "$zsub" = 0
+
+=== (c) compact bundle: what follows each $zsub ===
+   total = 140
+   after '$zsub' -> ".$" x137
+   after '$zsub' -> ")|" x3
+
+=== (d) compact process: index.html references ===
+
+  index.html#1 @2664944 :: "\"&already_login=\"+encodeURIComponent(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=Te||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");T.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),un();let r=he.get(st);r&&(T.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logActi"
+
+  index.html#2 @2664972 :: "omponent(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=Te||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");T.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),un();let r=he.get(st);r&&(T.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logAction(1480105),t.after_backup=r"
+
+  index.html#3 @2816374 :: "el-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \\\\\"src/**/*.spec.js\\\\\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js\",\"test:watch\":\"npm run test -- --watch\",\"open:cover\":\"npm run test:cover && open coverage/index.html\",\"test:electron\":\"electron ./test/main/download.js\",\"test\":\"for f in $(find src -name *.spec.js); do NODE_PATH=./src mocha tools/testSetup.js \\\\\"$f\\\\\" --reporter progress; done;\",\"unit:test"

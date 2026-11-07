@@ -1,0 +1,60 @@
+=== A. brace depth of each $zsub read in the compact bundle ===
+   reads = 140
+   depth  -3 : 4
+   depth  -1 : 52
+   depth   0 : 11
+   depth   1 : 9
+   depth   2 : 9
+   depth   4 : 2
+   depth   5 : 13
+   depth   8 : 39
+   depth  13 : 1
+
+   shallowest reads (top-level module scope sits at a constant depth;
+   anything EQUAL to that constant is module-level and throws at load):
+
+   @14410 depth=2 :: "a})),n.d(t,\"c\",(function(){return a.b})),n.d(t,\"a\",(function(){return l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Object(i.b)(e,3e3);t.ok||\"timeout\"!==t.error||s.defau"
+
+   @1370870 depth=5 :: "._webView.addEventListener(\"did-fail-load\",this._onFrameError.bind(this)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convName&&(e+=` (${this.props.convName})`),n.document.ti"
+
+   @1371803 depth=5 :: "il-load\",this._onFrameError.bind(this)),this._webView.removeEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",this._onKeyPress,!1)}_hide(e){O.ModuleContainer.res"
+
+   @1498075 depth=-3 :: "Resp]:this.resp.bind(this),[r.b.DownloadChannel.DownloadFileProgress]:this.onProgress.bind(this),[r.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){null!=e&&e.data&&(e.data.userAgent={isEnableUserAg"
+
+   @1570930 depth=-3 :: "ync({msgs:e})=>{await this.push(e)},this.searchManager=e,this.processQueue=this.processQueue.bind(this),this._dbSearch=t,this.speedUpMode=!1,this.applyConfig(),$zsub.$zwindow.onVisibilityChange(((e,t)=>{switch(t){case\"blur\":case\"minimize\":case\"hide\":this.speedUpMode=!0,this.applyConfig();break;case\"show\":case\"focus\":th"
+
+   @2886052 depth=-3 :: "x.AFMC_TController);a.addEventListener(F.a.AFMC_START,this.handleStartAFMC.bind(this)),a.addEventListener(F.a.AFMC_FINISHED,this.handleFinishedAFMC.bind(this)),$zsub.$zscreencap.onStartScreenCapture(this.trackByKey.bind(this,l.c.UseScreenCapture)),M.default.subscribe(D.a.CHILD_WINDOW_ALIVE,this.handleOpenChildWindow.bi"
+
+   __ZaBUNDLENAME__ probe @n/a
+
+
+=== B. Zt (load index.html) call sites in compact-app.js ===
+   fn = Zt
+
+   @1463738 lodashish=true :: "t)return r;return-1}(e,t,n):Yt(e,Gt,n)}function Vt(e,t,n,r){for(var i=n-1,o=e.length;++i<o;)if(r(e[i],t))return i;return-1}function Gt(e){return e!=e}function $t(e,t){var n=null==e?0:e.length;return n?Zt(e,t)/n:m}function Wt(e){return function(t){return null==t?i:t[e]}}function Kt(e){return function(t){return null==e?i"
+
+   @1463953 lodashish=true :: "nction Wt(e){return function(t){return null==t?i:t[e]}}function Kt(e){return function(t){return null==e?i:e[t]}}function qt(e,t,n,r,i){return i(e,(function(e,i,o){n=r?(r=!1,e):t(n,e,i,o)})),n}function Zt(e,t){for(var n,r=-1,o=e.length;++r<o;){var a=t(e[r]);a!==i&&(n=n===i?a:n+a)}return n}function Jt(e,t){for(var n=-1,r"
+
+   @1520287 lodashish=true :: ")return n}return-1},Hn.startCase=qs,Hn.startsWith=function(e,t,n){return e=gs(e),n=null==n?0:cr(ms(n),0,e.length),t=ui(t),e.slice(n,n+t.length)==t},Hn.subtract=wc,Hn.sum=function(e){return e&&e.length?Zt(e,ic):0},Hn.sumBy=function(e,t){return e&&e.length?Zt(e,lo(t,2)):0},Hn.template=function(e,t,n){var r=Hn.templateSet"
+
+   @1520341 lodashish=true :: "tion(e,t,n){return e=gs(e),n=null==n?0:cr(ms(n),0,e.length),t=ui(t),e.slice(n,n+t.length)==t},Hn.subtract=wc,Hn.sum=function(e){return e&&e.length?Zt(e,ic):0},Hn.sumBy=function(e,t){return e&&e.length?Zt(e,lo(t,2)):0},Hn.template=function(e,t,n){var r=Hn.templateSettings;n&&Ro(e,t,n)&&(t=i),e=gs(e),t=Ts({},t,r,Xi);var "
+
+   @2664878 lodashish=false :: "nt(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=Te||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");T.zsymb(4,\"NT"
+
+   @2672510 lodashish=false :: "e.setMaximumSize(1e4,1e4),Ae.setResizable(!0),Ae.setMaximizable(!0),ln())}function dn(){Pe&&Ae&&(Ae.isMinimized()||!Ae.isVisible())&&(T.zsymb(4,\"2jDQ3X\",[\"app goes idle -> reload resources\",\"zz4tFP\"]),Zt(Ae),Pe=!1)}function pn(){let e=he.get(\"proxy\");if(e&&e.pass){let n=e.pass;try{e.pass=ie(Buffer.from(n,\"base64\"))}cat"
+
+   @2684684 lodashish=false :: "nlinkSync(e)}return t}();n=t?{imei:e,iso:t.iso,code:t.code,phone:t.phone,quest_cert:t.quest_cert,cap_cert:t.cap_cert,mode_lang:r}:{imei:e,iso:\"\",code:\"\",phone:\"\",quest_cert:\"\",cap_cert:\"\",mode_lang:r},Zt(Ae,n),Ae.webContents.session.cookies.flushStore().then((()=>{}))}},o={name:we,value:t,httpOnly:!0,secure:!0,expirati"
+
+   @2687361 lodashish=true :: "rate cookie remove old error no mainwindow inside\",\"c1XEEz\"])}}(s,c),(o||a||Ot||Dt)&&t&&t.length>0&&t.filter((e=>\"zpw_sek\"===e.name)).length>0)T.zsymb(15,\"wkLgc3\",[\"cookie found, load main\",\"HxJ40a\"]),Zt(Ae,n);else{let e=0,r=0;t&&(r=t.length,e=t.filter((e=>\"zpw_sek\"===e.name)).length),T.zsymb(4,\"qNBuWO\",[\"cookie not fo"
+
+   @2702618 lodashish=false :: "LogNetErr: logControl not avial\",\"gOIqS9\"],r)}}else T.zsymb(4,\"hzJY6R\",[\"LogNetError: not invalid details\",\"hWChJo\"])},onLoginSuccess:function(){Ue=null,T.zsymb(15,\"8g7qb3\",[\"login success\",\"11Jo4-\"]),Zt(Ae,{already_login:\"y\",new_install_success:!!Be,install_source:He}),Ae.webContents.once(\"did-finish-load\",(()=>{T.zsy"
+
+   @3560059 lodashish=false :: "tStrictRegex:this._weekdaysShortRegex):(c(this,\"_weekdaysShortRegex\")||(this._weekdaysShortRegex=Ut),this._weekdaysShortStrictRegex&&e?this._weekdaysShortStrictRegex:this._weekdaysShortRegex)}function Zt(e){return this._weekdaysParseExact?(c(this,\"_weekdaysRegex\")||Jt.call(this),e?this._weekdaysMinStrictRegex:this._wee"
+
+   index.html sites:
+   @2664943 :: "=\"&already_login=\"+encodeURIComponent(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=Te||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");T.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),un();let r=he.get(st);r&&(T.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logAct"
+   @2664971 :: "Component(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=Te||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");T.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),un();let r=he.get(st);r&&(T.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logAction(1480105),t.after_backup="
+
+
+=== C. preload-render.js compact-app-pc site ===
+"s.Login;break;case\"photo\":e=r.ZLoggerProcess.Photo;break;case\"render\":e=r.ZLoggerProcess.Render;break;case\"shared-worker\":e=r.ZLoggerProcess.SharedWorker;break;case\"compact-app\":e=a.argv.some((e=>e.startsWith(\"--launch-compact-app\")))?r.ZLoggerProcess.MainCompactApp:r.ZLoggerProcess.Main;break;case\"compact-app-pc\":e=r.ZLoggerProcess.CompactApp;break;case\"preload-shared-worker\":e=r.ZLoggerProcess.PreloadSharedWorker;break;case\"preload-sqlite\":e=r.ZLoggerProcess.PreloadSQLite;break;case\"utility-process-sqlite\":e=r.ZLoggerProcess.UProcessSQLite;break;case\"utility-process-media\":e=r.ZLoggerProcess"

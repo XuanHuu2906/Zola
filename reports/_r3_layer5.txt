@@ -1,0 +1,63 @@
+
+### html / body
+  @227155 body   (parts=1)
+      margin:0;font-family:SegoeuiPc,Segoe UI,San Francisco,Helvetica Neue,Helvetica,Lucida Grande,Roboto,Ubuntu,Tahoma,Microsoft Sans Serif,Arial,sans-serif;color:var(--text-primary);font-size:.875rem;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;text-
+  @246260 body   (parts=2)
+      overflow:hidden;height:100%;width:100%
+  @246309 body   (parts=1)
+      --nav-width:408px;--right-side-width:344px;--cloud-photo-size:120px;text-rendering:optimizeLegibility;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none
+  @1807893 body.darwin   (parts=1)
+      text-shadow:none!important;-webkit-font-smoothing:auto!important
+  @2202041 body   (parts=1)
+      scrollbar-face-color:#e1e4ea;scrollbar-track-color:#f0f2f5
+
+### #app
+  @246637 #app   (parts=1)
+      display:block!important;width:100%
+  @246677 #app   (parts=2)
+      overflow:hidden;height:100%
+
+### .main
+  (none)
+
+### .main__center
+  @246748 .main__center   (parts=1)
+      transition:width .25s;transition-timing-function:step-end
+
+### .content-message-container
+  (none)
+
+### .chat-message plain
+  @700120 .chat-message   (parts=1)
+      display:-webkit-flex;display:flex;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;justify-content:flex-start;align-items:flex-start;position:relative;color:var(--text-primary)
+
+### .message-box
+  (none)
+
+### .message-view__scroll
+  @785367 .message-view__scroll   (parts=1)
+      position:relative;flex:1 0 auto;contain:layout style size;bottom:0
+
+### .message-view__scroll__inner
+  @785498 .message-view__scroll__inner   (parts=1)
+      min-height:100%;display:flex;padding-bottom:28px;flex-direction:column;justify-content:flex-end;contain:layout style
+  @785644 .message-view__scroll__inner.--audit-message-spacing   (parts=1)
+      padding-bottom:24px
+  @785717 .message-view__scroll__inner.--less-space   (parts=1)
+      padding-bottom:20px
+
+
+=== any rule painting a page-level background on body/html/#app/.main ===
+
+
+=== .dist-wallpaper / wallpaper / cover-image / --chat-background tokens ===
+  --chat-background => []
+  --conversation-background => []
+  --cover-image => []
+  --wallpaper => []
+  --chat-bg => []
+  --layer-background => ["#22262b","#fff"]
+  --layer-background-subtle => ["#1d2025","#ebecf0"]
+  --layer-background-hover => ["hsla(0,0%,100%,0.05)","#f1f2f4"]
+  --layer-background-selected => ["#1f344d","#e5f1ff"]
+  --title-bar => ["#121416","#e5e7eb"]

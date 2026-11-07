@@ -1,0 +1,105 @@
+=== .top-bar JS occurrences ===
+  total occ=2
+    module O7EA -> 2 occ
+
+  @8053205 module=O7EA@7989310 len=137420
+    "\"setting-section-content__description flx flx-al-c chat-data-content__description\"},s.a.createElement(E.a,{className:\"flx-col truncate-2\",textKey:\"STR_RESMGMT_CHATDATA_DESC\"})),de?null:s.a.createElement(\"div\",{className:\"flx flx-row filter-group\"},s.a.createElement(\"div\",{className:\"chat-data-sort ip-box-item flx conv-top-bar\"},s.a.createElement(pn.a,{inputRef:e=>Y.current=e,tabIndex:\"-1\",type:\"text\",textKey:\"STR_RESMGMT_SEARCH_CONVS\",size:\"medium\",maxLength:100,className:Object(o.a)(\"chat-data-search\",\"conv-top-bar-searchbox\",\"inherit-input\"),appearance:\"square\",inputClassName:\"truncate\",onChange:oe})),s.a.createElement(\"div\",{clas"
+
+  @8053399 module=O7EA@7989310 len=137420
+    "eElement(\"div\",{className:\"flx flx-row filter-group\"},s.a.createElement(\"div\",{className:\"chat-data-sort ip-box-item flx conv-top-bar\"},s.a.createElement(pn.a,{inputRef:e=>Y.current=e,tabIndex:\"-1\",type:\"text\",textKey:\"STR_RESMGMT_SEARCH_CONVS\",size:\"medium\",maxLength:100,className:Object(o.a)(\"chat-data-search\",\"conv-top-bar-searchbox\",\"inherit-input\"),appearance:\"square\",inputClassName:\"truncate\",onChange:oe})),s.a.createElement(\"div\",{className:\"chip-sort-data\"},s.a.createElement(gn.a,{size:\"l\",popoverProps:{identity:{windowId:k.c,name:l.PopoverIdentitiesDefine.RESMGMT_CHAT_DATA_SORT_FUNCTION},placement:\"bottom-right\"},onChange:s"
+
+=== .top-bar CSS rules (all) ===
+  @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-gro
+  @84788 .bottom-menu,.bottom-menu__left .multisel-text,.bubble-contact-card-container>.bubble-contact-card>.content,.chat-info-general__ac
+  @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-gro
+  @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-gro
+  @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .create-gro
+  @499192 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item,#filter-tags-sb #gifSelector>.tab>.filter-tag-item.tab-bar>.
+  @537430 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item:first-child,#filter-tags-sb #gifSelector>.tab>.filter-tag-it
+  @581434 #calendar-v3 #gifSelector>.tab>.tab-bar>.cal-weekday-v3>.tab-bar-item>.tab-bar-item__content,#filter-tags-sb #gifSelector>.tab>.fi
+  @786328 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block,#calendar-v3.message-view__banner>.ca
+  @835764 #calendar-v3 .message-view__banner>.cal-weekday-v3>.message-view__banner-stranger__btn-block:hover,#calendar-v3.message-view__bann
+       bg: var(--background-activeness)
+  @1468000 .top-bar
+  @1468056 .top-bar .select-all
+  @1468097 .top-bar .select-all-checkbox
+  @1468142 .top-bar .select-all-label
+  @1468267 .top-bar .dropdown-sort
+       bg: var(--input-field-bg-outline)
+  @1951986 #calendar-v3 div.zl-modal__dialog__header--sticky>.cal-weekday-v3,#filter-tags-sb div.filter-tag-item.zl-modal__dialog__header--st
+  @2204223 #calendar-v3 .compose-dialog .zl-modal__dialog-body>div.cal-weekday-v3,#filter-tags-sb .compose-dialog .filter-tag-item.zl-modal__
+  @2301424 .cloud-container__right-section .data-view .top-bar
+  @2301523 .cloud-container__right-section .data-view .top-bar .select-all
+  @2301607 .cloud-container__right-section .data-view .top-bar .select-all-checkbox
+  @2301695 .cloud-container__right-section .data-view .top-bar .select-all-label
+  vars: --BA100(2) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --input-field-bg-outline(1) --border-subtle(1)
+
+=== message pane candidates: css rule counts ===
+  .chatList                   cssRules=   0  jsForms=0
+  .chat-list                  cssRules=   0  jsForms=8
+  .messageList                cssRules=   0  jsForms=0
+  .message-list               cssRules=   0  jsForms=0
+  .msg-list                   cssRules=   0  jsForms=0
+  .list-message               cssRules=   0  jsForms=0
+  .conversation-message       cssRules=   0  jsForms=0
+  .chat-box                   cssRules=   0  jsForms=123
+  .chatBox                    cssRules=   0  jsForms=5
+  .chat-content-v2            cssRules=   0  jsForms=0
+  .chat-content-message       cssRules=   0  jsForms=0
+  .msgview                    cssRules=   0  jsForms=0
+  .msg-view                   cssRules=   0  jsForms=0
+  .message-view               cssRules=   3  jsForms=57
+  .chat-message-list          cssRules=   0  jsForms=0
+  .chatMessageList            cssRules=   0  jsForms=0
+  .virtual-list               cssRules=   0  jsForms=0
+  .virtualList                cssRules=   0  jsForms=0
+  .scroll-view                cssRules=   0  jsForms=0
+  .conversation-content       cssRules=   0  jsForms=0
+
+=== wrapper context: chat-message-v2 render parent (2.6KB before) ===
+  at=115311
+  ")(Qn));var Qn;let qn=null;return qn=Qt?o.a.createElement(\"div\",{className:Qe,style:En},o.a.createElement(\"div\",{className:Object(u.a)(\"message-action\",tn&&\"select-text\"),\"data-component\":m.DataAttributes.Component.MESSAGE_CONTENT_VIEW,onClickCapture:kn,onContextMenu:ea,onContextMenuCapture:xn},o.a.createElement(\"div\",{className:Object(u.a)(Un&&\"prevent-pointer-event\"),\"data-id\":\"div_DisabledTargetEventLayer\"},Hn,Mn),!xt&&!Yt&&o.a.createElement(gt,{isSentFromMe:mn},o.a.createElement(mt,Object(F.a)({},e,{ref:Q,message:Bt,messageQuickActionConfig:an,replyMessage:Ln,forwardMessage:Pn,showMessageContextMenu:na})),Kn,zn)),_t||!jn||mn?wn:null,Gn()):Yt?o.a.createElement(\"div\",{className:Object(u.a)(Qe,\"focused-background\",_n&&\"focused-background--focused\")},o.a.createElement(lt,{border:6,hasDynami"
+
+=== id anchors (id:"...") near chat surfaces ===
+  id="react-v-list"          occ=  7 module=0SAd
+  id="searchResultList"      occ=  5 module=Zb+t
+  id="zl-modal__dialog-body" occ=  3 module=/ymA
+  id="message-frame_"        occ=  2 module=+ISi
+  id="messageView"           occ=  2 module=+ISi
+  id="export_setting"        occ=  2 module=7UAy
+  id="set-allow-sign-Msg"    occ=  2 module=GKge
+  id="backupModal"           occ=  2 module=U/lF
+  id="dragOverlayMessageView" occ=  1 module=+ISi
+  id="messageViewContainer"  occ=  1 module=+ISi
+  id="messageViewScroll"     occ=  1 module=+ISi
+  id="darkmode_support__cta-setting" occ=  1 module=26Sa
+  id="chatOnboard"           occ=  1 module=26Sa
+  id="message"               occ=  1 module=57Kn
+  id="MessageInfo"           occ=  1 module=7WaJ
+  id="DebugInfoModal"        occ=  1 module=7WaJ
+  id="checking_message_readiness_state" occ=  1 module=AS+M
+  id="sync_conversations"    occ=  1 module=AS+M
+  id="sync_other_messages"   occ=  1 module=AS+M
+  id="richInput"             occ=  1 module=DwXV
+  id="blockMemlist"          occ=  1 module=FpwL
+  id="group-setting-box"     occ=  1 module=GKge
+  id="chatInput"             occ=  1 module=JFrT
+  id="title"                 occ=  1 module=MO+k
+  id="react-dropdown-list"   occ=  1 module=MeMr
+  id="setting-right"         occ=  1 module=O7EA
+  id="setting"               occ=  1 module=O7EA
+  id="zl-modal"              occ=  1 module=P8C4
+  id="list_product_catalog"  occ=  1 module=Rykj
+  id="dragOverlayInputbox"   occ=  1 module=U+ds
+  id="z_sugg_setting"        occ=  1 module=U+ds
+  id="chat_info_file"        occ=  1 module=VLvn
+  id="chatInfoMedia"         occ=  1 module=VLvn
+  id="group-notice-msg-container" occ=  1 module=VLvn
+  id="chatInfoGeneral"       occ=  1 module=VLvn
+  id="chatInfo"              occ=  1 module=VLvn
+  id="ava_chat_box_view"     occ=  1 module=VLvn
+  id="chatViewContainer"     occ=  1 module=VLvn
+  id="chatView"              occ=  1 module=VLvn
+  id="add-setting-box"       occ=  1 module=X4FI
+
+wrote _r3_topbar.txt

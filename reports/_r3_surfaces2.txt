@@ -1,0 +1,61 @@
+parsed rules = 16041
+
+=== surface -> token census (values that exist in shipped CSS) ===
+
+## app shell / leftpanel  rules=0  uniqVars=0
+   selectors probed: .leftpanel
+   vars: (none)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## right panel  rules=0  uniqVars=0
+   selectors probed: .rightpanel
+   vars: (none)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## conversation list row  rules=71  uniqVars=15
+   selectors probed: .conv-item .conv-item-title__name .conv-message .conv-item__avatar
+   vars: --text-primary(8) --layer-background-selected(4) --text-information(3) --text-secondary(2) --icon-secondary(1) --layer-background(1) --layer-background-hover(1) --layer-background-subtle(1) --BA50(1) --B10(1) --R60(1) --border-focused(1) --background-activeness(1) --WA100(1) --layer-background-pinned(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## chat header (thread title)  rules=5  uniqVars=1
+   selectors probed: .threadChat__title .threadChat__avatar
+   vars: --BA20(3)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## message row wrapper  rules=119  uniqVars=14
+   selectors probed: .chat-content .chat-message
+   vars: --N300(6) --G20(4) --text-information(3) --B10(3) --text-on-color(2) --WA100(2) --text-search-highlight(2) --border-highlight(1) --text-primary(1) --BA30(1) --background-activeness(1) --BA20(1) --jump-to-message(1) --layer-background-subtle(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## bubble container  rules=23  uniqVars=6
+   selectors probed: .content-message-container
+   vars: --text-primary(2) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --text-secondary(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## date divider  rules=20  uniqVars=4
+   selectors probed: .chat-date
+   vars: --text-on-color(1) --timestamp(1) --BA20(1) --border-focused(1)
+   glass: backdrop-filter=2  filter:blur=0  semi-transparent-colors=0
+
+## composer bar  rules=29  uniqVars=8
+   selectors probed: .chat-box-bar .chat-box-input .chat-box-input__tools
+   vars: --text-information(4) --layer-background(3) --cta-link(2) --cta-link-pressed(2) --divider-bold(2) --surface-background-subtle(1) --text-secondary(1) --icon-secondary(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## titlebar  rules=34  uniqVars=11
+   selectors probed: .titlebar__title .titlebar__btns .titlebar
+   vars: --icon-on-color(3) --text-primary(2) --R60(2) --title-bar(1) --button-secondary-neutral-hover(1) --layer-background-subtle(1) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --NG80(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## context menu  rules=51  uniqVars=16
+   selectors probed: .zmenu-item #zmenu
+   vars: --text-information(3) --layer-background-selected(3) --layer-background-hover(2) --layer-background(2) --border-focused(1) --background-activeness(1) --WA100(1) --space-xxs(1) --space-sm(1) --text-primary(1) --text-secondary(1) --icon-primary(1) --layer-alert-background(1) --text-errors(1) --text-disabled(1) --icon-information(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+## modal dialog  rules=16  uniqVars=3
+   selectors probed: .zl-modal__dialog .zl-modal__footer .zl-modal__body
+   vars: --border(2) --layer-background(2) --divider(1)
+   glass: backdrop-filter=0  filter:blur=0  semi-transparent-colors=0
+
+=== tokens shared across >= 4 probed surfaces (design spine) ===
+--text-information(6) --text-primary(5) --border-focused(5) --background-activeness(5) --WA100(5) --text-secondary(4) --layer-background(4)

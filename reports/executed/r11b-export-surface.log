@@ -1,0 +1,16 @@
+js_files=116
+    0  exportChat
+    0  export-chat
+   16  exportConversation  [pc-dist\compact-app-pc.f32c58b63b6f4273a8a4.js:4, pc-dist\lazy\default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js:4, pc-dist\search-worker.f32c58b63b6f4273a8a4.js:4]
+    0  EXPORT_CHAT
+    0  backupChat
+   26  BACK_UP_UTILITY  [main-dist\compact-app-preload.js:2, main-dist\compact-app.js:2, main-dist\main.js:2]
+ 1258  BACKUP  [main-dist\compact-app.js:23, main-dist\main.js:52, main-dist\preload-noti.js:22]
+    3  exportData  [pc-dist\pdf-worker.f32c58b63b6f4273a8a4.js:3]
+    0  export-db
+   44  showSaveDialog  [main-dist\compact-app.js:6, main-dist\main.js:6, main-dist\preload-noti.js:2]
+   91  showOpenDialog  [main-dist\compact-app-preload.js:3, main-dist\compact-app.js:6, main-dist\main.js:6]
+    4  dialog.showSaveDialog  [main-dist\compact-app.js:2, main-dist\main.js:2]
+   18  clipboard.writeText  [main-dist\compact-app-preload.js:1, main-dist\main.js:1, main-dist\preload-noti.js:1]
+    0  writeToClipboard
+    0  downloadChat

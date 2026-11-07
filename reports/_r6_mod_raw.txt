@@ -1,0 +1,27 @@
+
+######## module a4Xj @971837 (2354 bytes)
+  enum a [14]: REQUEST_CHANNEL="shared-worker-req-events", RESPONSE_CHANNEL="shared-worker-resp-events", SQLITE_AVAILABLE="sqlite-available", FAIL_LOAD_LIB_SQLITE3="fail-load-sqlite3", NOTIFY_STATUS_LOAD_LIB_SQLITE3="status-load-sqlite3", OPEN_DB_FAIL="db-open-fail", IPC_DB_AUTHENTICATED="db-authenticated", IPC_DB_CLIENT_CONNECTED="db-client-connected", IPC_START_CLOSE_DBS="db-start-close-dbs", IPC_FINISH_CLOSE_DBS="db-finish-close-dbs", SYNC_MSG_ABORT="sync-msg-abort", DB_CORRUPTION_DETECTOR="z-db-corruption-detector", SHOW_SQLITE="show-sqlite", GET_NAME_OF_TARGET_SCRIPT_FOR_DAL_CHANNEL_FROM_HOST="get-name-of-target-script-for-dal-channel-from-host"
+  strings (16): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.REQUEST_CHANNEL= | ,e.RESPONSE_CHANNEL= | ,e.SQLITE_AVAILABLE= | ,e.FAIL_LOAD_LIB_SQLITE3= | ,e.NOTIFY_STATUS_LOAD_LIB_SQLITE3= | ,e.OPEN_DB_FAIL= | ,e.IPC_DB_AUTHENTICATED= | ,e.IPC_DB_CLIENT_CONNECTED= | ,e.IPC_START_CLOSE_DBS= | ,e.IPC_FINISH_CLOSE_DBS= | ,e.SYNC_MSG_ABORT= | ,e.DB_CORRUPTION_DETECTOR= | ,e.SHOW_SQLITE= | ,e.GET_NAME_OF_TARGET_SCRIPT_FOR_DAL_CHANNEL_FROM_HOST=
+
+######## module 3sbe @153378 (1306 bytes)
+  enum a [7]: CHANNEL_ESTATBLISHED="channel-established", CHANNEL_DISCONNECTED="channel-disconnected", CHANNEL_TERMINATED="channel-terminated", PORT_TRANSFERRED="port-transferred", PORT_TRANSFERRED_V2="port-transferred-v2", PORT_DELIVERED="port-delivered", OPEN_CHANNEL_TO="open-channel-to"
+  strings (9): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.CHANNEL_ESTATBLISHED= | ,e.CHANNEL_DISCONNECTED= | ,e.CHANNEL_TERMINATED= | ,e.PORT_TRANSFERRED= | ,e.PORT_TRANSFERRED_V2= | ,e.PORT_DELIVERED= | ,e.OPEN_CHANNEL_TO=
+
+######## module +NII @12090 (310 bytes)
+  enum a [3]: PING="SQLITE_BW/PING", DISPOSE="SQLITE_BW/DISPOSE", RELOAD="SQLITE_BW/RELOAD"
+  strings (5): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.PING= | ,e.DISPOSE= | ,e.RELOAD=
+
+######## module 7jJJ @246566 (1988 bytes)
+  enum a [13]: SIGNAL_OS_CLOSE_MAIN_CHANNEL="signal_OS_CLOSE_MAIN", CROSS_LOG_QOS_CHANNEL="cross_OS_LOG_QOS", CROSS_LOG_QOS_CONFIG="cross_OS_LOG_QOS_config", CROSS_LOG_QOS_READY_CHANNEL="cross_OS_LOG_QOS_READY", CROSS_LOG_ACTION_CHANNEL="cross_OS_LOG_ACTION", CROSS_LOG_ACTION_READY_CHANNEL="cross_OS_LOG_ACTION_READY", CROSS_ACTION_LOG_999_CHANNEL="cross_ACTION_LOG_999_CHANNEL", LOAD_SHELL_QOS="load-shell-qos", RECENT_CRASH="check-recently-crash", MAIN_UNCAUGHT_ERROR="main-process-uncaught-error", LOG="log", LOG_GA="log-ga", SEND_VIEWKEY="receive-viewerkey"
+  strings (15): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.SIGNAL_OS_CLOSE_MAIN_CHANNEL= | ,e.CROSS_LOG_QOS_CHANNEL= | ,e.CROSS_LOG_QOS_CONFIG= | ,e.CROSS_LOG_QOS_READY_CHANNEL= | ,e.CROSS_LOG_ACTION_CHANNEL= | ,e.CROSS_LOG_ACTION_READY_CHANNEL= | ,e.CROSS_ACTION_LOG_999_CHANNEL= | ,e.LOAD_SHELL_QOS= | ,e.RECENT_CRASH= | ,e.MAIN_UNCAUGHT_ERROR= | ,e.LOG= | ,e.LOG_GA= | ,e.SEND_VIEWKEY=
+
+######## module HVQM @439255 (175 bytes)
+  strings (3): use strict | ,(function(){return a}));var r=n( | );const a={execute:{apiKey:function(e){return e.EXECUTE=
+
+######## module ntSb @1233291 (316 bytes)
+  enum a [1]: NEW_SESSION="new-session"
+  strings (3): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.NEW_SESSION=
+
+######## module RbSv @712173 (898 bytes)
+  enum a [7]: CHECK_AUTO_LAUNCH="check-auto-launch", TOGGLE_AUTO_LAUNCH="toggle-auto-launch", UPDATE_SCREENSHOT_SHORT_CUT="update-screenshot-shortcut", UPDATE_THEME_CONF="update-theme-conf", UPDATE_REMOTE_CONFIGS="update-remote-configs", GET_THEME_CONF="get-theme-conf", GET_ZALO_INSTALLED_TIME="get-zalo-installed-time"
+  strings (9): use strict | ,(function(){return i}));var r=n( | );let a=function(e){return e.CHECK_AUTO_LAUNCH= | ,e.TOGGLE_AUTO_LAUNCH= | ,e.UPDATE_SCREENSHOT_SHORT_CUT= | ,e.UPDATE_THEME_CONF= | ,e.UPDATE_REMOTE_CONFIGS= | ,e.GET_THEME_CONF= | ,e.GET_ZALO_INSTALLED_TIME=

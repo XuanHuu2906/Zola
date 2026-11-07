@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "audit",
+    "--json"
+  ],
+  "started": "2026-11-05T02:55:24.614Z",
+  "finished": "2026-11-05T02:55:40.264Z",
+  "exitCode": 1,
+  "signal": null
+}

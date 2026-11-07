@@ -1,0 +1,4 @@
+
+> zalo-apple-glass-ui@0.2.0 build:electron
+> tsc -p tsconfig.electron.json
+

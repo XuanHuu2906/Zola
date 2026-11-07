@@ -1,0 +1,44 @@
+.card family: rules=36  .card--text rules=15
+.card vars: --shadow-bubble(3) --border-focused(1) --layer-background(1) --white-message(1) --text-primary(1) --blue-message(1) --border-highlight(1)
+.card props: display(5) padding(5) width(5) min-width(5) max-width(5) margin-bottom(4) contain(4) cursor(4) box-shadow(3) background(3) border-radius(2) position(2) background-color(2) padding-bottom(2) border(2) flex-flow(1) border-top(1) color(1) flex-direction(1) align-items(1) user-select(1) z-index(1)
+
+## per-surface glass blockers (rules containing each declaration)
+surface             rules   backdrop willChange    contain  transform     filter  isolation     zIndex
+titlebar         69          0          0          0          1          0          0          4
+nav_sidebar      21          0          0          0          0          0          0          1
+conv_list       122          0          2          1          3          0          0          1
+chat_header      19          0          0          0          0          0          0          0
+message_row     113          0          0          0          0          0          0          2
+bubble_card      36          0          0          4          0          0          0          1
+date_divider     21          2          0          1          0          0          0          6
+composer        146          0          0          2          2          0          0          5
+zmenu            66          0          0          0          2          0          0          2
+modal           116          0          1          3          2          0          0          8
+settings         51          0          0          0          0          0          0          0
+
+## where backdrop-filter actually appears (selector + declaration)
+   @1321519 .seasonal-item-preview => backdrop-filter:blur(2px)
+   @1499840 .preview-ts .block-date>.chat-date>span => backdrop-filter:blur(10px)
+   @1500312 .preview-ts.active-scroll .block-date>.chat-date>span => backdrop-filter:blur(10px)
+   @1662680 .mvr-thumbplaceholder => backdrop-filter:blur(22px)
+   @1688788 .analytic-conv-resources-container => backdrop-filter:blur(30px)
+   @1691309 .health-center-analytic-modal => backdrop-filter:blur(4px)
+   @1692749 .health-center-tab => backdrop-filter:blur(4px)
+
+## contain:* declarations on the message scroll chain
+   @685776 .conv-item => contain:size style
+   @702681 .chat-message__actionholder => contain:strict
+   @702958 .chat-message__actions => contain:layout style
+   @724067 .card.first-msg,.first-msg.audio-expired => contain:layout style
+   @728029 .card--link.audio-expired,.card.card--link => contain:inherit
+   @739981 .card--picture.has-caption.audio-expired>.chat-message-picture__photooverlay,.card--picture.has-caption.audio-expired>.c => contain:content
+   @765819 .card.has-footer,.has-footer.audio-expired => contain:inherit
+   @766163 .card.has-footer-image-msg,.has-footer-image-msg.audio-expired => contain:inherit
+   @784944 .message-view__blur => contain:strict
+   @785090 .message-view__blur__overlay => contain:strict
+   @785367 .message-view__scroll => contain:layout style size
+   @785498 .message-view__scroll__inner => contain:layout style
+   @901255 .message-view__scroller__innerScroller => contain:layout style
+
+## transform: translate3d / transform-gpu usage
+   .transform-gpu{-webkit-transform:translateZ(0);transform:translateZ(0)}

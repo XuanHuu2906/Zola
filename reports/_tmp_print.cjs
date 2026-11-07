@@ -1,0 +1,13 @@
+const r = require('./zalo-deep-survey-20261105-213452.json');
+const idx = require('./zalo-asar-index-20261105.json');
+console.log('asar sha256', r.packaging.appAsarSha256);
+console.log('asar bytes', r.packaging.appAsarBytes);
+console.log('feed', JSON.stringify(r.packaging.updateFeed));
+console.log('mode', r.packaging.updateMode);
+console.log('index counted', JSON.stringify(idx.counted));
+console.log('index layout', idx.headerLayout);
+console.log('top level entries', JSON.stringify(idx.topLevelEntries));
+console.log('processes:');
+for (const p of r.processes) console.log(' -', p.name, p.processId, '<-', p.parentProcessId);
+console.log('proc names unique', [...new Set(r.processes.map(p => p.name))].join(','));
+console.log('not inspected:', r.notInspected.length);

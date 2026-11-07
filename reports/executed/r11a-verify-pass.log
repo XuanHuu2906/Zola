@@ -1,0 +1,34 @@
+﻿# R11A verification pass - 2026-11-06T21:57:17.1313637+07:00
+# Read-only: registry reads and named-pipe enumeration. No write, no attach.
+
+[zalo protocol]
+exists=True
+default=URL:zalo
+URLProtocol_len=0
+DelegateExecute=ABSENT
+open_command="C:\Users\huung\AppData\Local\Programs\Zalo\Zalo.exe" "--" "%1"
+
+[AUMID]
+AppUserModelId\com.vng.zalo=ABSENT
+toast_activator_for_zalo=ABSENT (no com.vng.zalo key under AppUserModelId)
+
+[named pipes - node fs.readdirSync of \.\pipe\]
+total_pipes=424
+zalo_hits=["PipeZCallRecv","PipeZCallSend"]
+
+[bundles - lexical string counts]
+pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js
+  z-uri-open-conv=0  z-uri-request=0  check-arg-link=0  conversation/?=0  onRequestOpenConv=0
+  (autoOpenConversationByPhone=2 - defined here, not wired to the URI channel)
+pc-dist/lazy/default-login-startup-main-startup.ec73261654e4ce9540ac.js
+  z-uri-open-conv=0  z-uri-request=0  onRequestOpenConv=1  autoOpenConversationByPhone=1
+  (channel names come from the shared enum module; the lazy chunk subscribes via $zuri)
+
+[notification registration - related keys found]
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings
+  electron.app.Antigravity                                             (our demo, unrelated)
+  Microsoft.YourPhone_8wekyb3d8bbwe!YourPhoneNotifications_vn.com.vng.zingalo
+    -> Phone Link (cross-device) mirroring of the MOBILE app; not a Zalo PC toast activator
+HKLM:\SOFTWARE\Classes\AppUserModelId  : no vng/zalo entry
+=> L4 confirmed: no Windows toast activator CLSID exists for Zalo PC itself.
+   The shortcut AUMID (com.vng.zalo) is a grouping identifier, not an activation registration.

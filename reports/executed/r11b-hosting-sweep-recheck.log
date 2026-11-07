@@ -1,0 +1,48 @@
+js_files=116
+
+=== totals ===
+    0  BrowserView
+    0  WebContentsView
+    0  attachBrowserView
+    0  <webview
+    0  webviewTag
+    6  setWindowOpenHandler
+    0  protocol.handle
+    0  registerHttpProtocol
+    2  registerFileProtocol
+    0  registerStreamProtocol
+    0  interceptHttpProtocol
+   25  postMessage:
+    1  MessageChannelMain
+    0  MessagePortMain
+    6  nodeIntegrationInWorker
+   10  sandbox:!1
+    0  contextIsolation:!1
+    0  nodeIntegration:!0
+    0  webSecurity:!1
+    0  enableRemoteModule
+
+=== files with any hit ===
+main-dist\compact-app.js
+       3  setWindowOpenHandler
+       1  registerFileProtocol
+       3  nodeIntegrationInWorker
+       5  sandbox:!1
+main-dist\main.js
+       3  setWindowOpenHandler
+       1  registerFileProtocol
+       1  MessageChannelMain
+       3  nodeIntegrationInWorker
+       5  sandbox:!1
+pc-dist\compact-app-pc.f32c58b63b6f4273a8a4.js
+       6  postMessage:
+pc-dist\lazy\default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js
+       1  postMessage:
+pc-dist\lazy\vendors-login-main-startup-shared-worker-znotification.dd8f2d7fd560caec2a39.js
+       5  postMessage:
+pc-dist\libs\libsignal-protocol.static.js
+       1  postMessage:
+pc-dist\search-worker.f32c58b63b6f4273a8a4.js
+       6  postMessage:
+pc-dist\sync-v2-sub-worker.f32c58b63b6f4273a8a4.js
+       6  postMessage:

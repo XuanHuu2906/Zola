@@ -1,0 +1,82 @@
+files=$((135))
+
+## main-dist\main.js :: $zsub x1
+   OCC1 @960124 :: "ach((e=>{e(t)}))}}onMessage(e){this.listeners||(this.listeners=[]),this.listeners.push(e),$zsub.$zMetric.onMessage(this.handleEventMessage)}send(e){$zMetric.sendMessage(e)}}},EzpQ:function(e,t,n){\"use"
+
+## main-dist\preload-sqlite.js :: $zsub x13
+   NEAR "$zsub=" @1566103 :: "piKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{const r=a.indexOf(e);-1!=r&&a.splice(r,1),a.length<=0&&(t[n.name](),delete p.provider[n.apiKey])}}globalThis.$zsub={};const g={};function _(e,t,n){let a=g[t];void 0===a&&(a={}),a=Object(r.a)(Object(r.a)({},a),n),g[t]=a;const{args:i,ports:o}=a;if(void 0!==i&&void 0!==o){const n=p.listeners[e];for(const e of n){const[t,...n]=i;t.ports=o,e(t,...n)}delete g[t]}}function "
+   OCC1 @1565793 :: " n)r[a]=r[a]||{},r=r[a];return r}function h(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{-1==a.indexOf(e)&&a.push(e),p.provider[r]||(p.provider[r]=t[n.name](((...e)=>{for(let t of "
+   OCC2 @1565975 :: "e)=>{for(let t of a)t(...e)})))}}function m(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{const r=a.indexOf(e);-1!=r&&a.splice(r,1),a.length<=0&&(t[n.name](),delete p.provider[n.api"
+   OCC3 @1566103 :: ");-1!=r&&a.splice(r,1),a.length<=0&&(t[n.name](),delete p.provider[n.apiKey])}}globalThis.$zsub={};const g={};function _(e,t,n){let a=g[t];void 0===a&&(a={}),a=Object(r.a)(Object(r.a)({},a),n),g[t]=a;"
+   OCC4 @1566411 :: "t.ports=o,e(t,...n)}delete g[t]}}function y(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{if(-1==a.indexOf(e)&&a.push(e),!p.provider[r]){const e=(e,...t)=>{_(r,e,{args:t})};p.provid"
+
+## pc-dist\compact-app-pc.f32c58b63b6f4273a8a4.js :: $zsub x140
+   OCC1 @14410 :: "l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Obj"
+   OCC2 @1370870 :: "s)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convNa"
+   OCC3 @1371803 :: "ner(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",t"
+   OCC4 @1498075 :: "this.onProgress.bind(this),[r.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){"
+
+## pc-dist\lazy\default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js :: $zsub x141
+   OCC1 @11745 :: "l}));var a=n(\"XvqS\"),s=n(\"5TVm\"),i=n(\"xQyS\"),o=n(\"z0WU\");const r=new s.a,l=r.add;r.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(i.b)(r.executeHandlers,{name:\"before-close\"}),t=await Obj"
+   OCC2 @1219407 :: "s)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convNa"
+   OCC3 @1220340 :: "ner(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",t"
+   OCC4 @1337004 :: "this.onProgress.bind(this),[i.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){"
+
+## pc-dist\lazy\default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js :: $zsub x4
+   NEAR "$zsub=" @37931 :: "ey:_}=t,S=ye.listeners[_];Ie(e,$zsub)[t.name]=e=>{const _=S.indexOf(e);-1!=_&&S.splice(_,1),S.length<=0&&(E[t.name](),delete ye.provider[t.apiKey])}}globalThis.$zsub={};const Oe={};function Ue(e,E,t){let S=Oe[E];void 0===S&&(S={}),S=Object(_.a)(Object(_.a)({},S),t),Oe[E]=S;const{args:a,ports:R}=S;if(void 0!==a&&void 0!==R){const t=ye.listeners[e];for(const e of t){const[E,...t]=a;E.ports=R,e(E,...t)}delete Oe[E]}}fun"
+   OCC1 @37615 :: "_[S]=_[S]||{},_=_[S];return _}function Ae(e,E,t){const{apiKey:_}=t,S=ye.listeners[_];Ie(e,$zsub)[t.name]=e=>{-1==S.indexOf(e)&&S.push(e),ye.provider[_]||(ye.provider[_]=E[t.name](((...e)=>{for(let E o"
+   OCC2 @37802 :: ">{for(let E of S)E(...e)})))}}function Ne(e,E,t){const{apiKey:_}=t,S=ye.listeners[_];Ie(e,$zsub)[t.name]=e=>{const _=S.indexOf(e);-1!=_&&S.splice(_,1),S.length<=0&&(E[t.name](),delete ye.provider[t.ap"
+   OCC3 @37931 :: ";-1!=_&&S.splice(_,1),S.length<=0&&(E[t.name](),delete ye.provider[t.apiKey])}}globalThis.$zsub={};const Oe={};function Ue(e,E,t){let S=Oe[E];void 0===S&&(S={}),S=Object(_.a)(Object(_.a)({},S),t),Oe[E"
+   OCC4 @38248 :: "rts=R,e(E,...t)}delete Oe[E]}}function se(e,E,t){const{apiKey:_}=t,S=ye.listeners[_];Ie(e,$zsub)[t.name]=e=>{if(-1==S.indexOf(e)&&S.push(e),!ye.provider[_]){const e=(e,...E)=>{Ue(_,e,{args:E})};ye.pro"
+
+## pc-dist\lazy\default-login-startup-main-startup-shared-worker.c46b8a9c38819ca02af3.js :: $zsub x9
+   OCC1 @91968 :: ")i.registerMethod(e,o[e])}class l{constructor(){this.onRemoteEventsMap=new Map,this._id=0,$zsub.$zFeatures.mainless.onRemoteEvents(((e,t)=>{try{this.onRemoteEventsMap.get(t.id)(t)}catch{}}))}get id(){"
+   OCC2 @189925 :: "non-recorded or terminated channel -(id: '{}' - scripts: ['{}', '{}'])\",\"9BQt7T\"],r,t,s)};$zsub.$zMsgChannel.onChannelEstablished(e),this.removeListenerFnList.push((()=>$zsub.$zMsgChannel.removeListen"
+   OCC3 @190004 :: "\"],r,t,s)};$zsub.$zMsgChannel.onChannelEstablished(e),this.removeListenerFnList.push((()=>$zsub.$zMsgChannel.removeListenChannelEstablished(e)))}{const e=(e,t)=>{const s=this.portsMap.get(t);if(!s)ret"
+   OCC4 @190429 :: "])\",\"6MPCMa\"],e,this.nameOfCurrentScript,t),this.dispatchEvent(new o.a(e,t)),n=r.next()}};$zsub.$zMsgChannel.onChannelDisconnected(e),this.removeListenerFnList.push((()=>$zsub.$zMsgChannel.removeListe"
+
+## pc-dist\lazy\default-login-startup-main-startup.ec73261654e4ce9540ac.js :: $zsub x14
+   OCC1 @7640 :: "DLE,this.hasCorruptedThisSession=!1}start(){this.checkStartUp(),this.startIntervalCheck(),$zsub.$zapp.onRequestRestartAppForBackup(this.processRequestRestartAppForBackup)}stop(){this.stopIntervalCheck"
+   OCC2 @7765 :: "ackup(this.processRequestRestartAppForBackup)}stop(){this.stopIntervalCheckDBCorruption(),$zsub.$zapp.removeListenBackupRestartReq(this.processRequestRestartAppForBackup),this.logger.zsymb(0,\"w0tEMv\","
+   OCC3 @18922 :: "lt:R.default.createError(P.default.str(\"STR_GROUP_NO_EXIST\"))}};Object(h.useEffect)((()=>($zsub.$zuri.onNewRequest(n),$zsub.$zuri.onRequestOpenConv(s),()=>{$zsub.$zuri.removeListenNewRequest(n),$zsub."
+   OCC4 @18950 :: "efault.str(\"STR_GROUP_NO_EXIST\"))}};Object(h.useEffect)((()=>($zsub.$zuri.onNewRequest(n),$zsub.$zuri.onRequestOpenConv(s),()=>{$zsub.$zuri.removeListenNewRequest(n),$zsub.$zuri.removeListenRequestOpe"
+
+## pc-dist\lazy\default-main-startup-shared-worker.1614f4b9d9466b9c0de1.js :: $zsub x9
+   OCC1 @75120 :: "st(o.a)}onStart(){this.logger.zsymb(3,\"oywaXX\",[\"start\",\"z0Y6yA\"]),$zsharedWorker.start(),$zsub.$zsharedWorker.onRequestRunTask((async(e,t)=>{var s;const i=this.handlers.get(t.type);if(!i)return;null="
+   OCC2 @76884 :: "_2DM\",(()=>[`task ${t.type} id: ${t.id} failed`,{error:d}]))}this.runningMap.delete(n)})),$zsub.$zsharedWorker.onRequestAbortTask(((e,t)=>{const s=this.runningMap.get(t.id);var i;s&&(null===(i=this.mo"
+   OCC3 @77143 :: "t.abort());this.logger.zsymb(3,\"_y4Zqk\",[\"abort task {} id: {}\",\"dEe25y\"],t.type,t.id)})),$zsub.$zsharedWorker.onRequestUpdateTaskParams(((e,t)=>{const s=this.runningMap.get(t.id);if(s)return s.update"
+   OCC4 @77509 :: "params failed. task not found`)}));const e=()=>{$zFileManager.cleanupLogFileDescriptors(),$zsub.$zsharedWorker.removeListenUnloadZLog(e)};$zsub.$zsharedWorker.onUnloadZLog(e),\"shared-worker\"===__ZaBUN"
+
+## pc-dist\lazy\login-startup.e0953d5b26849f074f43.js :: $zsub x3
+   OCC1 @440218 :: "408,subType:0,data:{last_uid:li()}}),null!==(n=window.$zenv)&&void 0!==n&&n.isPreloaded&&($zsub.$zupdater.onNewUpdate(s),$zsub.$zupdater.onNewManualUpdate(s),$zsub.$zupdater.onFallbackUpdate(t)),()=>{"
+   OCC2 @440249 :: "()}}),null!==(n=window.$zenv)&&void 0!==n&&n.isPreloaded&&($zsub.$zupdater.onNewUpdate(s),$zsub.$zupdater.onNewManualUpdate(s),$zsub.$zupdater.onFallbackUpdate(t)),()=>{r.loginSession.dispose()}}),[])"
+   OCC3 @440286 :: "!==n&&n.isPreloaded&&($zsub.$zupdater.onNewUpdate(s),$zsub.$zupdater.onNewManualUpdate(s),$zsub.$zupdater.onFallbackUpdate(t)),()=>{r.loginSession.dispose()}}),[]),i.loginStateKey===ye.Idle.toString()"
+
+## pc-dist\lazy\main-startup.e7df64fe0566d4b30368.js :: $zsub x19
+   OCC1 @1123241 :: "ne_configs.enable_background_tracking,fullBgTracking:this.isEnableFullBackgroundTrack()}),$zsub.$zFeatures.activeDeactive.onActiveFromBackground(this.onActiveFromBackground),$zsub.$zFeatures.activeDea"
+   OCC2 @1123325 :: "k()}),$zsub.$zFeatures.activeDeactive.onActiveFromBackground(this.onActiveFromBackground),$zsub.$zFeatures.activeDeactive.onDeactiveFromBackground(this.onDeactiveFromBackground)}clearBackgroundTrackin"
+   OCC3 @1123508 :: "BackgroundTracking(){$zFeatures.activeDeactive.clearTimer(this.isEnableBackgroundTrack()),$zsub.$zFeatures.activeDeactive.offActiveFromBackground(this.onActiveFromBackground),$zsub.$zFeatures.activeDe"
+   OCC4 @1123593 :: "k()),$zsub.$zFeatures.activeDeactive.offActiveFromBackground(this.onActiveFromBackground),$zsub.$zFeatures.activeDeactive.offDeactiveFromBackground(this.onDeactiveFromBackground)}onUserSendMessage(){t"
+
+## pc-dist\search-worker.f32c58b63b6f4273a8a4.js :: $zsub x141
+   OCC1 @14431 :: "l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Obj"
+   OCC2 @1336493 :: "s)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convNa"
+   OCC3 @1337426 :: "ner(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",t"
+   OCC4 @1462778 :: "this.onProgress.bind(this),[r.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){"
+
+## pc-dist\shared-worker.f32c58b63b6f4273a8a4.js :: $zsub x4
+   OCC1 @54863 :: ");s(\"33YB\"),s(\"LyOm\"),s(\"lNuO\");var m=s(\"T0aS\");class y extends m.b{constructor(){super(),$zsub.$zsessionManager.onReceiveSession(((e,t)=>{this.setSession(t)}))}}l.ModuleContainer.registerSingleton(m."
+   OCC2 @56425 :: "this.removeListeners=()=>t.forEach((e=>e()))}onDispose(){this.removeListeners()}install(){$zsub.$zdb.onReceiveSession(((e,t)=>{this.authenticate(t)})),$zdb.notifyDbConnected(__ZaBUNDLENAME__),$zsub.$z"
+   OCC3 @56527 :: "nReceiveSession(((e,t)=>{this.authenticate(t)})),$zdb.notifyDbConnected(__ZaBUNDLENAME__),$zsub.$zdb.onRequestCloseDbs((async(e,t,s)=>{this.logger.zsymb(0,\"028nK8\",\"closing databases\"),await this.clos"
+   OCC4 @386865 :: ",params:n,options:a})}},{MetriczDriver:t}=s(\"rkiK\");t.registerQosControl(e)}catch(e){}}(),$zsub.$zdb.processRequest(((e,s)=>{!function(e){e&&(e.constructor===Array?e.forEach((e=>{t.a.receiverEvent(e)}"
+
+## pc-dist\sync-v2-sub-worker.f32c58b63b6f4273a8a4.js :: $zsub x141
+   OCC1 @14436 :: "l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Obj"
+   OCC2 @1339030 :: "s)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convNa"
+   OCC3 @1339963 :: "ner(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",t"
+   OCC4 @1465315 :: "this.onProgress.bind(this),[r.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){"
+
+## pc-dist\znotification.f32c58b63b6f4273a8a4.js :: $zsub x1
+   OCC1 @3398 :: "dLog(\"error\",e)}(\"[pid][notification]\"+e.pid),$zapp.registerProcess(\"notification\",e.pid),$zsub.$zapp.onRequestShowNoti(((e,p)=>{(async function(){try{const e=await $zconfig.getThemeConfig();(null==e?"
+
+TOTAL $zsub occurrences = 640

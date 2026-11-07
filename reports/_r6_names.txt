@@ -1,0 +1,45 @@
+=== 41 UNIQUE exposeInMainWorld NAMES (preload-render.js) ===
+  __SENTRY_IPC__           @13020
+  MetriczGlobal            @796941
+  $zenv                    @797014
+  $zcommon                 @797089
+  $znode                   @797152
+  $zwindow                 @797211
+  $zresource               @797274
+  $zlogger                 @797341
+  $zupdater                @797404
+  $zapp                    @797469
+  $zdownload               @797526
+  $zdb                     @797593
+  $zsessionManager         @797648
+  $zmulti                  @797727
+  $zcall                   @797788
+  $zsharedWorker           @797847
+  $zelectron               @797922
+  $zelectronNative         @797989
+  $zuri                    @798068
+  $zscreencap              @798125
+  $zlogin                  @798194
+  $zperf                   @798255
+  $zconfig                 @798314
+  $zMetric                 @798377
+  $zFileManager            @798440
+  $zpc                     @798572
+  $zFeatures               @798627
+  $zcloud                  @798694
+  $zMsgChannel             @798755
+  $zscript                 @798826
+  $zInAppPayment           @798889
+  $capp                    @798964
+  $zbackup                 @799021
+  $zpreload                @799084
+  $zsqlitebw               @799135
+  $zsafeStorage            @799202
+  $zMigrateDrive           @799275
+  $zTFModels               @799350
+  $znetwork                @799417
+  $zprotocol               @799482
+  $znoti                   @799549
+
+=== 35 descriptor-driven window.$X assignments ===
+  $capp, $zFileManager, $zInAppPayment, $zMetric, $zMigrateDrive, $zMsgChannel, $zapp, $zbackup, $zcall, $zcloud, $zcommon, $zconfig, $zdb, $zdownload, $zelectron, $zelectronNative, $zlogger, $zlogin, $zmulti, $znetwork, $znode, $znoti, $zpc, $zperf, $zprotocol, $zresource, $zsafeStorage, $zscreencap, $zscript, $zsessionManager, $zsharedWorker, $zsqlitebw, $zupdater, $zuri, $zwindow

@@ -1,0 +1,107 @@
+
+### .zl-modal base
+  @61926 .zl-modal   (parts=485)
+      display:-webkit-flex;flex-flow:row nowrap
+  @81623 .zl-modal   (parts=96)
+      flex-flow:column nowrap
+  @95414 .zl-modal   (parts=7)
+      align-items:stretch
+  @121511 .zl-modal   (parts=485)
+      display:flex
+  @1949657 .zl-modal   (parts=1)
+      position:fixed;z-index:100;width:100%;height:100%;background:var(--curtain);top:0;left:0;overflow:hidden;contain:layout
+  @1949857 .zl-modal.fullscreen   (parts=1)
+      background:var(--layer-background)
+  @1949913 .zl-modal.dark   (parts=1)
+      background:var(--curtain-bold)
+
+### .zl-modal__dialog base
+  @1949959 .zl-modal__dialog   (parts=3)
+      width:587px;background:var(--layer-background);border:1px solid var(--border);border-radius:4px;contain:layout;max-height:785px;overflow:hidden;will-change:transform
+  @1950186 .zl-modal__dialog.compact   (parts=3)
+      width:auto
+  @1950282 .zl-modal__dialog.fullscreen   (parts=3)
+      height:100vh;width:100vw;max-width:100%;max-height:100%;background:none;border:none
+  @1950624 .zl-modal__dialog.no-border   (parts=3)
+      border:none
+  @1950727 .zl-modal__dialog.--safari   (parts=3)
+      transform:translateZ(0);-webkit-transform:translateZ(0)
+
+### .zmenu-item base
+  @1856692 .zmenu-item   (parts=1)
+      height:36px;min-width:112px;padding:0 10px;display:flex;align-items:center;cursor:pointer;color:var(--text-primary);position:relative;background-color:var(--layer-background);margin:4px 0;border-radius:4px
+  @1856910 .zmenu-item.md   (parts=1)
+      height:36px
+  @1856937 .zmenu-item.lg   (parts=1)
+      height:40px
+  @1856964 .zmenu-item.subtitle   (parts=1)
+      color:var(--text-secondary);cursor:default;height:24px
+  @1857108 .zmenu-item.exp   (parts=1)
+      max-width:none
+
+### .zmenu-separator base
+  @1859058 .zmenu-separator   (parts=1)
+      height:1px;background:var(--divider-subtle);margin:4px
+  @1859130 .zmenu-separator.zmenu-separator--thin   (parts=1)
+      opacity:.7
+
+### .setting-menu base
+  @1072220 .setting-menu   (parts=1)
+      width:228px;flex:none;border-right:1px solid var(--divider-bold);background-color:var(--layer-background)
+
+### .conv-item-padding base
+  @61926 .conv-item-padding   (parts=485)
+      display:-webkit-flex;flex-flow:row nowrap
+  @80883 .conv-item-padding   (parts=22)
+      position:relative
+  @95862 .conv-item-padding   (parts=339)
+      align-items:center
+
+### .chat-box-input exact
+  @1608178 .chat-box-input   (parts=1)
+      flex:1;position:relative;background:var(--layer-background);border-top:1px solid var(--divider-bold)
+
+### .message-view exact
+  @784624 .message-view   (parts=1)
+      flex:1 0 auto;overflow:hidden;position:relative;display:flex;flex-direction:column
+
+=== "block-date" in JS (is the date divider rendered in the live list?) ===
+  occ=8
+    @126169: "null===(t=this.ref)||void 0===t?void 0:t.previousElementSibling;if(!a)return!0;const i=a&&(null==a||null===(n=a.classList)||void 0===n?void 0:n.contains(\"island\"))&&0===e;let r=!1;const s=a.closest(\".block-date\");if(s){const e=s.querySelector(\".block-date > .chat-item\");r=e&&e===this.ref}return i||r||!1},this.windowId=e.windowId||L.c,this.intersectHandler=this.intersectHandler.bind(this),this.unin"
+    @126214: "iousElementSibling;if(!a)return!0;const i=a&&(null==a||null===(n=a.classList)||void 0===n?void 0:n.contains(\"island\"))&&0===e;let r=!1;const s=a.closest(\".block-date\");if(s){const e=s.querySelector(\".block-date > .chat-item\");r=e&&e===this.ref}return i||r||!1},this.windowId=e.windowId||L.c,this.intersectHandler=this.intersectHandler.bind(this),this.unintersectHandler=this.unintersectHandler.bind(t"
+    @376225: "return o.a.useEffect((()=>{const n=O.a.getInViewController(e.windowId),a=t.current;if(n&&a)return n.observe(a,{isBlockDate:!0}),()=>{a&&n.unobserve(a)}}),[]),o.a.createElement(\"div\",{ref:t,className:\"block-date\",key:e.currentKey},o.a.createElement(o.a.Fragment,null,[...e.threads]))};let Ps=function(e){return e.ScrollToBottom=\"scroll-to-bottom\",e.ScrollToOffset=\"scroll-to-offset\",e.ScrollToTargetMe"
+
+=== ""preview-ts" in JS (unconditional class?) ===
+  occ=5
+    @105894: "ge-time-status\",mn&&\"--me\",\"mt-4\")},o.a.createElement(D.e,{wrapperClassName:Object(u.a)(hn,e.isFirst&&Ae.a.isEnable()&&\"preview-ts__first-msg\",\"mt-0\"),sentByMe:mn,ttlTimer:An,hasStatus:!bn,isError:xe===m.MSG_FAIL&&!e.data.cancelled,sendTime:ln,isFirst:e.isFirs"
+    @106160: "st:e.isLast,key:`st_${Mt}`}),bn),yn=o.a.createElement(D.e,{wrapperClassName:Object(u.a)(hn,e.isFirst&&Ae.a.isEnable()&&\"preview-ts__first-msg\"),sentByMe:mn,ttlTimer:An,hasStatus:!bn,isError:xe===m.MSG_FAIL&&!e.data.cancelled,sendTime:ln,isFirst:e.isFirst,isLas"
+    @655787: "className:Object(u.a)(\"message-view__scroll__inner\",\"--audit-message-spacing\",this.isLessSpaceBottom()&&\"--less-space\",\"preview-ts \"),key:\"mv__inner_\"+this.props.conversation.userId},ce,de,he?o.a.createElement(qt,{key:\"top-loader-\"+this.props.conversation.user"
+    @1090776: "time-status\",ae&&\"--me\")},l.a.createElement(fe.e,{wrapperClassName:Object(C.a)(ne,this.props.isFirst&&Sa.a.isEnable()&&\"preview-ts__first-msg\"),sentByMe:ae,ttlTimer:te,hasStatus:!re,isError:this.state.msgStatus===u.MSG_FAIL&&!y.cancelled,sendTime:q,isFirst:thi"
+
+=== .preview-ts rules that change the chat column ===
+  @1295688 .chat-message:not(:last-child) .img-msg-v2.-has-extra-btns,.chat-message:not(:last-child) .img-msg-v2:has(.preview-ts__first-msg)
+      margin-bottom:4px
+  @1499670 .preview-ts .block-date>.chat-date
+      transition:.3s ease-out;position:relative;border-radius:10px
+  @1499766 .preview-ts .block-date>.chat-date>.content
+      width:108px;text-align:center
+  @1499840 .preview-ts .block-date>.chat-date>span
+      backdrop-filter:blur(10px)
+  @1499907 .preview-ts .block-date>.chat-date.--time
+      width:116px;border-radius:10px;margin:16px auto
+  @1499997 .preview-ts .block-date.topMost>.chat-date.island
+      z-index:6
+  @1500057 .preview-ts .block-date>.chat-date.island
+      z-index:5
+  @1500109 .preview-ts .block-date>.chat-date.island.topMost
+      z-index:7
+  @1500169 .preview-ts .block-date>.chat-date.island.secondTop
+      z-index:3
+  @1500231 .preview-ts.active-scroll .block-date>.chat-date.island
+      position:sticky;top:10px
+  @1500312 .preview-ts.active-scroll .block-date>.chat-date>span
+      backdrop-filter:blur(10px)
+  @1500393 .preview-ts .block-date:first-child
+      margin-top:40px
+  @1500445 .message-view__scroll--shrink .preview-ts.active-scroll .block-date>.chat-date.island
+      position:sticky;top:20px

@@ -1,0 +1,93 @@
+
+===== pc-dist/compact-app.html (1307 chars) =====
+
+--- SCRIPT#1 @1172 attrs="" bodyLen=42
+const __ZaBUNDLENAME__ = 'compact-app-pc';
+
+--- SCRIPT#2 @1231 attrs="src=\"compact-app-pc.f32c58b63b6f4273a8a4.js\"" bodyLen=0
+
+total <script> = 2
+
+===== pc-dist/index.html (6219 chars) =====
+
+--- SCRIPT#1 @3254 attrs="" bodyLen=494
+function applyBgDefaultByTheme() {
+                const themeSettingStr = window.localStorage.getItem('za_theme');
+                const bgColorDark = '#22262B';
+
+                try {
+                    const themeSetting = JSON.parse(themeSettingStr);
+                    const theme = themeSetting?.theme;
+
+                    if (theme === "dark") document.body.style.background = bgColorDark;
+                } catch (e) {}
+            }
+
+            applyBgDefaultByTheme();
+
+--- SCRIPT#2 @3859 attrs="" bodyLen=188
+const timeout = 5000;
+			window.__startTime = Date.now();
+			window.__loadTimer = setTimeout(()=>{
+			  window.__loadTimer = null;
+			  window.$zlogger.loadShellQos();
+			}, timeout);
+
+--- SCRIPT#3 @4064 attrs="src=\"libs/libsignal-protocol.static.js\"" bodyLen=0
+
+--- SCRIPT#4 @4121 attrs="" bodyLen=1564
+window.__ZaBUNDLENAME__ =
+				'render';
+			window.__SRC_PREVIEW_THUMB_WORKER__ =
+				'preview-thumb-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_SEARCH_WORKER__ = 'search-worker.f32c58b63b6f4273a8a4.css';
+			window.__SRC_SERVICE_WORKER__ = 'webpack.output.entry.service-worker';
+			window.__SRC_CPU_HEAVY_WORKER__ = 'cpu-heavy-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_SOC_WORKER__ = 'webpack.output.entry.soc-worker';
+			window.__SRC_ZD_WORKER__ = 'zd-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_SYNC_V2_WORKER__ = 'webpack.output.entry.sync-v2-worker';
+			window.__SRC_PDF_WORKER__ = 'pdf-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_MAINLESS_WORKER__ = 'mainless-worker.f32c58b63b6f4273a8a4.js';
+      		window.__SRC_DAL_WORKER__  = 'dal-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_OPFS_WORKER__ = 'opfs-worker.f32c58b63b6f4273a8a4.js';
+			window.__SRC_TRUST_WORKER__ = 'trust-worker.f32c58b63b6f4273a8a4.js';
+			window.zconsole = window.console;
+
+			if (
+				typeof ZaloLoginWidget === 'object' &&
+				typeof ZaloLoginWidget.init === 'function'
+			) {
+				ZaloLoginWidget.init({
+					sessionName: 'zpw_sek',
+					showName: true,
+					onLoad: function (resp) {
+						if (resp.error_code !== 0) {
+							// handle error
+							return;
+						}
+						if (resp.data.logged) {
+							// logged in
+							console.log('User logged');
+						} else {
+							console.log('User not login yet');
+						}
+					},
+					onLogin: function (resp) {
+						console.log('Login success: ', resp);
+					},
+				});
+			}
+
+--- SCRIPT#5 @5702 attrs="src=\"lazy/vendors-login-render-shared-worker-znotification.aae872b4641c395ab90c.js\"" bodyLen=0
+
+--- SCRIPT#6 @5803 attrs="src=\"lazy/vendors-login-render-shared-worker.eadda6f305bf492b3efc.js\"" bodyLen=0
+
+--- SCRIPT#7 @5890 attrs="src=\"lazy/default-login-render-shared-worker-znotification.bc10d4fc9e423c407115.js\"" bodyLen=0
+
+--- SCRIPT#8 @5991 attrs="src=\"lazy/default-login-render-shared-worker.09de2d8e0cc06d14906d.js\"" bodyLen=0
+
+--- SCRIPT#9 @6078 attrs="src=\"lazy/default-login-render.dc51d7e4150dfd0aae85.js\"" bodyLen=0
+
+--- SCRIPT#10 @6151 attrs="src=\"render.f32c58b63b6f4273a8a4.js\"" bodyLen=0
+
+total <script> = 10

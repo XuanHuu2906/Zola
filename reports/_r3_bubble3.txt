@@ -1,0 +1,128 @@
+=== rules with an exact ".card" selector part ===
+
+@61926  part= .card
+   sel(485 parts, showing 3): #calendar-v3 .cal-weekday-v3 | #calendar-v3>.cal-clear-time | #filter-tags-sb .filter-tag-item>.edit-button
+   body: display:-webkit-flex;flex-flow:row nowrap
+
+@117901  part= .card.card--file
+   sel(14 parts, showing 3): .audio-expired | .card--file.audio-expired | .card--link.audio-expired
+   body: -webkit-box-shadow:var(--shadow-bubble);-moz-box-shadow:var(--shadow-bubble);box-shadow:var(--shadow-bubble)
+
+@121511  part= .card
+   sel(485 parts, showing 3): #calendar-v3 .cal-weekday-v3 | #calendar-v3>.cal-clear-time | #filter-tags-sb .filter-tag-item>.edit-button
+   body: display:flex
+
+@646903  part= .card.chat-box-input__link-preview
+   sel(2 parts, showing 3): .card.chat-box-input__link-preview | .chat-box-input__link-preview.audio-expired
+   body: border-radius:0;border-top:1px solid var(--border-focused);background:var(--layer-background);box-shadow:none;margin-bottom:0
+
+@722335  part= .card
+   sel(2 parts, showing 3): .audio-expired | .card
+   body: position:relative;display:block;padding:12px;border-radius:8px;background:var(--white-message);color:var(--text-primary)
+
+@722553  part= .card.me
+   sel(2 parts, showing 3): .card.me | .me.audio-expired
+   body: background-color:var(--blue-message)
+
+@722617  part= .card.me.card--oa
+   sel(6 parts, showing 3): .card.me.card--oa | .card.me.card--picture | .card.me.card--video
+   body: padding-bottom:0
+
+@722785  part= .card.me.card--picture.has-caption
+   sel(6 parts, showing 3): .card.me.card--picture.has-caption | .card.me.has-caption.card--oa | .card.me.has-caption.card--video
+   body: display:-webkit-flex;display:flex;flex-direction:column;align-items:flex-end
+
+@723368  part= .card.bubble-preview
+   sel(2 parts, showing 3): .bubble-preview.audio-expired | .card.bubble-preview
+   body: width:25rem
+
+@724067  part= .card.first-msg
+   sel(2 parts, showing 3): .card.first-msg | .first-msg.audio-expired
+   body: contain:layout style
+
+@727902  part= .card.admin
+   sel(2 parts, showing 3): .admin.audio-expired | .card.admin
+   body: border:1px solid var(--border-highlight)
+
+@727976  part= .card.size-video
+   sel(2 parts, showing 3): .card.size-video | .size-video.audio-expired
+   body: width:64%
+
+=== .card--text full rules ===
+
+@117901 parts=14
+   sel: .card--text.audio-expired | .card.card--text
+   body: -webkit-box-shadow:var(--shadow-bubble);-moz-box-shadow:var(--shadow-bubble);box-shadow:var(--shadow-bubble)
+
+@143308 parts=4
+   sel: .card--text.audio-expired a.mention-name | .card.card--text a.mention-name
+   body: white-space:pre-wrap
+
+@728528 parts=2
+   sel: .card--text.audio-expired | .card.card--text
+   body: user-select:text;min-width:40px;max-width:calc(100% - 38px)
+
+@728631 parts=2
+   sel: .card--text.audio-expired:not(.me) | .card.card--text:not(.me)
+   body: background-color:var(--white-message)
+
+@728730 parts=2
+   sel: .card--text.has-status.audio-expired | .card.card--text.has-status
+   body: min-width:90px
+
+@728810 parts=2
+   sel: .card--text.pin-react.audio-expired | .card.card--text.pin-react
+   body: min-width:60px
+
+@728888 parts=2
+   sel: .card--text.has-1-extra-btns.audio-expired | .card.card--text.has-1-extra-btns
+   body: min-width:126px
+
+@728981 parts=2
+   sel: .card--text.has-2-extra-btns.audio-expired | .card.card--text.has-2-extra-btns
+   body: min-width:280px
+
+@729074 parts=2
+   sel: .card--text.show-sender.audio-expired>.card-sender-name | .card.card--text.show-sender>.card-sender-name
+   body: margin-bottom:6px;color:var(--text-secondary)
+
+@729223 parts=2
+   sel: .card--text.show-sender.audio-expired>.card-send-time__sendTime | .card.card--text.show-sender>.card-send-time__sendTime
+   body: color:var(--text-secondary)
+
+@729370 parts=2
+   sel: .card--text.audio-expired a | .card.card--text a
+   body: text-decoration:none;cursor:pointer
+
+@729453 parts=2
+   sel: .card--text.audio-expired a.mention-name | .card.card--text a.mention-name
+   body: color:var(--text-mention)
+
+@940016 parts=2
+   sel: .multi-select-mode-selected .card--text.audio-expired | .multi-select-mode-selected .card.card--text
+   body: background-color:var(--blue-message-selected)
+
+@940161 parts=2
+   sel: .multi-select-mode-selected .card--text.audio-expired:before | .multi-select-mode-selected .card.card--text:before
+   body: background-color:var(--layer-background);content:"";cursor:pointer;width:100%;height:100%;position:absolute;right:0;top:0;z-index:-1;border-radius:8px
+
+@940425 parts=4
+   sel: .multi-select-mode-selected .card--text.audio-expired .quote-banner | .multi-select-mode-selected .card--text.audio-expired .quote-file | .multi-select-mode-selected .card.card--text .quote-banner
+   body: background-color:var(--blue-quote-selected)
+
+=== token definitions for bubble surfaces ===
+  --blue-message => ["#1f344d","#e5f1ff"]
+  --white-message => ["#282d33","#fff"]
+  --blue-message-selected => ["#111e2c","#c7e0ff"]
+  --shadow-bubble => ["0px 0px 1px 0px rgba(3,4,4,0.5),0px 1px 1px 0px rgba(3,4,4,0.5),0px 0px 0px 1px rgba(188,214,240,0.08) inset","0px 0px 1px 0px rgba(21,39,71,0.25),0px 1px 1px 0px rgba(21,39,71,0.25)"]
+  --bg-message-info => ["hsla(0,0%,100%,0.05)","hsla(0,0%,100%,0.85)"]
+  --timestamp => ["hsla(0,0%,100%,0.05)","rgba(0,0,0,0.2)"]
+  --jump-to-message => ["#002e3d","#e5f8ff"]
+  --NG10 => ["#0d0d0d","#f7f7f7"]
+  --layer-background-CSC => ["#16191d","#ebecf0"]
+  --divider-bold => ["rgba(0,0,0,0.3)","rgba(0,0,0,0.15)"]
+  --layer-background-navbar-normal => ["#121416","#005ae0"]
+  --title-bar => ["#121416","#e5e7eb"]
+  --curtain => ["rgba(0,0,0,0.6)","rgba(0,0,0,0.55)"]
+  --shadow-overlay => ["0px 0px 1px 0px rgba(3,4,4,0.5),0px 8px 12px 0px rgba(3,4,4,0.35),0px 0px 0px 1px rgba(188,214,240,0.08) inset","0px 0px 1px 0px rgba(21,39,71,0.3),0px 8px 12px 0px rgba(21,39,71,0.15)"]
+  --border => ["hsla(0,0%,100%,0.2)","rgba(0,0,0,0.15)"]

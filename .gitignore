@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+dist/
+dist-electron/
+release/
+playwright-report/
+test-results/
+reports/*.json
+rea-cache/
+.glass-demo-data/

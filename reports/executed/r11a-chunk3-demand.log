@@ -1,0 +1,17 @@
+
+## pc-dist/render.f32c58b63b6f4273a8a4.js (6256 chars)
+   aa2b4a7eeda68a9f5e59 = 1
+   default-login-startup-main-startup-shared-worker-znotification = 2
+   .e(3) = 1
+   CHUNKMAP_CTX :: "(n[e]=new Promise((function(t,a){for(var r=({1:\"default-login-main-startup-shared-worker-znotification\",3:\"default-login-startup-main-startup-shared-worker-znotification\",4:\"vendors-login-main-startup-shared-worker-znotification\",7:\"default-login-main-startup-shared-worker\",9:\"default-login-startup-main-startup-shared-worker\",11:\"vendors-login-startup-main-startup-shared-worker\",14:\"default-login-startup-main-startup\",15:\"default-main-startup-shared-worker\",16:\"vendors-main-startup-shared-worker\",21:\"ai-translation-language-model\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",30:\"main-startup\",41:\"vendors-main-startup\"}[e]||e)+\".f32c58b63b6f4273a8a4.css\",o=f.p+r,i=document.getElementsByTagName(\"link\"),d=0;d<i.length;d++){var u=(s=i[d]).getAttribute(\"data-href\")||s.getAttribute(\"href\");if(\"stylesheet\"===s.rel&&(u===r||u===o))return t()}var c=document.getElementsByTagName(\"style\");for(d=0;d<c.length;d++){var s;if((u=(s=c[d]).getAttribute(\"data-href\"))===r||u===o)return t()}var l=document.createElement(\"link\");l.rel=\"stylesheet\",l.type=\"text/css\",l.onload=t,l.onerror=function(t){var r=t&&t.t"
+
+## pc-dist/login.f32c58b63b6f4273a8a4.js (4962 chars)
+   aa2b4a7eeda68a9f5e59 = 1
+   default-login-startup-main-startup-shared-worker-znotification = 2
+   .e(3) = 1
+   CHUNKMAP_CTX :: "r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,u),r.l=!0,r.exports}u.e=function(e){var t=[];a[e]?t.push(a[e]):0!==a[e]&&{14:1,29:1}[e]&&t.push(a[e]=new Promise((function(t,r){for(var n=({3:\"default-login-startup-main-startup-shared-worker-znotification\",9:\"default-login-startup-main-startup-shared-worker\",11:\"vendors-login-startup-main-startup-shared-worker\",14:\"default-login-startup-main-startup\",23:\"countries\",26:\"lang-en\",27:\"lang-vi\",29:\"login-startup\"}[e]||e)+\".f32c58b63b6f4273a8a4.css\",o=u.p+n,i=document.getElementsByTagName(\"link\"),f=0;f<i.length;f++){var c=(l=i[f]).getAttribute(\"data-href\")||l.getAttribute(\"href\");if(\"stylesheet\"===l.rel&&(c===n||c===o))return t()}var s=document.getElementsByTagName(\"style\");for(f=0;f<s.length;f++){var l;if((c=(l=s[f]).getAttribute(\"data-href\"))===n||c===o)return t()}var d=document.createElement(\"link\");d.rel=\"stylesheet\",d.type=\"text/css\",d.onload=t,d.onerror=function(t){var n=t&&t.target&&t.target.src||o,i=new Error(\"Loading CSS chunk \"+e+\" failed.\\n(\"+n+\")\");i.code=\"CSS_CHUNK_LOAD_FAILED\",i.request=n,delete a[e],d.pare"
+
+## pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars)
+   aa2b4a7eeda68a9f5e59 = 0
+   default-login-startup-main-startup-shared-worker-znotification = 0
+   .e(3) = 0

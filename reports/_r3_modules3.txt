@@ -1,0 +1,23 @@
+=== depth at known module keys ===
+  TmDO @9440450: depthAt=-3  prefix="ise&&(window.Promise=n("E2g8").Promise)},TmDO:function(e,t,n){"u"
+  euSg @14376440: depthAt=0  prefix="_OK":2,"X_OK":1,"UV_UDP_REUSEADDR":4}')},euSg:function(t,n,a){"u"
+  B5Cg @3990965: depthAt=-3  prefix="æ",y:"1å¹´",yy:"%då¹´"}})}(n("wd/R"))},B5Cg:function(e,t,n){"u"
+  CYG6 @4245911: depthAt=-4  prefix="duleContainer.registerSingleton(s.c,g)},CYG6:function(e,t,n){"us"
+  RFxn @8774196: depthAt=0  prefix="n("WkXI"),e.exports.FileAttr=n("HW/Q")},RFxn:function(e,t,n){"us"
+
+  "(this.webpackJsonp" @-1 depth=n/a
+
+  "webpackJsonp=" @2590 depth=1
+
+  "n.m=" @-1 depth=n/a
+
+  "function(e){var t={}" @3877075 depth=-5
+
+4-arg candidates = 3550
+  TmDO: not in 4-arg candidate list
+  euSg: not in 4-arg candidate list
+  B5Cg: not in 4-arg candidate list
+  CYG6: found depth=-4 size=16682082
+  RFxn: found depth=0 size=23465
+
+large(>3KB) modules by depth: d-6=61 d-5=1 d-4=164 d-3=124 d-2=186 d-1=4 d0=6 d1=22 d2=184 d3=36 d7=36 d12=1

@@ -1,0 +1,86 @@
+# R11B — report numerics re-derivation
+# Every value cited in R11V3_RUNTIME_POC.md, recomputed.
+
+PASS js_files_total                   actual=116 expected=116
+PASS js_outside_node_modules          actual=116 expected=116
+PASS node_modules_dirs                actual=0 expected=0
+PASS asar_sha256                      actual=d83256230e5d1d4483c2411f71936c3dc1562fb8a885fd8752cab17d229201e6 expected=d83256230e5d1d4483c2411f71936c3dc1562fb8a885fd8752cab17d229201e6
+PASS asar_bytes                       actual=177728582 expected=177728582
+PASS identity_ports                   actual=11 expected=11
+PASS hosting:BrowserView              actual=0 expected=0
+PASS hosting:WebContentsView          actual=0 expected=0
+PASS hosting:attachBrowserView        actual=0 expected=0
+PASS hosting:webviewTag               actual=0 expected=0
+PASS hosting:protocol.handle          actual=0 expected=0
+PASS hosting:registerHttpProtocol     actual=0 expected=0
+PASS hosting:registerStreamProtocol   actual=0 expected=0
+PASS hosting:interceptHttpProtocol    actual=0 expected=0
+PASS hosting:MessagePortMain          actual=0 expected=0
+PASS hosting:contextIsolation:!1      actual=0 expected=0
+PASS hosting:nodeIntegration:!0       actual=0 expected=0
+PASS hosting:webSecurity:!1           actual=0 expected=0
+PASS hosting:enableRemoteModule       actual=0 expected=0
+PASS hosting:setWindowOpenHandler     actual=6 expected=6
+PASS hosting:registerFileProtocol     actual=2 expected=2
+PASS hosting:postMessage:             actual=25 expected=25
+PASS hosting:MessageChannelMain       actual=1 expected=1
+PASS hosting:nodeIntegrationInWorker  actual=6 expected=6
+PASS hosting:sandbox:!1               actual=10 expected=10
+PASS bytes:preload-render.js          actual=1990534 expected=1990534
+PASS exposed:preload-render.js        actual=41 expected=41
+PASS bytes:preload-shared-worker.js   actual=2220254 expected=2220254
+PASS exposed:preload-shared-worker.js actual=42 expected=42
+PASS bytes:preload-noti.js            actual=1990530 expected=1990530
+PASS exposed:preload-noti.js          actual=41 expected=41
+PASS bytes:preload-sqlite.js          actual=2830607 expected=2830607
+PASS exposed:preload-sqlite.js        actual=1 expected=1
+PASS bytes:compact-app-preload.js     actual=2248899 expected=2248899
+PASS exposed:compact-app-preload.js   actual=8 expected=8
+PASS native_hits                      actual=27 expected=27
+PASS dbcross_bytes                    actual=1239552 expected=1239552
+PASS str:_register_addon_             actual=1 expected=1
+PASS str:password                     actual=1 expected=1
+PASS str:napi_register_module_v1      actual=0 expected=0
+PASS str:sqlcipher                    actual=0 expected=0
+PASS str:PRAGMA                       actual=0 expected=0
+PASS MsgInfo.db bytes                 actual=3063808 expected=3063808
+PASS Media.db bytes                   actual=99610624 expected=99610624
+PASS FTS bytes                        actual=39204864 expected=39204864
+PASS pipe_total                       actual=421 expected=421
+PASS zalo_pipe_count                  actual=2 expected=2
+PASS zalo_listen_sockets              actual=0 expected=0
+PASS toast_count                      actual=4 expected=4
+PASS aumid_count                      actual=4 expected=4
+PASS zalo_aumid_in_toasts             actual=no expected=no
+PASS aumid_rows                       actual=4 expected=4
+PASS ddeexec_absent                   actual=true expected=true
+PASS verb_count                       actual=1 expected=1
+PASS canExport                        actual=12 expected=12
+PASS default_enabled_occurrences      actual=5 expected=5
+PASS server_override_occurrences      actual=4 expected=4
+PASS files_with_default_enabled       actual=yes expected=yes
+PASS r11b-citation-verify             actual=pass=76,fail=0 expected=pass=76,fail=0
+PASS r11b-verify-offsets              actual=pass=27,fail=0 expected=pass=27,fail=0
+PASS r11b-export-archive              actual=pass=21,fail=0 expected=pass=21,fail=0
+PASS asar_unchanged                   actual=true expected=true
+PASS poc_dir_exists                   actual=false expected=false
+PASS report_absent_at_preflight       actual=false expected=false
+PASS types_bytes                      actual=9834 expected=9834
+PASS types_lines                      actual=322 expected=322
+PASS delegateExecute_absent           actual=true expected=true
+PASS types.ts live bytes              actual=9834 expected=9834
+PASS types.ts live sha256 == logged   actual=d934d702fa09032d678be37d9c96ee9fa3c2f44a4064f250b10cb849b9c85e6c expected=d934d702fa09032d678be37d9c96ee9fa3c2f44a4064f250b10cb849b9c85e6c
+PASS exported interfaces              actual=35 expected=35
+PASS IZaloClient ports                actual=11 expected=11
+PASS IZaloClient present              actual=true expected=true
+PASS unit pass                        actual=89 expected=89
+PASS unit fail                        actual=0 expected=0
+PASS unit tests                       actual=89 expected=89
+PASS report exists                    actual=true expected=true
+PASS report cites types sha256        actual=present expected=present
+PASS report sha256 == logged          actual=d934d702fa09032d678be37d9c96ee9fa3c2f44a4064f250b10cb849b9c85e6c expected=d934d702fa09032d678be37d9c96ee9fa3c2f44a4064f250b10cb849b9c85e6c
+PASS report verdict label             actual=true expected=true
+PASS RUNTIME_POC_PASS mentions        actual=4 expected=4
+PASS RUNTIME_POC_PASS unnegated       actual=0 expected=0
+
+checks_pass=81 checks_fail=0

@@ -1,0 +1,22 @@
+=== preload-render.js (1852663 chars)
+  exposeInMainWorld -> 6 @13020,796941,797014,797089,797152,797211
+  "$zdb" -> 1 @797611
+  $zdb -> 3 @795215,797612,797625
+  "$zsqlite" -> 0
+  $zsqlite -> 3 @796682,799154,799173
+  ctx[$zdb] @13020: "exposeInMainWorld(\"__SENTRY_IPC__\",i)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";con"
+  ctx[$zsqlite] @13020: "exposeInMainWorld(\"__SENTRY_IPC__\",i)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";con"
+=== preload-shared-worker.js (2082383 chars)
+  exposeInMainWorld -> 6 @14423,883959,884032,884107,884170,884229
+  "$zdb" -> 1 @884629
+  $zdb -> 3 @882233,884630,884643
+  "$zsqlite" -> 1 @1105496
+  $zsqlite -> 6 @883700,886172,886191,1105451,1105497,1105514
+  ctx[$zdb] @14423: "exposeInMainWorld(\"__SENTRY_IPC__\",a)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";con"
+  ctx[$zsqlite] @14423: "exposeInMainWorld(\"__SENTRY_IPC__\",a)}catch(o){}}},\"+oe+\":function(e,t,n){\"use strict\";con"
+=== preload-render.js @797611
+"pp\",window.$zapp),qe.contextBridge.exposeInMainWorld(\"$zdownload\",window.$zdownload),qe.contextBridge.exposeInMainWorld(\"$zdb\",window.$zdb),qe.contextBridge.exposeInMainWorld(\"$zsessionManager\",window"
+
+=== preload-shared-worker.js @1105496
+"ind(N),isDbTransactionStepError:N.isDbTransactionStepError.bind(N)};window.$zsqlite=B,r.contextBridge.exposeInMainWorld(\"$zsqlite\",window.$zsqlite)},asXX:function(e,t,n){Object.defineProperty(t,\"__esM"
+

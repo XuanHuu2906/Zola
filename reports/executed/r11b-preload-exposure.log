@@ -1,0 +1,10 @@
+preload-render.js bytes=1990534 exposed_unique=41 z_namespaces=39
+    $capp $zFeatures $zFileManager $zInAppPayment $zMetric $zMigrateDrive $zMsgChannel $zTFModels $zapp $zbackup $zcall $zcloud $zcommon $zconfig $zdb $zdownload $zelectron $zelectronNative $zenv $zlogger $zlogin $zmulti $znetwork $znode $znoti $zpc $zperf $zpreload $zprotocol $zresource $zsafeStorage $zscreencap $zscript $zsessionManager $zsharedWorker $zsqlitebw $zupdater $zuri $zwindow MetriczGlobal __SENTRY_IPC__
+preload-shared-worker.js bytes=2220254 exposed_unique=42 z_namespaces=40
+    $capp $zFeatures $zFileManager $zInAppPayment $zMetric $zMigrateDrive $zMsgChannel $zTFModels $zapp $zbackup $zcall $zcloud $zcommon $zconfig $zdb $zdownload $zelectron $zelectronNative $zenv $zlogger $zlogin $zmulti $znetwork $znode $znoti $zpc $zperf $zpreload $zprotocol $zresource $zsafeStorage $zscreencap $zscript $zsessionManager $zsharedWorker $zsqlite $zsqlitebw $zupdater $zuri $zwindow MetriczGlobal __SENTRY_IPC__
+preload-noti.js bytes=1990530 exposed_unique=41 z_namespaces=39
+    $capp $zFeatures $zFileManager $zInAppPayment $zMetric $zMigrateDrive $zMsgChannel $zTFModels $zapp $zbackup $zcall $zcloud $zcommon $zconfig $zdb $zdownload $zelectron $zelectronNative $zenv $zlogger $zlogin $zmulti $znetwork $znode $znoti $zpc $zperf $zpreload $zprotocol $zresource $zsafeStorage $zscreencap $zscript $zsessionManager $zsharedWorker $zsqlitebw $zupdater $zuri $zwindow MetriczGlobal __SENTRY_IPC__
+preload-sqlite.js bytes=2830607 exposed_unique=1 z_namespaces=0
+    __SENTRY_IPC__
+compact-app-preload.js bytes=2248899 exposed_unique=8 z_namespaces=7
+    $app $zFileManager $zconfig $zelectron $zfileRes $zlogger $znode __SENTRY_IPC__

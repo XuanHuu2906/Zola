@@ -1,0 +1,18 @@
+{
+  "command": [
+    "npm",
+    "install",
+    "--save-dev",
+    "--save-exact",
+    "pngjs@7.0.0",
+    "@types/pngjs@6.0.5",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    ".npm-cache"
+  ],
+  "started": "2026-11-05T11:09:40.619Z",
+  "finished": "2026-11-05T11:09:44.569Z",
+  "exitCode": 0,
+  "signal": null
+}

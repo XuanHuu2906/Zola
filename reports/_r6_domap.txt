@@ -1,0 +1,15 @@
+MAPPED DOMAINS: r=ALIAS l=CHAT u=CONVERSATION _=FILE y=FRIEND B=PROFILE Ie=EMOJI_STATUS
+
+=== DOMAIN -> COMMAND COUNT ===
+  UNKNOWN_R          57
+  PROFILE            43
+  FILE               41
+  FRIEND             24
+  UNKNOWN_C          22
+  CHAT               18
+  CONVERSATION       17
+  UNKNOWN_w          6
+  ALIAS              4
+  UNKNOWN_e          1
+
+unmapped letters: UNKNOWN_R,UNKNOWN_C,UNKNOWN_w,UNKNOWN_e

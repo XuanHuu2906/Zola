@@ -1,0 +1,47 @@
+
+===== main-dist/main.js (4169474 chars) =====
+   "setPreloads"                      = 0
+   "registerPreloadScript"            = 0
+   "getPreloads"                      = 0
+   "preload-sqlite"                   = 4
+   "preload-shared-worker"            = 3
+   "preload-noti"                     = 1
+   "compact-app-preload"              = 0
+   "preload-render.js"                = 1
+   "fromPartition(\"compact-app\")"   = 0
+   "fromPartition(\"persist:zalo\")"  = 16
+
+===== main-dist/compact-app.js (4007002 chars) =====
+   "setPreloads"                      = 1
+   "registerPreloadScript"            = 0
+   "getPreloads"                      = 1
+   "preload-sqlite"                   = 4
+   "preload-shared-worker"            = 3
+   "preload-noti"                     = 1
+   "compact-app-preload"              = 1
+   "preload-render.js"                = 1
+   "fromPartition(\"compact-app\")"   = 1
+   "fromPartition(\"persist:zalo\")"  = 12
+
+----- main-dist/main.js :: preload path sites -----
+@164531 "preload.js" :: "h:260,height:64},g=16;let y=null,v=null,R=null,b=null,T=null,w=null,S=!1,O=!1,D=null,N=null;function C(){if(N&&a.a.existsSync(N))return N;const e=c.a.join(i.app.getPath(\"temp\"),\"zpc-auc\");a.a.mkdirSync(e,{recursive:!0});const t=c.a.join(e,\"preload.js\");return a.a.writeFileSync(t,h,\"utf8\"),N=t,t}function A(e){y&&!y.isDestroyed()&&y.webContents.send(\"__auc__:u"
+@1194923 "preload-shared-worker.js" :: "r:!1,webPreferences:{webSecurity:!0,allowRunningInsecureContent:!1,webgl:!0,devTools:!1,partition:\"persist:zalo\",nodeIntegration:!1,backgroundThrottling:!1,contextIsolation:!0,nodeIntegrationInWorker:!1,sandbox:!1,preload:r.join(__dirname,\"preload-shared-worker.js\")},resizable:!0}),this.__zwindow.webContents.once(\"crashed\",(()=>{this.restart()})),this.__zwin"
+@2697103 "preload-render.js" :: ":!oe(),allowRunningInsecureContent:oe(),devTools:!0,partition:\"persist:zalo\",webgl:!0,experimentalFeatures:!0,experimentalCanvasFeatures:!0,backgroundThrottling:!1,nodeIntegration:!1,contextIsolation:!0,sandbox:!1,preload:c.join(__dirname,\"preload-render.js\")}},o={width:me.DEFAULT_CHILD_WIDTH,height:me.DEFAULT_CHILD_HEIGHT,minWidth:me.DEFAULT_MIN_WIDTH,minHe"
+@2726777 "preload-noti.js" :: "ableLargerThanScreen:!0,center:!0,focusable:!0,movable:m,resizable:m,alwaysOnTop:!0,show:m,webPreferences:{devTools:f(),webSecurity:!f(),nodeIntegration:!1,nodeIntegrationInWorker:!1,sandbox:!1,contextIsolation:!0,preload:a.join(__dirname,\"preload-noti.js\")}};function O(e=null){if(m)return;if(!y)return;let t=r.screen.getPrimaryDisplay().workArea;y.setAlwaysO"
+@4154483 "preload-sqlite.js" :: "lwaysOnTop:!1,skipTaskbar:!1,webPreferences:{webSecurity:!0,allowRunningInsecureContent:!1,webgl:!0,devTools:!0,partition:\"persist:zalo\",nodeIntegration:!1,contextIsolation:!0,nodeIntegrationInWorker:!0,sandbox:!1,preload:r.join(__dirname,\"preload-sqlite.js\")},resizable:!0}),this.__zwindow.webContents.once(\"crashed\",(()=>{this.logger.zsymb(18,\"wbW58a\",\"BW cr"
+
+----- main-dist/compact-app.js :: preload path sites -----
+@737912 "preload.js" :: "ll==p||null===(l=p.window)||void 0===l?void 0:l.resizable)||void 0===c||c,show:!1,backgroundColor:lt(),webPreferences:{webSecurity:!Object(f.isDev)(),nodeIntegration:!1,contextIsolation:!0,sandbox:!1,preload:v.a.join(__dirname,\"compact-app-preload.js\"),session:u.session.fromPartition(\"compact-app\"),additionalArguments:Object(ct.a)(d)},icon:v.a.join(Object(f."
+@1233667 "preload-shared-worker.js" :: "r:!1,webPreferences:{webSecurity:!0,allowRunningInsecureContent:!1,webgl:!0,devTools:!1,partition:\"persist:zalo\",nodeIntegration:!1,backgroundThrottling:!1,contextIsolation:!0,nodeIntegrationInWorker:!1,sandbox:!1,preload:r.join(__dirname,\"preload-shared-worker.js\")},resizable:!0}),this.__zwindow.webContents.once(\"crashed\",(()=>{this.restart()})),this.__zwin"
+@2675988 "preload-render.js" :: ":!oe(),allowRunningInsecureContent:oe(),devTools:!0,partition:\"persist:zalo\",webgl:!0,experimentalFeatures:!0,experimentalCanvasFeatures:!0,backgroundThrottling:!1,nodeIntegration:!1,contextIsolation:!0,sandbox:!1,preload:c.join(__dirname,\"preload-render.js\")}},o={width:me.DEFAULT_CHILD_WIDTH,height:me.DEFAULT_CHILD_HEIGHT,minWidth:me.DEFAULT_MIN_WIDTH,minHe"
+@2705662 "preload-noti.js" :: "ableLargerThanScreen:!0,center:!0,focusable:!0,movable:m,resizable:m,alwaysOnTop:!0,show:m,webPreferences:{devTools:f(),webSecurity:!f(),nodeIntegration:!1,nodeIntegrationInWorker:!1,sandbox:!1,contextIsolation:!0,preload:a.join(__dirname,\"preload-noti.js\")}};function O(e=null){if(m)return;if(!g)return;let t=r.screen.getPrimaryDisplay().workArea;g.setAlwaysO"
+@3991792 "preload-sqlite.js" :: "lwaysOnTop:!1,skipTaskbar:!1,webPreferences:{webSecurity:!0,allowRunningInsecureContent:!1,webgl:!0,devTools:!0,partition:\"persist:zalo\",nodeIntegration:!1,contextIsolation:!0,nodeIntegrationInWorker:!0,sandbox:!1,preload:r.join(__dirname,\"preload-sqlite.js\")},resizable:!0}),this.__zwindow.webContents.once(\"crashed\",(()=>{this.logger.zsymb(18,\"wbW58a\",\"BW cr"
+
+===== main-dist/preload-sqlite.js (2675898 chars) =====
+   "globalThis.$zsub"     = 1
+   "$zsub"                = 13
+   "exposeInMainWorld"    = 1
+   "contextBridge"        = 2
+   "window.$zsub"         = 0
+
+   DEF :: "=a.dirname(e);i.existsSync(n)||o.mkdirsSync(n),i.writeFileSync(e,\"\")}}},mWRi:function(e,t,n){\"use strict\";n.r(t);var r=n(\"VTBJ\"),a=n(\"qMt4\"),i=n(\"7jJJ\"),o=n(\"3sbe\"),s=n(\"Pjj5\"),c=n(\"ntSb\"),l=n(\"i6mH\"),u=n(\"+NII\"),d=n(\"a4Xj\");const p={listeners:{},provider:{}};function f(e,t){let n=e.split(\".\"),r=t;for(let a of n)r[a]=r[a]||{},r=r[a];return r}function h(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{-1==a.indexOf(e)&&a.push(e),p.provider[r]||(p.provider[r]=t[n.name](((...e)=>{for(let t of a)t(...e)})))}}function m(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{const r=a.indexOf(e);-1!=r&&a.splice(r,1),a.length<=0&&(t[n.name](),delete p.provider[n.apiKey])}}globalThis.$zsub={};const g={};function _(e,t,n){let a=g[t];void 0===a&&(a={}),a=Object(r.a)(Object(r.a)({},a),n),g[t]=a;const{args:i,ports:o}=a;if(void 0!==i&&void 0!==o){const n=p.listeners[e];for(const e of n){const[t,...n]=i;t.ports=o,e(t,...n)}delete g[t]}}function y(e,t,n){const{apiKey:r}=n,a=p.listeners[r];f(e,$zsub)[n.name]=e=>{if(-1==a.indexOf(e)&&a.push(e),!p.provider[r]){const e=(e,...t)=>{_(r,e,{args:t})};p.provider[r]=t[n.name](e)}}}let v=!1;function b(){if(v)return;v=!0;const e=e=>"

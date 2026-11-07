@@ -1,0 +1,25 @@
+enums: 35
+
+## $zdb  <- O.a
+   literal not found
+
+## $zsessionManager  <- et.a
+   literal not found
+
+## $zconfig  <- K.a
+   literal not found
+
+## $zMsgChannel  <- ee.a
+   literal not found
+
+## $zscript  <- te.a
+   literal not found
+
+## $zsqlitebw  <- tt.a
+   literal not found
+
+## $zsafeStorage  <- nt.a
+   literal not found
+
+## $zlogger  <- b.a
+   literal not found

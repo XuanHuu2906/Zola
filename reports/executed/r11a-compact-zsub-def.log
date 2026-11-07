@@ -1,0 +1,62 @@
+## pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars)
+
+--- definition-shaped patterns ---
+   "$zsub={"              = 0
+   "$zsub ={"             = 0
+   "$zsub={}"             = 0
+   "var $zsub"            = 0
+   "let $zsub"            = 0
+   "const $zsub"          = 0
+   "window.$zsub"         = 0
+   "globalThis.$zsub"     = 0
+   "self.$zsub"           = 0
+   "global.$zsub"         = 0
+   "[\"$zsub\"]"          = 0
+   "['$zsub']"            = 0
+   "$zsub:"               = 0
+   "\"$zsub\""            = 0
+   "'$zsub'"              = 0
+
+--- first 6 $zsub contexts ---
+
+#1 @14410 :: ",n.d(t,\"a\",(function(){return l}));var a=n(\"XvqS\"),i=n(\"5TVm\"),r=n(\"xQyS\"),s=n(\"z0WU\");const o=new i.a,l=o.add;o.remove;$zsub.$zapp.beforeAppClose((async()=>{const e=Object(r.b)(o.executeHandlers,{name:\"before-close\"}),t=await Object(i.b)(e"
+
+#2 @1370870 :: "d\",this._onFrameError.bind(this)),this._webView.addEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this)))),M||$zsub.$zwindow.onVisibilityChange(this._onWindowStateChanged),n._fileData){let e=\"Zalo File\";this.props.convName&&(e+=` "
+
+#3 @1371803 :: "this._webView.removeEventListener(\"did-finish-load\",this._onFrameLoaded.bind(this))),clearInterval(this.retryInterval)),$zsub.$zwindow.removeListenVisibilityChange(this._onWindowStateChanged),window.removeEventListener(\"keydown\",this._onKey"
+
+#4 @1498075 :: "Channel.DownloadFileProgress]:this.onProgress.bind(this),[r.b.DownloadChannel.DownloadFileScan]:this.onScan.bind(this)},$zsub.$zdownload.onDownloadResp(this.onChannel.bind(this))}setDownloadFrom(e){e&&(this.downloadFrom=e)}add(e){null!=e&&e"
+
+#5 @1570930 :: ".searchManager=e,this.processQueue=this.processQueue.bind(this),this._dbSearch=t,this.speedUpMode=!1,this.applyConfig(),$zsub.$zwindow.onVisibilityChange(((e,t)=>{switch(t){case\"blur\":case\"minimize\":case\"hide\":this.speedUpMode=!0,this.apply"
+
+#6 @2886052 :: ".a.AFMC_START,this.handleStartAFMC.bind(this)),a.addEventListener(F.a.AFMC_FINISHED,this.handleFinishedAFMC.bind(this)),$zsub.$zscreencap.onStartScreenCapture(this.trackByKey.bind(this,l.c.UseScreenCapture)),M.default.subscribe(D.a.CHILD_WI"
+
+--- webpack runtime / chunk loader ---
+   "webpackJsonp"             = 2
+   "__webpack_require__"      = 23
+   "this.webpackChunk"        = 0
+   "webpackChunk"             = 0
+   ".e("                      = 78
+   "push([["                  = 0
+   "__ZaBUNDLENAME__"         = 64
+   "window.__ZaBUNDLENAME__"  = 3
+
+--- is $zuri declared locally? ---
+   "$zuri="             = 0
+   "$zuri ="            = 0
+   "window.$zuri"       = 0
+   "var $zuri"          = 0
+   "const $zuri"        = 0
+   "let $zuri"          = 0
+
+--- chunk-id demand table (first 10 .e() sites) ---
+@431105 :: "m.MSG_DOODLE:{let e=t.message.thumbUrl||t.message.normalUrl||t.message.oriUrl;!$s.g(e)||$s.e(e)||Rn.a.jxl.enable_pin_jxl||(e=$s.o(e),r.convertible=\"jx"
+@431339 :: "MSG_PHOTO:{let n=t.message.thumbUrl||t.message.normalUrl||t.message.oriUrl;if(!$s.g(n)||$s.e(n)||Rn.a.jxl.enable_pin_jxl||(n=$s.o(n),r.convertible=\"jx"
+@650509 :: "astSmsLocalId \"+this.props.conversation.lastSmsLocalId);let je=cn.c(this.selectedMsg)&&!cn.e(this.selectedMsg)&&cn.g(this.selectedMsg).length==cn.i(th"
+@650972 :: "areMultiMsg.bind(this),shouldShowDownload:je,selectedMsg:this.selectedMsg,canShare:Ge&&!cn.e(this.selectedMsg),canCopyAsText:Ve,copyMessageAsText:this"
+@659731 :: "le:We,\"data-id\":\"div_SelectedMsg_Share\",disabled:this.countSelectedMsgE2eeError>0||!ze||cn.e(this.selectedMsg)||this.state.isProtectedContent})):null,"
+@660187 :: "itle:Ye,\"data-id\":\"div_SelectedMsg_Download\",disabled:this.countSelectedMsgE2eeError>0||cn.e(this.selectedMsg)||this.state.isProtectedContent&&!1===cn"
+@1869478 :: "\"[GroupWorker] {}\",\"x8BEZb\"],e)}static doJoinGroup(e,t){try{if(!1===o.h(t.totalMembers)&&o.e(t.totalMembers)&&(e.totalMembers=t.totalMembers),!e.displ"
+@1869867 :: "ddMembers.push(a))}}catch(n){}}static doRemoveMemberGroup(e,t){!1===o.h(t.totalMembers)&&o.e(t.totalMembers)&&(e.totalMembers=t.totalMembers);const n="
+@1870282 :: "default.userIdMe())return!0;return!1}static doAddAdmin(e,t){if(!1===o.h(t.totalMembers)&&o.e(t.totalMembers)&&(e.totalMembers=t.totalMembers),!t.updat"
+@1870603 :: "dAdmin=[]),e.addAdmin.push(a));var n}static doRemoveAdmin(e,t){!1===o.h(t.totalMembers)&&o.e(t.totalMembers)&&(e.totalMembers=t.totalMembers);const n="

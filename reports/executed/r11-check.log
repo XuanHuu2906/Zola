@@ -1,0 +1,119 @@
+
+> zalo-apple-glass-ui@0.3.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.3.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.3.0 lint
+> eslint src/renderer src/shared src/adapters src/services src/transport src/composition src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.3.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts
+
+✔ auth: happy path signs in, failure path reports unsupported (3.2405ms)
+(node:36128) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/adapters.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ contacts: list filters, failure path returns invalid for unknown conversation (0.3242ms)
+✔ conversations: markRead clears unread and notifies subscribers (0.242ms)
+✔ messaging: send appends, echoes clientMessageId, and rejects empty text (0.2931ms)
+✔ messaging: simulated network failure is retryable and does not append (0.2017ms)
+✔ messaging: aborted signal yields cancelled and does not append (0.178ms)
+✔ media: upload reports progress per chunk; invalid size fails (0.36ms)
+✔ groups: known group resolves, unknown fails, unsupported mutations are labelled (0.2175ms)
+✔ calling and sync are unavailable, not mocked (0.2402ms)
+✔ notifications: create returns a desktop notification; disabled port is unavailable (0.2122ms)
+✔ secureChannel: reflects conversation requirement without exposing crypto (0.1914ms)
+✔ transport: connect requires a handle, status transitions, events unsubscribe (0.3347ms)
+✔ simulateIncoming: bumps unread, notifies conversation and incoming subscribers (0.2213ms)
+✔ simulateDisconnect: flips to offline and emits a retryable event; connect restores (0.1845ms)
+✔ a disabled port refuses every method, not just its capability label (0.4053ms)
+✔ a disabled port still returns an unsubscribe function from listeners (0.0912ms)
+✔ mock client satisfies IZaloClient and never reports itself as authorized (0.1977ms)
+✔ a plain send goes pending once and then sent (3.0669ms)
+✔ an armed failure is reported failed, and retry re-sends the same message (1.9225ms)
+✔ arming is one-shot: the next send after a failure succeeds (2.9211ms)
+✔ empty text is refused before it becomes an outbox entry (0.2195ms)
+✔ incoming push is forwarded once with its conversation and text (0.2731ms)
+✔ reset drops outbox state, so an old id is no longer known (5.3933ms)
+✔ TS search retains Vietnamese name and preview matching (0.7349ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.1812ms)
+✔ sending is immutable, bounded and local to the selected chat (14.9521ms)
+✔ delivery settles one message without touching the rest of the dataset (0.4521ms)
+✔ incoming simulation targets another chat, rotates, and bumps only its unread (0.5177ms)
+✔ attachments retain names and sizes only, with bounded display metadata (0.5257ms)
+✔ transfer progress advances on a fixed step, clamps, and settles at 100 (0.1867ms)
+✔ setTransfer only touches the addressed message and clamps its progress (0.4913ms)
+✔ a call rings, connects, counts only connected seconds, and ends once (0.2394ms)
+✔ call toggles are independent, and camera only exists in a video call (0.1346ms)
+✔ connection state gates sending and only reconnects from offline (0.2041ms)
+✔ recovery flushes pending sends but never rewrites failed ones (0.5779ms)
+✔ history pages keep every id positive and unique across the whole dataset (0.5486ms)
+✔ page size is clamped to 1..50 and pages never overshoot historyRemaining (0.201ms)
+✔ demo seeds are independent across sessions (0.1495ms)
+✔ preferences tolerate corrupt storage and clamp values (0.1859ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.1354ms)
+✔ session parse accepts only a signed-in record and never invents one (0.2286ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (0.4897ms)
+✔ IPC trust and network policy distinguish development from production (0.2248ms)
+✔ layer boundaries hold against resolved import paths, not specifier text (4.165ms)
+✔ the composition root is the only place that imports both an adapter and a service (6.3695ms)
+✔ every variant map resolves both states to distinct, complete class strings (0.3243ms)
+✔ class maps carry no empty-string gaps except the intentional idle no-ops (0.1079ms)
+✔ delivery is a three-state map that keeps its own ARIA labels (0.2094ms)
+✔ direction mapping never treats the sender as a layout class (0.0962ms)
+✔ avatar variants always emit exactly one size token and one art fallback (0.133ms)
+✔ wallpaper is a typed tone map keyed on chat kind, not on a CSS variable (0.3001ms)
+✔ glass token ladder declares one fill, blur and shadow per tier (0.1826ms)
+✔ typography, spacing and motion live on the ladder, not in the stylesheet (0.799ms)
+✔ type roles cover every size the stylesheet actually needs (0.3585ms)
+✔ border family exists in both themes and is not borrowed from Zalo (0.3275ms)
+✔ components read glass values only through tokens (0.8066ms)
+✔ action colours are tokens, and their override sets stay honest (0.4118ms)
+✔ degradation covers every blurred tier in one switch (0.2189ms)
+✔ glass is never nested in a containing block or transform layer (0.1224ms)
+✔ every glass surface takes its radius from the ladder, including the compact shell (0.294ms)
+✔ the date pill keeps the shipped glass idiom: translucent fill plus its own blur (0.1093ms)
+✔ the glass primitives every screen shares are styled, not inert class names (0.1932ms)
+✔ secondary screens exist and declare no backend capability (0.404ms)
+✔ overlay CSS stays inside the token system (0.3363ms)
+✔ HTML-escapes user-generated message content (0.2146ms)
+✔ removes diacritics in Vietnamese search terms (0.1114ms)
+✔ search matches normalized names (0.1238ms)
+✔ unread filter selects only unread (0.0859ms)
+✔ group and work filters use categories independently (0.1039ms)
+✔ pinned chats are sorted before unpinned (0.0864ms)
+✔ file metadata is textual and size-limited (0.1172ms)
+✔ sendText returns an optimistic bubble immediately and settles on ack (0.4265ms)
+✔ empty text is rejected without creating an outbox entry (0.1375ms)
+✔ a retryable network failure is retried up to the attempt limit (0.3752ms)
+✔ exhausting maxAttempts lands in failed, and retry() starts over (0.7911ms)
+✔ a permanent error is never retried (0.2701ms)
+✔ a push echo with the same clientMessageId does not duplicate the bubble (0.2316ms)
+✔ an incoming message is delivered once and later status events update it (0.1418ms)
+✔ dispose cancels scheduled retries and unsubscribes from the client (0.2004ms)
+✔ assertLoopback rejects non-loopback hosts and non-http schemes (0.558ms)
+✔ connect performs a real HTTP handshake over a loopback socket (36.0129ms)
+✔ a 401 handshake is an unauthorized failure, not a retryable network error (8.7651ms)
+✔ an empty session handle is refused before any socket is opened (0.1448ms)
+✔ connection refused is a retryable network failure (1.0051ms)
+✔ pumpPush counts real SSE frames delivered by the loopback server (10.9792ms)
+✔ reconnectOnce backs off and succeeds once the server accepts again (12.2569ms)
+✔ reconnect stops after maxRetries instead of looping forever (17.0877ms)
+✔ disconnect aborts and emits one disconnected event (6.2924ms)
+✔ a signal aborted before connect yields cancelled and opens no socket (0.2971ms)
+ℹ tests 89
+ℹ suites 0
+ℹ pass 89
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 306.4967
+
+CHECK_EXIT=0

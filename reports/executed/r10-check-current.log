@@ -1,0 +1,90 @@
+
+> zalo-apple-glass-ui@0.3.0 check
+> npm run typecheck && npm run lint && npm test
+
+
+> zalo-apple-glass-ui@0.3.0 typecheck
+> tsc --noEmit && tsc -p tsconfig.electron.json --noEmit
+
+
+> zalo-apple-glass-ui@0.3.0 lint
+> eslint src/renderer src/shared src/adapters src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/e2e vite.config.mts playwright.config.ts
+
+
+> zalo-apple-glass-ui@0.3.0 test
+> node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts
+
+✔ auth: happy path signs in, failure path reports unsupported (3.2722ms)
+✔ contacts: list filters, failure path returns invalid for unknown conversation (0.7553ms)
+✔ conversations: markRead clears unread and notifies subscribers (0.2947ms)
+✔ messaging: send appends, echoes clientMessageId, and rejects empty text (0.3143ms)
+✔ messaging: simulated network failure is retryable and does not append (0.2423ms)
+✔ messaging: aborted signal yields cancelled and does not append (0.194ms)
+✔ media: upload reports progress per chunk; invalid size fails (0.3483ms)
+✔ groups: known group resolves, unknown fails, unsupported mutations are labelled (0.2389ms)
+✔ calling and sync are unavailable, not mocked (0.2481ms)
+✔ notifications: create returns a desktop notification; disabled port is unavailable (0.2325ms)
+✔ secureChannel: reflects conversation requirement without exposing crypto (0.1722ms)
+✔ transport: connect requires a handle, status transitions, events unsubscribe (0.2009ms)
+✔ simulateIncoming: bumps unread, notifies conversation and incoming subscribers (0.2449ms)
+✔ simulateDisconnect: flips to offline and emits a retryable event; connect restores (0.2026ms)
+(node:32972) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///D:/Zalo/tests/adapters.test.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\D:\Zalo\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ mock client satisfies IZaloClient and never reports itself as authorized (0.1951ms)
+✔ TS search retains Vietnamese name and preview matching (2.0314ms)
+✔ TS filters retain independent group/work/unread categories and pinned order (0.5961ms)
+✔ sending is immutable, bounded and local to the selected chat (46.5389ms)
+✔ delivery settles one message without touching the rest of the dataset (0.3542ms)
+✔ incoming simulation targets another chat, rotates, and bumps only its unread (0.3291ms)
+✔ attachments retain names and sizes only, with bounded display metadata (0.3859ms)
+✔ transfer progress advances on a fixed step, clamps, and settles at 100 (0.1337ms)
+✔ setTransfer only touches the addressed message and clamps its progress (0.4085ms)
+✔ a call rings, connects, counts only connected seconds, and ends once (0.183ms)
+✔ call toggles are independent, and camera only exists in a video call (0.2283ms)
+✔ connection state gates sending and only reconnects from offline (0.7765ms)
+✔ recovery flushes pending sends but never rewrites failed ones (0.4927ms)
+✔ history pages keep every id positive and unique across the whole dataset (0.3992ms)
+✔ page size is clamped to 1..50 and pages never overshoot historyRemaining (0.165ms)
+✔ demo seeds are independent across sessions (0.1039ms)
+✔ preferences tolerate corrupt storage and clamp values (0.1287ms)
+✔ preference serialization excludes chat, draft and arbitrary fields (0.0861ms)
+✔ session parse accepts only a signed-in record and never invents one (0.1555ms)
+✔ packaged protocol rejects external origins, credentials, unsafe paths and non-assets (0.7436ms)
+✔ IPC trust and network policy distinguish development from production (0.1471ms)
+✔ layer boundaries hold against resolved import paths, not specifier text (2.9192ms)
+✔ every variant map resolves both states to distinct, complete class strings (0.1636ms)
+✔ class maps carry no empty-string gaps except the intentional idle no-ops (0.0671ms)
+✔ delivery is a three-state map that keeps its own ARIA labels (0.1267ms)
+✔ direction mapping never treats the sender as a layout class (0.0482ms)
+✔ avatar variants always emit exactly one size token and one art fallback (0.092ms)
+✔ wallpaper is a typed tone map keyed on chat kind, not on a CSS variable (0.1515ms)
+✔ glass token ladder declares one fill, blur and shadow per tier (0.5065ms)
+✔ typography, spacing and motion live on the ladder, not in the stylesheet (0.7494ms)
+✔ type roles cover every size the stylesheet actually needs (0.2431ms)
+✔ border family exists in both themes and is not borrowed from Zalo (0.1195ms)
+✔ components read glass values only through tokens (0.4108ms)
+✔ action colours are tokens, and their override sets stay honest (0.1979ms)
+✔ degradation covers every blurred tier in one switch (0.0685ms)
+✔ glass is never nested in a containing block or transform layer (0.0498ms)
+✔ every glass surface takes its radius from the ladder, including the compact shell (0.1172ms)
+✔ the date pill keeps the shipped glass idiom: translucent fill plus its own blur (0.0429ms)
+✔ the glass primitives every screen shares are styled, not inert class names (0.0808ms)
+✔ secondary screens exist and declare no backend capability (0.3193ms)
+✔ overlay CSS stays inside the token system (0.104ms)
+✔ HTML-escapes user-generated message content (0.0913ms)
+✔ removes diacritics in Vietnamese search terms (0.0587ms)
+✔ search matches normalized names (0.0822ms)
+✔ unread filter selects only unread (0.0743ms)
+✔ group and work filters use categories independently (0.0816ms)
+✔ pinned chats are sorted before unpinned (0.0518ms)
+✔ file metadata is textual and size-limited (0.0903ms)
+ℹ tests 62
+ℹ suites 0
+ℹ pass 62
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 192.165

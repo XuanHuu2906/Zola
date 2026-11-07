@@ -1,0 +1,87 @@
+unpacked_exists=true
+hits=27
+  native\nativelibs\db-cross-v4\dist\binding.d.ts bytes=526
+  native\nativelibs\db-cross-v4\dist\binding.js bytes=446
+  native\nativelibs\db-cross-v4\prebuilt\window\electron_x86\db-cross-v4-native.node bytes=1239552
+  native\nativelibs\file-utilities\ia32\file-utilities.node bytes=1757184
+  native\nativelibs\file-utilities\x64\file-utilities.node bytes=2233856
+  native\nativelibs\file-utils\darwin\file-utils.node bytes=46444
+  native\nativelibs\file-utils\darwin-arm\file-utils.node bytes=88537
+  native\nativelibs\file-utils\ia32\file-utils.node bytes=234496
+  native\nativelibs\file-utils\x64\file-utils.node bytes=292864
+  native\nativelibs\mp4thumb\win32\ia32\mp4thumb.node bytes=2694656
+  native\nativelibs\mp4thumb\win32\x64\mp4thumb.node bytes=3584000
+  native\nativelibs\os-sys-info\win32_ia32\os_sys_info.node bytes=116736
+  native\nativelibs\os-sys-info\win32_x64\os_sys_info.node bytes=157184
+  native\nativelibs\sqlite3\binding\napi-v6-win32-ia32\node_sqlite3.node bytes=4695040
+  native\nativelibs\sqlite3\sqlite3-binding.js bytes=212
+  native\nativelibs\v8-profiles\profiler_electron1.8_win32_ia32.node bytes=120320
+  native\nativelibs\win-utils\ia32\win-utils.node bytes=207872
+  native\nativelibs\zcall\binding.js bytes=353
+  native\nativelibs\zcall\zcall_ia32.node bytes=4675584
+  native\nativelibs\zfile\win32\addon.node bytes=434688
+  native\nativelibs\zfile\win64\addon.node bytes=583168
+  native\nativelibs\zimage\ia32\zimage.node bytes=106496
+  native\nativelibs\zjxl\build\win32_ia32\jxl.node bytes=967680
+  native\nativelibs\zlang\win32-ia32\zlang.win32-ia32.node bytes=325120
+  native\nativelibs\zlang\win32-x64\zlang.win32-x64.node bytes=361984
+  native\nativelibs\zwalker\win32-ia32-msvc\zwalker.win32-ia32-msvc.node bytes=1502208
+  native\nativelibs\zwalker\win32-x64-msvc\zwalker.win32-x64-msvc.node bytes=1775616
+
+=== native\nativelibs\db-cross-v4\dist\binding.d.ts
+declare let addon: {
+    getVersion: () => string;
+    parseBinNet: () => any;
+    decompressAndDecryptDb: (input: String, output: String, password: String) => {
+        input: String;
+        output: String;
+        password: String;
+        result: number;
+    };
+    decompressAndDecryptDb_V2: (input: String, output: String, password: String, onProgress: (db: String) => void) => {
+        input: String;
+        output: String;
+        password: String;
+        result: number;
+    };
+};
+export = addon;
+
+
+=== native\nativelibs\db-cross-v4\dist\binding.js
+"use strict";
+// @ts-ignore
+let addon;
+if (process.platform === 'darwin') {
+    addon = require(`../prebuilt/darwin/electron/${process.arch}/db-cross-v4-native.node`);
+}
+else {
+    if (process.arch === 'x64') {
+        addon = require('../prebuilt/window/electron_x86_64/db-cross-v4-native.node');
+    }
+    else {
+        addon = require('../prebuilt/window/electron_x86/db-cross-v4-native.node');
+    }
+}
+module.exports = addon;
+
+
+=== native\nativelibs\sqlite3\sqlite3-binding.js
+var BINARY_PATH = `./binding/napi-v6-${process.platform}-${process.arch}/node_sqlite3.node`;
+console.debug('BINARY_PATH', BINARY_PATH);
+var binding = require(BINARY_PATH);
+module.exports = exports = binding;
+
+
+=== native\nativelibs\zcall\binding.js
+function getLib(){
+    if(process.platform === 'win32'){
+        if(process.arch === 'x64') return require('./zcall_x64.node');
+        return require('./zcall_ia32.node');
+    }else if(process.platform === 'darwin'){
+    	return require('./zcall_mac.node');
+    }else{
+        return {error: 'not support'};
+    }
+}
+module.exports = getLib();

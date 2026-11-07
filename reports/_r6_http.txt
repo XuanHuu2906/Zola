@@ -1,0 +1,17 @@
+##### /api/message/sms
+@2925255
+ge/deliveredv2"},11150:{domainType:l,commandId:11150,path:"/api/message/seen"},12118:{domainType:l,commandId:12118,path:"/api/message/seenv2"},[o.a]:{domainType:l,commandId:o.a,path:o.b},12114:{domainType:l,commandId:12114,path:"/api/message/fetchImportant"},11144:{domainType:l,commandId:11144,path:"/api/message/typing"},11770:{domainType:l,commandId:11770,path:"/keepalive"},11151:{domainType:l,commandId:11151,path:"/api/message/sms"},11286:{domainType:l,commandId:11286,path:"/api/message/link"},11774:{domainType:l,commandId:11774,path:"/api/message/contact"},11154:{domainType:l,commandId:11154,path:"/api/message/sticker"},11771:{domainType:l,commandId:11771,path:"/api/message/quote"},11779:{domainType:l,commandId:11779,path:"/api/message/delete"},11778:{domainType:l,commandId:11778,path:"/api/message/deleteconver"},11281:{domai
+
+##### getCurrentApiDomain
+(none)
+##### credentials:"include"
+(none)
+##### withCredentials
+@3658834
+OfMonthOrdinalParse:/\d{1,2}(d|na|mh)/,ordinal:function(e){return e+(1===e?"d":e%10==2?"na":"mh")},week:{dow:1,doy:4}})}(n("wd/R"))},"9sEF":function(e,t,n){"use strict";n.d(t,"a",(function(){return i}));n("VTBJ");var a=n("LeFD");const i=({url:e,timeout:t=6e4,signal:n,maxTTFB:i=2e4,method:r="GET",onFirstByte:s})=>new Promise(((o,l)=>{if(null!=n&&n.aborted)return l(new a.a);const c=new XMLHttpRequest,d=()=>c.abort();c.withCredentials=!1,c.timeout=t,c.onload=()=>200===c.status?c.responseURL.endsWith("/default")?l(new a.b):o(null):l(new a.c(c.status,c.statusText)),c.onerror=()=>l(new a.c(c.status,c.statusText));const u=setTimeout((()=>{l(new a.e),d()}),i);c.onprogress=e=>{clearTimeout(u),c.onprogress=null,s&&queueMicrotask((()=>s(e)))},c.onloadend=()=>(null==n||n.removeEventListener("abort",d),l(new a.f)),c.onabort=()=>l(new a.a),c.
+
+@3882326
+;if(T.has(e)){if(0!=V)continue;V=1}let t=new FormData;t.append("chunkContent",new File([i[s]],b));let a=Object(r.a)({},M);a.chunkId=e;let o=this.getUrl(U,x,a);D.push({retryChunk:O.q.SEND_CHUNK,checksum:n,requestStartTime:P,requestStartPoint:k,totalChunk:c,partId:L,chunkWillSent:V,nochunksent:y,chunkSize:l,totalSize:d.size,file:{name:b,size:d.size},chunkId:e,data:t,clientId:A,commandId:F,config:{timeout:Object(R.c)(),withCredentials:!0,headers:j,zcommandId:F},url:o})}return D}getUrl(e,t,n){const a=D.default.encodeAES(JSON.stringify(n)),i=encodeURIComponent(a);let r=e+M.default._getCommonParams()+"&params="+i;return t&&(r+="&type="+t),r}async handleSendChunkResp(e,t,n,a){if(t&&t===c.g)return{type:this.type,result:{error:null,isLastChunk:!0,respType:c.e.TRANS_TO_FORWARD,res:n}};let i=!1;if(n.data||(n.data={}),0===n.error_code&&(i=a
+
+##### x-za-
+(none)

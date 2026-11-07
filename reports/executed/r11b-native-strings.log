@@ -1,0 +1,12 @@
+bytes=1239552
+_register_addon_             ascii=  1 utf16=  0
+getVersion                   ascii=  1 utf16=  0
+parseBinNet                  ascii=  1 utf16=  0
+decompressAndDecryptDb_V2    ascii=  1 utf16=  0
+decompressAndDecryptDb       ascii=  2 utf16=  0
+napi_register_module_v1      ascii=  0 utf16=  0
+sqlcipher                    ascii=  0 utf16=  0
+zip                          ascii=  0 utf16=  0
+password                     ascii=  1 utf16=  0
+PRAGMA                       ascii=  0 utf16=  0
+BINNET                       ascii=  0 utf16=  0

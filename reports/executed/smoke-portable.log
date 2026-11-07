@@ -1,0 +1,10 @@
+D:\Zalo\node_modules\playwright-core\lib\server\progress.js:86
+      const timeoutError = new import_errors.TimeoutError(`Timeout ${timeout}ms exceeded.`);
+                           ^
+
+TimeoutError: Timeout 120000ms exceeded.
+    at ProgressController.run (D:\Zalo\node_modules\playwright-core\lib\server\progress.js:86:28)
+    at ElectronDispatcher._runCommand (D:\Zalo\node_modules\playwright-core\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (D:\Zalo\node_modules\playwright-core\lib\server\dispatchers\dispatcher.js:325:39)
+
+Node.js v24.22.2

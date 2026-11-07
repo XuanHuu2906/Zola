@@ -1,0 +1,23 @@
+JS bundles scanned: 116
+
+pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js  {"RTCPeerConnection":6}
+pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js  {"RTCPeerConnection":6}
+pc-dist/libs/libsignal-protocol.static.js  {"getUserMedia":7}
+pc-dist/search-worker.f32c58b63b6f4273a8a4.js  {"RTCPeerConnection":6}
+pc-dist/sync-v2-sub-worker.f32c58b63b6f4273a8a4.js  {"RTCPeerConnection":6}
+
+--- TOTALS ACROSS ALL BUNDLES ---
+{
+ "getUserMedia": 7,
+ "getDisplayMedia": 0,
+ "mediaDevices": 0,
+ "RTCPeerConnection": 24,
+ "RTCRtpSender": 0,
+ "MediaStream": 0
+}
+
+capture tokens found: 7
+RTCPeerConnection tokens: 24
+
+Token counts alone are NOT a call-site count: a library may define an API it never calls.
+Run tools/verify-f7-rtc-context.cjs for the resolved verdict (definition vs call site).

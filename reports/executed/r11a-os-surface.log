@@ -1,0 +1,42 @@
+﻿# R11A OS-surface observation - executed 2026-11-06T14:18:10.3328742Z
+# Read-only. No write, no attach, no injection.
+
+== named pipes matching ZCall/PipeZ/zalo ==
+PipeZCallRecv
+PipeZCallSend
+pipe_count=2
+
+== zalo:// protocol registration ==
+key=HKCU:\Software\Classes\zalo  EXISTS=True
+URLProtocol_value=URL:zalo
+open_command="C:\Users\huung\AppData\Local\Programs\Zalo\Zalo.exe" "--" "%1"
+
+== process tree ==
+
+Name        Id
+----        --
+Zalo      3976
+Zalo      4668
+Zalo      6472
+Zalo     10836
+Zalo     11348
+Zalo     18220
+Zalo     18292
+Zalo     19968
+Zalo     22316
+ZaloCall 23444
+ZaloCap  34072
+
+
+
+
+== Zalo top-level windows (Unicode marshaling) ==
+note=all windows reported VIS=False at observation time (app minimized to tray)
+WINDOW_OWNER_PID=18220 CLASS=Chrome_WidgetWin_1 TITLE=Zalo
+UIA_DESCENDANTS_ON_HIDDEN_WINDOW=0 BUTTONS=0 EDITS=0 LISTITEMS=0
+
+== Zalo Start Menu shortcut (created by app at startup) ==
+path=C:\Users\huung\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Zalo.lnk
+target=C:\Users\huung\AppData\Local\Programs\Zalo\Zalo.exe
+arguments=''
+note=arguments empty; AUMID com.vng.zalo is set by writeShortcutLink in main.js

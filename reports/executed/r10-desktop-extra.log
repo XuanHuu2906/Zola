@@ -1,0 +1,5 @@
+
+> zalo-apple-glass-ui@0.3.0 test:desktop:extra
+> node tools/qa-desktop-extra.cjs
+
+PASS: drag-region hit map, three window sizes, DSF 1/1.25/1.5/2, zoom 1/1.25/1.5/2, AX names, control focus

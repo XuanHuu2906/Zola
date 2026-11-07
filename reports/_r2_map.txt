@@ -1,0 +1,176 @@
+rules parsed=15950
+light selector=":root,:root .light" vars=418
+dark  selector=":root .dark" vars=725
+scale tokens light=0 dark=305
+semantic tokens light=418 dark=420
+
+=== semantic token groups (light) ===
+
+## accent  n=132
+  --accent-blue-bg-subtle --accent-blue-bg --accent-blue-bg-bold --accent-blue-border-subtle --accent-blue-border --accent-blue-border-bold --accent-blue-text-subtle --accent-blue-text --accent-blue-text-bold --accent-blue-icon-subtle --accent-blue-icon --accent-blue-icon-bold --accent-red-bg-subtle --accent-red-bg --accent-red-bg-bold --accent-red-border-subtle --accent-red-border --accent-red-border-bold --accent-red-text-subtle --accent-red-text --accent-red-text-bold --accent-red-icon-subtle --accent-red-icon --accent-red-icon-bold --accent-orange-bg-subtle --accent-orange-bg --accent-orange-bg-bold --accent-orange-border-subtle --accent-orange-border --accent-orange-border-bold --accent-orange-text-subtle --accent-orange-text --accent-orange-text-bold --accent-orange-icon-subtle --accent-orange-icon --accent-orange-icon-bold --accent-green-bg-subtle --accent-green-bg --accent-green-bg-bold --accent-green-border-subtle --accent-green-border --accent-green-border-bold --accent-green-text-subtle --accent-green-text --accent-green-text-bold --accent-green-icon-subtle --accent-green-icon --accent-green-icon-bold --accent-steal-bg-subtle --accent-steal-bg --accent-steal-bg-bold --accent-steal-border-subtle --accent-steal-border --accent-steal-border-bold --accent-steal-text-subtle --accent-steal-text --accent-steal-text-bold --accent-steal-icon-subtle --accent-steal-icon --accent-steal-icon-bold --accent-skyblue-bg-subtle --accent-skyblue-bg --accent-skyblue-bg-bold --accent-skyblue-border-subtle --accent-skyblue-border --accent-skyblue-border-bold --accent-skyblue-text-subtle --accent-skyblue-text --accent-skyblue-text-bold --accent-skyblue-icon-subtle --accent-skyblue-icon --accent-skyblue-icon-bold --accent-pink-bg-subtle --accent-pink-bg --accent-pink-bg-bold --accent-pink-border-subtle --accent-pink-border --accent-pink-border-bold --accent-pink-text-subtle --accent-pink-text --accent-pink-text-bold --accent-pink-icon-subtle --accent-pink-icon --accent-pink-icon-bold --accent-purple-bg-subtle --accent-purple-bg --accent-purple-bg-bold --accent-purple-border-subtle --accent-purple-border --accent-purple-border-bold --accent-purple-text-subtle --accent-purple-text --accent-purple-text-bold --accent-purple-icon-subtle --accent-purple-icon --accent-purple-icon-bold --accent-stealblue-bg-subtle --accent-stealblue-bg --accent-stealblue-bg-bold --accent-stealblue-border-subtle --accent-stealblue-border --accent-stealblue-border-bold --accent-stealblue-text-subtle --accent-stealblue-text --accent-stealblue-text-bold --accent-stealblue-icon-subtle --accent-stealblue-icon --accent-stealblue-icon-bold --accent-yellow-bg-subtle --accent-yellow-bg --accent-yellow-bg-bold --accent-yellow-border-subtle --accent-yellow-border --accent-yellow-border-bold --accent-yellow-text-subtle --accent-yellow-text --accent-yellow-text-bold --accent-yellow-icon-subtle --accent-yellow-icon --accent-yellow-icon-bold --accent-grey-bg-subtle --accent-grey-bg --accent-grey-bg-bold --accent-grey-border-subtle --accent-grey-border --accent-grey-border-bold --accent-grey-text-subtle --accent-grey-text --accent-grey-text-bold --accent-grey-icon-subtle --accent-grey-icon --accent-grey-icon-bold
+
+## control/button  n=124
+  --button-primary-normal --button-primary-hover --button-primary-pressed --button-primary-disabled --button-primary-text --button-primary-text-disabled --button-primary-focus-bg --button-primary-focus-text --button-primary-tonal-normal --button-primary-tonal-hover --button-primary-tonal-pressed --button-primary-tonal-disabled --button-primary-tonal-text --button-primary-tonal-text-disabled --button-primary-tonal-focus-bg --button-primary-tonal-focus-text --button-primary-on-color-normal --button-primary-on-color-hover --button-primary-on-color-pressed --button-primary-on-color-disabled --button-primary-on-color-text --button-primary-on-color-text-disabled --button-primary-on-color-focus-bg --button-primary-on-color-focus-text --button-danger-normal --button-danger-hover --button-danger-pressed --button-danger-disabled --button-danger-text --button-danger-text-disabled --button-danger-focus-bg --button-danger-focus-text --button-danger-tonal-normal --button-danger-tonal-hover --button-danger-tonal-pressed --button-danger-tonal-disabled --button-danger-tonal-text --button-danger-tonal-text-disabled --button-danger-tonal-focus-bg --button-danger-tonal-focus-text --button-secondary-neutral-normal --button-secondary-neutral-hover --button-secondary-neutral-pressed --button-secondary-neutral-disabled --button-secondary-neutral-text --button-secondary-neutral-text-disabled --button-secondary-neutral-focus-bg --button-secondary-neutral-focus-text --button-tertiary-primary-normal --button-tertiary-primary-hover --button-tertiary-primary-pressed --button-tertiary-primary-disabled --button-tertiary-primary-text --button-tertiary-primary-text-disabled --button-tertiary-primary-focus-bg --button-tertiary-primary-focus-text --button-tertiary-danger-normal --button-tertiary-danger-hover --button-tertiary-danger-pressed --button-tertiary-danger-disabled --button-tertiary-danger-text --button-tertiary-danger-text-disabled --button-tertiary-danger-focus-bg --button-tertiary-danger-focus-text --button-tertiary-neutral-normal --button-tertiary-neutral-hover --button-tertiary-neutral-pressed --button-tertiary-neutral-disabled --button-tertiary-neutral-text --button-tertiary-neutral-text-disabled --button-tertiary-neutral-focus-bg --button-tertiary-neutral-focus-text --button-tertiary-on-color-normal --button-tertiary-on-color-hover --button-tertiary-on-color-pressed --button-tertiary-on-color-disabled --button-tertiary-on-color-text --button-tertiary-on-color-text-disabled --button-tertiary-on-color-focus-bg --button-tertiary-on-color-focus-text --button-ghost-primary-normal --button-ghost-primary-hover --button-ghost-primary-pressed --button-ghost-primary-disabled --button-ghost-primary-container-outline --button-ghost-primary-container-outline-disabled --button-ghost-primary-text --button-ghost-primary-text-disabled --button-ghost-primary-focus-bg --button-ghost-primary-focus-text --button-ghost-primary-focus-container-outline --button-ghost-neutral-normal --button-ghost-neutral-hover --button-ghost-neutral-pressed --button-ghost-neutral-disabled --button-ghost-neutral-text --button-ghost-neutral-text-disabled --button-ghost-neutral-container-outline --button-ghost-neutral-container-outline-disabled --button-ghost-neutral-focus-bg --button-ghost-neutral-focus-text --button-ghost-neutral-focus-container-outline --button-ghost-danger-normal --button-ghost-danger-hover --button-ghost-danger-pressed --button-ghost-danger-disabled --button-ghost-danger-container-outline --button-ghost-danger-container-outline-disabled --button-ghost-danger-text --button-ghost-danger-text-disabled --button-ghost-danger-focus-bg --button-ghost-danger-focus-text --button-ghost-danger-focus-container-outline --button-ghost-on-color-normal --button-ghost-on-color-hover --button-ghost-on-color-pressed --button-ghost-on-color-disabled --button-ghost-on-color-container-outline --button-ghost-on-color-container-outline-disabled --button-ghost-on-color-text --button-ghost-on-color-text-disabled --button-ghost-on-color-focus-bg --button-ghost-on-color-focus-text --button-ghost-on-color-focus-container-outline
+
+## background/surface  n=53
+  --input-white --input-placeholder-wh --input-icon-wh --input-grey --input-placeholder-gr --input-icon-gr --bg-divide-bb-blue --item-wa-hover --item-wa-select --bg-default --title-bar --title-ptv --tab-txt --tip-bg --surface-background --surface-background-subtle --surface-background-overlay --layer-background --layer-background-subtle --layer-background-hover --layer-background-disabled --layer-background-selected --layer-background-inverse --layer-background-inverse-subtle --layer-background-CSC --layer-background-pinned --layer-background-ptv --layer-background-ptv-thumbslider --layer-background-ptv-controlbar --background-inactiveness --background-inactiveness-subtle --background-inactiveness-disabled --background-activeness --background-activeness-disabled --background-popover-tips --background-hovertips --input-field-bg-filled --input-field-bg-filled-hover --input-field-bg-filled-pressed --input-field-bg-outline --input-field-bg-outline-hover --input-field-bg-outline-pressed --input-field-ptv-bg --input-field-ptv-outline --progress-track --progress-track-on-background --progress-indicator --progress-indicator-on-background --background-control-alpha --background-control-alpha-hover --bg-message-info --vtt-normal-button-bg --vtt-hover-button-bg
+
+## other  n=26
+  --surface-alt --layer-alert-background --layer-error-background --layer-success-background --layer-warning-background --layer-information-background --layer-neutral-information-background --curtain --curtain-subtle --curtain-bold --skeleton --skeleton-subtle --cta-link --cta-link-primary --cta-link-disabled --cta-link-hover --cta-link-pressed --cta-destruction --cta-destruction-pressed --cta-link-neutral --cta-link-neutral-disable --blue-message --blue-message-selected --white-message --white-message-selected --layer-accent-message
+
+## border/divider  n=22
+  --border --border-subtle --border-hover --border-disabled --border-focused --border-highlight --border-errors --border-success --border-warning --border-information --border-support-errors --border-support-warning --border-support-success --border-support-information --border-support-neutral --border-bold --border-on-color --border-vanish --divider --divider-subtle --divider-bold --divider-on-color
+
+## text  n=21
+  --link --success --self-bubble-chat-shadow --text-quote --text-primary --text-secondary --text-placeholder --text-disabled --text-on-disabled-color --text-on-color --text-mention --text-errors --text-success --text-warning --text-information --blue-quote --blue-quote-selected --white-quote --white-quote-selected --timestamp --text-search-highlight
+
+## icon  n=16
+  --icon-hover-bg --icon-primary --icon-secondary --icon-disabled --icon-on-disabled-color --icon-on-color --icon-errors --icon-success --icon-warning --icon-information --icon-count-noti-enable-bg --icon-count-noti-disable-bg --icon-navbar-normal --icon-navbar-disabled --icon-navbar-sublevel-normal --icon-navbar-sublevel-selected
+
+## navigation  n=11
+  --layer-background-leftmenu --layer-background-leftmenu-hover --layer-background-leftmenu-selected --layer-background-navbar-normal --layer-background-navbar-hover --layer-background-navbar-selected --layer-background-navbar-sublevel-normal --layer-background-navbar-sublevel-hover --layer-background-navbar-sublevel-selected --text-navbar-sublevel-normal --text-navbar-sublevel-selected
+
+## conversation  n=5
+  --grey-dot --red-dot --reaction-background --jump-to-message --emoji-status-bubble-color
+
+## message  n=5
+  --media-message-hover --media-message-selected --floating-menu --partial-quote-floating --toast
+
+## shadow  n=3
+  --shadow-overlay --shadow-overflow --shadow-bubble
+
+=== light vs dark equivalence (semantic) ===
+identical=68 differing=350 light-only=0
+unchanged: --link=#0068ff --title-ptv=#333 --layer-background-inverse=#fff --layer-alert-background=#c31818 --layer-background-ptv=#141414 --layer-background-ptv-thumbslider=#212121 --layer-background-ptv-controlbar=#333 --text-on-color=#fff --icon-on-color=#fff --border-on-color=#fff --curtain-bold=rgba(0,0,0,0.7) --background-hovertips=#0045ad --input-field-ptv-bg=hsla(0,0%,100%,0.05) --input-field-ptv-outline=hsla(0,0%,100%,0.3) --media-message-hover=rgba(0,0,0,0.2) --button-primary-on-color-normal=#fff --button-primary-on-color-pressed=#c7e0ff --button-primary-on-color-text=#0045ad --button-primary-on-color-text-disabled=#3384ff --button-primary-on-color-focus-bg=#c7e0ff --button-primary-on-color-focus-text=#0045ad --button-danger-pressed=#7b0f0f --button-danger-focus-bg=#7b0f0f --button-tertiary-primary-normal=transparent --button-tertiary-primary-disabled=transparent --button-tertiary-danger-normal=transparent --button-tertiary-danger-disabled=transparent --button-tertiary-neutral-normal=transparent --button-tertiary-neutral-disabled=transparent --button-tertiary-on-color-normal=transparent --button-tertiary-on-color-disabled=transparent --button-tertiary-on-color-text=#fff --button-tertiary-on-color-text-disabled=hsla(0,0%,100%,0.5) --button-ghost-primary-normal=transparent --button-ghost-primary-disabled=transparent --button-ghost-neutral-normal=transparent --button-ghost-neutral-disabled=transparent --button-ghost-danger-normal=transparent --button-ghost-danger-disabled=transparent --button-ghost-on-color-normal=transparent --button-ghost-on-color-pressed=transparent --button-ghost-on-color-disabled=transparent --button-ghost-on-color-container-outline=#fff --button-ghost-on-color-container-outline-disabled=hsla(0,0%,100%,0.5) --button-ghost-on-color-text=#fff --button-ghost-on-color-text-disabled=hsla(0,0%,100%,0.5) --button-ghost-on-color-focus-bg=transparent --button-ghost-on-color-focus-text=transparent --button-ghost-on-color-focus-container-outline=transparent --accent-blue-bg=#0068ff --accent-red-bg=#d91b1b --accent-red-border=#d91b1b --accent-steal-bg=#2ac5bb --accent-steal-border=#2ac5bb --accent-skyblue-bg=#0fc3ff --accent-skyblue-border=#0fc3ff --accent-pink-bg=#da62ac --accent-pink-border=#da62ac --accent-purple-bg=#6f3fcf --accent-purple-border=#6f3fcf --accent-stealblue-bg=#507fb4 --accent-stealblue-border=#507fb4 --accent-yellow-border=#fac000 --progress-track-on-background=hsla(0,0%,100%,0.3) --progress-indicator-on-background=#fff --toast=rgba(0,0,0,0.9) --background-control-alpha=rgba(0,0,0,0.6) --background-control-alpha-hover=rgba(0,0,0,0.7)
+
+tokens consumed by >=1 non-:root rule: 467
+semantic tokens never consumed: 158
+  --link --success --icon-hover-bg --input-white --input-placeholder-wh --input-icon-wh --input-grey --input-placeholder-gr --input-icon-gr --bg-divide-bb-blue --grey-dot --item-wa-select --bg-default --tip-bg --layer-background-leftmenu --layer-background-leftmenu-hover --layer-background-leftmenu-selected --layer-background-navbar-sublevel-normal --text-navbar-sublevel-normal --text-navbar-sublevel-selected --icon-navbar-disabled --icon-navbar-sublevel-normal --icon-navbar-sublevel-selected --border-hover --border-information --border-bold --skeleton --background-inactiveness --background-hovertips --cta-destruction-pressed --cta-link-neutral --cta-link-neutral-disable --input-field-bg-filled-pressed --input-field-ptv-outline --white-message-selected --button-ghost-primary-container-outline --button-ghost-primary-container-outline-disabled --button-ghost-primary-focus-container-outline --button-ghost-neutral-container-outline-disabled --button-ghost-neutral-focus-container-outline --button-ghost-danger-container-outline --button-ghost-danger-container-outline-disabled --button-ghost-danger-focus-container-outline --button-ghost-on-color-container-outline --button-ghost-on-color-container-outline-disabled --button-ghost-on-color-focus-container-outline --accent-blue-bg-bold --accent-blue-border-subtle --accent-blue-border-bold --accent-blue-text-subtle --accent-blue-text-bold --accent-blue-icon-subtle --accent-blue-icon --accent-blue-icon-bold --accent-red-bg --accent-red-bg-bold --accent-red-border-subtle --accent-red-border --accent-red-border-bold --accent-red-text-subtle --accent-red-text --accent-red-text-bold --accent-red-icon-subtle --accent-red-icon --accent-red-icon-bold --accent-orange-bg --accent-orange-bg-bold --accent-orange-border-subtle --accent-orange-border --accent-orange-border-bold --accent-orange-text-subtle --accent-orange-text --accent-orange-icon-subtle --accent-orange-icon --accent-orange-icon-bold --accent-green-bg-bold --accent-green-border --accent-green-border-bold --accent-green-text-subtle --accent-green-text --accent-green-icon-subtle --accent-green-icon --accent-green-icon-bold --accent-steal-bg-subtle --accent-steal-bg --accent-steal-bg-bold --accent-steal-border-subtle --accent-steal-border --accent-steal-border-bold --accent-steal-text-subtle --accent-steal-text --accent-steal-text-bold --accent-steal-icon-subtle --accent-steal-icon --accent-steal-icon-bold --accent-skyblue-bg-bold --accent-skyblue-border-subtle --accent-skyblue-border --accent-skyblue-border-bold --accent-skyblue-text-subtle --accent-skyblue-text-bold --accent-skyblue-icon-subtle --accent-skyblue-icon --accent-skyblue-icon-bold --accent-pink-bg-subtle --accent-pink-bg --accent-pink-bg-bold --accent-pink-border-subtle --accent-pink-border --accent-pink-border-bold --accent-pink-text-subtle --accent-pink-text --accent-pink-text-bold --accent-pink-icon-subtle --accent-pink-icon --accent-pink-icon-bold --accent-purple-bg-subtle --accent-purple-bg --accent-purple-bg-bold --accent-purple-border-subtle --accent-purple-border --accent-purple-border-bold --accent-purple-text-subtle --accent-purple-text --accent-purple-text-bold --accent-purple-icon-subtle --accent-purple-icon --accent-stealblue-bg-subtle --accent-stealblue-bg --accent-stealblue-bg-bold --accent-stealblue-border-subtle --accent-stealblue-border --accent-stealblue-border-bold --accent-stealblue-text-subtle --accent-stealblue-text --accent-stealblue-text-bold --accent-stealblue-icon-subtle --accent-stealblue-icon --accent-stealblue-icon-bold --accent-yellow-bg-subtle --accent-yellow-bg --accent-yellow-bg-bold --accent-yellow-border-subtle --accent-yellow-border --accent-yellow-border-bold --accent-yellow-text-subtle --accent-yellow-text --accent-yellow-text-bold --accent-yellow-icon-subtle --accent-yellow-icon-bold --accent-grey-bg-bold --accent-grey-border --accent-grey-border-bold --accent-grey-text-subtle --accent-grey-text-bold --accent-grey-icon-bold --partial-quote-floating --emoji-status-bubble-color
+
+=== most-consumed tokens (top 40) ===
+   630  --text-secondary
+   625  --text-primary
+   482  --text-information
+   480  --layer-background
+   407  --border
+   239  --text-on-color
+   175  --layer-background-subtle
+   157  --icon-secondary
+   151  --WA100
+   142  --layer-background-hover
+   138  --text-errors
+   133  --surface-background-subtle
+   123  --accent-grey-icon
+   111  --border-focused
+    90  --border-subtle
+    89  --space-xs
+    85  --BA20
+    81  --medium
+    77  --divider
+    75  --B10
+    67  --text-disabled
+    66  --background-activeness
+    56  --space-xxs
+    54  --icon-on-color
+    49  --BA30
+    49  --shadow-overlay
+    46  --icon-on-disabled-color
+    44  --G60
+    44  --R60
+    39  --icon-primary
+    37  --cta-link
+    36  --BA50
+    36  --space-md
+    34  --text-placeholder
+    32  --B70
+    32  --debugger-settings-text
+    30  --layer-background-selected
+    29  --curtain
+    29  --input-field-bg-outline
+    27  --N300
+
+=== per-surface token census ===
+
+## conversation row  rules=73 uniqTokens=13 backdrop=0 blur=0 semi=0 shadow=0
+  --text-primary(8) --layer-background-selected(3) --text-secondary(2) --B10(2) --R60(2) --text-information(1) --layer-background(1) --layer-background-hover(1) --layer-background-subtle(1) --BA50(1) --icon-secondary(1) --icon-errors(1) --border(1)
+
+## chat header  rules=16 uniqTokens=7 backdrop=0 blur=0 semi=0 shadow=1
+  --BA20(3) --text-on-color(1) --background-inactiveness-subtle(1) --layer-background-subtle(1) --text-secondary(1) --text-information(1) --text-primary(1)
+
+## message row  rules=374 uniqTokens=49 backdrop=0 blur=0 semi=0 shadow=14
+  --text-information(27) --B10(14) --layer-background-selected(12) --text-on-color(11) --text-secondary(8) --background-activeness(8) --text-primary(7) --WA100(7) --border-highlight(7) --icon-secondary(6) --N300(6) --media-message-selected(6) --border(5) --BA20(4) --G20(4) --text-search-highlight(4) --shadow-overlay(4) --border-focused(4) --WA50(3) --BA30(2)
+
+## bubble  rules=23 uniqTokens=6 backdrop=0 blur=0 semi=0 shadow=0
+  --text-primary(2) --border-focused(1) --text-information(1) --background-activeness(1) --WA100(1) --text-secondary(1)
+
+## date divider  rules=20 uniqTokens=4 backdrop=2 blur=2 semi=0 shadow=0
+  --text-on-color(1) --timestamp(1) --BA20(1) --border-focused(1)
+
+## composer  rules=107 uniqTokens=23 backdrop=0 blur=0 semi=1 shadow=2
+  --text-information(11) --layer-background(7) --text-secondary(7) --border-focused(3) --icon-secondary(3) --cta-link(2) --cta-link-pressed(2) --divider-bold(2) --BA50(2) --surface-background-subtle(2) --text-primary(2) --layer-background-subtle(2) --button-tertiary-neutral-hover(1) --background-activeness(1) --WA100(1) --icon-on-color(1) --BA30(1) --BA40(1) --R60(1) --f6(1)
+
+## titlebar  rules=68 uniqTokens=18 backdrop=0 blur=0 semi=0 shadow=0
+  --text-information(5) --text-primary(4) --icon-on-color(4) --layer-background-subtle(2) --R60(2) --nav-width(2) --cta-link(2) --cta-link-pressed(2) --title-bar(1) --button-secondary-neutral-hover(1) --text-secondary(1) --BA30(1) --R20(1) --text-errors(1) --border-focused(1) --background-activeness(1) --WA100(1) --NG80(1)
+
+## context menu  rules=51 uniqTokens=16 backdrop=0 blur=0 semi=0 shadow=0
+  --text-information(3) --layer-background-selected(3) --layer-background-hover(2) --layer-background(2) --border-focused(1) --background-activeness(1) --WA100(1) --space-xxs(1) --space-sm(1) --text-primary(1) --text-secondary(1) --icon-primary(1) --layer-alert-background(1) --text-errors(1) --text-disabled(1) --icon-information(1)
+
+## modal  rules=116 uniqTokens=19 backdrop=0 blur=0 semi=0 shadow=0
+  --layer-background(7) --text-information(4) --border-focused(2) --cta-link(2) --cta-link-pressed(2) --border(2) --divider(2) --background-activeness(1) --WA100(1) --space-md(1) --background-inactiveness-subtle(1) --curtain(1) --curtain-bold(1) --icon-secondary(1) --icon-on-color(1) --medium(1) --layer-background-subtle(1) --text-errors(1) --OR60(1)
+
+## settings  rules=160 uniqTokens=25 backdrop=0 blur=0 semi=0 shadow=0
+  --layer-background(7) --text-primary(5) --text-secondary(5) --WA100(4) --text-information(4) --border(3) --border-focused(2) --layer-background-subtle(2) --layer-background-hover(2) --text-disabled(2) --surface-background-subtle(2) --divider(2) --background-activeness(1) --divider-bold(1) --layer-background-selected(1) --accent-blue-bg(1) --text-on-color(1) --red-dot(1) --Y60(1) --R60(1)
+
+## sidebar/nav  rules=0 uniqTokens=0 backdrop=0 blur=0 semi=0 shadow=0
+  
+
+=== transparency profile per category (light values) ===
+  text                 rgba/hsla=2   hex=19  transparent=0   gradient=0 other=0
+  icon                 rgba/hsla=1   hex=15  transparent=0   gradient=0 other=0
+  background/surface   rgba/hsla=9   hex=44  transparent=0   gradient=0 other=0
+  conversation         rgba/hsla=0   hex=5   transparent=0   gradient=0 other=0
+  other                rgba/hsla=6   hex=20  transparent=0   gradient=0 other=0
+  navigation           rgba/hsla=2   hex=9   transparent=0   gradient=0 other=0
+  border/divider       rgba/hsla=10  hex=12  transparent=0   gradient=0 other=0
+  message              rgba/hsla=3   hex=2   transparent=0   gradient=0 other=0
+  control/button       rgba/hsla=10  hex=94  transparent=20  gradient=0 other=0
+  accent               rgba/hsla=0   hex=132 transparent=0   gradient=0 other=0
+  shadow               rgba/hsla=0   hex=0   transparent=0   gradient=0 other=3
+
+=== backdrop-filter rules (all) ===
+  .seasonal-item-preview  ->  blur(2px)
+  .preview-ts .block-date>.chat-date>span  ->  blur(10px)
+  .preview-ts.active-scroll .block-date>.chat-date>span  ->  blur(10px)
+  .mvr-thumbplaceholder  ->  blur(22px)
+  .analytic-conv-resources-container  ->  blur(30px)
+  .health-center-analytic-modal  ->  blur(4px)
+  .health-center-tab  ->  blur(4px)
+
+=== filter:blur rules (all) ===
+  .lqip.-blur-low>.lqip__preview-thumb  ->  blur(8px)
+  .lqip.-blur-medium>.lqip__preview-thumb  ->  blur(18px)
+  .lqip.-blur-high>.lqip__preview-thumb  ->  blur(36px)
+  .tiny-thumb.-blur-low:before  ->  blur(8px) brightness(1.1)
+  .tiny-thumb.-blur-medium:before  ->  blur(16px) brightness(1.1)
+  .tiny-thumb.-blur-high:before  ->  blur(36px) brightness(1.1)
+  .mvr-thumbplaceholder  ->  blur(22px)
+  .health-center-modal-container .health-center-modal-effect  ->  blur(10px)
+  .health-center-modal .health-center-modal-background  ->  blur(30px) grayscale(100%)
+  .health-center-analytic-button:after  ->  blur(16px)
+  .dark .tiny-thumb.-blur-low:before  ->  blur(8px) brightness(.5)
+  .dark .tiny-thumb.-blur-medium:before  ->  blur(16px) brightness(.5)
+  .dark .tiny-thumb.-blur-high:before  ->  blur(36px) brightness(.5)
+
+=== shadow token definitions ===
+  --shadow-overlay = 0px 0px 1px 0px rgba(21,39,71,0.3),0px 8px 12px 0px rgba(21,39,71,0.15)
+  --shadow-overflow = 0px 0px 1px 0px rgba(21,39,71,0.12),0px 0px 8px 0px rgba(21,39,71,0.15)
+  --shadow-bubble = 0px 0px 1px 0px rgba(21,39,71,0.25),0px 1px 1px 0px rgba(21,39,71,0.25)
+
+=== gradient / alpha literal counts in shipped CSS ===
+  rgba(              200
+  hsla(              92
+  linear-gradient    130
+  radial-gradient    5
+  conic-gradient     4
+  box-shadow         314
+  border-radius      1392

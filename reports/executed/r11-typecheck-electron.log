@@ -1,0 +1,4 @@
+# npx tsc -p tsconfig.electron.json --noEmit — empty output means zero diagnostics
+# Re-run 2026-11-06 after the R11 report edits.
+TSC_ELECTRON_EXIT=0
+STDOUT_BYTES=0

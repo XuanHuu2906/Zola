@@ -1,0 +1,24 @@
+Qos.db -> tables=2 total_rows=66
+    actionlog                  rows=0
+    qoslogv2                   rows=66
+SecureLocalstorage.db -> tables=1 total_rows=80
+    async-store                rows=80
+Storage.db -> tables=5 total_rows=2857
+    cocos-res                  rows=0
+    db-stchecksum              rows=10
+    friend-blocked             rows=0
+    info-cache                 rows=2847
+    retry-cache                rows=0
+Trust.db -> tables=2 total_rows=0
+    link_history               rows=0
+    trust_identity             rows=0
+AccountFolder#2/DBState.db -> tables=2 total_rows=0
+    <ACCOUNT_SCOPE_TABLE>         rows=0
+    data_transform             rows=0
+AccountFolder#3/Changes.db -> tables=1 total_rows=0
+    history                    rows=0
+AccountFolder#3/Subjects.db -> tables=3 total_rows=5
+    <ACCOUNT_SCOPE_TABLE>         rows=0
+    common                     rows=4
+    kv                         rows=1
+temp_cleaned=true

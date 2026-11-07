@@ -1,0 +1,5 @@
+aliases = ["N","NG","DN","B","R"]
+emittable records = 198 ; unique = 198
+emittable unique=198 present-in-css=197 missing=1
+missing list = ["--white-quote-selected-alpha"]
+.custom rules=48 ; var() references inside=31

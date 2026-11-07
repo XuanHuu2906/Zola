@@ -1,0 +1,18 @@
+
+===== main-dist/preload-render.js (1852663 chars) =====
+window.$zuri= @795491
+CTX :: "e){return e[e.Unknown=-2]=\"Unknown\",e[e.NativeGenericFailure=-3]=\"NativeGenericFailure\",e[e.InvalidInput=-4]=\"InvalidInput\",e[e.UnsupportedPlatform=-5]=\"UnsupportedPlatform\",e[e.NativeBindingMissing=-6]=\"NativeBindingMissing\",e[e.OsServiceUnavailable=-7]=\"OsServiceUnavailable\",e}({});wt.UnsupportedPlatform,wt.NativeBindingMissing,wt.OsServiceUnavailable,wt.NativeGenericFailure,wt.InvalidInput;let St=function(e){return e.DETECT=\"language-detector_detect\",e.DOMINANT_LANGUAGE=\"language-detector_dominant-language\",e.IS_SUPPORTED=\"language-detector_is-supported\",e.INFO=\"language-detector_info\",e}({});const It={detect:{apiKey:St.DETECT,type:m.a.REQUEST},dominantLanguage:{apiKey:St.DOMINANT_LANGUAGE,type:m.a.REQUEST},isSupported:{apiKey:St.IS_SUPPORTED,type:m.a.REQUEST},info:{apiKey:St.INFO,type:m.a.REQUEST}};var Tt;Object(f.a)(qe.ipcRenderer),window.isPreload=!0,window.$zcommon=Object(W.a)(),window.$znode=Object(Y.a)(),window.$zwindow=Object(h.a)(y),window.$zresource=Object(h.a)(A),window.$zlogger=Object(h.a)(b.a),window.$zupdater=Object(h.a)(S),window.$zapp=Object(h.a)(T),window.$zdownload=Object(h.a)(R),window.$zdb=Object(h.a)(O.a),window.$zsessionManager=Object(h.a)(et.a),window.$zmulti=Object(h.a)(D),window.$zcall=Object(h.a)(k),window.$zsharedWorker=Object(h.a)(L),window.$zelectron=Object(a.a)(Object(a.a)({},Object(h.a)(j.a)),Object(M.a)()),window.$zelectronNative=Object(M.b)(),window.$zuri=Object(h.a)(F),window.$zscreencap=Object(h.a)(Q),window.$zlogin=Object(h.a)(G),window.$zperf=Object(h.a)(z),window.$zconfig=Object(h.a)(K.a),window.$zFileManager=Object(a.a)(Object(a.a)({},Object(q.a)()),Object(h.a)(v.a)),windo"
+const F @760635
+F_TABLE :: "const F={onNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.SUBSCRIBE},removeListenNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.UNSUBSCRIBE},onRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.SUBSCRIBE},removeListenRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.UNSUBSCRIBE},checkOpenConvReq:{apiKey:U.CHECK_ON_START_UP,type:m.a.REQUEST},checkArgvLink:{apiKey:U.CHECK_ARG_LINK,type:m.a.RAW_SEND}};var j=n(\"GfBU\"),M=n(\"4Hrq\");let $=function(e){return e.START_SCREENCAP=\"screen-capture\",e.START_SCREEN_CAPTURE=\"start-screen-capture\",e.GET_CLIPBOARD=\"get-clipboard\",e.RESTART_SCREENCAP=\"restart-cap\",e.REWRITE_CLIPBOARD=\"rewrite-clipboard\",e.CHANGE_SCREENCAP_STATUS=\"change-screencap-status\",e.SCREENSHO"
+anon table @760643
+ANON_TABLE :: "{onNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.SUBSCRIBE},removeListenNewRequest:{apiKey:U.Z_URI_REQUEST,type:m.a.UNSUBSCRIBE},onRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.SUBSCRIBE},removeListenRequestOpenConv:{apiKey:U.Z_URI_OPEN_CONV,type:m.a.UNSUBSCRIBE},checkOpenConvReq:{apiKey:U.CHECK_ON_START_UP,type:m.a.REQUEST},checkArgvLink:{apiKey:U.CHECK_ARG_LINK,type:m.a.RAW_SEND}};var j=n(\"GfBU\"),M=n(\"4Hrq\");let $=function(e){return e.START_SCREENCAP=\"screen-capture\",e.START_SCREEN_CAPTURE=\"start-screen-capture\",e.GET_CLIPBOARD=\"get-clipboard\",e.RESTART_SCREENCAP=\"restart-cap\",e.REWRITE_CLIPBOARD=\"rewrite-clipboard\",e.CHANGE_SC"
+
+===== pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (20864497 chars) =====
+   "globalThis.$zsub" = 0
+   "$zsub={}" = 0
+   "Ke(\"$zuri\"" = 0
+   "Ke(" = 33
+   "window.$zsub" = 0
+   "$zsub=" = 0
+   "exposeInMainWorld" = 0
+   registrar-ish regex present = true

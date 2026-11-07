@@ -1,0 +1,86 @@
+file bytes: 1852663
+exposeInMainWorld call sites: 41
+unique exposed names: 41
+
+@13020     __SENTRY_IPC__           i
+@796941    MetriczGlobal            window.MetriczGlobal
+@797014    $zenv                    {isPreloaded:!0,isRenderer:!0}
+@797089    $zcommon                 window.$zcommon
+@797152    $znode                   window.$znode
+@797211    $zwindow                 window.$zwindow
+@797274    $zresource               window.$zresource
+@797341    $zlogger                 window.$zlogger
+@797404    $zupdater                window.$zupdater
+@797469    $zapp                    window.$zapp
+@797526    $zdownload               window.$zdownload
+@797593    $zdb                     window.$zdb
+@797648    $zsessionManager         window.$zsessionManager
+@797727    $zmulti                  window.$zmulti
+@797788    $zcall                   window.$zcall
+@797847    $zsharedWorker           window.$zsharedWorker
+@797922    $zelectron               window.$zelectron
+@797989    $zelectronNative         window.$zelectronNative
+@798068    $zuri                    window.$zuri
+@798125    $zscreencap              window.$zscreencap
+@798194    $zlogin                  window.$zlogin
+@798255    $zperf                   window.$zperf
+@798314    $zconfig                 window.$zconfig
+@798377    $zMetric                 window.$zMetric
+@798440    $zFileManager            Object(a.a
+@798572    $zpc                     window.$zpc
+@798627    $zFeatures               window.$zFeatures
+@798694    $zcloud                  window.$zcloud
+@798755    $zMsgChannel             window.$zMsgChannel
+@798826    $zscript                 window.$zscript
+@798889    $zInAppPayment           window.$zInAppPayment
+@798964    $capp                    window.$capp
+@799021    $zbackup                 window.$zbackup
+@799084    $zpreload                Xe
+@799135    $zsqlitebw               window.$zsqlitebw
+@799202    $zsafeStorage            window.$zsafeStorage
+@799275    $zMigrateDrive           window.$zMigrateDrive
+@799350    $zTFModels               window.$zTFModels
+@799417    $znetwork                window.$znetwork
+@799482    $zprotocol               window.$zprotocol
+@799549    $znoti                   window.$znoti
+
+=== window.$X = ... ASSIGNMENTS IN PRELOAD ===
+@794960    $zcommon                 = Object
+@794990    $znode                   = Object
+@795018    $zwindow                 = Object
+@795049    $zresource               = Object
+@795082    $zlogger                 = Object
+@795115    $zupdater                = Object
+@795147    $zapp                    = Object
+@795175    $zdownload               = Object
+@795208    $zdb                     = Object
+@795237    $zsessionManager         = Object
+@795279    $zmulti                  = Object
+@795309    $zcall                   = Object
+@795338    $zsharedWorker           = Object
+@795375    $zelectron               = Object
+@795453    $zelectronNative         = Object
+@795491    $zuri                    = Object
+@795519    $zscreencap              = Object
+@795553    $zlogin                  = Object
+@795583    $zperf                   = Object
+@795612    $zconfig                 = Object
+@795645    $zFileManager            = Object
+@795726    $zpc                     = Object
+@796419    $zMetric                 = Object
+@796450    $zcloud                  = Object
+@796481    $zMsgChannel             = Object
+@796519    $zscript                 = Object
+@796576    $zbackup                 = Object
+@796608    $zInAppPayment           = Object
+@796646    $capp                    = Object
+@796675    $zsqlitebw               = Object
+@796711    $zsafeStorage            = Object
+@796750    $zMigrateDrive           = Object
+@796827    $znetwork                = Object
+@796860    $zprotocol               = Object
+@796894    $znoti                   = Object
+window.$X assignments: 35
+
+=== OBJECT(h.a)(...) WRAPPED (descriptor-driven) ===
+names: 34 -> $zcommon, $znode, $zwindow, $zresource, $zlogger, $zupdater, $zapp, $zdownload, $zdb, $zsessionManager, $zmulti, $zcall, $zsharedWorker, $zelectron, $zuri, $zscreencap, $zlogin, $zperf, $zconfig, $zFileManager, $zpc, $zMetric, $zcloud, $zMsgChannel, $zscript, $zbackup, $zInAppPayment, $capp, $zsqlitebw, $zsafeStorage, $zMigrateDrive, $znetwork, $zprotocol, $znoti

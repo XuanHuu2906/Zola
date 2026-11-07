@@ -1,0 +1,181 @@
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color-scheme: dark;
+
+  /* Glass density scalar, 0.15–0.95. Written by App.tsx from the stored preference. */
+  --glass-opacity: .68;
+
+  /* Text */
+  --text: #f4f8ff;
+  --muted: #e0eaff;
+  --quiet: #d4e3fc;
+
+  /* Borders · dividers · hairlines — first-class family (R2 §8.3).
+     Zalo ships no themeable border token, so every hairline here is authored. */
+  --border: rgba(255,255,255,.21);
+  --border-subtle: rgba(255,255,255,.12);
+  --divider: rgba(255,255,255,.12);
+  --border-shell: rgba(255,255,255,.42);
+  --border-dialog: rgba(255,255,255,.39);
+  --border-floating: rgba(255,255,255,.22);
+  --border-bubble: rgba(255,255,255,.18);
+  --border-bubble-out: rgba(176,220,255,.31);
+  --border-control: rgba(255,255,255,.33);
+  --border-rail: rgba(255,255,255,.13);
+  --border-focus: rgba(153,210,255,.95);
+
+  /* Surfaces */
+  --shell: rgba(13,32,72,.84);
+  --rail: rgba(13,28,64,.14);
+  --pane: rgba(128,170,225,.05);
+  --hover: rgba(255,255,255,.14);
+  --selected: rgba(255,255,255,.22);
+  --incoming: rgba(180,214,255,.10);
+  --outgoing: #1551a7;
+  --accent: #298cff;
+  --accent-2: #84bdff;
+  /* Destructive action (end call). Shared by both themes: white on it holds 5.78:1. */
+  --danger: #b23c48;
+  /* Titlebar close hover. Separate from --danger because it is a platform idiom
+     (Windows close red), not the product's destructive colour. */
+  --danger-window: #c42b35;
+  /* Switch "on" track. Deliberately not --accent: the light theme redefines
+     --accent to #207bf6, and the shipped light theme has always drawn this
+     switch at #298cff. Keeping them separate preserves the shipped look; see §8. */
+  --switch-on: #298cff;
+  --deep-shadow: rgba(9,25,69,.24);
+  --feature-bg: rgba(255,255,255,.13);
+  --backdrop: rgba(15,32,75,.45);
+
+  /* Glass elevation ladder. Each tier pairs a translucent fill with one blur
+     radius and one shadow. Values are the ones the contrast suite already
+     validated — tokenising must not change appearance. */
+  --glass-fill-shell: var(--shell);
+  --glass-fill-pane: rgba(182,211,255, calc(var(--glass-opacity)*.08));
+  --glass-fill-raised: rgba(218,235,255, calc(var(--glass-opacity)*.12));
+  --glass-fill-control: rgba(222,238,255, calc(var(--glass-opacity)*.20));
+  --glass-fill-input: rgba(221,237,255, calc(var(--glass-opacity)*.23));
+  --glass-fill-selected: rgba(237,247,255, min(.23, calc(var(--glass-opacity)*.31)));
+  --glass-fill-active: rgba(220,236,255, calc(var(--glass-opacity)*.31));
+  --glass-fill-pill: rgba(215,235,255,.19);
+  --glass-fill-chip: rgba(241,248,255,.13);
+  --glass-fill-floating: rgba(25,49,91,.98);
+  --glass-fill-dialog: rgba(25,49,91,.97);
+  --glass-fill-toast: rgba(22,39,84,.88);
+  --glass-fill-scrim: var(--backdrop);
+
+  --blur-shell: 44px;
+  --blur-dialog: 35px;
+  --blur-floating: 24px;
+  --blur-toast: 20px;
+  --blur-scrim: 12px;
+  --blur-pill: 10px;
+  --saturate-shell: 150%;
+  --saturate-dialog: 160%;
+
+  --shadow-shell: 0 28px 85px var(--deep-shadow), inset 0 1px 1px rgba(255,255,255,.44);
+  --shadow-dialog: 0 20px 75px rgba(5,24,75,.33);
+  --shadow-floating: 0 12px 45px rgba(5,19,56,.3);
+  --shadow-bubble: 0 5px 19px rgba(18,60,129,.06);
+  --shadow-bubble-out: 0 8px 24px rgba(10,74,169,.15);
+  --shadow-control: inset 0 1px 0 rgba(255,255,255,.13), 0 7px 22px rgba(19,60,140,.07);
+
+  --radius-shell: 29px;
+  --radius-panel: 27px;
+  --radius-card: 20px;
+  --radius-control: 14px;
+  --radius-bubble: 22px;
+  --radius-floating: 16px;
+  --radius-dialog: 26px;
+  --radius-pill: 15px;
+  /* Compact shell radius for the ≤900px layout; keeps the media query on the ladder. */
+  --radius-shell-compact: 19px;
+
+  /* Type scale. Named by role, not by size, so a size can change in one place.
+     All 19 values are the ones already shipped: tokenising must not move a pixel.
+     The scale is deliberately granular here; collapsing near-neighbours is a
+     visual decision and is recorded as debt in GLASS_DESIGN_SYSTEM.md §8. */
+  --type-display: 30px;   /* brand wordmark */
+  --type-title: 29px;     /* feature page heading */
+  --type-logo: 25px;      /* logo glyph inside the brand mark */
+  --type-heading: 24px;   /* dialog heading, placeholder title */
+  --type-overlay: 23px;   /* secondary screen heading */
+  --type-section: 21px;   /* chat identity name */
+  --type-mark: 19px;      /* Zalo "Za" avatar mark */
+  --type-card: 17px;      /* profile name */
+  --type-list: 16px;      /* conversation name */
+  --type-nav: 15px;       /* rail button, compact chat identity */
+  --type-body: 14px;      /* base, bubble copy, setting value */
+  --type-input: 13.5px;   /* search field */
+  --type-label: 13px;     /* file name, fact value, preview line */
+  --type-chip: 12.5px;    /* filter chip */
+  --type-meta: 12px;      /* timestamps, captions, most secondary text */
+  --type-caption: 11.5px; /* notification preview */
+  --type-micro: 11px;     /* bubble time, overlay note, fact key */
+  --type-eyebrow: 10px;   /* uppercase eyebrow, list footer, badges */
+  --type-nano: 9px;       /* prototype tag */
+
+  /* Line heights, paired with the roles that need them. */
+  --leading-none: 1;
+  --leading-solid: 1.1;
+  --leading-tight: 1.3;
+  --leading-body: 1.55;
+  --leading-relaxed: 1.6;
+  --leading-loose: 1.65;
+
+  /* Spacing scale — a true 4px stride, so these read as one system.
+     The shipped layout is denser than this (it uses 35 distinct values);
+     every value off the stride stays literal on purpose. Those are optical
+     nudges chosen against a specific glyph or border, not reusable steps —
+     forcing them onto the grid would move pixels. See §8 of the doc. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+
+  /* Motion. Two durations and one easing curve cover every transition here;
+     the reduced-motion switch removes them wholesale rather than editing each. */
+  --duration-fast: .2s;
+  --duration-base: .25s;
+  --ease-standard: ease;
+
+  /* Chat wallpaper — owned by ChatWallpaper.tsx; the tint comes from the chat id. */
+  --wallpaper-scrim: rgba(9,25,69,.52);
+  --wallpaper-strength: .34;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --text: #152d57;
+  --muted: #304d73;
+  --quiet: #385578;
+
+  --border: rgba(255,255,255,.58);
+  --border-subtle: rgba(255,255,255,.35);
+  --divider: rgba(255,255,255,.35);
+  --border-focus: #164ac5;
+
+  --shell: rgba(249,253,255,.51);
+  --rail: rgba(240,249,255,.28);
+  --pane: rgba(246,252,255,.40);
+  --hover: rgba(255,255,255,.42);
+  --selected: rgba(255,255,255,.64);
+  --incoming: rgba(255,255,255,.65);
+  --outgoing: #1551a7;
+  --accent: #207bf6;
+  --accent-2: #175bb9;
+  --deep-shadow: rgba(22,61,110,.12);
+  --feature-bg: rgba(255,255,255,.42);
+  --backdrop: rgba(12,30,72,.23);
+
+  --glass-fill-selected: rgba(237,247,255, calc(var(--glass-opacity)*.31));
+  --glass-fill-floating: rgba(225,242,255,.95);
+  --glass-fill-dialog: rgba(231,245,255,.96);
+
+  --wallpaper-scrim: rgba(255,255,255,.62);
+  --wallpaper-strength: .26;
+}

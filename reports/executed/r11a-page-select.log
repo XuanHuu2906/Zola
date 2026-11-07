@@ -1,0 +1,14 @@
+
+===== main-dist/main.js :: index.html (4169474 chars) =====
+
+HIT#1 @2686058 :: "=\"+encodeURIComponent(o)),a&&(i+=\"&quest_cert=\"+encodeURIComponent(a)),s&&(i+=\"&cap_cert=\"+encodeURIComponent(s)),c&&(i+=\"&already_login=\"+encodeURIComponent(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=be||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");b.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),dn();let r=he.get(st);r&&(b.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logAction(1480105),t.after_backup=r,he.set(st,0));const i=he.get(\""
+
+HIT#2 @2686086 :: "&(i+=\"&quest_cert=\"+encodeURIComponent(a)),s&&(i+=\"&cap_cert=\"+encodeURIComponent(s)),c&&(i+=\"&already_login=\"+encodeURIComponent(c)),l&&(i+=\"&mode_lang=\"+encodeURIComponent(l)),e.new_install_success&&(i+=\"&new_install_success=1\"),e.install_source&&(i+=\"&install_source=\"+encodeURIComponent(e.install_source))}return i}function Zt(e,t=\"\"){let n=e.webContents.getURL();if(Fe!=be||n&&n.indexOf(\"index.html\")<0){const n=ne(\"index.html\");b.zsymb(4,\"NTgaN5\",[\"actually load main App\",\"d98nxB\"]),dn();let r=he.get(st);r&&(b.zsymb(4,\"Sw8GA4\",[\"after backup {}\",\"y5pNTs\"],r),t||(t={}),1==r&&ct.logAction(1480105),t.after_backup=r,he.set(st,0));const i=he.get(\"after_crashed\");i&&(b.zsymb("
+
+occurrences = 3
+
+===== main-dist/compact-app.js :: compact-app.html (4007002 chars) =====
+
+HIT#1 @713030 :: "eady created\"),new Error(\"Window already created\");this._window=new u.BrowserWindow(e.browserWindowOpts);const t=Object(_.a)().get(E,{});return t.enableDevTools||this._window.setMenu(null),t.enableDevTools&&this._window.webContents.openDevTools(),this.configureWindow(this._window),this._window}getWindow(){return this._window}load(){this.logger.zsymb(0,\"4jh1Mi\",\"CompactAppWindowLoader.load\");const e=Object(f.getHtml)(\"compact-app.html\");if(!this._window)throw this.logger.zsymb(18,\"5BF6y1\",\"Window not created\"),new Error(\"Window not created\");return this._window.loadURL(e).catch((e=>{this.logger.zsymb(21,\"BlcaPr\",[\"Error loading url: {}\",\"-Y2Anr\"],e)})),this._window.once(\"r"
+
+occurrences = 1

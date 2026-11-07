@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:soak"
+  ],
+  "started": "2026-11-06T10:21:34.179Z",
+  "finished": "2026-11-06T10:25:55.778Z",
+  "exitCode": 0,
+  "signal": null
+}

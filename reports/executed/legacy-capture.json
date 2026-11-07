@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "capture:legacy"
+  ],
+  "started": "2026-11-05T02:47:55.585Z",
+  "finished": "2026-11-05T02:48:01.039Z",
+  "exitCode": 0,
+  "signal": null
+}

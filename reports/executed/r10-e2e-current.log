@@ -1,0 +1,35 @@
+
+> zalo-apple-glass-ui@0.3.0 test:e2e
+> playwright test
+
+
+Running 26 tests using 1 worker
+
+  ✓   1 tests\e2e\accessibility.spec.ts:8:7 › accessibility: dark chat and settings (2.6s)
+  ✓   2 tests\e2e\accessibility.spec.ts:8:7 › accessibility: light chat and settings (2.8s)
+  ✓   3 tests\e2e\demo.spec.ts:6:5 › fake sign-in gates the app, accepts a display name and signs out cleanly (767ms)
+  ✓   4 tests\e2e\demo.spec.ts:27:5 › chat selection, diacritic search, independent filters and unread state (749ms)
+  ✓   5 tests\e2e\demo.spec.ts:43:5 › older history loads page by page without moving the reader (728ms)
+  ✓   6 tests\e2e\demo.spec.ts:64:5 › a send passes pending -> sent, and a simulated failure offers retry (3.3s)
+  ✓   7 tests\e2e\demo.spec.ts:100:5 › simulated incoming lands elsewhere, raises its badge, and announces itself (689ms)
+  ✓   8 tests\e2e\demo.spec.ts:126:5 › drafts survive selection; Enter sends text safely and Shift+Enter adds newline (650ms)
+  ✓   9 tests\e2e\demo.spec.ts:144:5 › file metadata, emoji and reactions stay in demo memory (509ms)
+  ✓  10 tests\e2e\demo.spec.ts:155:5 › settings persist only preferences; modal traps focus and restores it on Escape (774ms)
+  ✓  11 tests\e2e\demo.spec.ts:177:5 › OS reduced motion and demo call screen; no external traffic (535ms)
+  ✓  12 tests\e2e\demo.spec.ts:194:5 › a mocked call rings, connects, counts time and holds its toggles (2.8s)
+  ✓  13 tests\e2e\demo.spec.ts:223:5 › a mocked video call exposes a camera toggle that is absent on voice (551ms)
+  ✓  14 tests\e2e\demo.spec.ts:236:5 › losing the network blocks sending, and reconnecting flushes the waiting message (1.6s)
+  ✓  15 tests\e2e\demo.spec.ts:266:5 › an in-flight send stays pending through an outage and settles on recovery (2.4s)
+  ✓  16 tests\e2e\demo.spec.ts:285:5 › secondary glass screens open, label themselves as demo and restore focus (770ms)
+  ✓  17 tests\e2e\demo.spec.ts:318:5 › contacts and groups open real member rows from the seeded data (754ms)
+  ✓  18 tests\e2e\demo.spec.ts:348:5 › navigation, pinned ordering and in-chat search (964ms)
+  ✓  19 tests\e2e\demo.spec.ts:373:5 › an attachment uploads, completes, and can be cancelled mid-flight (2.6s)
+  ✓  20 tests\e2e\demo.spec.ts:394:5 › an incoming attachment downloads on demand and settles at done (1.5s)
+  ✓  21 tests\e2e\demo.spec.ts:405:7 › layout and visual evidence 1920x1080 (1.7s)
+  ✓  22 tests\e2e\demo.spec.ts:405:7 › layout and visual evidence 1600x900 (1.2s)
+  ✓  23 tests\e2e\demo.spec.ts:405:7 › layout and visual evidence 1366x768 (1.0s)
+  ✓  24 tests\e2e\extended-qa.spec.ts:7:7 › text contrast at glass endpoints and blur modes: dark (3.1s)
+  ✓  25 tests\e2e\extended-qa.spec.ts:7:7 › text contrast at glass endpoints and blur modes: light (3.3s)
+  ✓  26 tests\e2e\extended-qa.spec.ts:33:5 › Enter during browser IME composition does not send; committed Vietnamese text sends once (476ms)
+
+  26 passed (46.3s)

@@ -1,0 +1,29 @@
+JS_FILES=116
+BrowserView                      total=0    files=-
+WebContentsView                  total=0    files=-
+webviewTag                       total=0    files=-
+<webview                         total=0    files=-
+addBrowserView                   total=0    files=-
+setBrowserView                   total=0    files=-
+registerSchemesAsPrivileged      total=2    files=main-dist/compact-app.js(1), main-dist/sentry.js(1)
+protocol.handle                  total=0    files=-
+registerHttpProtocol             total=0    files=-
+registerStreamProtocol           total=0    files=-
+registerBufferProtocol           total=0    files=-
+registerFileProtocol             total=2    files=main-dist/compact-app.js(1), main-dist/main.js(1)
+setAccessibilitySupportEnabled   total=0    files=-
+setAsDefaultProtocolClient       total=4    files=main-dist/compact-app.js(2), main-dist/main.js(2)
+setAppUserModelId                total=3    files=main-dist/compact-app.js(2), main-dist/main.js(1)
+writeShortcutLink                total=2    files=main-dist/compact-app.js(1), main-dist/main.js(1)
+setOverlayIcon                   total=2    files=main-dist/compact-app.js(1), main-dist/main.js(1)
+flashFrame                       total=30   files=main-dist/compact-app.js(7), main-dist/main.js(7), main-dist/preload-noti.js(1), main-dist/preload-render.js(1), main-dist/preload-shared-worker.js(1), pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js(3), pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js(3), pc-dist/lazy/default-login-startup-main-startup-shared-worker-znotification.aa2b4a7eeda68a9f5e59.js(1), pc-dist/search-worker.f32c58b63b6f4273a8a4.js(3), pc-dist/sync-v2-sub-worker.f32c58b63b6f4273a8a4.js(3)
+setBadgeCount                    total=2    files=main-dist/compact-app.js(1), main-dist/main.js(1)
+setProgressBar                   total=8    files=main-dist/compact-app.js(4), main-dist/main.js(4)
+utilityProcess.fork              total=2    files=main-dist/compact-app.js(1), main-dist/main.js(1)
+fromPartition                    total=35   files=main-dist/compact-app.js(16), main-dist/main.js(19)
+remote-debugging-port            total=0    files=-
+enableRemoteModule               total=0    files=-
+will-attach-webview              total=0    files=-
+app.on("open-url"                total=0    files=-
+USER_DATA_DIR                    total=0    files=-
+--user-data-dir                  total=0    files=-

@@ -1,0 +1,126 @@
+=== react runtime version ===
+  /"16\.\d+\.\d+"/g -> "16.14.0"  (3 hits)
+  react-dom ctx: "scheduleUpdate:null,currentDispatcherRef:J.ReactCurrentDispatcher,findHostInstanceByFiber:function(e){return null===(e=it(e))?null:e.stateNode},findFiberByHostInstance:function(e){return n?n(e):null},findHostInstancesForRefresh:null,scheduleRefresh:null,scheduleRoot:null,setRefreshHandler:null,getCurrentFiber:null}))}({findFiberByHostInstance:Pn,bundleType:0,version:\"16.14.0\",rendererPackageName:\"react-dom\"}),n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED=lc,n.createPortal=oc,n.findDOMNode=function(e){if(null==e)return null;if(1===e.nodeType)return e;var t=e._reactInternalFiber;if(void 0===t){if(\"function\"==typeof e.render)throw Error(o(188));thr"
+  "react.element"        4
+  "__SECRET_INTERNALS"   3
+  "react.memo"           3
+  "react.forward_ref"    3
+  "hooks"                30
+
+=== portal targets (zl-modal) ===
+  @1281632: "eight:e.freeHeight,fullscreen:e.fullscreen,className:e.className,expand:e.expand,typeZlPopup:e.typeZlPopup,children:e.children,onClickBody:e.onClickBody,onScrollBody:e.onScrollBody},G={footer:n,rememberStatus:e.rememberStatus,footerSeparator:e.footerSeparator,toggleOption:e.toggleOption};Object(u.useEffect)((()=>(P&&(O(),w(!0)),()=>{w(!1)})),[P,y,r]);const V=()=>{e.identity?W.closeModal(e.identity):W.closeAllModal()},H=\"string\"==typeof e[\"data-id\"]?{title:e[\"data-id\"]}:e[\"data-id\"];return P?v.a.createPortal(A.a.createElement(I.a,{onCatch:V},A.a.createElement(R.Provider,{value:{affectWindow:c,mountContainer:k,windowContainer:b,\"data-id\":H}},A.a.createElement(B.a,{overrideValue:null==i?void 0:i.zIndex},A.a.createElement(q.a,{key:L,value:{window:b,docum"
+  @2927893: "=>e.closeCocosScreen(e.windowKey),state:e.cocosScreenState[e.windowKey]}),r.a.createElement(ee.a,null),r.a.createElement(X,Object(a.a)({},e,{state:d,conversation:A,selfWindow:u,compactLv:t,superCompact:!1})),e.GlobalContextMenu&&r.a.createElement(e.GlobalContextMenu.Component,null))},ie=n(\"i8i4\"),re=n.n(ie),se=n(\"nahq\");function oe(e){var t;const[n]=r.a.useState((()=>se.default.getWindow(e.windowKey)));let a=null==n||null===(t=n.document)||void 0===t?void 0:t.getElementById(\"app\");return n?re.a.createPortal(r.a.createElement(\"div\",{className:\"flx flx-col default\",id:\"app-page\"},e.children),a):null}var le=n(\"+V8v\"),ce=n(\"ZBGy\"),de=n(\"oVrz\"),ue=n(\"Vp9m\"),Ae=n(\"WWOu\"),he=n(\"V0Mo\"),me=n(\"Sj3C\"),pe=n(\"HuPi\"),ge=n(\"YGiT\");function fe(e){const[t,n]=r.a.useS"
+  @3368417: ",(function(){return x}));var a=n(\"wx14\"),i=n(\"Ff2n\"),r=n(\"q1tI\"),s=(n(\"17x9\"),n(\"i8i4\")),o=n(\"aAGg\");var l=r.forwardRef((function(e,t){const{children:n,container:a,disablePortal:i}=e,[l,c]=r.useState(null),d=Object(o.a)(r.isValidElement(n)?n.ref:null,t);return r.useEffect((()=>{i||c(function(e){return\"function\"==typeof e?e():e}(a)||document.body)}),[a,i]),r.useEffect((()=>{if(l&&!i)return Object(o.b)(t,l),()=>{Object(o.b)(t,null)}}),[t,l,i]),i?r.isValidElement(n)?r.cloneElement(n,{ref:d}):n:l?s.createPortal(n,l):l})),c=n(\"doQp\"),d=n.n(c),u=n(\"bNWW\");const A=\"zl-modal\",h={Block:`${A}__dialog`,Header:`${A}__dialog__header`,Body:`${A}__dialog-body`,Footer:`${A}__footer ${A}__footer__button-action`},m=\"zl-dlg\",p={Block:m,Paper:`${m}-paper`,Title:`${m}-ti"
+  @6857786: "mStyle:c={},children:d,container:u,content:A,className:h=\"\",arrowClassName:m}=e;Object(i.useEffect)((()=>{s&&n&&O.handleAfterOpen(n)}),[s]);const p=Object(B.b)();return s?(()=>{let e=r.a.createElement(\"div\",{ref:t,className:`popover-v3 ${h}`,style:Object(a.a)(Object(a.a)({zIndex:p},l),c)},r.a.createElement(\"div\",{className:m}),A);return e=r.a.createElement(B.a,{overrideValue:p},e),r.a.createElement(U.Provider,{value:{windowId:n.windowId,mountContainer:u}},r.a.createElement(r.a.Fragment,null,o.a.createPortal(e,u),d))})():d};j.prototype={identity:c.a.object,visible:c.a.bool,style:c.a.object,customStyle:c.a.object,children:c.a.node,container:c.a.node,className:c.a.string,arrowClassName:c.a.string};t.b=F(r.a.memo(Object(i.forwardRef)(j)))},JpO0:function("
+  createPortal occurrences = 13
+
+=== titleBar / shell anchors ===
+  "titleBar"               occ=1
+     @19647922: "ops.user.zaloName)}`:\"\";this.props.isPopupWindow||(i=i?`Zalo - ${i}`:\"Zalo\");const s=this.state.isFocus?\"\":\"unfocus\";return r.a.createElement(o.a,null,r.a.createElement(\"div\",{id:\"titleBar\",className:(this.props.className||\" titlebar rel flx flx-al-c \")+(S?\" titlebar--display \":\"\")+(this.props.status&&this.props.status.isAppLock?\" locked \":\"\")+\"WIN32\",onDoubleClick:this.maximize.bind(this),style:O"
+  "id:\"titleBar\""        occ=1
+     @19647918: "s.props.user.zaloName)}`:\"\";this.props.isPopupWindow||(i=i?`Zalo - ${i}`:\"Zalo\");const s=this.state.isFocus?\"\":\"unfocus\";return r.a.createElement(o.a,null,r.a.createElement(\"div\",{id:\"titleBar\",className:(this.props.className||\" titlebar rel flx flx-al-c \")+(S?\" titlebar--display \":\"\")+(this.props.status&&this.props.status.isAppLock?\" locked \":\"\")+\"WIN32\",onDoubleClick:this.maximize.bind(this),sty"
+  "convList"               occ=9
+     @8611863: "Manager(){return this._convInfoManager||(this._convInfoManager=i.ModuleContainer.resolve(l.ConvInfoDataManager)),this._convInfoManager}static get ConvListController(){return this._convListController||(this._convListController=i.ModuleContainer.resolve(c.ConvListController)),this._convListController}static get ConversationController(){return this._convController||(this._convController=i.ModuleConta"
+     @8611890: "InfoManager||(this._convInfoManager=i.ModuleContainer.resolve(l.ConvInfoDataManager)),this._convInfoManager}static get ConvListController(){return this._convListController||(this._convListController=i.ModuleContainer.resolve(c.ConvListController)),this._convListController}static get ConversationController(){return this._convController||(this._convController=i.ModuleContainer.resolve(T.b)),this._co"
+     @8611964: "taManager)),this._convInfoManager}static get ConvListController(){return this._convListController||(this._convListController=i.ModuleContainer.resolve(c.ConvListController)),this._convListController}static get ConversationController(){return this._convController||(this._convController=i.ModuleContainer.resolve(T.b)),this._convController}static get LabelDataManager(){return this._labelDataManager||"
+  "div_Main_Tab_zCloud"    occ=1
+     @12360150: "Instance().isFreev2()?o:n.isActive,onClick:()=>{},icon:{active:\"zCloud_24_Filled sidebar-icon\",normal:\"zCloud_24_Line sidebar-icon\"},titleKey:\"STR_LEFT_SIDEBAR_ZALO_CLOUD\",dataId:\"div_Main_Tab_zCloud\",unreadMark:!!n.showReddot}),r.a.createElement(on.b,{identity:c,content:r.a.createElement(_a,{onClickCTA:()=>{const e=Object(Dt.b)().getPopoverCTALink();Object(Ta.e)(e,(()=>he.b.open(e))),l(!1),Aa.a.l"
+
+=== state-class CSS for conversation row + message row ===
+  total rules = 15934
+
+## conv-item.selected  rules=4
+   @685966 .conv-item.chat-message.first-selected,.conv-item.chat-message.last-selected,.conv-item.selected
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @686131 .conv-item.chat-message.first-selected:hover,.conv-item.chat-message.last-selected:hover,.conv-item.selected:hover
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @686367 .conv-item.new-just-read.active,.conv-item.new-just-read.selectedNewFriend
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @2299628 .custom.mask-sidebar .conv-item.chat-message.first-selected,.custom.mask-sidebar .conv-item.chat-message.last-selected,.
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+
+## conv-item.pinned  rules=1
+   @2299838 .custom.mask-sidebar .conv-item.pinned
+        bg: var(--layer-background-pinned)
+        vars: --layer-background-pinned
+
+## conv-item:hover  rules=33
+   @61926 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .
+   @85880 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .
+   @95862 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .
+   @121511 #calendar-v3 .cal-weekday-v3,#calendar-v3>.cal-clear-time,#filter-tags-sb .filter-tag-item>.edit-button,#group-creator .
+
+## chat-message.me  rules=47
+   @702611 .chat-message__photogroup.me
+   @702792 .chat-message__actionholder.me
+   @717217 .chat-message.me
+   @721212 .chat-message.me .fa-cloud
+
+## chat-message.failed  rules=0
+
+## chat-message-reaction  rules=7
+   @1340586 .chat-message:not(.-reaction) .audio-message .bubble-message-time-status
+   @1342047 .chat-message:not(.-reaction) .card--location .bubble-message-time-status
+   @1343481 .chat-message:not(.-reaction) .msg-call .bubble-message-time-status
+   @1344879 .chat-message:not(.-reaction) .sticker-set .bubble-message-time-status
+
+## chat-box-input--to-focus  rules=0
+
+## zmenu-item:hover  rules=4
+   @1857139 .zmenu-item.hovered,.zmenu-item:hover,.zmenu-item:hover:not(.subtitle)
+        bg: var(--layer-background-hover)
+        vars: --layer-background-hover
+   @1857251 .zmenu-item:hover:not(.subtitle)>.zmenu-sub
+   @1857309 .zmenu-item:hover:not(.subtitle).active
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @1857393 .zmenu-item:hover:not(.subtitle).disabled
+        bg: transparent
+
+## zmenu-item.selected  rules=4
+   @1794772 .ai-translation-language-pair-select__menu.zmenu-body.content-only .zmenu-item.active,.popover-v3.ai-translation-languag
+        bg: var(--layer-background-hover)
+        vars: --layer-background-hover
+   @1857309 .zmenu-item:hover:not(.subtitle).active
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @1857523 .zmenu-item.chat-message.first-selected:hover,.zmenu-item.chat-message.last-selected:hover,.zmenu-item.selected:hover
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+   @1858888 .zmenu-item.active
+        bg: var(--layer-background-selected)
+        vars: --layer-background-selected
+
+## setting-item:hover  rules=1
+   @1072827 .setting-menu__item:hover
+        bg: var(--layer-background-hover)
+        vars: --layer-background-hover
+
+## nav active  rules=0
+
+## sidebar active  rules=0
+
+## titlebar is-maximized  rules=0
+
+## modal mask  rules=0
+
+=== --BA20 / --WA100 definitions (used by chat header + bubbles) ===
+  --BA20                     defs=2  hsla(0,0%,100%,0.2) | rgba(0,0,0,0.2)
+  --BA30                     defs=2  hsla(0,0%,100%,0.3) | rgba(0,0,0,0.3)
+  --WA100                    defs=2  #000 | #fff
+  --text-information         defs=2  #66a6ff | #005ae0
+  --layer-background         defs=2  #22262b | #fff
+  --layer-background-subtle  defs=2  #1d2025 | #ebecf0
+  --border-focused           defs=2  #66a6ff | #005ae0
+  --background-activeness    defs=2  #66a6ff | #0068ff
+
+=== does chat-message row use transform/will-change/overflow (glass blockers) ===
+  .chat-message rules=188  transform:2 willChange:0 overflow:0 contain:0 zIndex:9 position:27 filter:1 isolation:0
+   @700886 .chat-message .extra-btn__text  transform: uppercase
+   @701448 .chat-message .marker-icon:before  transform: rotate(45deg)
+
+wrote _r3_final.txt

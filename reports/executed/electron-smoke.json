@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:desktop"
+  ],
+  "started": "2026-11-05T02:48:33.908Z",
+  "finished": "2026-11-05T02:49:42.570Z",
+  "exitCode": 0,
+  "signal": null
+}

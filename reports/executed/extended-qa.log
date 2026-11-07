@@ -1,0 +1,106 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test extended-qa.spec.ts
+
+[2m[WebServer] [22m(node:8024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 3.5s of this 16.7s build (21%).
+[2m[WebServer] [22mThe slowest callbacks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+[2m[WebServer] [22m  - plugin @tailwindcss/vite:generate:build transform (11%, 1.8s, 1 call)
+[2m[WebServer] [22m  - plugin vite:css-post renderChunk (9%, 1.4s, 1 call)
+[2m[WebServer] [22mAdditional callback time came from callbacks under 1s.
+[2m[WebServer] [22mSee https://rolldown.rs/reference/InputOptions.checks#bundlertimings for more details.
+[2m[WebServer] [22m
+[2m[WebServer] [22m(node:36760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: dark (11.6s)
+(node:32480) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32480) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: light (12.4s)
+  ✓  3 tests\e2e\extended-qa.spec.ts:31:5 › Enter during browser IME composition does not send; committed Vietnamese text sends once (1.2s)
+
+
+  1) tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: dark ─────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 14[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "minimumRatio": 4.16,[39m
+    [31m+     "required": 4.5,[39m
+    [31m+     "sampleCount": 5,[39m
+    [31m+     "text": "14:27",[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "minimumRatio": 4.45,[39m
+    [31m+     "required": 4.5,[39m
+    [31m+     "sampleCount": 22,[39m
+    [31m+     "text": "Ừm, tối mình họp nhé!",[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      22 |           const results = await sampleTextContrast(page);
+      23 |           await writeFile(`reports/accessibility-extended/${theme}-${glass}-${lowBlur ? 'low' : 'normal'}-${state}.json`, JSON.stringify(results, null, 2));
+    > 24 |           expect.soft(results.filter(result => result.minimumRatio < result.required)).toEqual([]);
+         |                                                                                        ^
+      25 |         }
+      26 |       }
+      27 |     }
+        at D:\Zalo\tests\e2e\extended-qa.spec.ts:24:88
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 14[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   Object {[39m
+    [31m+     "minimumRatio": 4.16,[39m
+    [31m+     "required": 4.5,[39m
+    [31m+     "sampleCount": 5,[39m
+    [31m+     "text": "14:27",[39m
+    [31m+   },[39m
+    [31m+   Object {[39m
+    [31m+     "minimumRatio": 4.45,[39m
+    [31m+     "required": 4.5,[39m
+    [31m+     "sampleCount": 22,[39m
+    [31m+     "text": "Ừm, tối mình họp nhé!",[39m
+    [31m+   },[39m
+    [31m+ ][39m
+
+      22 |           const results = await sampleTextContrast(page);
+      23 |           await writeFile(`reports/accessibility-extended/${theme}-${glass}-${lowBlur ? 'low' : 'normal'}-${state}.json`, JSON.stringify(results, null, 2));
+    > 24 |           expect.soft(results.filter(result => result.minimumRatio < result.required)).toEqual([]);
+         |                                                                                        ^
+      25 |         }
+      26 |       }
+      27 |     }
+        at D:\Zalo\tests\e2e\extended-qa.spec.ts:24:88
+
+    Error Context: test-results\extended-qa-text-contrast--5a0b9-dpoints-and-blur-modes-dark\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\extended-qa-text-contrast--5a0b9-dpoints-and-blur-modes-dark\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\extended-qa-text-contrast--5a0b9-dpoints-and-blur-modes-dark\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\extended-qa.spec.ts:6:7 › text contrast at glass endpoints and blur modes: dark ──────
+  2 passed (1.4m)

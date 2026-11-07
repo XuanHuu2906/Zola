@@ -1,0 +1,8 @@
+JS bundles scanned: 116
+
+getUserMedia definition-shaped tokens: 2
+getUserMedia self-references inside the shim body: 1
+getUserMedia genuine invocations from calling code: 0
+
+No invocation of Browser/Module/window/navigator.getUserMedia anywhere in the bundle set.
+The 7 tokens are the Emscripten runtime defining an API that nothing calls.

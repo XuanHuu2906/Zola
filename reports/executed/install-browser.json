@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm",
+    "exec",
+    "--",
+    "playwright",
+    "install",
+    "chromium"
+  ],
+  "started": "2026-11-05T02:46:38.366Z",
+  "finished": "2026-11-05T02:47:26.134Z",
+  "exitCode": 0,
+  "signal": null
+}

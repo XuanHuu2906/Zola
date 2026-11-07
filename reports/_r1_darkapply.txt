@@ -1,0 +1,35 @@
+
+### /add\(\s*["']dark["']\s*\)/g: 0 @ 
+
+### /remove\(\s*["']dark["']\s*\)/g: 0 @ 
+
+### /toggle\(\s*["']dark["']/g: 0 @ 
+
+### /classList\.add\([a-zA-Z_$][\w$]*\.theme\b/g: 0 @ 
+
+### /classList\.add\([a-zA-Z_$][\w$]*\.(DARK|LIGHT|CUSTOM)\b/g: 0 @ 
+
+### /"(light|dark)"===/g: 0 @ 
+
+### /===["']dark["']/g: 0 @ 
+
+### /body\.className\s*=/g: 0 @ 
+
+
+### windows containing both "theme" and "classList" within 400 chars
+--- @1311604 ---
+,["startApp"]);e.zsymb(0,"VGbFlE","Starting compact application");if(!("compact-app-pc"===__ZaBUNDLENAME__))return;const t=Object(Lt.a)().get(Pt,{});var a;t.lang&&(e.zsymb(0,"GTv758","Setting up language: ",t.lang),a=t.lang,p.default.changeToLang(a)),t.theme&&(e.zsymb(0,"TxR0ot","Setting up theme: ",t.theme),(e=>{const t=document.body;if(!t)return;const{DARK:a,LIGHT:i}=kt.THEME;e===a&&n("9Tg7"),t.classList.toggle(a,e===a),t.classList.toggle(i,e===i)})(t.theme));const i=r.ModuleContainer.resolve(Mt);e.zsymb(0,"tXoHz0","Starting compact application"),await i.start(),e.zsymb(0,"flAF5E","Compact application started")}(async()=>{(()=>{const e=r.ModuleContainer.resolve(o.a);e.loadTasks(),e.registerModule()})(),await xt()})()},"/z/9":function(e,t,n){"use strict";n.d(t,"a",(function(){return c}));
+--- @6113504 ---
+theme:u}=Object(r.i)(),A=Object(a.useCallback)((()=>{let e=document.getElementById("app-theme-overlay");return e||(e=document.createElement("div"),e.className="theme-transition-overlay",e.id="app-theme-overlay",document.body.insertBefore(e,document.body.firstChild),e)}),[]),h=Object(a.useCallback)((t=>{const n=e||window;if(n){var a,i,s,o;const e=null===(a=n.document.body)||void 0===a||null===(i=a.classList)||void 0===i?void 0:i.contains(t),l=null===(s=n.document.body)||void 0===s||null===(o=s.classList)||void 0===o?void 0:o.contains(r.e.DARK);if(t===r.e.DARK&&e)return;if(t===r.e.LIGHT&&!l)return}const l=A();l.offsetWidth,l.classList.add("active"),setTimeout((()=>{l.remove()}),1e3)}),[A,e]),m=Object(a.useCallback)((e=>{c(e),r.h.setTheme(e)}),[]),p=Object(a.useMemo)((()=>t=>{const n=e||windo
+--- @6113735 ---
+Before(e,document.body.firstChild),e)}),[]),h=Object(a.useCallback)((t=>{const n=e||window;if(n){var a,i,s,o;const e=null===(a=n.document.body)||void 0===a||null===(i=a.classList)||void 0===i?void 0:i.contains(t),l=null===(s=n.document.body)||void 0===s||null===(o=s.classList)||void 0===o?void 0:o.contains(r.e.DARK);if(t===r.e.DARK&&e)return;if(t===r.e.LIGHT&&!l)return}const l=A();l.offsetWidth,l.classList.add("active"),setTimeout((()=>{l.remove()}),1e3)}),[A,e]),m=Object(a.useCallback)((e=>{c(e),r.h.setTheme(e)}),[]),p=Object(a.useMemo)((()=>t=>{const n=e||window;switch(t){case r.e.DARK:return i.a.createElement(o,{_window:n});case r.e.CUSTOM:return i.a.createElement(l,{_window:n});default:return null}}),[e]),g=Object(a.useCallback)((e=>{if(d!==r.f.SYSTEM)return;const t=e.matches?r.e.DARK:
+--- @15299020 ---
+({isGradient:!1,isMaskSidebar:!1,isOnlyMainBar:!1,isSingleColor:!0,isFollowDarkSystemToken:!1,isDark:!1,fontSize:0,background:"",navigation:"",highlight:"",color:""});return l.a.createElement("div",{className:"customization-theme"},l.a.createElement("div",{className:"theme-color"},l.a.createElement("input",{className:"z-color-input",onChange:t=>(t=>{e.onBasedOnSystemToken(ot.e.DARK),document.body.classList.contains("mask-sidebar")||document.body.classList.add("mask-sidebar");let{contentCss:n,tokenUpdate:a}=Object(dt.c)(t.target.value,!1);Object(dt.a)(n)})(t),type:"color"})))};var Dt=e=>{const t=ne.default.getUidMe(),n={[t]:"https://f12-zpcloud.zdn.vn/jxl/7373642648100274358/24f35d1efdf75ba902e6.jxl?jxlstatus=1"};let a=ke.default.getGroupsListSync(),i=ne.default.getFriendsSync();const{theme
+--- @15300499 ---
+ult.copyTextToClipboard(`${e}: ${t};`,null)},D=(e,t)=>{const n=e.target.value||"";n&&O(Object(r.a)(Object(r.a)({},R),{},{[t]:n}))},L=e=>{var t,n,a;if(null==e||!e.setting)return;P(null==e||null===(t=e.setting)||void 0===t?void 0:t.isFollowDarkSystemToken);let{contentCss:i,tokenUpdate:s}=Object(dt.d)(null==e?void 0:e.setting);null!=e&&null!==(n=e.setting)&&void 0!==n&&n.isMaskSidebar&&document.body.classList.add("mask-sidebar"),null!=e&&null!==(a=e.setting)&&void 0!==a&&a.isMaskSidebar||document.body.classList.remove("mask-sidebar"),Object(dt.a)(i),_(Object(r.a)(Object(r.a)({},f),s)),O(e.setting)},P=e=>{e?(ot.h.updateThemeSetting(ot.f.DARK),document.body.classList.contains(ot.e.CUSTOM)||document.body.classList.add(ot.e.CUSTOM)):(document.body.classList.contains(ot.e.CUSTOM)&&document.body.cl
+--- @15300603 ---
+t(r.a)({},R),{},{[t]:n}))},L=e=>{var t,n,a;if(null==e||!e.setting)return;P(null==e||null===(t=e.setting)||void 0===t?void 0:t.isFollowDarkSystemToken);let{contentCss:i,tokenUpdate:s}=Object(dt.d)(null==e?void 0:e.setting);null!=e&&null!==(n=e.setting)&&void 0!==n&&n.isMaskSidebar&&document.body.classList.add("mask-sidebar"),null!=e&&null!==(a=e.setting)&&void 0!==a&&a.isMaskSidebar||document.body.classList.remove("mask-sidebar"),Object(dt.a)(i),_(Object(r.a)(Object(r.a)({},f),s)),O(e.setting)},P=e=>{e?(ot.h.updateThemeSetting(ot.f.DARK),document.body.classList.contains(ot.e.CUSTOM)||document.body.classList.add(ot.e.CUSTOM)):(document.body.classList.contains(ot.e.CUSTOM)&&document.body.classList.remove(ot.e.CUSTOM),ot.h.updateThemeSetting(ot.f.CUSTOM))},k=(e,t,n)=>{"id"===n&&S(Object(r.a)(O
+--- @15300760 ---
+ntentCss:i,tokenUpdate:s}=Object(dt.d)(null==e?void 0:e.setting);null!=e&&null!==(n=e.setting)&&void 0!==n&&n.isMaskSidebar&&document.body.classList.add("mask-sidebar"),null!=e&&null!==(a=e.setting)&&void 0!==a&&a.isMaskSidebar||document.body.classList.remove("mask-sidebar"),Object(dt.a)(i),_(Object(r.a)(Object(r.a)({},f),s)),O(e.setting)},P=e=>{e?(ot.h.updateThemeSetting(ot.f.DARK),document.body.classList.contains(ot.e.CUSTOM)||document.body.classList.add(ot.e.CUSTOM)):(document.body.classList.contains(ot.e.CUSTOM)&&document.body.classList.remove(ot.e.CUSTOM),ot.h.updateThemeSetting(ot.f.CUSTOM))},k=(e,t,n)=>{"id"===n&&S(Object(r.a)(Object(r.a)({},T),{},{[t]:e})),T[t]&&b(Object(r.a)(Object(r.a)({},I),{},{[T[t]]:e}))},F=e=>{let t=Object(r.a)({},T);"group"===e&&(null==t||delete t.group,S(Ob
+--- @15309121 ---
+ted"},"Follow Dark System Token:"),l.a.createElement(ht.a,{onChange:e=>O(Object(r.a)(Object(r.a)({},R),{},{isFollowDarkSystemToken:e})),checked:R.isFollowDarkSystemToken,size:"m"})),l.a.createElement("div",{className:"form-item"},l.a.createElement(oe.a,{onClick:()=>{P(R.isFollowDarkSystemToken),Object(dt.h)(R);let{contentCss:e,tokenUpdate:t}=Object(dt.d)(R);null!=R&&R.isMaskSidebar&&document.body.classList.add("mask-sidebar"),null!=R&&R.isMaskSidebar||document.body.classList.remove("mask-sidebar"),Object(dt.a)(e),_(Object(r.a)(Object(r.a)({},f),t)),w()},textKey:"Apply"})))),l.a.createElement(mt,{token:f}))},{textKey:"Background",domContent:l.a.createElement("div",{className:"theme_dynamic"},l.a.createElement("div",{className:"form-group"},l.a.createElement("div",{className:"form-item"},l.a

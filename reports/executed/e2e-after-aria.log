@@ -1,0 +1,19 @@
+
+> zalo-apple-glass-ui@0.2.0 test:e2e
+> playwright test
+
+
+Running 10 tests using 1 worker
+
+  ok  1 tests\e2e\accessibility.spec.ts:6:7 › accessibility: dark chat and settings (5.7s)
+  ok  2 tests\e2e\accessibility.spec.ts:6:7 › accessibility: light chat and settings (4.8s)
+  ok  3 tests\e2e\demo.spec.ts:5:5 › chat selection, diacritic search, independent filters and unread state (1.4s)
+  ok  4 tests\e2e\demo.spec.ts:21:5 › drafts survive selection; Enter sends text safely and Shift+Enter adds newline (1.4s)
+  ok  5 tests\e2e\demo.spec.ts:39:5 › file metadata, emoji and reactions stay in demo memory (1.0s)
+  ok  6 tests\e2e\demo.spec.ts:50:5 › settings persist only preferences; modal traps focus and restores it on Escape (1.7s)
+  ok  7 tests\e2e\demo.spec.ts:72:5 › OS reduced motion and demo call notice; no external traffic (893ms)
+  ok  8 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1920x1080 (4.3s)
+  ok  9 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1600x900 (3.3s)
+  ok 10 tests\e2e\demo.spec.ts:83:7 › layout and visual evidence 1366x768 (2.8s)
+
+  10 passed (40.7s)

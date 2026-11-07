@@ -1,0 +1,123 @@
+=== chat header component (El) ===
+  @11129452 component Yl
+  @11130585 component M
+  @11130747 component H
+  @11130781 component El
+  @11131176 component Od
+  @11131679 component Hl
+  @11136665 component Uc
+
+=== className literals 0..6000 chars BEFORE #chatView (header region) ===
+  main__center                                 1
+  flx                                          1
+  flx-col                                      1
+  flx-1                                        1
+  animated                                     1
+  w0                                           1
+
+=== .message-view__blur family + token defs ===
+  --NG10                         
+  --layer-background-CSC         
+  --divider-bold                 
+  --text-placeholder             
+  --layer-background-pinned      
+  --layer-background-selected    
+  --layer-background-hover       
+  --surface-background-subtle    
+  --curtain                      
+  --curtain-bold                 
+  --shadow-overlay               
+
+  .message-view__blur JS usage:
+    @11093857: "mo)((()=>t&&null!=i&&i[t]?{backgroundImage:`url(${i[t.toString()]})`,backgroundRepeat:\"no-repeat\",backgroundSize:\"cover\",backgroundPosition:\"center\"}:{}),[t,i]);return l.a.createElement(l.a.Fragment,null,l.a.createElement(\"div\",{className:\"message-view__blur__overlay\"+(n?\"_noavatar\":\"\")+(a===yd.e.DARK?\" bg__dark-mode\":\"\"),style:r}))};var Od=e=>{const{myId:t,convId:n,avatarUrl:a,isFriendConv:r}=e,{theme:s}=Object(yd.i)(),[c,u]=Object(o.useState)((()=>!!Wr.g.useChatBg(t)));Obje"
+    @11094506: "h(d.GROUPID_PREFIX),h=!e.avatarUrl||!c;return l.a.createElement(l.a.Fragment,null,l.a.createElement(Rd,Object(i.a)({},e,{hideOverlay:h})),(A||r)&&s!==yd.e.DARK&&l.a.createElement(Td,{domId:\"messageViewBlur\",key:\"convBg\",convId:n,className:\"message-view__blur \"+(a&&c?\"\":\" hidden\"),image:a}))},Cd=a(\"yWVE\"),Nd=a(\"BpN3\"),wd=a(\"Xt6Q\"),Md=a(\"tcV9\"),Dd=a(\"QEbj\"),Ld=a(\"keS5\");ol((Pd=class extends Vl{constructor(...e){super(...e),this.senderProfileUidKey=\"\",this.isUnmounted=!1,this.on"
+
+=== .block-date + .chat-date ===
+  rules=21
+  @109395 .avatar,.card--link-img,.card--link-img.default,.chat-date>span,.chat-info-general__options,.chat-list-text-separator>span,.chat-onboard__icon,.flx-fi
+       flex:0 0 auto
+  @695905 .chat-date
+       color:var(--text-on-color);contain:content;margin:0 60px 16px;display:grid;grid-template-columns:1fr auto 1fr;font-size:.8125rem;font-weight:400;line-height:1.5;justify-content:center;position:relativ
+  @696118 .chat-date>span
+       background:var(--timestamp);border-radius:10px;padding:2px 10px 3px;z-index:2
+  @696212 .chat-date .line
+       content:"";width:100%;height:0;border-top:1px solid var(--BA20);z-index:0;margin-top:11px
+  @696319 .chat-date.has-text-sep
+       margin-right:4px;grid-template-columns:1fr auto 1fr 56px
+  @696400 .chat-date.has-text-sep .line
+       border-top:.5px solid var(--border-focused)
+  @696474 .chat-date .chat-list-text-separator
+       margin-right:-50px;margin-left:6px
+  @696546 .chat-date .chat-list-text-separator:before
+       content:none
+  @696603 .chat-date .chat-list-text-separator>span
+       margin:1px 12px 0 18px;padding:0 18px
+  @1499670 .preview-ts .block-date>.chat-date
+       transition:.3s ease-out;position:relative;border-radius:10px
+  @1499766 .preview-ts .block-date>.chat-date>.content
+       width:108px;text-align:center
+  @1499840 .preview-ts .block-date>.chat-date>span
+       backdrop-filter:blur(10px)
+  @1499907 .preview-ts .block-date>.chat-date.--time
+       width:116px;border-radius:10px;margin:16px auto
+  @1499997 .preview-ts .block-date.topMost>.chat-date.island
+       z-index:6
+  @1500057 .preview-ts .block-date>.chat-date.island
+       z-index:5
+  @1500109 .preview-ts .block-date>.chat-date.island.topMost
+       z-index:7
+  @1500169 .preview-ts .block-date>.chat-date.island.secondTop
+       z-index:3
+  @1500231 .preview-ts.active-scroll .block-date>.chat-date.island
+       position:sticky;top:10px
+  @1500312 .preview-ts.active-scroll .block-date>.chat-date>span
+       backdrop-filter:blur(10px)
+  @1500393 .preview-ts .block-date:first-child
+       margin-top:40px
+  @1500445 .message-view__scroll--shrink .preview-ts.active-scroll .block-date>.chat-date.island
+       position:sticky;top:20px
+  JS block-date @126169: "ck)return!1;const a=null===(t=this.ref)||void 0===t?void 0:t.previousElementSibling;if(!a)return!0;const i=a&&(null==a||null===(n=a.classList)||void 0===n?void 0:n.contains(\"island\"))&&0===e;let r=!1;const s=a.closest(\".block-date\");if(s){const e=s.querySelector(\".block-date > .chat-item\");r=e&&e===this.ref}return i||r||!1},this.windowId=e.windowId||L.c,this.intersectHandler=this.intersectHandler.bind(this),this.unintersectHandler=this.unintersectHandler.bind(this),this._hand"
+  JS block-date @126214: " 0===t?void 0:t.previousElementSibling;if(!a)return!0;const i=a&&(null==a||null===(n=a.classList)||void 0===n?void 0:n.contains(\"island\"))&&0===e;let r=!1;const s=a.closest(\".block-date\");if(s){const e=s.querySelector(\".block-date > .chat-item\");r=e&&e===this.ref}return i||r||!1},this.windowId=e.windowId||L.c,this.intersectHandler=this.intersectHandler.bind(this),this.unintersectHandler=this.unintersectHandler.bind(this),this._handleRef=this._handleRef.bind(this),this._onClic"
+  JS block-date @376225: " t=o.a.useRef(null);return o.a.useEffect((()=>{const n=O.a.getInViewController(e.windowId),a=t.current;if(n&&a)return n.observe(a,{isBlockDate:!0}),()=>{a&&n.unobserve(a)}}),[]),o.a.createElement(\"div\",{ref:t,className:\"block-date\",key:e.currentKey},o.a.createElement(o.a.Fragment,null,[...e.threads]))};let Ps=function(e){return e.ScrollToBottom=\"scroll-to-bottom\",e.ScrollToOffset=\"scroll-to-offset\",e.ScrollToTargetMessage=\"scroll-to-target-message\",e}({}),ks=function(e){retur"
+  JS block-date @17622964: "\"),m=n(\"Ydol\"),p=n(\"ro+J\"),g=n(\"c51z\"),f=n(\"lCMA\"),_=n(\"jDHv\"),E=n(\"RSgm\");class v extends r.a.Component{constructor(e){super(e),this._handleMouseEnter=()=>{var e;null===(e=this.reactedPopupRef)||void 0===e||e.closest(\".block-date\")},this._handleMouseOut=()=>{var e;const t=null===(e=this.reactedPopupRef)||void 0===e?void 0:e.closest(\".block-date\");this.previewTimeController.setTopMost(this.props.windowId,t,!1),this.previewTimeController.setSecondTopMost(this.props.windowId,nu"
+  JS block-date @17623081: "e){super(e),this._handleMouseEnter=()=>{var e;null===(e=this.reactedPopupRef)||void 0===e||e.closest(\".block-date\")},this._handleMouseOut=()=>{var e;const t=null===(e=this.reactedPopupRef)||void 0===e?void 0:e.closest(\".block-date\");this.previewTimeController.setTopMost(this.props.windowId,t,!1),this.previewTimeController.setSecondTopMost(this.props.windowId,null==t?void 0:t.nextElementSibling,!1),this.previewTimeController.setSecondTopMost(this.props.windowId,null==t?void 0:"
+  JS block-date @17628457: "(clearTimeout(this.showEListTimer),this.showEListTimer=null),this.state.showEList&&this.setState({showEList:!1}),this.props.handleDoubleClick(!0);const e=_.ModuleContainer.resolve(E.a),t=this.reactContainerRef.closest(\".block-date\");e.setTopMost(this.props.windowId,t,!1)}_onDoneEffect(e){this.playingLayer[e]=!1}_playEffect(e=\"\"){let t=\"\",n=null,a=h.b.getReactionEffectResource(e);if(a&&this.props.isBeingObserved()){if(0==this.playingLayer[0])t=\"reaction-canvas-layer-0\"+this.pr"
+  JS block-date @18917645: "reactedList:n}=e;if(Object(T.c)(function(e){if(!e)return[];const t=[];for(let n in e)\"0\"===n||y(n)||t.push(n);return t}(n)),Object(i.useEffect)((()=>()=>{var e;const n=null===(e=t.current)||void 0===e?void 0:e.closest(\".block-date\");if(n){const e=u.ModuleContainer.resolve(A.a);e.setTopMost(\"\",n,!1),e.setSecondTopMost(\"\",null==n?void 0:n.nextElementSibling,!1),e.setSecondTopMost(\"\",null==n?void 0:n.previousElementSibling,!1)}}),[]),!n||!o.default.mapHasItem(n))return null;cons"
+  JS block-date @18929878: "e \":\"\")})));function Z(t){if(t)m.current=!0;else{var n,a;m.current=!1,null===(n=e.handleDoubleClick)||void 0===n||n.call(e,!0);const t=u.ModuleContainer.resolve(A.a),i=null===(a=h.current)||void 0===a?void 0:a.closest(\".block-date\");i&&t.setTopMost(\"\",i,!1)}}function $(){e.hideQuickAction&&(e.hideQuickAction(),f.current=!0)}function ee(){var t,n;null===(t=e.hideQuickAction)||void 0===t||t.call(e),null===(n=e.handleDoubleClick)||void 0===n||n.call(e,!1)}function te(e){E.curren"
+
+=== sidebar tabs ===
+  "SidebarTab:"            occ=0
+  "STR_LEFT_SIDEBAR"       occ=3
+     @12360113: "ame:d.SidebarTab.ZCLOUD_TAB,isActive:va.CloudConfigv2.getInstance().isFreev2()?o:n.isActive,onClick:()=>{},icon:{active:\"zCloud_24_Filled sidebar-icon\",normal:\"zCloud_24_Line sidebar-icon\"},titleKey:\"STR_LEFT_SIDEBAR_ZALO_CLOUD\",dataId:\"div_Main_Tab_zCloud\",unreadMark:!!n.showReddot}),r.a.createElement(on.b,{identity:c,content:r.a.createElement(_a,{onClickCTA:()=>{const e=Object(Dt.b)().getPopoverCTALink();Object(Ta.e)(e,(()=>he.b.open(e))),l(!1),Aa.a.logOpenZCloudPromoPopover({widget_position:\"left_sidebar\"})},onClosePopover:()=>{l(!1)}}),placement:\"right\",style:{width:\"336px\",padding:\"0px\",boxShadow:\"var(--shad"
+     @12366124: "ck:i,type:\"tertiary-neutral\",size:\"small\",className:`${qa}-close-btn`,\"data-id\":\"close-kiki-onboard-tooltip-button\"})),r.a.createElement(\"div\",{className:`${qa}-info`},r.a.createElement(_.a,{textKey:\"STR_LEFT_SIDEBAR_KIKI_ONBOARD_TITLE\",className:\"tip-title\",tagName:\"div\"}),r.a.createElement(_.a,{textKey:\"STR_LEFT_SIDEBAR_KIKI_ONBOARD_DESC\",className:\"tip-desc\",tagName:\"div\"}))),positionMode:\"anchor\",className:qa},r.a.createElement(\"div\",{className:`${qa}-anchor-el`}))};var Ja=r.a.memo(Xa);const Za=()=>(Object(i.useEffect)((()=>{A.default.kiki_assistant.red_dot_promotion&&Ka(za.b.RED_DOT)}),[]),A.default.kiki_ass"
+     @12366231: "-button\"})),r.a.createElement(\"div\",{className:`${qa}-info`},r.a.createElement(_.a,{textKey:\"STR_LEFT_SIDEBAR_KIKI_ONBOARD_TITLE\",className:\"tip-title\",tagName:\"div\"}),r.a.createElement(_.a,{textKey:\"STR_LEFT_SIDEBAR_KIKI_ONBOARD_DESC\",className:\"tip-desc\",tagName:\"div\"}))),positionMode:\"anchor\",className:qa},r.a.createElement(\"div\",{className:`${qa}-anchor-el`}))};var Ja=r.a.memo(Xa);const Za=()=>(Object(i.useEffect)((()=>{A.default.kiki_assistant.red_dot_promotion&&Ka(za.b.RED_DOT)}),[]),A.default.kiki_assistant.red_dot_promotion?r.a.createElement(r.a.Fragment,null):null);var $a=a(\"3T+z\");const ei={leftbarTopSt"
+  "left-sidebar"           occ=0
+  "leftSidebar"            occ=0
+  "leftmenu"               occ=27
+     @1695701: "create_empty_group\",Xa=\"send_ecard_event\",Ja=\"tabmsg.header\",Za=\"tabcontact.header\",$a=\"tabgroup.header\",ei=\"tabfile.header\",ti=\"csc.headerbar\",ni=\"csc.emptyscreen\",ai=\"sidebar.topavatar\",ii=\"sidebar.leftmenu\",ri=\"mediastore.header\",si=\"https://s120-ava-talk.zadn.vn/default\",oi=1,li=2,ci=78,di=72,ui=47,Ai=68,hi=72,mi=\"mtc-\",pi={ALL:0,GNOTICE_TOPIC:1,GNOTICE_MESSAGE:2,POLL:3,GSUGGESTION:4,DATE_TITLE:5,MORE:-1,LOADMORE:-2,BOTTOM_ALL:-3,BOTTOM_TOPIC:-4,BOTTOM_POLL:-5,BOTTOM_REMINDER:-6},gi={ROLLED_MSG:\"ROLLED_MSG\",PIN_MSG:\"PIN_MSG\"},fi={DONT_SYNC:-1,DONE:0,WAIT_CONFIRM:1,WAIT_MOBILE_CONFIRM:2,ERR:3,WAIT_FOR_DATA:4},"
+     @4254984: "ound-selected: #1f344d;--layer-background-inverse: #FFFFFF;--layer-background-inverse-subtle: #38404A;--layer-background-CSC: #16191D;--layer-background-pinned: rgba(0, 0, 0, 0.15);--layer-background-leftmenu: #1D2025;--layer-background-leftmenu-hover: #16191D;--layer-background-leftmenu-selected: #121416;--layer-background-navbar-normal: #121416;--layer-background-navbar-hover: rgba(255, 255, 255, 0.1);--layer-background-navbar-selected: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-normal: #22262B;--layer-background-navbar-sublevel-hover: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublev"
+     @4255021: "ound-inverse: #FFFFFF;--layer-background-inverse-subtle: #38404A;--layer-background-CSC: #16191D;--layer-background-pinned: rgba(0, 0, 0, 0.15);--layer-background-leftmenu: #1D2025;--layer-background-leftmenu-hover: #16191D;--layer-background-leftmenu-selected: #121416;--layer-background-navbar-normal: #121416;--layer-background-navbar-hover: rgba(255, 255, 255, 0.1);--layer-background-navbar-selected: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-normal: #22262B;--layer-background-navbar-sublevel-hover: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-selected: rgba(8, 27, 58, 0.5);--l"
+  "left-menu"              occ=0
+  "navBtn"                 occ=4
+     @11939752: "ewId:a,ctxWindow:r,selectedId:d,conversationId:s})),o.a.createElement(\"div\",{className:\"navigatorWrapper\"},o.a.createElement(v.a,{tagName:\"i\",textKey:\"STR_NAVIGATE_EDIT_PHOTO_CAPTION_PREV\",className:\"navBtn fa fa-Chevron_Up_24_Line\",style:{height:\"fit-content\"},onClick:e=>{e.preventDefault(),e.stopPropagation(),E.ModuleContainer.resolve(S.b).emit(\"SELECT_PREVIOUS_ITEM\",{conversationId:s})}}),o.a.createElement(v.a,{tagName:\"i\",textKey:\"STR_NAVIGATE_EDIT_PHOTO_CAPTION_NEXT\",className:\"navBtn fa fa-Chevron_Down_24_Line\",style:{height:\"fit-content\"},onClick:e=>{e.preventDefault(),e.stopPropagation(),E.ModuleContainer"
+     @11940040: "lt(),e.stopPropagation(),E.ModuleContainer.resolve(S.b).emit(\"SELECT_PREVIOUS_ITEM\",{conversationId:s})}}),o.a.createElement(v.a,{tagName:\"i\",textKey:\"STR_NAVIGATE_EDIT_PHOTO_CAPTION_NEXT\",className:\"navBtn fa fa-Chevron_Down_24_Line\",style:{height:\"fit-content\"},onClick:e=>{e.preventDefault(),e.stopPropagation(),E.ModuleContainer.resolve(S.b).emit(\"SELECT_NEXT_ITEM\",{conversationId:s})}})),o.a.createElement(\"div\",{title:f.default.str(i?\"STR_HIDE_PV_SLIDER\":\"STR_SHOW_PV_SLIDER\"),onClick:e=>{null==e||e.preventDefault(),null==e||e.stopPropagation(),E.ModuleContainer.resolve(X.b).toggleSlider(a)},className:\"fullscre"
+     @14226334: ",r.a.createElement(gt.a,{classNames:\"mediaViewerNavBtnSlideAnim\",in:I||T,unmountOnExit:!0},r.a.createElement(\"div\",null,r.a.createElement(N.a,{tagName:\"i\",textKey:\"STR_NAVIGATE_PHOTO_PREV\",className:\"navBtn fa fa-Chevron_Up_24_Line\",style:{height:\"fit-content\"},onClick:e=>{e.preventDefault(),e.stopPropagation(),S.ModuleContainer.resolve(O.b).selectPreviousItem(d)}}),r.a.createElement(N.a,{tagName:\"i\",textKey:\"STR_NAVIGATE_PHOTO_NEXT\",className:\"navBtn fa fa-Chevron_Down_24_Line\",style:{height:\"fit-content\"},onClick:e=>{e.preventDefault(),e.stopPropagation(),S.ModuleContainer.resolve(O.b).selectNextItem(d)}})))),!"
+  "navbar"                 occ=90
+     @4255110: "#16191D;--layer-background-pinned: rgba(0, 0, 0, 0.15);--layer-background-leftmenu: #1D2025;--layer-background-leftmenu-hover: #16191D;--layer-background-leftmenu-selected: #121416;--layer-background-navbar-normal: #121416;--layer-background-navbar-hover: rgba(255, 255, 255, 0.1);--layer-background-navbar-selected: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-normal: #22262B;--layer-background-navbar-sublevel-hover: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-selected: rgba(8, 27, 58, 0.5);--layer-alert-background: #C31818;--layer-error-background: #360707;--layer-success-backgrou"
+     @4255152: " 0, 0, 0.15);--layer-background-leftmenu: #1D2025;--layer-background-leftmenu-hover: #16191D;--layer-background-leftmenu-selected: #121416;--layer-background-navbar-normal: #121416;--layer-background-navbar-hover: rgba(255, 255, 255, 0.1);--layer-background-navbar-selected: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-normal: #22262B;--layer-background-navbar-sublevel-hover: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-selected: rgba(8, 27, 58, 0.5);--layer-alert-background: #C31818;--layer-error-background: #360707;--layer-success-background: #104c24;--layer-warning-background: #5"
+     @4255210: "background-leftmenu-hover: #16191D;--layer-background-leftmenu-selected: #121416;--layer-background-navbar-normal: #121416;--layer-background-navbar-hover: rgba(255, 255, 255, 0.1);--layer-background-navbar-selected: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-normal: #22262B;--layer-background-navbar-sublevel-hover: rgba(255, 255, 255, 0.05);--layer-background-navbar-sublevel-selected: rgba(8, 27, 58, 0.5);--layer-alert-background: #C31818;--layer-error-background: #360707;--layer-success-background: #104c24;--layer-warning-background: #523F00;--layer-information-background: #002152;--layer-neut"
+
+=== nav-ish css families ===
+  nav-button       rules=   7 vars=--text-information
+  nav-content      rules=   5 vars=--layer-background --nav-width --border
+  navbar           rules=   0 vars=
+  navBtn           rules=   7 vars=--background-control-alpha --text-on-color --background-control-alpha-hover
+  leftmenu         rules=   0 vars=
+  leftpanel        rules=   0 vars=
+  main-tab         rules=   5 vars=--layer-background-navbar-normal
+  main__left       rules=   0 vars=
+  main__center     rules=   3 vars=
+  main-tabs        rules=   0 vars=
+  menu-left        rules=   0 vars=
+
+wrote _r3_last.txt

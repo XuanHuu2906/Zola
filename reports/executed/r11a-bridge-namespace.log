@@ -1,0 +1,30 @@
+## pc-dist/compact-app-pc.f32c58b63b6f4273a8a4.js (compact renderer)
+   $zsub.$zuri. = 0
+   window.$zuri = 0
+   $zuri. = 2
+   $zsub. = 137
+   VIA_ZSUB = []
+   VIA_BARE = ["checkArgvLink","checkOpenConvReq"]
+
+## pc-dist/lazy/default-login-startup-main-startup.ec73261654e4ce9540ac.js (main-window startup listener chunk)
+   $zsub.$zuri. = 4
+   window.$zuri = 0
+   $zuri. = 4
+   $zsub. = 14
+   VIA_ZSUB = ["onNewRequest","onRequestOpenConv","removeListenNewRequest","removeListenRequestOpenConv"]
+   VIA_BARE = []
+
+## pc-dist/lazy/default-login-main-startup-shared-worker-znotification.aafd08147de6e983b76f.js (main-window startup drain chunk)
+   $zsub.$zuri. = 0
+   window.$zuri = 0
+   $zuri. = 2
+   $zsub. = 138
+   VIA_ZSUB = []
+   VIA_BARE = ["checkArgvLink","checkOpenConvReq"]
+
+## main-dist/preload-render.js
+   "$zsub" = 0
+   "$zuri" = 1
+   exposeInMainWorld("$zsub" = 0
+   exposeInMainWorld("$zuri" = 1
+   window.$zsub= @ -1 :: "__ZaBUNDLENAME__=\"preload-render\",__SCRIPT_TYPE__=\"preload\",function(e){var t={};function n(r){if(t[r])return t[r].exports;var a=t[r]={i:r,l:!1,exports:{}};return e[r].call(a.exports,a,a.exports,n),a"
