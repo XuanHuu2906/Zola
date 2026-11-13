@@ -278,12 +278,12 @@ export const useZaloStore = create<ZaloState>((set, get) => ({
       // Câu trả lời phải nói **vì sao**, không chỉ "thất bại": bị tắt và máy
       // chủ từ chối là hai việc khác nhau và cách xử lý cũng khác.
       const reason = result.code === 'disabled'
-        ? 'Đồng bộ lịch sử chưa bật. Khởi động lại app với GLASS_PHONE_SYNC=1.'
+        ? 'Phiên bản này chưa hỗ trợ đồng bộ. Hãy cập nhật Zola rồi thử lại.'
         : result.code === 'not-ready'
-            ? 'Chưa đăng nhập hoặc kết nối chưa mở.'
+            ? 'Đang kết nối với Zalo. Hãy đợi kết nối hoàn tất rồi thử đồng bộ lại.'
             : result.code === 'state' ? 'Đang có một lần đồng bộ dở dang.'
               : result.code === 'wasm'
-                ? 'Không nạp được mô-đun giải mã của Zalo trên máy này.'
+                ? 'Không mở được đồng bộ. Hãy khởi động lại Zola; nếu vẫn gặp lỗi, hãy cài lại bản mới nhất.'
                 : `Đồng bộ không mở được (${String(result.code ?? 'không rõ')})${result.message ? `: ${result.message}` : ''}.`;
       set({ liveSync: { phase: 'failed', stats: get().liveSync?.stats ?? { received: 0, total: 0, written: 0, skipped: 0 } } });
       get().notify(reason.slice(0, 200));

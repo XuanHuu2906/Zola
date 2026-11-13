@@ -69,7 +69,7 @@ export function LiveBanner() {
     <CloudDownload size={16} className="live-sync-icon" aria-hidden="true" />
     <span>
       {sync.phase === 'requested'
-        ? 'Đang xin lịch sử từ điện thoại — xác nhận trên máy'
+        ? 'Đang kết nối điện thoại — hãy mở Zalo trên điện thoại và xác nhận nếu được yêu cầu'
         : 'Đang đồng bộ lịch sử'}
       {percent !== null && <b className="live-sync-percent"> · {percent}%</b>} · {counts}
     </span>

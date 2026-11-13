@@ -36,7 +36,7 @@ test(`phone-sync setup ${legacy ? 'stays hidden for a legacy account' : 'hides a
     await expect(page.getByRole('button', { name: 'Tài khoản Zalo', exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Đồng bộ ngay', exact: true })).toHaveCount(0);
     await page.getByRole('button', { name: 'Tài khoản Zalo', exact: true }).click();
-    await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toBeVisible();
     await page.reload();
     await expect(page.getByRole('button', { name: 'Tài khoản Zalo', exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Đồng bộ ngay', exact: true })).toHaveCount(0);
@@ -50,11 +50,11 @@ test(`phone-sync setup ${legacy ? 'stays hidden for a legacy account' : 'hides a
   await expect(page.getByRole('button', { name: 'Đồng bộ ngay', exact: true })).toBeVisible();
   await page.evaluate(() => (window as unknown as { __finishPhoneSetup(complete: boolean): void }).__finishPhoneSetup(true));
   await expect(page.getByRole('button', { name: 'Đồng bộ ngay', exact: true })).toHaveCount(0);
-  await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toBeVisible();
   await page.reload();
   await expect(page.getByRole('button', { name: 'Tài khoản Zalo', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Tài khoản Zalo', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Đồng bộ lịch sử từ điện thoại', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Đồng bộ ngay', exact: true })).toHaveCount(0);
 });
 

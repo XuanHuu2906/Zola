@@ -67,7 +67,7 @@ export function ChatPane() {
   const syncFromPhone = useZaloStore(s => s.syncFromPhone);
   const liveSync = useZaloStore(s => s.liveSync);
   // Ẩn hẳn khi preload không có kênh: một nút bấm ra lỗi còn tệ hơn không có nút.
-  const canSync = useZaloStore(s => s.liveCanSync && s.livePhoneSyncSetupRequired && !s.livePhoneSyncComplete);
+  const canSync = useZaloStore(s => s.liveCanSync);
   const syncRunning = liveSync?.phase === 'requested' || liveSync?.phase === 'receiving';
   const requestLogout = useZaloStore(s => s.requestLogout);
   const login = useZaloStore(s => s.login);
@@ -148,7 +148,7 @@ export function ChatPane() {
     <header className="chat-header"><button className="chat-identity" aria-label="Mở thông tin hội thoại"
       onClick={() => openLiveOverlay({ kind: 'info', chatId: chat.id })}><Avatar chat={chat} size="large" />
       <span className="identity-label"><strong>{chat.name}</strong><small>
-        {chat.isGroup ? 'Nhóm Zalo · zca-js' : 'Cá nhân · zca-js'}</small></span>
+        {chat.isGroup ? 'Nhóm Zalo' : 'Cá nhân'}</small></span>
     </button><div className="chat-actions">
       {callAvailable && !chat.isGroup && <>
         <button className="icon-button" aria-label="Gọi thoại" disabled={callBusy}
@@ -161,7 +161,7 @@ export function ChatPane() {
         <GlassPopover open={accountMenu} onClose={() => setAccountMenu(false)} label="Tài khoản Zalo">
           <div className="lab-account" aria-label="Tài khoản đang đăng nhập">{label}</div>
           <button onClick={() => { requestReconnect(); setAccountMenu(false); accountButton.current?.focus(); }}>
-            <RotateCw size={16} />Kết nối lại listener</button>
+            <RotateCw size={16} />Kết nối lại</button>
           {canSync && <button disabled={syncRunning}
             onClick={() => { syncFromPhone(); setAccountMenu(false); accountButton.current?.focus(); }}>
             <CloudDownload size={16} />

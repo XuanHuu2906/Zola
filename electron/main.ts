@@ -339,11 +339,6 @@ function registerChatHandlers() {
   // như mọi tin khác — nên UI không cần nhánh riêng cho tin đồng bộ.
   ipcMain.handle(IPC.syncFromPhone, async event => {
     if (!isTrusted(event)) return { ok: false, code: 'denied' };
-    // Cờ tắt thì nút vẫn bấm được (renderer không thấy biến môi trường), nên
-    // câu trả lời phải nói đúng việc phải làm thay vì "chưa đăng nhập".
-    if (!process.env.GLASS_PHONE_SYNC) {
-      return { ok: false, code: 'disabled', message: 'đồng bộ chưa bật trên máy này' };
-    }
     const client = chatClient();
     if (!client) return { ok: false, code: 'not-ready', message: 'chưa đăng nhập' };
     return client.syncFromPhone();

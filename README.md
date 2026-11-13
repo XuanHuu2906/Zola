@@ -1,145 +1,188 @@
-# Zola — Zalo desktop client
+# Zola
 
-Zola is an Electron desktop client built with **React, TypeScript, Vite, Tailwind CSS v4, Zustand, Motion, and zca-js**. It connects directly to a Zalo account; there is no offline demo account or sample conversation dataset.
+**Ứng dụng desktop cho Zalo cá nhân, xây dựng với Electron, React và TypeScript.**
 
-On startup, Zola tries to restore the encrypted Zalo session saved on the device. It requests a QR scan only when there is no usable saved session. The QR flow requires the desktop app; opening the renderer in a browser does not log in.
+Zola hướng tới một ứng dụng Zalo desktop có mã nguồn mở, giao diện kính mờ và khả năng phát triển cùng cộng đồng. Dự án kết nối tài khoản Zalo qua [zca-js](https://github.com/JustKemForFun/zca-js), lưu bộ nhớ đệm trên máy và cung cấp giao diện riêng cho việc trò chuyện hằng ngày.
 
-## Run on Linux (Fedora)
+Zola là dự án độc lập, không phải sản phẩm chính thức và không liên kết với Zalo hoặc VNG. Dự án đang trong quá trình phát triển; một số tính năng còn thử nghiệm.
 
-Fedora 45 ships Node.js 22, but `package.json` requires **Node.js 24**. Install it per-user so you do not need root:
+## Tính năng và trạng thái
+
+- **Đăng nhập bằng QR:** khôi phục phiên đã lưu khi mở lại ứng dụng; yêu cầu quét QR khi phiên không còn dùng được.
+- **Trò chuyện cá nhân và nhóm:** nhận tin nhắn trực tiếp, hiển thị hội thoại và tải lịch sử trong phạm vi dữ liệu có sẵn.
+- **Bộ nhớ đệm SQLite:** lưu hội thoại và tin nhắn riêng cho từng tài khoản, giúp mở lại dữ liệu đã tải trên máy.
+- **Thông báo desktop:** nhấn thông báo để mở cuộc trò chuyện tương ứng.
+- **Đồng bộ từ điện thoại — thử nghiệm:** có sẵn trong giao diện; chưa xác nhận hoạt động từ đầu đến cuối với điện thoại thật.
+- **Gọi thoại và video — thử nghiệm, Linux x64:** cần chuẩn bị media runtime riêng; chưa xác nhận cuộc gọi, microphone và camera với tài khoản thật.
+
+### Giới hạn hiện tại
+
+Lịch sử đã có trong bộ nhớ đệm có thể đọc lại trên máy. Việc lấy các tin nhắn cũ hơn phụ thuộc vào nguồn dữ liệu và khả năng của giao thức; Zola chưa bảo đảm khôi phục đầy đủ lịch sử. Cơ chế lấy tin nhắn bỏ lỡ khi kết nối lại có giới hạn và chưa phát hiện chắc chắn mọi khoảng trống.
+
+Gọi nhóm và chia sẻ màn hình chưa được cung cấp. Cấu hình đóng gói hiện có cho Windows x64 và Linux x64; macOS chưa có quy trình đóng gói được tài liệu hóa.
+
+## Sử dụng ứng dụng
+
+Với bản phát hành đã đóng gói, người dùng không cần Node.js, terminal hoặc biến môi trường:
+
+1. Mở bản Zola dành cho hệ điều hành của bạn: file portable `.exe` trên Windows hoặc `.AppImage` trên Linux.
+2. Quét mã QR bằng Zalo trên điện thoại khi đăng nhập lần đầu. Những lần sau, ứng dụng tự khôi phục phiên còn hiệu lực.
+3. Trò chuyện ngay. Để lấy lịch sử cũ, chọn **Đồng bộ ngay** trên lời mời hoặc **Tài khoản Zalo → Đồng bộ lịch sử từ điện thoại**.
+4. Mở Zalo trên điện thoại và xác nhận nếu được yêu cầu. Tiến trình đồng bộ hiển thị ngay trong ứng dụng; nếu thất bại, bạn có thể thử lại từ menu tài khoản.
+
+Sau khi đồng bộ hoàn tất, lời mời ban đầu được ẩn. Mục đồng bộ trong menu tài khoản vẫn có sẵn để sử dụng lại. Đồng bộ không yêu cầu bật cờ hoặc khởi động lại ứng dụng.
+
+## Phát triển từ mã nguồn
+
+### Yêu cầu
+
+- Node.js **24 trở lên** và npm.
+- Git để lấy mã nguồn.
+- Tài khoản Zalo và điện thoại để quét QR đăng nhập.
+- Môi trường desktop để chạy Electron.
+
+Sau khi clone repository, mở terminal tại thư mục dự án:
 
 ```bash
-# any Node 24 install works; this one keeps it under ~/.local
-mkdir -p ~/.local/lib/nodejs
-curl -sSL https://nodejs.org/dist/v24.22.2/node-v24.22.2-linux-x64.tar.xz \
-  | tar -xJ -C ~/.local/lib/nodejs --strip-components=1
-ln -sf ~/.local/lib/nodejs/bin/node ~/.local/bin/node24
-ln -sf ~/.local/lib/nodejs/bin/npm  ~/.local/bin/npm24
-
 npm ci
-npm run dev         # renderer preview at http://127.0.0.1:5173 (desktop bridge unavailable)
-npm run dev:desktop # Electron window
-```
-
-`npm run build` and `npm run build:electron` still use the `node` on your `PATH`, so Node 24 must be reachable for those — either `export PATH="$HOME/.local/lib/nodejs/bin:$PATH"` in `~/.bashrc`, or `npm24 run build`.
-
-**`npm test` and the desktop tools do not need that PATH change.** They go through `tools/node-run.cjs`, which re-executes under a Node ≥ 24 that it finds itself (`$NODE24`, then `~/.local/lib/nodejs/bin/node`, then `/usr/bin/node-24` from the Fedora `nodejs24` package) and prints one line saying which binary it picked. Bare `node` 22 can run the shim, so this works out of the box on Fedora.
-
-`nodejs24` from the Fedora repos (`sudo dnf install nodejs24`) is also found automatically.
-
-Electron 45 downloads its Linux runtime on first use, so the first `npm ci` in a clean tree leaves `node_modules/electron/dist` empty until something runs it. If a tool reports a missing Electron binary, run `node node_modules/electron/install.js` once.
-
-On Fedora the app is Wayland-native: it starts under both Wayland and XWayland. Window controls and the drag region are custom (`frame: false`), so they behave identically to Windows.
-
-### Install the built app
-
-Fedora 45 ships `fuse3-libs` but no `libfuse.so.2`, so a bare AppImage fails with `dlopen(): error loading libfuse.so.2`. `npm run install:linux` extracts the AppImage once into `~/.local/opt/glass-messenger` and installs a per-user `zola` launcher. `APPIMAGE_EXTRACT_AND_RUN=1 ./release/Zola-*.AppImage` also works without installing.
-
-## Run on Windows
-
-Use Node.js 24 LTS and npm from the project directory:
-
-```powershell
-npm ci
-npm run dev
 npm run dev:desktop
 ```
 
-The lockfile was generated by a successful install. Use `npm ci` for subsequent clean/CI installs. Electron 45 downloads its Windows runtime on first use, and electron-builder may download packaging tools. Zola connects to Zalo when started.
+Lệnh `dev:desktop` biên dịch Electron main/preload, khởi động Vite và mở cửa sổ ứng dụng. Quét QR bằng Zalo trên điện thoại nếu được yêu cầu. Đóng cửa sổ hoặc nhấn `Ctrl+C` để dừng môi trường phát triển.
 
-`npm run dev` opens a Vite renderer preview at `http://127.0.0.1:5173`; it has no Zalo IPC bridge. `npm run dev:desktop` compiles main/preload, starts its own Vite server and opens the desktop app. Close the window or use Ctrl+C to stop its server. Do not run both commands on the same port.
+Nếu chỉ cần làm giao diện:
 
-## Verify and package
+```bash
+npm run dev
+```
 
-```powershell
-npm test
-npm run check
-npm run build
+Vite phục vụ giao diện tại `http://127.0.0.1:5173`. Bản xem trước trong trình duyệt không có cầu nối Electron để đăng nhập Zalo và không có tài khoản demo ngoại tuyến. Chạy riêng từng lệnh phát triển để tránh trùng cổng.
+
+### Lưu ý trên Linux
+
+Nếu Electron báo thiếu binary sau khi cài dependency, tải runtime bằng:
+
+```bash
+node node_modules/electron/install.js
+```
+
+Một số công cụ kiểm thử có thể tự tìm Node 24 qua `tools/node-run.cjs`. Tuy nhiên, hãy đặt Node 24 trở lên trên `PATH` để các lệnh build và kiểm tra kiểu chạy nhất quán.
+
+## Kiểm tra và đóng gói
+
+| Lệnh | Mục đích |
+| --- | --- |
+| `npm run check` | Kiểm tra TypeScript, ESLint và unit test |
+| `npm test` | Chạy unit test |
+| `npm run build` | Kiểm tra kiểu và build giao diện |
+| `npm run build:electron` | Biên dịch Electron main/preload |
+| `npm run test:e2e` | Kiểm thử giao diện bằng Playwright |
+| `npm run test:desktop` | Kiểm tra khởi động, bridge và điều khiển cửa sổ |
+| `npm run test:single-instance` | Kiểm tra chỉ mở một phiên ứng dụng |
+| `npm run build:desktop` | Kiểm tra, build và đóng gói cho hệ điều hành đang dùng |
+| `npm run verify:asar` | Đối chiếu mã đã build với nội dung gói ASAR |
+
+Trước lần chạy Playwright đầu tiên:
+
+```bash
 npx playwright install chromium
 npm run test:e2e
+```
+
+Các bài kiểm tra desktop cần có bản build trước:
+
+```bash
+npm run build
 npm run build:electron
 npm run test:desktop
 npm run test:single-instance
+```
+
+Đóng gói ứng dụng:
+
+```bash
 npm run build:desktop
 ```
 
-- `npm test`: runs the current live-client, IPC, cache, protocol, and design-system tests using Node's in-process test runner.
-- `npm run check`: full TypeScript checks, ESLint, tests. Syntax-only checks do not replace this gate.
-- `npm run test:e2e`: builds and serves the production renderer and checks the live-only sign-in screen with axe.
-- `npm run test:desktop`: requires built renderer/main/preload; smoke-tests app startup, the runtime bridge and titlebar controls.
-- `npm run test:single-instance`: requires built renderer/main/preload; minimises the app, spawns a second Electron process against the same profile, and asserts the second one exits with code 0 without opening a window while the first keeps exactly one window and is restored into view. Writes `reports/single-instance-smoke.json`.
-- `npm run build:icon`: regenerates `build/icon.ico` (seven sizes) and `build/icons/*.png` from `tools/make-icon.cjs`; no binary blob to edit by hand. Windows uses the `.ico`; Linux uses the PNG set.
-- `npm run verify:asar`: compares every bundled program file (`dist/**`, `dist-electron/**`) byte-for-byte against the packaged asar (`release/win-unpacked` or `release/linux-unpacked`; pass a path to override) and writes `reports/asar-parity.json`. `build:desktop` runs it automatically after packaging.
-- `npm run build:desktop`: builds for the host only. On Windows, a **portable x64 executable**; on Linux, an **AppImage**. The hash helper records every built artifact in `reports/desktop-artifacts.json`.
-- After the build has fully finished, test the unpacked app with `npm run test:desktop -- "release/win-unpacked/Zola.exe" unpacked` on Windows or `npm run test:desktop -- "release/linux-unpacked/zola" unpacked` on Linux, and the wrapper with `node tools/smoke-portable.cjs`. The latter uses a temporary loopback CDP port because neither NSIS nor AppImage forwards Electron inspector output.
-- No installer is run automatically.
+Kết quả nằm trong `release/`: Windows tạo file portable `.exe`, Linux tạo `.AppImage`. Các báo cáo kiểm tra gói nằm trong `reports/`. Cấu hình Linux còn khai báo media runtime tại `.zola-call-runtime/`; xem phần gọi thử nghiệm bên dưới khi chuẩn bị đóng gói.
 
-The optional `tools/check-source.cjs` checks syntax using TypeScript; it explicitly does not validate dependency types.
+Trên Linux, sau khi có AppImage, có thể cài cho người dùng hiện tại bằng `npm run install:linux`. Script giải nén ứng dụng vào `~/.local/opt/glass-messenger` và tạo launcher `zola` trong `~/.local/bin`, giúp chạy trên hệ thống thiếu FUSE 2.
 
-### Sign-in and local data
+## Tính năng thử nghiệm
 
-The Electron main process restores the saved session on startup and starts QR login only if restoration fails. Session data remains encrypted with Electron `safeStorage`. The data directory is deliberately kept at its existing location so an upgrade does not discard the saved session.
+### Đồng bộ lịch sử từ điện thoại
 
-Files written next to preferences:
+Đồng bộ được bật sẵn. Chọn **Đồng bộ ngay** trên lời mời sau đăng nhập hoặc **Đồng bộ lịch sử từ điện thoại** trong menu tài khoản. Không cần cấu hình biến môi trường.
 
-- `zca-session.bin` — the encrypted session, written only via Electron's `safeStorage`.
-- `live-listener.log` — diagnostic metadata only: event name, connection state, thread id, `msgType`, booleans, message ids and lengths, plus truncated error messages. Never message text, cookie, IMEI, user agent or `cipher_key`. Capped at 1 MB with one rotation to `live-listener.log.1`.
-- `cache-<ownId>.db` — the local SQLite cache (see below), one file per Zalo account.
+Phần triển khai và giới hạn kiểm chứng được ghi tại [báo cáo Sync V2](reports/R13_SYNC_V2.md). Tính năng này chưa được xác nhận đồng bộ hoàn chỉnh với điện thoại thật.
 
-### Local cache (SQLite)
+### Gọi thoại và video trên Linux x64
 
-`electron/db/` keeps conversations and messages in SQLite so a second launch shows data immediately instead of waiting for the network. It uses **`node:sqlite`**, which ships inside Electron 45's Node 24 — there is no native module to rebuild and the whole layer is testable with plain Node. The database is `cache-<ownId>.db` inside the app's data directory, one file per Zalo account, created by a numbered migration that never downgrades.
-
-It is a cache, not a source of truth: the server wins on conflict, writes are idempotent per message id, and every cache call is wrapped so a broken or full disk degrades to the pre-cache behaviour instead of blocking chat. History requests go through a shared sequential throttle (400–1000 ms with jitter after each call, successful or not). A recalled message keeps its row — the bubble stays where it was and reads "Tin nhắn đã thu hồi" — and a page of older history can never bring the original text back. What is **not** implemented yet: catch-up after being offline, gap reporting, and phone sync. Reading the real Zalo PC bundle showed why `requestOldMessages` (`cmd 510`) never paged backward: it is Zalo's *offline catch-up queue*, not a history API, and the genuine paging endpoint (`/api/cm/getoldv2`) is only ever called by Zalo PC with a group id. That endpoint was then called for real against both a 1-1 thread and a group: both answered `604` (`Common.SESSION` in Zalo's own error enum) while an unrelated API in the same session succeeded — the conversation type was never what blocked it, and the hypothesis that a missing parameter-cipher layer caused it was disproved by grepping all 4,968 restored modules. Reading the Zalo installed on this machine (26.11.10, the same source branch) settled how Zalo itself pages, and the client now follows that split: **groups** scroll into `/api/cm/getoldv2` behind a client-side gate (`apiEnable` requires an id starting with `g`) and fall back to `getGroupChatHistory`; a **1-1 conversation** is read from the local SQLite database and never calls cloud at all, because in Zalo PC `loadTopMessageForConversation` returns from the DB before any cloud call. Zalo's DB is full because phone sync (`pull_mobile_msg`) put older messages there. That endpoint was measured on 2026-11-09 and the server answered `code: 0, "Successful."` for a request carrying a correctly-shaped RSA-2048 session key — unlike `getoldv2`, which rejects every call with `604`. A first run of the same probe returned `114` only because it sent a 32-byte X25519 key instead of the RSA-2048 `spki`/`der` key Zalo PC actually generates; that run proved nothing about the server, and [R12](reports/R12_PHASE5_LIVE_MODE.md) records both. The sync itself is still not implemented: `code: 0` means the door is open, not that messages were pulled. Reading the same bundle also showed the sync path uses `$znode.crypto` RSA and `crypto.subtle`, **not** libsignal. And `cmd 590` needs no encryption either: the WebSocket wire format is `[version:u8][cmd:u16 LE][subCmd:u8]` plus plain UTF-8 JSON, and 590 is not in `e2ee_queues` (`513/514/515/713/715`), so the existing `sendWs` suffices. What the server sends back was then actually observed on 2026-11-09 (`frames: []` in two earlier runs was the observer reading the wrong frame type and the wrong header width, not silence): a `590` frame returns within 5 ms. The confirmation path, however, runs on `cmd 601` through a separate control socket Zalo PC gates behind `enable_ctrl_socket`, carrying `transfer_after_login` (which holds `temp_key`), `user_confirm`, `transfer_error` and `syncmsg_info` — and zca-js does not surface those, so no `temp_key` has been read yet and no sync has run. Phone sync (**Sync V2**, `transfer_sync2`) is now implemented behind `GLASS_PHONE_SYNC=1` and reachable from the account menu ("Đồng bộ lịch sử từ điện thoại"); it has not yet been run end to end against a real phone, so nothing below claims a sync has happened. [R13](reports/R13_SYNC_V2.md) documents the protocol, what is tested, and what is still unmeasured. When the cache runs out `cmd 510` still runs — as a source that pours into the cache, not as a paging API — rather than stopping and showing the user less than before. The one visible consequence is the history button label: a 1-1 conversation says "Đã hiện hết tin có trên máy" (shown everything on this machine) instead of claiming Zalo itself is out of history or claiming a sync happened when none has. The group cloud path stays behind `GLASS_CLOUD_HISTORY=group` and still answers `604` on this account, so groups currently page through `getGroupChatHistory`. See [PLAN_V2_STATUS](reports/PLAN_V2_STATUS.md) §4 for the per-item table.
-
-Live events are coalesced before they reach React. `src/renderer/live/batch.ts` holds `thread` and `message` events for a 50 ms window and applies the whole batch through `src/renderer/live/apply.ts` in one `setState`, so a burst of a dozen messages costs one render instead of a dozen. Order is preserved inside the batch (echo adoption → recall → new message), and the batch is flushed immediately whenever the user is about to read state — selecting a conversation, sending, retrying, loading history, or tearing the listener down — so batching never makes the UI show a stale list at the moment it matters. The cap is 200 events; hitting it flushes at once rather than growing the buffer.
-
-Failures are contained in three layers. An `ErrorBoundary` wraps the content area (not the whole app, so the title bar and window controls survive) and offers "Thử lại"; `installCrashGuard` on the main process writes an uncaught error to `live-listener.log` and shows it as a toast instead of letting the process vanish; and the renderer reports its own render errors through `chat:reportError`, sending only the error name, the component stack and the message **length** — never the message itself, because a render error can be thrown from code holding message text.
-
-## Structure
-
-- `src/renderer/`: React components, live Zalo store, typed IPC mapping and glass styles.
-- `src/shared/`: pure logic and preference validation.
-- `electron/`: secure BrowserWindow, local asset protocol, minimal window-control bridge, rotating log helper (`log-file.ts`), the SQLite cache under `db/`, and the zca-js client under `protocol/`.
-- `tests/`: live-client, IPC, cache, protocol and browser tests.
-- `reports/`: command evidence and historical integration notes.
-- Historical planning docs: [component map](docs/UI-COMPONENT-MAP.md), [architecture](docs/ARCHITECTURE.md), [QA matrix](docs/QA-CHECKLIST.md), and [manual QA procedures](docs/MANUAL-QA.md).
-
-## Phone-sync setup
-
-The phone-sync setup invitation and account-menu action stay visible until a full sync succeeds. Completion is saved per account on this machine, so restarting or upgrading Zola does not show them again. Failed or canceled syncs can be retried. Established accounts from older versions skip the first-install invitation. This migration checks only whether a cache already exists; it does not declare an earlier sync successful. Fresh accounts retain the invitation until full sync succeeds.
-
-## Desktop notifications
-
-Only live incoming messages produce individual desktop notifications. Cached group avatar/name refreshes, history pages and offline catch-up are applied silently. Clicking a notification restores and focuses Zola and opens the corresponding conversation. Pending notifications are cleared on logout or quit. See [R20 notification fixes](reports/R20_NOTIFICATIONS.md).
-
-## Voice and video calls (experimental, Linux x64)
-
-The chat header now offers **Gọi thoại** and **Gọi video** for 1:1 conversations when the local call runtime is present. The call dialog supports incoming accept/reject, hangup, microphone mute, camera toggle, and H.264 video. Group calls and screen sharing are not exposed in Zola.
-
-The implementation maps Zalo 26.11.10 signaling through the existing zca-js session and uses the Linux media engine extracted from the user's installed `VN-Linux-Family/zalo-for-linux` AppImage. It does not launch another Zalo instance. The engine stays under `.zola-call-runtime/` (gitignored); Linux packaging copies it outside ASAR into `resources/zola-call-runtime/`. `ZOLA_CALL_RUNTIME` can override that directory. On this machine the runtime has already been prepared. For a fresh checkout, explicitly extract your installed package with:
+Media runtime được chuẩn bị từ AppImage `VN-Linux-Family/zalo-for-linux` do bạn cung cấp:
 
 ```bash
 npm run calls:prepare -- /path/to/Zalo.AppImage
 npm run dev:desktop
 ```
 
-This extraction command runs the package's `--appimage-extract` handler, without starting its GUI. Keep the source package trusted. The media backend needs PipeWire/PulseAudio and libopus; camera encoding needs Chromium's H.264 WebCodecs support. Only the main app frame can request the camera, while a call is active. Native microphone capture belongs to the media engine.
+Lệnh chuẩn bị thực thi trình xử lý `--appimage-extract` của gói đầu vào. Chỉ sử dụng gói bạn tin cậy. Runtime nằm tại `.zola-call-runtime/` và được Git bỏ qua; có thể đổi đường dẫn qua `ZOLA_CALL_RUNTIME`. Backend âm thanh cần PipeWire/PulseAudio và libopus; video cần hỗ trợ H.264 WebCodecs từ Chromium.
 
-**Validation:** typecheck, lint, 547 unit tests, two browser tests, renderer/Electron builds, and packaged file parity passed. Browser calling tests use a synthetic bridge. **No real Zalo call, real microphone audio, or real camera stream has been tested in this change.** Server compatibility with Zola's session and real incoming control delivery remain unverified. See [R19 calling implementation](reports/R19_CALLING_IMPLEMENTATION.md).
+Đọc [báo cáo triển khai cuộc gọi](reports/R19_CALLING_IMPLEMENTATION.md) để biết phạm vi đã kiểm tra. Media runtime là thành phần bên ngoài, cần được xem xét riêng trước khi phân phối.
 
-## Actual Zalo
+## Dữ liệu trên máy
 
-Status against the plan: [PLAN_V2_STATUS](reports/PLAN_V2_STATUS.md) — phase 5 is `LIVE_PASS = 1` with all 5 checklist items evidenced against the real server; phase 6 has its schema, repository, client wiring, throttle, recall, and a bounded reconnect catch-up attempt, while definitive gap reporting remains unverified; phase 8 has keyset pagination and UI update batching done, with virtual scrolling, FTS5 and the large-data measurements still missing. That report lists every item, what was actually run, and where the work deviates from the plan on purpose.
+- Phiên đăng nhập lưu trong `zca-session.bin`, được mã hóa qua Electron `safeStorage`.
+- Hội thoại và tin nhắn được lưu trong SQLite `cache-<ownId>.db`, riêng cho từng tài khoản. Việc mã hóa phiên đăng nhập không đồng nghĩa bộ nhớ đệm tin nhắn cũng được mã hóa.
+- `live-listener.log` lưu thông tin chẩn đoán có xoay vòng, được thiết kế để không ghi nội dung tin nhắn hoặc thông tin xác thực.
 
-### Offline catch-up (2026-11-11)
+Khi báo lỗi, hãy loại bỏ thông tin cá nhân khỏi ảnh chụp và log. Không đính kèm phiên đăng nhập, cookie, token hoặc cơ sở dữ liệu trò chuyện.
 
-When the listener reconnects, Zola requests both recent 1:1 (`cmd 510`) and group (`cmd 511`) message queues using separate per-account checkpoints. Returned messages are upserted before being emitted to the UI; replayed IDs are safe to receive again. A live `cmd 511` response included a sticker whose payload contained only numeric `id`, `catId`, and `type`; Zola now resolves its CDN URL through the sticker-detail API, stores it, and downloads it through the normal media path. After installing this fix on 2026-11-11, the user confirmed that the previously missing messages appeared. Older group pages now read from the local cache before attempting a network request, so already-cached history remains available offline. These queues do not provide a reliable completion flag, so this is a bounded catch-up attempt, not proof that every missed message will always be recovered. Use **Đồng bộ lịch sử từ điện thoại** for older history or if messages are still missing; definitive gap detection is not implemented.
+## Cấu trúc dự án
 
-A read-only metadata sweep was run on 2026-11-05 after explicit user approval: Zalo PC 26.10.20.3253, VNG-signed, `resources\app.asar` plus Chromium packaging markers. See [recon report](reports/ZALO_ARCH_RECON.md).
+```text
+src/renderer/       Giao diện React, trạng thái trò chuyện và ánh xạ IPC
+src/shared/         Logic dùng chung và kiểm tra cấu hình
+electron/          Tiến trình chính, preload và tích hợp desktop
+  db/              Bộ nhớ đệm SQLite và migration
+  protocol/        Kết nối Zalo, phiên đăng nhập và đồng bộ
+tests/             Unit test và kiểm thử giao diện
+tools/             Công cụ phát triển, build và kiểm tra desktop
+docs/              Tài liệu kiến trúc và kiểm thử
+reports/           Báo cáo kỹ thuật và kết quả kiểm chứng
+```
 
-A deeper read-only pass then read three bundled JavaScript files to settle the theme question: Zalo ships an internal `DARK/LIGHT/SYSTEM/CUSTOM` theme engine with CSS token palettes, but the CUSTOM dashboard is debug-menu-gated and the shipped renderer and preload expose no third-party CSS or script hook. See [feasibility report](reports/ZALO_THEME_FEASIBILITY.md).
+Stack chính: Electron, React, TypeScript, Vite, Tailwind CSS v4, Zustand, Motion, `zca-js` và SQLite qua `node:sqlite`.
 
-Neither pass read or changed any Zalo profile, chat database, credential, token, media asset or network traffic, and REA was never attached to Zalo. Nothing was executed.
+## Đóng góp
 
-[ADR-001](docs/ADR-001-integration-strategy.md): **NO-GO for integration experiments** until an authorized, verified mechanism exists. Electron does not grant access to Zalo's business features. Not affiliated with Zalo or Apple.
+Bạn có thể tham gia bằng cách báo lỗi, cải thiện tài liệu, chỉnh giao diện hoặc gửi bản sửa. Với thay đổi lớn về kiến trúc hay giao thức, hãy mở issue để trao đổi phạm vi trước khi triển khai.
+
+1. Fork repository và tạo nhánh cho thay đổi của bạn.
+2. Cài dependency bằng `npm ci` và phát triển với `npm run dev:desktop`.
+3. Bổ sung hoặc cập nhật kiểm thử phù hợp khi thay đổi hành vi.
+4. Chạy `npm run check`; chạy thêm kiểm thử giao diện hoặc desktop nếu phần thay đổi có liên quan.
+5. Gửi pull request mô tả vấn đề, cách sửa và kết quả kiểm tra. Với thay đổi giao diện, kèm ảnh chụp đã che dữ liệu cá nhân.
+
+Khi báo lỗi, ghi rõ hệ điều hành, phiên bản Node.js, phiên bản Zola hoặc commit, các bước tái hiện, kết quả mong đợi và kết quả thực tế. Phân biệt kết quả kiểm thử mô phỏng với kết quả đã kiểm chứng trên tài khoản thật.
+
+Một số hướng đóng góp hiện tại:
+
+- Cải thiện độ ổn định khi kết nối lại và phát hiện khoảng trống lịch sử.
+- Kiểm chứng đồng bộ điện thoại và cuộc gọi trong môi trường thật.
+- Tối ưu danh sách tin nhắn lớn, cuộn ảo và tìm kiếm nội dung.
+- Cải thiện khả năng truy cập, trải nghiệm Linux/Windows và tài liệu cho người mới.
+
+## Tài liệu kỹ thuật
+
+- [Kiến trúc custom client](docs/CUSTOM_CLIENT_ARCHITECTURE.md)
+- [Hướng dẫn QA thủ công](docs/MANUAL-QA.md)
+- [Tiến độ và bằng chứng kiểm chứng](reports/PLAN_V2_STATUS.md)
+- [Đồng bộ điện thoại](reports/R13_SYNC_V2.md)
+- [Gọi thoại và video](reports/R19_CALLING_IMPLEMENTATION.md)
+- [Thông báo desktop](reports/R20_NOTIFICATIONS.md)
+
+Các báo cáo ghi lại trạng thái tại thời điểm kiểm tra và có thể chứa quyết định hoặc thử nghiệm lịch sử.
+
+## Giấy phép
+
+Dự án hướng tới phát hành mã nguồn mở, nhưng hiện chưa có file `LICENSE` và `package.json` vẫn khai báo `UNLICENSED`. Giấy phép mã nguồn mở chưa được chốt. Dependency, tài nguyên và media runtime bên ngoài có điều kiện sử dụng riêng.

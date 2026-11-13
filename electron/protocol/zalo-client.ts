@@ -824,10 +824,7 @@ export function createZaloClient(store: SessionStore, events: ZaloEvents, option
    * tự phiên và bản ghi phiên đều thuộc về **một** lần đăng nhập.
    */
   function attachSync(client: API): void {
-    if (!process.env.GLASS_PHONE_SYNC) {
-      // Không có cờ thì không chạm gì: không đọc wasm, không nghe thêm frame.
-      return;
-    }
+    // Luôn sẵn sàng sau đăng nhập; chỉ tải crypto và xin lịch sử khi người dùng chọn đồng bộ.
     sync?.dispose();
     sync = null;
     const socket = (client.listener as unknown as { ws?: WebSocket });

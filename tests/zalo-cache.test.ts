@@ -99,6 +99,48 @@ const savedStore = () => ({
 
 const emptyServer = (overrides: Partial<FakeServer> = {}) => createFakeServer(overrides);
 
+test('phone sync attaches by default, reattaches on reconnect, and releases its socket on logout', async () => {
+  const scratchDir = scratch();
+  const h = harness();
+  const server = emptyServer();
+  let attached = 0;
+  let detached = 0;
+  const socket = {
+    addEventListener: () => { attached++; },
+    removeEventListener: () => { detached++; },
+  };
+  Object.assign(server.listener, { ws: socket });
+  const api = fakeApi(server, {
+    zpwServiceMap: { group_cloud_message: ['https://cloud.test'] },
+  });
+  // The fake custom API passes only fields consumed by the protocol adapter.
+  const fakeCustom = api as unknown as {
+    custom(name: string, factory: (input: { ctx: Record<string, unknown>; utils: unknown; props: unknown }) => unknown): void;
+  };
+  const custom = fakeCustom.custom;
+  fakeCustom.custom = (name, factory) => custom(name, input => factory({
+    ...input,
+    ctx: {
+      ...input.ctx, secretKey: Buffer.alloc(32).toString('base64'), imei: 'test-imei',
+      cookie: { getCookieStringSync: () => '' },
+    },
+  }));
+  const client = createZaloClient(savedStore(), zaloEvents(h), {
+    cache: { open: ownId => openDb(scratchDir.dir, ownId) },
+    connect: () => connectorFor(api),
+  });
+  try {
+    await client.login();
+    assert.equal(client.syncPhase(), 'idle');
+    assert.equal(attached - detached, 1, 'sync is ready without any environment flag');
+    assert.ok(h.events.log.some(entry => entry.event === 'sync-v2' && entry.data.step === 'attached'));
+    server.listener.emit('connected');
+    assert.equal(attached - detached, 1, 'reconnecting keeps exactly one sync listener');
+    await client.logout();
+    assert.equal(attached, detached, 'logout detaches the sync listener');
+  } finally { client.dispose(); scratchDir.done(); }
+});
+
 test('existing account receives no first-install sync invitation on upgrade', async () => {
   const s = scratch();
   const warm = openDb(s.dir, 'own-1');
