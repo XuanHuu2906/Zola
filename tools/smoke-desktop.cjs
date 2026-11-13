@@ -16,8 +16,9 @@ const assert = require('node:assert/strict');
     try {
       const page = await app.firstWindow();
       const errors = []; page.on('pageerror', error => errors.push(error.message));
-      await page.getByRole('button', { name: 'Vào bản demo' }).click();
-      await page.getByRole('textbox', { name: 'Nội dung tin nhắn demo' }).waitFor();
+      await expect(page.locator('.window-shell')).toBeVisible();
+      await expect(page.locator('.titlebar')).toBeVisible();
+      await expect(page.locator('.live-login, .app-layout, .live-stage')).toHaveCount(1);
       assert.equal(await page.evaluate(() => window.open('https://example.invalid/')), null);
       assert.equal(await app.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows().length), 1);
       assert.equal(await page.evaluate(async () => {
@@ -35,24 +36,6 @@ const assert = require('node:assert/strict');
       const storage = await app.evaluate(({ app }) => ({ userData: app.getPath('userData'), sessionData: app.getPath('sessionData') }));
       assert.equal(storage.userData, storage.sessionData);
       assert.equal(path.basename(storage.sessionData), '.glass-demo-data');
-      await page.getByRole('textbox', { name: 'Nội dung tin nhắn demo' }).fill('Electron smoke demo');
-      await page.getByRole('button', { name: 'Gửi tin nhắn demo' }).click();
-      assert.match(await page.locator('.messages').innerText(), /Electron smoke demo/);
-      // Simulated incoming mail is the one place the renderer asks the shell for a
-      // native toast. Capture the IPC payload in main and suppress the real toast so
-      // the smoke never pops a window over whatever is on screen.
-      const notificationSupport = await app.evaluate(({ ipcMain, Notification }) => {
-        globalThis.__demoNotices = [];
-        ipcMain.on('notice:demo', (_event, payload) => globalThis.__demoNotices.push(payload));
-        Notification.prototype.show = function show() {};
-        return Notification.isSupported();
-      });
-      await page.getByRole('button', { name: 'Phòng thử demo', exact: true }).click();
-      await page.getByRole('button', { name: 'Mô phỏng tin nhắn đến' }).click();
-      await expect.poll(() => app.evaluate(() => globalThis.__demoNotices.length)).toBe(1);
-      const notice = await app.evaluate(() => globalThis.__demoNotices[0]);
-      assert.match(notice.title, / · bản demo$/);
-      assert.ok(notice.title.length <= 80 && notice.body.length > 0 && notice.body.length <= 180);
       for (const [width, height] of [[1920, 1080], [1600, 900], [1366, 768]]) {
         await app.evaluate(({ BrowserWindow }, size) => BrowserWindow.getAllWindows()[0].setContentSize(...size), [width, height]);
         await page.screenshot({ path: `reports/screenshots/${label}-${run}-${width}x${height}.png` });
@@ -76,13 +59,13 @@ const assert = require('node:assert/strict');
       await expect.poll(() => app.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].isMinimized())).toBe(true);
       await app.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].restore());
       assert.deepEqual(errors, []);
-      evidence.runs.push({ run, preferences, bridgeKeys, storage, errors, frameTiming, processes, notificationSupport,
-        notification: notice, externalFetch: 'blocked', newWindow: 'denied', status: 'PASS' });
+      evidence.runs.push({ run, preferences, bridgeKeys, storage, errors, frameTiming, processes,
+        externalFetch: 'blocked', newWindow: 'denied', status: 'PASS' });
       const closed = app.waitForEvent('close');
       await page.getByRole('button', { name: 'Đóng cửa sổ' }).click();
       await closed;
     } finally { await app.close().catch(() => {}); }
   }
   await writeFile(`reports/${label}-smoke.json`, JSON.stringify(evidence, null, 2));
-  console.log('PASS: two launches, demo send, window controls, renderer isolation, screenshots');
+  console.log('PASS: two launches, live startup, window controls, renderer isolation, screenshots');
 })().catch(error => { console.error(error); process.exitCode = 1; });

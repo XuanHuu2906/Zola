@@ -1,5 +1,7 @@
 # ADR — Runtime-first: official Zalo runtime vs. standalone client
 
+> Historical decision record (2026-11-12): the former demo-only direction has been superseded by the user's request for a live-only client. Current behavior and integration caveats are in [README.md](../README.md).
+
 Date: 2026-11-06 (Asia/Saigon). Status: **Accepted for R11A scope only.**
 Supersedes nothing. Extends [ADR-001](ADR-001-integration-strategy.md), which stays in force verbatim.
 

@@ -7,27 +7,27 @@
   },
   {
     "text": "Apple Glass Settings",
-    "minimumRatio": 12.02,
+    "minimumRatio": 11.61,
     "required": 3,
-    "sampleCount": 36
+    "sampleCount": 39
   },
   {
     "text": "Tùy chỉnh giao diện chỉ lưu trên máy này.",
-    "minimumRatio": 7.37,
+    "minimumRatio": 7.19,
     "required": 4.5,
-    "sampleCount": 36
+    "sampleCount": 39
   },
   {
     "text": "Giao diện",
     "minimumRatio": 12.02,
     "required": 4.5,
-    "sampleCount": 10
+    "sampleCount": 11
   },
   {
     "text": "Chọn kính tối hoặc sáng",
     "minimumRatio": 7.64,
     "required": 4.5,
-    "sampleCount": 21
+    "sampleCount": 23
   },
   {
     "text": "Sắc độ kính",
@@ -39,7 +39,7 @@
     "text": "Điều chỉnh lớp phủ trong suốt",
     "minimumRatio": 7.64,
     "required": 4.5,
-    "sampleCount": 27
+    "sampleCount": 28
   },
   {
     "text": "95",
@@ -51,37 +51,37 @@
     "text": "Hiệu ứng chuyển động",
     "minimumRatio": 12.04,
     "required": 4.5,
-    "sampleCount": 25
+    "sampleCount": 26
   },
   {
     "text": "Luôn tôn trọng chế độ giảm chuyển động của hệ thống",
     "minimumRatio": 7.28,
     "required": 4.5,
-    "sampleCount": 49
+    "sampleCount": 52
   },
   {
     "text": "Giảm độ mờ",
     "minimumRatio": 12.04,
     "required": 4.5,
-    "sampleCount": 14
+    "sampleCount": 13
   },
   {
     "text": "Lớp nền rõ hơn, giảm hiệu ứng blur",
     "minimumRatio": 7.63,
     "required": 4.5,
-    "sampleCount": 31
+    "sampleCount": 33
   },
   {
     "text": "Demo độc lập. Dữ liệu hư cấu. Gọi, video và tệp không kết nối với dịch vụ Zalo.",
     "minimumRatio": 7.98,
     "required": 4.5,
-    "sampleCount": 69
+    "sampleCount": 74
   },
   {
     "text": "Khôi phục tùy chỉnh",
     "minimumRatio": 12.69,
     "required": 4.5,
-    "sampleCount": 22
+    "sampleCount": 23
   },
   {
     "text": "Hoàn tất",

@@ -1,5 +1,7 @@
 # Architecture — implementation and remaining gates
 
+> Archived (2026-11-12): this describes the removed offline/demo architecture. The current live-only startup and session behavior are documented in [README.md](../README.md).
+
 Updated 2026-11-05. The migrated renderer and Electron runtime have been exercised on Windows.
 
 ```text

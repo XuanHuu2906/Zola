@@ -3,7 +3,7 @@
     "text": "Zalo",
     "minimumRatio": 14.17,
     "required": 3,
-    "sampleCount": 9
+    "sampleCount": 10
   },
   {
     "text": "Tin nhắn",
@@ -15,7 +15,7 @@
     "text": "Danh bạ",
     "minimumRatio": 13.87,
     "required": 4.5,
-    "sampleCount": 9
+    "sampleCount": 10
   },
   {
     "text": "Nhóm",
@@ -39,13 +39,13 @@
     "text": "Công cụ",
     "minimumRatio": 13.5,
     "required": 4.5,
-    "sampleCount": 9
+    "sampleCount": 10
   },
   {
     "text": "Thông báo",
     "minimumRatio": 13.33,
     "required": 4.5,
-    "sampleCount": 12
+    "sampleCount": 13
   },
   {
     "text": "Cài đặt",
@@ -57,7 +57,7 @@
     "text": "Tất cả",
     "minimumRatio": 6.17,
     "required": 4.5,
-    "sampleCount": 5
+    "sampleCount": 6
   },
   {
     "text": "Chưa đọc",
@@ -67,15 +67,15 @@
   },
   {
     "text": "Nhóm",
-    "minimumRatio": 8.33,
+    "minimumRatio": 8.29,
     "required": 4.5,
     "sampleCount": 6
   },
   {
     "text": "Công việc",
-    "minimumRatio": 7.86,
+    "minimumRatio": 7.74,
     "required": 4.5,
-    "sampleCount": 9
+    "sampleCount": 10
   },
   {
     "text": "Minh Anh",
@@ -91,7 +91,7 @@
   },
   {
     "text": "Ừm, tối mình họp nhé!",
-    "minimumRatio": 9.3,
+    "minimumRatio": 9.28,
     "required": 4.5,
     "sampleCount": 22
   },
@@ -111,11 +111,11 @@
     "text": "Nam: Đã cập nhật file thiết kế...",
     "minimumRatio": 10.4,
     "required": 4.5,
-    "sampleCount": 30
+    "sampleCount": 32
   },
   {
     "text": "Gia đình ❤️",
-    "minimumRatio": 11.93,
+    "minimumRatio": 11.81,
     "required": 4.5,
     "sampleCount": 15
   },
@@ -129,7 +129,7 @@
     "text": "Mẹ: Cuối tuần về ăn cơm nhé!",
     "minimumRatio": 10.27,
     "required": 4.5,
-    "sampleCount": 29
+    "sampleCount": 30
   },
   {
     "text": "3",
@@ -141,7 +141,7 @@
     "text": "Công việc",
     "minimumRatio": 11.77,
     "required": 4.5,
-    "sampleCount": 12
+    "sampleCount": 13
   },
   {
     "text": "Hôm qua",
@@ -153,13 +153,13 @@
     "text": "Bạn: Gửi báo cáo cuối ngày nhé.",
     "minimumRatio": 10.25,
     "required": 4.5,
-    "sampleCount": 31
+    "sampleCount": 33
   },
   {
     "text": "Hoàng Long",
     "minimumRatio": 11.63,
     "required": 4.5,
-    "sampleCount": 15
+    "sampleCount": 16
   },
   {
     "text": "Hôm qua",
@@ -177,11 +177,11 @@
     "text": "Zalo Official Account",
     "minimumRatio": 11.63,
     "required": 4.5,
-    "sampleCount": 26
+    "sampleCount": 27
   },
   {
     "text": "Thứ 3",
-    "minimumRatio": 10.37,
+    "minimumRatio": 10.35,
     "required": 4.5,
     "sampleCount": 5
   },
@@ -189,11 +189,11 @@
     "text": "Có gì mới trong Zalo? ✨",
     "minimumRatio": 10.27,
     "required": 4.5,
-    "sampleCount": 24
+    "sampleCount": 25
   },
   {
     "text": "Minh Anh",
-    "minimumRatio": 8.76,
+    "minimumRatio": 8.72,
     "required": 4.5,
     "sampleCount": 16
   },
@@ -201,19 +201,19 @@
     "text": "Đang hoạt động · Mẫu",
     "minimumRatio": 7.81,
     "required": 4.5,
-    "sampleCount": 22
+    "sampleCount": 23
   },
   {
     "text": "13:52",
-    "minimumRatio": 7.11,
+    "minimumRatio": 6.92,
     "required": 4.5,
-    "sampleCount": 4
+    "sampleCount": 5
   },
   {
     "text": "Mình rảnh nhé!\nBạn gửi tài liệu trước cho mình xem với.",
     "minimumRatio": 7.59,
     "required": 4.5,
-    "sampleCount": 57
+    "sampleCount": 59
   },
   {
     "text": "13:55",
@@ -223,55 +223,55 @@
   },
   {
     "text": "Kế hoạch dự án v2.pdf",
-    "minimumRatio": 9.04,
+    "minimumRatio": 9.06,
     "required": 4.5,
-    "sampleCount": 23
+    "sampleCount": 24
   },
   {
     "text": "2,4 MB · PDF",
     "minimumRatio": 8.1,
     "required": 4.5,
-    "sampleCount": 11
+    "sampleCount": 12
   },
   {
     "text": "Tải xuống mẫu",
     "minimumRatio": 8.75,
     "required": 4.5,
-    "sampleCount": 12
+    "sampleCount": 13
   },
   {
     "text": "13:56",
     "minimumRatio": 8.08,
     "required": 4.5,
-    "sampleCount": 4
+    "sampleCount": 5
   },
   {
     "text": "Đây là bản cập nhật mới nhất nhé!\nBạn xem qua giúp mình, có gì góp ý thêm nha.",
     "minimumRatio": 9.72,
     "required": 4.5,
-    "sampleCount": 83
+    "sampleCount": 88
   },
   {
     "text": "13:56",
-    "minimumRatio": 8.5,
+    "minimumRatio": 8.47,
     "required": 4.5,
-    "sampleCount": 4
+    "sampleCount": 5
   },
   {
     "text": "Ok, mình xem ngay đây.\nTối mình họp nhé!",
     "minimumRatio": 7.59,
     "required": 4.5,
-    "sampleCount": 44
+    "sampleCount": 46
   },
   {
     "text": "14:20",
     "minimumRatio": 6.48,
     "required": 4.5,
-    "sampleCount": 4
+    "sampleCount": 5
   },
   {
     "text": "👍 1",
-    "minimumRatio": 8.46,
+    "minimumRatio": 8.4,
     "required": 4.5,
     "sampleCount": 4
   },
@@ -279,7 +279,7 @@
     "text": "Ừm, tối mình họp nhé!",
     "minimumRatio": 9.77,
     "required": 4.5,
-    "sampleCount": 23
+    "sampleCount": 24
   },
   {
     "text": "14:27",

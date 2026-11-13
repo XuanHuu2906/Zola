@@ -1,5 +1,7 @@
 # Manual QA — four checks the automated suite cannot cover
 
+> Archived (2026-11-12): these steps target the removed demo interface. They are retained as historical evidence and are not current Zola test instructions.
+
 These four items are recorded as `NOT RUN` in [QA-CHECKLIST.md](QA-CHECKLIST.md). They
 need a human at the machine: a real mouse, a real OS input method, a real assistive
 technology, and real displays. Nothing here can be promoted to `PASS` by a script, and

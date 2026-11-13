@@ -1,25 +1,21 @@
-import { AlertTriangle, LogIn, QrCode, RefreshCw, ArrowLeft } from 'lucide-react';
-import { useDemoStore } from '../../store/useDemoStore.ts';
+import { AlertTriangle, LogIn, QrCode, RefreshCw } from 'lucide-react';
+import { useZaloStore } from '../../store/useZaloStore.ts';
 import { LIVE_NOTICE } from '../../../shared/live.ts';
 
 /**
- * Cửa vào chế độ thật. Chỉ render khi `window.chat` tồn tại (app Electron);
- * trong trình duyệt thường `App` không bao giờ tới đây.
- *
- * Bản demo vẫn là lối mặc định: nút "Quay lại bản demo" đi trước, và QR chỉ xuất
- * hiện sau khi người dùng chủ động bấm "Đăng nhập Zalo thật".
+ * Màn hình chờ khôi phục phiên thật hoặc quét QR khi chưa có phiên.
  */
 export function LiveLoginScreen() {
-  const login = useDemoStore(s => s.login);
-  const pending = useDemoStore(s => s.loginPending);
-  const requestLogin = useDemoStore(s => s.requestLogin);
-  const exitLive = useDemoStore(s => s.exitLive);
+  const login = useZaloStore(s => s.login);
+  const pending = useZaloStore(s => s.loginPending);
+  const requestLogout = useZaloStore(s => s.requestLogout);
+  const requestLogin = useZaloStore(s => s.requestLogin);
 
   return <div className="login-shell">
     <div className="login-card glass-card live-login" aria-labelledby="live-login-title">
       <span className="login-emblem" aria-hidden="true"><QrCode size={26} /></span>
-      <span className="eyebrow">CHẾ ĐỘ ZALO THẬT</span>
-      <h1 id="live-login-title">{login.status === 'qr' ? 'Quét mã QR bằng Zalo' : 'Đăng nhập Zalo thật'}</h1>
+      <span className="eyebrow">ZALO</span>
+      <h1 id="live-login-title">{login.status === 'qr' ? 'Quét mã QR bằng Zalo' : 'Đang kết nối Zalo'}</h1>
       <p className="live-notice" role="note"><AlertTriangle size={16} />{LIVE_NOTICE}</p>
 
       {login.status === 'qr' && <div className="live-qr" role="group" aria-label="Mã QR đăng nhập Zalo">
@@ -33,14 +29,16 @@ export function LiveLoginScreen() {
         <p>{login.message}</p>
         {login.retryable
           ? <button className="primary-btn" onClick={requestLogin} disabled={pending}><RefreshCw size={16} />Thử lại</button>
-          : <p className="login-copy">Lỗi xác thực: hãy quay lại bản demo rồi thử đăng nhập lại.</p>}
+          : <p className="login-copy">Hãy kiểm tra kết nối và thử khởi động lại ứng dụng.</p>}
+        {login.sessionRetained && <button className="subtle-btn" disabled={pending} onClick={requestLogout}>
+          Đăng nhập lại bằng QR
+        </button>}
       </div>}
 
-      {login.status === 'logged-out' && <button className="primary-btn login-submit" onClick={requestLogin} disabled={pending}>
-        <LogIn size={17} />{pending ? 'Đang mở phiên…' : 'Đăng nhập Zalo thật'}
-      </button>}
-
-      <button className="subtle-btn live-back" onClick={exitLive}><ArrowLeft size={16} />Quay lại bản demo</button>
+      {login.status === 'logged-out' && <p className="login-copy" role="status">
+        <LogIn size={16} />{pending ? 'Đang khôi phục phiên Zalo…' : 'Đang chuẩn bị đăng nhập…'}
+      </p>}
+      {!window.chat && <p className="login-copy" role="alert">Đăng nhập Zalo cần chạy ứng dụng desktop.</p>}
     </div>
   </div>;
 }

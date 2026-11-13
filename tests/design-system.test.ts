@@ -6,16 +6,14 @@ import {
   avatarVariant, bubbleVariant, conversationVariant, deliveryLabel, deliveryVariant, directionToClass,
   filterChipVariant, matchVariant, messageRowVariant, pressedVariant, railButtonVariant, reactionVariant, toggleVariant,
 } from '../src/design-system/variants.ts';
-import { demoAdapter } from '../src/renderer/adapters/demo.ts';
 import { wallpaperFor } from '../src/design-system/wallpaper.ts';
+import { deriveBoundaryState } from '../src/components/error-boundary-state.ts';
 
 const tokens = fs.readFileSync(path.join('src', 'design-system', 'tokens.css'), 'utf8');
 const globals = fs.readFileSync(path.join('src', 'design-system', 'globals.css'), 'utf8');
 
 test('layer boundaries hold against resolved import paths, not specifier text', () => {
-  // ESLint's no-restricted-imports matches the specifier string, so it cannot tell
-  // src/renderer/components/ChatPane's "../../adapters/types.ts" (which resolves to
-  // src/renderer/adapters/) from a real jump to src/adapters/. Resolve instead.
+  // Resolve import paths rather than matching relative specifier text.
   const walk = (dir: string): string[] => fs.readdirSync(dir, { withFileTypes: true })
     .flatMap(entry => entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)]);
   const files = walk('src').filter(file => /\.(ts|tsx)$/.test(file)).map(file => file.split(path.sep).join('/'));
@@ -31,38 +29,34 @@ test('layer boundaries hold against resolved import paths, not specifier text', 
       const crosses =
         (file.startsWith('src/design-system/') && !resolved.startsWith('src/design-system/')) ||
         (file.startsWith('src/components/') && !resolved.startsWith('src/components/') && !resolved.startsWith('src/design-system/')) ||
-        (file.startsWith('src/renderer/') && resolved.startsWith('src/adapters/')) ||
-        // The UI reaches services only through the composition root, so a send path
-        // can be swapped without the renderer learning about adapters at all.
-        (file.startsWith('src/renderer/') && resolved.startsWith('src/services/'));
+        (file.startsWith('src/renderer/') && resolved.startsWith('electron/'));
       if (crosses) violations.push(`${file}:${line} -> ${resolved}`);
     }
   }
   assert.deepEqual(violations, [], 'cross-layer imports must not compile (GLASS_DESIGN_SYSTEM.md §1)');
 });
 
-test('the composition root is the only place that imports both an adapter and a service', () => {
+test('no mock adapter or demo composition source remains in the live-only app', () => {
   const walk = (dir: string): string[] => fs.readdirSync(dir, { withFileTypes: true })
     .flatMap(entry => entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)]);
-  const files = walk('src').filter(file => /\.(ts|tsx)$/.test(file)).map(file => file.split(path.sep).join('/'));
-  const declared = (file: string) => [...fs.readFileSync(file, 'utf8').matchAll(/from\s+['"]([^'"]+)['"]/g)]
-    .map(match => path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1])));
-  const bridges = files.filter(file => {
-    const deps = declared(file);
-    return deps.some(dep => dep.startsWith('src/adapters/')) && deps.some(dep => dep.startsWith('src/services/'));
-  });
-  assert.deepEqual(bridges, ['src/composition/ui-bridge.ts'],
-    'one seam file wires adapters to services; everything else must cross at that seam');
+  const files = walk('src').map(file => file.split(path.sep).join('/'));
+  assert.ok(!files.some(file => /(?:^|\/)(?:demo|seed|mock)\.(?:ts|tsx)$/.test(file)));
+  assert.ok(!files.some(file => /(?:^|\/)(?:services|transport|composition)\//.test(file)));
 });
 
 test('every variant map resolves both states to distinct, complete class strings', () => {
   const maps = { avatarSize: null, messageRowVariant, toggleVariant, pressedVariant, reactionVariant,
     matchVariant, bubbleVariant, railButtonVariant, filterChipVariant, conversationVariant };
+  // Số trạng thái khai tường minh thay vì luôn là 2: bong bóng có ba loại nội
+  // dung (chữ, tệp, phương tiện) và gộp chúng lại sẽ bỏ mất kiểu bố cục riêng
+  // của ảnh. Vẫn kiểm đủ và không trùng nhau — đó mới là điều test này bảo vệ.
+  const arity: Record<string, number> = { bubbleVariant: 3 };
   for (const [name, map] of Object.entries(maps)) {
     if (!map) continue;
     const values = Object.values(map as Record<string, string>);
-    assert.equal(values.length, 2, `${name} must cover exactly two states`);
-    assert.equal(new Set(values).size, 2, `${name} states must not collapse to one string`);
+    const expected = arity[name] ?? 2;
+    assert.equal(values.length, expected, `${name} must cover exactly ${expected} states`);
+    assert.equal(new Set(values).size, expected, `${name} states must not collapse to one string`);
     for (const value of values) assert.equal(value, value.trim(), `${name} has stray whitespace`);
   }
 });
@@ -105,11 +99,9 @@ test('avatar variants always emit exactly one size token and one art fallback', 
 });
 
 test('wallpaper is a typed tone map keyed on chat kind, not on a CSS variable', () => {
-  const chats = demoAdapter.list();
-  const byId = (id: string) => wallpaperFor(chats.find(chat => chat.id === id)!);
-  assert.equal(byId('minh-anh').tone, 'dusk');
-  assert.equal(byId('du-an').tone, 'ice');
-  assert.equal(byId('gia-dinh').tone, 'mint');
+  const chats = [{ isGroup: false }, { isGroup: true }];
+  assert.equal(wallpaperFor(chats[0]).tone, 'dusk');
+  assert.equal(wallpaperFor(chats[1]).tone, 'mint');
   for (const chat of chats) {
     const source = wallpaperFor(chat);
     assert.ok(source.gradient.startsWith('linear-gradient('));
@@ -262,14 +254,11 @@ test('the glass primitives every screen shares are styled, not inert class names
   assert.match(card, /box-shadow:var\(--shadow-control\)/);
 });
 
-test('secondary screens exist and declare no backend capability', () => {
-  const source = fs.readFileSync(path.join('src', 'renderer', 'components', 'Overlays', 'index.tsx'), 'utf8');
-  for (const surface of ['info-modal', 'media-modal', 'call-modal', 'notifications-modal', 'profile-modal']) {
-    assert.ok(source.includes(surface), `missing overlay surface ${surface}`);
-    assert.ok(globals.includes(`.${surface}`), `overlay surface ${surface} has no rule`);
-  }
-  assert.match(source, /Không kết nối Zalo/, 'demo-only notice must be stated in the UI');
-  assert.doesNotMatch(source, /fetch\(|XMLHttpRequest|WebSocket/, 'overlay screens must not reach the network');
+test('live information screen states its source and keeps network access in the main process', () => {
+  const source = fs.readFileSync(path.join('src', 'renderer', 'components', 'LiveOverlays', 'screens.tsx'), 'utf8');
+  for (const surface of ['info-modal', 'profile-modal']) assert.ok(globals.includes(`.${surface}`));
+  assert.match(source, /Dữ liệu từ tài khoản Zalo đang đăng nhập/);
+  assert.doesNotMatch(source, /fetch\(|XMLHttpRequest|WebSocket/);
 });
 
 test('overlay CSS stays inside the token system', () => {
@@ -279,4 +268,18 @@ test('overlay CSS stays inside the token system', () => {
   // Both spellings count: a hex literal slipped past a rgba-only check once.
   const literals = block.match(/rgba?\([^)]*\)|#[0-9a-fA-F]{3,8}\b/g) ?? [];
   assert.deepEqual(literals, [], 'overlay rules must not introduce raw colour literals');
+});
+
+test('ErrorBoundary chỉ reset khi resetKey đổi, và "Thử lại" giữ nguyên khoá', () => {
+  const boom = new Error('hỏng khi vẽ');
+  const failure = { error: boom, seenResetKey: 'chats:u-1:live' };
+  // Cùng khoá: giữ lỗi, nếu không mỗi lần render lại sẽ nuốt mất lỗi vừa bắt.
+  assert.equal(deriveBoundaryState('chats:u-1:live', failure), null);
+  // Đổi hội thoại: reset — lỗi của một hội thoại không được khoá các hội thoại khác.
+  assert.deepEqual(deriveBoundaryState('chats:u-2:live', failure),
+    { error: null, seenResetKey: 'chats:u-2:live' });
+  // Bấm "Thử lại" gọi `setState({error:null})` trực tiếp và **không** đụng
+  // `seenResetKey`; nếu không lần render ngay sau đó sẽ reset lần nữa và nút bấm
+  // không có tác dụng gì.
+  assert.equal(deriveBoundaryState('chats:u-1:live', { error: null, seenResetKey: 'chats:u-1:live' }), null);
 });

@@ -1,9 +1,10 @@
 {
   "name": "zalo-apple-glass-ui",
   "private": true,
-  "version": "0.3.0",
-  "description": "Desktop UI demo with an optional, unsupported personal zca-js client for a secondary Zalo account.",
+  "version": "0.3.1",
+  "description": "Desktop client for personal Zalo accounts, built with Electron and zca-js.",
   "main": "dist-electron/main.js",
+  "desktopName": "zola.desktop",
   "engines": {
     "node": ">=24.0.0"
   },
@@ -13,19 +14,18 @@
     "preview": "vite preview --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "build:electron": "tsc -p tsconfig.electron.json",
-    "build:desktop": "npm run check && npm run build && npm run build:electron && electron-builder --win portable --x64 && node tools/hash-release.cjs && node tools/mark-delivery.cjs && node tools/verify-asar.cjs",
+    "build:desktop": "npm run check && npm run build && npm run build:electron && electron-builder --x64 && node tools/hash-release.cjs && node tools/mark-delivery.cjs && node tools/verify-asar.cjs",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.electron.json --noEmit",
-    "lint": "eslint src/renderer src/shared src/adapters src/services src/transport src/composition src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts tests/e2e vite.config.mts playwright.config.ts",
-    "test": "node --test --test-isolation=none tests/logic.test.cjs tests/core.test.ts tests/design-system.test.ts tests/adapters.test.ts tests/services.test.ts tests/transport.test.ts tests/composition.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts",
-    "test:legacy": "node --test --test-isolation=none legacy/tests/logic.test.cjs",
+    "lint": "eslint src/renderer src/shared src/design-system src/components electron tests/core.test.ts tests/design-system.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts tests/log-file.test.ts tests/node-run.test.ts tests/db.test.ts tests/throttle.test.ts tests/crash.test.ts tests/batch.test.ts tests/store-batch.test.ts tests/zalo-cache.test.ts tests/cloud-history.test.ts tests/phone-sync-probe.test.ts tests/ws-frame.test.ts tests/deadline.test.ts tests/ws-payload.test.ts tests/e2e vite.config.mts playwright.config.ts tests/sync-v2-proto.test.ts tests/sync-v2-crypto.test.ts tests/sync-v2-batch.test.ts tests/sync-v2-map.test.ts tests/sync-v2-request.test.ts tests/sync-v2-session.test.ts tests/sync-v2-controller.test.ts tests/sync-v2-store.test.ts tests/ws-endpoints.test.ts tests/wake-mobile.test.ts tests/db-consolidate.test.ts tests/avatars.test.ts tests/attachment.test.ts tests/media.test.ts tests/reactions.test.ts tests/calling.test.ts tests/notifications.test.ts",
+    "test": "node tools/node-run.cjs --import ./tests/electron-resolve.mjs --test --test-isolation=none tests/core.test.ts tests/design-system.test.ts tests/ipc-contract.test.ts tests/protocol-boundary.test.ts tests/protocol-mapper.test.ts tests/live.test.ts tests/log-file.test.ts tests/node-run.test.ts tests/db.test.ts tests/throttle.test.ts tests/crash.test.ts tests/batch.test.ts tests/store-batch.test.ts tests/zalo-cache.test.ts tests/cloud-history.test.ts tests/phone-sync-probe.test.ts tests/ws-frame.test.ts tests/deadline.test.ts tests/ws-payload.test.ts tests/sync-v2-proto.test.ts tests/sync-v2-crypto.test.ts tests/sync-v2-batch.test.ts tests/sync-v2-map.test.ts tests/sync-v2-request.test.ts tests/sync-v2-session.test.ts tests/sync-v2-controller.test.ts tests/sync-v2-store.test.ts tests/ws-endpoints.test.ts tests/wake-mobile.test.ts tests/db-consolidate.test.ts tests/avatars.test.ts tests/attachment.test.ts tests/media.test.ts tests/reactions.test.ts tests/calling.test.ts tests/notifications.test.ts",
     "test:e2e": "playwright test",
-    "capture:legacy": "node tools/capture-legacy.cjs",
-    "test:desktop": "node tools/smoke-desktop.cjs",
-    "test:desktop:extra": "node tools/qa-desktop-extra.cjs",
-    "test:soak": "node tools/soak-desktop.cjs",
-    "verify:asar": "node tools/verify-asar.cjs",
+    "test:desktop": "node tools/node-run.cjs tools/smoke-desktop.cjs",
+    "test:single-instance": "node tools/node-run.cjs tools/smoke-single-instance.cjs",
+    "verify:asar": "node tools/node-run.cjs tools/verify-asar.cjs",
     "build:icon": "node tools/make-icon.cjs",
-    "check": "npm run typecheck && npm run lint && npm test"
+    "install:linux": "bash tools/install-linux.sh",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "calls:prepare": "node tools/prepare-call-runtime.cjs"
   },
   "dependencies": {
     "lucide-react": "1.14.0",

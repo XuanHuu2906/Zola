@@ -49,6 +49,7 @@ test('electron/protocol/ is the only directory that mentions the package in impo
   const importers = sourceFiles().filter(file =>
     importsOf(file).some(specifier => specifier === 'zca-js' || specifier.startsWith('zca-js/')));
   assert.deepEqual(importers.sort(), [
+    'electron/protocol/call-signaling.ts',
     'electron/protocol/session.ts',
     'electron/protocol/zalo-client.ts',
   ]);

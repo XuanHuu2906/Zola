@@ -1,5 +1,7 @@
 # ADR-004 — Nối zca-js thật (Giai đoạn 5), có điều kiện
 
+> Historical scope note (2026-11-12): the former optional real-Zalo mode is now the sole application flow. The unofficial-library and account-risk warnings below still apply.
+
 Date: 2026-11-07 (Asia/Saigon). Status: **Accepted — phạm vi thử nghiệm, người dùng tự chịu rủi ro.**
 Không thay thế [ADR-001](ADR-001-integration-strategy.md) hay [ADR_RUNTIME_FIRST](ADR_RUNTIME_FIRST.md);
 cả hai **vẫn còn hiệu lực** cho hướng tích hợp với Zalo PC đã cài.

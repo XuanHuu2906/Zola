@@ -1,10 +1,14 @@
-import { BriefcaseBusiness, Users } from 'lucide-react';
-import type { Chat } from '../adapters/types.ts';
+import { Users } from 'lucide-react';
+import type { Chat } from '../types.ts';
 import { avatarVariant, type AvatarSize } from '../../design-system/variants.ts';
-export function Avatar({ chat, size = 'regular' }: { chat: Chat; size?: AvatarSize }) {
-  return <span className={avatarVariant(chat.id, size, Boolean(chat.avatar))}>
-    {chat.avatar ? <img src={chat.avatar} alt="" /> : chat.id === 'zalo' ? <span className="za-mark">Zalo</span>
-      : chat.isWork ? <BriefcaseBusiness size={25} /> : <Users size={25} />}
-    {chat.online && <i className="presence" />}
+export function Avatar({ chat, size = 'regular', src, label }: {
+  chat: Chat; size?: AvatarSize; src?: string | null; label?: string;
+}) {
+  const image = src === undefined ? chat.avatar : src;
+  const initial = label?.trim().charAt(0).toLocaleUpperCase();
+  return <span className={avatarVariant(chat.id, size, Boolean(image))}>
+    {image ? <img src={image} alt="" />
+      : initial ? <span className="avatar-initial" aria-hidden="true">{initial}</span>
+        : <Users size={25} />}
   </span>;
 }

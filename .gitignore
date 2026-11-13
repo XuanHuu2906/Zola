@@ -8,3 +8,4 @@ test-results/
 reports/*.json
 rea-cache/
 .glass-demo-data/
+.zola-call-runtime/

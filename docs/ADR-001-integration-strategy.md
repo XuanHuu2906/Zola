@@ -1,5 +1,7 @@
 # ADR-001 — Standalone demo; actual-client integration NO-GO
 
+> Superseded for the current application by the user's later request for live Zalo login. Kept only as a historical decision record.
+
 Date: 2026-11-05 (Asia/Saigon). Status: **NO-GO for P3**. Passive installed-client reconnaissance: **RUN (read-only)** — see [report](../reports/ZALO_ARCH_RECON.md).
 
 Recon observed Zalo PC **26.10.20.3253**, VNG-signed, with `resources\app.asar` and full

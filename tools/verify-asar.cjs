@@ -34,7 +34,13 @@ function walk(node, prefix, out) {
   return out;
 }
 
-const asarPath = path.resolve(process.argv[2] || 'release/win-unpacked/resources/app.asar');
+// electron-builder names the unpacked directory after the host: win-unpacked,
+// linux-unpacked, mac. Accept an explicit path first so a cross-built package
+// can still be checked.
+const defaultAsar = process.platform === 'win32' ? 'release/win-unpacked/resources/app.asar'
+  : process.platform === 'darwin' ? 'release/mac/Zola.app/Contents/Resources/app.asar'
+    : 'release/linux-unpacked/resources/app.asar';
+const asarPath = path.resolve(process.argv[2] || defaultAsar);
 const { root, raw, base } = readIndex(asarPath);
 const entries = walk(root, '', []).filter(e => SCOPE.some(prefix => e.path.startsWith(prefix)));
 const sha = buffer => createHash('sha256').update(buffer).digest('hex');

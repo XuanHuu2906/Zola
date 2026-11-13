@@ -1,5 +1,7 @@
 # Kiến trúc client Zalo độc lập (R8)
 
+> Archived (2026-11-12): this mock/adapter design was superseded by the live-only Electron IPC client. It is not a description of current source.
+
 **Trạng thái:** HOÀN THÀNH phần **thiết kế hợp đồng** (types + ranh giới + lộ trình).
 **Chưa có mã mạng.** Adapter duy nhất được dựng là **mock offline**.
 **Ngày:** 2026-11-06

@@ -7,5 +7,5 @@
     "noUnusedLocals": true, "noUnusedParameters": true,
     "types": ["vite/client", "node"]
   },
-  "include": ["src/adapters", "src/services", "src/transport", "src/composition", "src/renderer", "src/shared", "src/design-system", "src/components", "tests/core.test.ts", "tests/design-system.test.ts", "tests/adapters.test.ts", "tests/services.test.ts", "tests/transport.test.ts", "tests/composition.test.ts", "tests/ipc-contract.test.ts", "tests/protocol-boundary.test.ts", "tests/protocol-mapper.test.ts", "tests/live.test.ts", "tests/e2e", "playwright.config.ts", "vite.config.mts"]
+  "include": ["src/renderer", "src/shared", "src/design-system", "src/components", "tests/core.test.ts", "tests/design-system.test.ts", "tests/ipc-contract.test.ts", "tests/protocol-boundary.test.ts", "tests/protocol-mapper.test.ts", "tests/live.test.ts", "tests/log-file.test.ts", "tests/node-run.test.ts", "tests/db.test.ts", "tests/throttle.test.ts", "tests/crash.test.ts", "tests/batch.test.ts", "tests/store-batch.test.ts", "tests/fake-zalo.ts", "tests/zalo-cache.test.ts", "tests/cloud-history.test.ts", "tests/attachment.test.ts", "tests/media.test.ts", "tests/phone-sync-probe.test.ts", "tests/ws-frame.test.ts", "tests/deadline.test.ts", "tests/ws-payload.test.ts", "tests/e2e", "playwright.config.ts", "vite.config.mts", "tests/calling.test.ts", "tests/notifications.test.ts"]
 }

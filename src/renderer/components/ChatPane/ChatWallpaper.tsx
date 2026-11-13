@@ -1,4 +1,4 @@
-import type { Chat } from '../../adapters/types.ts';
+import type { Chat } from '../../types.ts';
 import { wallpaperFor } from '../../../design-system/wallpaper.ts';
 
 export function ChatWallpaper({ chat }: { chat: Chat }) {

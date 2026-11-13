@@ -1,5 +1,8 @@
 // Exercise the self-extracting portable wrapper. Its NSIS launcher does not pipe
 // the child Electron inspector output required by Playwright's _electron.launch.
+// On Linux the equivalent artifact is an AppImage, whose launcher has the same
+// property; Fedora ships no libfuse2, so the AppImage is told to extract and run
+// itself rather than require FUSE.
 const { chromium, expect } = require('@playwright/test');
 const { spawn } = require('node:child_process');
 const { createServer } = require('node:net');
@@ -16,14 +19,25 @@ async function availablePort() {
   return port;
 }
 
+const version = require('../package.json').version;
+const isAppImage = process.platform === 'linux';
+const executable = path.resolve(process.argv[2] || (isAppImage
+  ? `release/Zola-${version}-x86_64.AppImage`
+  : `release/Zola-${version}-x64.exe`));
+
 (async () => {
-  const executable = path.resolve(process.argv[2] || `release/Glass-Messenger-Demo-${require('../package.json').version}-x64.exe`);
   const file = await stat(executable);
   await mkdir('reports/screenshots', { recursive: true });
   const evidence = { date: new Date().toISOString(), executable, bytes: file.size, runs: [] };
   for (let run = 0; run < 2; run++) {
     const port = await availablePort();
     const env = { ...process.env }; delete env.ELECTRON_RUN_AS_NODE;
+    if (isAppImage) {
+      // AppImage's runtime flags must precede our own; extract-and-run removes
+      // the libfuse2 requirement on distributions that do not ship it.
+      env.APPIMAGE_EXTRACT_AND_RUN = '1';
+      env.ELECTRON_DISABLE_SECURITY_WARNINGS = '1';
+    }
     const child = spawn(executable, [`--remote-debugging-port=${port}`, '--remote-debugging-address=127.0.0.1'],
       { env, windowsHide: true, stdio: 'ignore' });
     let childError; child.on('error', error => { childError = error; });
@@ -51,17 +65,10 @@ async function availablePort() {
         await delay(250);
       }
       const errors = []; page.on('pageerror', error => errors.push(error.message));
-      await page.getByRole('button', { name: 'Vào bản demo' }).click();
-      const input = page.getByRole('textbox', { name: 'Nội dung tin nhắn demo' });
-      await expect(input).toBeVisible();
+      await expect(page.locator('.window-shell')).toBeVisible();
+      await expect(page.locator('.live-login, .app-layout, .live-stage')).toHaveCount(1);
       assert.equal(await page.evaluate(() => typeof window.require), 'undefined');
       assert.deepEqual(await page.evaluate(() => Object.keys(window.desktop).sort()), ['close', 'minimize', 'notify', 'toggleMaximize']);
-      await expect(page.locator('.messages')).not.toContainText('Portable wrapper smoke');
-      await input.fill('Portable wrapper smoke'); await input.press('Enter');
-      await expect(page.locator('.messages')).toContainText('Portable wrapper smoke');
-      await page.getByRole('button', { name: 'Cài đặt', exact: true }).click();
-      await expect(page.getByRole('dialog')).toBeVisible();
-      await page.keyboard.press('Escape');
       await page.screenshot({ path: `reports/screenshots/portable-${run}.png` });
       assert.deepEqual(errors, []);
       const disconnected = new Promise(resolve => browser.once('disconnected', resolve));
@@ -79,5 +86,5 @@ async function availablePort() {
     }
   }
   await writeFile('reports/portable-smoke.json', JSON.stringify(evidence, null, 2));
-  console.log('PASS: portable wrapper extracted, launched, sent demo text, opened settings and closed cleanly twice');
+  console.log('PASS: portable wrapper extracted, launched and closed cleanly twice');
 })().catch(error => { console.error(error); process.exitCode = 1; });

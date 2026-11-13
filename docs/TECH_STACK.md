@@ -1,5 +1,7 @@
 # Locked tech stack — Zalo Apple Glass UI
 
+> Archived (2026-11-12): this document describes the former offline prototype. See [README.md](../README.md) for the current live-only client.
+
 **Approved:** 2026-11-04 | **Version:** 1.0 | **Target:** Windows Desktop prototype
 
 **Implementation update, 2026-11-05:** dependency installation and the locked-stack

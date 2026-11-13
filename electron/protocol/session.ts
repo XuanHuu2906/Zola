@@ -1,5 +1,6 @@
-import { readFile, rm, writeFile } from 'node:fs/promises';
+import { readFile, rm, mkdir, open, rename } from 'node:fs/promises';
 import path from 'node:path';
+import { randomUUID } from 'node:crypto';
 import { safeStorage } from 'electron';
 import type { Credentials } from 'zca-js';
 
@@ -40,18 +41,32 @@ export function createSessionStore(dataRoot: string): SessionStore {
   };
   return {
     async load() {
-      if (!encryption()) return null;
+      let bytes: Buffer;
+      try { bytes = await readFile(file); }
+      catch (error) {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null;
+        throw new Error('Không đọc được phiên đã lưu. Phiên vẫn được giữ trên máy.');
+      }
+      if (!encryption()) throw new Error('Chưa mở được kho khóa của hệ điều hành. Hãy mở khóa và thử lại phiên đã lưu.');
       try {
-        const plain = safeStorage.decryptString(await readFile(file));
-        const parsed: unknown = JSON.parse(plain);
-        return isSavedSession(parsed) ? parsed : null;
-      } catch { return null; }
+        const parsed: unknown = JSON.parse(safeStorage.decryptString(bytes));
+        if (!isSavedSession(parsed)) throw new Error('Invalid session');
+        return parsed;
+      } catch { throw new Error('Chưa giải mã được phiên đã lưu trên máy này. Hãy mở khóa kho khóa hệ điều hành và thử lại.'); }
     },
     async save(session) {
-      if (!encryption()) return;
+      if (!encryption()) throw new Error('Không lưu được phiên đăng nhập vì kho khóa hệ điều hành chưa sẵn sàng.');
       const plain = JSON.stringify({ cookie: session.cookie, imei: session.imei,
         userAgent: session.userAgent, language: session.language });
-      await writeFile(file, safeStorage.encryptString(plain), { mode: 0o600 });
+      const encrypted = safeStorage.encryptString(plain);
+      await mkdir(dataRoot, { recursive: true });
+      const temp = `${file}.${randomUUID()}.tmp`;
+      try {
+        const handle = await open(temp, 'wx', 0o600);
+        try { await handle.writeFile(encrypted); await handle.sync(); }
+        finally { await handle.close(); }
+        await rename(temp, file);
+      } finally { await rm(temp, { force: true }).catch(() => {}); }
     },
     async clear() {
       try { await rm(file, { force: true }); } catch { /* absent is fine */ }

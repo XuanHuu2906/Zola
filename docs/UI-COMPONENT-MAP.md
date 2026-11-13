@@ -1,5 +1,7 @@
 # Legacy → React feature parity map
 
+> Archived (2026-11-12): the legacy/demo surfaces described here have been removed. See [README.md](../README.md) for the current application entry flow.
+
 Source migration is implemented and exercised: 16 Node tests and 14 browser
 scenarios pass on Windows. The Electron smoke separately checks runtime boundaries
 and native window controls. See `reports/AGENT_DELIVERY.md` for command logs.

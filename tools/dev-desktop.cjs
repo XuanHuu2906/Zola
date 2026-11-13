@@ -27,10 +27,8 @@ process.on('SIGTERM', () => { void stop(); });
     try {
       const page = await app.firstWindow();
       const errors = []; page.on('pageerror', error => errors.push(error.message));
-      await expect(page.getByRole('textbox', { name: 'Nội dung tin nhắn demo' })).toBeVisible();
-      await page.getByRole('textbox', { name: 'Nội dung tin nhắn demo' }).fill('Development smoke');
-      await page.keyboard.press('Enter');
-      await expect(page.locator('.messages')).toContainText('Development smoke');
+      await expect(page.locator('.window-shell')).toBeVisible();
+      await expect(page.locator('.live-login, .app-layout, .live-stage')).toHaveCount(1, { timeout: 20_000 });
       expect(errors).toEqual([]);
       await writeFile('reports/dev-desktop-smoke.json', JSON.stringify({ date: new Date().toISOString(), url: page.url(), errors, status: 'PASS' }, null, 2));
     } finally { await app.close(); await stop(); }

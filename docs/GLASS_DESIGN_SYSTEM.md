@@ -1,5 +1,7 @@
 # Apple Liquid Glass Design System
 
+> Archived (2026-11-12): the demo-only screens and architecture notes below are historical. The live-only app reuses the glass primitives and tokens; see [README.md](../README.md) for current behavior.
+
 Tài liệu này mô tả **hệ thống giao diện đang có trong repo**, không mô tả hệ thống giao diện của Zalo.
 Mọi con số dưới đây đọc trực tiếp từ mã nguồn; không có giá trị nào được suy ra từ bundle của Zalo.
 

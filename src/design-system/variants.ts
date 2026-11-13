@@ -7,7 +7,11 @@ export type ToggleState = 'on' | 'off';
 export type PressedState = 'pressed' | 'idle';
 export type ReactionState = 'reacted' | 'empty';
 export type MatchState = 'match' | 'plain';
-export type BubbleKind = 'text' | 'file';
+/**
+ * Hình dạng bong bóng. `media` là tin có ảnh/video/nhãn dán: nền trong suốt và
+ * không có đệm, để ảnh tràn viền như Zalo. `file` dành cho tệp đính kèm.
+ */
+export type BubbleKind = 'text' | 'file' | 'media';
 
 export const messageRowVariant: Record<MessageDirection, string> = {
   incoming: 'message-row incoming',
@@ -29,14 +33,29 @@ export const reactionVariant: Record<ReactionState, string> = {
   empty: 'reaction reaction-add',
 };
 
+/**
+ * Một chip cảm xúc đã gộp ("❤️ 3"). `mine` là biến thể duy nhất khác về mặt
+ * hiển thị, vì đó là thông tin người dùng cần thấy ngay: cảm xúc này có mình
+ * trong số đó hay không.
+ */
+export type ReactionChipState = 'mine' | 'other';
+export const reactionChipVariant: Record<ReactionChipState, string> = {
+  mine: 'reaction-chip mine',
+  other: 'reaction-chip',
+};
+
 export const matchVariant: Record<MatchState, string> = {
   match: 'bubble-copy search-match',
   plain: 'bubble-copy',
 };
 
+/** Nội dung của tin đã thu hồi: chữ nghiêng, mờ — không còn là lời ai đó nói. */
+export const recalledVariant = 'bubble-copy bubble-recalled';
+
 export const bubbleVariant: Record<BubbleKind, string> = {
   text: 'bubble',
   file: 'bubble bubble-file',
+  media: 'bubble bubble-media',
 };
 
 export const directionToClass = (from: 'me' | 'them'): MessageDirection => (from === 'me' ? 'outgoing' : 'incoming');

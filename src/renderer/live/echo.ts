@@ -1,4 +1,4 @@
-import type { Chat } from '../adapters/types.ts';
+import type { Chat } from '../types.ts';
 import type { LiveMessage } from '../../shared/ipc-contract.ts';
 
 export type EchoAdoption = { chats: Chat[]; adopted: true } | null;

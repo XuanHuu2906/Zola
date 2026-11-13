@@ -1,5 +1,7 @@
 # QA matrix — 2026-11-06 (R10 mock desktop client)
 
+> Archived (2026-11-12): the mock/demo workflows and their tests have been removed. This matrix records historical results only; use `npm run check` and `npm run test:e2e` for current verification.
+
 PASS refers only to executed checks with evidence. Source implemented does not imply runtime PASS.
 
 | Check | Status | Evidence / remaining action |
@@ -47,7 +49,12 @@ PASS refers only to executed checks with evidence. Source implemented does not i
 | Desktop shell fills the window | PASS (measured) | `desktop-extra-qa.json` check `window-shell-geometry` at 1600×900 in Electron: `#app` padding `0px`, shell rect `0,0,1600×900` (exact viewport), `border-radius 0px`, `border-width 0px`, `box-shadow none`, zero scroll overflow, and all four corner hit-tests land inside the shell. The browser preview intentionally keeps the floating framed shell |
 | Installed Zalo metadata | PASS (read-only) | `tools/Inspect-Zalo.ps1` exit 0; Zalo 26.10.20.3253, VNG-signed, `app.asar` + Chromium markers — [report](../reports/ZALO_ARCH_RECON.md) |
 | Zalo theme/plugin feasibility (P2) | PASS (static, read-only) | Three bundled JS files + CSS probed: internal DARK/LIGHT/SYSTEM/CUSTOM engine exists, CUSTOM dashboard debug-gated, no third-party CSS/script hook. No execution — [report](../reports/ZALO_THEME_FEASIBILITY.md) |
-| Real Zalo login/chat/file/call/reconnect/update | NOT APPLICABLE | Offline demo; P3 NO-GO |
+| Real Zalo login/chat/file/call/reconnect/update | **PARTIAL** | QR login, session restore, connected socket and one 1-1 send/receive round trip are evidenced against the real server (2026-11-08, Fedora 45) — `LIVE_PASS = 1`, 5/5 in [R12](../reports/R12_PHASE5_LIVE_MODE.md). **Not** evidenced: a message arriving from another person, group send, recall, and deep history pagination. Files, calls, reconnect and update remain NOT RUN |
+| SQLite cache (schema, migration, upsert, optimistic merge, pagination) | PASS (unit + integration) | 25 tests against a real `node:sqlite` database in a temp directory (`tests/db.test.ts`) and 16 driving `createZaloClient` through `FakeZaloClient` (`tests/zalo-cache.test.ts`, `tests/fake-zalo.ts`). The built layer ran inside Electron 45.2.3 (SQLite 3.53.4): write → close → reopen kept the row, and a real account's cache showed 132 threads and 2 messages. Catch-up and gap reporting are still missing |
+| History throttle (§6.7) | PASS (unit) | 8 tests on a fake clock (`tests/throttle.test.ts`): sequential execution, a gap measured from the **end** of the previous call, a failing call still counts, hostile `random()` never yields a non-finite or negative delay. Wired into both the group and the 1-1 history paths; not yet observed against the real server |
+| Recall (thu hồi) | PASS (unit + integration) / **NOT RUN live** | `listener.on('undo')` registered; row kept with `recalled = 1` and empty text; an older page cannot revive the content; a recall arriving before the original message is remembered and applied when the message lands. 3 DB + 5 integration + 6 renderer tests. Never triggered by a real recall event |
+| Global error handling | PASS (unit) | `ErrorBoundary` (content only, title bar survives), `installCrashGuard` on the main process (3 uncaught errors in 60 s is fatal, otherwise logged and shown as a toast), `render-process-gone` / `unresponsive` logged, renderer render errors logged by name + component stack + message length only. 8 crash tests + 2 renderer tests |
+| Zalo sync catch-up after offline / gaps / throttling | NOT RUN | Not implemented; [PLAN_V2_STATUS](../reports/PLAN_V2_STATUS.md) §4 lists the remaining phase-6 items |
 
 ## Reproduce
 
@@ -55,7 +62,7 @@ PASS refers only to executed checks with evidence. Source implemented does not i
 2. `npm run check` → `npm run build`.
 3. `npm run capture:legacy`, `npm run test:e2e`.
 4. Inspect captures under `reports/screenshots/` against `assets/approved-reference.jpg`.
-5. `npm run build:electron`, `npm run test:desktop`, `npm run test:desktop:extra`, `npm run test:soak`.
+5. `npm run build:electron`, `npm run test:desktop`, `npm run test:desktop:extra`, `npm run test:single-instance`, `npm run test:soak`.
 6. `npm run build:desktop`; wait until packaging finishes, then run unpacked and portable smoke commands from README.
 7. Update this matrix only from observed results.
 

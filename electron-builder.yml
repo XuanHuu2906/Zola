@@ -1,18 +1,45 @@
-appId: local.glass.messaging.demo
-productName: Glass Messenger Demo
+appId: local.zola.desktop
+productName: Zola
 directories:
   output: release
   buildResources: build
 files:
   - dist/**/*
   - dist-electron/**/*
+  - assets/zproto/**/*
   - package.json
+  - build/icon.png
 asar: true
+# Wasm của Sync V2 phải nằm ngoài asar: `WebAssembly.compile` cần đọc đủ byte và
+# asar không mmap được. `syncV2WasmPath()` trong `electron/protocol/sync-v2-wasm.ts`
+# đọc đúng đường dẫn `app.asar.unpacked/` này.
+asarUnpack:
+  - assets/zproto/**/*
 win:
   icon: build/icon.ico
   target:
     - target: portable
       arch: [x64]
-  artifactName: Glass-Messenger-Demo-${version}-${arch}.${ext}
+  artifactName: Zola-${version}-${arch}.${ext}
 portable:
   requestExecutionLevel: user
+linux:
+  extraResources:
+    - from: .zola-call-runtime
+      to: zola-call-runtime
+      filter:
+        - native-engine/**/*
+        - README.md
+        - provenance.json
+  icon: build/icons
+  category: Network;InstantMessaging
+  maintainer: Zola Desktop <support@localhost>
+  synopsis: Zalo desktop client
+  executableName: zola
+  # Links the running window to its .desktop entry so taskbars group it correctly.
+  # The name itself comes from `desktopName` in package.json.
+  syncDesktopName: true
+  target:
+    - target: AppImage
+      arch: [x64]
+  artifactName: Zola-${version}-${arch}.${ext}
